@@ -15,10 +15,35 @@ The build emits route-specific HTML shells for every public page and all 115 pro
 
 Before release, run the QA commands listed in `package.json` against the preview server. Confirm that `dist/robots.txt`, `dist/sitemap.xml`, `dist/_headers`, and `dist/_redirects` were copied into the artifact.
 
+## Vercel deployment
+
+Vercel is the supported deployment path. In the Vercel dashboard, choose **Add New → Project**, import `agborhans572-hue/peptide`, and deploy the `main` branch. The repository supplies the Vite build command, `dist` output directory, and Vercel serverless routes through `vercel.json`; do not override them.
+
+In **Project → Settings → Environment Variables**, add these values for the **Production** environment before enabling checkout:
+
+| Key | Value source | Sensitive |
+| --- | --- | --- |
+| `APP_ENV` | `production` | No |
+| `SITE_URL` | Your final `https://` production domain | No |
+| `SUPABASE_URL` | Supabase Project Settings → API → Project URL | No |
+| `SUPABASE_SERVICE_ROLE_KEY` | Supabase server-side secret/service-role key | Yes |
+| `STRIPE_SECRET_KEY` | Stripe live secret key | Yes |
+| `STRIPE_WEBHOOK_SECRET` | Stripe endpoint signing secret | Yes |
+| `WOOCOMMERCE_URL` | WooCommerce store URL | No |
+| `WC_CONSUMER_KEY` | WooCommerce REST API key | Yes |
+| `WC_CONSUMER_SECRET` | WooCommerce REST API secret | Yes |
+| `MONITORING_WEBHOOK_URL` | Monitoring provider webhook, if used | Yes |
+| `VITE_SITE_URL` | Same final `https://` production domain | No |
+| `VITE_CHECKOUT_ENDPOINT` | `/api/checkout` | No |
+| `VITE_ORDER_TRACKING_ENDPOINT` | `/api/orders/track` | No |
+| `VITE_BUILD_SOURCEMAP` | `false` | No |
+
+Never add a secret as `VITE_*`: Vite embeds those values in the browser bundle. Once Vercel has assigned your final domain, set Stripe’s live webhook endpoint to `https://YOUR-DOMAIN/api/stripe-webhook` and copy the signing secret into `STRIPE_WEBHOOK_SECRET`.
+
 ## Hosting requirements
 
 - Serve `dist/` as the site root over HTTPS.
-- Preserve existing files and directory indexes, then rewrite unknown routes to `/index.html` with HTTP 200. The included `_redirects` supports Netlify and Cloudflare Pages; configure the equivalent fallback on other hosts.
+- Preserve existing files and directory indexes. Vercel serves the generated static route shells and the committed `/api/` functions directly.
 - A same-domain cutover must preserve or origin-route `/wp-content/uploads/` before the SPA fallback: the COA library currently links to 640 existing PDF URLs under that path. Preserve the live `/disclaimer/` and `/waiver-agreement-policy/` pages referenced by the footer. Shipping, refund, privacy, and terms pages are emitted by this application.
 - Apply the policies in `_headers`. Hosts that do not consume this portable headers format must map the same headers in their dashboard, CDN, or web-server configuration.
 - Keep HTML revalidated, cache `/_app/` for one year because those files are content-hashed, and cache the stable `/assets/` paths for no more than the included seven-day window.
@@ -34,7 +59,7 @@ Before release, run the QA commands listed in `package.json` against the preview
 
 ## Store service connections
 
-The repository includes Netlify Functions for server-priced Stripe Checkout, signed/idempotent Stripe webhooks, Supabase orders, and protected order lookup. Apply the Supabase migration and configure the server-only secrets documented in `.env.production.example` before enabling checkout. Public endpoint variables are configured at build time:
+The repository includes Vercel serverless adapters for server-priced Stripe Checkout, signed/idempotent Stripe webhooks, Supabase orders, and protected order lookup. Apply the Supabase migration and configure the server-only secrets documented in `.env.production.example` before enabling checkout. Public endpoint variables are configured at build time:
 
 - `VITE_ACCOUNT_PORTAL_URL` redirects login, OTP, and registration actions to an approved account portal.
 - `VITE_CHECKOUT_ENDPOINT` accepts `POST { catalogVersion, items: [{ productId, variantId, quantity }] }` and returns a Stripe-hosted `checkoutUrl`. The included function ignores all browser prices/SKUs/totals, recalculates from the reviewed snapshot, and revalidates price, publication, visibility, and stock against authenticated WooCommerce immediately before creating Stripe Checkout. A stale cart receives HTTP 409; WooCommerce failure is closed with HTTP 503.

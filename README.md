@@ -26,3 +26,7 @@ npm run release:check
 Use `.env.example` locally and configure production values from `.env.production.example` in the host's encrypted secret store. All `VITE_*` values are public browser configuration and must never contain secrets. Apply both Supabase migrations in timestamp order before enabling checkout. See `catalog/README.md` for the authenticated WooCommerce review and logistics approval workflow.
 
 See [DEPLOYMENT.md](./DEPLOYMENT.md) for hosting rules, service endpoint contracts, the legacy COA/legal-route cutover requirement, and the complete release checklist.
+
+## Vercel
+
+Import this GitHub repository in Vercel and leave the detected Vite settings in place. The committed `vercel.json` builds `dist/` and serves checkout, webhook, order-tracking, and client-error endpoints from `/api/`. Add the production variables listed in `.env.production.example` under **Settings → Environment Variables**; mark service, Stripe, WooCommerce, and monitoring values as sensitive. Do not add `SUPABASE_SERVICE_ROLE_KEY` with a `VITE_` prefix.
