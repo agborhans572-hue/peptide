@@ -1,0 +1,49 @@
+# Existing static route shells and assets take precedence. Unknown client routes
+# fall back to the SPA entry document on Netlify and Cloudflare Pages.
+/api/checkout /.netlify/functions/checkout 200
+/api/stripe-webhook /.netlify/functions/stripe-webhook 200
+/api/orders/track /.netlify/functions/order-track 200
+/api/orders/status /.netlify/functions/order-status 200
+/api/client-error /.netlify/functions/client-error 200
+/product-form/vials/ /shop/ 301
+/product-form/vials/* /shop/ 301
+/product-form/capsules/ /shop/ 301
+/product-form/capsules/* /shop/ 301
+/product-form/liquids/ /shop/ 301
+/product-form/liquids/* /shop/ 301
+/product-form/topicals/ /shop/ 301
+/product-form/topicals/* /shop/ 301
+# BEGIN GENERATED PRODUCT REDIRECTS
+/product/5-amino-1mq-2/ /product/5-amino-1mq-capsules/ 301!
+/product/aod9604-2/ /product/aod9604-liquid/ 301!
+/product/bam15-encapsulated-solid/ /product/bam15/ 301!
+/product/bpc-157-pure-health-peptides/ /product/bpc-157-liquid/ 301!
+/product/bpc-157-tb-500-2/ /product/bpc-157-tb-500-t-beta-4/ 301!
+/product/bpc-157-tb-500-t%25ce%25b24-blend/ /product/bpc-157-tb-500-t-beta-4-blend/ 301!
+/product/cjc-1295dac-ipamorelin/ /product/cjc-1295-dac-ipamorelin/ 301!
+/product/cjc1295-ipamorelin/ /product/cjc-1295-ipamorelin/ 301!
+/product/complete-configuration-modular-peptide-systems-abcde/ /product/complete-configuration-modular-peptide-systems-a-b-c-d-e/ 301!
+/product/dhx/ /product/dhx-pnb-0408/ 301!
+/product/dsip-2/ /product/dsip-liquid/ 301!
+/product/epithalon-2/ /product/epithalon-capsules/ 301!
+/product/epithalon-3/ /product/epithalon-liquid/ 301!
+/product/ghk-cu-2/ /product/ghk-cu-liquid/ 301!
+/product/hgh-176-191/ /product/h-fragment-176-191/ 301!
+/product/kispeptin-10/ /product/kisspeptin-10/ 301!
+/product/kpv-2/ /product/kpv-capsules/ 301!
+/product/kpv-3/ /product/kpv-liquid/ 301!
+/product/lc-216/ /product/lc-216-lipo-b-formulation/ 301!
+/product/lc120/ /product/lc-120-lipo-c-formulation/ 301!
+/product/mots-c-2/ /product/mots-c-capsules/ 301!
+/product/nad%25e2%2581%25ba-nicotinamide-adenine-dinucleotide/ /product/nad-plus-nicotinamide-adenine-dinucleotide/ 301!
+/product/phase-1-configuration-modular-peptide-systems-ace/ /product/phase-1-configuration-modular-peptide-systems-a-c-e/ 301!
+/product/phase-2-configuration-modular-peptide-systems-bd/ /product/phase-2-configuration-modular-peptide-systems-b-d/ 301!
+/product/pt-141-2/ /product/pt-141-liquid/ 301!
+/product/semx-2/ /product/semx-liquid/ 301!
+/product/slu-pp-332-2/ /product/slu-pp-332-capsules/ 301!
+/product/tb-500-t%25ce%25b2-4/ /product/tb-500-t-beta-4/ 301!
+/product/tb-500-t%25ce%25b24-pure-health-peptides/ /product/tb-500-t-beta-4-liquid/ 301!
+/product/teso/ /product/teso-ns2330/ 301!
+/product/vip-pure-health-peptides/ /product/vip-liquid/ 301!
+# END GENERATED PRODUCT REDIRECTS
+/* /index.html 200

@@ -1,0 +1,31 @@
+node_modules/
+dist/
+preview/
+coverage/
+playwright-report/
+test-results/
+.vite/
+*.tsbuildinfo
+*.log
+.env
+.env.*
+!.env.example
+!.env.*.example
+.DS_Store
+Thumbs.db
+artifacts/
+catalog/woocommerce-sync.candidate.json
+
+# Supabase CLI: commit config, migrations, and SQL tests; never local state or secrets.
+supabase/.branches/
+supabase/.temp/
+supabase/.cache/
+supabase/.wrappers/
+supabase/.env
+supabase/functions/.env
+supabase/functions/**/.env
+supabase/seed.local.sql
+
+# Hosting CLI state and local build diagnostics.
+.netlify/
+.vercel/

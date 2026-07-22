@@ -1,0 +1,3166 @@
+{
+  "vials": {
+    "heading": "Vial Certificate of Analysis (COA) library",
+    "items": [
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/01/COA_305_50mg-5-Amino-1MQ-Lot-CHA-122025-GB78.pdf",
+            "id": "CHA-122025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/01/COA_312_5mg-5-Amino-1MQ-Lot-CHA-122025-GB81.pdf",
+            "id": "CHA-122025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/01/COA_307_50mg5-Amino-1MQ-Lot-TUY-122025-GC49.pdf",
+            "id": "CHA-122025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/01/COA_307_50mg5-Amino-1MQ-Lot-TUY-122025-GC49-1.pdf",
+            "id": "TUY-122025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/01/COA_312_5mg-5-Amino-1MQ-Lot-CHA-122025-GB81-1.pdf",
+            "id": "CHA-122025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/03/COA_418_5-Amino-1MQ_5mg-Lot-CHA-022626-GU65.pdf",
+            "id": "CHA-022626(5mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/04/COA_554_5-Amino-1MQ_50mg-Lot-TUY-030926-HG5.pdf",
+            "id": "TUY-030926(50mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/05/COA_556_5-Amino_50mg-Lot-SYN-030926.pdf",
+            "id": "SYN-030926(50mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/07/COA_658_5-Amino-1MQ_50mg-Lot-SYN-051326.pdf",
+            "id": "SYN-051326(50mg)"
+          }
+        ],
+        "product": "5-Amino-1MQ"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/02/COA_391_Acetic-Acid_10mL-Lot-CHA-122025-GD26.pdf",
+            "id": "CHA-122025 (10mL)"
+          }
+        ],
+        "product": "Acetic Acid"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/10/COA_237_COA11180_Pure_Health_Peptides_Adipotide_5mg2.pdf",
+            "id": "TUY-071525"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/12/COA_297_TUY-102025_11482_Pure_Health_Peptides_Adipotide_10mg.pdf",
+            "id": "TUY-101025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/07/COA_643_Adipotide_5mg-Lot-TUY-051326.pdf",
+            "id": "TUY-051326(5mg)"
+          }
+        ],
+        "product": "Adipotide"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/01/COA_344_50mg_AICAR-Lot-CHA-122025-GD9.pdf",
+            "id": "CHA-122025"
+          }
+        ],
+        "product": "AICAR"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/04/COA_61_COA10141_PureHealthPeptides_AOD9604.pdf",
+            "id": "FPC-022125"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/04/COA_65_COA10146_PureHealthPeptides_AOD9604.pdf",
+            "id": "TUY-031425"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/04/COA_72_COA10155_PureHealthPeptide_AOD9604_CJC1295_Ipamorelin-1.pdf",
+            "id": "TUY-031425"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/07/COA_130_COA10629_Pure_Health_Peptides_AOD9604_TUY-060125.pdf",
+            "id": "TUY-060125"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/07/COA_136_COA10659_Pure_Health_Peptides_AOD9604.pdf",
+            "id": "TUY-060125"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/08/COA_151_COA10793_Pure_Health_Peptides_AOD9604.pdf",
+            "id": "TUY-071525"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/09/COA_174_COA10877_Pure_Health_Peptides_AOD9604.pdf",
+            "id": "TUY-081025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/12/COA_285_COA_11-27-25-AOD9604-Lot-TUY-101025-FW9.pdf",
+            "id": "TUY-101025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/12/COA_286_COA_11-27-25-AOD9604-Lot-TUY-101025-FW10.pdf",
+            "id": "TUY-101025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/04/COA_437_AOD9604_5mg-Lot-TUY-022626-GY55.pdf",
+            "id": "TUY-022626(5mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/04/COA_438_AOD9604_5mg-Lot-TUY-030926-GW75.pdf",
+            "id": "TUY-030926(5mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/04/COA_509_AOD9604_10mg-Lot-TUY-030926-HC2.pdf",
+            "id": "TUY-030926 (10mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/04/COA_553_AOD9604_10mg-Lot-TUY-040126-HG4.pdf",
+            "id": "TUY-040126(10mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/07/COA_636_AOD9604_5mg-Lot-TUY-040126.pdf",
+            "id": "TUY-040126 (5mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/07/COA_648_AOD9604_10mg-Lot-TUY-051326.pdf",
+            "id": "TUY-051326(10mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/07/COA_654_AOD9604_5mg-Lot-TUY-051326.pdf",
+            "id": "TUY-051326(5mg)"
+          }
+        ],
+        "product": "AOD9604"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/12/COA_295_TUY-102025_11480_Pure_Health_Peptides_ARA290_10mg.pdf",
+            "id": "TUY-102025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/12/COA_296_TUY-102025_11481_Pure_Health_Peptides_ARA290_20mg.pdf",
+            "id": "TUY-102025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/06/COA_592_ARA-290_10mg-Lot-SYN-022626.pdf",
+            "id": "SYN-022626(10mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/06/COA_593_ARA-290_20mg-Lot-SYN-022626.pdf",
+            "id": "SYN-022626(20mg)"
+          }
+        ],
+        "product": "ARA-290"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/01/COA_365_Bacteriostatic-Water_10mL-Lot-JTP-110125-GD25.pdf",
+            "id": "JTP-110125"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/04/COA_510_Bacteriostatic-Water_10mL-Lot-CHA-022626-HB24.pdf",
+            "id": "CHA-022626(10mL)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/04/COA_549_Bacteriostatic-Water_10mL-Lot-JTP-030926-HG3.pdf",
+            "id": "JTP-030926(10mL)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/05/COA_583_Bacteriostatic-Water_10mL-Lot-CHA-040126-HH28.pdf",
+            "id": "CHA-040126(10mL)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/06/COA_617_Bacteriostatic-Water_10mL-Lot-JTP-040926.pdf",
+            "id": "JTP-040926(10mL)"
+          }
+        ],
+        "product": "Bacteriostatic Water"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/02/COA_13_BPC-157_FPC-122624_2025-01-23.pdf",
+            "id": "FPC-122624"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/04/COA_43_COA10099_PureHealthPeptide_BPC157.pdf",
+            "id": "SJZJB0888"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/06/COA_87_COA10354_PureHealthPeptides_BPC157.pdf",
+            "id": "FPC-050225"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/06/COA_77_COA10269_PureHealthPeptide_BPC157-1.pdf",
+            "id": "TUY-031425"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/06/COA_109_COA10430_PureHealthPeptides_BPC157.pdf",
+            "id": "CHA-070125"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/07/COA_131_COA10630_Pure_Health_Peptides_BPC157.pdf",
+            "id": "TUY-060125"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/02/COA_14_BPC-157_Thymosin-beta4_FPC-122624_2025-01-24.pdf",
+            "id": "FPC-122624"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/02/COA_1_BPC-157_Thymosin-beta4_SJZJB0888_2025-01-08.pdf",
+            "id": "SJZJB0888"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/07/COA_140_COA10726_Pure_Health_Peptides_BPC-157.pdf",
+            "id": "TUY-071525"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/07/COA_142_COA10744_Pure_Health_Peptides_BPC157.pdf",
+            "id": "CHA-072025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/08/COA_153_COA10797_Pure_Health_Peptides_BPC-157-1.pdf",
+            "id": "CHA-072025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/08/COA_160_COA10839_Pure_Health_Peptides_BPC157_TUY-081025.pdf",
+            "id": "TUY-081025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/10/COA_212_COA11122_Pure_Health_Peptides_BPC-157_10mg.pdf",
+            "id": "TUY-101025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/10/COA_213_COA11123_Pure_Health_Peptides_BPC-157_15mg.pdf",
+            "id": "TUY-101025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/10/COA_214_COA11124_Pure_Health_Peptides_BPC-157_5mg.pdf",
+            "id": "TUY-101025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/03/COA_430_BPC-157_10mg-Lot-SYN-022626.pdf",
+            "id": "SYN-022626(10mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/04/COA_439_BPC-157_5mg-Lot-CHA-022626-GY56.pdf",
+            "id": "CHA-022626(5mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/04/COA_447_BPC-157_10mg-Lot-SYN-030926.pdf",
+            "id": "SYN-030926(10mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/04/COA_449_BPC-157_5mg-Lot-SYN-030926.pdf",
+            "id": "SYN-030926(5mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/04/COA_538_BPC-157_15mg-Lot-SYN-030926.pdf",
+            "id": "SYN-030926(15mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/06/COA_610_BPC-157_10mg-Lot-SYN-040126.pdf",
+            "id": "SYN-040126(10mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/06/COA_611_BPC-157_5mg-Lot-SYN-040126.pdf",
+            "id": "SYN-040126(5mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/07/COA_646_BPC-157_15mg-Lot-TUY-060326.pdf",
+            "id": "TUY-060326(15mg)"
+          }
+        ],
+        "product": "BPC-157"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/06/COA_89_COA10356_PureHealthPeptide_BPC157_TB500.pdf",
+            "id": "FPC-050225"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/06/COA_81_COA10291_PureHealthPeptide_BPC157_TB500.pdf",
+            "id": "CHA-041525"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/06/COA_112_COA10438_PureHealthPeptide_BPC157_TB500.pdf",
+            "id": "CHA-070125"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/07/COA_141_COA10727_Pure_Health_Peptides_BPC-157_TB-4.pdf",
+            "id": "TUY-071525"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/09/COA_186_COA10926_Pure_Health_Peptides_BPC-TB500_Blend.pdf",
+            "id": "TUY-081025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/10/COA_215_COA11125_Pure_Health_Peptides_BPC-157_TB4_5mg.pdf",
+            "id": "TUY-101025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/10/COA_216_COA11126_Pure_Health_Peptides_BPC-157_TB4_10mg.pdf",
+            "id": "TUY-101025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/03/COA_428_BPC-157_TB-500_10_10MG-Lot-SYN-022626.pdf",
+            "id": "SYN-022626(10/10mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/04/COA_539_BPC-157_TB-500_10_10mg-Lot-SYN-030926.pdf",
+            "id": "SYN-030926(10/10mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/04/COA_540_BPC-157_TB-500_5_5mg-Lot-SYN-030926.pdf",
+            "id": "SYN-030926(5/5mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/06/COA_601_BPC-157_TB-500_5_5mg-Lot-SYN-040126.pdf",
+            "id": "SYN-040126(5/5mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/06/COA_602_BPC-157_TB-500_10_10mg-Lot-SYN-040126.pdf",
+            "id": "SYN-040126(10/10mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/06/COA_620_BPC-157_TB-500_10_10mg-Lot-CHA-060326.pdf",
+            "id": "CHA-060326(10/10mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/06/COA_622_-BPC-157_TB-500_5_5mg-Lot-CHA-060326.pdf",
+            "id": "CHA-060326(5/5mg)"
+          }
+        ],
+        "product": "BPC-157/TB-500"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/07/COA_659_Cardiogen_20mg-Lot-SYN-022626.pdf",
+            "id": "SYN-022626(20mg)"
+          }
+        ],
+        "product": "Cardiogen"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/09/COA_183_COA10912_Pure_Health_Peptides_Cartalax.pdf",
+            "id": "TUY-081025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/11/COA_281_Cartalax_20mg_TUY-102025_Pure2511200093.pdf",
+            "id": "TUY-102025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/11/COA_282_Cartalax_40mg_TUY-102025_Pure2511200094.pdf",
+            "id": "TUY-102025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/12/COA_284_Cartalax_-10mg_Pure2511200092-.pdf",
+            "id": "TUY-102025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/04/COA_511_Cartalax_10mg-Lot-TUY-030926-HB91.pdf",
+            "id": "TUY-030926(10mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/04/COA_512_Cartalax_20mg-Lot-TUY-030926-HB92.pdf",
+            "id": "TUY-030926(20mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/05/COA_573_Cartalax_30mg-Lot-TUY-030926-HB93.pdf",
+            "id": "TUY-030926(30mg)"
+          }
+        ],
+        "product": "Cartalax"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/01/COA_366_Chonluten_20mg-Lot-CHA-122025-GJ17.pdf",
+            "id": "CHA-122025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/04/COA_546_Chonluten_20mg-Lot-CHA-040126-HE27.pdf",
+            "id": "CHA-040126(20mg)"
+          }
+        ],
+        "product": "Chonluten"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/02/COA_15_CJC-1295_noDAC_FPC-122624_2025-01-23.pdf",
+            "id": "FPC-122624"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/04/COA_44_COA10100_PureHealthPeptide_CJC1295NoDAC.pdf",
+            "id": "SJZJB0888"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/07/COA_135_COA10636_Pure_Health_Peptides_CJC-1295_no_Dac.pdf",
+            "id": "TUY-060125"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/11/COA_255_COA11252_Pure_Health_Peptides_CJC-1295_no_dac_5mg.pdf",
+            "id": "TUY-101025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/11/COA_256_COA11253_Pure_Health_Peptides_CJC1295_no_dac_10mg.pdf",
+            "id": "TUY-101025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/01/COA_367_CJC-1295-no-DAC_10mg-Lot-TUY-011526-GI55.pdf",
+            "id": "TUY-011526"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/04/COA_513_CJC-1295_10mg-Lot-TUY-030926-GZ99.pdf",
+            "id": "TUY-030926(10mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/04/COA_514_CJC-1295_5mg-Lot-TUY-030926-HA1.pdf",
+            "id": "TUY-030926(5mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/07/COA_650_CJC-1295_10mg-Lot-TUY-060326.pdf",
+            "id": "TUY-060326(10mg)"
+          }
+        ],
+        "product": "CJC-1295"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/03/COA_40_CJC1295WDAC_FPC.pdf",
+            "id": "FP-122624"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/04/COA_58_COA10124_PureHealthPeptides_CJC1295WDAC.pdf",
+            "id": "COC-030325"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/04/COA_67_COA10148_PureHealthPeptides_CJC1295WDAC.pdf",
+            "id": "TUY-031425"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/07/COA_134_COA10635_Pure_Health_Peptides_CJC1295_DAC.pdf",
+            "id": "TUY-060125"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/11/COA_253_COA11250_Pure_Health_Peptides_CJC-1295_with_DAC_5mg.pdf",
+            "id": "TUY-101025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/11/COA_254_COA11251_Pure_Health_Peptides_CJC-1295_w_DAC_10mg.pdf",
+            "id": "TUY-101025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/07/COA_642_CJC-1295-DAC_5mg-Lot-TUY-051326.pdf",
+            "id": "TUY-051326(5mg)"
+          }
+        ],
+        "product": "CJC-1295 (with DAC)"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/06/COA_75_COA10262_PureHealthPeptide_CJC1295DAC_Ipamorelin.pdf",
+            "id": "CHA-041525"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/09/COA_181_COA10910_Pure_Health_Peptides_CJC_Ipamorelin.pdf",
+            "id": "TUY-081025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/10/COA_224_COA11128_Pure_Health_Peptides_CJC-Ipamorelin_5.5mg.pdf",
+            "id": "TUY-101025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/10/COA_225_COA11129_Pure_Health_Peptides_CJC_Ipamorelin_10.10mg.pdf",
+            "id": "TUY-101025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/04/COA_445_CJC-1295DAC_Ipamorelin_10_10mg-Lot-TUY-022626.pdf",
+            "id": "TUY-022626(10/10mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/04/COA_505_CJC-1295DAC_Ipamorelin_5_5mg-Lot-TUY-022626.pdf",
+            "id": "TUY-022626(5/5mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/06/COA_587_CJC-1295DAC_Ipamorelin_10_10mg-Lot-TUY-040126-HO18.pdf",
+            "id": "TUY-040126(10/10mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/06/COA_612_CJC-1295_DAC_Ipamorelin-5_5mg-Lot-TUY-040126.pdf",
+            "id": "TUY-040126(5/5mg)"
+          }
+        ],
+        "product": "CJC-1295 (with DAC) /Ipamorelin Blend"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/06/COA_90_COA10357_PureHealthPeptide_CJC1295_Ipamorelin.pdf",
+            "id": "TUY-031415"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/06/COA_99_COA10367_PureHealthPeptide_CJC1295_Ipamorelin.pdf",
+            "id": "CHA-041525"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/06/COA_113_COA10439_PureHealthPeptide_CJC1295_Ipamorelin.pdf",
+            "id": "CHA-070125"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/02/COA_4_Ipamorelin_CJC-1295_nD_SJZJB0888_2025-01-08.pdf",
+            "id": "SJZJB0888"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/02/COA_18_Ipamorelin_CJC-1295_nD_FPC-122624_2025-01-25.pdf",
+            "id": "FPC-122624"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/07/COA_143_COA10745_Pure_Health_Peptides_cjc-ipam.pdf",
+            "id": "CHA-072025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/08/COA_156_COA10800_Pure_Health_Peptides_CJC-Ipamorelin-1.pdf",
+            "id": "TUY-071525"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/08/COA_162_COA10841_Pure_Health_Peptides_CJC_Ipamorelin_Blend_TUY-081025.pdf",
+            "id": "TUY-081025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/09/COA_180_COA10883_Pure_Health_Peptides_CJC-no_DaC_Ipamorelin.pdf",
+            "id": "TUY-081025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/09/COA_188_COA10984_Pure_Health_Peptides_CJC_Ipamorelin.pdf",
+            "id": "TUY-081025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/10/COA_218_1_10-07-2025_Sample-1-Lot-TUY-071525-FL28.pdf",
+            "id": "TUY-101025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/10/COA_219_2_10-07-2025_Sample-2-Lot-TUY-081025-FL29.pdf",
+            "id": "TUY-101025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/10/COA_220_3_10-07-2025_Sample-3-Lot-CHA-070125-FL30.pdf",
+            "id": "TUY-101025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/10/COA_221_4_10-07-2025_Sample-4-Lot-TUY-081025-FL31.pdf",
+            "id": "TUY-101025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/10/COA_223_6_10-07-2025_Sample-6-Lot-TUY-071525-FL33.pdf",
+            "id": "TUY-071525"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/12/COA_287_COA_11-27-25-CJC-1295_Ipamorelin-Lot-TUY-101025-FU50.pdf",
+            "id": "TUY-101025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/12/COA_288_COA_11-27-25-CJC-1295_Ipamorelin-Lot-TUY-101025-FU51.pdf",
+            "id": "TUY-101025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/05/COA_565_CJC-1295_Ipamorelin_5_5mg-Lot-TUY-040126-HH50.pdf",
+            "id": "TUY-040126(5/5mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/05/COA_585_CJC-1295_Ipamorelin_5_5mg-Lot-TUY-030926-GY29.pdf",
+            "id": "TUY-030926(5/5mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/06/COA_586_CJC-1295_Ipamorelin_10_10mg-Lot-TUY-040126-HM2.pdf",
+            "id": "TUY-040126(10_10mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/06/COA_623_CJC-1295_Ipamorelin_10_10mg-Lot-TUY-030926.pdf",
+            "id": "TUY-030926(10/10mg)"
+          }
+        ],
+        "product": "CJC-1295/|pamorelin Blend"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/01/COA_368_Cortagen_20mg-Lot-CHA-122025-GI58.pdf",
+            "id": "CHA-122025"
+          }
+        ],
+        "product": "Cortagen"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/02/COA_16_DSIP_FPC-122624.pdf",
+            "id": "FCP-122624"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/02/COA_2_DSIP_SJZJB0888_2025-01-09.pdf",
+            "id": "SJZJB0888"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/06/COA_91_COA10358_PureHealthPeptides_DSIP.pdf",
+            "id": "FPC-050225"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/06/COA_103_COA10391_PureHealthPeptides_DSIP.pdf",
+            "id": "JTP-041125"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/06/COA_110_COA10432_PureHealthPeptides_DSIP.pdf",
+            "id": "CHA-070125"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/08/COA_144_COA10654_Pure_Health_Peptides_DSIP_TUY.pdf",
+            "id": "TUY-060125"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/09/COA_189_COA11004_Pure_Health_Peptides_DSIP.pdf",
+            "id": "TUY-081025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/12/COA_289_COA_11-27-25-DSIP-Lot-TUY-101025-FW13.pdf",
+            "id": "TUY-101025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/12/COA_290_COA_11-27-25-DSIP-Lot-TUY-101025-FW14.pdf",
+            "id": "TUY-101025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/01/COA_342_10mg_DSIP-Lot-TUY-010826-GG36.pdf",
+            "id": "TUY-010826"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/02/COA_350_DSIP_10mg-Lot-CHA-011526-GH94.pdf",
+            "id": "CHA-011526"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/02/COA_378_DSIP_10mg-Lot-TUY-011526-GJ91.pdf",
+            "id": "TUY-011526 (10mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/04/COA_440_DSIP_5mg-Lot-TUY-022626-GY57.pdf",
+            "id": "TUY-022626(5mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/05/COA_574_DSIP_5mg-Lot-TUY-040126-HI10.pdf",
+            "id": "TUY-040126(5mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/06/COA_614_DSIP-10mg-Lot-CHA-060326-.pdf",
+            "id": "CHA-060326(10mg)"
+          }
+        ],
+        "product": "DSIP"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/03/COA_39_Epitalon_FPC.pdf",
+            "id": "FP-122624"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/04/COA_45_COA10101_PureHealthPeptide_Epithalon.pdf",
+            "id": "SJZJB0888"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/04/COA_54_COA10120_PureHealthPeptide_Epithalon.pdf",
+            "id": "COC-030325"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/07/COA_127_COA10505_PureHealthPeptide_Epithalon.pdf",
+            "id": "TUY-031425"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/09/COA_190_COA11005_Pure_Health_Peptides_Epithalon.pdf",
+            "id": "TUY-060125"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/10/COA_222_5_10-07-2025_Sample-5-Lot-TUY-060125-FL32.pdf",
+            "id": "TUY-060125"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/10/COA11174_Pure_Health_Peptides_Epithalon_20mg.pdf",
+            "id": "TUY-101025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/11/COA_263_COA11304_Pure_Health_Peptides_Epithalon_50mg.pdf",
+            "id": "TUY-101025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/11/COA_264_COA11305_Pure_Health_Peptides_Epithalon_10mg.pdf",
+            "id": "TUY-101025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/01/COA_306_Epithalon-Lot-TUY-122025-GC48.pdf",
+            "id": "TUY-122025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/01/COA_369_Epithalon_50mg-Lot-TUY-011526-GI54-1.pdf",
+            "id": "TUY-011526"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/02/COA_351_Epithalon_10mg-Lot-TUY-011526-GI3.pdf",
+            "id": "TUY-011526"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/04/COA_446_Epithalon_10mg-Lot-TUY-022626-GY58.pdf",
+            "id": "TUY-022626(10mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/04/COA_547_Epithalon_10mg-Lot-TUY-030926-HG6.pdf",
+            "id": "TUY-030926(10mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/07/COA_645_Epithalon_50mg-Lot-TUY-051326.pdf",
+            "id": "TUY-051326(50mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/07/COA_649_Epithalon_20mg-Lot-TUY-051326.pdf",
+            "id": "TUY-051326(20mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/07/COA_656_Epithalon_10mg-Lot-TUY-051326.pdf",
+            "id": "TUY-051326(10mg)"
+          }
+        ],
+        "product": "Epithalon"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/12/COA_279_Follistatin-344-Lot-TUY-101025-FQ40.pdf",
+            "id": "TUY-101025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/02/COA_386_Follistatin-344_1mg-Lot-CHA-011526-GJ67.pdf",
+            "id": "CHA-011526 (1mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/03/COA_416_Follistatin-344_1mg-Lot-CHA-011926-3111-2.pdf",
+            "id": "CHA-011926 (1mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/06/COA_594_Follistatin-344_1mg-Lot-TUY-040126-.pdf",
+            "id": "TUY-040126(1mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/06/COA_618_Follistatin-344_1mg-Lot-CHA-051326.pdf",
+            "id": "CHA-051326(1mg)"
+          }
+        ],
+        "product": "Follistatin 344"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/01/COA_348_1mg_Follistatin-315-Lot-CHA-122025-GD6.pdf",
+            "id": "CHA-122025"
+          }
+        ],
+        "product": "Follistatin-315"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/09/COA_191_9-19-25_COA_FOXO4-DRI_TUY-081025_20250912.pdf",
+            "id": "TUY-081025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/11/COA_277_FOXO4-DRI-5mg-Lot-TUY-102025-FT58.pdf",
+            "id": "TUY-102025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/11/COA_278_FOXO4-DRI-10MG-Lot-TUY-102025-FT59.pdf",
+            "id": "TUY-102025"
+          }
+        ],
+        "product": "FOXO4-DRI"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/10/COA_226_COA_10-07-2025_GDF-8-Lot-TUY-081025-FL29.pdf",
+            "id": "TUY-081025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/12/COA_300_GDF-8-Lot-TUY-111125-FY34.pdf",
+            "id": "TUY-111125"
+          }
+        ],
+        "product": "GDF-8"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/02/COA_17_GHK-Cu_FPC-122624_2025-01-22.pdf",
+            "id": "FPC-122624"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/04/COA_46_COA10102_PureHealthPeptide_GHKCu.pdf",
+            "id": "SJZJB0888"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/06/COA_79_COA10271_PureHealthPeptide_GHKCu.pdf",
+            "id": "COC-030325"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/06/COA_104_COA10392_PureHealthPeptide_GHKCu.pdf",
+            "id": "TUY-031425"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/07/COA_118_COA_GHK-Cu_CHA-041525_20250624.pdf",
+            "id": "CHA-041525"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/07/COA_138_COA_GHK-Cu_CHA-070125_20250716.pdf",
+            "id": "CHA-070125"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/12/COA_291_COA_11-27-25-GHK-Cu-Lot-TUY-101025-FW11-1.pdf",
+            "id": "TUY-101025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/12/COA_292_COA_11-27-25-GHK-Cu-Lot-TUY-101025-FW12.pdf",
+            "id": "TUY-101025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/01/COA-_303_GHK-Cu-Lot-TUY-122025-GB56.pdf",
+            "id": "TUY-122025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/02/COA_349_50mg_GHK-Cu-Lot-CHA-010826-GD98-1.pdf",
+            "id": "TUY-010826"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/02/COA_383_GHK-Cu_100mg-Lot-RPL-011526-GJ96.pdf",
+            "id": "RPL-011526 (100mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/03/COA_419_GHK-Cu_50mg-Lot-TUY-022626-GV80.pdf",
+            "id": "TUY-022626(50mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/04/COA_515_GHK-Cu_50mg-Lot-TUY-030926-HB30.pdf",
+            "id": "TUY-030926(50mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/04/COA_516_GHK-Cu_100mg-Lot-TUY-030926-HB31.pdf",
+            "id": "TUY-030926(100mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/04/COA_413_GHK-Cu_100mg-Lot-TUY-011926-2886.pdf",
+            "id": "TUY-011926(100mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/05/COA_575_GHK-Cu_50mg-Lot-TUY-040126-HI9.pdf",
+            "id": "TUY-040126(50mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/05/COA_576_GHK-Cu_100mg-Lot-TUY-040126-HI48.pdf",
+            "id": "TUY-040126(100mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/07/COA_647_GHK-Cu_100mg-Lot-TUY-060326.pdf",
+            "id": "TUY-060326(100mg)"
+          }
+        ],
+        "product": "GHK-Cu"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/04/COA_50_COA10114_PureHealthPeptide_GHRP-2-2.pdf",
+            "id": "FPC-022125"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/06/COA_100_COA10368_PureHealthPeptide_GHRP-2.pdf",
+            "id": "JTP-041125"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/07/COA_124_COA10461_PureHealthPeptide_GHRP-2.pdf",
+            "id": "TUY-060125"
+          }
+        ],
+        "product": "GHPR-2"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/02/COA_33_GHRP-6_FPC-122624_2025-02-13.pdf",
+            "id": "FPC-122624"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/04/COA_42_GHRP-6_FPC.pdf",
+            "id": "FP-122624"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/09/COA_172_COA10822_Pure_Health_Peptides_GHRP6_CHA-072025-1.pdf",
+            "id": "CHA-072025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/09/COA_195_9-22-25_COA_GHRP-6_TUY-081025_20250925.pdf",
+            "id": "TUY-081025"
+          }
+        ],
+        "product": "GHPR-6"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/04/COA_52_COA10116_PureHealthPeptide_BPC157_TB500_GHKCu-1.pdf",
+            "id": "FPC-022125"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/07/COA_126_COA10446_PureHealthPeptides_GLOW.pdf",
+            "id": "CHA-070125"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/04/COA_68_COA10156_PureHealthPeptide_BPC157_GHKCu_TB500.pdf",
+            "id": "TUY-031425"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/06/COA_80_COA10272_PureHealthPeptide_BPC157_GHKCu_TB500.pdf",
+            "id": "JTP-041125"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/07/COA_137_GLOW_COA_BPC-157_GHK-Cu_Thymosin_beta4_CHA-041525_20250716.pdf",
+            "id": "CHA-041525"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/09/COA_179_COA10882_Pure_Health_Peptides_GLOW.pdf",
+            "id": "TUY-081025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/10/COA_247_COA11192_Pure_Health_Peptides_GLOW_5.50.2.pdf",
+            "id": "TUY-101025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/10/COA_248_COA11193_Pure_Health_Peptides_GLOW_10.50.10.pdf",
+            "id": "TUY-101025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/04/COA_555_GLOW_5_50_2mg-Lot-TUY-030926.pdf",
+            "id": "TUY-030926(5/50/2mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/05/COA_567_GLOW-BPC-157_GHK-Cu_TB-500_5_50_2mg-Lot-TUY-030926-HB90.pdf",
+            "id": "TUY-030926(5/50/2mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/06/COA_597_GLOW_10_50_10mg-Lot-TUY-040126-1.pdf",
+            "id": "TUY-040126(10/50/10mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/06/COA_598_GLOW_5_50_2mg-Lot-TUY-040126.pdf",
+            "id": "TUY-040126(5/50/2mg)"
+          }
+        ],
+        "product": "GLOW (BPC157/GHK-Cu/TB500 Blend)"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/04/COA_73_COA10157_PureHealthPeptide_BPC157_GHKCu_TB500_ThymosinA1-1.pdf",
+            "id": "TUY-031425"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/08/COA_163_COA10842_Pure_Health_Peptides_GLOW_PLUS.pdf",
+            "id": "TUY-081025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/11/COA_252_COA11249_Pure_Health_Peptides_GLOW_PLUS.pdf",
+            "id": "TUY-101025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/11/COA_273_COA11390_Pure_Health_Peptides_GLOW_Plus.pdf",
+            "id": "TUY-101025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/02/COA_394_GLOW-Plus-BP_TB_GHK_TA1_10_50_10_5mg-Lot-N_A-GI61.pdf",
+            "id": "TUY-011526 (10/50/10/5mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/06/COA_596_GLOW-Plus_10_50_10_5mg-Lot-TUY-040126.pdf",
+            "id": "TUY-040126(10/50/10/5mg)"
+          }
+        ],
+        "product": "GLOW PLUS (BPC157/GHK-Cu/TB500/TA-1 Blend)"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/04/COA_53_COA10117_PureHealthPeptide_Cagrilintide-2.pdf",
+            "id": "FPC-022125"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/04/COA_55_COA10121_PureHealthPeptide_Cagrilintide.pdf",
+            "id": "COC-030325"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/11/COA_257_COA11298_Pure_Health_Peptides_Cagrilintide_10mg.pdf",
+            "id": "TUY-101025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/04/COA_517_GLP-1C_10mg-Lot-TUY-030926-GZ23.pdf",
+            "id": "TUY-030926(10mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/06/COA_595_GLP-1-C_10mg-Lot-TUY-040126.pdf",
+            "id": "TUY-040126(10mg)"
+          }
+        ],
+        "product": "GLP-1 (C)"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/12/COA_302_GLP-1-C_S_5MG_Pure2511240191-2-1.pdf",
+            "id": "TUY-111125"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/12/COA_301_GLP-1-C_S_10MG-Lot-TUY-111125-FY33.pdf",
+            "id": "TUY-111125"
+          }
+        ],
+        "product": "GLP-1 (C/S)"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/02/COA_9_Semaglutide_SJZJB0888_2025-01-09.pdf",
+            "id": "SJZJB0888"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/02/COA_22_Semaglutide_FPC-122624_2025-01-27.pdf",
+            "id": "FPC-122624"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/06/COA_84_COA10294_PureHealthPeptide_Semaglutide.pdf",
+            "id": "CHA-041525"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/10/COA_217_COA11127_Pure_Health_Peptides_Semaglutide_5mg.pdf",
+            "id": "TUY-101025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/02/COA_352_GLP-1-S_5mg-Lot-CHA-011526-GJ69-1.pdf",
+            "id": "CHA-011526 (5mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/03/COA_420_GLP-1-S_5mg-Lot-TUY-022626-GV36.pdf",
+            "id": "TUY-022626(5mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/04/COA_506_-GLP-1S_-5mg-Lot-TUY-030926.pdf",
+            "id": "TUY-030926(5mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/05/COA_566_GLP-1-S_10mg-Lot-TUY-022626-GV37.pdf",
+            "id": "TUY-022626(10mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/05/COA_568_GLP-1-S_10mg-Lot-TUY-030926-HB25.pdf",
+            "id": "TUY-030926(10mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/05/COA_569_GLP-1-S_15mg-Lot-TUY-030926-HB26.pdf",
+            "id": "TUY-030926(15mg)"
+          }
+        ],
+        "product": "GLP-1 (S)"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/08/COA_147_COA10788_Pure_Health_Peptides_Survodutide_CHA-072025.pdf",
+            "id": "CHA-072025"
+          }
+        ],
+        "product": "GLP-2 (SU)"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/02/COA_27_Tirzepatide_FPC-122624_2025-01-27.pdf",
+            "id": "FPC-122624"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/02/COA_12_Tirzepatide_SJZJB0888_2025-01-09.pdf",
+            "id": "SJZJB0888"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/09/COA_198_COA10965_Pure_Health_Peptides_Tirzepatide.pdf",
+            "id": "TUY-081025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/10/COA_207_COA11117_Pure_Health_Peptides_Tirzepatide_30mg.pdf",
+            "id": "TUY-101025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/10/COA_208_COA11118_Pure_Health_Peptides_Tirzepatide_20mg.pdf",
+            "id": "TUY-101025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/10/COA_209_COA11119_Pure_Health_Peptides_Tirzepatide_15mg.pdf",
+            "id": "TUY-101025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/10/COA_210_COA11120_Pure_Health_Peptides_Tirzepatide_10mg.pdf",
+            "id": "TUY-101025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/01/COA_311_2mgMGF-Lot-CHA-122025-GB82-1.pdf",
+            "id": "CHA-122025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/01/COA_323_GLP-2T_30mg_Pure2601120019.pdf",
+            "id": "FPC-121825"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/02/COA_353_GLP-2T-Tirzepatide_20mg-Lot-FPC-121825-GI1.pdf",
+            "id": "FPC-121825"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/02/COA_387_GLP-2T_10mg-Lot-FPC-121825-GK78.pdf",
+            "id": "FPC-121825 (10mg)"
+          }
+        ],
+        "product": "GLP-2 (T)"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/02/COA_8_Retatrutide_SJZJB0888_2025-01-09.pdf",
+            "id": "SJZJB0888"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/02/COA_21_Retatrutide_FPC-122624_2025-01-22-1.pdf",
+            "id": "FPC-122624"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/06/COA_82_COA10292_PureHealthPeptide_Retatrutide_CHA041525.pdf",
+            "id": "CHA-041525"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/06/COA_83_COA10293_PureHealthPeptide_Retatrutide_FPC022125.pdf",
+            "id": "FPC-022125"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/06/COA_108_COA10403_PureHealthPeptide_Retatrutide_CHA-041525-1.pdf",
+            "id": "CHA-041525"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/08/COA_154_COA10798_Pure_Health_Peptides_Retatrutide-1.pdf",
+            "id": "CHA-072025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/08/COA_157_COA10801_Pure_Health_Peptides_Retatrutide.pdf",
+            "id": "TUY-071525"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/09/COA_173_COA10876_Pure_Health_Peptides_Retatrutide.pdf",
+            "id": "TUY-081025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/09/COA_194_9-19-25_COA_Retatrutide_TUY-081025_20250912-1.pdf",
+            "id": "TUY-081025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/10/COA_202_COA11096_Pure_Health_Peptides_Retatrutide_10mg_TUY-101025.pdf",
+            "id": "TUY-101025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/10/COA_203_COA11097_Pure_Health_Peptides_Retatrutide_20mg_TUY-101025.pdf",
+            "id": "TUY-101025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/10/COA_204_COA11098_Pure_Health_Peptides_Retatrutide_30mg_TUY-101025.pdf",
+            "id": "TUY-101025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/10/COA_205_COA11099_Pure_Health_Peptides_Retatrutide_15mg_TUY-101025.pdf",
+            "id": "TUY-101025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/10/COA_211_COA11121_Pure_Health_Peptides_Retatrutide_5mg.pdf",
+            "id": "TUY-101025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/01/COA_335_GLP-3R_10mg_COA2671-2.pdf",
+            "id": "FPC-121825"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/01/COA_321_GLP-3R_15mg_2670.pdf",
+            "id": "FPC-121825"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/01/COA_320_GLP-3R_20mg2672.pdf",
+            "id": "FPC-121825"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/01/COA_371_GLP-3R-Retatrutide_20mg-Lot-CHA-011526-GI56.pdf",
+            "id": "CHA-011526"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/01/COA_370_GLP-3R_10mg-Retatrutide-Lot-CHA-011526-GI53.pdf",
+            "id": "CHA-011526"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/02/COA_354_GLP-3R_10mg-Lot-FPC-121825-GG57.pdf",
+            "id": "FPC-121825"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/02/COA_355_GLP-3R-Retatrutide_5mg-Lot-CHA-011526-GH91.pdf",
+            "id": "CHA-011526"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/02/COA_380_GLP-3R_20mg-Lot-RPL-011526-GJ92.pdf",
+            "id": "RPL-011526 (20mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/02/COA_381_GLP-3R_10mg-Lot-RPL-011526-GJ93.pdf",
+            "id": "RPL-011526 (10mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/02/COA_395_GLP-3-R_15mg-Lot-RPL-011526-GJ63.pdf",
+            "id": "RPL-011526 (15mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/02/COA_405_GLP-3R_20mg-Lot-CHA-011926-2848.pdf",
+            "id": "CHA-011926 (20mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/02/COA_406_GLP-3R_5mg-Lot-TUY-011926-2849.pdf",
+            "id": "TUY-011926 (5mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/02/COA_410_GLP-3R_10mg-Lot-CHA-011926-2850.pdf",
+            "id": "CHA-011926 (10mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/03/COA_414_GLP-3R_15mg_2843-2.pdf",
+            "id": "CHA-011926 (15mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/03/COA_425_GLP-3R_15mg-Lot-SYN-030926.pdf",
+            "id": "SYN-030926(15mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/03/COA_426_GLP-3R_5mg-Lot-SYN-030926.pdf",
+            "id": "SYN-030926(5mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/03/COA_427_GLP-3R_30mg-Lot-SYN-030926.pdf",
+            "id": "SYN-030926(30mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/03/COA_431_GLP-3R_10mg-Lot-SYN-030926.pdf",
+            "id": "SYN-030926(10mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/05/COA_577_GLP-3-R_10mg-Lot-RPL-011526-HK45.pdf",
+            "id": "TUY-011526(10mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/06/COA_591_GLP-3-R_15mg-Lot-SYN-040126.pdf",
+            "id": "SYN-040126(15mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/06/COA_599_GLP-3R_15mg-Lot-SYN-040126.pdf",
+            "id": "SYN-040126(15mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/06/COA_600_GLP-3R_10mg-Lot-SYN-040126.pdf",
+            "id": "SYN-040126(10mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/06/COA_605_GLP-3R_30mg-Lot-SYN-040126.pdf",
+            "id": "SYN-040126(30mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/06/COA_606_GLP-3R_5mg-Lot-SYN-040126.pdf",
+            "id": "SYN-040126(5mg)"
+          }
+        ],
+        "product": "GLP-3 (R)"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/03/COA_35_COA10071_PureHealthPeptides_Glutathione.pdf",
+            "id": "FPC-122624"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/06/COA_76_COA10268_PureHealthPeptides_Glutathione.pdf",
+            "id": "FPC-022125"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/06/COA_102_COA10390_PureHealthPeptides_Glutathione.pdf",
+            "id": "JTP-041125"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/07/COA_133_COA10634_Pure_Health_Peptides_Glutathione.pdf",
+            "id": "TUY-060125"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/08/COA_145_COA10656_Pure_Health_Peptides_L-Glutathione_JTP.pdf",
+            "id": "JTP-070125"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/10/COA_206_COA11116_Pure_Health_Peptides_L-Glutathione_JTP-101025.pdf",
+            "id": "JTP-101025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/11/COA_262_COA11303_Pure_Health_Peptides_Glutathione_600mg.pdf",
+            "id": "TUY-101025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/04/COA_441_Glutathione_600mg-Lot-TUY-022626-GY59-1.pdf",
+            "id": "TUY-022626(600mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/04/COA_552_Glutathione_600mg-Lot-TUY-030926-HE64.pdf",
+            "id": "TUY-030926(600mg)"
+          }
+        ],
+        "product": "Glutathione"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/01/COA_309_2mgGonadorelin-Lot-TUY-122025-GC50.pdf",
+            "id": "TUY-122025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/02/COA_392_Gonadorelin_2mg-Lot-CHA-122025-GD11.pdf",
+            "id": "CHA-122025 (2mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/05/COA_558_Gonadorelin_2mg-Lot-CHA-040126-HH29.pdf",
+            "id": "CHA-040126(2mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/05/COA_578_Gonadorelin_2mg-Lot-TUY-030926-HI8.pdf",
+            "id": "TUY-030926(2mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/07/COA_640_Gonadorelin_2mg-Lot-TUY-060326.pdf",
+            "id": "TUY-060326 (2mg)"
+          }
+        ],
+        "product": "Gonadorelin"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/04/COA_66_COA10147_PureHealthPeptides_Hexarelin.pdf",
+            "id": "TUY-031425"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/06/COA_92_COA10359_PureHealthPeptides_Hexarelin-2.pdf",
+            "id": "FPC-050225"
+          }
+        ],
+        "product": "Hexarelin"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/03/6-Hexarelin-Acetate-Lot-TUY-011526-GJ95.pdf",
+            "id": "TUY-011526 (10mg)"
+          }
+        ],
+        "product": "Hexarelin Acetate"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/02/COA_29_HGH_Frag_176-191_SJZJB0888_2025-02-06.pdf",
+            "id": "SJZJB0888"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/06/COA_101_COA10370_PureHealthPeptide_HGH176-191-1.pdf",
+            "id": "FPC-050225"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/07/COA_125_COA10462_PureHealthPeptides_HGH_176-191.pdf",
+            "id": "TUY-060125"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/04/COA_507_HGH_176-191_5mg-Lot-TUY-022626.pdf",
+            "id": "TUY-022626(5mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/04/COA_508_HGH_176-191_5mg-Lot-TUY-030926-2.pdf",
+            "id": "TUY-030926(5mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/05/COA_559_HGH-176-191_5mg-Lot-TUY-040126-HH44.pdf",
+            "id": "TUY-040126(5mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/07/COA_651_HGH-176-191_5mg-Lot-TUY-060326.pdf",
+            "id": "TUY-060326(5mg)"
+          }
+        ],
+        "product": "HGH 176-191"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/09/COA_184_COA10915_Pure_Health_Peptides_Humanin.pdf",
+            "id": "TUY-081025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/11/COA_274_COA11392_Pure_Health_Peptides_Humanin_10mg.pdf",
+            "id": "TUY-102025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/03/COA_412_Humanin_10mg-Lot-CHA-011526-GH97-2.pdf",
+            "id": "CHA-011526 (10mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/04/COA_518_Humanin_5mg-Lot-TUY-022626-HB96.pdf",
+            "id": "TUY-022626(5mg)"
+          }
+        ],
+        "product": "Humanin"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/02/COA_3_IGF-1_LR3_SJZJB0888_2025-01-09.pdf",
+            "id": "SJZJB0888"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/02/COA_31_IGF-1_LR3_FPC-122624_2025-02-13.pdf",
+            "id": "FPC-122624"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/04/COA_37_IGF-1-LR3_FPC.pdf",
+            "id": "FP-122624"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/08/COA_152_COA10794_Pure_Health_Peptides_IGF-1_LR3.pdf",
+            "id": "TUY-071525"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/10/COA11179_Pure_Health_Peptides_IGF-1_LR3_1mg.pdf",
+            "id": "TUY-101025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/11/COA_259_COA11300_Pure_Health_Peptides_IGF-1_LR3_1mg.pdf",
+            "id": "TUY-102025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/12/COA_293_COA_11-27-25-IGF-1-LR3-Lot-TUY-102025-FW15.pdf",
+            "id": "TUY-102025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/01/COA_310_2mg-IGF-1-LR3-Lot-TUY-122025-GB80.pdf",
+            "id": "TUY-122025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/01/COA_372_IGF-1-LR3_2mg-Lot-TUY-011526-GI62.pdf",
+            "id": "TUY-011526"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/05/COA_560_IGF-LR3_1mg-Lot-TUY-040126-HH48.pdf",
+            "id": "TUY-040126(1mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/07/COA_625_IGF-1-LR3_2mg-Lot-TUY-040126.pdf",
+            "id": "TUY-040126(2mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/07/COA_641_IGF-1-LR3_2mg-Lot-TUY-051326.pdf",
+            "id": "TUY-051326(2mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/07/COA_655_IGF-1-LR3_1mg-Lot-TUY-051326.pdf",
+            "id": "TUY-051326(1mg)"
+          }
+        ],
+        "product": "IGF-1 LR3"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/02/COA_5_Ipamorelin_SJZJB0888_2025-01-09.pdf",
+            "id": "SJZJB0888"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/02/COA_30_Ipamorelin_FPC-122624_2025-02-13.pdf",
+            "id": "FPC-122624"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/04/COA_38_Ipamorelin_FPC.pdf",
+            "id": "FP-122624"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/07/COA_122_COA10459_PureHealthPeptides_Ipamorelin.pdf",
+            "id": "TUY-060125"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/11/COA_260_COA11301_Pure_Health_Peptides_Ipamorelin_5mg.pdf",
+            "id": "TUY-101025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/11/COA_265_COA11306_Pure_Health_Peptides_Ipamorelin_10mg.pdf",
+            "id": "TUY-101025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/01/COA_341_5mg_Ipamorelin-Lot-CHA-010826-GD95.pdf",
+            "id": "CHA-010826"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/01/COA_340_10mg_Ipamorelin-Lot-CHA-010826-GD96.pdf",
+            "id": "CHA-010826"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/03/COA_429_Ipamorelin_10mg-Lot-SYN-022626.pdf",
+            "id": "SYN-022626(10mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/03/COA_433_Ipamorelin5mg-Lot-TUY-022626-GW32.pdf",
+            "id": "TUY-022626(5mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/05/COA_561_Ipamorelin_5mg-Lot-TUY-040126-HH49.pdf",
+            "id": "TUY-040126(5mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/06/COA_608_Ipamorelin_10mg-Lot-SYN-040126.pdf",
+            "id": "SYN-040126(10mg)"
+          }
+        ],
+        "product": "Ipamorelin"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/02/COA_19_Kisspeptin10_FPC-122624_2025-01-23.pdf",
+            "id": "FPC-122624"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/04/COA_47_COA10103_PureHealthPeptide_Kisspeptin.pdf",
+            "id": "SJZJB0888"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/09/COA_176_COA10879_Pure_Health_Peptides_Kisspeptin-10.pdf",
+            "id": "TUY-081025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/10/COA_227_COA11159_Pure_Health_Peptides_Kisspeptin_5mg.pdf",
+            "id": "TUY-101025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/10/COA_227_COA11160_Pure_Health_Peptides_Kisspeptin_10mg.pdf",
+            "id": "TUY-101025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/11/COA_272_COA11389_Pure_Health_Peptides_Kisspeptin_10mg.pdf",
+            "id": "TUY-102025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/11/COA_280_Kisspeptin_5mg_TUY-102025_Pure2511170155_2511170156-combined-1.pdf",
+            "id": "TUY-102025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/02/COA_356_Kisspeptin-10_5mg-Lot-CHA-011526-GH95.pdf",
+            "id": "CHA-011526"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/02/COA_388_Kisspeptin-10_10mg-Lot-CHA-011526-GJ66.pdf",
+            "id": "CHA-011526 (10mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/04/COA_519_Kisspeptin-10_5mg-Lot-TUY-030926-HB32.pdf",
+            "id": "TUY-030926(5mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/04/COA_520_Kisspeptin-10_10mg-Lot-TUY-030926-HB34.pdf",
+            "id": "TUY-030926(10mg)"
+          }
+        ],
+        "product": "Kispeptin-10"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/09/COA_192_9-19-25_COA_KLOW_GHK-Copper_BPC-157_TB-500_KPV_2025-08-27_20250912.pdf",
+            "id": "TUY-081025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/11/COA_283_KLOW_10.50.10.10mg_TUY-102025_Pure2511200097.pdf",
+            "id": "TUY-102025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/12/COA_294_KLOW_10-50-10-10mg_TUY-111125_Pure2511240192-1.pdf",
+            "id": "TUY-111125"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/01/COA_294_KLOW_10-50-10-10mg_TUY-111125_Pure2511240192.pdf",
+            "id": "TUY-111125"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/01/COA_373_KLOW-BPC157_TB500_GHKcu_KPV-Lot-TUY-011526-GI60-1.pdf",
+            "id": "TUY-011526"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/02/COA_357_KLOW-BPC157_GHK-Cu_TB500_KPV_10_50_10_10mg-Lot-RPL-010826-GG56.pdf",
+            "id": "RPL-010826"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/04/COA_444_KLOW_10_50_10_10mg-Lot-TUY-022626-.pdf",
+            "id": "TUY-022626(10/50/10/10mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/05/COA_557_KLOW_10_50_10_10mg-Lot-SYN-030926Blend.pdf",
+            "id": "SYN-030926(10/50/10/10 mg)"
+          }
+        ],
+        "product": "KLOW"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/08/COA_149_COA10790_Pure_Health_Peptides_KPV_TUY-071525.pdf",
+            "id": "TUY-071525"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/11/COA_250_COA11247_Pure_Health_Peptides_KPV_5mg.pdf",
+            "id": "TUY-101025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/11/COA_251_COA11248_Pure_Health_Peptides_KPV_10mg.pdf",
+            "id": "TUY-101025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/01/COA_333_10mg_KPV-Lot-TUY-010826-GE30.pdf",
+            "id": "TUY-010826"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/01/COA_334_5mg_KPV-Lot-TUY-010826-GG35-1.pdf",
+            "id": "TUY-010826"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/03/COA_432_KPV_10mg-Lot-SYN-022626.pdf",
+            "id": "SYN-022626(10mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/03/COA_434_KPV_5mg-Lot-TUY-022626-GW30.pdf",
+            "id": "TUY-022626(5mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/04/COA_448_KPV_10mg-Lot-SYN-030926.pdf",
+            "id": "SYN-030926(10mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/04/COA_541_KPV_5mg-Lot-SYN-030926.pdf",
+            "id": "SYN-030926(5mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/07/COA_660_KPV_10mg-Lot-SYN-051326.pdf",
+            "id": "SYN-051326(10mg)"
+          }
+        ],
+        "product": "KPV"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/03/COA_419_-LC120Lipo-C-Lot-CHA-122025-GD27-1.pdf",
+            "id": "CHA-122025 (10ml)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/06/COA_615_LC120Lipo-C-_10mL-Lot-CHA-051326.pdf",
+            "id": "CHA-051326(10mL)"
+          }
+        ],
+        "product": "LC120"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/03/COA_418_-LC216-Lipo-B-Lot-CHA-122025-GD28.pdf",
+            "id": "CHA-122025 (10ml)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/05/COA_562_LC216-Lipo-B_10mL-Lot-CHA-040126-HH30.pdf",
+            "id": "CHA-040126(10mL)"
+          }
+        ],
+        "product": "LC216 (Lipo-B)"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/09/COA_199_COA10966_Pure_Health_Peptides_Livagen.pdf",
+            "id": "TUY-081025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/11/COA_275_COA11393_Pure_Health_Peptides_Livagen_10mg.pdf",
+            "id": "TUY:102025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/11/COA_276_COA11394_Pure_Health_Peptides_Livagen_20mg.pdf",
+            "id": "TUY:102025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/04/COA_521_Livagen_20mg-Lot-TUY-022626-HB95.pdf",
+            "id": "TUY-022626(20mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/05/COA_579_Livagen_20mg-Lot-TUY-030926-HB95.pdf",
+            "id": "TUY-030926(20mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/05/COA_584_Livagen_20mg-Lot-TUY-022626-HI6.pdf",
+            "id": "TUY-022626(20mg)"
+          }
+        ],
+        "product": "Livagen"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/02/COA_6_LL-37_SJZJB0888_2025-01-09.pdf",
+            "id": "SJZJB0888"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/03/COA_396_LL-37_5mg-Lot-RPL-011526-2799.pdf",
+            "id": "RPL-011526 (5mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/03/COA_415_LL-37_5mg_2845.pdf",
+            "id": "CHA-011926 (5mg)"
+          }
+        ],
+        "product": "LL-37"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/02/COA_7_Melanotan2_SJZJB0888_2025-01-09.pdf",
+            "id": "SJZJB0888"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/04/COA_69_COA10192_PureHealthPeptides_Melanotan2.pdf",
+            "id": "FPC-022125"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/06/COA_94_COA10362_PureHealthPeptides_Melanotan2.pdf",
+            "id": "CHA-041525"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/06/COA_111_COA10433_PureHealthPeptides_Melanotan2.pdf",
+            "id": "CHA-070125"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/08/COA_146_COA10787_Pure_Health_Peptides_MT2_CHA-072025.pdf",
+            "id": "CHA-072025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/08/COA_148_COA10789_Pure_Health_Peptides_MT2_TUY-071525.pdf",
+            "id": "TUY-071525"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/08/COA_168_COA10848_Pure_Health_Peptides_MelanotanII.pdf",
+            "id": "TUY-081025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/05/COA_580_Melanotan-2_10mg-Lot-TUY-030926-HI7.pdf",
+            "id": "TUY-030926(10mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/07/COA_626_Melanotan-2_10mg-Lot-TUY-040126.pdf",
+            "id": "TUY-040126 (10mg)"
+          }
+        ],
+        "product": "Melanoten-2"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/01/COA_311_2mgMGF-Lot-CHA-122025-GB82.pdf",
+            "id": "CHA-122025"
+          }
+        ],
+        "product": "MGF"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/04/COA_59_COA10125_PureHealthPeptides_MOTS-c.pdf",
+            "id": "COC-030325"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/04/COA_62_COA10143_PureHealthPeptides_MOTS-c.pdf",
+            "id": "TUY-031425"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/06/COA_88_COA10355_PureHealthPeptides_MOTS-c-1.pdf",
+            "id": "FPC-050225"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/06/COA_97_COA10365_PureHealthPeptides_MOTS-c.pdf",
+            "id": "CHA-041525"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/09/COA_169_COA10804_Pure_Health_Peptides_MOTSC_TUY-071525.pdf",
+            "id": "TUY-071525"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/09/COA_171_COA10821_Pure_Health_Peptides_MOTS_C.pdf",
+            "id": "CHA-072025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/11/COA_266_COA11308_Pure_Health_Peptides_MOTS-c_10mg.pdf",
+            "id": "TUY-101025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/11/COA_267_COA11309_Pure_Health_Peptides_MOTS-c_20mg.pdf",
+            "id": "TUY-101025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/11/COA_268_COA11310_Pure_Health_Peptides_MOTS-c_40mg.pdf",
+            "id": "TUY-101025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/01/COA_374_MOTS-c_20mg-Lot-RPL-010826-GI57.pdf",
+            "id": "RPL-010826"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/02/COA_358_MOTS-c_40mg-Lot-RPL-010826-GH90.pdf",
+            "id": "RPL-010826"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/02/COA_366_MOTS-c_20mg-Lot-TUY-011526.pdf",
+            "id": "TUY-011526"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/02/COA_379_MOTS-c_40mg-Lot-TUY-011526-GJ90.pdf",
+            "id": "TUY-011526 (40mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/02/COA_384_MOTS-c_10mg-Lot-RPL-011526-GJ97.pdf",
+            "id": "RPL-011526 (10mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/02/COA_401_MOTS-c_10mg-Lot-CHA-011926-2842.pdf",
+            "id": "CHA-011926 (10mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/02/COA_404_MOTS-c_40mg-Lot-CHA-011926-2847.pdf",
+            "id": "CHA-011926 (40mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/03/COA_399_MOTS-c_10mg-Lot-RPL-011526-2789.pdf",
+            "id": "TUY-011526 (10mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/03/COA_411_MOTS-c_40mg-Lot-RPL-011526-2790-2.pdf",
+            "id": "RPL-011526 (40mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/04/COA_522_MOTS-c_10mg-Lot-TUY-030926-HB27.pdf",
+            "id": "TUY-030926(10mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/04/COA_545_MOTS-c_20mg-Lot-TUY-030926-HE28.pdf",
+            "id": "TUY-030926(20mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/05/COA_563_MOTS-c_40mg-Lot-TUY-030926-HH46.pdf",
+            "id": "TUY-030926(40mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/05/COA_582_MOTS-c_40mg-Lot-RPL-010826-HK47.pdf",
+            "id": "RPL-010826(40mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/06/COA_588_MOTS-c_10mg-Lot-TUY-040126-HM38.pdf",
+            "id": "TUY-040126(10mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/06/COA_589_MOTS-c_20mg-Lot-TUY-040126-HP15.pdf",
+            "id": "TUY-040126(20mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/07/COA_627_MOTS-c_40mg-Lot-TUY-040126.pdf",
+            "id": "TUY-040126 (40mg)"
+          }
+        ],
+        "product": "MOTS-c"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/01/COA_343_10mg_N-Acetyl-Epithalon-Lot-TUY-122025-GD12.pdf",
+            "id": "TUY-122025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/04/COA_523_N-Acetyl-Epithalon-Amidate_10mg-Lot-TUY-030926-HB98.pdf",
+            "id": "TUY-030926(10mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/07/COA_661_N-Acetyl-Epithalon-Amidate_10mg-Lot-TUY-051326.pdf",
+            "id": "TUY-051326(10mg)"
+          }
+        ],
+        "product": "N-Acetyl Epithalon"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/01/COA_346_5mg_N-Acetyl-Selank-Lot-TUY-122025-GD7.pdf",
+            "id": "TUY-122025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/04/COA_524_N-Acetyl-Selank-Amidate_5mg-Lot-TUY-030926-HB97.pdf",
+            "id": "TUY-030926(5mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/07/COA_628_N-Acetyl-Selank-Amidate_5mg-Lot-TUY-040126.pdf",
+            "id": "TUY-040126 (5mg)"
+          }
+        ],
+        "product": "N-Acetyl Selank"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/01/COA_345_5mg_N-Acetyl-Semax-Lot-TUY-122025-GD8.pdf",
+            "id": "TUY-122025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/04/COA_526_NAD_100mg-Lot-TUY-030926-HB37.pdf",
+            "id": "TUY-030926(5mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/07/COA_629_N-Acetyl-Semax-Amidate_5mg-Lot-TUY-040126.pdf",
+            "id": "TUY-040126 (5mg)"
+          }
+        ],
+        "product": "N-Acetyl Semax"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/02/COA_20_NADplus_SJZJB0888_2025-01-24.pdf",
+            "id": "SJZJB0888"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/06/COA_86_COA10296_PureHealthPeptides_NAD_CHA041525-1-1.pdf",
+            "id": "CHA-041525"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/06/COA_85_COA10295_PureHealthPeptides_NAD_FPC022125-1.pdf",
+            "id": "FPC-022125"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/06/COA_106_COA10394_PureHealthPeptides_NAD.pdf",
+            "id": "TUY-031425"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/07/COA_117_COA10444_PureHealthPeptides_NAD.pdf",
+            "id": "FPC-050225"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/07/COA_119_COA10445_PureHealthPeptides_NAD.pdf",
+            "id": "CHA-070125"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/07/COA_129_COA10628_Pure_Health_Peptides_NAD.pdf",
+            "id": "TUY-060125"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/09/COA_177_COA10880_Pure_Health_Peptides_NAD_Plus.pdf",
+            "id": "TUY-081025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/10/COA_243_COA11188_Pure_Health_Peptides_NAD_100mg.pdf",
+            "id": "TUY-101025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/10/COA_244_COA11189_Pure_Health_Peptides_NAD_500mg.pdf",
+            "id": "TUY-101025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/01/COA_318_500mgNAD-Lot-CHA-010826-GD94.pdf",
+            "id": "CHA-010826"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/02/COA_359_NAD500mg-Lot-RPL-010826-GI4.pdf",
+            "id": "RPL-010826"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/02/COA_382_NAD_100mg-Lot-CHA-011926-GJ94.pdf",
+            "id": "CHA-011926 (100mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/02/COA_407_NAD_100mg-Lot-RPL-011526-2851.pdf",
+            "id": "RPL-011526 (100mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/02/COA_408_NAD500mg-Lot-CHA-011926-2852.pdf",
+            "id": "CHA-011926 (500mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/04/COA_526_NAD_100mg-Lot-TUY-030926-HB37.pdf",
+            "id": "TUY-030926(100mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/05/COA_570_NAD_500mg-Lot-TUY-030926-HB38.pdf",
+            "id": "TUY-030926(500mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/07/COA_630_NAD_500mg-Lot-TUY-040126.pdf",
+            "id": "TUY-040126 (500mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/07/COA_631_NAD_100mg-Lot-RPL-011526.pdf",
+            "id": "RPL-011526 (100mg)"
+          }
+        ],
+        "product": "NAD+"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/01/COA_375_Ovagen_20mg-Lot-CHA-122025-GJ16.pdf",
+            "id": "CHA-122025"
+          }
+        ],
+        "product": "Ovagen"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/04/COA_41_Oxytocin_FPC.pdf",
+            "id": "FP-122624"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/04/COA_48_COA10104_PureHealthPeptide_Oxytocin.pdf",
+            "id": "SJZJB0888"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/09/COA_175_COA10878_Pure_Health_Peptides_Oxytocin.pdf",
+            "id": "TUY-081025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/10/COA11171_Pure_Health_Peptides_Oxytocin_5mg.pdf",
+            "id": "TUY-101025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/01/COA_339_5mg_Oxytocin-Lot-TUY-010826-GG37.pdf",
+            "id": "TUY-010826"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/02/COA_393_Oxytocin_10mg-Lot-TUY-010826-GG38.pdf",
+            "id": "TUY-010826 (10mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/04/COA_542_Oxytocin_10mg-Lot-SYN-022626.pdf",
+            "id": "SYN-022626(10mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/04/COA_543_Oxytocin_5mg-Lot-SYN-022626.pdf",
+            "id": "SYN-022626(5mg)"
+          }
+        ],
+        "product": "Oxytocin"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/01/COA_376_P21-Adamantane_10mg-Lot-CHA-122025-GI59.pdf",
+            "id": "CHA-011526"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/04/COA_551_P-21_10mg-Lot-CHA-040126-HF23.pdf",
+            "id": "CHA-040126(10mg)"
+          }
+        ],
+        "product": "P-21 (Adamantane)"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/07/COA_139_PEG-MGF_TUY-060125_20250717.pdf",
+            "id": "TUY-060125"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/04/COA_527_PEG-MGF_2mg-Lot-TUY-030926-HB28.pdf",
+            "id": "TUY-030926(2mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/04/COA_528_PEG-MGF_5mg-Lot-TUY-030926-HB29.pdf",
+            "id": "TUY-030926(5mg)"
+          }
+        ],
+        "product": "PEG-MGF"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/09/COA_200_COA10904_Pure_Health_Peptides_Pinealon_TUY-081025.pdf",
+            "id": "TUY-081025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/11/COA_236_COA11391_Pure_Health_Peptides_Pinealon_10mg.pdf",
+            "id": "TUY-101025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/11/COA_271_COA11388_Pure_Health_Peptides_Pinealon_20mg.pdf",
+            "id": "TUY-102025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/02/COA_389_Pinealon_20mg-Lot-RPL-011526-GJ64.pdf",
+            "id": "RPL-011526 (20mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/02/COA_400_Pinealon_10mg-Lot-CHA-011926-2841.pdf",
+            "id": "CHA-011926 (10mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/02/COA_403_Pinealon_20mg-Lot-CHA-011926-2846.pdf",
+            "id": "CHA-011926 (20mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/03/COA_397_Pinealon_10mg-Lot-RPL-011526-2788.pdf",
+            "id": "RPL-011526 (10mg)"
+          }
+        ],
+        "product": "Pinealon"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/09/COA_185_COA10913_Pure_Health_Peptides_PNC27-1.pdf",
+            "id": "TUY-081025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/09/COA_193_9-19-25_COA_PNC-27_TUY081025_20250912.pdf",
+            "id": "TUY-081025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/12/COA_298_PNC-27_10mg_TUY-102025_Pure2511240032.pdf",
+            "id": "TUY-101025"
+          }
+        ],
+        "product": "PNC-27"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/04/COA_74_COA10222_PureHealthPeptides_Prostamax.pdf",
+            "id": "COC-030325"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/11/COA_249_COA11246_Pure_Health_Peptides_Prostamax_20mg.pdf",
+            "id": "TUY-101025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/01/COA_314_20mgProstamax-Lot-TUY-102025-GD29.pdf",
+            "id": "TUY-102025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/01/COA_315_40mgProstamax-Lot-TUY-102025-GD30.pdf",
+            "id": "TUY-102025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/06/COA_590_Prostamax_40mg-Lot-TUY-040126-HP16.pdf",
+            "id": "TUY-040126(40mg)"
+          }
+        ],
+        "product": "Prostamax"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/04/COA_51_COA10115_PureHealthPeptide_PT-141-1.pdf",
+            "id": "FPC-022125"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/04/COA_57_COA10123_PureHealthPeptide_PT-141.pdf",
+            "id": "COC-030325"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/04/COA_63_COA10144_PureHealthPeptide_PT-141.pdf",
+            "id": "TUY-031425"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/06/COA_95_COA10363_PureHealthPeptide_PT-141.pdf",
+            "id": "JTP-041125"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/07/COA_121_COA10458_PureHealthPeptide_PT-141.pdf",
+            "id": "TUY-060125"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/08/COA_158_COA10791_Pure_Health_Peptides_PT141_TUY-071525.pdf",
+            "id": "TUY-071525"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/08/COA_165_COA10845_Pure_Health_Peptides_PT-141.pdf",
+            "id": "CHA-072025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/09/COA_178_COA10881_Pure_Health_Peptides_PT141.pdf",
+            "id": "TUY-081025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/10/COA_242_COA11187_Pure_Health_Peptides_PT141_10m.pdf",
+            "id": "TUY-101025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/01/COA_377_PT-141_10mg-Lot-CHA-011526-GI63.pdf",
+            "id": "CHA-011526"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/02/COA_402_PT-141_10mg-Lot-CHA-011926-2844.pdf",
+            "id": "CHA-011926 (10mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/03/COA_360_PT-141_10mg-Lot-TUY-010826-GI2.pdf",
+            "id": "TUY-010826 (10mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/03/COA_398_PT-141_10mg-Lot-RPL-011526-2791.pdf",
+            "id": "RPL-011526 (10mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/03/COA_424_PT-141_10mg-Lot-CHA-022626_3226.pdf",
+            "id": "CHA-022626(10mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/04/COA_529_PT-141_10mg-Lot-TUY-030926-HC1.pdf",
+            "id": "TUY-030926(10mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/07/COA_632_PT-141_10mg-Lot-RPL-011526.pdf",
+            "id": "RPL-011526 (10mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/07/COA_633_PT-141_10mg-Lot-TUY-040126.pdf",
+            "id": "TUY-040126 (10mg)"
+          }
+        ],
+        "product": "PT-141"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/04/COA_49_COA10113_PureHealthPeptide_Selank-1.pdf",
+            "id": "FPC-022125"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/04/COA_56_COA10122_PureHealthPeptide_Selank.pdf",
+            "id": "COC-030325"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/04/COA_64_COA10145_PureHealthPeptide_Selank.pdf",
+            "id": "TUY-031425"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/06/COA_98_COA10366_PureHealthPeptide_Selank.pdf",
+            "id": "CHA-041525"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/07/COA_123_COA10460_PureHealthPeptide_Selank.pdf",
+            "id": "TUY-060125"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/10/COA11175_Pure_Health_Peptides_Selank_5mg.pdf",
+            "id": "TUY-101025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/10/COA11176_Pure_Health_Peptides_Selank_10mg.pdf",
+            "id": "TUY-101025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/03/COA_435_Selank_10mg-Lot-TUY-022626-GW31.pdf",
+            "id": "TUY-022626(10mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/04/COA_501_Selank_10mgLot-TUY-030926.pdf",
+            "id": "TUY-030926(10mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/04/COA_530_Selank_5mg-Lot-TUY-030926-HA2.pdf",
+            "id": "TUY-030926(5mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/07/COA_652_Selank_10mg-Lot-TUY-051326.pdf",
+            "id": "TUY-051326(10mg)"
+          }
+        ],
+        "product": "Selank"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/06/Selank_Semx-Lot-TUY-040126-HS4-1.pdf",
+            "id": "TUY-040126"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/06/COA_619_Selank_Semax_10_10mg-Lot-TUY-040126.pdf",
+            "id": "TUY-040126(10/10mg)"
+          }
+        ],
+        "product": "Selank/Semx"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/02/COA_23_Semax_FPC-122624_2025-01-23.pdf",
+            "id": "FPC-122624"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/02/COA_24_Semax_SJZJB0888_2025-01-24.pdf",
+            "id": "SJZJB0888"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/08/COA_150_COA10792_Pure_Health_Peptides_Semax.pdf",
+            "id": "TUY-071525"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/10/COA_238_COA11181_Pure_Health_Peptides_Semax_5mg.pdf",
+            "id": "TUY-101025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/10/COA_239_COA11182_Pure_Health_Peptides_Semax_10mg.pdf",
+            "id": "TUY-101025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/01/COA_338_5mg_Semax-Lot-CHA-010826-GD99.pdf",
+            "id": "CHA-010826"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/01/COA_337_10mg_Semax-Lot-CHA-010826-GE1.pdf",
+            "id": "CHA-010826"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/02/COA_365_Semax_10mg-Lot-TUY-011526.pdf",
+            "id": "TUY-011526"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/04/COA_531_Semax_5mg-Lot-TUY-030926-HB35.pdf",
+            "id": "TUY-030926(5mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/04/COA_532_Semax_10mg-Lot-TUY-030926-HB36.pdf",
+            "id": "TUY-030926(10mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/06/COA_616_Semax_5mg-Lot-CHA-060326.pdf",
+            "id": "CHA-060326(5mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/07/COA_644_Semax_10mg-Lot-TUY-051326.pdf",
+            "id": "TUY-051326(10mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/07/COA_653_Semax_5mg-Lot-TUY-051326.pdf",
+            "id": "TUY-051326(5mg)"
+          }
+        ],
+        "product": "Semx"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/07/COA_114_COA10434_PureHealthPeptides_Sermorelin.pdf",
+            "id": "TUY-031425"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/07/COA_120_COA10457_PureHealthPeptides_Sermorelin-1.pdf",
+            "id": "TUY-060125"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/08/COA_164_COA10844_Pure_Health_Peptides_Sermorelin.pdf",
+            "id": "TUY-081025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/10/COA11169_Pure_Health_Peptides_Sermorelin_5mg.pdf",
+            "id": "TUY-101025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/10/COA11170_Pure_Health_Peptides_Sermorelin_10mg.pdf",
+            "id": "TUY-101025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/04/COA_502_Sermorelin_10mg-Lot-TUY-030926.pdf",
+            "id": "TUY-030926(10mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/04/COA_503_Sermorelin_5mg-Lot-TUY-030926.pdf",
+            "id": "TUY-030926(5mg)"
+          }
+        ],
+        "product": "Sermorlin"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/01/COA_347_5mg_SLU-PP-332-Lot-CHA-122025-GD38.pdf",
+            "id": "CHA-122025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/03/COA_421_SLU-PP-332_5mg-Lot-CHA-022626-GV39.pdf",
+            "id": "CHA-022626(5mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/04/COA_533_SLU-PP-332_5mg-Lot-RPL-022626-HC60.pdf",
+            "id": "RPL-022626(5mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/04/COA_550_SLU-PP-332_5mg-Lot-CHA-040126-HE94.pdf",
+            "id": "CHA-040126(5mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/06/COA_613_SLU-PP-332_10mg-Lot-CHA-040126.pdf",
+            "id": "CHA-040126(10mg)"
+          }
+        ],
+        "product": "SLU-PP-332"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/01/COA_308_10mgSnap-8-Lot-CHA-122025-GB79-1.pdf",
+            "id": "CHA-122025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/04/COA_544_SNAP-8_10mg-Lot-CHA-040126-HE93.pdf",
+            "id": "CHA-040126(10mg)"
+          }
+        ],
+        "product": "Snap-8"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/06/COA_96_COA10364_PureHealthPeptides_SS-31.pdf",
+            "id": "CHA-041525"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/08/COA_167_COA10847_Pure_Health_Peptides_SS31.pdf",
+            "id": "CHA-072025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/09/COA_182_COA10911_Pure_Health_Peptides_SS31.pdf",
+            "id": "TUY-081025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/01/SS-31-Lot-CHA-122025-GC75.pdf",
+            "id": "CHA-122025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/01/COA_319_10mgSS-31-Lot-CHA-010826-GD97.pdf",
+            "id": "CHA-010826"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/02/COA_361_SS-31_10mg-Lot-CHA-011526-GH93.pdf",
+            "id": "CHA-011526"
+          }
+        ],
+        "product": "SS-31"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/02/COA_25_TB-500_TB4_Fragment_17-23_FPC-122624_2025-01-24.pdf",
+            "id": "FPC-122624"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/06/COA_105_COA10393_PureHealthPeptide_TB500.pdf",
+            "id": "TUY-031425"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/07/COA_115_COA10431_PureHealthPeptide_TB500.pdf",
+            "id": "CHA-070125"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/02/COA_11_Thymosin_beta4_SJZJB0888_2025-01-09.pdf",
+            "id": "SJZJB0888"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/04/COA_60_COA10126_PureHealthPeptides_Thymosin_beta_4.pdf",
+            "id": "COC-030325"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/08/COA_159_COA10838_Pure_Health_Peptides_Thymosin_Beta_4_TUY-081025.pdf",
+            "id": "TUY-081025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/02/COA_362_TB-500_5mg-Lot-CHA-011526-GH98.pdf",
+            "id": "CHA-011526"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/02/COA_363_TB-500_10mg-Lot-CHA-011526-GH99.pdf",
+            "id": "CHA-011526"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/03/COA_436_TB-500_5mg-Lot-TUY-022626-GW33.pdf",
+            "id": "TUY-022626(5mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/04/COA_442_TB-500_5mg-Lot-TUY-030926-GY54.pdf",
+            "id": "TUY-030926(5mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/04/COA_504_TB-500_10mg-Lot-TUY-022626-GU67.pdf",
+            "id": "TUY-022626(10mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/04/COA_534_TB-500_10mg-Lot-TUY-030926-HB94.pdf",
+            "id": "TUY-030926(10mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/05/COA_564_TB-500_10mg-Lot-TUY-040126-HH47.pdf",
+            "id": "TUY-040126(10mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/07/COA_634_TB-500_5mg-Lot-TUY-040126.pdf",
+            "id": "TUY-040126 (5mg)"
+          }
+        ],
+        "product": "TB-500"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/02/COA_10_Tesamorelin_SJZJB0888_2025-01-09.pdf",
+            "id": "SJZJB0888"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/02/COA_26_Tesamorelin_FPC-122624_2025-01-23.pdf",
+            "id": "FPC-122624"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/06/COA_93_COA10360_PureHealthPeptides_Tesamorelin-1.pdf",
+            "id": "JTP-041125"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/07/COA_128_COA10507_PureHealthPeptides_Tesamorelin.pdf",
+            "id": "TUY-060125"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/07/COA_132_COA10631_Pure_Health_Peptides_Tesamorelin.pdf",
+            "id": "TUY-060125"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/10/COA_245_COA11190_Pure_Health_Peptides_Tesamorelin_5mg.pdf",
+            "id": "TUY-101025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/10/COA_246_COA11191_Pure_Health_Peptides_Tesamorelin_10mg.pdf",
+            "id": "TUY-101025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/12/COA_299_Tesamorelin-Lot-TUY-111125-FX46.pdf",
+            "id": "TUY-111125"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/01/COA_336_10mgTesamorelin-Lot-TUY-010826-GD50.pdf",
+            "id": "TUY-010826"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/02/COA_390_Tesamorelin_10mg-Lot-RPL-011526-GJ65.pdf",
+            "id": "RPL-011526 (10mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/02/COA_409_Tesamorelin_10mg-Lot-CHA-011926-2853.pdf",
+            "id": "CHA-011926 (10mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/03/COA_423_Tesamorelin_10mg-Lot-TUY-022626-GV38.pdf",
+            "id": "TUY-022626(10mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/03/COA_422_Tesamorelin_5mg-Lot-TUY-022626-GU66.pdf",
+            "id": "TUY-022626(5mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/04/COA_443_Tesamorelin_5mg-Lot-TUY-030926-GY28.pdf",
+            "id": "TUY-030926(5mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/04/COA_500_Tesamorelin_10mg-Lot-TUY-030926.pdf",
+            "id": "TUY-030926(10mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/04/COA_535_Tesamorelin_10mg-Lot-TUY-040126-HB33.pdf",
+            "id": "TUY-040126(10mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/05/COA_581_Tesamorelin_10mg-Lot-RPL-011526-HK48.pdf",
+            "id": "RPL-011526(10mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/07/COA_639_Tesamorelin-10mg-Lot-TUY-060326.pdf",
+            "id": "TUY-060326 (10mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/07/COA_657_Tesamorelin_Dark_5mg-Lot-TUY-060326.pdf",
+            "id": "TUY-060326(5mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/07/COA_639_Tesamorelin-10mg-Lot-TUY-060326-1.pdf",
+            "id": "TUY-060326(10mg)"
+          }
+        ],
+        "product": "Tesmorelin"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/09/COA_187_COA10983_Pure_Health_Peptides_Thymalin.pdf",
+            "id": "TUY-071525"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/02/COA_385_Thymalin_10mg-Lot-RPL-011526-GJ98.pdf",
+            "id": "RPL-011526 (10mg)"
+          }
+        ],
+        "product": "Thymalin"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/09/COA_201_COA10905_Pure_Health_Peptides_Thymogen_TUY-081025.pdf",
+            "id": "TUY-081025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/01/COA_316_10mgThymogen-Lot-TUY-102025-GD31.pdf",
+            "id": "TUY-102025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/01/COA_317_20mgThymogen-Lot-TUY-102025-GD32-1.pdf",
+            "id": "TUY-102025"
+          }
+        ],
+        "product": "Thymogen"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/02/COA_28_Thymosin_aplha1_SJZJB0888_2025-01-24.pdf",
+            "id": "SJZJB0888"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/02/COA_32_ThymosinAlpha1_FPC.pdf",
+            "id": "FPC-122624"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/08/COA_155_COA10799_Pure_Health_Peptides_Thymosin-Alpa-1-1.pdf",
+            "id": "TUY-071525"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/08/COA_161_COA10840_Pure_Health_Peptides_Thymosin_Alpha-1_TUY-081025.pdf",
+            "id": "TUY-081025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/11/COA_258_COA11299_Pure_Health_Peptides_TA-1_10mg.pdf",
+            "id": "TUY-102025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/11/COA_261_COA11302_Pure_Health_Peptides_TA-1_5mg.pdf",
+            "id": "TUY-102025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/04/COA_536_Thymosin-Alpha-1_5mg-Lot-TUY-030926-HB39.pdf",
+            "id": "TUY-030926(5mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/04/COA_537_Thymosin-Alpha-1_10mg-Lot-TUY-030926-HB40.pdf",
+            "id": "TUY-030926(10mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/06/COA_621_Thymosin-Alpha-1-_5mg-Lot-TUY-040126.pdf",
+            "id": "TUY-040126(5mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/07/COA_638_Thymosin-Alpha-1_10mg-Lot-TUY-060326.pdf",
+            "id": "TUY-060326 (10mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/07/COA_638_Thymosin-Alpha-1_10mg-Lot-TUY-060326-1.pdf",
+            "id": "TUY-060326(10mg)"
+          }
+        ],
+        "product": "Thymosin Alpha-1"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/02/COA_11_Thymosin_beta4_SJZJB0888_2025-01-09.pdf",
+            "id": "SJZJB0888"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/04/COA_60_COA10126_PureHealthPeptides_Thymosin_beta_4.pdf",
+            "id": "COC-030325"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/09/COA_196_9-22-25_COA_Thymosin_beta4_CHA-072025_20250925.pdf",
+            "id": "CHA-072025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/08/COA_159_COA10838_Pure_Health_Peptides_Thymosin_Beta_4_TUY-081025.pdf",
+            "id": "TUY-081025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/10/COA_240_COA11183_Pure_Health_Peptides_TB4_10mg.pdf",
+            "id": "TUY-101025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/10/COA_241_COA11184_Pure_Health_Peptides_TB4_5mg.pdf",
+            "id": "TUY-101025"
+          }
+        ],
+        "product": "Thymosin Beta4"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/01/COA_322_Vesugen_20mg_Pure2601120018.pdf",
+            "id": "CHA-122025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/04/COA_548_Vesugen_20mg-Lot-CHA-040126-HE26.pdf",
+            "id": "CHA-040126(20mg)"
+          }
+        ],
+        "product": "Vesugen"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/09/COA_197_COA10967_Pure_Health_Peptides_Vilon.pdf",
+            "id": "TUY-081025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/11/COA_269_COA11385_Pure_Health_Peptides_Vilon_10mg.pdf",
+            "id": "TUY-102025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/11/COA_270_COA11386_Pure_Health_Peptides_Vilon_20mg.pdf",
+            "id": "TUY-102025"
+          }
+        ],
+        "product": "Vilon"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2025/09/COA_170_COA10805_Pure_Health_Peptides_VIP_TUY-081025.pdf",
+            "id": "TUY-081025"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/05/COA_571_VIP_5mg-Lot-TUY-030926-GZ97.pdf",
+            "id": "TUY-030926(5mg)"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/05/COA_572_VIP_10mg-Lot-TUY-030926-GZ98.pdf",
+            "id": "TUY-030926(10mg)"
+          }
+        ],
+        "product": "VIP"
+      }
+    ],
+    "title": "Vial COAs - Pure Health Peptides Lab Reports"
+  },
+  "capsules": {
+    "heading": "Capsule certificate of analysis (coa) Library",
+    "items": [
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/02/PH-32504-5-Amino-1MQ-50mg_capsule-Lot-26022001-GJ37.pdf",
+            "id": "5 Amino 1MQ - 50mg_capsule - Lot 26022001"
+          }
+        ],
+        "product": "5-Amino-1MQ"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/05/BAM152050mg20-20Lot202608300220-20HA81.pdf",
+            "id": "BAM 15 50mg - Lot 26083002"
+          }
+        ],
+        "product": "BAM 15"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/02/BPC-500mcg_capsule-Lot-26012001-Pure-Health-GI75.pdf",
+            "id": "BPC-157 500 mcg_capsule - Lot 26012001"
+          }
+        ],
+        "product": "BPC-157"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/02/BPC-157-500mcg-TB-500-500mcg-Lot-26013001-Pure-Health-GI76-1.pdf",
+            "id": "BPC 157 (500mcg) TB 500 (500mcg)_capsule - Lot 26013001"
+          }
+        ],
+        "product": "BPC-157 / TB-500 (Tβ4) Blend"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/02/PH-32504-Dihexa-10mg_capsule-Lot-26021002-GJ39.pdf",
+            "id": "Dihexa 10mg_capsule - Lot 26021002"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/02/PH-32504-Dihexa-5mg_-Capsule-Lot-26021001-GJ36.pdf",
+            "id": "Dihexa-5mg_capsule-Lot-26021002"
+          }
+        ],
+        "product": "DHX/PNB-0408"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/06/Epithalon-1000mcg-caps-Lot-PBL-26134002-HP73.pdf",
+            "id": "Epithalon 1000mcg caps - Lot PBL-26134002"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/06/Epithalon-500mcg-caps-Lot-PBL-26134001-HP72.pdf",
+            "id": "Epithalon 500mcg caps - Lot PBL-26134001"
+          }
+        ],
+        "product": "Epithalon"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/04/Glow-GHKcu-2mg_BPC-500mcg_TB-500mcg-Lot-PBL-26079002-HA79.pdf",
+            "id": "Glow (GHKcu 2mg_BPC 500mcg_TB 500mcg) - Lot PBL-26079002"
+          }
+        ],
+        "product": "GLOW"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/02/Ibutamoren-12.5mg_capsule-Lot-26026001-Pure-Health-GI78.pdf",
+            "id": "Ibutamoren 12.5mg_capsule - Lot 26026001"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/02/Ibutamoren-25mg_capsule-Lot-26023001-Pure-Health-GI79.pdf",
+            "id": "Ibutamoren 25mg_capsule - Lot 26023001"
+          }
+        ],
+        "product": "Ibutamoren"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/06/KPV-Caps-500mcg-Lot-PBL-26133002-HP74.pdf",
+            "id": "KPV Caps 500mcg - Lot PBL-26133002"
+          }
+        ],
+        "product": "KPV"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/02/Pure-Health-Methylene-Blue-20mg_cap-Lot-26028001-GL69.pdf",
+            "id": "Methylene Blue - 20mg_capsule - Lot 26028001"
+          }
+        ],
+        "product": "Methylene Blue"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/06/Mots-C-1000mcg-caps-Lot-PBL-25135002-HP71.pdf",
+            "id": "Mots C 1000mcg caps - Lot PBL-25135002"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/06/Mots-C-500mcg-caps-Lot-PBL-25135001-HP70.pdf",
+            "id": "Mots C 500mcg caps - Lot PBL-25135001"
+          }
+        ],
+        "product": "Mots-C"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/05/Orforglipron206mg20-20Lot202609100120-20HA80.pdf",
+            "id": "Orforglipron 6mg - Lot 26091001"
+          }
+        ],
+        "product": "Orforglipron"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/06/Regen-Caps-BPC-500mcg-KPV-500mcg-Lot-PBL-26133001-HP69.pdf",
+            "id": "Regen Caps BPC 500mcg KPV 500mcg - Lot PBL-26133001"
+          }
+        ],
+        "product": "Regen"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/02/Pure-Health-SLU-PP332-500mcg_cap-Lot-26014001-GL71.pdf",
+            "id": "SLU PP332 500mcg_capsule - Lot 26014001"
+          },
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/02/SLU-PP-332-1000mcg_capsule-Lot-26014001-Pure-Health-GI77.pdf",
+            "id": "SLU PP 332 1000mcg_capsule - Lot 26014001"
+          }
+        ],
+        "product": "SLU-PP-332"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/02/Pure-Health-TB-500-500mcg_capsule-Lot-26019001-GL72.pdf",
+            "id": "TB 500 500mcg_capsule - Lot 26019001"
+          }
+        ],
+        "product": "TB-500 (Tβ-4)"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/02/Teso-NS2330-500mcg_capsule-Lot-26020001-GJ38.pdf",
+            "id": "Teso/NS2330 500mcg_capsule - Lot 26020001"
+          }
+        ],
+        "product": "TESO/NS2330"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/02/Pure-Health-Tudca-500mg_cap-Lot-26027001-GL70.pdf",
+            "id": "Tudca 500mg_capsule - Lot 26027001"
+          }
+        ],
+        "product": "TUDCA"
+      }
+    ],
+    "title": "Capsule COAs | Lab Tested Certificates of Analysis Online Now"
+  },
+  "liquids": {
+    "heading": "Liquid Certificate of Analysis (COA) library",
+    "items": [
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/03/COA_02_BPC-157-Research-Spray-0.14ml_spray-Lot-26012002-GJ14.pdf",
+            "id": "BPC 157 - Lot 26012002"
+          }
+        ],
+        "product": "BPC 157"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/03/COA_01_BPC-157_TB-500_Research-Spray-0.14ml_spray-Lot-26021003-GJ15.pdf",
+            "id": "BPC-157_TB-500 -Lot 26021003"
+          }
+        ],
+        "product": "BPC-157/TB-500"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/06/DSIP-Lot-PBL-26124003-HP79.pdf",
+            "id": "DSIP - Lot PBL-26124003"
+          }
+        ],
+        "product": "DSIP"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/06/Epithalon-Lot-PBL-26125002-HP77.pdf",
+            "id": "Epithalon - Lot PBL-26125002"
+          }
+        ],
+        "product": "Epithalon"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/06/GHKcu-Lot-PBL-26125003-HP76.pdf",
+            "id": "GHK-Cu - Lot PBL-26125003"
+          }
+        ],
+        "product": "GHK-Cu"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/06/KPV-Lot-PBL-26124002-HP78.pdf",
+            "id": "KPV - Lot PBL-26124002"
+          }
+        ],
+        "product": "KPV"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/03/3-LC120Lipo-C-Lot-CHA-122025-GD27-2.pdf",
+            "id": "LC120(Lipo-C) - Lot CHA-122025"
+          }
+        ],
+        "product": "LC120"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/03/4-LC216-Lipo-B-Lot-CHA-122025-GD28-2.pdf",
+            "id": "LC216 (Lipo-B) - Lot CHA-122025"
+          }
+        ],
+        "product": "LC216"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/03/COA_03_NAD-Research-Spray-30ml-Lot-26055001-GT97P.pdf",
+            "id": "NAD+ - Lot 26055001"
+          }
+        ],
+        "product": "NAD+"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/03/COA_04_PT-141-Research-Spray-30ml-Lot-26055002-GT98P.pdf",
+            "id": "PT 141 - Lot 26055002"
+          }
+        ],
+        "product": "PT141"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/03/COA_05_Selank-Research-Spray-30ml-Lot-26056001-GT99P.pdf",
+            "id": "Selank - Lot 26056001"
+          }
+        ],
+        "product": "Selank"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/03/COA_06_Semax-Research-Spray-30ml-Lot-26056002-GU1P.pdf",
+            "id": "SEMX - Lot 26056002"
+          }
+        ],
+        "product": "SEMX"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/03/COA_07_TB-500-Research-Spray-30ml-Lot-26054002-GT96P.pdf",
+            "id": "TB 500 - Lot 26054002"
+          }
+        ],
+        "product": "TB 500"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/06/Semax_Selank_Pinealon-Lot-PBL-26133003-HP75.pdf",
+            "id": "Semax_Selank_Pinealon - Lot PBL-26133003 - Vocus"
+          }
+        ],
+        "product": "Vocus"
+      }
+    ],
+    "title": "Liquid COAs - Pure Health Peptides Certificates"
+  },
+  "topicals": {
+    "heading": "Topical Certificate of Analysis (COA) library",
+    "items": [
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/06/COA_01_System-A-Lot-PHP-TSA-001.pdf",
+            "id": "System A –Lot PHP-TSA-001"
+          }
+        ],
+        "product": "System A –Lot PHP-TSA-001"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/06/COA_02_System-B-Lot-PHP-TSB-001.pdf",
+            "id": "System B –Lot PHP-TSB-001"
+          }
+        ],
+        "product": "System B –Lot PHP-TSB-001"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/06/COA_03_System-C-Lot-PHP-TSC-001.pdf",
+            "id": "System C –Lot PHP-TSC-001"
+          }
+        ],
+        "product": "System C –Lot PHP-TSC-001"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/06/COA_04_System-D-Lot-PHP-TSD-001-.pdf",
+            "id": "System D –Lot PHP-TSD-001"
+          }
+        ],
+        "product": "System D –Lot PHP-TSD-001"
+      },
+      {
+        "batches": [
+          {
+            "href": "https://purehealthpeptides.com/wp-content/uploads/2026/06/COA_05_System-E-Lot-PHP-TSE-001.pdf",
+            "id": "System E –Lot PHP-TSE-001"
+          }
+        ],
+        "product": "System E –Lot PHP-TSE-001"
+      }
+    ],
+    "title": "Topical COAs - Pure Health Peptides | Lab Tested Certified"
+  }
+}

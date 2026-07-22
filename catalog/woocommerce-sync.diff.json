@@ -1,0 +1,11 @@
+{
+  "previousSha256": "d392bab209c4078598cfd34ffef4faf005c42100b61f52d9e44212178d21b2da",
+  "candidateSha256": "d392bab209c4078598cfd34ffef4faf005c42100b61f52d9e44212178d21b2da",
+  "addedWooProductIds": [],
+  "removedWooProductIds": [],
+  "changedWooProductIds": [],
+  "productCount": {
+    "previous": 115,
+    "candidate": 115
+  }
+}

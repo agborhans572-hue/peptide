@@ -1,0 +1,1936 @@
+{
+  "/": {
+    "path": "/",
+    "title": "Research Peptides for Laboratory Use | Pure Health Peptides",
+    "description": "Shop high-purity research peptides for controlled in vitro laboratory use. Every batch is independently tested in the USA with a searchable COA.",
+    "kind": "page",
+    "indexable": true,
+    "image": "https://purehealthpeptides.com/assets/hero-vials.png",
+    "imageAlt": "Pure Health Peptides laboratory research materials",
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://purehealthpeptides.com/#organization",
+          "name": "Pure Health Peptides",
+          "url": "https://purehealthpeptides.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://purehealthpeptides.com/assets/logo.svg"
+          },
+          "email": "info@purehealthpeptides.com",
+          "description": "Supplier of independently batch-tested materials for controlled in vitro laboratory research."
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://purehealthpeptides.com/#website",
+          "url": "https://purehealthpeptides.com/",
+          "name": "Pure Health Peptides",
+          "publisher": {
+            "@id": "https://purehealthpeptides.com/#organization"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://purehealthpeptides.com/#webpage",
+          "url": "https://purehealthpeptides.com/",
+          "name": "Research Peptides for Laboratory Use | Pure Health Peptides",
+          "description": "Shop high-purity research peptides for controlled in vitro laboratory use. Every batch is independently tested in the USA with a searchable COA.",
+          "isPartOf": {
+            "@id": "https://purehealthpeptides.com/#website"
+          },
+          "about": {
+            "@id": "https://purehealthpeptides.com/#organization"
+          },
+          "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "url": "https://purehealthpeptides.com/assets/hero-vials.png"
+          },
+          "inLanguage": "en-US"
+        }
+      ]
+    }
+  },
+  "/shop/": {
+    "path": "/shop/",
+    "title": "Research Peptides for Sale | COA-Verified USA Catalog",
+    "description": "Browse 115 research peptides and laboratory materials with third-party batch testing, searchable Certificates of Analysis, and fast U.S. shipping.",
+    "kind": "page",
+    "indexable": true,
+    "image": "https://purehealthpeptides.com/assets/hero-vials.png",
+    "imageAlt": "Pure Health Peptides laboratory research materials",
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://purehealthpeptides.com/#organization",
+          "name": "Pure Health Peptides",
+          "url": "https://purehealthpeptides.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://purehealthpeptides.com/assets/logo.svg"
+          },
+          "email": "info@purehealthpeptides.com",
+          "description": "Supplier of independently batch-tested materials for controlled in vitro laboratory research."
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://purehealthpeptides.com/#website",
+          "url": "https://purehealthpeptides.com/",
+          "name": "Pure Health Peptides",
+          "publisher": {
+            "@id": "https://purehealthpeptides.com/#organization"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "CollectionPage",
+          "@id": "https://purehealthpeptides.com/shop/#webpage",
+          "url": "https://purehealthpeptides.com/shop/",
+          "name": "Research Peptides for Sale | COA-Verified USA Catalog",
+          "description": "Browse 115 research peptides and laboratory materials with third-party batch testing, searchable Certificates of Analysis, and fast U.S. shipping.",
+          "isPartOf": {
+            "@id": "https://purehealthpeptides.com/#website"
+          },
+          "about": {
+            "@id": "https://purehealthpeptides.com/#organization"
+          },
+          "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "url": "https://purehealthpeptides.com/assets/hero-vials.png"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://purehealthpeptides.com/shop/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://purehealthpeptides.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Research Peptides",
+              "item": "https://purehealthpeptides.com/shop/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "@id": "https://purehealthpeptides.com/shop/#catalog",
+          "name": "Research Peptides and Laboratory Materials",
+          "numberOfItems": 115,
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Bacteriostatic Water",
+              "url": "https://purehealthpeptides.com/product/bacteriostatic-water/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "GLP-3 (R)",
+              "url": "https://purehealthpeptides.com/product/glp-3-r/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "BPC-157",
+              "url": "https://purehealthpeptides.com/product/bpc-157/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "BPC-157/TB-500",
+              "url": "https://purehealthpeptides.com/product/bpc-157-tb-500/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "NAD+",
+              "url": "https://purehealthpeptides.com/product/nad/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "GHK-Cu",
+              "url": "https://purehealthpeptides.com/product/ghk-cu/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 7,
+              "name": "MOTS-c",
+              "url": "https://purehealthpeptides.com/product/mots-c/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 8,
+              "name": "Tesmorelin",
+              "url": "https://purehealthpeptides.com/product/tesmorelin/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 9,
+              "name": "PT-141",
+              "url": "https://purehealthpeptides.com/product/pt-141/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 10,
+              "name": "CJC-1295/Ipamorelin",
+              "url": "https://purehealthpeptides.com/product/cjc-1295-ipamorelin/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 11,
+              "name": "TB-500",
+              "url": "https://purehealthpeptides.com/product/tb-500/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 12,
+              "name": "GLOW – BPC-157/GHK-Cu/TB-500 Blend",
+              "url": "https://purehealthpeptides.com/product/glow-bpc-157-ghk-cu-tb-500-blend/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 13,
+              "name": "AOD9604",
+              "url": "https://purehealthpeptides.com/product/aod9604/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 14,
+              "name": "Sermorlin",
+              "url": "https://purehealthpeptides.com/product/sermorlin/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 15,
+              "name": "Ipamorelin",
+              "url": "https://purehealthpeptides.com/product/ipamorelin/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 16,
+              "name": "DSIP",
+              "url": "https://purehealthpeptides.com/product/dsip/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 17,
+              "name": "Epithalon",
+              "url": "https://purehealthpeptides.com/product/epithalon/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 18,
+              "name": "Melanoten-2",
+              "url": "https://purehealthpeptides.com/product/melanoten-2/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 19,
+              "name": "GLP-2 (T)",
+              "url": "https://purehealthpeptides.com/product/glp-2-t/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 20,
+              "name": "KPV",
+              "url": "https://purehealthpeptides.com/product/kpv/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 21,
+              "name": "KLOW",
+              "url": "https://purehealthpeptides.com/product/klow/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 22,
+              "name": "GLP-1 (S)",
+              "url": "https://purehealthpeptides.com/product/glp-1-s/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 23,
+              "name": "Glutathione",
+              "url": "https://purehealthpeptides.com/product/glutathione/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 24,
+              "name": "Semx",
+              "url": "https://purehealthpeptides.com/product/semx/"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "/about-us/": {
+    "path": "/about-us/",
+    "title": "About Our Research Peptide Quality Standards | PHP",
+    "description": "Learn how Pure Health Peptides supports qualified laboratories with independent batch testing, traceable COAs, and research-use-only compliance.",
+    "kind": "page",
+    "indexable": true,
+    "image": "https://purehealthpeptides.com/assets/about/about-bg.jpg",
+    "imageAlt": "Pure Health Peptides laboratory research materials",
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://purehealthpeptides.com/#organization",
+          "name": "Pure Health Peptides",
+          "url": "https://purehealthpeptides.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://purehealthpeptides.com/assets/logo.svg"
+          },
+          "email": "info@purehealthpeptides.com",
+          "description": "Supplier of independently batch-tested materials for controlled in vitro laboratory research."
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://purehealthpeptides.com/#website",
+          "url": "https://purehealthpeptides.com/",
+          "name": "Pure Health Peptides",
+          "publisher": {
+            "@id": "https://purehealthpeptides.com/#organization"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://purehealthpeptides.com/about-us/#webpage",
+          "url": "https://purehealthpeptides.com/about-us/",
+          "name": "About Our Research Peptide Quality Standards | PHP",
+          "description": "Learn how Pure Health Peptides supports qualified laboratories with independent batch testing, traceable COAs, and research-use-only compliance.",
+          "isPartOf": {
+            "@id": "https://purehealthpeptides.com/#website"
+          },
+          "about": {
+            "@id": "https://purehealthpeptides.com/#organization"
+          },
+          "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "url": "https://purehealthpeptides.com/assets/about/about-bg.jpg"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://purehealthpeptides.com/about-us/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://purehealthpeptides.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "About Us",
+              "item": "https://purehealthpeptides.com/about-us/"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "/research-areas/": {
+    "path": "/research-areas/",
+    "title": "Laboratory Peptide Research Areas | In Vitro Catalog",
+    "description": "Explore research peptides and laboratory materials by analytical area, including cellular energy, peptide stability, signaling, and molecular interactions.",
+    "kind": "page",
+    "indexable": true,
+    "image": "https://purehealthpeptides.com/assets/hero-vials.png",
+    "imageAlt": "Pure Health Peptides laboratory research materials",
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://purehealthpeptides.com/#organization",
+          "name": "Pure Health Peptides",
+          "url": "https://purehealthpeptides.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://purehealthpeptides.com/assets/logo.svg"
+          },
+          "email": "info@purehealthpeptides.com",
+          "description": "Supplier of independently batch-tested materials for controlled in vitro laboratory research."
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://purehealthpeptides.com/#website",
+          "url": "https://purehealthpeptides.com/",
+          "name": "Pure Health Peptides",
+          "publisher": {
+            "@id": "https://purehealthpeptides.com/#organization"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://purehealthpeptides.com/research-areas/#webpage",
+          "url": "https://purehealthpeptides.com/research-areas/",
+          "name": "Laboratory Peptide Research Areas | In Vitro Catalog",
+          "description": "Explore research peptides and laboratory materials by analytical area, including cellular energy, peptide stability, signaling, and molecular interactions.",
+          "isPartOf": {
+            "@id": "https://purehealthpeptides.com/#website"
+          },
+          "about": {
+            "@id": "https://purehealthpeptides.com/#organization"
+          },
+          "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "url": "https://purehealthpeptides.com/assets/hero-vials.png"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://purehealthpeptides.com/research-areas/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://purehealthpeptides.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Research Areas",
+              "item": "https://purehealthpeptides.com/research-areas/"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "/news/": {
+    "path": "/news/",
+    "title": "Recent News | Pure Health Peptides",
+    "description": "Read recent Pure Health Peptides research, product, testing, and manufacturing updates.",
+    "kind": "page",
+    "indexable": true,
+    "image": "https://purehealthpeptides.com/assets/hero-vials.png",
+    "imageAlt": "Pure Health Peptides laboratory research materials",
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://purehealthpeptides.com/#organization",
+          "name": "Pure Health Peptides",
+          "url": "https://purehealthpeptides.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://purehealthpeptides.com/assets/logo.svg"
+          },
+          "email": "info@purehealthpeptides.com",
+          "description": "Supplier of independently batch-tested materials for controlled in vitro laboratory research."
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://purehealthpeptides.com/#website",
+          "url": "https://purehealthpeptides.com/",
+          "name": "Pure Health Peptides",
+          "publisher": {
+            "@id": "https://purehealthpeptides.com/#organization"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://purehealthpeptides.com/news/#webpage",
+          "url": "https://purehealthpeptides.com/news/",
+          "name": "Recent News | Pure Health Peptides",
+          "description": "Read recent Pure Health Peptides research, product, testing, and manufacturing updates.",
+          "isPartOf": {
+            "@id": "https://purehealthpeptides.com/#website"
+          },
+          "about": {
+            "@id": "https://purehealthpeptides.com/#organization"
+          },
+          "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "url": "https://purehealthpeptides.com/assets/hero-vials.png"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://purehealthpeptides.com/news/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://purehealthpeptides.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Recent News",
+              "item": "https://purehealthpeptides.com/news/"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "/pure-elite-access/": {
+    "path": "/pure-elite-access/",
+    "title": "Pure Elite Access | Pure Health Peptides",
+    "description": "Explore Pure Elite Access rewards, member tiers, and research catalog benefits.",
+    "kind": "page",
+    "indexable": true,
+    "image": "https://purehealthpeptides.com/assets/hero-vials.png",
+    "imageAlt": "Pure Health Peptides laboratory research materials",
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://purehealthpeptides.com/#organization",
+          "name": "Pure Health Peptides",
+          "url": "https://purehealthpeptides.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://purehealthpeptides.com/assets/logo.svg"
+          },
+          "email": "info@purehealthpeptides.com",
+          "description": "Supplier of independently batch-tested materials for controlled in vitro laboratory research."
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://purehealthpeptides.com/#website",
+          "url": "https://purehealthpeptides.com/",
+          "name": "Pure Health Peptides",
+          "publisher": {
+            "@id": "https://purehealthpeptides.com/#organization"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://purehealthpeptides.com/pure-elite-access/#webpage",
+          "url": "https://purehealthpeptides.com/pure-elite-access/",
+          "name": "Pure Elite Access | Pure Health Peptides",
+          "description": "Explore Pure Elite Access rewards, member tiers, and research catalog benefits.",
+          "isPartOf": {
+            "@id": "https://purehealthpeptides.com/#website"
+          },
+          "about": {
+            "@id": "https://purehealthpeptides.com/#organization"
+          },
+          "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "url": "https://purehealthpeptides.com/assets/hero-vials.png"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://purehealthpeptides.com/pure-elite-access/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://purehealthpeptides.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Pure Elite Access",
+              "item": "https://purehealthpeptides.com/pure-elite-access/"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "/my-account/": {
+    "path": "/my-account/",
+    "title": "My Account | Pure Health Peptides",
+    "description": "Access the Pure Health Peptides account area.",
+    "kind": "page",
+    "indexable": false,
+    "image": "https://purehealthpeptides.com/assets/hero-vials.png",
+    "imageAlt": "Pure Health Peptides laboratory research materials",
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://purehealthpeptides.com/#organization",
+          "name": "Pure Health Peptides",
+          "url": "https://purehealthpeptides.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://purehealthpeptides.com/assets/logo.svg"
+          },
+          "email": "info@purehealthpeptides.com",
+          "description": "Supplier of independently batch-tested materials for controlled in vitro laboratory research."
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://purehealthpeptides.com/#website",
+          "url": "https://purehealthpeptides.com/",
+          "name": "Pure Health Peptides",
+          "publisher": {
+            "@id": "https://purehealthpeptides.com/#organization"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://purehealthpeptides.com/my-account/#webpage",
+          "url": "https://purehealthpeptides.com/my-account/",
+          "name": "My Account | Pure Health Peptides",
+          "description": "Access the Pure Health Peptides account area.",
+          "isPartOf": {
+            "@id": "https://purehealthpeptides.com/#website"
+          },
+          "about": {
+            "@id": "https://purehealthpeptides.com/#organization"
+          },
+          "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "url": "https://purehealthpeptides.com/assets/hero-vials.png"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://purehealthpeptides.com/my-account/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://purehealthpeptides.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "My Account",
+              "item": "https://purehealthpeptides.com/my-account/"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "/track-my-order/": {
+    "path": "/track-my-order/",
+    "title": "Track My Order | Pure Health Peptides",
+    "description": "Open the Pure Health Peptides order tracking area.",
+    "kind": "page",
+    "indexable": false,
+    "image": "https://purehealthpeptides.com/assets/hero-vials.png",
+    "imageAlt": "Pure Health Peptides laboratory research materials",
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://purehealthpeptides.com/#organization",
+          "name": "Pure Health Peptides",
+          "url": "https://purehealthpeptides.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://purehealthpeptides.com/assets/logo.svg"
+          },
+          "email": "info@purehealthpeptides.com",
+          "description": "Supplier of independently batch-tested materials for controlled in vitro laboratory research."
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://purehealthpeptides.com/#website",
+          "url": "https://purehealthpeptides.com/",
+          "name": "Pure Health Peptides",
+          "publisher": {
+            "@id": "https://purehealthpeptides.com/#organization"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://purehealthpeptides.com/track-my-order/#webpage",
+          "url": "https://purehealthpeptides.com/track-my-order/",
+          "name": "Track My Order | Pure Health Peptides",
+          "description": "Open the Pure Health Peptides order tracking area.",
+          "isPartOf": {
+            "@id": "https://purehealthpeptides.com/#website"
+          },
+          "about": {
+            "@id": "https://purehealthpeptides.com/#organization"
+          },
+          "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "url": "https://purehealthpeptides.com/assets/hero-vials.png"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://purehealthpeptides.com/track-my-order/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://purehealthpeptides.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Track My Order",
+              "item": "https://purehealthpeptides.com/track-my-order/"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "/checkout/": {
+    "path": "/checkout/",
+    "title": "Checkout | Pure Health Peptides",
+    "description": "Complete a Pure Health Peptides research product checkout.",
+    "kind": "page",
+    "indexable": false,
+    "image": "https://purehealthpeptides.com/assets/hero-vials.png",
+    "imageAlt": "Pure Health Peptides laboratory research materials",
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://purehealthpeptides.com/#organization",
+          "name": "Pure Health Peptides",
+          "url": "https://purehealthpeptides.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://purehealthpeptides.com/assets/logo.svg"
+          },
+          "email": "info@purehealthpeptides.com",
+          "description": "Supplier of independently batch-tested materials for controlled in vitro laboratory research."
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://purehealthpeptides.com/#website",
+          "url": "https://purehealthpeptides.com/",
+          "name": "Pure Health Peptides",
+          "publisher": {
+            "@id": "https://purehealthpeptides.com/#organization"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://purehealthpeptides.com/checkout/#webpage",
+          "url": "https://purehealthpeptides.com/checkout/",
+          "name": "Checkout | Pure Health Peptides",
+          "description": "Complete a Pure Health Peptides research product checkout.",
+          "isPartOf": {
+            "@id": "https://purehealthpeptides.com/#website"
+          },
+          "about": {
+            "@id": "https://purehealthpeptides.com/#organization"
+          },
+          "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "url": "https://purehealthpeptides.com/assets/hero-vials.png"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://purehealthpeptides.com/checkout/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://purehealthpeptides.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Checkout",
+              "item": "https://purehealthpeptides.com/checkout/"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "/order-confirmation/": {
+    "path": "/order-confirmation/",
+    "title": "Order Confirmation | Pure Health Peptides",
+    "description": "Review the status and summary of a Pure Health Peptides order.",
+    "kind": "page",
+    "indexable": false,
+    "image": "https://purehealthpeptides.com/assets/hero-vials.png",
+    "imageAlt": "Pure Health Peptides laboratory research materials",
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://purehealthpeptides.com/#organization",
+          "name": "Pure Health Peptides",
+          "url": "https://purehealthpeptides.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://purehealthpeptides.com/assets/logo.svg"
+          },
+          "email": "info@purehealthpeptides.com",
+          "description": "Supplier of independently batch-tested materials for controlled in vitro laboratory research."
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://purehealthpeptides.com/#website",
+          "url": "https://purehealthpeptides.com/",
+          "name": "Pure Health Peptides",
+          "publisher": {
+            "@id": "https://purehealthpeptides.com/#organization"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://purehealthpeptides.com/order-confirmation/#webpage",
+          "url": "https://purehealthpeptides.com/order-confirmation/",
+          "name": "Order Confirmation | Pure Health Peptides",
+          "description": "Review the status and summary of a Pure Health Peptides order.",
+          "isPartOf": {
+            "@id": "https://purehealthpeptides.com/#website"
+          },
+          "about": {
+            "@id": "https://purehealthpeptides.com/#organization"
+          },
+          "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "url": "https://purehealthpeptides.com/assets/hero-vials.png"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://purehealthpeptides.com/order-confirmation/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://purehealthpeptides.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Order Confirmation",
+              "item": "https://purehealthpeptides.com/order-confirmation/"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "/faqs/": {
+    "path": "/faqs/",
+    "title": "Research Peptide FAQs | Testing, COAs, Shipping & Storage",
+    "description": "Get answers about research peptide batch testing, Certificates of Analysis, product storage, U.S. shipping, ordering, and research-use requirements.",
+    "kind": "page",
+    "indexable": true,
+    "image": "https://purehealthpeptides.com/assets/hero-vials.png",
+    "imageAlt": "Pure Health Peptides laboratory research materials",
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://purehealthpeptides.com/#organization",
+          "name": "Pure Health Peptides",
+          "url": "https://purehealthpeptides.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://purehealthpeptides.com/assets/logo.svg"
+          },
+          "email": "info@purehealthpeptides.com",
+          "description": "Supplier of independently batch-tested materials for controlled in vitro laboratory research."
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://purehealthpeptides.com/#website",
+          "url": "https://purehealthpeptides.com/",
+          "name": "Pure Health Peptides",
+          "publisher": {
+            "@id": "https://purehealthpeptides.com/#organization"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://purehealthpeptides.com/faqs/#webpage",
+          "url": "https://purehealthpeptides.com/faqs/",
+          "name": "Research Peptide FAQs | Testing, COAs, Shipping & Storage",
+          "description": "Get answers about research peptide batch testing, Certificates of Analysis, product storage, U.S. shipping, ordering, and research-use requirements.",
+          "isPartOf": {
+            "@id": "https://purehealthpeptides.com/#website"
+          },
+          "about": {
+            "@id": "https://purehealthpeptides.com/#organization"
+          },
+          "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "url": "https://purehealthpeptides.com/assets/hero-vials.png"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://purehealthpeptides.com/faqs/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://purehealthpeptides.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Research Peptide FAQs",
+              "item": "https://purehealthpeptides.com/faqs/"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "/contact-us/": {
+    "path": "/contact-us/",
+    "title": "Contact Us | Pure Health Peptides Support",
+    "description": "Contact Pure Health Peptides support for catalog, order, shipping, or research documentation questions.",
+    "kind": "page",
+    "indexable": true,
+    "image": "https://purehealthpeptides.com/assets/hero-vials.png",
+    "imageAlt": "Pure Health Peptides laboratory research materials",
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://purehealthpeptides.com/#organization",
+          "name": "Pure Health Peptides",
+          "url": "https://purehealthpeptides.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://purehealthpeptides.com/assets/logo.svg"
+          },
+          "email": "info@purehealthpeptides.com",
+          "description": "Supplier of independently batch-tested materials for controlled in vitro laboratory research."
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://purehealthpeptides.com/#website",
+          "url": "https://purehealthpeptides.com/",
+          "name": "Pure Health Peptides",
+          "publisher": {
+            "@id": "https://purehealthpeptides.com/#organization"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://purehealthpeptides.com/contact-us/#webpage",
+          "url": "https://purehealthpeptides.com/contact-us/",
+          "name": "Contact Us | Pure Health Peptides Support",
+          "description": "Contact Pure Health Peptides support for catalog, order, shipping, or research documentation questions.",
+          "isPartOf": {
+            "@id": "https://purehealthpeptides.com/#website"
+          },
+          "about": {
+            "@id": "https://purehealthpeptides.com/#organization"
+          },
+          "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "url": "https://purehealthpeptides.com/assets/hero-vials.png"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://purehealthpeptides.com/contact-us/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://purehealthpeptides.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Contact Us",
+              "item": "https://purehealthpeptides.com/contact-us/"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "/shipping-policy/": {
+    "path": "/shipping-policy/",
+    "title": "Shipping Policy | Pure Health Peptides",
+    "description": "Review Pure Health Peptides shipping service areas, rates, timing, tracking, and damaged-shipment procedures.",
+    "kind": "page",
+    "indexable": true,
+    "image": "https://purehealthpeptides.com/assets/hero-vials.png",
+    "imageAlt": "Pure Health Peptides laboratory research materials",
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://purehealthpeptides.com/#organization",
+          "name": "Pure Health Peptides",
+          "url": "https://purehealthpeptides.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://purehealthpeptides.com/assets/logo.svg"
+          },
+          "email": "info@purehealthpeptides.com",
+          "description": "Supplier of independently batch-tested materials for controlled in vitro laboratory research."
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://purehealthpeptides.com/#website",
+          "url": "https://purehealthpeptides.com/",
+          "name": "Pure Health Peptides",
+          "publisher": {
+            "@id": "https://purehealthpeptides.com/#organization"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://purehealthpeptides.com/shipping-policy/#webpage",
+          "url": "https://purehealthpeptides.com/shipping-policy/",
+          "name": "Shipping Policy | Pure Health Peptides",
+          "description": "Review Pure Health Peptides shipping service areas, rates, timing, tracking, and damaged-shipment procedures.",
+          "isPartOf": {
+            "@id": "https://purehealthpeptides.com/#website"
+          },
+          "about": {
+            "@id": "https://purehealthpeptides.com/#organization"
+          },
+          "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "url": "https://purehealthpeptides.com/assets/hero-vials.png"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://purehealthpeptides.com/shipping-policy/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://purehealthpeptides.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Shipping Policy",
+              "item": "https://purehealthpeptides.com/shipping-policy/"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "/refund-policy/": {
+    "path": "/refund-policy/",
+    "title": "Refund Policy | Pure Health Peptides",
+    "description": "Review Pure Health Peptides cancellation, return authorization, damage claim, and refund procedures.",
+    "kind": "page",
+    "indexable": true,
+    "image": "https://purehealthpeptides.com/assets/hero-vials.png",
+    "imageAlt": "Pure Health Peptides laboratory research materials",
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://purehealthpeptides.com/#organization",
+          "name": "Pure Health Peptides",
+          "url": "https://purehealthpeptides.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://purehealthpeptides.com/assets/logo.svg"
+          },
+          "email": "info@purehealthpeptides.com",
+          "description": "Supplier of independently batch-tested materials for controlled in vitro laboratory research."
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://purehealthpeptides.com/#website",
+          "url": "https://purehealthpeptides.com/",
+          "name": "Pure Health Peptides",
+          "publisher": {
+            "@id": "https://purehealthpeptides.com/#organization"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://purehealthpeptides.com/refund-policy/#webpage",
+          "url": "https://purehealthpeptides.com/refund-policy/",
+          "name": "Refund Policy | Pure Health Peptides",
+          "description": "Review Pure Health Peptides cancellation, return authorization, damage claim, and refund procedures.",
+          "isPartOf": {
+            "@id": "https://purehealthpeptides.com/#website"
+          },
+          "about": {
+            "@id": "https://purehealthpeptides.com/#organization"
+          },
+          "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "url": "https://purehealthpeptides.com/assets/hero-vials.png"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://purehealthpeptides.com/refund-policy/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://purehealthpeptides.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Refund Policy",
+              "item": "https://purehealthpeptides.com/refund-policy/"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "/privacy-policy/": {
+    "path": "/privacy-policy/",
+    "title": "Privacy Policy | Pure Health Peptides",
+    "description": "Learn how Pure Health Peptides collects, uses, protects, and retains customer and transaction information.",
+    "kind": "page",
+    "indexable": true,
+    "image": "https://purehealthpeptides.com/assets/hero-vials.png",
+    "imageAlt": "Pure Health Peptides laboratory research materials",
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://purehealthpeptides.com/#organization",
+          "name": "Pure Health Peptides",
+          "url": "https://purehealthpeptides.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://purehealthpeptides.com/assets/logo.svg"
+          },
+          "email": "info@purehealthpeptides.com",
+          "description": "Supplier of independently batch-tested materials for controlled in vitro laboratory research."
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://purehealthpeptides.com/#website",
+          "url": "https://purehealthpeptides.com/",
+          "name": "Pure Health Peptides",
+          "publisher": {
+            "@id": "https://purehealthpeptides.com/#organization"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://purehealthpeptides.com/privacy-policy/#webpage",
+          "url": "https://purehealthpeptides.com/privacy-policy/",
+          "name": "Privacy Policy | Pure Health Peptides",
+          "description": "Learn how Pure Health Peptides collects, uses, protects, and retains customer and transaction information.",
+          "isPartOf": {
+            "@id": "https://purehealthpeptides.com/#website"
+          },
+          "about": {
+            "@id": "https://purehealthpeptides.com/#organization"
+          },
+          "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "url": "https://purehealthpeptides.com/assets/hero-vials.png"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://purehealthpeptides.com/privacy-policy/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://purehealthpeptides.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Privacy Policy",
+              "item": "https://purehealthpeptides.com/privacy-policy/"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "/terms-and-conditions/": {
+    "path": "/terms-and-conditions/",
+    "title": "Terms and Conditions | Pure Health Peptides",
+    "description": "Review the purchasing, research-use, site-content, and customer responsibility terms for Pure Health Peptides.",
+    "kind": "page",
+    "indexable": true,
+    "image": "https://purehealthpeptides.com/assets/hero-vials.png",
+    "imageAlt": "Pure Health Peptides laboratory research materials",
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://purehealthpeptides.com/#organization",
+          "name": "Pure Health Peptides",
+          "url": "https://purehealthpeptides.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://purehealthpeptides.com/assets/logo.svg"
+          },
+          "email": "info@purehealthpeptides.com",
+          "description": "Supplier of independently batch-tested materials for controlled in vitro laboratory research."
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://purehealthpeptides.com/#website",
+          "url": "https://purehealthpeptides.com/",
+          "name": "Pure Health Peptides",
+          "publisher": {
+            "@id": "https://purehealthpeptides.com/#organization"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://purehealthpeptides.com/terms-and-conditions/#webpage",
+          "url": "https://purehealthpeptides.com/terms-and-conditions/",
+          "name": "Terms and Conditions | Pure Health Peptides",
+          "description": "Review the purchasing, research-use, site-content, and customer responsibility terms for Pure Health Peptides.",
+          "isPartOf": {
+            "@id": "https://purehealthpeptides.com/#website"
+          },
+          "about": {
+            "@id": "https://purehealthpeptides.com/#organization"
+          },
+          "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "url": "https://purehealthpeptides.com/assets/hero-vials.png"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://purehealthpeptides.com/terms-and-conditions/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://purehealthpeptides.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Terms and Conditions",
+              "item": "https://purehealthpeptides.com/terms-and-conditions/"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "/info-cards/": {
+    "path": "/info-cards/",
+    "title": "Research Peptide Product Information Cards | PHP",
+    "description": "Browse downloadable research peptide information cards with compound identity, molecular details, storage guidance, and laboratory-use references.",
+    "kind": "page",
+    "indexable": true,
+    "image": "https://purehealthpeptides.com/assets/hero-vials.png",
+    "imageAlt": "Pure Health Peptides laboratory research materials",
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://purehealthpeptides.com/#organization",
+          "name": "Pure Health Peptides",
+          "url": "https://purehealthpeptides.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://purehealthpeptides.com/assets/logo.svg"
+          },
+          "email": "info@purehealthpeptides.com",
+          "description": "Supplier of independently batch-tested materials for controlled in vitro laboratory research."
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://purehealthpeptides.com/#website",
+          "url": "https://purehealthpeptides.com/",
+          "name": "Pure Health Peptides",
+          "publisher": {
+            "@id": "https://purehealthpeptides.com/#organization"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://purehealthpeptides.com/info-cards/#webpage",
+          "url": "https://purehealthpeptides.com/info-cards/",
+          "name": "Research Peptide Product Information Cards | PHP",
+          "description": "Browse downloadable research peptide information cards with compound identity, molecular details, storage guidance, and laboratory-use references.",
+          "isPartOf": {
+            "@id": "https://purehealthpeptides.com/#website"
+          },
+          "about": {
+            "@id": "https://purehealthpeptides.com/#organization"
+          },
+          "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "url": "https://purehealthpeptides.com/assets/hero-vials.png"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://purehealthpeptides.com/info-cards/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://purehealthpeptides.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Product Information Cards",
+              "item": "https://purehealthpeptides.com/info-cards/"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "/coa-process/": {
+    "path": "/coa-process/",
+    "title": "How Research Peptide COA Testing Works | PHP",
+    "description": "Learn how third-party HPLC and analytical testing verify research peptide identity, purity, quantity, and batch quality through a Certificate of Analysis.",
+    "kind": "page",
+    "indexable": true,
+    "image": "https://purehealthpeptides.com/assets/peptide-info/coa-lab.png",
+    "imageAlt": "Research peptide Certificate of Analysis documentation",
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://purehealthpeptides.com/#organization",
+          "name": "Pure Health Peptides",
+          "url": "https://purehealthpeptides.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://purehealthpeptides.com/assets/logo.svg"
+          },
+          "email": "info@purehealthpeptides.com",
+          "description": "Supplier of independently batch-tested materials for controlled in vitro laboratory research."
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://purehealthpeptides.com/#website",
+          "url": "https://purehealthpeptides.com/",
+          "name": "Pure Health Peptides",
+          "publisher": {
+            "@id": "https://purehealthpeptides.com/#organization"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://purehealthpeptides.com/coa-process/#webpage",
+          "url": "https://purehealthpeptides.com/coa-process/",
+          "name": "How Research Peptide COA Testing Works | PHP",
+          "description": "Learn how third-party HPLC and analytical testing verify research peptide identity, purity, quantity, and batch quality through a Certificate of Analysis.",
+          "isPartOf": {
+            "@id": "https://purehealthpeptides.com/#website"
+          },
+          "about": {
+            "@id": "https://purehealthpeptides.com/#organization"
+          },
+          "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "url": "https://purehealthpeptides.com/assets/peptide-info/coa-lab.png"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://purehealthpeptides.com/coa-process/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://purehealthpeptides.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "COA Testing Process",
+              "item": "https://purehealthpeptides.com/coa-process/"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "/manufacturing/": {
+    "path": "/manufacturing/",
+    "title": "Research Peptide Quality & Manufacturing Standards | PHP",
+    "description": "Review sourcing, handling, batch documentation, and independent quality-control standards for Pure Health Peptides laboratory research materials.",
+    "kind": "page",
+    "indexable": true,
+    "image": "https://purehealthpeptides.com/assets/about/news-manufacturing.png",
+    "imageAlt": "Pure Health Peptides laboratory research materials",
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://purehealthpeptides.com/#organization",
+          "name": "Pure Health Peptides",
+          "url": "https://purehealthpeptides.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://purehealthpeptides.com/assets/logo.svg"
+          },
+          "email": "info@purehealthpeptides.com",
+          "description": "Supplier of independently batch-tested materials for controlled in vitro laboratory research."
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://purehealthpeptides.com/#website",
+          "url": "https://purehealthpeptides.com/",
+          "name": "Pure Health Peptides",
+          "publisher": {
+            "@id": "https://purehealthpeptides.com/#organization"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://purehealthpeptides.com/manufacturing/#webpage",
+          "url": "https://purehealthpeptides.com/manufacturing/",
+          "name": "Research Peptide Quality & Manufacturing Standards | PHP",
+          "description": "Review sourcing, handling, batch documentation, and independent quality-control standards for Pure Health Peptides laboratory research materials.",
+          "isPartOf": {
+            "@id": "https://purehealthpeptides.com/#website"
+          },
+          "about": {
+            "@id": "https://purehealthpeptides.com/#organization"
+          },
+          "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "url": "https://purehealthpeptides.com/assets/about/news-manufacturing.png"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://purehealthpeptides.com/manufacturing/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://purehealthpeptides.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Quality & Manufacturing",
+              "item": "https://purehealthpeptides.com/manufacturing/"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "/dilution-guide/": {
+    "path": "/dilution-guide/",
+    "title": "Laboratory Peptide Dilution Guide | Research Reference",
+    "description": "Use the laboratory peptide dilution guide and downloadable reference materials for controlled in vitro research preparation and concentration planning.",
+    "kind": "page",
+    "indexable": true,
+    "image": "https://purehealthpeptides.com/assets/hero-vials.png",
+    "imageAlt": "Pure Health Peptides laboratory research materials",
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://purehealthpeptides.com/#organization",
+          "name": "Pure Health Peptides",
+          "url": "https://purehealthpeptides.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://purehealthpeptides.com/assets/logo.svg"
+          },
+          "email": "info@purehealthpeptides.com",
+          "description": "Supplier of independently batch-tested materials for controlled in vitro laboratory research."
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://purehealthpeptides.com/#website",
+          "url": "https://purehealthpeptides.com/",
+          "name": "Pure Health Peptides",
+          "publisher": {
+            "@id": "https://purehealthpeptides.com/#organization"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://purehealthpeptides.com/dilution-guide/#webpage",
+          "url": "https://purehealthpeptides.com/dilution-guide/",
+          "name": "Laboratory Peptide Dilution Guide | Research Reference",
+          "description": "Use the laboratory peptide dilution guide and downloadable reference materials for controlled in vitro research preparation and concentration planning.",
+          "isPartOf": {
+            "@id": "https://purehealthpeptides.com/#website"
+          },
+          "about": {
+            "@id": "https://purehealthpeptides.com/#organization"
+          },
+          "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "url": "https://purehealthpeptides.com/assets/hero-vials.png"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://purehealthpeptides.com/dilution-guide/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://purehealthpeptides.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Laboratory Dilution Guide",
+              "item": "https://purehealthpeptides.com/dilution-guide/"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "/coa-library/": {
+    "path": "/coa-library/",
+    "title": "Research Peptide COA Library | Batch Test Results",
+    "description": "Search batch-specific research peptide Certificates of Analysis by product format, compound, and lot to verify identity, purity, quantity, and quality results.",
+    "kind": "page",
+    "indexable": true,
+    "image": "https://purehealthpeptides.com/assets/coa-documents.png",
+    "imageAlt": "Research peptide Certificate of Analysis documentation",
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://purehealthpeptides.com/#organization",
+          "name": "Pure Health Peptides",
+          "url": "https://purehealthpeptides.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://purehealthpeptides.com/assets/logo.svg"
+          },
+          "email": "info@purehealthpeptides.com",
+          "description": "Supplier of independently batch-tested materials for controlled in vitro laboratory research."
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://purehealthpeptides.com/#website",
+          "url": "https://purehealthpeptides.com/",
+          "name": "Pure Health Peptides",
+          "publisher": {
+            "@id": "https://purehealthpeptides.com/#organization"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "CollectionPage",
+          "@id": "https://purehealthpeptides.com/coa-library/#webpage",
+          "url": "https://purehealthpeptides.com/coa-library/",
+          "name": "Research Peptide COA Library | Batch Test Results",
+          "description": "Search batch-specific research peptide Certificates of Analysis by product format, compound, and lot to verify identity, purity, quantity, and quality results.",
+          "isPartOf": {
+            "@id": "https://purehealthpeptides.com/#website"
+          },
+          "about": {
+            "@id": "https://purehealthpeptides.com/#organization"
+          },
+          "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "url": "https://purehealthpeptides.com/assets/coa-documents.png"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://purehealthpeptides.com/coa-library/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://purehealthpeptides.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "COA Library",
+              "item": "https://purehealthpeptides.com/coa-library/"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "/coa-library/vials/": {
+    "path": "/coa-library/vials/",
+    "title": "Research Peptide Vial COAs | Batch Certificates",
+    "description": "Browse batch-specific Certificates of Analysis for research peptide vials, including independent identity, purity, quantity, and quality test documentation.",
+    "kind": "page",
+    "indexable": true,
+    "image": "https://purehealthpeptides.com/assets/coa-documents.png",
+    "imageAlt": "Research peptide Certificate of Analysis documentation",
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://purehealthpeptides.com/#organization",
+          "name": "Pure Health Peptides",
+          "url": "https://purehealthpeptides.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://purehealthpeptides.com/assets/logo.svg"
+          },
+          "email": "info@purehealthpeptides.com",
+          "description": "Supplier of independently batch-tested materials for controlled in vitro laboratory research."
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://purehealthpeptides.com/#website",
+          "url": "https://purehealthpeptides.com/",
+          "name": "Pure Health Peptides",
+          "publisher": {
+            "@id": "https://purehealthpeptides.com/#organization"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "CollectionPage",
+          "@id": "https://purehealthpeptides.com/coa-library/vials/#webpage",
+          "url": "https://purehealthpeptides.com/coa-library/vials/",
+          "name": "Research Peptide Vial COAs | Batch Certificates",
+          "description": "Browse batch-specific Certificates of Analysis for research peptide vials, including independent identity, purity, quantity, and quality test documentation.",
+          "isPartOf": {
+            "@id": "https://purehealthpeptides.com/#website"
+          },
+          "about": {
+            "@id": "https://purehealthpeptides.com/#organization"
+          },
+          "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "url": "https://purehealthpeptides.com/assets/coa-documents.png"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://purehealthpeptides.com/coa-library/vials/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://purehealthpeptides.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Vial COAs",
+              "item": "https://purehealthpeptides.com/coa-library/vials/"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "/coa-library/capsules/": {
+    "path": "/coa-library/capsules/",
+    "title": "Research Capsule COAs | Batch Certificates",
+    "description": "Browse batch-specific Certificates of Analysis for research capsules with independent identity, assay, quantity, and quality testing documentation.",
+    "kind": "page",
+    "indexable": true,
+    "image": "https://purehealthpeptides.com/assets/coa-documents.png",
+    "imageAlt": "Research peptide Certificate of Analysis documentation",
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://purehealthpeptides.com/#organization",
+          "name": "Pure Health Peptides",
+          "url": "https://purehealthpeptides.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://purehealthpeptides.com/assets/logo.svg"
+          },
+          "email": "info@purehealthpeptides.com",
+          "description": "Supplier of independently batch-tested materials for controlled in vitro laboratory research."
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://purehealthpeptides.com/#website",
+          "url": "https://purehealthpeptides.com/",
+          "name": "Pure Health Peptides",
+          "publisher": {
+            "@id": "https://purehealthpeptides.com/#organization"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "CollectionPage",
+          "@id": "https://purehealthpeptides.com/coa-library/capsules/#webpage",
+          "url": "https://purehealthpeptides.com/coa-library/capsules/",
+          "name": "Research Capsule COAs | Batch Certificates",
+          "description": "Browse batch-specific Certificates of Analysis for research capsules with independent identity, assay, quantity, and quality testing documentation.",
+          "isPartOf": {
+            "@id": "https://purehealthpeptides.com/#website"
+          },
+          "about": {
+            "@id": "https://purehealthpeptides.com/#organization"
+          },
+          "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "url": "https://purehealthpeptides.com/assets/coa-documents.png"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://purehealthpeptides.com/coa-library/capsules/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://purehealthpeptides.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Capsule COAs",
+              "item": "https://purehealthpeptides.com/coa-library/capsules/"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "/coa-library/liquids/": {
+    "path": "/coa-library/liquids/",
+    "title": "Research Liquid COAs | Batch Certificates",
+    "description": "Browse batch-specific Certificates of Analysis for liquid research materials with independent identity, assay, quantity, and quality documentation.",
+    "kind": "page",
+    "indexable": true,
+    "image": "https://purehealthpeptides.com/assets/coa-documents.png",
+    "imageAlt": "Research peptide Certificate of Analysis documentation",
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://purehealthpeptides.com/#organization",
+          "name": "Pure Health Peptides",
+          "url": "https://purehealthpeptides.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://purehealthpeptides.com/assets/logo.svg"
+          },
+          "email": "info@purehealthpeptides.com",
+          "description": "Supplier of independently batch-tested materials for controlled in vitro laboratory research."
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://purehealthpeptides.com/#website",
+          "url": "https://purehealthpeptides.com/",
+          "name": "Pure Health Peptides",
+          "publisher": {
+            "@id": "https://purehealthpeptides.com/#organization"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "CollectionPage",
+          "@id": "https://purehealthpeptides.com/coa-library/liquids/#webpage",
+          "url": "https://purehealthpeptides.com/coa-library/liquids/",
+          "name": "Research Liquid COAs | Batch Certificates",
+          "description": "Browse batch-specific Certificates of Analysis for liquid research materials with independent identity, assay, quantity, and quality documentation.",
+          "isPartOf": {
+            "@id": "https://purehealthpeptides.com/#website"
+          },
+          "about": {
+            "@id": "https://purehealthpeptides.com/#organization"
+          },
+          "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "url": "https://purehealthpeptides.com/assets/coa-documents.png"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://purehealthpeptides.com/coa-library/liquids/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://purehealthpeptides.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Liquid COAs",
+              "item": "https://purehealthpeptides.com/coa-library/liquids/"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "/coa-library/topicals/": {
+    "path": "/coa-library/topicals/",
+    "title": "Research Topical COAs | Batch Certificates",
+    "description": "Browse batch-specific Certificates of Analysis for topical research systems with independent identity, assay, quantity, and quality documentation.",
+    "kind": "page",
+    "indexable": true,
+    "image": "https://purehealthpeptides.com/assets/coa-documents.png",
+    "imageAlt": "Research peptide Certificate of Analysis documentation",
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://purehealthpeptides.com/#organization",
+          "name": "Pure Health Peptides",
+          "url": "https://purehealthpeptides.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://purehealthpeptides.com/assets/logo.svg"
+          },
+          "email": "info@purehealthpeptides.com",
+          "description": "Supplier of independently batch-tested materials for controlled in vitro laboratory research."
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://purehealthpeptides.com/#website",
+          "url": "https://purehealthpeptides.com/",
+          "name": "Pure Health Peptides",
+          "publisher": {
+            "@id": "https://purehealthpeptides.com/#organization"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "CollectionPage",
+          "@id": "https://purehealthpeptides.com/coa-library/topicals/#webpage",
+          "url": "https://purehealthpeptides.com/coa-library/topicals/",
+          "name": "Research Topical COAs | Batch Certificates",
+          "description": "Browse batch-specific Certificates of Analysis for topical research systems with independent identity, assay, quantity, and quality documentation.",
+          "isPartOf": {
+            "@id": "https://purehealthpeptides.com/#website"
+          },
+          "about": {
+            "@id": "https://purehealthpeptides.com/#organization"
+          },
+          "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "url": "https://purehealthpeptides.com/assets/coa-documents.png"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://purehealthpeptides.com/coa-library/topicals/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://purehealthpeptides.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Topical COAs",
+              "item": "https://purehealthpeptides.com/coa-library/topicals/"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

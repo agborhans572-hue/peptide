@@ -1,0 +1,535 @@
+{
+  "aod9604-2": {
+    "categories": [
+      {
+        "slug": "metabolic",
+        "name": "Metabolic"
+      }
+    ],
+    "contentTemplate": "narrative",
+    "descriptionHtml": "<p><strong>Product Name:</strong></p>\n<p><strong>AOD9604 (Aqueous Solution)</strong></p>\n<p><strong>Chemical Information:</strong></p>\n<ul>\n<li><strong>Molecular Formula:</strong> C₇₈H₁₂₃N₂₃O₂₃S₂</li>\n<li><strong>Molecular Weight: </strong>1815.08 g/mol</li>\n<li><strong>Sequence:</strong> Tyr-Gly-Phe-Gly-Gly-Pro-Ser-Val-Thr-Leu-Leu-Lys-Gln-Leu</li>\n</ul>\n<p><strong>Molecular Structure:</strong></p>\n<p>&nbsp;</p>\n\n    <div class=\"molecular-structure-wrap\">\n<div class=\"molecular-structure-img-wrap\">\n\t\t\t<img src=\"/assets/product-details/molecular/AOD9604-liquid-7411f905e024.png\" alt=\"Molecular Structure\" class=\"molecular-structure-img\">\n\t\t</div>\n\t</div>\n\n<p>&nbsp;</p>\n<p><strong>Product Description:</strong></p>\n<p>AOD9604 is a synthetic peptide analog derived from the C-terminal region (176–191) of human growth hormone (HGH), consisting of a defined amino acid sequence produced through controlled peptide synthesis. The compound incorporates structural modifications relative to the native fragment and is not identical to endogenous HGH or its naturally occurring derivatives. It is structurally characterized and utilized in laboratory research settings for analytical and experimental evaluation under controlled conditions. This product is supplied as a pre-formulated aqueous research solution, designed to provide consistency and stability for controlled research applications. No therapeutic, diagnostic, or clinical claims are made or implied.</p>\n<p><strong>Research Applications:</strong></p>\n<ul>\n<li>Analytical evaluation of peptide structure and sequence characteristics</li>\n<li>Examination of peptide stability and degradation profiles under defined conditions</li>\n<li>Investigation of peptide behavior in biochemical and cell-based assay systems</li>\n<li>Characterization of peptide interactions within controlled experimental models</li>\n</ul>\n<p><strong>Storage and Handling:</strong></p>\n<ul>\n<li>For optimal stability, store sealed product in a cool, dark, and dry environment. Refrigeration at 2–8 °C is recommended after first puncture or once the seal has been compromised</li>\n<li>Do not freeze</li>\n<li>Protect from light</li>\n<li>Maintain sterile handling practices during research use</li>\n</ul>\n<p><strong>Product Specifications:</strong></p>\n<ul>\n<li><strong>Bottle Volume:</strong> 15 mL</li>\n<li><strong>Total Content:</strong> 20 mg per bottle</li>\n<li><strong>Dispenses per Container:</strong> ~100</li>\n<li><strong>Per Dispense:</strong> ~200 mcg</li>\n<li><strong>Analytical Approach to Finished Formulations:</strong> Purity is a metric used for isolated raw materials, such as lyophilized peptide powders. Finished formulations—such as capsules, liquids, and topicals—contain multiple components, including excipients and stabilizers. In these systems, a single purity value does not accurately represent the overall composition. Instead, identity and assay (content) are reported on the COA to confirm the presence of the correct compound and to verify that the labeled amount per unit is accurate. This approach reflects standard analytical practice and provides more meaningful information for research applications.</li>\n</ul>\n<p><strong>Compliance Notice:</strong></p>\n<p>AOD9604 (Aqueous Solution) is FOR RESEARCH USE ONLY. It is not intended for human or veterinary use. This product has not been evaluated by the FDA. Misuse of this product is strictly prohibited and may violate federal, state, or local laws. By purchasing this product, buyer represents and warrants that it will be used only for in vitro research purposes.</p>",
+    "documentTitle": "AOD9604 - Pure Health Peptides",
+    "images": [
+      {
+        "role": "primary",
+        "src": "/assets/product-details/gallery/AOD9604-daeb801a301d.png",
+        "alt": "AOD9604"
+      },
+      {
+        "role": "info-card",
+        "src": "/assets/product-details/gallery/Liquids-Information-Card-Featured-3826e1765c6f.jpg",
+        "alt": "Liquids Information Card Featured"
+      }
+    ],
+    "molecularStructureImage": "/assets/product-details/molecular/AOD9604-liquid-7411f905e024.png",
+    "shortDescriptionHtml": "<p>AOD9604 is a synthetic peptide analog derived from the C-terminal region (176–191) of human growth hormone (HGH), consisting of a defined amino acid sequence produced through controlled peptide synthesis. The compound incorporates structural modifications relative to the native fragment and is not identical to endogenous HGH or its naturally occurring derivatives. It is structurally characterized and utilized in laboratory research settings for analytical and experimental evaluation under controlled conditions. This product is supplied as a pre-formulated aqueous research solution, designed to provide consistency and stability for controlled research applications. No therapeutic, diagnostic, or clinical claims are made or implied.</p>",
+    "title": "AOD9604",
+    "type": "liquids"
+  },
+  "bpc-157-pure-health-peptides": {
+    "categories": [
+      {
+        "slug": "regeneration-longevity",
+        "name": "Regeneration & Longevity"
+      },
+      {
+        "slug": "growth-repair",
+        "name": "Growth & Repair"
+      }
+    ],
+    "contentTemplate": "modern-structured",
+    "descriptionHtml": "<h6><span style=\"font-size: 16px\"><strong>Product Name:</strong></span></h6>\n<p>BPC-157</p>\n<h6><span style=\"font-size: 16px\"><strong>Chemical Information:</strong></span></h6>\n<ul>\n<li><strong>Molecular Formula:</strong> C<sub>62</sub>H<sub>98</sub>N<sub>16</sub>O<sub>22</sub></li>\n<li><strong>Molecular Weight:</strong> ~1419.5 g/mol</li>\n<li><strong>Sequence: </strong>Gly-Glu-Pro-Pro-Pro-Gly-Lys-Pro-Ala-Asp-Asp-Ala-Gly-Leu-Val</li>\n</ul>\n<h6><span style=\"font-size: 16px\"><strong>Molecular Structure:</strong></span></h6>\n\n    <div class=\"molecular-structure-wrap\">\n<div class=\"molecular-structure-img-wrap\">\n\t\t\t<img src=\"/assets/product-details/molecular/BPC-157-Liquid-Signature-234649bc7163.png\" alt=\"Molecular Structure\" class=\"molecular-structure-img\">\n\t\t</div>\n\t</div>\n\n<h6><span style=\"font-size: 16px\"><strong>Product Description:</strong></span></h6>\n<p class=\"p1\">BPC-157 is a synthetic pentadecapeptide consisting of a defined 15-amino-acid sequence. It is studied in laboratory environments for its biochemical properties and peptide signaling behavior. This product is supplied as a pre-formulated aqueous research solution, designed to provide consistency and stability for controlled research applications.</p>\n<h6><span style=\"font-size: 16px\"><strong>Research Applications:</strong></span></h6>\n<ul>\n<li>Investigation of peptide stability and signaling behavior in vitro</li>\n<li>Study of peptide interactions within cellular and biochemical models</li>\n<li>Evaluation of peptide transport and degradation under laboratory conditions</li>\n<li>Comparative research involving short-chain regulatory peptides</li>\n</ul>\n<h6><span style=\"font-size: 16px\"><strong>Storage and Handling:</strong></span></h6>\n<ul>\n<li>For optimal stability, store sealed product in a cool, dark, and dry environment. Refrigeration at 2–8 °C is recommended after first puncture or once the seal has been compromised</li>\n<li>Do not freeze</li>\n<li>Protect from light</li>\n<li>Maintain sterile handling practices during research use</li>\n</ul>\n<h6><span style=\"font-size: 16px\"><strong>Product Specifications:</strong></span></h6>\n<ul>\n<li><strong>Formulation:</strong> Aqueous solution</li>\n<li><strong>Concentration:</strong> 1 mg/mL</li>\n<li><strong>Total Content:</strong> 30 mg per bottle</li>\n<li><strong>Delivery Format</strong>: Metered liquid solution</li>\n<li><strong>Dispenses per Container</strong>: ~200</li>\n<li><strong>Amount per Dispense</strong>: ~150 mcg</li>\n<li><strong>Analytical Approach to Finished Formulations:</strong> Purity is a metric used for isolated raw materials, such as lyophilized peptide powders. Finished formulations—such as capsules, liquids, and topicals—contain multiple components, including excipients and stabilizers. In these systems, a single purity value does not accurately represent the overall composition. Instead, identity and assay (content) are reported on the COA to confirm the presence of the correct compound and to verify that the labeled amount per unit is accurate. This approach reflects standard analytical practice and provides more meaningful information for research applications.</li>\n</ul>\n<h6><span style=\"font-size: 16px\"><strong>Compliance Notice:</strong></span></h6>\n<p>BPC-157 is <strong>FOR RESEARCH USE ONLY</strong>. It is not intended for human or veterinary use. This product has not been evaluated by the FDA. Misuse of this product is strictly prohibited and may violate federal, state, or local laws. By purchasing this product, buyer represents and warrants that it will be used only for in vitro research purposes.</p>",
+    "documentTitle": "BPC-157 - Pure Health Peptides",
+    "images": [
+      {
+        "role": "primary",
+        "src": "/assets/product-details/gallery/BPC-157-Product-Card-alt1-6d7405354176.jpg",
+        "alt": "BPC 157 Product Card alt1"
+      },
+      {
+        "role": "coa",
+        "src": "/assets/product-details/gallery/COA-02-BPC-157-Research-Spray-0-14ml-spray-Lot-26012002-GJ14-scaled-89b97b468239.jpg",
+        "alt": "COA 02 BPC 157 Research Spray 0.14ml spray Lot 26012002 GJ14"
+      },
+      {
+        "role": "info-card",
+        "src": "/assets/product-details/gallery/Liquids-Information-Card-Featured-3826e1765c6f.jpg",
+        "alt": "Liquids Information Card Featured"
+      }
+    ],
+    "molecularStructureImage": "/assets/product-details/molecular/BPC-157-Liquid-Signature-234649bc7163.png",
+    "shortDescriptionHtml": "<p>BPC-157 is a synthetic pentadecapeptide consisting of a defined 15-amino-acid sequence. It is studied in laboratory environments for its biochemical properties and peptide signaling behavior. This product is supplied as a pre-formulated aqueous research solution, designed to provide consistency and stability for controlled research applications.</p>",
+    "title": "BPC-157",
+    "type": "liquids"
+  },
+  "bpc-157-tb-500-2": {
+    "categories": [
+      {
+        "slug": "regeneration-longevity",
+        "name": "Regeneration & Longevity"
+      },
+      {
+        "slug": "growth-repair",
+        "name": "Growth & Repair"
+      }
+    ],
+    "contentTemplate": "modern-structured",
+    "descriptionHtml": "<h6><span style=\"font-size: 16px\"><strong>Product Name:</strong></span></h6>\n<p>BPC-157 / TB-500 (Tβ4)</p>\n<h6><span style=\"font-size: 16px\"><strong>Chemical Information: BPC-157</strong></span></h6>\n<ul>\n<li><strong>Chemical Name:</strong> Body Protection Compound-157 (BPC-157)</li>\n<li><strong>Molecular Formula:</strong> C<sub>62</sub>H<sub>98</sub>N<sub>16</sub>O<sub>22</sub></li>\n<li><strong>Molecular Weight:</strong> 1419.5 g/mol</li>\n<li><strong>Sequence:</strong> Gly-Glu-Pro-Pro-Pro-Gly-Lys-Pro-Ala-Asp-Val-Asp-Asp-Phe</li>\n</ul>\n<h6><span style=\"font-size: 16px\"><strong>Chemical Information: <span style=\"font-size: 16px\">TB-500</span></strong><b>(Tβ4)</b></span></h6>\n<ul>\n<li><strong>Chemical Name:</strong> TB-500 (Thymosin Beta-4)</li>\n<li><strong>Molecular Formula:</strong> C<sub>212</sub>H<sub>350</sub>N<sub>56</sub>O<sub>78</sub>S</li>\n<li><strong>Molecular Weight:</strong> 4963.5 g/mol</li>\n<li><strong>Sequence:</strong> Ac-Ser-Asp-Lys-Pro-Asp-Met-Ala-Glu-Ile-Glu-Lys-Phe-Asp-Lys-Ser-Lys-Leu-Lys-Lys-Thr-Glu-Thr-Gln-Glu-Lys-Asn-Pro-Leu-Pro-Ser-Lys-Glu-Thr-Ile-Glu-Gln-Glu-Lys-Gln-Ala-Gly-Glu-Ser</li>\n</ul>\n<h6><span style=\"font-size: 16px\"><strong>Produc Description:</strong></span></h6>\n<p>BPC-157 / TB-500 (Tβ4) is a combined peptide formulation consisting of two synthetic peptides commonly studied in laboratory research environments. BPC-157 is a penta-decapeptide consisting of a defined amino acid sequence, while TB-500 (Tβ4) is a synthetic peptide corresponding to Thymosin Beta-4. This product is supplied as a pre-formulated aqueous research solution, designed to support controlled experimental workflows where multi-peptide systems are evaluated under standardized laboratory conditions.</p>\n<h6><span style=\"font-size: 16px\"><strong>Research Applications:</strong></span></h6>\n<ul>\n<li>Investigation of multi-peptide behavior in controlled in vitro systems</li>\n<li>Study of peptide stability and compatibility in aqueous formulations</li>\n<li>Evaluation of peptide interactions in comparative laboratory models</li>\n<li>Research involving combined regulatory peptide systems</li>\n</ul>\n<h6><span style=\"font-size: 16px\"><strong>Storage and Handling:</strong></span></h6>\n<ul>\n<li>Store refrigerated at 2–8 °C</li>\n<li>Do not freeze</li>\n<li>Protect from light</li>\n<li>Handle using aseptic laboratory techniques</li>\n</ul>\n<h6><span style=\"font-size: 16px\"><strong>Product Specifications:</strong></span></h6>\n<ul>\n<li><strong>Formulation:</strong> Aqueous solution</li>\n<li><strong>Concentration:</strong> 1 mg/mL (each peptide)</li>\n<li><strong>Total Content:</strong> 30 mg BPC-157 / 30 mg TB-500 per bottle</li>\n<li><strong>Volume:</strong> 30 mL</li>\n<li><strong>Delivery Format:</strong> Metered liquid solution</li>\n<li><strong>Dispenses per Container:</strong> ~200</li>\n<li><strong>Amount per Dispense:</strong> ~150 mcg of each compound</li>\n</ul>\n<h6><span style=\"font-size: 16px\"><strong>Compliance Notice:</strong></span></h6>\n<p>BPC-157 / TB-500 is <strong>FOR RESEARCH USE ONLY</strong>. It is not intended for human or veterinary use. This product has not been evaluated by the FDA. Misuse of this product is strictly prohibited and may violate federal, state, or local laws. By purchasing this product, buyer represents and warrants that it will be used only for in vitro research purposes.</p>",
+    "documentTitle": "BPC-157 / TB-500(Tβ4) - Pure Health Peptides",
+    "images": [
+      {
+        "role": "primary",
+        "src": "/assets/product-details/gallery/BPC-157-TB-500-Product-Card-alt1-7c3eabaeef79.jpg",
+        "alt": "BPC 157 TB 500 Product Card alt1"
+      },
+      {
+        "role": "info-card",
+        "src": "/assets/product-details/gallery/Liquids-Information-Card-Featured-3826e1765c6f.jpg",
+        "alt": "Liquids Information Card Featured"
+      },
+      {
+        "role": "coa",
+        "src": "/assets/product-details/gallery/COA-01-BPC-157-TB-500-Research-Spray-0-14ml-spray-Lot-26021003-GJ15-scaled-ab1def91cd74.jpg",
+        "alt": "COA 01 BPC 157 TB 500 Research Spray 0.14ml spray Lot 26021003 GJ15"
+      }
+    ],
+    "molecularStructureImage": null,
+    "shortDescriptionHtml": "<p>BPC-157 / TB-500 (Tβ4) is a combined peptide formulation consisting of two synthetic peptides commonly studied in laboratory research environments. BPC-157 is a penta-decapeptide consisting of a defined amino acid sequence, while TB-500 (Tβ4) is a synthetic peptide corresponding to Thymosin Beta-4. This product is supplied as a pre-formulated aqueous research solution, designed to support controlled experimental workflows where multi-peptide systems are evaluated under standardized laboratory conditions.</p>",
+    "title": "BPC-157 / TB-500(Tβ4)",
+    "type": "liquids"
+  },
+  "dsip-2": {
+    "categories": [
+      {
+        "slug": "cognitive-and-neuro",
+        "name": "Cognitive & Neuro"
+      }
+    ],
+    "contentTemplate": "narrative",
+    "descriptionHtml": "<p><strong>Product Name:</strong></p>\n<p><strong>DSIP – (Delta Sleep-Inducing Peptide) (Aqueous Solution)</strong></p>\n<p><strong>Chemical Information:</strong></p>\n<ul>\n<li><strong>Molecular Formula:</strong> C₃₅H₄₈N₁₀O₁₅</li>\n<li><strong>Molecular Weight: </strong>848.8 g/mol</li>\n<li><strong>Sequence:</strong> Trp-Ala-Gly-Gly-Asp-Ala-Ser-Gly-Glu</li>\n</ul>\n<p><strong>Molecular Structure:</strong></p>\n\n    <div class=\"molecular-structure-wrap\">\n<div class=\"molecular-structure-img-wrap\">\n\t\t\t<img src=\"/assets/product-details/molecular/DSIP-liquid-b4c02ddbcd2b.png\" alt=\"Molecular Structure\" class=\"molecular-structure-img\">\n\t\t</div>\n\t</div>\n\n<p><strong>Product Description:</strong></p>\n<p>Delta Sleep-Inducing Peptide (DSIP) is a synthetic peptide composed of a defined amino acid sequence produced through controlled peptide synthesis. It is provided exclusively for in vitro laboratory research in qualified experimental settings. The compound is structurally characterized and utilized for analytical and experimental evaluation under controlled, non-clinical conditions. This product is supplied as a pre-formulated aqueous research solution, designed to provide consistency and stability for controlled research applications.<strong><br />\n</strong></p>\n<p><strong>Research Applications:</strong></p>\n<ul>\n<li>Analytical evaluation of peptide structure and sequence characteristics</li>\n<li>Examination of peptide stability and degradation profiles under defined conditions</li>\n<li>Investigation of peptide behavior in biochemical and in vitro assay systems</li>\n<li>Characterization of peptide interactions within controlled experimental models</li>\n</ul>\n<p><strong>Storage and Handling:</strong></p>\n<ul>\n<li>For optimal stability, store sealed product in a cool, dark, and dry environment. Refrigeration at 2–8 °C is recommended after first puncture or once the seal has been compromised</li>\n<li>Do not freeze</li>\n<li>Protect from light</li>\n<li>Maintain sterile handling practices during research use</li>\n</ul>\n<p><strong>Product Specifications:</strong></p>\n<ul>\n<li><strong>Bottle Volume:</strong> 30 mL</li>\n<li><strong>Total Content:</strong> 30 mg per bottle</li>\n<li><strong>Dispenses per Container:</strong> ~200</li>\n<li><strong>Per Dispense:</strong> ~150 mcg</li>\n<li><strong>Analytical Approach to Finished Formulations:</strong> Purity is a metric used for isolated raw materials, such as lyophilized peptide powders. Finished formulations—such as capsules, liquids, and topicals—contain multiple components, including excipients and stabilizers. In these systems, a single purity value does not accurately represent the overall composition. Instead, identity and assay (content) are reported on the COA to confirm the presence of the correct compound and to verify that the labeled amount per unit is accurate. This approach reflects standard analytical practice and provides more meaningful information for research applications.</li>\n</ul>\n<p><strong>Compliance Notice:</strong></p>\n<p>DSIP – (Delta Sleep-Inducing Peptide) (Aqueous Solution) is FOR RESEARCH USE ONLY. It is not intended for human or veterinary use. This product has not been evaluated by the FDA. Misuse of this product is strictly prohibited and may violate federal, state, or local laws. By purchasing this product, buyer represents and warrants that it will be used only for in vitro research purposes.</p>",
+    "documentTitle": "Buy DSIP Peptide | High Purity 99%+ for Research Use",
+    "images": [
+      {
+        "role": "primary",
+        "src": "/assets/product-details/gallery/DSIP-ce11eb0b9f8a.png",
+        "alt": "DSIP"
+      },
+      {
+        "role": "info-card",
+        "src": "/assets/product-details/gallery/Liquids-Information-Card-Featured-3826e1765c6f.jpg",
+        "alt": "Liquids Information Card Featured"
+      }
+    ],
+    "molecularStructureImage": "/assets/product-details/molecular/DSIP-liquid-b4c02ddbcd2b.png",
+    "shortDescriptionHtml": "<p>Delta Sleep-Inducing Peptide (DSIP) is a synthetic peptide composed of a defined amino acid sequence produced through controlled peptide synthesis. It is provided exclusively for in vitro laboratory research in qualified experimental settings. The compound is structurally characterized and utilized for analytical and experimental evaluation under controlled, non-clinical conditions. This product is supplied as a pre-formulated aqueous research solution, designed to provide consistency and stability for controlled research applications.<strong><br />\n</strong></p>\n<p>&nbsp;</p>",
+    "title": "DSIP",
+    "type": "liquids"
+  },
+  "epithalon-3": {
+    "categories": [
+      {
+        "slug": "regeneration-longevity",
+        "name": "Regeneration & Longevity"
+      },
+      {
+        "slug": "dermal-hair-tissue-appearance",
+        "name": "Dermal, Hair & Tissue Appearance"
+      }
+    ],
+    "contentTemplate": "narrative",
+    "descriptionHtml": "<p><strong>Product Name:</strong></p>\n<p><strong>Epithalon (Epitalon) (Aqueous Solution)</strong></p>\n<p><strong>Chemical Information:</strong></p>\n<ul>\n<li><strong>Molecular Formula:</strong> C₁₄H₂₂N₄O₉</li>\n<li><strong>Molecular Weight: </strong>390.35 g/mol</li>\n<li><strong>Sequence:</strong> Ala-Glu-Asp-Gly</li>\n</ul>\n<p><strong>Molecular Structure:</strong></p>\n\n    <div class=\"molecular-structure-wrap\">\n<div class=\"molecular-structure-img-wrap\">\n\t\t\t<img src=\"/assets/product-details/molecular/Epithalon-liquid-483d6ecaf227.png\" alt=\"Molecular Structure\" class=\"molecular-structure-img\">\n\t\t</div>\n\t</div>\n\n<p>&nbsp;</p>\n<p><strong>Product Description:</strong></p>\n<p>Epithalon (Epitalon) is a synthetic tetrapeptide composed of a defined amino acid sequence produced through controlled peptide synthesis. It is provided exclusively for in vitro laboratory research in qualified experimental settings. The compound is structurally characterized and utilized for analytical and experimental evaluation under controlled, non-clinical conditions. This product is supplied as a pre-formulated aqueous research solution, designed to provide consistency and stability for controlled research applications.<strong> </strong></p>\n<p><strong>Research Applications:</strong></p>\n<ul>\n<li>Analytical evaluation of peptide structure and sequence characteristics</li>\n<li>Examination of peptide stability and degradation profiles under defined conditions</li>\n<li>Investigation of peptide behavior in biochemical and in vitro assay systems</li>\n<li>Characterization of peptide interactions within controlled experimental models</li>\n</ul>\n<p><strong>Storage and Handling:</strong></p>\n<ul>\n<li>For optimal stability, store sealed product in a cool, dark, and dry environment.</li>\n<li>Refrigeration at 2–8 °C is recommended after first puncture or once the seal has been compromised</li>\n<li>Do not freeze</li>\n<li>Protect from light</li>\n<li>Maintain sterile handling practices during research use</li>\n</ul>\n<p><strong>Product Specifications:</strong></p>\n<ul>\n<li><strong>Bottle Volume:</strong> 30 mL</li>\n<li><strong>Total Content:</strong> 50 mg per bottle</li>\n<li><strong>Dispenses per Container:</strong> ~200</li>\n<li><strong>Per Dispense:</strong> ~250 mcg</li>\n<li><strong>Analytical Approach to Finished Formulations:</strong> Purity is a metric used for isolated raw materials, such as lyophilized peptide powders. Finished formulations—such as capsules, liquids, and topicals—contain multiple components, including excipients and stabilizers. In these systems, a single purity value does not accurately represent the overall composition. Instead, identity and assay (content) are reported on the COA to confirm the presence of the correct compound and to verify that the labeled amount per unit is accurate. This approach reflects standard analytical practice and provides more meaningful information for research applications.</li>\n</ul>\n<p><strong>Compliance Notice:</strong></p>\n<p>Epithalon (Epitalon) (Aqueous Solution) is FOR RESEARCH USE ONLY. It is not intended for human or veterinary use. This product has not been evaluated by the FDA. Misuse of this product is strictly prohibited and may violate federal, state, or local laws. By purchasing this product, buyer represents and warrants that it will be used only for in vitro research purposes.</p>",
+    "documentTitle": "Buy Epithalon Peptide | 99% Pure Research Grade Epithalon",
+    "images": [
+      {
+        "role": "primary",
+        "src": "/assets/product-details/gallery/Epithalon-1-d4e4c8a59087.png",
+        "alt": "Epithalon"
+      },
+      {
+        "role": "info-card",
+        "src": "/assets/product-details/gallery/Liquids-Information-Card-Featured-3826e1765c6f.jpg",
+        "alt": "Liquids Information Card Featured"
+      }
+    ],
+    "molecularStructureImage": "/assets/product-details/molecular/Epithalon-liquid-483d6ecaf227.png",
+    "shortDescriptionHtml": "<p>Epithalon (Epitalon) is a synthetic tetrapeptide composed of a defined amino acid sequence produced through controlled peptide synthesis. It is provided exclusively for in vitro laboratory research in qualified experimental settings. The compound is structurally characterized and utilized for analytical and experimental evaluation under controlled, non-clinical conditions. This product is supplied as a pre-formulated aqueous research solution, designed to provide consistency and stability for controlled research applications.</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>",
+    "title": "Epithalon",
+    "type": "liquids"
+  },
+  "ghk-cu-2": {
+    "categories": [
+      {
+        "slug": "dermal-hair-tissue-appearance",
+        "name": "Dermal, Hair & Tissue Appearance"
+      },
+      {
+        "slug": "growth-repair",
+        "name": "Growth & Repair"
+      },
+      {
+        "slug": "immune-and-inflammatory",
+        "name": "Immune & Inflammatory"
+      }
+    ],
+    "contentTemplate": "narrative",
+    "descriptionHtml": "<p><strong>Product Name:</strong></p>\n<p><strong>GHK-Cu (Aqueous Solution)</strong></p>\n<p><strong>Chemical Information:</strong></p>\n<ul>\n<li><strong>Molecular Formula:</strong> C₁₄H₂₄N₆O₄Cu</li>\n<li><strong>Molecular Weight: </strong>340.84 g/mol*</li>\n</ul>\n<p><span style=\"font-size: 13px\"><em>*GHK-Cu may appear as ~340 Da (peptide only) or ~404 Da (copper complex) depending on MS conditions. The blue color confirms copper is present in the complex.</em></span></p>\n<ul>\n<li><strong>Sequence:</strong> Gly-His-Lys</li>\n</ul>\n<p><strong>Molecular Structure:</strong></p>\n\n    <div class=\"molecular-structure-wrap\">\n<div class=\"molecular-structure-img-wrap\">\n\t\t\t<img src=\"/assets/product-details/molecular/GHK-Cu-liquid-29748babb85d.png\" alt=\"Molecular Structure\" class=\"molecular-structure-img\">\n\t\t</div>\n\t</div>\n\n<p>&nbsp;</p>\n<p><strong>Product Description:</strong></p>\n<p>GHK-Cu (glycyl-L-histidyl-L-lysine copper) is a synthetic tripeptide-metal coordination compound composed of a defined three-amino-acid sequence (Gly-His-Lys) bound to a copper ion. The compound is produced through controlled synthesis and metal-complexation processes and is provided exclusively for in vitro research in qualified laboratory settings. GHK-Cu is structurally characterized and utilized in controlled experimental environments for analytical and experimental evaluation of peptide–metal coordination chemistry and associated physicochemical properties. This product is supplied as a pre-formulated aqueous research solution, designed to provide consistency and stability for controlled research applications. This material is not formulated for cosmetic, clinical, diagnostic, or therapeutic use.</p>\n<p><strong>Research Applications:</strong></p>\n<ul>\n<li>Analytical evaluation of peptide–metal complex structure and composition</li>\n<li>Examination of stability and binding characteristics of copper-associated peptide systems</li>\n<li>Investigation of peptide behavior in biochemical and in vitro assay environments</li>\n<li>Characterization of interactions between peptide complexes and defined experimental systems</li>\n</ul>\n<p><strong>Storage and Handling:</strong></p>\n<ul>\n<li>For optimal stability, store sealed product in a cool, dark, and dry environment. Refrigeration at 2–8 °C is recommended after first puncture or once the seal has been compromised</li>\n<li>Do not freeze</li>\n<li>Protect from light</li>\n<li>Maintain sterile handling practices during research use</li>\n</ul>\n<p><strong>Product Specifications:</strong></p>\n<ul>\n<li><strong>Bottle Volume:</strong> 30 mL</li>\n<li><strong>Total Content:</strong> 50 mg per bottle</li>\n<li><strong>Dispenses per Container:</strong> ~200</li>\n<li><strong>Per Dispense:</strong> ~250 mcg</li>\n<li><strong>Appearance:</strong> Blue to blue-green aqueous solution</li>\n<li><strong>Analytical Approach to Finished Formulations:</strong> Purity is a metric used for isolated raw materials, such as lyophilized peptide powders. Finished formulations—such as capsules, liquids, and topicals—contain multiple components, including excipients and stabilizers. In these systems, a single purity value does not accurately represent the overall composition. Instead, identity and assay (content) are reported on the COA to confirm the presence of the correct compound and to verify that the labeled amount per unit is accurate. This approach reflects standard analytical practice and provides more meaningful information for research applications.</li>\n</ul>\n<p><strong>Compliance Notice:</strong></p>\n<p>GHK-Cu (Aqueous Solution) is FOR RESEARCH USE ONLY. It is not intended for human or veterinary use. This product has not been evaluated by the FDA. Misuse of this product is strictly prohibited and may violate federal, state, or local laws. By purchasing this product, buyer represents and warrants that it will be used only for in vitro research purposes.</p>",
+    "documentTitle": "GHK-Cu - Pure Health Peptides",
+    "images": [
+      {
+        "role": "primary",
+        "src": "/assets/product-details/gallery/GHK-Cu-e7f0dc4765ad.png",
+        "alt": "GHK Cu"
+      },
+      {
+        "role": "info-card",
+        "src": "/assets/product-details/gallery/Liquids-Information-Card-Featured-3826e1765c6f.jpg",
+        "alt": "Liquids Information Card Featured"
+      }
+    ],
+    "molecularStructureImage": "/assets/product-details/molecular/GHK-Cu-liquid-29748babb85d.png",
+    "shortDescriptionHtml": "<p>GHK-Cu (glycyl-L-histidyl-L-lysine copper) is a synthetic tripeptide-metal coordination compound composed of a defined three-amino-acid sequence (Gly-His-Lys) bound to a copper ion. The compound is produced through controlled synthesis and metal-complexation processes and is provided exclusively for in vitro research in qualified laboratory settings. GHK-Cu is structurally characterized and utilized in controlled experimental environments for analytical and experimental evaluation of peptide–metal coordination chemistry and associated physicochemical properties. This product is supplied as a pre-formulated aqueous research solution, designed to provide consistency and stability for controlled research applications. This material is not formulated for cosmetic, clinical, diagnostic, or therapeutic use.</p>\n<p>&nbsp;</p>",
+    "title": "GHK-Cu",
+    "type": "liquids"
+  },
+  "kpv-3": {
+    "categories": [
+      {
+        "slug": "dermal-hair-tissue-appearance",
+        "name": "Dermal, Hair & Tissue Appearance"
+      },
+      {
+        "slug": "immune-and-inflammatory",
+        "name": "Immune & Inflammatory"
+      }
+    ],
+    "contentTemplate": "narrative",
+    "descriptionHtml": "<p><strong>Product Name:</strong></p>\n<p><strong>KPV (Lys-Pro-Val) (Aqueous Solution)</strong></p>\n<p><strong>Chemical Information:</strong></p>\n<ul>\n<li><strong>Molecular Formula:</strong> C₁₆H₃₀N₄O₄</li>\n<li><strong>Molecular Weight: </strong>342.43 g/mol</li>\n<li><strong>Sequence:</strong> Lys-Pro-Val</li>\n</ul>\n<p><strong>Molecular Structure:</strong></p>\n\n    <div class=\"molecular-structure-wrap\">\n<div class=\"molecular-structure-img-wrap\">\n\t\t\t<img src=\"/assets/product-details/molecular/KPV-liquid-1-cd312eacd579.jpg\" alt=\"Molecular Structure\" class=\"molecular-structure-img\">\n\t\t</div>\n\t</div>\n\n<p>&nbsp;</p>\n<p><strong>Product Description:</strong></p>\n<p>KPV is a synthetic tripeptide consisting of lysine, proline, and valine. This product is supplied as a pre-formulated aqueous research solution, designed to provide consistency and stability for controlled research applications. KPV is intended solely for in vitro laboratory research use by qualified professionals.</p>\n<p><strong>Research Applications:</strong></p>\n<ul>\n<li>Characterization of peptide structural properties in vitro</li>\n<li>Analysis of peptide stability and degradation profiles</li>\n<li>Evaluation of physicochemical properties of short-chain peptide compounds</li>\n<li>Investigation of peptide behavior under controlled laboratory conditions</li>\n<li>Analytical assessment of peptide consistency and composition</li>\n</ul>\n<p><strong>Storage and Handling:</strong></p>\n<ul>\n<li>For optimal stability, store sealed product in a cool, dark, and dry environment. Refrigeration at 2–8 °C is recommended after first puncture or once the seal has been compromised</li>\n<li>Do not freeze</li>\n<li>Protect from light</li>\n<li>Maintain sterile handling practices during research use</li>\n</ul>\n<p><strong>Product Specifications:</strong></p>\n<ul>\n<li><strong>Bottle Volume:</strong> 30 mL</li>\n<li><strong>Total Content:</strong> 40 mg per bottle</li>\n<li><strong>Dispenses per Container:</strong> ~200</li>\n<li><strong>Per Dispense:</strong> ~200 mcg</li>\n<li><strong>Analytical Approach to Finished Formulations:</strong> Purity is a metric used for isolated raw materials, such as lyophilized peptide powders. Finished formulations—such as capsules, liquids, and topicals—contain multiple components, including excipients and stabilizers. In these systems, a single purity value does not accurately represent the overall composition. Instead, identity and assay (content) are reported on the COA to confirm the presence of the correct compound and to verify that the labeled amount per unit is accurate. This approach reflects standard analytical practice and provides more meaningful information for research applications.</li>\n</ul>\n<p><strong>Compliance Notice:</strong></p>\n<p>KPV (Lys-Pro-Val) (Aqueous Solution) is FOR RESEARCH USE ONLY. It is not intended for human or veterinary use. This product has not been evaluated by the FDA. Misuse of this product is strictly prohibited and may violate federal, state, or local laws. By purchasing this product, buyer represents and warrants that it will be used only for in vitro research purposes.</p>",
+    "documentTitle": "KPV - Pure Health Peptides",
+    "images": [
+      {
+        "role": "primary",
+        "src": "/assets/product-details/gallery/KPV-2-f898c8222e21.png",
+        "alt": "KPV"
+      },
+      {
+        "role": "info-card",
+        "src": "/assets/product-details/gallery/Liquids-Information-Card-Featured-3826e1765c6f.jpg",
+        "alt": "Liquids Information Card Featured"
+      }
+    ],
+    "molecularStructureImage": "/assets/product-details/molecular/KPV-liquid-1-cd312eacd579.jpg",
+    "shortDescriptionHtml": "<p>KPV is a synthetic tripeptide consisting of lysine, proline, and valine. This product is supplied as a pre-formulated aqueous research solution, designed to provide consistency and stability for controlled research applications. KPV is intended solely for in vitro laboratory research use by qualified professionals.</p>\n<p>&nbsp;</p>",
+    "title": "KPV",
+    "type": "liquids"
+  },
+  "lc120": {
+    "categories": [
+      {
+        "slug": "immune-and-inflammatory",
+        "name": "Immune & Inflammatory"
+      },
+      {
+        "slug": "metabolic",
+        "name": "Metabolic"
+      },
+      {
+        "slug": "mitochondrial-cellular-energy",
+        "name": "Mitochondrial & Cellular Energy"
+      }
+    ],
+    "contentTemplate": "modern-structured",
+    "descriptionHtml": "<h6><span style=\"font-size: 16px\"><strong>Product Name:</strong></span></h6>\n<p>LC 120 (Lipo-C formulation)</p>\n<h6><span style=\"font-size: 16px\"><strong>Chemical Information: (Methionine)</strong></span></h6>\n<ul>\n<li><strong>Chemical Name:</strong> L-Methionine</li>\n<li><strong>Molecular Formula:</strong> C<sub>5</sub>H<sub>11</sub>NO<sub>2</sub>S</li>\n<li><strong>Molecular Weight:</strong> 149.21 g/mol</li>\n</ul>\n<h6><span style=\"font-size: 16px\"><strong>Chemical Information: (Choline Chloride)</strong></span></h6>\n<ul>\n<li><strong>Chemical Name:</strong> Choline Chloride</li>\n<li><strong>Molecular Formula:</strong> C<sub>5</sub>H<sub>14</sub>ClNO</li>\n<li><strong>Molecular Weight:</strong> 139.62 g/mol</li>\n</ul>\n<h6><span style=\"font-size: 16px\"><strong>Chemical Information: (Carnitine)</strong></span></h6>\n<ul>\n<li><strong>Chemical Name:</strong> L-Carnitine</li>\n<li><strong>Molecular Formula:</strong> C<sub>7</sub>H<sub>15</sub>NO<sub>3</sub></li>\n<li><strong>Molecular Weight:</strong> 161.20 g/mol</li>\n</ul>\n<h6><span style=\"font-size: 16px\"><strong>Chemical Information: (Dexpanthenol)</strong></span></h6>\n<ul>\n<li><strong>Chemical Name:</strong> D-Panthenol (Dexpanthenol)</li>\n<li><strong>Molecular Formula:</strong> C<sub>9</sub>H<sub>19</sub>NO<sub>4</sub></li>\n<li><strong>Molecular Weight:</strong> 205.25 g/mol</li>\n</ul>\n<h6><span style=\"font-size: 16px\"><strong>Product Description:</strong></span></h6>\n<p>LC120 is a multi-component liquid research formulation composed of four well-characterized non-peptide compounds: methionine, choline chloride, carnitine, and dexpanthenol. Each component is supplied in a defined quantity and combined into a single aqueous solution to support controlled laboratory research applications involving formulated compound systems. The designation “LC” refers to <strong>Liquid Compound</strong>, while “120” represents the total combined mass of the formulated compounds contained in each bottle. This product is not intended for injection or any human or veterinary use.</p>\n<h6><span style=\"font-size: 16px\"><strong>Research Applications:</strong></span></h6>\n<ul>\n<li>Evaluation of multi-compound liquid formulations in laboratory environments</li>\n<li>Investigation of compound compatibility and stability in aqueous systems</li>\n<li>Analytical research involving combined non-peptide compounds</li>\n<li>Comparative studies of formulated liquid research mixtures</li>\n</ul>\n<h6><span style=\"font-size: 16px\"><strong>Storage and Handling:</strong></span></h6>\n<ul>\n<li>For optimal stability, store sealed product in a cool, dark, and dry environment. Refrigeration is recommended before and/or after first puncture or once the seal has been compromised.</li>\n<li>Do not freeze</li>\n<li>Protect from light</li>\n<li>Handle using aseptic laboratory techniques</li>\n</ul>\n<h6><span style=\"font-size: 16px\"><strong>Product Specifications:</strong></span></h6>\n<ul>\n<li><strong>Formulation:</strong> Aqueous solution</li>\n<li><strong>Total Compound Content:</strong> 120 mg per bottle</li>\n<li><strong>Composition:</strong></li>\n<li>Methionine: 15 mg</li>\n<li>Choline Chloride: 50 mg</li>\n<li>Carnitine: 50 mg</li>\n<li>Dexpanthenol: 5 mg</li>\n<li><strong>Volume:</strong> 10 mL</li>\n<li><strong>Appearance:</strong> Clear liquid</li>\n<li><strong>Analytical Testing:</strong> Component-verified</li>\n<li><strong>Analytical Approach to Finished Formulations:</strong> Purity is a metric used for isolated raw materials, such as lyophilized peptide powders. Finished formulations—such as capsules, liquids, and topicals—contain multiple components, including excipients and stabilizers. In these systems, a single purity value does not accurately represent the overall composition. Instead, identity and assay (content) are reported on the COA to confirm the presence of the correct compound and to verify that the labeled amount per unit is accurate. This approach reflects standard analytical practice and provides more meaningful information for research applications.</li>\n<li><strong>Certificate of Analysis (COA):</strong> Available via QR code or COA-archive</li>\n</ul>\n<h6><span style=\"font-size: 16px\"><strong>Compliance Notice:</strong></span></h6>\n<p>LC120 is <strong>FOR RESEARCH USE ONLY</strong>. It is not intended for human or veterinary use. This product has not been evaluated by the FDA. Misuse of this product is strictly prohibited and may violate federal, state, or local laws. By purchasing this product, buyer represents and warrants that it will be used only for in vitro research purposes.</p>",
+    "documentTitle": "LC 120 (Lipo-C formulation) - Pure Health Peptides",
+    "images": [
+      {
+        "role": "primary",
+        "src": "/assets/product-details/gallery/LC120-Product-Card-alt3-c78ec7812af6.jpg",
+        "alt": "LC120 Product Card alt3"
+      },
+      {
+        "role": "info-card",
+        "src": "/assets/product-details/gallery/Liquids-Information-Card-Featured-3826e1765c6f.jpg",
+        "alt": "Liquids Information Card Featured"
+      },
+      {
+        "role": "coa",
+        "src": "/assets/product-details/gallery/Evergreen-LC120Lipo-C-Lot-CHA-122025-GD27-2-5bdd4d0dbb06.jpg",
+        "alt": "Evergreen LC120(Lipo C) Lot CHA 122025 GD27 2"
+      }
+    ],
+    "molecularStructureImage": null,
+    "shortDescriptionHtml": "<p><strong>LC 120</strong> is a multi-component liquid research formulation composed of four well-characterized non-peptide compounds: methionine, choline chloride, carnitine, and dexpanthenol. Each component is supplied in a defined quantity and combined into a single aqueous solution to support controlled laboratory research applications involving formulated compound systems. This product is not intended for injection or any human or veterinary use.</p>",
+    "title": "LC 120 (Lipo-C formulation)",
+    "type": "liquids"
+  },
+  "lc-216": {
+    "categories": [
+      {
+        "slug": "metabolic",
+        "name": "Metabolic"
+      },
+      {
+        "slug": "mitochondrial-cellular-energy",
+        "name": "Mitochondrial & Cellular Energy"
+      }
+    ],
+    "contentTemplate": "modern-structured",
+    "descriptionHtml": "<h6><span style=\"font-size: 16px\"><strong>Product Name:</strong></span></h6>\n<p>LC 216 (Lipo-B formulation)</p>\n<h6><span style=\"font-size: 16px\"><strong>Chemical Information: (Formulated Compound)</strong></span></h6>\n<p>LC216 is a formulated aqueous research compound composed of amino acids, vitamins, and related biochemical cofactors. The designation “LC216” refers to the total combined mass (216 mg) of active compounds contained within the formulation.</p>\n<h6><span style=\"font-size: 16px\"><strong>Formulation Components:</strong></span></h6>\n<ul>\n<li><strong>L-Carnitine</strong> — 20 mg<br />\nMolecular Formula: C<sub>7</sub>H<sub>15</sub>NO<sub>3</sub><br />\nMolecular Weight: 161.20 g/mol</li>\n<li><strong>L-Arginine</strong> — 20 mg<br />\nMolecular Formula: C<sub>6</sub>H<sub>14</sub>N<sub>4</sub>O<sub>2</sub><br />\nMolecular Weight: 174.20 g/mol</li>\n<li><strong>Methionine</strong> — 25 mg<br />\nMolecular Formula: C<sub>5</sub>H<sub>11</sub>NO<sub>2</sub>S<br />\nMolecular Weight: 149.21 g/mol</li>\n<li><strong>Inositol</strong> — 50 mg<br />\nMolecular Formula: C<sub>6</sub>H<sub>12</sub>O<sub>6</sub><br />\nMolecular Weight: 180.16 g/mol</li>\n<li><strong>Choline</strong> — 50 mg<br />\nMolecular Formula: C<sub>5</sub>H<sub>14</sub>NO<br />\nMolecular Weight: 104.17 g/mol</li>\n<li><strong>Vitamin B6 (Pyridoxine)</strong> — 25 mg<br />\nMolecular Formula: C<sub>8</sub>H<sub>11</sub>NO<sub>3</sub><br />\nMolecular Weight: 169.18 g/mol</li>\n<li><strong>Vitamin B5 (Dexpanthenol)</strong> — 25 mg<br />\nMolecular Formula: C<sub>9</sub>H<sub>19</sub>NO<sub>4</sub><br />\nMolecular Weight: 205.25 g/mol</li>\n<li><strong>Vitamin B12 (Methylcobalamin)</strong> — 1 mg<br />\nMolecular Formula: C<sub>63</sub>H<sub>91</sub>CoN<sub>13</sub>O<sub>14</sub>P<br />\nMolecular Weight: 1344.40 g/mol</li>\n</ul>\n<h6><span style=\"font-size: 16px\"><strong>Product Description:</strong></span></h6>\n<p>LC216 is a multi-component liquid research formulation designed for laboratory studies involving amino acids and vitamin-based cofactors. Each compound is included at a defined concentration to support controlled research into formulation behavior, compound compatibility, and biochemical interaction in vitro. LC216 is supplied as an aqueous solution for ease of handling and experimental consistency. This product is not intended for injection, parenteral administration, or any human or veterinary use.</p>\n<h6><span style=\"font-size: 16px\"><strong>Research Applications:</strong></span></h6>\n<ul>\n<li>In vitro evaluation of amino acid and vitamin cofactor systems</li>\n<li>Study of multi-compound formulation stability</li>\n<li>Investigation of biochemical interactions in controlled laboratory models</li>\n<li>Analytical research involving nutrient-related compounds</li>\n</ul>\n<h6><span style=\"font-size: 16px\"><strong>Storage and Handling:</strong></span></h6>\n<ul>\n<li>For optimal stability, store sealed product in a cool, dark, and dry environment. Refrigeration at 2–8 °C is recommended before and/or after first puncture or once the seal has been compromised.</li>\n<li>Do not freeze</li>\n<li>Protect from light</li>\n<li>Maintain aseptic handling procedures</li>\n</ul>\n<h6><span style=\"font-size: 16px\"><strong>Product Specifications:</strong></span></h6>\n<ul>\n<li><strong>Formulation:</strong> Aqueous solution</li>\n<li><strong>Total Compound Content:</strong> 216 mg per bottle</li>\n<li><strong>Composition:</strong></li>\n<li>L-Carnitine: 20 mg</li>\n<li>L-Arginine: 20 mg</li>\n<li>Methionine: 25 mg</li>\n<li>Inositol: 50 mg</li>\n<li>Choline: 50 mg</li>\n<li>B6 (Pyridoxine): 25 mg</li>\n<li>B5 (Dexpanthenol): 25 mg</li>\n<li>B12 (Methylcobalamin): 1 mg</li>\n<li><strong>Volume:</strong> 10 mL</li>\n<li><strong>Appearance:</strong> Pink to violet colored (tinted) liquid</li>\n<li><strong>Analytical Testing:</strong> Component-verified</li>\n<li><strong>Analytical Approach to Finished Formulations:</strong> Purity is a metric used for isolated raw materials, such as lyophilized peptide powders. Finished formulations—such as capsules, liquids, and topicals—contain multiple components, including excipients and stabilizers. In these systems, a single purity value does not accurately represent the overall composition. Instead, identity and assay (content) are reported on the COA to confirm the presence of the correct compound and to verify that the labeled amount per unit is accurate. This approach reflects standard analytical practice and provides more meaningful information for research applications.</li>\n<li><strong>Certificate of Analysis (COA):</strong> Available via QR code or COA-archive</li>\n</ul>\n<h6><span style=\"font-size: 16px\"><strong>Compliance Notice:</strong></span></h6>\n<p>LC216 is <strong>FOR RESEARCH USE ONLY</strong>. It is not intended for human or veterinary use. This product has not been evaluated by the FDA. Misuse of this product is strictly prohibited and may violate federal, state, or local laws. By purchasing this product, buyer represents and warrants that it will be used only for in vitro research purposes.</p>",
+    "documentTitle": "LC 216 (Lipo-B formulation) - Pure Health Peptides",
+    "images": [
+      {
+        "role": "primary",
+        "src": "/assets/product-details/gallery/LC216-Product-Card-al3-c47ee493878e.jpg",
+        "alt": "LC216 Product Card al3"
+      },
+      {
+        "role": "coa",
+        "src": "/assets/product-details/gallery/Evergreen-LC216-Lipo-B-Lot-CHA-122025-GD28-2-5e87cb032026.jpg",
+        "alt": "Evergreen LC216 (Lipo B) Lot CHA 122025 GD28 2"
+      },
+      {
+        "role": "info-card",
+        "src": "/assets/product-details/gallery/Liquids-Information-Card-Featured-3826e1765c6f.jpg",
+        "alt": "Liquids Information Card Featured"
+      }
+    ],
+    "molecularStructureImage": null,
+    "shortDescriptionHtml": "<p><strong>LC 216</strong> is a multi-component liquid research formulation designed for laboratory studies involving amino acids and vitamin-based cofactors. Each compound is included at a defined concentration to support controlled research into formulation behavior, compound compatibility, and biochemical interaction in vitro. LC216 is supplied as an aqueous solution for ease of handling and experimental consistency. This product is not intended for injection, parenteral administration, or any human or veterinary use.</p>",
+    "title": "LC 216  (Lipo-B formulation)",
+    "type": "liquids"
+  },
+  "nad%e2%81%ba-nicotinamide-adenine-dinucleotide": {
+    "categories": [
+      {
+        "slug": "regeneration-longevity",
+        "name": "Regeneration & Longevity"
+      },
+      {
+        "slug": "mitochondrial-cellular-energy",
+        "name": "Mitochondrial & Cellular Energy"
+      }
+    ],
+    "contentTemplate": "modern-structured",
+    "descriptionHtml": "<h6><span style=\"font-size: 16px\"><strong>Product Name:</strong></span></h6>\n<p>NAD⁺ (Nicotinamide Adenine Dinucleotide)</p>\n<h6><span style=\"font-size: 16px\"><strong>Chemical Information:</strong></span></h6>\n<ul>\n<li><strong>Chemical Name:</strong> Nicotinamide Adenine Dinucleotide (oxidized form)</li>\n<li><strong>Molecular Formula:</strong> C<sub>21</sub>H<sub>26</sub>N<sub>6</sub>O<sub>14</sub>P<sub>2</sub></li>\n<li><strong>Molecular Weight:</strong> 648.4 g/mol</li>\n<li><strong>Structure:</strong> Dinucleotide composed of nicotinamide and adenine linked via phosphate groups</li>\n</ul>\n<h6><span style=\"font-size: 16px\"><strong>Molecular Structure:</strong></span></h6>\n\n    <div class=\"molecular-structure-wrap\">\n<div class=\"molecular-structure-img-wrap\">\n\t\t\t<img src=\"/assets/product-details/molecular/NAD-Liquid-Signature-38b19ab522f4.png\" alt=\"Molecular Structure\" class=\"molecular-structure-img\">\n\t\t</div>\n\t</div>\n\n<h6><span style=\"font-size: 16px\"><strong>Product Description:</strong></span></h6>\n<p>NAD⁺ (Nicotinamide Adenine Dinucleotide) is a naturally occurring coenzyme present in all living cells and plays a fundamental role in cellular redox reactions. In laboratory environments, NAD⁺ is widely used in biochemical and molecular research to study metabolic pathways, enzymatic reactions, and cellular energy transfer mechanisms.</p>\n<p>This product is supplied as a <strong>pre-formulated aqueous research solution</strong>, intended to support controlled experimental use and analytical consistency.</p>\n<h6><span style=\"font-size: 16px\"><strong>Research Applications:</strong></span></h6>\n<ul>\n<li>Investigation of redox reactions and electron transfer processes</li>\n<li>Study of cellular metabolism and enzymatic activity in vitro</li>\n<li>Evaluation of coenzyme-dependent biochemical pathways</li>\n<li>Comparative research involving metabolic cofactors in laboratory models</li>\n</ul>\n<h6><span style=\"font-size: 16px\"><strong>Storage and Handling:</strong></span></h6>\n<ul>\n<li>For optimal stability, store sealed product in a cool, dark, and dry environment. Refrigeration at 2–8 °C is recommended after first puncture or once the seal has been compromised</li>\n<li>Do not freeze</li>\n<li>Protect from light</li>\n<li>Maintain sterile handling practices during research use</li>\n</ul>\n<h6><span style=\"font-size: 16px\"><strong>Product Specifications:</strong></span></h6>\n<ul>\n<li><strong>Formulation:</strong> Aqueous solution</li>\n<li><strong>Concentration:</strong> 50 mg/mL</li>\n<li><strong>Total Content:</strong> 1500 mg per bottle</li>\n<li><strong>Volume:</strong> 30 mL</li>\n<li><strong>Delivery Format:</strong> Metered liquid solution</li>\n<li><strong>Dispenses per Container:</strong> ~200</li>\n<li><strong>Amount per Dispense:</strong> ~7.5 mg</li>\n<li><strong style=\"font-family: -apple-system, BlinkMacSystemFont, &apos;Segoe UI&apos;, Roboto, &apos;Helvetica Neue&apos;, Arial, &apos;Noto Sans&apos;, sans-serif, &apos;Apple Color Emoji&apos;, &apos;Segoe UI Emoji&apos;, &apos;Segoe UI Symbol&apos;, &apos;Noto Color Emoji&apos;\">Analytical Approach to Finished Formulations: </strong><span style=\"font-family: -apple-system, BlinkMacSystemFont, &apos;Segoe UI&apos;, Roboto, &apos;Helvetica Neue&apos;, Arial, &apos;Noto Sans&apos;, sans-serif, &apos;Apple Color Emoji&apos;, &apos;Segoe UI Emoji&apos;, &apos;Segoe UI Symbol&apos;, &apos;Noto Color Emoji&apos;\">Purity is a metric used for isolated raw materials, such as lyophilized peptide powders. Finished formulations—such as capsules, liquids, and topicals—contain multiple components, including excipients and stabilizers. In these systems, a single purity value does not accurately represent the overall composition. </span>Instead, identity and assay (content) are reported on the COA to confirm the presence of the correct compound and to verify that the labeled amount per unit is accurate. This approach reflects standard analytical practice and provides more meaningful information for research applications</li>\n</ul>\n<h6><span style=\"font-size: 16px\"><strong>Compliance Notice:</strong></span></h6>\n<p>NAD⁺ is <strong>FOR RESEARCH USE ONLY</strong>. It is not intended for human or veterinary use. This product has not been evaluated by the FDA. Misuse of this product is strictly prohibited and may violate federal, state, or local laws. By purchasing this product, buyer represents and warrants that it will be used only for in vitro research purposes.</p>",
+    "documentTitle": "NAD⁺ (Nicotinamide Adenine Dinucleotide) - Pure Health Peptides",
+    "images": [
+      {
+        "role": "primary",
+        "src": "/assets/product-details/gallery/NAD-Product-Card-alt1-fa1c3115b33f.jpg",
+        "alt": "NAD+ Product Card alt1"
+      },
+      {
+        "role": "info-card",
+        "src": "/assets/product-details/gallery/Liquids-Information-Card-Featured-3826e1765c6f.jpg",
+        "alt": "Liquids Information Card Featured"
+      },
+      {
+        "role": "coa",
+        "src": "/assets/product-details/gallery/evergreen-COA-03-NAD-Research-Spray-30ml-Lot-26055001-GT97P-scaled-f57d3f7cd154.jpg",
+        "alt": "evergreen COA 03 NAD Research Spray 30ml Lot 26055001 GT97P"
+      }
+    ],
+    "molecularStructureImage": "/assets/product-details/molecular/NAD-Liquid-Signature-38b19ab522f4.png",
+    "shortDescriptionHtml": "<p>NAD⁺ (Nicotinamide Adenine Dinucleotide) is a naturally occurring coenzyme present in all living cells and plays a fundamental role in cellular redox reactions. In laboratory environments, NAD⁺ is widely used in biochemical and molecular research to study metabolic pathways, enzymatic reactions, and cellular energy transfer mechanisms.</p>\n<p>This product is supplied as a pre-formulated aqueous research solution, intended to support controlled experimental use and analytical consistency.</p>",
+    "title": "NAD⁺ (Nicotinamide Adenine Dinucleotide)",
+    "type": "liquids"
+  },
+  "pt-141-2": {
+    "categories": [
+      {
+        "slug": "reproductive-neuroendocrine",
+        "name": "Reproductive & Neuroendocrine"
+      }
+    ],
+    "contentTemplate": "modern-structured",
+    "descriptionHtml": "<h6><span style=\"font-size: 16px\"><strong>Product Name:</strong></span></h6>\n<p>PT-141</p>\n<h6><span style=\"font-size: 16px\"><strong>Chemical Information:</strong></span></h6>\n<ul>\n<li><strong>Chemical Name:</strong> PT-141</li>\n<li><strong>Molecular Formula:</strong> C<sub>50</sub>H<sub>68</sub>N<sub>14</sub>O<sub>10</sub></li>\n<li><strong>Molecular Weight:</strong> 1025.2 g/mol</li>\n<li><strong>Sequence:</strong> Ac-Nle-Asp(1)-His-D-Phe-Arg-Trp-Lys(1)-OH</li>\n</ul>\n<h6><span style=\"font-size: 16px\"><strong>Molecular Structure:</strong></span></h6>\n\n    <div class=\"molecular-structure-wrap\">\n<div class=\"molecular-structure-img-wrap\">\n\t\t\t<img src=\"/assets/product-details/molecular/PT-141-Liquid-Signature-7498e09559af.png\" alt=\"Molecular Structure\" class=\"molecular-structure-img\">\n\t\t</div>\n\t</div>\n\n<h6><span style=\"font-size: 16px\"><strong>Product </strong></span><span style=\"font-size: 16px\"><strong>Description:</strong></span></h6>\n<p class=\"p1\">PT-141 is a synthetic cyclic peptide consisting of a defined amino acid sequence. In laboratory environments, it is studied for its chemical stability and peptide behavior under controlled experimental conditions. This product is supplied as a pre-formulated aqueous research solution, intended exclusively for laboratory research use.</p>\n<h6><span style=\"font-size: 16px\"><strong>Research Applications:</strong></span></h6>\n<ul>\n<li class=\"p1\">Investigation of peptide interaction characteristics in vitro</li>\n<li class=\"p1\">Study of peptide structural properties and analytical profiles</li>\n<li class=\"p1\">Evaluation of peptide stability and degradation pathways</li>\n<li class=\"p1\">Comparative research involving synthetic peptide sequences</li>\n</ul>\n<p>&nbsp;</p>\n<p><span style=\"font-size: 16px\"><strong>Storage and Handling:</strong></span></p>\n<ul>\n<li>For optimal stability, store sealed product in a cool, dark, and dry environment. Refrigeration at 2–8 °C is recommended after first puncture or once the seal has been compromised</li>\n<li>Do not freeze</li>\n<li>Protect from light</li>\n<li>Handle using aseptic laboratory techniques</li>\n</ul>\n<h6><span style=\"font-size: 16px\"><strong>Product Specifications:</strong></span></h6>\n<ul>\n<li><strong>Formulation:</strong> Aqueous solution</li>\n<li><strong>Concentration:</strong> 1 mg/mL</li>\n<li><strong>Total Content:</strong> 30 mg per bottle</li>\n<li><strong>Volume:</strong> 30 mL</li>\n<li><strong>Delivery Format:</strong> Metered liquid solution</li>\n<li><strong>Dispenses per Container:</strong> ~200</li>\n<li><strong>Amount per Dispense:</strong> ~150 mcg</li>\n<li><strong>Analytical Approach to Finished Formulations: </strong>Purity is a metric used for isolated raw materials, such as lyophilized peptide powders. Finished formulations—such as capsules, liquids, and topicals—contain multiple components, including excipients and stabilizers. In these systems, a single purity value does not accurately represent the overall composition. Instead, identity and assay (content) are reported on the COA to confirm the presence of the correct compound and to verify that the labeled amount per unit is accurate. This approach reflects standard analytical practice and provides more meaningful information for research applications</li>\n</ul>\n<h6><span style=\"font-size: 16px\"><strong>Compliance Notice:</strong></span></h6>\n<p>PT-141 is <strong>FOR RESEARCH USE ONLY</strong> as an analytical reference material. PT-141 is the active ingredient of an FDA-approved pharmaceutical product (Vyleesi®). This research material is not the approved drug product, is not intended for human or veterinary use, and has not been independently evaluated by the FDA as a research compound. Buyers are solely responsible for determining the legality of this compound in their jurisdiction, including compliance with the Federal Analog Act (21 U.S.C. § 813) and any applicable state analog statutes. Misuse of this product is strictly prohibited and may violate federal, state, or local laws. By purchasing this product, buyer represents and warrants that it will be used only for in vitro research purposes.</p>",
+    "documentTitle": "PT-141 - Pure Health Peptides",
+    "images": [
+      {
+        "role": "primary",
+        "src": "/assets/product-details/gallery/PT-141-Product-Card-alt1-8a529adeb5d3.jpg",
+        "alt": "PT 141 Product Card alt1"
+      },
+      {
+        "role": "info-card",
+        "src": "/assets/product-details/gallery/Liquids-Information-Card-Featured-3826e1765c6f.jpg",
+        "alt": "Liquids Information Card Featured"
+      },
+      {
+        "role": "coa",
+        "src": "/assets/product-details/gallery/evergreen-COA-04-PT-141-Research-Spray-30ml-Lot-26055002-GT98P-scaled-965989a1b587.jpg",
+        "alt": "evergreen COA 04 PT 141 Research Spray 30ml Lot 26055002 GT98P"
+      }
+    ],
+    "molecularStructureImage": "/assets/product-details/molecular/PT-141-Liquid-Signature-7498e09559af.png",
+    "shortDescriptionHtml": "<p class=\"p1\">PT-141 is a synthetic cyclic peptide consisting of a defined amino acid sequence. In laboratory environments, it is studied for its chemical stability and peptide behavior under controlled experimental conditions. This product is supplied as a pre-formulated aqueous research solution, intended exclusively for laboratory research use.</p>\n<h6></h6>",
+    "title": "PT-141",
+    "type": "liquids"
+  },
+  "selank-tp-7": {
+    "categories": [
+      {
+        "slug": "cognitive-and-neuro",
+        "name": "Cognitive & Neuro"
+      }
+    ],
+    "contentTemplate": "modern-structured",
+    "descriptionHtml": "<h6><span style=\"font-size: 16px\"><strong>Product Name:</strong></span></h6>\n<p>Selank TP-7</p>\n<h6><span style=\"font-size: 16px\"><strong>Chemical Information:</strong></span></h6>\n<ul>\n<li><strong>Chemical Name:</strong> Selank (Thr-Lys-Pro-Arg-Pro-Gly-Pro)</li>\n<li><strong>Molecular Formula:</strong> C<sub>33</sub>H<sub>57</sub>N<sub>11</sub>O<sub>9</sub></li>\n<li><strong>Molecular Weight:</strong> 751.9 g/mol</li>\n<li><strong>Sequence:</strong> Thr-Lys-Pro-Arg-Pro-Gly-Pro</li>\n</ul>\n<h6><span style=\"font-size: 16px\"><strong>Molecular Structure:</strong></span></h6>\n\n    <div class=\"molecular-structure-wrap\">\n<div class=\"molecular-structure-img-wrap\">\n\t\t\t<img src=\"/assets/product-details/molecular/Selank-TP-7-Liquid-Signature-02ca9605a5b0.png\" alt=\"Molecular Structure\" class=\"molecular-structure-img\">\n\t\t</div>\n\t</div>\n\n<h6><span style=\"font-size: 16px\"><strong>Product </strong></span><span style=\"font-size: 16px\"><strong>Description:</strong></span></h6>\n<p>Selank TP-7 is a synthetic heptapeptide originally developed as a stabilized analogue of naturally occurring regulatory peptides. It consists of seven amino acids and is studied in laboratory environments for its biochemical properties, peptide stability, and interaction behavior in controlled experimental systems.<br />\nThis product is supplied as a <strong>pre-formulated aqueous research solution</strong>, intended exclusively for laboratory research use.</p>\n<h6><span style=\"font-size: 16px\"><strong>Research Applications:</strong></span></h6>\n<ul>\n<li class=\"p1\">Investigation of peptide interaction characteristics in vitro</li>\n<li class=\"p1\">Study of peptide stability and enzymatic degradation pathways</li>\n<li class=\"p1\">Evaluation of peptide binding characteristics under laboratory conditions</li>\n<li class=\"p1\">Comparative research involving short-chain peptide structures</li>\n</ul>\n<p>&nbsp;</p>\n<p><span style=\"font-size: 16px\"><strong>Storage and Handling:</strong></span></p>\n<ul>\n<li>For optimal stability, store sealed product in a cool, dark, and dry environment. Refrigeration at 2–8 °C is recommended after first puncture or once the seal has been compromised</li>\n<li>Do not freeze</li>\n<li>Protect from light</li>\n<li>Handle using aseptic laboratory techniques</li>\n</ul>\n<h6><span style=\"font-size: 16px\"><strong>Product Specifications:</strong></span></h6>\n<ul>\n<li><strong>Formulation:</strong> Aqueous solution</li>\n<li><strong>Concentration:</strong> 1.33 mg/mL</li>\n<li><strong>Total Content:</strong> 40 mg per bottle</li>\n<li><strong>Volume:</strong> 30 mL</li>\n<li><strong>Delivery Format:</strong> Metered liquid solution</li>\n<li><strong>Dispoenses per Container:</strong> ~200</li>\n<li><strong>Amount per Dispense:</strong> ~200 mcg</li>\n<li><strong>Analytical Approach to Finished Formulations: </strong>Purity is a metric used for isolated raw materials, such as lyophilized peptide powders. Finished formulations—such as capsules, liquids, and topicals—contain multiple components, including excipients and stabilizers. In these systems, a single purity value does not accurately represent the overall composition. Instead, identity and assay (content) are reported on the COA to confirm the presence of the correct compound and to verify that the labeled amount per unit is accurate. This approach reflects standard analytical practice and provides more meaningful information for research applications</li>\n</ul>\n<h6><span style=\"font-size: 16px\"><strong>Compliance Notice:</strong></span></h6>\n<p>Selank TP-7 is <strong>FOR RESEARCH USE ONLY</strong>. It is not intended for human or veterinary use. This product has not been evaluated by the FDA. Misuse of this product is strictly prohibited and may violate federal, state, or local laws. By purchasing this product, buyer represents and warrants that it will be used only for in vitro research purposes.</p>",
+    "documentTitle": "Selank TP-7 - Pure Health Peptides",
+    "images": [
+      {
+        "role": "primary",
+        "src": "/assets/product-details/gallery/Selank-TP-7-Product-Card-alt1-6027379ddc91.jpg",
+        "alt": "Selank TP 7 Product Card alt1"
+      },
+      {
+        "role": "info-card",
+        "src": "/assets/product-details/gallery/Liquids-Information-Card-Featured-3826e1765c6f.jpg",
+        "alt": "Liquids Information Card Featured"
+      },
+      {
+        "role": "coa",
+        "src": "/assets/product-details/gallery/evergreen-COA-05-Selank-Research-Spray-30ml-Lot-26056001-GT99P-scaled-53162c017114.jpg",
+        "alt": "evergreen COA 05 Selank Research Spray 30ml Lot 26056001 GT99P"
+      }
+    ],
+    "molecularStructureImage": "/assets/product-details/molecular/Selank-TP-7-Liquid-Signature-02ca9605a5b0.png",
+    "shortDescriptionHtml": "<p>Selank TP-7 is a synthetic heptapeptide originally developed as a stabilized analogue of naturally occurring regulatory peptides. It consists of seven amino acids and is studied in laboratory environments for its biochemical properties, peptide stability, and interaction behavior in controlled experimental systems.<br />\nThis product is supplied as a <strong>pre-formulated aqueous research solution</strong>, intended exclusively for laboratory research use.</p>",
+    "title": "Selank TP-7",
+    "type": "liquids"
+  },
+  "semx-2": {
+    "categories": [
+      {
+        "slug": "cognitive-and-neuro",
+        "name": "Cognitive & Neuro"
+      }
+    ],
+    "contentTemplate": "modern-structured",
+    "descriptionHtml": "<h6><span style=\"font-size: 16px\"><strong>Product Name:</strong></span></h6>\n<p>Semx</p>\n<h6><span style=\"font-size: 16px\"><strong>Chemical Information:</strong></span></h6>\n<ul>\n<li><strong>Chemical Name:</strong> Semx (N-acetyl-Ser-Glu-His-Phe-Pro-Gly-Pro)</li>\n<li><strong>Molecular Formula:</strong> C<sub>37</sub>H<sub>51</sub>N<sub>9</sub>O<sub>10</sub>S</li>\n<li><strong>Molecular Weight:</strong> 813.9 g/mol</li>\n<li><strong>Sequence:</strong> Ac-Ser-Glu-His-Phe-Pro-Gly-Pro</li>\n</ul>\n<h6><span style=\"font-size: 16px\"><strong>Molecular Structure:</strong></span></h6>\n\n    <div class=\"molecular-structure-wrap\">\n<div class=\"molecular-structure-img-wrap\">\n\t\t\t<img src=\"/assets/product-details/molecular/Semax-Liquid-Signature-208e8078d015.png\" alt=\"Molecular Structure\" class=\"molecular-structure-img\">\n\t\t</div>\n\t</div>\n\n<h6><span style=\"font-size: 16px\"><strong>Product Description:</strong></span></h6>\n<p>This liquid compound is a synthetic heptapeptide consisting of a defined amino acid sequence, modified through N-terminal acetylation to enhance stability. In laboratory environments, Semx is studied for its biochemical properties, peptide stability, and interaction behavior within controlled experimental systems.This product is supplied as a pre-formulated aqueous research solution, intended exclusively for laboratory research use.</p>\n<h6><span style=\"font-size: 16px\"><strong>Research Applications:</strong></span></h6>\n<ul>\n<li>Investigation of neuropeptide signaling mechanisms in vitro</li>\n<li>Study of peptide stability and degradation pathways</li>\n<li>Evaluation of peptide–receptor interactions under laboratory conditions</li>\n<li>Comparative research involving short-chain regulatory peptides</li>\n</ul>\n<h6><span style=\"font-size: 16px\"><strong>Storage and Handling:</strong></span></h6>\n<ul>\n<li>For optimal stability, store sealed product in a cool, dark, and dry environment. Refrigeration at 2–8 °C is recommended after first puncture or once the seal has been compromised</li>\n<li>Do not freeze</li>\n<li>Protect from light</li>\n<li>Handle using aseptic laboratory techniques</li>\n</ul>\n<h6><span style=\"font-size: 16px\"><strong>Product Specifications:</strong></span></h6>\n<ul>\n<li><strong>Formulation:</strong> Aqueous solution</li>\n<li><strong>Concentration:</strong> 1.67 mg/mL</li>\n<li><strong>Total Content:</strong> 50 mg per bottle</li>\n<li><strong>Volume:</strong> 30 mL</li>\n<li><strong>Delivery Format:</strong> Metered liquid solution</li>\n<li><strong>Dispenses per Container:</strong> ~200</li>\n<li><strong>Amount per Dispense:</strong> ~250 mcg</li>\n<li><strong style=\"font-family: -apple-system, BlinkMacSystemFont, &apos;Segoe UI&apos;, Roboto, &apos;Helvetica Neue&apos;, Arial, &apos;Noto Sans&apos;, sans-serif, &apos;Apple Color Emoji&apos;, &apos;Segoe UI Emoji&apos;, &apos;Segoe UI Symbol&apos;, &apos;Noto Color Emoji&apos;\">Analytical Approach to Finished Formulations: </strong><span style=\"font-family: -apple-system, BlinkMacSystemFont, &apos;Segoe UI&apos;, Roboto, &apos;Helvetica Neue&apos;, Arial, &apos;Noto Sans&apos;, sans-serif, &apos;Apple Color Emoji&apos;, &apos;Segoe UI Emoji&apos;, &apos;Segoe UI Symbol&apos;, &apos;Noto Color Emoji&apos;\">Purity is a metric used for isolated raw materials, such as lyophilized peptide powders. Finished formulations—such as capsules, liquids, and topicals—contain multiple components, including excipients and stabilizers. In these systems, a single purity value does not accurately represent the overall composition. </span>Instead, identity and assay (content) are reported on the COA to confirm the presence of the correct compound and to verify that the labeled amount per unit is accurate. This approach reflects standard analytical practice and provides more meaningful information for research applications</li>\n</ul>\n<h6><span style=\"font-size: 16px\"><strong>Compliance Notice:</strong></span></h6>\n<p>Semx is <strong>FOR RESEARCH USE ONLY</strong>. It is not intended for human or veterinary use. This product has not been evaluated by the FDA. Misuse of this product is strictly prohibited and may violate federal, state, or local laws. By purchasing this product, buyer represents and warrants that it will be used only for in vitro research purposes.</p>",
+    "documentTitle": "Semx - Pure Health Peptides",
+    "images": [
+      {
+        "role": "primary",
+        "src": "/assets/product-details/gallery/Semax-Product-Card-alt1-b43a45c3a4b2.jpg",
+        "alt": "Semax Product Card alt1"
+      },
+      {
+        "role": "info-card",
+        "src": "/assets/product-details/gallery/Liquids-Information-Card-Featured-3826e1765c6f.jpg",
+        "alt": "Liquids Information Card Featured"
+      },
+      {
+        "role": "coa",
+        "src": "/assets/product-details/gallery/evergreen-COA-06-Semx-Research-Spray-30ml-Lot-26056002-GU1P-scaled-aac9133e5d27.jpg",
+        "alt": "evergreen COA 06 Semx Research Spray 30ml Lot 26056002 GU1P"
+      }
+    ],
+    "molecularStructureImage": "/assets/product-details/molecular/Semax-Liquid-Signature-208e8078d015.png",
+    "shortDescriptionHtml": "<p>This liquid compound is a synthetic heptapeptide consisting of a defined amino acid sequence, modified through N-terminal acetylation to enhance stability. In laboratory environments, Semx is studied for its biochemical properties, peptide stability, and interaction behavior within controlled experimental systems. This product is supplied as a pre-formulated aqueous research solution, intended exclusively for laboratory research use.</p>",
+    "title": "Semx",
+    "type": "liquids"
+  },
+  "tb-500-t%ce%b24-pure-health-peptides": {
+    "categories": [
+      {
+        "slug": "regeneration-longevity",
+        "name": "Regeneration & Longevity"
+      },
+      {
+        "slug": "growth-repair",
+        "name": "Growth & Repair"
+      }
+    ],
+    "contentTemplate": "modern-structured",
+    "descriptionHtml": "<h6><span style=\"font-size: 16px\"><strong>Product Name:</strong></span></h6>\n<p>TB-500 (Tβ4)</p>\n<h6><span style=\"font-size: 16px\"><strong>Chemical Information:</strong></span></h6>\n<ul>\n<li><strong>Chemical Name:</strong> TB-500 (Thymosin Beta-4)</li>\n<li><strong>Molecular Formula:</strong> C<sub>212</sub>H<sub>350</sub>N<sub>56</sub>O<sub>78</sub>S</li>\n<li><strong>Molecular Weight:</strong> ~4963.5 g/mol</li>\n<li><strong>Sequence:</strong> Ac-Ser-Asp-Lys-Pro-Asp-Met-Ala-Glu-Ile-Glu-Lys-Phe-Asp-Lys-Ser-Lys-Leu-Lys-Lys-Thr-Glu-Thr-Gln-Glu-Lys-Asn-Pro-Leu-Pro-Ser-Lys-Glu-Thr-Ile-Glu-Gln-Glu-Lys-Gln-Ala-Gly-Glu-Ser</li>\n</ul>\n<h6><span style=\"font-size: 16px\"><strong>Molecular Structure:</strong></span></h6>\n\n    <div class=\"molecular-structure-wrap\">\n<div class=\"molecular-structure-img-wrap\">\n\t\t\t<img src=\"/assets/product-details/molecular/TB-500-Liquid-Signature-ecf99ae0ecc2.png\" alt=\"Molecular Structure\" class=\"molecular-structure-img\">\n\t\t</div>\n\t</div>\n\n<h6><span style=\"font-size: 16px\"><strong>Product Description:</strong></span></h6>\n<p class=\"p1\">TB-500 is a synthetic peptide corresponding to the Thymosin Beta-4 protein. It consists of 43 amino acids in its native form; TB-500 represents a truncated sequence designed for experimental and analytical research applications. In laboratory settings, TB-500 is studied for its biochemical properties and peptide behavior under controlled conditions. This product is supplied as a pre-formulated aqueous research solution to support consistency in experimental workflows.</p>\n<p><strong style=\"font-family: -apple-system, BlinkMacSystemFont, &apos;Segoe UI&apos;, Roboto, &apos;Helvetica Neue&apos;, Arial, &apos;Noto Sans&apos;, sans-serif, &apos;Apple Color Emoji&apos;, &apos;Segoe UI Emoji&apos;, &apos;Segoe UI Symbol&apos;, &apos;Noto Color Emoji&apos;\">Research Applications:</strong></p>\n<ul>\n<li>Investigation of actin-associated peptide interactions in vitro</li>\n<li>Study of intracellular structural interactions and peptide transport mechanisms</li>\n<li>Evaluation of peptide stability in aqueous environments</li>\n<li>Comparative analysis of thymic peptide fragments in laboratory models</li>\n</ul>\n<h6><span style=\"font-size: 16px\"><strong>Storage and Handling:</strong></span></h6>\n<ul>\n<li>For optimal stability, store sealed product in a cool, dark, and dry environment. Refrigeration at 2–8 °C is recommended after first puncture or once the seal has been compromised</li>\n<li>Do not freeze</li>\n<li>Protect from light</li>\n<li>Handle under aseptic laboratory conditions</li>\n</ul>\n<h6><span style=\"font-size: 16px\"><strong>Product Specifications:</strong></span></h6>\n<ul>\n<li><strong>Formulation:</strong> Aqueous solution</li>\n<li><strong>Concentration:</strong> 1 mg/mL</li>\n<li><strong>Total Content:</strong> 30 mg per bottle</li>\n<li><strong>Delivery Format:</strong> Metered liquid solution</li>\n<li><strong>Dispenses per Container:</strong> ~200</li>\n<li><strong>Amount per Dispense:</strong> ~150 mcg</li>\n<li><strong>Analytical Approach to Finished Formulations: </strong>Purity is a metric used for isolated raw materials, such as lyophilized peptide powders. Finished formulations—such as capsules, liquids, and topicals—contain multiple components, including excipients and stabilizers. In these systems, a single purity value does not accurately represent the overall composition. Instead, identity and assay (content) are reported on the COA to confirm the presence of the correct compound and to verify that the labeled amount per unit is accurate. This approach reflects standard analytical practice and provides more meaningful information for research applications</li>\n</ul>\n<h6><span style=\"font-size: 16px\"><strong>Compliance Notice:</strong></span></h6>\n<p>TB-500 is <strong>FOR RESEARCH USE ONLY</strong>. It is not intended for human or veterinary use. This product has not been evaluated by the FDA. Misuse of this product is strictly prohibited and may violate federal, state, or local laws. By purchasing this product, buyer represents and warrants that it will be used only for in vitro research purposes.</p>",
+    "documentTitle": "TB-500 (Tβ4) - Pure Health Peptides",
+    "images": [
+      {
+        "role": "primary",
+        "src": "/assets/product-details/gallery/TB-500-Product-Card-alt1-adee8d48f974.jpg",
+        "alt": "TB 500 Product Card alt1"
+      },
+      {
+        "role": "info-card",
+        "src": "/assets/product-details/gallery/Liquids-Information-Card-Featured-3826e1765c6f.jpg",
+        "alt": "Liquids Information Card Featured"
+      },
+      {
+        "role": "coa",
+        "src": "/assets/product-details/gallery/evergreen-COA-07-TB-500-Research-Spray-30ml-Lot-26054002-GT96P-scaled-98b8a5138a07.jpg",
+        "alt": "evergreen COA 07 TB 500 Research Spray 30ml Lot 26054002 GT96P"
+      }
+    ],
+    "molecularStructureImage": "/assets/product-details/molecular/TB-500-Liquid-Signature-ecf99ae0ecc2.png",
+    "shortDescriptionHtml": "<p>TB-500 is a synthetic peptide corresponding to the Thymosin Beta-4 protein. It consists of 43 amino acids in its native form; TB-500 represents a truncated sequence designed for experimental and analytical research applications. In laboratory settings, TB-500 is studied for its biochemical properties and peptide behavior under controlled conditions. This product is supplied as a pre-formulated aqueous research solution to support consistency in experimental workflows.</p>",
+    "title": "TB-500 (Tβ4)",
+    "type": "liquids"
+  },
+  "vip-pure-health-peptides": {
+    "categories": [
+      {
+        "slug": "regeneration-longevity",
+        "name": "Regeneration & Longevity"
+      },
+      {
+        "slug": "cognitive-and-neuro",
+        "name": "Cognitive & Neuro"
+      },
+      {
+        "slug": "immune-and-inflammatory",
+        "name": "Immune & Inflammatory"
+      }
+    ],
+    "contentTemplate": "narrative",
+    "descriptionHtml": "<p><strong>Product Name:</strong></p>\n<p><strong>VIP (Vasoactive Intestinal Peptide) (Aqueous Solution)</strong></p>\n<p><strong>Chemical Information:</strong></p>\n<ul>\n<li><strong>Molecular Formula:</strong> C₁₄₇H₂₃₈N₄₄O₄₂S</li>\n<li><strong>Molecular Weight:</strong> ~3,326 g/mol</li>\n<li><strong>Sequence:</strong> His-Ser-Asp-Ala-Val-Phe-Thr-Asp-Asn-Tyr-Thr-Arg-Leu-Arg-Lys-Gln-Met-Ala-Val-Lys-Lys-Tyr-Leu-Asn-Ser-Ile-Leu-Asn-NH₂</li>\n<li><strong>Structure Class:</strong> Synthetic 28 amino acid peptide (glucagon/secretin-related peptide)</li>\n</ul>\n<p><strong>Molecular Structure:</strong></p>\n\n    <div class=\"molecular-structure-wrap\">\n<div class=\"molecular-structure-img-wrap\">\n\t\t\t<img src=\"/assets/product-details/molecular/VIP-liquid-e9e28432e6b0.png\" alt=\"Molecular Structure\" class=\"molecular-structure-img\">\n\t\t</div>\n\t</div>\n\n<p>&nbsp;</p>\n<p><strong style=\"font-family: -apple-system, BlinkMacSystemFont, &apos;Segoe UI&apos;, Roboto, &apos;Helvetica Neue&apos;, Arial, &apos;Noto Sans&apos;, sans-serif, &apos;Apple Color Emoji&apos;, &apos;Segoe UI Emoji&apos;, &apos;Segoe UI Symbol&apos;, &apos;Noto Color Emoji&apos;\">Product Description:</strong></p>\n<p>Vasoactive Intestinal Peptide (VIP) is a 28-amino-acid synthetic peptide belonging to the glucagon/secretin peptide superfamily. It is structurally characterized by a defined linear amino acid sequence and is produced via controlled peptide synthesis for use in laboratory research environments. In research settings, VIP is utilized in analytical and experimental systems to examine peptide structure, stability, and physicochemical properties under controlled conditions. This product is supplied as a pre-formulated aqueous research solution, designed to provide consistency and stability for controlled research applications. VIP is intended exclusively for in vitro use by qualified research professionals.</p>\n<p><strong>Research Applications:</strong></p>\n<ul>\n<li>Analytical evaluation of peptide structure and sequence characteristics</li>\n<li>Examination of peptide stability and degradation profiles under controlled conditions</li>\n<li>Investigation of peptide–receptor binding interactions in isolated assay systems</li>\n<li>Characterization of peptide behavior in biochemical and cell-based experimental models</li>\n</ul>\n<p><strong>Storage and Handling:</strong></p>\n<ul>\n<li>For optimal stability, store sealed product in a cool, dark, and dry environment. Refrigeration at 2–8 °C is recommended after first puncture or once the seal has been compromised</li>\n<li>Do not freeze</li>\n<li>Protect from light</li>\n<li>Maintain sterile handling practices during research use</li>\n</ul>\n<p><strong>Product Specifications:</strong></p>\n<ul>\n<li><strong>Bottle Volume:</strong> 15 mL</li>\n<li><strong>Total Content:</strong> 20 mg per bottle</li>\n<li><strong>Dispenses per Container:</strong> ~100</li>\n<li><strong>Per Dispense:</strong> ~200 mcg</li>\n<li><strong>Analytical Approach to Finished Formulations:</strong> Purity is a metric used for isolated raw materials, such as lyophilized peptide powders. Finished formulations—such as capsules, liquids, and topicals—contain multiple components, including excipients and stabilizers. In these systems, a single purity value does not accurately represent the overall composition. Instead, identity and assay (content) are reported on the COA to confirm the presence of the correct compound and to verify that the labeled amount per unit is accurate. This approach reflects standard analytical practice and provides more meaningful information for research applications.</li>\n</ul>\n<p><strong>Compliance Notice:</strong></p>\n<p>VIP (Vasoactive Intestinal Peptide) (Aqueous Solution) is FOR RESEARCH USE ONLY. It is not intended for human or veterinary use. This product has not been evaluated by the FDA. Misuse of this product is strictly prohibited and may violate federal, state, or local laws. By purchasing this product, buyer represents and warrants that it will be used only for in vitro research purposes.</p>",
+    "documentTitle": "VIP - Pure Health Peptides",
+    "images": [
+      {
+        "role": "primary",
+        "src": "/assets/product-details/gallery/VIP-06a3833d9a99.png",
+        "alt": "VIP"
+      },
+      {
+        "role": "info-card",
+        "src": "/assets/product-details/gallery/Liquids-Information-Card-Featured-3826e1765c6f.jpg",
+        "alt": "Liquids Information Card Featured"
+      }
+    ],
+    "molecularStructureImage": "/assets/product-details/molecular/VIP-liquid-e9e28432e6b0.png",
+    "shortDescriptionHtml": "<p>Vasoactive Intestinal Peptide (VIP) is a 28-amino-acid synthetic peptide belonging to the glucagon/secretin peptide superfamily. It is structurally characterized by a defined linear amino acid sequence and is produced via controlled peptide synthesis for use in laboratory research environments. In research settings, VIP is utilized in analytical and experimental systems to examine peptide structure, stability, and physicochemical properties under controlled conditions. This product is supplied as a pre-formulated aqueous research solution, designed to provide consistency and stability for controlled research applications. VIP is intended exclusively for in vitro use by qualified research professionals.</p>",
+    "title": "VIP",
+    "type": "liquids"
+  },
+  "vocus": {
+    "categories": [
+      {
+        "slug": "regeneration-longevity",
+        "name": "Regeneration & Longevity"
+      },
+      {
+        "slug": "cognitive-and-neuro",
+        "name": "Cognitive & Neuro"
+      }
+    ],
+    "contentTemplate": "narrative",
+    "descriptionHtml": "<p><strong>Product Name:</strong></p>\n<p><strong>VOCUS — Selank / Semx / Pinealon — Blend (Aqueous Solution)</strong></p>\n<p><strong>Chemical Information — Selank:</strong></p>\n<ul>\n<li><strong>Chemical Name:</strong> Selank (Thr-Lys-Pro-Arg-Pro-Gly-Pro)</li>\n<li><strong>Molecular Formula:</strong> C₃₃H₅₇N₁₁O₉</li>\n<li><strong>Molecular Weight: </strong>751.9 g/mol</li>\n<li><strong>Sequence:</strong> Thr-Lys-Pro-Arg-Pro-Gly-Pro</li>\n</ul>\n<p><strong>Chemical Information — Semx:</strong></p>\n<ul>\n<li><strong>Chemical Name:</strong> Semx (N-acetyl-Ser-Glu-His-Phe-Pro-Gly-Pro)</li>\n<li><strong>Molecular Formula:</strong> C₃₇H₅₁N₉O₁₀S</li>\n<li><strong>Molecular Weight: </strong>813.9 g/mol</li>\n<li><strong>Sequence:</strong> Ac-Ser-Glu-His-Phe-Pro-Gly-Pro</li>\n</ul>\n<p><strong>Chemical Information — Pinealon:</strong></p>\n<ul>\n<li><strong>Molecular Formula:</strong> C₁₅H₂₆N₆O₈</li>\n<li><strong>Molecular Weight:</strong>418.41 g/mol</li>\n<li><strong>Sequence:</strong> Glu-Asp-Arg (EDR)</li>\n<li><strong>Structure Class:</strong> Synthetic tripeptide (L-glutamic acid, L-aspartic acid, L-arginine)</li>\n</ul>\n<p><strong>Product Description:</strong></p>\n<p>VOCUS is a combined peptide formulation consisting of three synthetic peptides commonly studied in laboratory research environments. Selank is a synthetic heptapeptide originally developed as a stabilized analogue of naturally occurring regulatory peptides. Semx is a synthetic heptapeptide modified through N-terminal acetylation to enhance stability. Pinealon is a synthetic tripeptide composed of L-glutamic acid, L-aspartic acid, and L-arginine. This product is supplied as a pre-formulated aqueous research solution, designed to support controlled experimental workflows where multi-peptide systems are evaluated under standardized laboratory conditions.</p>\n<p><strong>Research Applications:</strong></p>\n<ul>\n<li>Investigation of multi-peptide behavior in controlled in vitro systems</li>\n<li>Study of peptide stability and compatibility in aqueous formulations</li>\n<li>Evaluation of peptide interactions in comparative laboratory models</li>\n<li>Research involving combined regulatory peptide systems</li>\n</ul>\n<p><strong>Storage and Handling:</strong></p>\n<ul>\n<li>For optimal stability, store sealed product in a cool, dark, and dry environment. Refrigeration at 2–8 °C is recommended after first puncture or once the seal has been compromised</li>\n<li>Do not freeze</li>\n<li>Protect from light</li>\n<li>Maintain sterile handling practices during research use</li>\n</ul>\n<p><strong>Product Specifications:</strong></p>\n<ul>\n<li><strong>Bottle Volume:</strong> 15 mL</li>\n<li><strong>Total Content:</strong> 20 mg Selank / 20 mg Semx / 20 mg Pinealon per bottle</li>\n<li><strong>Dispenses per Container:</strong> ~100</li>\n<li><strong>Per Dispense:</strong> ~200 mcg Selank / ~200 mcg Semx / ~200 mcg Pinealon (~600 mcg combined)</li>\n<li><strong>Analytical Approach to Finished Formulations:</strong> Purity is a metric used for isolated raw materials, such as lyophilized peptide powders. Finished formulations—such as capsules, liquids, and topicals—contain multiple components, including excipients and stabilizers. In these systems, a single purity value does not accurately represent the overall composition. Instead, identity and assay (content) are reported on the COA to confirm the presence of the correct compounds and to verify that the labeled amount per unit is accurate. This approach reflects standard analytical practice and provides more meaningful information for research applications.</li>\n</ul>\n<p><strong>Compliance Notice:</strong></p>\n<p>VOCUS (Selank / Semx / Pinealon Aqueous Solution) is FOR RESEARCH USE ONLY. It is not intended for human or veterinary use. This product has not been evaluated by the FDA. Misuse of this product is strictly prohibited and may violate federal, state, or local laws. By purchasing this product, buyer represents and warrants that it will be used only for in vitro research purposes.</p>",
+    "documentTitle": "VOCUS - Pure Health Peptides",
+    "images": [
+      {
+        "role": "primary",
+        "src": "/assets/product-details/gallery/VOCUS-ea263e06edb6.png",
+        "alt": "VOCUS"
+      },
+      {
+        "role": "info-card",
+        "src": "/assets/product-details/gallery/Liquids-Information-Card-Featured-3826e1765c6f.jpg",
+        "alt": "Liquids Information Card Featured"
+      }
+    ],
+    "molecularStructureImage": null,
+    "shortDescriptionHtml": "<p>VOCUS is a combined peptide formulation consisting of three synthetic peptides commonly studied in laboratory research environments. Selank is a synthetic heptapeptide originally developed as a stabilized analogue of naturally occurring regulatory peptides. Semx is a synthetic heptapeptide modified through N-terminal acetylation to enhance stability. Pinealon is a synthetic tripeptide composed of L-glutamic acid, L-aspartic acid, and L-arginine. This product is supplied as a pre-formulated aqueous research solution, designed to support controlled experimental workflows where multi-peptide systems are evaluated under standardized laboratory conditions.</p>",
+    "title": "VOCUS",
+    "type": "liquids"
+  }
+}

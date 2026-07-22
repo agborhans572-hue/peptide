@@ -1,0 +1,19 @@
+{
+  "name": "Pure Health Peptides",
+  "short_name": "Pure Health",
+  "description": "Research peptides independently batch tested in the USA.",
+  "lang": "en-US",
+  "start_url": "/",
+  "scope": "/",
+  "display": "browser",
+  "background_color": "#ffffff",
+  "theme_color": "#081a32",
+  "icons": [
+    {
+      "src": "/assets/favicon.png",
+      "sizes": "100x100",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

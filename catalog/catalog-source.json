@@ -1,0 +1,5 @@
+{
+  "reviewedSnapshot": "catalog/woocommerce-reviewed.json",
+  "candidateSnapshot": "catalog/woocommerce-sync.candidate.json",
+  "diff": "catalog/woocommerce-sync.diff.json"
+}

@@ -1,0 +1,5793 @@
+{
+  "version": 1,
+  "publicPrefix": "/assets/product-details",
+  "productCount": 115,
+  "assetCount": 422,
+  "totalBytes": 30080549,
+  "assets": [
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/aod-chem-info.png",
+      "publicPath": "/assets/product-details/molecular/aod-chem-info-34617c2abce7.png",
+      "bytes": 5206,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "aod9604"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/AOD9604-2.jpg",
+      "publicPath": "/assets/product-details/gallery/AOD9604-2-9fa6fd8138bf.jpg",
+      "bytes": 75125,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "aod9604"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/AOD9604-Card-2.jpg",
+      "publicPath": "/assets/product-details/gallery/AOD9604-Card-2-0534b01984f5.jpg",
+      "bytes": 85779,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "info-card"
+      ],
+      "products": [
+        "aod9604"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/Bacteriostatic-Water.jpg",
+      "publicPath": "/assets/product-details/gallery/Bacteriostatic-Water-83bc11470026.jpg",
+      "bytes": 81258,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "bacteriostatic-water"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/BPC-157_TB-500-1.jpg",
+      "publicPath": "/assets/product-details/gallery/BPC-157-TB-500-1-5c0c9f4253a7.jpg",
+      "bytes": 78597,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "bpc-157-tb-500"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/BPC-157-3.jpg",
+      "publicPath": "/assets/product-details/gallery/BPC-157-3-4e708ac3ced5.jpg",
+      "bytes": 72496,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "bpc-157"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/BPC-157-Card.jpg",
+      "publicPath": "/assets/product-details/gallery/BPC-157-Card-232b6ea4f8f2.jpg",
+      "bytes": 75088,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "info-card"
+      ],
+      "products": [
+        "bpc-157"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/BPC-157TB-500-Card-.jpg",
+      "publicPath": "/assets/product-details/gallery/BPC-157TB-500-Card-47a0b1b2eef8.jpg",
+      "bytes": 88242,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "info-card"
+      ],
+      "products": [
+        "bpc-157-tb-500"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/CJC-1295-2.jpg",
+      "publicPath": "/assets/product-details/gallery/CJC-1295-2-896e97c14031.jpg",
+      "bytes": 73370,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "cjc-1295"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/CJC-1295-NO-DAC-Card.jpg",
+      "publicPath": "/assets/product-details/gallery/CJC-1295-NO-DAC-Card-6e726cf7561e.jpg",
+      "bytes": 143061,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "info-card"
+      ],
+      "products": [
+        "cjc-1295"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/CJC-1295-WITH-DAC-Card.jpg",
+      "publicPath": "/assets/product-details/gallery/CJC-1295-WITH-DAC-Card-51d07a63b13a.jpg",
+      "bytes": 92657,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "info-card"
+      ],
+      "products": [
+        "cjc-1295-dac"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/CJC-1295DAC.jpg",
+      "publicPath": "/assets/product-details/gallery/CJC-1295DAC-03ac5d574e0a.jpg",
+      "bytes": 78881,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "cjc-1295-dac"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/CJC-1295Ipamorelin-Card.jpg",
+      "publicPath": "/assets/product-details/gallery/CJC-1295Ipamorelin-Card-b5acaef92cb9.jpg",
+      "bytes": 81228,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "info-card"
+      ],
+      "products": [
+        "cjc1295-ipamorelin"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/CJC-1295Ipamorelin.jpg",
+      "publicPath": "/assets/product-details/gallery/CJC-1295Ipamorelin-783f1890e12c.jpg",
+      "bytes": 82620,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "cjc1295-ipamorelin"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/COA_168_COA10848_Pure_Health_Peptides_MelanotanII-images-1.jpg",
+      "publicPath": "/assets/product-details/gallery/COA-168-COA10848-Pure-Health-Peptides-MelanotanII-images-1-aae14a1df692.jpg",
+      "bytes": 33890,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "gallery"
+      ],
+      "products": [
+        "melanoten-2"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/COA_216_COA11126_Pure_Health_Peptides_BPC-157_TB4_10mg-images-0.jpg",
+      "publicPath": "/assets/product-details/gallery/COA-216-COA11126-Pure-Health-Peptides-BPC-157-TB4-10mg-images-0-111605a5a8d0.jpg",
+      "bytes": 69719,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "bpc-157-tb-500"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/COA_216_COA11126_Pure_Health_Peptides_BPC-157_TB4_10mg-images-1.jpg",
+      "publicPath": "/assets/product-details/gallery/COA-216-COA11126-Pure-Health-Peptides-BPC-157-TB4-10mg-images-1-0f7075d67537.jpg",
+      "bytes": 61266,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "bpc-157-tb-500"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/COA_365_Bacteriostatic-Water_10mL-Lot-JTP-110125-GD25.jpg",
+      "publicPath": "/assets/product-details/gallery/COA-365-Bacteriostatic-Water-10mL-Lot-JTP-110125-GD25-68d75a50304d.jpg",
+      "bytes": 49514,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "bacteriostatic-water"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/COA_6_LL-37_SJZJB0888_2025-01-09_page-0001.jpg",
+      "publicPath": "/assets/product-details/gallery/COA-6-LL-37-SJZJB0888-2025-01-09-page-0001-95f7f6e00b23.jpg",
+      "bytes": 99905,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "ll-37"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/COA_6_LL-37_SJZJB0888_2025-01-09_page-0002.jpg",
+      "publicPath": "/assets/product-details/gallery/COA-6-LL-37-SJZJB0888-2025-01-09-page-0002-32748814e30e.jpg",
+      "bytes": 93948,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "ll-37"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/DSIP-3.jpg",
+      "publicPath": "/assets/product-details/gallery/DSIP-3-aadda416e441.jpg",
+      "bytes": 72713,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "dsip"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/DSIP-Card.jpg",
+      "publicPath": "/assets/product-details/gallery/DSIP-Card-a8a1a6505e46.jpg",
+      "bytes": 71876,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "info-card"
+      ],
+      "products": [
+        "dsip"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/epithalon-5.jpg",
+      "publicPath": "/assets/product-details/gallery/epithalon-5-9af5082cd46e.jpg",
+      "bytes": 74020,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "epithalon"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/Epithalon-Card.jpg",
+      "publicPath": "/assets/product-details/gallery/Epithalon-Card-f222070db874.jpg",
+      "bytes": 78529,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "info-card"
+      ],
+      "products": [
+        "epithalon"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/epithalon-chem-info.png",
+      "publicPath": "/assets/product-details/molecular/epithalon-chem-info-f76055138041.png",
+      "bytes": 2254,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "epithalon"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/Evergreen_Acetic-Acid-Lot-CHA-122025-GD26.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-Acetic-Acid-Lot-CHA-122025-GD26-0d6cef3e8ab2.jpg",
+      "bytes": 70929,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "acetic-acid"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/Evergreen_COA_168_COA10848_Pure_Health_Peptides_MelanotanII-images-0.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-168-COA10848-Pure-Health-Peptides-MelanotanII-images-0-ea7e1403e998.jpg",
+      "bytes": 54954,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "melanoten-2"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/Evergreen_COA_214_COA11124_Pure_Health_Peptides_BPC-157_5mg-images-0.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-214-COA11124-Pure-Health-Peptides-BPC-157-5mg-images-0-7a97cbb59e17.jpg",
+      "bytes": 74733,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "bpc-157"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/Evergreen_COA_214_COA11124_Pure_Health_Peptides_BPC-157_5mg-images-1.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-214-COA11124-Pure-Health-Peptides-BPC-157-5mg-images-1-d900dc7fa423.jpg",
+      "bytes": 59754,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "bpc-157"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/Evergreen_COA_253_COA11250_Pure_Health_Peptides_CJC-1295_with_DAC_5mg-images-0.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-253-COA11250-Pure-Health-Peptides-CJC-1295-with-DAC-5mg-images-0-a4f1a9196399.jpg",
+      "bytes": 71726,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "cjc-1295-dac"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/Evergreen_COA_253_COA11250_Pure_Health_Peptides_CJC-1295_with_DAC_5mg-images-1.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-253-COA11250-Pure-Health-Peptides-CJC-1295-with-DAC-5mg-images-1-d7ed80d8a56e.jpg",
+      "bytes": 35837,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "cjc-1295-dac"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/Evergreen_COA_258_COA11299_Pure_Health_Peptides_TA-1_10mg-images-0.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-258-COA11299-Pure-Health-Peptides-TA-1-10mg-images-0-b7b06013a327.jpg",
+      "bytes": 85145,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "thymosin-alpha-1"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/Evergreen_COA_258_COA11299_Pure_Health_Peptides_TA-1_10mg-images-1.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-258-COA11299-Pure-Health-Peptides-TA-1-10mg-images-1-1fdc9bdcbb55.jpg",
+      "bytes": 32461,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "thymosin-alpha-1"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/Evergreen_COA_262_COA11303_Pure_Health_Peptides_Glutathione_600mg-images-0.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-262-COA11303-Pure-Health-Peptides-Glutathione-600mg-images-0-dac38bb3ff71.jpg",
+      "bytes": 80613,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "glutathione"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/Evergreen_COA_262_COA11303_Pure_Health_Peptides_Glutathione_600mg-images-1.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-262-COA11303-Pure-Health-Peptides-Glutathione-600mg-images-1-69ab11ad45c4.jpg",
+      "bytes": 31756,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "glutathione"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/Evergreen_COA_285_COA_11-27-25-AOD9604-Lot-TUY-101025-FW9.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-285-COA-11-27-25-AOD9604-Lot-TUY-101025-FW9-50aa37f24702.jpg",
+      "bytes": 116665,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "aod9604"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/Evergreen_COA_286_COA_11-27-25-AOD9604-Lot-TUY-101025-FW10.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-286-COA-11-27-25-AOD9604-Lot-TUY-101025-FW10-1e0cee925d71.jpg",
+      "bytes": 116218,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "aod9604"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/Evergreen_COA_287_COA_11-27-25-CJC-1295_Ipamorelin-Lot-TUY-101025-FU50.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-287-COA-11-27-25-CJC-1295-Ipamorelin-Lot-TUY-101025-FU50-6ba9b1d34641.jpg",
+      "bytes": 118206,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "cjc1295-ipamorelin"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/Evergreen_COA_288_COA_11-27-25-CJC-1295_Ipamorelin-Lot-TUY-101025-FU51.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-288-COA-11-27-25-CJC-1295-Ipamorelin-Lot-TUY-101025-FU51-d0ef624097a4.jpg",
+      "bytes": 118062,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "cjc1295-ipamorelin"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/Evergreen_COA_340_10mg_Ipamorelin-Lot-CHA-010826-GD96-1.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-340-10mg-Ipamorelin-Lot-CHA-010826-GD96-1-311d14fc5a4f.jpg",
+      "bytes": 116756,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "ipamorelin"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/Evergreen_COA_340_10mg_Ipamorelin-Lot-CHA-010826-GD96.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-340-10mg-Ipamorelin-Lot-CHA-010826-GD96-8ca5a0c76700.jpg",
+      "bytes": 116756,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "ipamorelin"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/Evergreen_COA_350_DSIP_10mg-Lot-CHA-011526-GH94.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-350-DSIP-10mg-Lot-CHA-011526-GH94-9561108e26f0.jpg",
+      "bytes": 74658,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "dsip"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/Evergreen_COA_351_Epithalon_10mg-Lot-TUY-011526-GI3.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-351-Epithalon-10mg-Lot-TUY-011526-GI3-c58bf1ecfdb4.jpg",
+      "bytes": 74696,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "epithalon"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/Evergreen_COA_352_GLP-1S-Semaglutide_5mg-Lot-CHA-011526-GH92.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-352-GLP-1S-Semaglutide-5mg-Lot-CHA-011526-GH92-1a1acad0165f.jpg",
+      "bytes": 75297,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "glp-1-s"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/Evergreen_COA_362_TB-500_5mg-Lot-CHA-011526-GH98.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-362-TB-500-5mg-Lot-CHA-011526-GH98-c7dafb9f5307.jpg",
+      "bytes": 74425,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "tb-500"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/Evergreen_COA_363_TB-500_10mg-Lot-CHA-011526-GH99.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-363-TB-500-10mg-Lot-CHA-011526-GH99-95820ce141c7.jpg",
+      "bytes": 74562,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "tb-500"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/Evergreen_COA_365_Semax_10mg-Lot-TUY-011526.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-365-Semax-10mg-Lot-TUY-011526-0235bab8e309.jpg",
+      "bytes": 70732,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "semx"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/Evergreen_COA_367_CJC-1295-no-DAC_10mg-Lot-TUY-011526-GI55.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-367-CJC-1295-no-DAC-10mg-Lot-TUY-011526-GI55-e10300a1daf2.jpg",
+      "bytes": 120736,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "cjc-1295"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/Evergreen_COA_372_IGF-1-LR3_2mg-Lot-TUY-011526-GI62.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-372-IGF-1-LR3-2mg-Lot-TUY-011526-GI62-92ff0e1049b3.jpg",
+      "bytes": 119632,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "igf-1-lr3"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/Evergreen_COA_383_GHK-Cu_100mg-Lot-RPL-011526-GJ96.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-383-GHK-Cu-100mg-Lot-RPL-011526-GJ96-c8fc3baa5322.jpg",
+      "bytes": 74711,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "ghk-cu"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/Evergreen_COA_387_GLP-2T_10mg-Lot-FPC-121825-GK78.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-387-GLP-2T-10mg-Lot-FPC-121825-GK78-b00e1cac9a6c.jpg",
+      "bytes": 74908,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "glp-2-t"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/Evergreen_COA_388_Kisspeptin-10_10mg-Lot-CHA-011526-GJ66.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-388-Kisspeptin-10-10mg-Lot-CHA-011526-GJ66-9bcc8f14d41c.jpg",
+      "bytes": 75249,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "kispeptin-10"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/Evergreen_COA_393_Oxytocin_10mg-Lot-TUY-010826-GG38.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-393-Oxytocin-10mg-Lot-TUY-010826-GG38-5094b6b67364.jpg",
+      "bytes": 73222,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "oxytocin"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/Evergreen_COA_395_GLP-3-R_15mg-Lot-RPL-011526-GJ63.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-395-GLP-3-R-15mg-Lot-RPL-011526-GJ63-3d32dc60bf1e.jpg",
+      "bytes": 75105,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "glp-3-r"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/Evergreen_COA_405_GLP-3R_20mg-Lot-CHA-011926-2848.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-405-GLP-3R-20mg-Lot-CHA-011926-2848-00fbaaa8353a.jpg",
+      "bytes": 131993,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "glp-3-r"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/Evergreen_COA_406_GLP-3R_5mg-Lot-TUY-011926-2849.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-406-GLP-3R-5mg-Lot-TUY-011926-2849-9544e10c83d0.jpg",
+      "bytes": 129171,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "glp-3-r"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/Evergreen_COA_407_NAD_100mg-Lot-RPL-011526-2851.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-407-NAD-100mg-Lot-RPL-011526-2851-b955ad16cd80.jpg",
+      "bytes": 133089,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "nad"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/Evergreen_COA_408_NAD500mg-Lot-CHA-011926-2852.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-408-NAD500mg-Lot-CHA-011926-2852-6d0685993eb5.jpg",
+      "bytes": 134801,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "nad"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/Evergreen_COA_409_Tesamorelin_10mg-Lot-CHA-011926-2853.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-409-Tesamorelin-10mg-Lot-CHA-011926-2853-c82fa859ae8e.jpg",
+      "bytes": 136274,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "tesmorelin"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/Evergreen_COA_410_GLP-3R_10mg-Lot-CHA-011926-2850.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-410-GLP-3R-10mg-Lot-CHA-011926-2850-f57df67811cc.jpg",
+      "bytes": 134079,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "glp-3-r"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/Evergreen_Hexarelin-COA1.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-Hexarelin-COA1-6f92afc91113.jpg",
+      "bytes": 86322,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "hexarelin"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/GHK-Cu-Card.jpg",
+      "publicPath": "/assets/product-details/gallery/GHK-Cu-Card-f2e8d3c2f8b2.jpg",
+      "bytes": 79894,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "info-card"
+      ],
+      "products": [
+        "ghk-cu"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/GLP-1-S-Card.jpg",
+      "publicPath": "/assets/product-details/gallery/GLP-1-S-Card-3f8b95a456ef.jpg",
+      "bytes": 81317,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "info-card"
+      ],
+      "products": [
+        "glp-1-s"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/GLP-2-T-Card.jpg",
+      "publicPath": "/assets/product-details/gallery/GLP-2-T-Card-9374a5924fc7.jpg",
+      "bytes": 78352,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "info-card"
+      ],
+      "products": [
+        "glp-2-t"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/GLP-3-R-Card.jpg",
+      "publicPath": "/assets/product-details/gallery/GLP-3-R-Card-f31ad9cb5037.jpg",
+      "bytes": 82497,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "info-card"
+      ],
+      "products": [
+        "glp-3-r"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/Glutathione-Card.jpg",
+      "publicPath": "/assets/product-details/gallery/Glutathione-Card-a62cc3395e77.jpg",
+      "bytes": 92653,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "info-card"
+      ],
+      "products": [
+        "glutathione"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/Hexarelin-Card-1.jpg",
+      "publicPath": "/assets/product-details/gallery/Hexarelin-Card-1-d0533f03aa24.jpg",
+      "bytes": 71335,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "info-card"
+      ],
+      "products": [
+        "hexarelin"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/hexarelin-chem-info.png",
+      "publicPath": "/assets/product-details/molecular/hexarelin-chem-info-a3d080760c89.png",
+      "bytes": 3319,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "hexarelin"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/Hexarelin-COA2.jpg",
+      "publicPath": "/assets/product-details/gallery/Hexarelin-COA2-9fec6dd41b7f.jpg",
+      "bytes": 62473,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "gallery"
+      ],
+      "products": [
+        "hexarelin"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/IGF-1-LR3-Card.jpg",
+      "publicPath": "/assets/product-details/gallery/IGF-1-LR3-Card-db4d9b4524db.jpg",
+      "bytes": 75318,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "info-card"
+      ],
+      "products": [
+        "igf-1-lr3"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/Ipamorelin-Card-2.jpg",
+      "publicPath": "/assets/product-details/gallery/Ipamorelin-Card-2-259922fefc25.jpg",
+      "bytes": 80271,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "info-card"
+      ],
+      "products": [
+        "ipamorelin"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/Kisspeptin-10-Card.jpg",
+      "publicPath": "/assets/product-details/gallery/Kisspeptin-10-Card-a475c5dcd3d8.jpg",
+      "bytes": 78683,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "info-card"
+      ],
+      "products": [
+        "kispeptin-10"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/LL-37-Card.jpg",
+      "publicPath": "/assets/product-details/gallery/LL-37-Card-a338af524c3e.jpg",
+      "bytes": 79259,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "info-card"
+      ],
+      "products": [
+        "ll-37"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/Melanoten-2-Card.jpg",
+      "publicPath": "/assets/product-details/gallery/Melanoten-2-Card-1dbaebd58f1c.jpg",
+      "bytes": 77111,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "info-card"
+      ],
+      "products": [
+        "melanoten-2"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/NAD-Card.jpg",
+      "publicPath": "/assets/product-details/gallery/NAD-Card-3bbe512b8f8d.jpg",
+      "bytes": 89654,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "info-card"
+      ],
+      "products": [
+        "nad"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/Oxytocin-Card.jpg",
+      "publicPath": "/assets/product-details/gallery/Oxytocin-Card-f9dd985928ab.jpg",
+      "bytes": 76919,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "info-card"
+      ],
+      "products": [
+        "oxytocin"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/Retatrutide-chem-info.png",
+      "publicPath": "/assets/product-details/molecular/Retatrutide-chem-info-489bb3baf272.png",
+      "bytes": 28286,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "glp-3-r"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/Semax-Card.jpg",
+      "publicPath": "/assets/product-details/gallery/Semax-Card-42c2a871ade0.jpg",
+      "bytes": 74395,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "info-card"
+      ],
+      "products": [
+        "semx"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/TB-500-Card.jpg",
+      "publicPath": "/assets/product-details/gallery/TB-500-Card-b975c4601f67.jpg",
+      "bytes": 79166,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "info-card"
+      ],
+      "products": [
+        "tb-500"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/Tesmorelin-Card.jpg",
+      "publicPath": "/assets/product-details/gallery/Tesmorelin-Card-feb6f012b06e.jpg",
+      "bytes": 70839,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "info-card"
+      ],
+      "products": [
+        "tesmorelin"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/Thymosin-Alpha-1-Card.jpg",
+      "publicPath": "/assets/product-details/gallery/Thymosin-Alpha-1-Card-b05acbe06365.jpg",
+      "bytes": 75028,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "info-card"
+      ],
+      "products": [
+        "thymosin-alpha-1"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2024/12/Updated-Kispeptin-10.jpg",
+      "publicPath": "/assets/product-details/gallery/Updated-Kispeptin-10-6544260c3805.jpg",
+      "bytes": 114420,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "kispeptin-10"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/02/BPC-157.png",
+      "publicPath": "/assets/product-details/molecular/BPC-157-99cd342e0f0a.png",
+      "bytes": 14407,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "bpc-157"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/02/Callout-thumb.jpg",
+      "publicPath": "/assets/product-details/gallery/Callout-thumb-d9835c6e41d3.jpg",
+      "bytes": 20389,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "gallery"
+      ],
+      "products": [
+        "bacteriostatic-water"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/02/CJC-1295-DAC.png",
+      "publicPath": "/assets/product-details/molecular/CJC-1295-DAC-f3c4389d3ebf.png",
+      "bytes": 13238,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "cjc-1295-dac"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/02/CJC-1295-no-DAC.png",
+      "publicPath": "/assets/product-details/molecular/CJC-1295-no-DAC-84e09906beaa.png",
+      "bytes": 13335,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "cjc-1295"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/02/COA_172_COA10822_Pure_Health_Peptides_GHRP6_CHA-072025-images-1.jpg",
+      "publicPath": "/assets/product-details/gallery/COA-172-COA10822-Pure-Health-Peptides-GHRP6-CHA-072025-images-1-2f0958d98fc3.jpg",
+      "bytes": 31134,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "ghpr-6"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/02/COA_195_9-22-25_COA_GHRP-6_TUY-081025_20250925-images-0.jpg",
+      "publicPath": "/assets/product-details/gallery/COA-195-9-22-25-COA-GHRP-6-TUY-081025-20250925-images-0-ea5ca12a9d92.jpg",
+      "bytes": 60853,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "ghpr-6"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/02/COA_195_9-22-25_COA_GHRP-6_TUY-081025_20250925-images-1.jpg",
+      "publicPath": "/assets/product-details/gallery/COA-195-9-22-25-COA-GHRP-6-TUY-081025-20250925-images-1-fea2c1c0d2eb.jpg",
+      "bytes": 50572,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "ghpr-6"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/02/DSIP–Delta-Sleep-Inducing-Peptide.png",
+      "publicPath": "/assets/product-details/molecular/DSIP-Delta-Sleep-Inducing-Peptide-a09911a3197b.png",
+      "bytes": 10495,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "dsip"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/02/Evergreen_COA_172_COA10822_Pure_Health_Peptides_GHRP6_CHA-072025-images-0.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-172-COA10822-Pure-Health-Peptides-GHRP6-CHA-072025-images-0-150266db6f39.jpg",
+      "bytes": 216144,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "ghpr-6"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/02/GHK-Cu.png",
+      "publicPath": "/assets/product-details/molecular/GHK-Cu-e50d266b7578.png",
+      "bytes": 7540,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "ghk-cu"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/02/GHPR-6-Card.jpg",
+      "publicPath": "/assets/product-details/gallery/GHPR-6-Card-05c5d76292d2.jpg",
+      "bytes": 150441,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "info-card"
+      ],
+      "products": [
+        "ghpr-6"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/02/GHRP-6.png",
+      "publicPath": "/assets/product-details/molecular/GHRP-6-75e171e43ee1.png",
+      "bytes": 17781,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "ghpr-6"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/02/GLP-1-SEMA.png",
+      "publicPath": "/assets/product-details/molecular/GLP-1-SEMA-28c2c5da9b37.png",
+      "bytes": 7757,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "glp-1-s"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/02/GLP-1-TIRZ-1.png",
+      "publicPath": "/assets/product-details/molecular/GLP-1-TIRZ-1-ebb6225fbba4.png",
+      "bytes": 10746,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "glp-2-t"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/02/Glutathione.png",
+      "publicPath": "/assets/product-details/molecular/Glutathione-50b43452f666.png",
+      "bytes": 5154,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "glutathione"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/02/H-Fragment-176-191-Product_Tile.jpg",
+      "publicPath": "/assets/product-details/gallery/H-Fragment-176-191-Product-Tile-c902af40f639.jpg",
+      "bytes": 49687,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "hgh-176-191"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/02/HGH-176-191-Card.jpg",
+      "publicPath": "/assets/product-details/gallery/HGH-176-191-Card-959302256e93.jpg",
+      "bytes": 79944,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "info-card"
+      ],
+      "products": [
+        "hgh-176-191"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/02/HGH-176-191-COA1-1.jpg",
+      "publicPath": "/assets/product-details/gallery/HGH-176-191-COA1-1-6fd085d32480.jpg",
+      "bytes": 100974,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "gallery"
+      ],
+      "products": [
+        "hgh-176-191"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/02/HGH-176-191-COA2-1.jpg",
+      "publicPath": "/assets/product-details/gallery/HGH-176-191-COA2-1-30e68cdf4d87.jpg",
+      "bytes": 79217,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "gallery"
+      ],
+      "products": [
+        "hgh-176-191"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/02/HGH-176-191.png",
+      "publicPath": "/assets/product-details/molecular/HGH-176-191-b988e4fe4daa.png",
+      "bytes": 12063,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "hgh-176-191"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/02/IGF-1-chem-info-300x300-1.png",
+      "publicPath": "/assets/product-details/molecular/IGF-1-chem-info-300x300-1-ec5f0536326b.png",
+      "bytes": 13008,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "igf-1-lr3"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/02/Ipamorelin.png",
+      "publicPath": "/assets/product-details/molecular/Ipamorelin-94d522ecde85.png",
+      "bytes": 7518,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "ipamorelin"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/02/Kisspeptin-10.png",
+      "publicPath": "/assets/product-details/molecular/Kisspeptin-10-2aa25ccf5719.png",
+      "bytes": 9069,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "kispeptin-10"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/02/LL-37-1.png",
+      "publicPath": "/assets/product-details/molecular/LL-37-1-347911d990c2.png",
+      "bytes": 12046,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "ll-37"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/02/Melanotan-2.png",
+      "publicPath": "/assets/product-details/molecular/Melanotan-2-21fe8405b126.png",
+      "bytes": 11822,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "melanoten-2"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/02/NAD.png",
+      "publicPath": "/assets/product-details/molecular/NAD-e3656bc562f2.png",
+      "bytes": 7144,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "nad"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/02/Oxytocin.png",
+      "publicPath": "/assets/product-details/molecular/Oxytocin-f380458ac588.png",
+      "bytes": 13753,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "oxytocin"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/02/Semax.png",
+      "publicPath": "/assets/product-details/molecular/Semax-ac7325018727.png",
+      "bytes": 9008,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "semx"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/02/TB-500.png",
+      "publicPath": "/assets/product-details/molecular/TB-500-6d9046604040.png",
+      "bytes": 9573,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "tb-500"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/02/Tesamorelin.png",
+      "publicPath": "/assets/product-details/molecular/Tesamorelin-f4a7e15844b4.png",
+      "bytes": 7221,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "tesmorelin"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/02/Thymosin-Alpha-1.png",
+      "publicPath": "/assets/product-details/molecular/Thymosin-Alpha-1-d9563079d762.png",
+      "bytes": 19966,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "thymosin-alpha-1"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/05/Evergreen_COA_248_COA11193_Pure_Health_Peptides_GLOW_10.50.10-images-0.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-248-COA11193-Pure-Health-Peptides-GLOW-10-50-10-images-0-cb0eff0065f7.jpg",
+      "bytes": 69046,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "glow-bpc-157-ghk-cu-tb-500-blend"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/05/Evergreen_COA_248_COA11193_Pure_Health_Peptides_GLOW_10.50.10-images-1.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-248-COA11193-Pure-Health-Peptides-GLOW-10-50-10-images-1-9e8700617a10.jpg",
+      "bytes": 34173,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "glow-bpc-157-ghk-cu-tb-500-blend"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/05/Evergreen_COA_248_COA11193_Pure_Health_Peptides_GLOW_10.50.10-images-2.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-248-COA11193-Pure-Health-Peptides-GLOW-10-50-10-images-2-74cbf403eac4.jpg",
+      "bytes": 68596,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "glow-bpc-157-ghk-cu-tb-500-blend"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/05/Evergreen_COA_248_COA11193_Pure_Health_Peptides_GLOW_10.50.10-images-3.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-248-COA11193-Pure-Health-Peptides-GLOW-10-50-10-images-3-0b5bb481299a.jpg",
+      "bytes": 34165,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "glow-bpc-157-ghk-cu-tb-500-blend"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/05/Evergreen_COA_248_COA11193_Pure_Health_Peptides_GLOW_10.50.10-images-4.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-248-COA11193-Pure-Health-Peptides-GLOW-10-50-10-images-4-9a6f8cb02d36.jpg",
+      "bytes": 70596,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "glow-bpc-157-ghk-cu-tb-500-blend"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/05/Evergreen_COA_248_COA11193_Pure_Health_Peptides_GLOW_10.50.10-images-5.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-248-COA11193-Pure-Health-Peptides-GLOW-10-50-10-images-5-25da3e9e99bb.jpg",
+      "bytes": 36919,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "glow-bpc-157-ghk-cu-tb-500-blend"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/05/Evergreen_COA_314_20mgProstamax-Lot-TUY-102025-GD29.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-314-20mgProstamax-Lot-TUY-102025-GD29-36bfcad729c4.jpg",
+      "bytes": 116518,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "prostamax"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/05/Evergreen_COA_315_40mgProstamax-Lot-TUY-102025-GD30.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-315-40mgProstamax-Lot-TUY-102025-GD30-aa8e6958621c.jpg",
+      "bytes": 116119,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "prostamax"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/05/Evergreen_COA_384_MOTS-c_10mg-Lot-RPL-011526-GJ97.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-384-MOTS-c-10mg-Lot-RPL-011526-GJ97-d57b6e985a9d.jpg",
+      "bytes": 74724,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "mots-c"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/05/Evergreen_COA_394_GLOW-Plus-BP_TB_GHK_TA1_10_50_10_5mg-Lot-N_A-GI61.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-394-GLOW-Plus-BP-TB-GHK-TA1-10-50-10-5mg-Lot-N-A-GI61-11254ddf9469.jpg",
+      "bytes": 82316,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "glow-plus-bpc-157-ghk-cu-tb-500-thymosin-alpha-1-blend"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/05/Evergreen_COA_401_MOTS-c_10mg-Lot-CHA-011926-2842.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-401-MOTS-c-10mg-Lot-CHA-011926-2842-363279a72139.jpg",
+      "bytes": 197492,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "mots-c"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/05/Evergreen_COA_404_MOTS-c_40mg-Lot-CHA-011926-2847.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-404-MOTS-c-40mg-Lot-CHA-011926-2847-0c8972290b6d.jpg",
+      "bytes": 201892,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "mots-c"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/05/Evergreen_COA11175_Pure_Health_Peptides_Selank_5mg-images-0.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA11175-Pure-Health-Peptides-Selank-5mg-images-0-8fa3dd49d3b4.jpg",
+      "bytes": 71569,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "selank"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/05/Evergreen_COA11175_Pure_Health_Peptides_Selank_5mg-images-1.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA11175-Pure-Health-Peptides-Selank-5mg-images-1-2488f6c9a0fd.jpg",
+      "bytes": 57619,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "selank"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/05/GHRP-2-COA2-1.jpg",
+      "publicPath": "/assets/product-details/gallery/GHRP-2-COA2-1-f32be18e4074.jpg",
+      "bytes": 55968,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "gallery"
+      ],
+      "products": [
+        "ghpr-2"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/05/GHRP-2.png",
+      "publicPath": "/assets/product-details/molecular/GHRP-2-f255e9cf771d.png",
+      "bytes": 2780,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "ghpr-2"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/05/GLOW-Card-1.jpg",
+      "publicPath": "/assets/product-details/gallery/GLOW-Card-1-d800d70da087.jpg",
+      "bytes": 74587,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "info-card"
+      ],
+      "products": [
+        "glow-bpc-157-ghk-cu-tb-500-blend"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/05/GLOW-Plus-Card-1.jpg",
+      "publicPath": "/assets/product-details/gallery/GLOW-Plus-Card-1-2637f1b7b836.jpg",
+      "bytes": 77763,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "info-card"
+      ],
+      "products": [
+        "glow-plus-bpc-157-ghk-cu-tb-500-thymosin-alpha-1-blend"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/05/GLOWPLUS.jpg",
+      "publicPath": "/assets/product-details/gallery/GLOWPLUS-bd4824fab895.jpg",
+      "bytes": 98109,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "glow-plus-bpc-157-ghk-cu-tb-500-thymosin-alpha-1-blend"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/05/glp-1.png",
+      "publicPath": "/assets/product-details/molecular/glp-1-f3b1bcc5f620.png",
+      "bytes": 3044,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "glp-1-c"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/05/MOTS-c-Card-1.jpg",
+      "publicPath": "/assets/product-details/gallery/MOTS-c-Card-1-32d1906f1153.jpg",
+      "bytes": 78847,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "info-card"
+      ],
+      "products": [
+        "mots-c"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/05/mots-c.png",
+      "publicPath": "/assets/product-details/molecular/mots-c-0582197ef923.png",
+      "bytes": 2600,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "mots-c"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/05/Prostamax-Card-2.jpg",
+      "publicPath": "/assets/product-details/gallery/Prostamax-Card-2-0634fd336a56.jpg",
+      "bytes": 71436,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "info-card"
+      ],
+      "products": [
+        "prostamax"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/05/prostamax.png",
+      "publicPath": "/assets/product-details/molecular/prostamax-884506888f18.png",
+      "bytes": 2600,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "prostamax"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/05/pt-141.png",
+      "publicPath": "/assets/product-details/molecular/pt-141-34268ed7983f.png",
+      "bytes": 3931,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "pt-141"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/05/Selank-Card-1.jpg",
+      "publicPath": "/assets/product-details/gallery/Selank-Card-1-a555b04f15b8.jpg",
+      "bytes": 70045,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "info-card"
+      ],
+      "products": [
+        "selank"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/05/selank.png",
+      "publicPath": "/assets/product-details/molecular/selank-5f9a0f5e8d75.png",
+      "bytes": 2988,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "selank"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/05/sermorelin.png",
+      "publicPath": "/assets/product-details/molecular/sermorelin-9bbebfd12c30.png",
+      "bytes": 19880,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "sermorlin"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/06/CJC-1295DAC_Ipamorelin-1.jpg",
+      "publicPath": "/assets/product-details/gallery/CJC-1295DAC-Ipamorelin-1-553e8fd61c4d.jpg",
+      "bytes": 90094,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "cjc-1295dac-ipamorelin"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/06/COA_225_COA11129_Pure_Health_Peptides_CJC_Ipamorelin_10.10mg-images-2.jpg",
+      "publicPath": "/assets/product-details/gallery/COA-225-COA11129-Pure-Health-Peptides-CJC-Ipamorelin-10-10mg-images-2-af0f0114c426.jpg",
+      "bytes": 74719,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "cjc-1295dac-ipamorelin"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/06/COA_225_COA11129_Pure_Health_Peptides_CJC_Ipamorelin_10.10mg-images-3.jpg",
+      "publicPath": "/assets/product-details/gallery/COA-225-COA11129-Pure-Health-Peptides-CJC-Ipamorelin-10-10mg-images-3-2475f9ac70a9.jpg",
+      "bytes": 58475,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "cjc-1295dac-ipamorelin"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/06/Evergreen_COA_257_COA11298_Pure_Health_Peptides_Cagrilintide_10mg-images-0.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-257-COA11298-Pure-Health-Peptides-Cagrilintide-10mg-images-0-e9c873a50d72.jpg",
+      "bytes": 85047,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "glp-1-c"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/06/Evergreen_COA_257_COA11298_Pure_Health_Peptides_Cagrilintide_10mg-images-1.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-257-COA11298-Pure-Health-Peptides-Cagrilintide-10mg-images-1-5a13d3e9c7cf.jpg",
+      "bytes": 36406,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "glp-1-c"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/06/Evergreen_COA_360_PT-141_10mg-Lot-TUY-010826-GI2-1.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-360-PT-141-10mg-Lot-TUY-010826-GI2-1-63fd3af1d2e2.jpg",
+      "bytes": 74500,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "pt-141"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/06/Evergreen_COA11169_Pure_Health_Peptides_Sermorelin_5mg-images-0.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA11169-Pure-Health-Peptides-Sermorelin-5mg-images-0-d54f485e5011.jpg",
+      "bytes": 73666,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "sermorlin"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/06/Evergreen_COA11169_Pure_Health_Peptides_Sermorelin_5mg-images-1.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA11169-Pure-Health-Peptides-Sermorelin-5mg-images-1-8e7fefeaaf3c.jpg",
+      "bytes": 59615,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "sermorlin"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/06/Evergreen_GHRP-2-COA1-1.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-GHRP-2-COA1-1-99efe0a1ee09.jpg",
+      "bytes": 80901,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "ghpr-2"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/06/GHRP-2-Card.jpg",
+      "publicPath": "/assets/product-details/gallery/GHRP-2-Card-0a02b595b2b2.jpg",
+      "bytes": 154099,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "info-card"
+      ],
+      "products": [
+        "ghpr-2"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/06/GLP-1-C-Card.jpg",
+      "publicPath": "/assets/product-details/gallery/GLP-1-C-Card-53b9157e4694.jpg",
+      "bytes": 81057,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "info-card"
+      ],
+      "products": [
+        "glp-1-c"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/06/Ipamorelin-Card.jpg",
+      "publicPath": "/assets/product-details/gallery/Ipamorelin-Card-3e725dc9de2b.jpg",
+      "bytes": 87406,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "info-card"
+      ],
+      "products": [
+        "cjc-1295dac-ipamorelin"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/06/PT-141-Card.jpg",
+      "publicPath": "/assets/product-details/gallery/PT-141-Card-cd539e5b4e2b.jpg",
+      "bytes": 77147,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "info-card"
+      ],
+      "products": [
+        "pt-141"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/06/Sermorlin-Card.jpg",
+      "publicPath": "/assets/product-details/gallery/Sermorlin-Card-08905167eb92.jpg",
+      "bytes": 71059,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "info-card"
+      ],
+      "products": [
+        "sermorlin"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/08/Adipotide-Card.jpg",
+      "publicPath": "/assets/product-details/gallery/Adipotide-Card-50e5c31dd6c4.jpg",
+      "bytes": 74922,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "info-card"
+      ],
+      "products": [
+        "adipotide"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/08/Adipotide-Signature.png",
+      "publicPath": "/assets/product-details/molecular/Adipotide-Signature-eaf3b05baece.png",
+      "bytes": 3983,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "adipotide"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/08/Adipotide.jpg",
+      "publicPath": "/assets/product-details/gallery/Adipotide-c96d5c6095f7.jpg",
+      "bytes": 74244,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "adipotide"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/08/COA_170_COA10805_Pure_Health_Peptides_VIP_TUY-081025-images-1.jpg",
+      "publicPath": "/assets/product-details/gallery/COA-170-COA10805-Pure-Health-Peptides-VIP-TUY-081025-images-1-45ed2b201502.jpg",
+      "bytes": 33497,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "vip"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/08/Evergreen_COA_170_COA10805_Pure_Health_Peptides_VIP_TUY-081025-images-0.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-170-COA10805-Pure-Health-Peptides-VIP-TUY-081025-images-0-128b0207c9d6.jpg",
+      "bytes": 76025,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "vip"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/08/Evergreen_COA_297_TUY-102025_11482_Pure_Health_Peptides_Adipotide_10mg-images-0.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-297-TUY-102025-11482-Pure-Health-Peptides-Adipotide-10mg-images-0-4ba832ae5b42.jpg",
+      "bytes": 107945,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "adipotide"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/08/Evergreen_COA_297_TUY-102025_11482_Pure_Health_Peptides_Adipotide_10mg-images-1.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-297-TUY-102025-11482-Pure-Health-Peptides-Adipotide-10mg-images-1-f6402e3cb95c.jpg",
+      "bytes": 35437,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "adipotide"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/08/Evergreen_COA_333_10mg_KPV-Lot-TUY-010826-GE30.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-333-10mg-KPV-Lot-TUY-010826-GE30-489639fa0ada.jpg",
+      "bytes": 115492,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "kpv"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/08/Evergreen_COA_334_5mg_KPV-Lot-TUY-010826-GG35.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-334-5mg-KPV-Lot-TUY-010826-GG35-c06f98c15bff.jpg",
+      "bytes": 115685,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "kpv"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/08/KPV-Card.jpg",
+      "publicPath": "/assets/product-details/gallery/KPV-Card-ef467019268a.jpg",
+      "bytes": 75107,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "info-card"
+      ],
+      "products": [
+        "kpv"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/08/KPV-Signature.png",
+      "publicPath": "/assets/product-details/molecular/KPV-Signature-665e35709985.png",
+      "bytes": 1782,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "kpv"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/08/PEG-MGF-Card.jpg",
+      "publicPath": "/assets/product-details/gallery/PEG-MGF-Card-e0165f48edcf.jpg",
+      "bytes": 70663,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "info-card"
+      ],
+      "products": [
+        "peg-mgf"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/08/PEG-MGF-MZ-Biolabs-COA.jpg",
+      "publicPath": "/assets/product-details/gallery/PEG-MGF-MZ-Biolabs-COA-df76bd03ce59.jpg",
+      "bytes": 59664,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "peg-mgf"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/08/Thymalin-Signature.png",
+      "publicPath": "/assets/product-details/molecular/Thymalin-Signature-ffe42e605ac5.png",
+      "bytes": 3293,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "thymalin"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/08/Vasoactive-Intestinal-Peptide-Signature.png",
+      "publicPath": "/assets/product-details/molecular/Vasoactive-Intestinal-Peptide-Signature-83fd923c3d15.png",
+      "bytes": 2111,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "vip"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/08/VIP-Card.jpg",
+      "publicPath": "/assets/product-details/gallery/VIP-Card-7e12530a8387.jpg",
+      "bytes": 76961,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "info-card"
+      ],
+      "products": [
+        "vip"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/09/cartalax-1.jpg",
+      "publicPath": "/assets/product-details/gallery/cartalax-1-7b052a164811.jpg",
+      "bytes": 74774,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "cartalax"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/09/CARTAlAX-Card-.jpg",
+      "publicPath": "/assets/product-details/gallery/CARTAlAX-Card-f34232f287b1.jpg",
+      "bytes": 134303,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "info-card"
+      ],
+      "products": [
+        "cartalax"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/09/Cartalax-signature.png",
+      "publicPath": "/assets/product-details/molecular/Cartalax-signature-dc6b9b1a3876.png",
+      "bytes": 1876,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "cartalax"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/09/Evergreen_COA_274_COA11392_Pure_Health_Peptides_Humanin_10mg-images-0.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-274-COA11392-Pure-Health-Peptides-Humanin-10mg-images-0-aba26f2bdaf4.jpg",
+      "bytes": 78871,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "humanin"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/09/Evergreen_COA_274_COA11392_Pure_Health_Peptides_Humanin_10mg-images-1.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-274-COA11392-Pure-Health-Peptides-Humanin-10mg-images-1-0f2c28cedaad.jpg",
+      "bytes": 32981,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "humanin"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/09/Evergreen_COA_278_FOXO4-DRI-10MG-Lot-TUY-102025-FT59.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-278-FOXO4-DRI-10MG-Lot-TUY-102025-FT59-57137bcc2cfe.jpg",
+      "bytes": 93040,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "foxo4-dri"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/09/Evergreen_COA_284_Cartalax_-10mg_Pure2511200092.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-284-Cartalax-10mg-Pure2511200092-bddabee407d7.jpg",
+      "bytes": 118749,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "cartalax"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/09/Evergreen_COA_298_PNC-27_10mg_TUY-102025_Pure2511240032.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-298-PNC-27-10mg-TUY-102025-Pure2511240032-0c7b03d867fe.jpg",
+      "bytes": 121698,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "pnc-27"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/09/Evergreen_COA_316_10mgThymogen-Lot-TUY-102025-GD31-1.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-316-10mgThymogen-Lot-TUY-102025-GD31-1-503c8e18f84a.jpg",
+      "bytes": 116439,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "thymogen"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/09/Evergreen_COA_317_20mgThymogen-Lot-TUY-102025-GD32.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-317-20mgThymogen-Lot-TUY-102025-GD32-231d5cb8d9cf.jpg",
+      "bytes": 116397,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "thymogen"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/09/Evergreen_COA_373_KLOW-BPC157_TB500_GHKcu_KPV-Lot-TUY-011526-GI60-1.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-373-KLOW-BPC157-TB500-GHKcu-KPV-Lot-TUY-011526-GI60-1-bf2fb4fd0630.jpg",
+      "bytes": 82272,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "klow"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/09/Evergreen_COA_385_Thymalin_10mg-Lot-RPL-011526-GJ98.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-385-Thymalin-10mg-Lot-RPL-011526-GJ98-650989547df3.jpg",
+      "bytes": 74962,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "thymalin"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/09/FOXO4-DRI-Card.jpg",
+      "publicPath": "/assets/product-details/gallery/FOXO4-DRI-Card-e830df476afe.jpg",
+      "bytes": 75422,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "info-card"
+      ],
+      "products": [
+        "foxo4-dri"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/09/FOXO4-DRI-Signature.png",
+      "publicPath": "/assets/product-details/molecular/FOXO4-DRI-Signature-31910d7d746d.png",
+      "bytes": 8415,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "foxo4-dri"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/09/FOXO4-DRI.jpg",
+      "publicPath": "/assets/product-details/gallery/FOXO4-DRI-24b95fe01bb1.jpg",
+      "bytes": 74172,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "foxo4-dri"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/09/GDF-8-Signature.png",
+      "publicPath": "/assets/product-details/molecular/GDF-8-Signature-60fe92d6bc49.png",
+      "bytes": 23690,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "gdf-8"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/09/Humanin-Card.jpg",
+      "publicPath": "/assets/product-details/gallery/Humanin-Card-a6b3d2bb6fb9.jpg",
+      "bytes": 136741,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "info-card"
+      ],
+      "products": [
+        "humanin"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/09/Humanin-Signature.png",
+      "publicPath": "/assets/product-details/molecular/Humanin-Signature-7ab42cec05fa.png",
+      "bytes": 5390,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "humanin"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/09/KLOW-Card.jpg",
+      "publicPath": "/assets/product-details/gallery/KLOW-Card-abbb3b28019a.jpg",
+      "bytes": 81570,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "info-card"
+      ],
+      "products": [
+        "klow"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/09/KLOW.jpg",
+      "publicPath": "/assets/product-details/gallery/KLOW-9880c93cf4fb.jpg",
+      "bytes": 92212,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "klow"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/09/Livagen-Signature.png",
+      "publicPath": "/assets/product-details/molecular/Livagen-Signature-7fa1c9cae895.png",
+      "bytes": 1868,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "livagen"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/09/Molecular-Structure-of-pnc-27.jpg",
+      "publicPath": "/assets/product-details/molecular/Molecular-Structure-of-pnc-27-a688c2cdbacb.jpg",
+      "bytes": 16563,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "pnc-27"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/09/Pinealon-Signature.png",
+      "publicPath": "/assets/product-details/molecular/Pinealon-Signature-d28724abcd0f.png",
+      "bytes": 1671,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "pinealon"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/09/PNC-27-Card.jpg",
+      "publicPath": "/assets/product-details/gallery/PNC-27-Card-2d5da93a8bc5.jpg",
+      "bytes": 80965,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "info-card"
+      ],
+      "products": [
+        "pnc-27"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/09/THYMALIN-Card.jpg",
+      "publicPath": "/assets/product-details/gallery/THYMALIN-Card-32b36a82adf1.jpg",
+      "bytes": 79020,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "info-card"
+      ],
+      "products": [
+        "thymalin"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/09/Thymogen-Card.jpg",
+      "publicPath": "/assets/product-details/gallery/Thymogen-Card-4a9e5d2b8bb4.jpg",
+      "bytes": 76669,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "info-card"
+      ],
+      "products": [
+        "thymogen"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/09/Thymogen-Signature.png",
+      "publicPath": "/assets/product-details/molecular/Thymogen-Signature-1f5d11c910c4.png",
+      "bytes": 2214,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "thymogen"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/09/Vilon-Signature.png",
+      "publicPath": "/assets/product-details/molecular/Vilon-Signature-6fbb0386f2d8.png",
+      "bytes": 1583,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "vilon"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/10/Evergreen_COA_269_COA11385_Pure_Health_Peptides_Vilon_10mg-images-0.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-269-COA11385-Pure-Health-Peptides-Vilon-10mg-images-0-fe29dc286d7c.jpg",
+      "bytes": 79616,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "vilon"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/10/Evergreen_COA_269_COA11385_Pure_Health_Peptides_Vilon_10mg-images-1.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-269-COA11385-Pure-Health-Peptides-Vilon-10mg-images-1-3c3472f865f2.jpg",
+      "bytes": 30632,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "vilon"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/10/Evergreen_COA_276_COA11394_Pure_Health_Peptides_Livagen_20mg-images-0.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-276-COA11394-Pure-Health-Peptides-Livagen-20mg-images-0-6ead1ca24ca5.jpg",
+      "bytes": 80600,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "livagen"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/10/Evergreen_COA_276_COA11394_Pure_Health_Peptides_Livagen_20mg-images-1.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-276-COA11394-Pure-Health-Peptides-Livagen-20mg-images-1-495a51e17d74.jpg",
+      "bytes": 31710,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "livagen"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/10/Evergreen_COA_300_GDF-8-Lot-TUY-111125-FY34-.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-300-GDF-8-Lot-TUY-111125-FY34-b5218735200a.jpg",
+      "bytes": 116300,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "gdf-8"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/10/Evergreen_COA_400_Pinealon_10mg-Lot-CHA-011926-2841.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-400-Pinealon-10mg-Lot-CHA-011926-2841-4400a3194295.jpg",
+      "bytes": 204211,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "pinealon"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/10/Evergreen_COA_403_Pinealon_20mg-Lot-CHA-011926-28461.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-403-Pinealon-20mg-Lot-CHA-011926-28461-4594c4514d82.jpg",
+      "bytes": 205471,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "pinealon"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/10/GDF-8-Card.jpg",
+      "publicPath": "/assets/product-details/gallery/GDF-8-Card-0f2e55320e17.jpg",
+      "bytes": 78026,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "info-card"
+      ],
+      "products": [
+        "gdf-8"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/10/LIVAGEN-Card.jpg",
+      "publicPath": "/assets/product-details/gallery/LIVAGEN-Card-fe8b704a6bb3.jpg",
+      "bytes": 71794,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "info-card"
+      ],
+      "products": [
+        "livagen"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/10/PINEALON-Card.jpg",
+      "publicPath": "/assets/product-details/gallery/PINEALON-Card-e823b9ef28ba.jpg",
+      "bytes": 76622,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "info-card"
+      ],
+      "products": [
+        "pinealon"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/10/Vilon-Card.jpg",
+      "publicPath": "/assets/product-details/gallery/Vilon-Card-11f67b82be27.jpg",
+      "bytes": 71220,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "info-card"
+      ],
+      "products": [
+        "vilon"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/12/ARA-290-Card.jpg",
+      "publicPath": "/assets/product-details/gallery/ARA-290-Card-76a27a136221.jpg",
+      "bytes": 171716,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "info-card"
+      ],
+      "products": [
+        "ara-290"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/12/ARA-290Cibinetide.jpg",
+      "publicPath": "/assets/product-details/gallery/ARA-290Cibinetide-178bda91b16f.jpg",
+      "bytes": 80211,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "ara-290"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/12/Evergreen_COA_295_TUY-102025_11480_Pure_Health_Peptides_ARA290_10mg-images-0.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-295-TUY-102025-11480-Pure-Health-Peptides-ARA290-10mg-images-0-9d2350ea18a0.jpg",
+      "bytes": 110088,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "ara-290"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/12/Evergreen_COA_295_TUY-102025_11480_Pure_Health_Peptides_ARA290_10mg-images-1.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-295-TUY-102025-11480-Pure-Health-Peptides-ARA290-10mg-images-1-76c164578902.jpg",
+      "bytes": 33260,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "ara-290"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/12/Evergreen_COA_302_GLP-1-C_S_5MG_Pure2511240191.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-302-GLP-1-C-S-5MG-Pure2511240191-d967696bc2c7.jpg",
+      "bytes": 123760,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "glp-1-c-s"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/12/Evergreen_COA_386_Follistatin-344_1mg-Lot-CHA-011526-GJ67.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-386-Follistatin-344-1mg-Lot-CHA-011526-GJ67-9c8c620ec7d1.jpg",
+      "bytes": 75129,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "follistatin-344"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/12/Follistatin-344-Card.jpg",
+      "publicPath": "/assets/product-details/gallery/Follistatin-344-Card-046ca2b50a1f.jpg",
+      "bytes": 144307,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "info-card"
+      ],
+      "products": [
+        "follistatin-344"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/12/Follistatin-344.jpg",
+      "publicPath": "/assets/product-details/gallery/Follistatin-344-d30e18c6dbf4.jpg",
+      "bytes": 76623,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "follistatin-344"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2025/12/imgsrv.png",
+      "publicPath": "/assets/product-details/molecular/imgsrv-a1d4c3ad5830.png",
+      "bytes": 2892,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "ara-290"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/01/5-Amino-1MQ-Card.jpg",
+      "publicPath": "/assets/product-details/gallery/5-Amino-1MQ-Card-bf1c754bc678.jpg",
+      "bytes": 85514,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "info-card"
+      ],
+      "products": [
+        "5-amino-1mq"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/01/5-Amino-1MQ-Signature.png",
+      "publicPath": "/assets/product-details/molecular/5-Amino-1MQ-Signature-8e18984b59a6.png",
+      "bytes": 1064,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "5-amino-1mq"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/01/5-Amino-1MQ.jpg",
+      "publicPath": "/assets/product-details/gallery/5-Amino-1MQ-34fd4c5b6f82.jpg",
+      "bytes": 75943,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "5-amino-1mq"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/01/AICAR-Card.jpg",
+      "publicPath": "/assets/product-details/gallery/AICAR-Card-beafa4307b12.jpg",
+      "bytes": 79303,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "info-card"
+      ],
+      "products": [
+        "aicar"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/01/AICAR-Signature.png",
+      "publicPath": "/assets/product-details/molecular/AICAR-Signature-683b790d1018.png",
+      "bytes": 2252,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "aicar"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/01/AICAR.jpg",
+      "publicPath": "/assets/product-details/gallery/AICAR-128772ad07c0.jpg",
+      "bytes": 72523,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "aicar"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/01/Chonluten-Card.jpg",
+      "publicPath": "/assets/product-details/gallery/Chonluten-Card-ec4ede7860f5.jpg",
+      "bytes": 77807,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "info-card"
+      ],
+      "products": [
+        "chonluten"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/01/Chonluten.jpg",
+      "publicPath": "/assets/product-details/gallery/Chonluten-3e0a738d3dc0.jpg",
+      "bytes": 74357,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "chonluten"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/01/Cortagen-Card.jpg",
+      "publicPath": "/assets/product-details/gallery/Cortagen-Card-95b400a03b46.jpg",
+      "bytes": 77372,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "info-card"
+      ],
+      "products": [
+        "cortagen"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/01/Cortagen.jpg",
+      "publicPath": "/assets/product-details/gallery/Cortagen-ea879a845258.jpg",
+      "bytes": 73551,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "cortagen"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/01/Evergreen_COA_305_50mg-5-Amino-1MQ-Lot-CHA-122025-GB78-1.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-305-50mg-5-Amino-1MQ-Lot-CHA-122025-GB78-1-44b045d2e2a3.jpg",
+      "bytes": 116781,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "5-amino-1mq"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/01/Evergreen_COA_307_50mg5-Amino-1MQ-Lot-TUY-122025-GC49-1.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-307-50mg5-Amino-1MQ-Lot-TUY-122025-GC49-1-2fd63b6e105e.jpg",
+      "bytes": 117275,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "5-amino-1mq"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/01/Evergreen_COA_308_10mgSnap-8-Lot-CHA-122025-GB79-1.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-308-10mgSnap-8-Lot-CHA-122025-GB79-1-f1edcad9c00f.jpg",
+      "bytes": 116103,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "snap-8"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/01/Evergreen_COA_312_5mg-5-Amino-1MQ-Lot-CHA-122025-GB81-1.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-312-5mg-5-Amino-1MQ-Lot-CHA-122025-GB81-1-23ae0e316851.jpg",
+      "bytes": 117258,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "5-amino-1mq"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/01/Evergreen_COA_343_10mg_N-Acetyl-Epithalon-Lot-TUY-122025-GD12.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-343-10mg-N-Acetyl-Epithalon-Lot-TUY-122025-GD12-4033e607af7a.jpg",
+      "bytes": 117091,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "n-acetyl-epithalon-amidate"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/01/Evergreen_COA_344_50mg_AICAR-Lot-CHA-122025-GD9.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-344-50mg-AICAR-Lot-CHA-122025-GD9-6e7434a5d035.jpg",
+      "bytes": 115806,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "aicar"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/01/Evergreen_COA_345_5mg_N-Acetyl-Semax-Lot-TUY-122025-GD8.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-345-5mg-N-Acetyl-Semax-Lot-TUY-122025-GD8-7c036ff89dfe.jpg",
+      "bytes": 116273,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "n-acetyl-selank-amidate"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/01/Evergreen_COA_346_5mg_N-Acetyl-Selank-Lot-TUY-122025-GD7.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-346-5mg-N-Acetyl-Selank-Lot-TUY-122025-GD7-aff4deb03a7c.jpg",
+      "bytes": 116463,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "n-acetyl-selank-amidate"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/01/Evergreen_COA_347_5mg_SLU-PP-332-Lot-CHA-122025-GD38.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-347-5mg-SLU-PP-332-Lot-CHA-122025-GD38-3cab88b65869.jpg",
+      "bytes": 117202,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "slu-pp-332"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/01/Evergreen_COA_348_1mg_Follistatin-315-Lot-CHA-122025-GD6.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-348-1mg-Follistatin-315-Lot-CHA-122025-GD6-3653d0396605.jpg",
+      "bytes": 116598,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "follistatin-315"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/01/Evergreen_COA_366_Chonluten_20mg-Lot-CHA-122025-GJ17.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-366-Chonluten-20mg-Lot-CHA-122025-GJ17-187e31b756f1.jpg",
+      "bytes": 119992,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "chonluten"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/01/Evergreen_COA_368_Cortagen_20mg-Lot-CHA-122025-GI58.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-368-Cortagen-20mg-Lot-CHA-122025-GI58-0902aa9180c5.jpg",
+      "bytes": 119353,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "cortagen"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/01/Evergreen_COA_375_Ovagen_20mg-Lot-CHA-122025-GJ16.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-375-Ovagen-20mg-Lot-CHA-122025-GJ16-921bf2b0ec45.jpg",
+      "bytes": 119439,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "ovagen"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/01/Evergreen_COA_376_P21-Adamantane_10mg-Lot-CHA-122025-GI59.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-376-P21-Adamantane-10mg-Lot-CHA-122025-GI59-97cb99e3ddf8.jpg",
+      "bytes": 120537,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "p-21-adamantane"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/01/Evergreen_COA_392_Gonadorelin_2mg-Lot-CHA-122025-GD11.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-COA-392-Gonadorelin-2mg-Lot-CHA-122025-GD11-e249479b998e.jpg",
+      "bytes": 73234,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "gonadorelin"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/01/Follistatin-315-Card.jpg",
+      "publicPath": "/assets/product-details/gallery/Follistatin-315-Card-8b7e3d88d3cb.jpg",
+      "bytes": 144703,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "info-card"
+      ],
+      "products": [
+        "follistatin-315"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/01/Follistatin-315.jpg",
+      "publicPath": "/assets/product-details/gallery/Follistatin-315-ba30054bfca2.jpg",
+      "bytes": 75262,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "follistatin-315"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/01/Gonadorelin-Card.jpg",
+      "publicPath": "/assets/product-details/gallery/Gonadorelin-Card-af9fb1ba7a18.jpg",
+      "bytes": 77616,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "info-card"
+      ],
+      "products": [
+        "gonadorelin"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/01/Gonadorelin-Signature.png",
+      "publicPath": "/assets/product-details/molecular/Gonadorelin-Signature-3107cdeda22e.png",
+      "bytes": 3120,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "gonadorelin"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/01/GPL-1CS-Card.jpg",
+      "publicPath": "/assets/product-details/gallery/GPL-1CS-Card-958892e7eab6.jpg",
+      "bytes": 158366,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "info-card"
+      ],
+      "products": [
+        "glp-1-c-s"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/01/Hexarelin-Acetate-Updated.jpg",
+      "publicPath": "/assets/product-details/gallery/Hexarelin-Acetate-Updated-dc1042bcf999.jpg",
+      "bytes": 59291,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "hexarelin-acetate"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/01/MGF-Mechano-Growth-Factor-Card.jpg",
+      "publicPath": "/assets/product-details/gallery/MGF-Mechano-Growth-Factor-Card-2b44c1a75792.jpg",
+      "bytes": 86125,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "info-card"
+      ],
+      "products": [
+        "mgf-mechano-growth-factor"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/01/N-Acetyl-Epithalon-Amidate-Card.jpg",
+      "publicPath": "/assets/product-details/gallery/N-Acetyl-Epithalon-Amidate-Card-6684cb3623d0.jpg",
+      "bytes": 81937,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "info-card"
+      ],
+      "products": [
+        "n-acetyl-epithalon-amidate"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/01/N-Acetyl-Epithalon-Amidate-Signature.png",
+      "publicPath": "/assets/product-details/molecular/N-Acetyl-Epithalon-Amidate-Signature-cea4f3eafd9f.png",
+      "bytes": 1739,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "n-acetyl-epithalon-amidate"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/01/N-Acetyl-Selank-Amidate-Card.jpg",
+      "publicPath": "/assets/product-details/gallery/N-Acetyl-Selank-Amidate-Card-356abe4e0db2.jpg",
+      "bytes": 81711,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "info-card"
+      ],
+      "products": [
+        "n-acetyl-selank-amidate"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/01/N-Acetyl-Selank-Amidate-Signature.png",
+      "publicPath": "/assets/product-details/molecular/N-Acetyl-Selank-Amidate-Signature-cb7e2ed58cfe.png",
+      "bytes": 2363,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "n-acetyl-selank-amidate"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/01/N-Acetyl-Semax-Amidate-Module-Signature.png",
+      "publicPath": "/assets/product-details/molecular/N-Acetyl-Semax-Amidate-Module-Signature-4f6a9c46c55c.png",
+      "bytes": 2768,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "n-acetyl-semx-amidate"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/01/N-Acetyl-Semax-Amidate.jpg",
+      "publicPath": "/assets/product-details/gallery/N-Acetyl-Semax-Amidate-145d3b086818.jpg",
+      "bytes": 81520,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "gallery"
+      ],
+      "products": [
+        "n-acetyl-semx-amidate"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/01/Ovagen-Card.jpg",
+      "publicPath": "/assets/product-details/gallery/Ovagen-Card-87028e7fdf7d.jpg",
+      "bytes": 77901,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "info-card"
+      ],
+      "products": [
+        "ovagen"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/01/P-21-Adamantane-Card.jpg",
+      "publicPath": "/assets/product-details/gallery/P-21-Adamantane-Card-2581c2671dbc.jpg",
+      "bytes": 79715,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "info-card"
+      ],
+      "products": [
+        "p-21-adamantane"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/01/SLU-PP-332-Card.jpg",
+      "publicPath": "/assets/product-details/gallery/SLU-PP-332-Card-f37cda947244.jpg",
+      "bytes": 87565,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "info-card"
+      ],
+      "products": [
+        "slu-pp-332"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/01/SLU-PP-332-Signature.png",
+      "publicPath": "/assets/product-details/molecular/SLU-PP-332-Signature-823c7be2eccf.png",
+      "bytes": 1236,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "slu-pp-332"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/01/Snap-8-Card.jpg",
+      "publicPath": "/assets/product-details/gallery/Snap-8-Card-ce84a92cfa67.jpg",
+      "bytes": 145761,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "info-card"
+      ],
+      "products": [
+        "snap-8"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/01/Snap-8-Signature.png",
+      "publicPath": "/assets/product-details/molecular/Snap-8-Signature-890c7530e2bf.png",
+      "bytes": 1728,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "snap-8"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/01/Vesugen-Card.jpg",
+      "publicPath": "/assets/product-details/gallery/Vesugen-Card-8317cad0aeed.jpg",
+      "bytes": 79277,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "info-card"
+      ],
+      "products": [
+        "vesugen"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/02/5-Amino-1MQ-Signature.png",
+      "publicPath": "/assets/product-details/molecular/5-Amino-1MQ-Signature-dd0f55c0a694.png",
+      "bytes": 997,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "5-amino-1mq-2"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/02/Acetic-Acid-Card.jpg",
+      "publicPath": "/assets/product-details/gallery/Acetic-Acid-Card-8e0ce7fd6d8e.jpg",
+      "bytes": 60666,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "info-card"
+      ],
+      "products": [
+        "acetic-acid"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/02/Acetic-Acid-Formula.png",
+      "publicPath": "/assets/product-details/molecular/Acetic-Acid-Formula-dd09a75cca0c.png",
+      "bytes": 543,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "acetic-acid"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/02/Acetic-Acid.jpg",
+      "publicPath": "/assets/product-details/gallery/Acetic-Acid-4b6da3d13501.jpg",
+      "bytes": 75466,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "acetic-acid"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/02/BPC-157-Signature.png",
+      "publicPath": "/assets/product-details/molecular/BPC-157-Signature-f77fb142b1f4.png",
+      "bytes": 14174,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "bpc-157-arginate-salt"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/02/Dihexa-Signature.png",
+      "publicPath": "/assets/product-details/molecular/Dihexa-Signature-a86cd4416263.png",
+      "bytes": 1698,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "dhx"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/02/Evergreen_BPC-157-500mcg-TB-500-500mcg-Lot-26013001-Pure-Health-GI76.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-BPC-157-500mcg-TB-500-500mcg-Lot-26013001-Pure-Health-GI76-280a3664e162.jpg",
+      "bytes": 78983,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "bpc-157-tb-500-t%ce%b24-blend"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/02/Evergreen_BPC-500mcg_capsule-Lot-26012001-Pure-Health-GI75.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-BPC-500mcg-capsule-Lot-26012001-Pure-Health-GI75-585df7a638b2.jpg",
+      "bytes": 75785,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "bpc-157-arginate-salt"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/02/Evergreen_LC120Lipo-C-Lot-CHA-122025-GD27-2.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-LC120Lipo-C-Lot-CHA-122025-GD27-2-5bdd4d0dbb06.jpg",
+      "bytes": 75538,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "lc120"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/02/Evergreen_LC216-Lipo-B-Lot-CHA-122025-GD28-2.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-LC216-Lipo-B-Lot-CHA-122025-GD28-2-5e87cb032026.jpg",
+      "bytes": 280260,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "lc-216"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/02/Evergreen_MK677-12.5mg_capsule-Lot-26026001-Pure-Health-GI78.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-MK677-12-5mg-capsule-Lot-26026001-Pure-Health-GI78-e8ab222d11fc.jpg",
+      "bytes": 76373,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "ibutamorin"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/02/Evergreen_MK677-25mg_capsule-Lot-26023001-Pure-Health-GI79.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-MK677-25mg-capsule-Lot-26023001-Pure-Health-GI79-611d0ede8f53.jpg",
+      "bytes": 76478,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "ibutamorin"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/02/Evergreen_PH-32504-5-Amino-1MQ-50mg_capsule-Lot-26022001-GJ37.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-PH-32504-5-Amino-1MQ-50mg-capsule-Lot-26022001-GJ37-99ad126c9f61.jpg",
+      "bytes": 76324,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "5-amino-1mq-2"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/02/Evergreen_PH-32504-Dihexa-10mg_capsule-Lot-26021002-GJ39.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-PH-32504-Dihexa-10mg-capsule-Lot-26021002-GJ39-9b13f5e6bcdb.jpg",
+      "bytes": 76288,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "dhx"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/02/Evergreen_PH-32504-Dihexa-5mg_-Capsule-Lot-26021001-GJ36.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-PH-32504-Dihexa-5mg-Capsule-Lot-26021001-GJ36-e883d9ebb6b2.jpg",
+      "bytes": 76278,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "dhx"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/02/Evergreen_PH-32504-Tesofensine-500mcg_capsule-Lot-26020001-GJ38.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-PH-32504-Tesofensine-500mcg-capsule-Lot-26020001-GJ38-a40f8a2ed782.jpg",
+      "bytes": 76994,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "teso"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/02/Evergreen_Pure-Health-Methylene-Blue-20mg_cap-Lot-26028001-GL69.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-Pure-Health-Methylene-Blue-20mg-cap-Lot-26028001-GL69-516e6b9e6888.jpg",
+      "bytes": 76722,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "methylene-blue"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/02/Evergreen_Pure-Health-SLU-PP332-500mcg_cap-Lot-26014001-GL71.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-Pure-Health-SLU-PP332-500mcg-cap-Lot-26014001-GL71-c7fa8c2a37bf.jpg",
+      "bytes": 76555,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "slu-pp-332-2"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/02/Evergreen_Pure-Health-TB-500-500mcg_capsule-Lot-26019001-GL72.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-Pure-Health-TB-500-500mcg-capsule-Lot-26019001-GL72-18b2d7247e3a.jpg",
+      "bytes": 76153,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "tb-500-t%ce%b2-4"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/02/Evergreen_Pure-Health-Tudca-500mg_cap-Lot-26027001-GL70.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-Pure-Health-Tudca-500mg-cap-Lot-26027001-GL70-ce41f7914738.jpg",
+      "bytes": 76838,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "tudca"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/02/Evergreen_SLU-PP-332-1000mcg_capsule-Lot-26014001-Pure-Health-GI77.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-SLU-PP-332-1000mcg-capsule-Lot-26014001-Pure-Health-GI77-0272e14b272e.jpg",
+      "bytes": 77105,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "slu-pp-332-2"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/02/Methylene-Blue-Signature.png",
+      "publicPath": "/assets/product-details/molecular/Methylene-Blue-Signature-117366b7f514.png",
+      "bytes": 1368,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "methylene-blue"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/02/MK-677-Signature.png",
+      "publicPath": "/assets/product-details/molecular/MK-677-Signature-264f17e49d1d.png",
+      "bytes": 2393,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "ibutamorin"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/02/SLU-PP-332-Signature.png",
+      "publicPath": "/assets/product-details/molecular/SLU-PP-332-Signature-c931f9f1be6e.png",
+      "bytes": 1236,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "slu-pp-332-2"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/02/TB-500.png",
+      "publicPath": "/assets/product-details/molecular/TB-500-5b97de5a4437.png",
+      "bytes": 9210,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "tb-500-t%ce%b2-4"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/02/Tesofensine-Signature.png",
+      "publicPath": "/assets/product-details/molecular/Tesofensine-Signature-b726ec321fd8.png",
+      "bytes": 2500,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "teso"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/02/TUDCA-Signature.png",
+      "publicPath": "/assets/product-details/molecular/TUDCA-Signature-7a888918ee6a.png",
+      "bytes": 2129,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "tudca"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/5-AMINO-1MQ.jpg",
+      "publicPath": "/assets/product-details/gallery/5-AMINO-1MQ-c671ef30dbc3.jpg",
+      "bytes": 74125,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "5-amino-1mq-2"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/BAM15-Product-Signature.png",
+      "publicPath": "/assets/product-details/molecular/BAM15-Product-Signature-f6e5dcff8c92.png",
+      "bytes": 1834,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "bam15-encapsulated-solid"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/BAM15.png",
+      "publicPath": "/assets/product-details/gallery/BAM15-6950fcfab8b1.png",
+      "bytes": 74990,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "bam15-encapsulated-solid"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/BPC-157_Product-Card_alt1.jpg",
+      "publicPath": "/assets/product-details/gallery/BPC-157-Product-Card-alt1-6d7405354176.jpg",
+      "bytes": 57440,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "bpc-157-pure-health-peptides"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/BPC-157_TB-500_Product-Card_alt1.jpg",
+      "publicPath": "/assets/product-details/gallery/BPC-157-TB-500-Product-Card-alt1-7c3eabaeef79.jpg",
+      "bytes": 65957,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "bpc-157-tb-500-2"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/BPC-157_TB-500TB4.jpg",
+      "publicPath": "/assets/product-details/gallery/BPC-157-TB-500TB4-ba9bcb1b780e.jpg",
+      "bytes": 85761,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "bpc-157-tb-500-t%ce%b24-blend"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/BPC-157-ARGinate-Salt.jpg",
+      "publicPath": "/assets/product-details/gallery/BPC-157-ARGinate-Salt-5961aa7ccb23.jpg",
+      "bytes": 73517,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "bpc-157-arginate-salt"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/BPC-157-Liquid-Signature.png",
+      "publicPath": "/assets/product-details/molecular/BPC-157-Liquid-Signature-234649bc7163.png",
+      "bytes": 3301,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "bpc-157-pure-health-peptides"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/Capsule-Information-Card-Featured.jpg",
+      "publicPath": "/assets/product-details/gallery/Capsule-Information-Card-Featured-70677c84fcd0.jpg",
+      "bytes": 162224,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "info-card"
+      ],
+      "products": [
+        "5-amino-1mq-2",
+        "bam15-encapsulated-solid",
+        "bpc-157-arginate-salt",
+        "bpc-157-tb-500-t%ce%b24-blend",
+        "dhx",
+        "epithalon-2",
+        "glow",
+        "ibutamorin",
+        "kpv-2",
+        "methylene-blue",
+        "mots-c-2",
+        "orforglipron",
+        "regen",
+        "slu-pp-332-2",
+        "tb-500-t%ce%b2-4",
+        "teso",
+        "tudca"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/Cardiogen-Card.jpg",
+      "publicPath": "/assets/product-details/gallery/Cardiogen-Card-41fa473578f7.jpg",
+      "bytes": 77941,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "info-card"
+      ],
+      "products": [
+        "cardiogen"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/COA_01_BPC-157_TB-500_Research-Spray-0.14ml_spray-Lot-26021003-GJ15-scaled.jpg",
+      "publicPath": "/assets/product-details/gallery/COA-01-BPC-157-TB-500-Research-Spray-0-14ml-spray-Lot-26021003-GJ15-scaled-ab1def91cd74.jpg",
+      "bytes": 161440,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "bpc-157-tb-500-2"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/COA_02_BPC-157-Research-Spray-0.14ml_spray-Lot-26012002-GJ14-scaled.jpg",
+      "publicPath": "/assets/product-details/gallery/COA-02-BPC-157-Research-Spray-0-14ml-spray-Lot-26012002-GJ14-scaled-89b97b468239.jpg",
+      "bytes": 158248,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "bpc-157-pure-health-peptides"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/Dihexa.jpg",
+      "publicPath": "/assets/product-details/gallery/Dihexa-712f1b888005.jpg",
+      "bytes": 73604,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "dhx"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/evergreen_COA_03_NAD-Research-Spray-30ml-Lot-26055001-GT97P-scaled.jpg",
+      "publicPath": "/assets/product-details/gallery/evergreen-COA-03-NAD-Research-Spray-30ml-Lot-26055001-GT97P-scaled-f57d3f7cd154.jpg",
+      "bytes": 132605,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "nad%e2%81%ba-nicotinamide-adenine-dinucleotide"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/evergreen_COA_04_PT-141-Research-Spray-30ml-Lot-26055002-GT98P-scaled.jpg",
+      "publicPath": "/assets/product-details/gallery/evergreen-COA-04-PT-141-Research-Spray-30ml-Lot-26055002-GT98P-scaled-965989a1b587.jpg",
+      "bytes": 132557,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "pt-141-2"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/evergreen_COA_05_Selank-Research-Spray-30ml-Lot-26056001-GT99P-scaled.jpg",
+      "publicPath": "/assets/product-details/gallery/evergreen-COA-05-Selank-Research-Spray-30ml-Lot-26056001-GT99P-scaled-53162c017114.jpg",
+      "bytes": 132517,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "selank-tp-7"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/evergreen_COA_07_TB-500-Research-Spray-30ml-Lot-26054002-GT96P-scaled.jpg",
+      "publicPath": "/assets/product-details/gallery/evergreen-COA-07-TB-500-Research-Spray-30ml-Lot-26054002-GT96P-scaled-98b8a5138a07.jpg",
+      "bytes": 132589,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "tb-500-t%ce%b24-pure-health-peptides"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/Evergreen_Hexarelin-Acetate-Lot-TUY-011526-GJ95.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-Hexarelin-Acetate-Lot-TUY-011526-GJ95-1a825a46d189.jpg",
+      "bytes": 74870,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "hexarelin-acetate"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/evergreen-COA_06_Semx-Research-Spray-30ml-Lot-26056002-GU1P-scaled.jpg",
+      "publicPath": "/assets/product-details/gallery/evergreen-COA-06-Semx-Research-Spray-30ml-Lot-26056002-GU1P-scaled-aac9133e5d27.jpg",
+      "bytes": 132447,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "semx-2"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/GDF-8.jpg",
+      "publicPath": "/assets/product-details/gallery/GDF-8-1fca6bdd5d13.jpg",
+      "bytes": 71314,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "gdf-8"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/GHK-Cu.jpg",
+      "publicPath": "/assets/product-details/gallery/GHK-Cu-f60795bfd2cf.jpg",
+      "bytes": 73645,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "ghk-cu"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/GHRP-2.jpg",
+      "publicPath": "/assets/product-details/gallery/GHRP-2-b54fb81184b8.jpg",
+      "bytes": 72260,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "ghpr-2"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/GHRP-6.jpg",
+      "publicPath": "/assets/product-details/gallery/GHRP-6-ee6e789cd69b.jpg",
+      "bytes": 72721,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "ghpr-6"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/GLOWBPC-157_GHK-Cu_TB-500.jpg",
+      "publicPath": "/assets/product-details/gallery/GLOWBPC-157-GHK-Cu-TB-500-d632b15be3c6.jpg",
+      "bytes": 88841,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "glow-bpc-157-ghk-cu-tb-500-blend"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/GLP-1C_S.jpg",
+      "publicPath": "/assets/product-details/gallery/GLP-1C-S-c113168debe4.jpg",
+      "bytes": 76269,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "glp-1-c-s"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/GLP-1C.jpg",
+      "publicPath": "/assets/product-details/gallery/GLP-1C-42004930139c.jpg",
+      "bytes": 73148,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "glp-1-c"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/GLP-1S.jpg",
+      "publicPath": "/assets/product-details/gallery/GLP-1S-670e00cfdaf9.jpg",
+      "bytes": 73031,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "glp-1-s"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/GLP-2-T.jpg",
+      "publicPath": "/assets/product-details/gallery/GLP-2-T-df93d0237176.jpg",
+      "bytes": 74805,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "glp-2-t"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/GLP-3R.jpg",
+      "publicPath": "/assets/product-details/gallery/GLP-3R-f5053117f89a.jpg",
+      "bytes": 74714,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "glp-3-r"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/Glutathione.jpg",
+      "publicPath": "/assets/product-details/gallery/Glutathione-a4c85df4ca21.jpg",
+      "bytes": 75529,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "glutathione"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/Gonadorelin.jpg",
+      "publicPath": "/assets/product-details/gallery/Gonadorelin-790299ea9091.jpg",
+      "bytes": 74630,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "gonadorelin"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/Hexarelin-Acetate-Card.jpg",
+      "publicPath": "/assets/product-details/gallery/Hexarelin-Acetate-Card-9117083dc6c9.jpg",
+      "bytes": 79449,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "info-card"
+      ],
+      "products": [
+        "hexarelin-acetate"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/hexarelin.jpg",
+      "publicPath": "/assets/product-details/gallery/hexarelin-f1ee8930842f.jpg",
+      "bytes": 73498,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "hexarelin"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/Humanin.jpg",
+      "publicPath": "/assets/product-details/gallery/Humanin-ebf17bafeab6.jpg",
+      "bytes": 73100,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "humanin"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/IGF-1-LR3.jpg",
+      "publicPath": "/assets/product-details/gallery/IGF-1-LR3-825ee13f6199.jpg",
+      "bytes": 73049,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "igf-1-lr3"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/Ipamorelin.jpg",
+      "publicPath": "/assets/product-details/gallery/Ipamorelin-41ecbea17d94.jpg",
+      "bytes": 73875,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "ipamorelin"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/Kisspeptin-10.jpg",
+      "publicPath": "/assets/product-details/gallery/Kisspeptin-10-7e5e613db916.jpg",
+      "bytes": 76549,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "gallery"
+      ],
+      "products": [
+        "kispeptin-10"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/KPV.jpg",
+      "publicPath": "/assets/product-details/gallery/KPV-a1fc168fa67b.jpg",
+      "bytes": 71255,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "kpv"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/LC120_Product-Card_alt3.jpg",
+      "publicPath": "/assets/product-details/gallery/LC120-Product-Card-alt3-c78ec7812af6.jpg",
+      "bytes": 94759,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "lc120"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/LC216_Product-Card_al3.jpg",
+      "publicPath": "/assets/product-details/gallery/LC216-Product-Card-al3-c47ee493878e.jpg",
+      "bytes": 111251,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "lc-216"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/Liquids-Information-Card-Featured.jpg",
+      "publicPath": "/assets/product-details/gallery/Liquids-Information-Card-Featured-3826e1765c6f.jpg",
+      "bytes": 104673,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "info-card"
+      ],
+      "products": [
+        "aod9604-2",
+        "bpc-157-pure-health-peptides",
+        "bpc-157-tb-500-2",
+        "dsip-2",
+        "epithalon-3",
+        "ghk-cu-2",
+        "kpv-3",
+        "lc-216",
+        "lc120",
+        "nad%e2%81%ba-nicotinamide-adenine-dinucleotide",
+        "pt-141-2",
+        "selank-tp-7",
+        "semx-2",
+        "tb-500-t%ce%b24-pure-health-peptides",
+        "vip-pure-health-peptides",
+        "vocus"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/Livagen.jpg",
+      "publicPath": "/assets/product-details/gallery/Livagen-5df18e119670.jpg",
+      "bytes": 72906,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "livagen"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/LL-37.jpg",
+      "publicPath": "/assets/product-details/gallery/LL-37-e42a45024c83.jpg",
+      "bytes": 71267,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "ll-37"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/Melanotan-2.jpg",
+      "publicPath": "/assets/product-details/gallery/Melanotan-2-ac936c7c87b6.jpg",
+      "bytes": 74976,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "melanoten-2"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/Methylene-Blue.jpg",
+      "publicPath": "/assets/product-details/gallery/Methylene-Blue-2bf9e9ff4ed4.jpg",
+      "bytes": 83177,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "methylene-blue"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/MGFMechano-Growth-Factor.jpg",
+      "publicPath": "/assets/product-details/gallery/MGFMechano-Growth-Factor-87a27f84eaba.jpg",
+      "bytes": 79723,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "mgf-mechano-growth-factor"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/MK-677.jpg",
+      "publicPath": "/assets/product-details/gallery/MK-677-ae4af0a7d416.jpg",
+      "bytes": 72705,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "ibutamorin"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/MOTS-c.jpg",
+      "publicPath": "/assets/product-details/gallery/MOTS-c-1ce724878ed0.jpg",
+      "bytes": 72828,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "mots-c"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/N-Acetyl-Epithalon.jpg",
+      "publicPath": "/assets/product-details/gallery/N-Acetyl-Epithalon-cb6f2a199789.jpg",
+      "bytes": 88311,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "n-acetyl-epithalon-amidate"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/N-Acetyl-Selank.jpg",
+      "publicPath": "/assets/product-details/gallery/N-Acetyl-Selank-27ba2b91849a.jpg",
+      "bytes": 88885,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "n-acetyl-selank-amidate"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/N-Acetyl-Semax-Amidate.jpg",
+      "publicPath": "/assets/product-details/gallery/N-Acetyl-Semax-Amidate-3cab0adbae79.jpg",
+      "bytes": 87130,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "n-acetyl-semx-amidate"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/NAD_Product-Card_alt1.jpg",
+      "publicPath": "/assets/product-details/gallery/NAD-Product-Card-alt1-fa1c3115b33f.jpg",
+      "bytes": 56250,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "nad%e2%81%ba-nicotinamide-adenine-dinucleotide"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/NAD-Liquid-Signature.png",
+      "publicPath": "/assets/product-details/molecular/NAD-Liquid-Signature-38b19ab522f4.png",
+      "bytes": 2307,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "nad%e2%81%ba-nicotinamide-adenine-dinucleotide"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/NAD.jpg",
+      "publicPath": "/assets/product-details/gallery/NAD-27d9b4c5ba22.jpg",
+      "bytes": 71445,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "nad"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/Orforglipron-Module-Singanute.png",
+      "publicPath": "/assets/product-details/molecular/Orforglipron-Module-Singanute-ba340b1d8f32.png",
+      "bytes": 2960,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "orforglipron"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/Ovagen.jpg",
+      "publicPath": "/assets/product-details/gallery/Ovagen-f80d571fe512.jpg",
+      "bytes": 73741,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "ovagen"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/Oxytocin.jpg",
+      "publicPath": "/assets/product-details/gallery/Oxytocin-7b8dd90ac652.jpg",
+      "bytes": 73579,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "oxytocin"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/P-21adamantane.jpg",
+      "publicPath": "/assets/product-details/gallery/P-21adamantane-08c61feb1647.jpg",
+      "bytes": 80306,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "p-21-adamantane"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/PEG-MGF.jpg",
+      "publicPath": "/assets/product-details/gallery/PEG-MGF-9100a1a7ad54.jpg",
+      "bytes": 73616,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "peg-mgf"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/Pinealon.jpg",
+      "publicPath": "/assets/product-details/gallery/Pinealon-929d7e07f156.jpg",
+      "bytes": 74222,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "pinealon"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/PNC-27.jpg",
+      "publicPath": "/assets/product-details/gallery/PNC-27-777f0ebb79ef.jpg",
+      "bytes": 72609,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "pnc-27"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/Prostamax.jpg",
+      "publicPath": "/assets/product-details/gallery/Prostamax-1bc2dfd8f3cb.jpg",
+      "bytes": 76358,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "prostamax"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/PT-141_Product-Card_alt1.jpg",
+      "publicPath": "/assets/product-details/gallery/PT-141-Product-Card-alt1-8a529adeb5d3.jpg",
+      "bytes": 57115,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "pt-141-2"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/PT-141-Liquid-Signature.png",
+      "publicPath": "/assets/product-details/molecular/PT-141-Liquid-Signature-7498e09559af.png",
+      "bytes": 3462,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "pt-141-2"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/PT-141.jpg",
+      "publicPath": "/assets/product-details/gallery/PT-141-94491c26d768.jpg",
+      "bytes": 72688,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "pt-141"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/Selank-TP-7_Product-Card_alt1.jpg",
+      "publicPath": "/assets/product-details/gallery/Selank-TP-7-Product-Card-alt1-6027379ddc91.jpg",
+      "bytes": 61241,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "selank-tp-7"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/Selank-TP-7-Liquid-Signature.png",
+      "publicPath": "/assets/product-details/molecular/Selank-TP-7-Liquid-Signature-02ca9605a5b0.png",
+      "bytes": 2291,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "selank-tp-7"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/Selank.jpg",
+      "publicPath": "/assets/product-details/gallery/Selank-43282ad4c2ea.jpg",
+      "bytes": 72452,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "selank"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/Semax_Product-Card_alt1.jpg",
+      "publicPath": "/assets/product-details/gallery/Semax-Product-Card-alt1-b43a45c3a4b2.jpg",
+      "bytes": 59564,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "semx-2"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/Semax-Liquid-Signature.png",
+      "publicPath": "/assets/product-details/molecular/Semax-Liquid-Signature-208e8078d015.png",
+      "bytes": 2868,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "semx-2"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/Semax.jpg",
+      "publicPath": "/assets/product-details/gallery/Semax-910254077037.jpg",
+      "bytes": 73601,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "semx"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/Sermorelin.jpg",
+      "publicPath": "/assets/product-details/gallery/Sermorelin-f5ce48149af9.jpg",
+      "bytes": 74747,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "sermorlin"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/SLU-PP-332-1.jpg",
+      "publicPath": "/assets/product-details/gallery/SLU-PP-332-1-f50cbed81816.jpg",
+      "bytes": 75479,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "slu-pp-332-2"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/SLU-PP-332.jpg",
+      "publicPath": "/assets/product-details/gallery/SLU-PP-332-1db1396d7383.jpg",
+      "bytes": 74212,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "slu-pp-332"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/snap-8.jpg",
+      "publicPath": "/assets/product-details/gallery/snap-8-72ebf99e1411.jpg",
+      "bytes": 72583,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "snap-8"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/TB-500_Product-Card_alt1.jpg",
+      "publicPath": "/assets/product-details/gallery/TB-500-Product-Card-alt1-adee8d48f974.jpg",
+      "bytes": 56961,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "tb-500-t%ce%b24-pure-health-peptides"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/TB-500-Liquid-Signature.png",
+      "publicPath": "/assets/product-details/molecular/TB-500-Liquid-Signature-ecf99ae0ecc2.png",
+      "bytes": 9210,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "tb-500-t%ce%b24-pure-health-peptides"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/TB-500.jpg",
+      "publicPath": "/assets/product-details/gallery/TB-500-b90c52433381.jpg",
+      "bytes": 72717,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "tb-500"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/TB-500TB4.jpg",
+      "publicPath": "/assets/product-details/gallery/TB-500TB4-716e83eb1158.jpg",
+      "bytes": 66762,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "tb-500-t%ce%b2-4"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/Tesamorelin.jpg",
+      "publicPath": "/assets/product-details/gallery/Tesamorelin-73cbe0ac2a59.jpg",
+      "bytes": 75264,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "tesmorelin"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/Tesofensine.jpg",
+      "publicPath": "/assets/product-details/gallery/Tesofensine-d730658b8e0b.jpg",
+      "bytes": 75562,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "teso"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/thymalin.jpg",
+      "publicPath": "/assets/product-details/gallery/thymalin-bf4c33ea2e23.jpg",
+      "bytes": 72876,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "thymalin"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/Thymogen.jpg",
+      "publicPath": "/assets/product-details/gallery/Thymogen-f3102b2c236b.jpg",
+      "bytes": 75290,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "thymogen"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/Thymosin-Alpha-1.jpg",
+      "publicPath": "/assets/product-details/gallery/Thymosin-Alpha-1-8d203086d315.jpg",
+      "bytes": 76987,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "thymosin-alpha-1"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/TUDCA.jpg",
+      "publicPath": "/assets/product-details/gallery/TUDCA-acaa12ef9e11.jpg",
+      "bytes": 67336,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "tudca"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/Vesugen.jpg",
+      "publicPath": "/assets/product-details/gallery/Vesugen-83b2ecceefac.jpg",
+      "bytes": 74336,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "vesugen"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/Vilon.jpg",
+      "publicPath": "/assets/product-details/gallery/Vilon-ee31704ef26a.jpg",
+      "bytes": 72122,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "vilon"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/03/VIP.jpg",
+      "publicPath": "/assets/product-details/gallery/VIP-a9aaea019ce7.jpg",
+      "bytes": 70005,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "vip"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/04/Evergreen_Glow-GHKcu-2mg_BPC-500mcg_TB-500mcg-Lot-PBL-26079002-HA79.jpg",
+      "publicPath": "/assets/product-details/gallery/Evergreen-Glow-GHKcu-2mg-BPC-500mcg-TB-500mcg-Lot-PBL-26079002-HA79-1d5e3d4c761e.jpg",
+      "bytes": 252568,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "glow"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/04/GLOW.png",
+      "publicPath": "/assets/product-details/gallery/GLOW-d2c20b6197ef.png",
+      "bytes": 76591,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "glow"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/05/AOD9604-liquid.png",
+      "publicPath": "/assets/product-details/molecular/AOD9604-liquid-7411f905e024.png",
+      "bytes": 5029,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "aod9604-2"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/05/AOD9604.png",
+      "publicPath": "/assets/product-details/gallery/AOD9604-daeb801a301d.png",
+      "bytes": 51649,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "aod9604-2"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/05/Asset-1@4x-1.png",
+      "publicPath": "/assets/product-details/gallery/Asset-1-4x-1-a307e1e1762b.png",
+      "bytes": 140739,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "cardiogen"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/05/DSIP-liquid.png",
+      "publicPath": "/assets/product-details/molecular/DSIP-liquid-b4c02ddbcd2b.png",
+      "bytes": 5030,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "dsip-2"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/05/DSIP.png",
+      "publicPath": "/assets/product-details/gallery/DSIP-ce11eb0b9f8a.png",
+      "bytes": 52935,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "dsip-2"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/05/Epithalon-1.png",
+      "publicPath": "/assets/product-details/gallery/Epithalon-1-d4e4c8a59087.png",
+      "bytes": 51476,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "epithalon-3"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/05/epithalon-caps.png",
+      "publicPath": "/assets/product-details/molecular/epithalon-caps-9f8a5903c1c6.png",
+      "bytes": 3347,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "epithalon-2"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/05/Epithalon-liquid.png",
+      "publicPath": "/assets/product-details/molecular/Epithalon-liquid-483d6ecaf227.png",
+      "bytes": 3347,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "epithalon-3"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/05/Epithalon.png",
+      "publicPath": "/assets/product-details/gallery/Epithalon-edb3e60c9a1c.png",
+      "bytes": 79643,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "epithalon-2"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/05/GHK-Cu-liquid.png",
+      "publicPath": "/assets/product-details/molecular/GHK-Cu-liquid-29748babb85d.png",
+      "bytes": 10963,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "ghk-cu-2"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/05/GHK-Cu.png",
+      "publicPath": "/assets/product-details/gallery/GHK-Cu-e7f0dc4765ad.png",
+      "bytes": 50774,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "ghk-cu-2"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/05/KPV-1.png",
+      "publicPath": "/assets/product-details/gallery/KPV-1-584312b3ba2e.png",
+      "bytes": 76944,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "kpv-2"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/05/KPV-2.png",
+      "publicPath": "/assets/product-details/gallery/KPV-2-f898c8222e21.png",
+      "bytes": 52790,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "kpv-3"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/05/KPV-liquid-1.jpg",
+      "publicPath": "/assets/product-details/molecular/KPV-liquid-1-cd312eacd579.jpg",
+      "bytes": 6153,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "kpv-3"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/05/kpv.png",
+      "publicPath": "/assets/product-details/molecular/kpv-3147de447d23.png",
+      "bytes": 4445,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "kpv-2"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/05/MOTS-c-1.png",
+      "publicPath": "/assets/product-details/gallery/MOTS-c-1-f14884561a05.png",
+      "bytes": 80194,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "mots-c-2"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/05/mots-c.png",
+      "publicPath": "/assets/product-details/molecular/mots-c-b72095f8c1f1.png",
+      "bytes": 5191,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "mots-c-2"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/05/Orforglipron.png",
+      "publicPath": "/assets/product-details/gallery/Orforglipron-7061c46589a6.png",
+      "bytes": 80595,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "orforglipron"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/05/REGEN.png",
+      "publicPath": "/assets/product-details/gallery/REGEN-da4142e78541.png",
+      "bytes": 74547,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "regen"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/05/VIP-liquid.png",
+      "publicPath": "/assets/product-details/molecular/VIP-liquid-e9e28432e6b0.png",
+      "bytes": 4797,
+      "kinds": [
+        "molecular"
+      ],
+      "roles": [],
+      "products": [
+        "vip-pure-health-peptides"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/05/VIP.png",
+      "publicPath": "/assets/product-details/gallery/VIP-06a3833d9a99.png",
+      "bytes": 53709,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "vip-pure-health-peptides"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/05/VOCUS.png",
+      "publicPath": "/assets/product-details/gallery/VOCUS-ea263e06edb6.png",
+      "bytes": 55029,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "vocus"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/06/Modular_Complete-Configuration_white.jpg",
+      "publicPath": "/assets/product-details/gallery/Modular-Complete-Configuration-white-a9af7692754f.jpg",
+      "bytes": 59365,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "complete-configuration-modular-peptide-systems-abcde"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/06/Modular_Phase-1-Configuration_white.jpg",
+      "publicPath": "/assets/product-details/gallery/Modular-Phase-1-Configuration-white-a96531c25015.jpg",
+      "bytes": 40188,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "phase-1-configuration-modular-peptide-systems-ace"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/06/Modular_Phase-2-Configuration_white.jpg",
+      "publicPath": "/assets/product-details/gallery/Modular-Phase-2-Configuration-white-a050ca83d35f.jpg",
+      "bytes": 29539,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "phase-2-configuration-modular-peptide-systems-bd"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/06/Modular-System-A-white.jpg",
+      "publicPath": "/assets/product-details/gallery/Modular-System-A-white-6ed688286233.jpg",
+      "bytes": 36004,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "modular-peptide-system-a-dual-peptide-serum"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/06/Modular-System-B-white.jpg",
+      "publicPath": "/assets/product-details/gallery/Modular-System-B-white-e371e5074b75.jpg",
+      "bytes": 35820,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "modular-peptide-system-b-pure-peptide-gel"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/06/Modular-System-C-white.jpg",
+      "publicPath": "/assets/product-details/gallery/Modular-System-C-white-9044a9d369a2.jpg",
+      "bytes": 42216,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "modular-peptide-system-c-controlled-rheology-peptide-emulsion"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/06/Modular-System-D-white-1.jpg",
+      "publicPath": "/assets/product-details/gallery/Modular-System-D-white-1-2b6955f118fa.jpg",
+      "bytes": 36320,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "modular-peptide-system-d-copper-peptide-complex"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/06/Modular-System-E-white.jpg",
+      "publicPath": "/assets/product-details/gallery/Modular-System-E-white-330f8fc92caf.jpg",
+      "bytes": 40802,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "primary"
+      ],
+      "products": [
+        "modular-peptide-system-e-multi-peptide-complex"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/06/System_A_HW95_Page_1-scaled.jpg",
+      "publicPath": "/assets/product-details/gallery/System-A-HW95-Page-1-scaled-09bb04f94d3d.jpg",
+      "bytes": 268994,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "gallery"
+      ],
+      "products": [
+        "modular-peptide-system-a-dual-peptide-serum"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/06/System_A_HW95_Page_2-scaled.jpg",
+      "publicPath": "/assets/product-details/gallery/System-A-HW95-Page-2-scaled-b7a4b7abeb63.jpg",
+      "bytes": 139573,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "gallery"
+      ],
+      "products": [
+        "modular-peptide-system-a-dual-peptide-serum"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/06/System_B_HW96_Page_1-scaled.jpg",
+      "publicPath": "/assets/product-details/gallery/System-B-HW96-Page-1-scaled-fb4b97b9aca6.jpg",
+      "bytes": 269152,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "gallery"
+      ],
+      "products": [
+        "modular-peptide-system-b-pure-peptide-gel"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/06/System_B_HW96_Page_2-scaled.jpg",
+      "publicPath": "/assets/product-details/gallery/System-B-HW96-Page-2-scaled-8547c576dbca.jpg",
+      "bytes": 139479,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "gallery"
+      ],
+      "products": [
+        "modular-peptide-system-b-pure-peptide-gel"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/06/System_C_Lot_PHP-TSC-001_HW97_page_1.jpg",
+      "publicPath": "/assets/product-details/gallery/System-C-Lot-PHP-TSC-001-HW97-page-1-e13bf45ce2cd.jpg",
+      "bytes": 76812,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "modular-peptide-system-c-controlled-rheology-peptide-emulsion"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/06/System_C_Lot_PHP-TSC-001_HW97_page_2.jpg",
+      "publicPath": "/assets/product-details/gallery/System-C-Lot-PHP-TSC-001-HW97-page-2-4c3a7eb384ff.jpg",
+      "bytes": 113335,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "modular-peptide-system-c-controlled-rheology-peptide-emulsion"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/06/System_D_Lot_PHP-TSD-001_HW98_page_1.jpg",
+      "publicPath": "/assets/product-details/gallery/System-D-Lot-PHP-TSD-001-HW98-page-1-fdd5f291e617.jpg",
+      "bytes": 74235,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "modular-peptide-system-d-copper-peptide-complex"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/06/System_D_Lot_PHP-TSD-001_HW98_page_2.jpg",
+      "publicPath": "/assets/product-details/gallery/System-D-Lot-PHP-TSD-001-HW98-page-2-956574c8ccea.jpg",
+      "bytes": 113679,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "modular-peptide-system-d-copper-peptide-complex"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/06/System_E_Lot_PHP-TSE-001-HW99_page_1.jpg",
+      "publicPath": "/assets/product-details/gallery/System-E-Lot-PHP-TSE-001-HW99-page-1-dccc803c22dd.jpg",
+      "bytes": 125506,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "modular-peptide-system-e-multi-peptide-complex"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/06/System_E_Lot_PHP-TSE-001-HW99_page_2.jpg",
+      "publicPath": "/assets/product-details/gallery/System-E-Lot-PHP-TSE-001-HW99-page-2-67d83bc73fff.jpg",
+      "bytes": 129895,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "coa"
+      ],
+      "products": [
+        "modular-peptide-system-e-multi-peptide-complex"
+      ]
+    },
+    {
+      "sourceUrl": "https://purehealthpeptides.com/wp-content/uploads/2026/06/Topical-Formats-Information-Card-1.jpg",
+      "publicPath": "/assets/product-details/gallery/Topical-Formats-Information-Card-1-9adbd5810317.jpg",
+      "bytes": 95235,
+      "kinds": [
+        "gallery"
+      ],
+      "roles": [
+        "info-card"
+      ],
+      "products": [
+        "complete-configuration-modular-peptide-systems-abcde",
+        "modular-peptide-system-a-dual-peptide-serum",
+        "modular-peptide-system-b-pure-peptide-gel",
+        "modular-peptide-system-c-controlled-rheology-peptide-emulsion",
+        "modular-peptide-system-d-copper-peptide-complex",
+        "modular-peptide-system-e-multi-peptide-complex",
+        "phase-1-configuration-modular-peptide-systems-ace",
+        "phase-2-configuration-modular-peptide-systems-bd"
+      ]
+    }
+  ]
+}

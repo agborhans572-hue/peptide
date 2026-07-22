@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /my-account/
+Disallow: /track-my-order/
+Disallow: /checkout/
+Disallow: /order-confirmation/
+
+Sitemap: https://purehealthpeptides.com/sitemap.xml
