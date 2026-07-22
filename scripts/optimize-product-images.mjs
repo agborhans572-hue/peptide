@@ -62,5 +62,10 @@ await Promise.all([
   ...((await readdir(socialRoot)).filter((name) => !expectedSocial.has(name)).map((name) => unlink(resolve(socialRoot, name)))),
 ])
 
-await writeFile(resolve('src/productImageManifest.json'), `${JSON.stringify(manifest, null, 2)}\n`, 'utf8')
+const deterministicManifest = {
+  images: Object.fromEntries(Object.entries(manifest.images).sort(([left], [right]) => left.localeCompare(right))),
+  social: Object.fromEntries(Object.entries(manifest.social).sort(([left], [right]) => left.localeCompare(right))),
+}
+
+await writeFile(resolve('src/productImageManifest.json'), `${JSON.stringify(deterministicManifest, null, 2)}\n`, 'utf8')
 console.log(`Generated responsive derivatives for ${sources.length} images and ${catalog.products.length} social images.`)

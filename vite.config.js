@@ -4,6 +4,25 @@ import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import { dirname, resolve } from 'node:path'
 import { productionRoutes } from './scripts/site-routes.mjs'
 
+function normalizedBasePath(value) {
+  if (!value) return '/'
+  return `/${value.replace(/^\/+|\/+$/g, '')}/`
+}
+
+function rebasePublicAssetReferences(base) {
+  if (base === '/') return { name: 'rebase-public-asset-references' }
+
+  return {
+    name: 'rebase-public-asset-references',
+    generateBundle(_options, bundle) {
+      for (const output of Object.values(bundle)) {
+        if (output.type !== 'chunk') continue
+        output.code = output.code.replace(/(["'])\/(assets|_product-media)\//g, `$1${base}$2/`)
+      }
+    },
+  }
+}
+
 function escapeHtml(value) {
   return String(value)
     .replaceAll('&', '&amp;')
@@ -134,8 +153,11 @@ function emitRouteHtmlPlugin() {
   }
 }
 
+const deployBase = normalizedBasePath(process.env.VITE_DEPLOY_BASE)
+
 export default defineConfig({
-  plugins: [react(), emitRouteHtmlPlugin()],
+  base: deployBase,
+  plugins: [react(), rebasePublicAssetReferences(deployBase), emitRouteHtmlPlugin()],
   server: {
     host: '127.0.0.1',
     strictPort: true,

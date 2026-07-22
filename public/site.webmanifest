@@ -10,7 +10,7 @@
   "theme_color": "#081a32",
   "icons": [
     {
-      "src": "/assets/favicon.png",
+      "src": "assets/favicon.png",
       "sizes": "100x100",
       "type": "image/png",
       "purpose": "any"

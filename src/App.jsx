@@ -27,6 +27,7 @@ import productDetailManifest from './productDetailManifest.json'
 import { catalogVersion } from './catalog.js'
 import routeMetadata from './routeMetadata.json'
 import { isProductPath, productFromPath, productPath, productSlug } from './productRoutes.js'
+import { appPath, canonicalPath } from './appPath.js'
 import { postToSiteService, safeServiceMessage, siteServices } from './siteServices.js'
 import useDialogFocus from './useDialogFocus.js'
 
@@ -162,7 +163,7 @@ function updateStructuredData(schema) {
   script.textContent = JSON.stringify(schema).replaceAll('<', '\\u003c')
 }
 
-const routePaths = {
+const routePaths = Object.fromEntries(Object.entries({
   home: '/',
   shop: '/shop/',
   about: '/about-us/',
@@ -188,7 +189,7 @@ const routePaths = {
   refundPolicy: '/refund-policy/',
   privacyPolicy: '/privacy-policy/',
   terms: '/terms-and-conditions/',
-}
+}).map(([route, path]) => [route, appPath(path)]))
 
 const navRouteByLabel = {
   'Why Us?': 'about',
@@ -1063,14 +1064,14 @@ export default function App() {
       ? productPath(selectedProduct)
       : routePaths[route] || routePaths.home
     const metadata = route === 'product' && selectedProduct
-      ? productMetadata?.[expectedPath] || {
+      ? productMetadata?.[canonicalPath(expectedPath)] || {
           path: expectedPath,
           title: productDocumentTitle(selectedProduct),
           description: `${selectedProduct.name} research product information and batch testing from Pure Health Peptides.`,
           kind: 'product',
           indexable: true,
         }
-      : routeMetadata[expectedPath] || routeMetadata[routePaths.home]
+      : routeMetadata[canonicalPath(expectedPath)] || routeMetadata['/']
     const normalizePath = (path) => path === '/' ? '/' : `${path.replace(/\/+$/, '')}/`
     const knownRoute = route === 'product'
       ? Boolean(selectedProduct)
@@ -1083,8 +1084,8 @@ export default function App() {
       : metadata.description
     const configuredOrigin = import.meta.env.VITE_SITE_URL?.trim().replace(/\/$/, '')
     const origin = configuredOrigin || window.location.origin
-    const canonicalPath = knownRoute ? metadata.path : route === 'product' ? window.location.pathname : routePaths.home
-    const canonicalUrl = `${origin}${canonicalPath}`
+    const metadataPath = knownRoute ? metadata.path : route === 'product' ? window.location.pathname : routePaths.home
+    const canonicalUrl = `${origin}${metadataPath}`
     const socialImage = metadata.image || `${origin}/assets/hero-vials.png`
     const socialImageAlt = metadata.imageAlt || `${title} — Pure Health Peptides`
     const socialImageType = metadata.imageType || (socialImage.toLocaleLowerCase().endsWith('.png') ? 'image/png' : socialImage.toLocaleLowerCase().endsWith('.webp') ? 'image/webp' : 'image/jpeg')

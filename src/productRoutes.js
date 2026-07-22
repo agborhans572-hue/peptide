@@ -1,4 +1,5 @@
 import { shopProducts } from './catalog.js'
+import { appPath, canonicalPath } from './appPath.js'
 
 const PRODUCT_PATH_PATTERN = /^\/product\/([^/?#]+)\/?$/i
 
@@ -61,15 +62,15 @@ for (const product of shopProducts) {
 export function productPath(product) {
   const slug = productSlug(product)
   if (!slug) throw new TypeError('A product with a canonical productUrl is required.')
-  return `/product/${slug}/`
+  return appPath(`/product/${slug}/`)
 }
 
 export function isProductPath(pathname) {
-  return PRODUCT_PATH_PATTERN.test(pathnameFrom(pathname))
+  return PRODUCT_PATH_PATTERN.test(canonicalPath(pathnameFrom(pathname)))
 }
 
 export function productFromPath(pathname) {
-  const match = pathnameFrom(pathname).match(PRODUCT_PATH_PATTERN)
+  const match = canonicalPath(pathnameFrom(pathname)).match(PRODUCT_PATH_PATTERN)
   if (!match) return null
   return productByNormalizedSlug.get(normalizedSlugKey(match[1])) || null
 }
