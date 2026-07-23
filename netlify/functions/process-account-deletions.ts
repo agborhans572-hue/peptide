@@ -25,7 +25,7 @@ export const handler: Handler = async (event) => {
       .eq('legal_hold', false)
       .lte('eligible_at', new Date().toISOString())
       .order('eligible_at', { ascending: true })
-      .limit(50)
+      .limit(5)
     if (error) throw error
 
     const results = { completed: 0, deferred: 0, skipped: 0 }

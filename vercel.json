@@ -6,9 +6,6 @@
   "functions": {
     "api/**/*.ts": {
       "maxDuration": 30
-    },
-    "api/cron/process-account-deletions.ts": {
-      "maxDuration": 300
     }
   },
   "headers": [

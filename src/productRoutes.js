@@ -8,7 +8,7 @@ function pathnameFrom(value) {
   if (!input) return ''
 
   try {
-    return new URL(input, 'https://purehealthpeptides.com').pathname
+    return new URL(input, 'https://purehealthpepetidesshop.com').pathname
   } catch {
     return input.split(/[?#]/, 1)[0]
   }

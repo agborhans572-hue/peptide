@@ -2,7 +2,7 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import { dirname, resolve } from 'node:path'
-import { productionRoutes } from './scripts/site-routes.mjs'
+import { productionRoutes, SITE_ORIGIN } from './scripts/site-routes.mjs'
 
 function normalizedBasePath(value) {
   if (!value) return '/'
@@ -36,8 +36,8 @@ function jsonForHtml(value) {
 }
 
 function routeHtml(source, route) {
-  const canonicalUrl = new URL(route.path, 'https://purehealthpeptides.com').href
-  const socialImage = route.image || 'https://purehealthpeptides.com/assets/hero-vials.png'
+  const canonicalUrl = new URL(route.path, SITE_ORIGIN).href
+  const socialImage = route.image || `${SITE_ORIGIN}/assets/hero-vials.png`
   const imageType = route.imageType || (/\.png(?:$|\?)/i.test(socialImage) ? 'image/png' : /\.webp(?:$|\?)/i.test(socialImage) ? 'image/webp' : 'image/jpeg')
   const robots = route.indexable
     ? 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'

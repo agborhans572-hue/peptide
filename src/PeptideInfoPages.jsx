@@ -99,7 +99,7 @@ export function CoaProcessPage({ onNavigate }) {
         </div>
         <p className="testing-caption">Every batch. Every product. Published in the COA Library, retrievable by batch ID.</p>
         <div className="info-button-row">
-          <InfoButton href="https://purehealthpeptides.com/coa-library/">VIEW COA LIBRARY</InfoButton>
+          <InfoButton href="/coa-library/">VIEW COA LIBRARY</InfoButton>
           <InfoButton outline onClick={() => onNavigate('manufacturing')}>READ MANUFACTURING PROCESS</InfoButton>
         </div>
       </section>
@@ -162,7 +162,7 @@ export function CoaProcessPage({ onNavigate }) {
         <p>For verifiable batch-level proof of testing for any specific product you have received, search for your batch ID in the COA Library.</p>
         <div className="info-button-row">
           <InfoButton onClick={() => onNavigate('manufacturing')}>VIEW MANUFACTURING PROCESS</InfoButton>
-          <InfoButton outline href="https://purehealthpeptides.com/coa-library/">VIEW COA LIBRARY</InfoButton>
+          <InfoButton outline href="/coa-library/">VIEW COA LIBRARY</InfoButton>
         </div>
       </section>
     </div>
@@ -187,7 +187,7 @@ export function ManufacturingPage({ onNavigate }) {
         {manufacturingTesting.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
         <div className="info-button-row">
           <InfoButton onClick={() => onNavigate('testing')}>VIEW TESTING PROCESS</InfoButton>
-          <InfoButton outline href="https://purehealthpeptides.com/coa-library/">VIEW COA LIBRARY</InfoButton>
+          <InfoButton outline href="/coa-library/">VIEW COA LIBRARY</InfoButton>
         </div>
       </section>
     </div>
@@ -262,7 +262,7 @@ export function DilutionGuidePage() {
         <DilutionSection title="How to Use the Dilution Table">
           <p>The dilution table below provides guidance on the recommended starting diluent for each peptide:</p>
           <ul className="dilution-key-list">
-            <li><strong>BAC</strong><span><a href="https://purehealthpeptides.com/product/bacteriostatic-water/">Bacteriostatic water</a> is preferred for routine reconstitution.</span></li>
+            <li><strong>BAC</strong><span><a href="/product/bacteriostatic-water/">Bacteriostatic water</a> is preferred for routine reconstitution.</span></li>
             <li><strong>BAC*</strong><span>Bacteriostatic water is preferred, but the compound may show solubility variability or sensitivity depending on batch consistency or handling. Additional care is recommended.</span></li>
             <li><strong>Acetic Acid</strong><span>Acetic acid is commonly preferred for initial reconstitution due to known solubility or stability characteristics.</span></li>
           </ul>

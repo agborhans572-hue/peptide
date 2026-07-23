@@ -53,8 +53,8 @@
 
 [context.production.environment]
   APP_ENV = "production"
-  SITE_URL = "https://purehealthpeptides.com"
-  VITE_SITE_URL = "https://purehealthpeptides.com"
+  SITE_URL = "https://purehealthpepetidesshop.com"
+  VITE_SITE_URL = "https://purehealthpepetidesshop.com"
   VITE_GOOGLE_AUTH_ENABLED = "false"
   VITE_ACCOUNT_DELETION_ENDPOINT = "/api/account/delete-request"
   VITE_CHECKOUT_ENDPOINT = "/api/checkout"

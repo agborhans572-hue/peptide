@@ -53,7 +53,7 @@ Never add a secret as `VITE_*`: Vite embeds those values in the browser bundle. 
 - A same-domain cutover must preserve or origin-route `/wp-content/uploads/` before the SPA fallback: the COA library currently links to 640 existing PDF URLs under that path. Preserve the live `/disclaimer/` and `/waiver-agreement-policy/` pages referenced by the footer. Shipping, refund, privacy, and terms pages are emitted by this application.
 - Apply the policies in `_headers`. Hosts that do not consume this portable headers format must map the same headers in their dashboard, CDN, or web-server configuration.
 - Keep HTML revalidated, cache `/_app/` for one year because those files are content-hashed, and cache the stable `/assets/` paths for no more than the included seven-day window.
-- Redirect the non-canonical hostname to `https://purehealthpeptides.com` and issue a valid TLS certificate before enabling traffic.
+- Redirect the non-canonical hostname to `https://purehealthpepetidesshop.com` and issue a valid TLS certificate before enabling traffic.
 
 ## Release checks
 
@@ -77,7 +77,7 @@ Keep these endpoints same-origin under the included Content Security Policy and 
 
 ## Customer authentication
 
-In production Supabase, set the Site URL to `https://purehealthpeptides.com` and allow only `/auth/callback/` and `/auth/reset-password/` on that origin. Enable confirmed email signup, double-confirmed email changes, secure password changes, custom SMTP with link tracking disabled, one-hour link expiry, a 60-second resend interval, and a 12-character minimum password.
+In production Supabase, set the Site URL to `https://purehealthpepetidesshop.com` and allow only `/auth/callback/` and `/auth/reset-password/` on that origin. Enable confirmed email signup, double-confirmed email changes, secure password changes, custom SMTP with link tracking disabled, one-hour link expiry, a 60-second resend interval, and a 12-character minimum password.
 
 Enable Cloudflare Turnstile and keep sign-in/sign-up and token-verification limits at 30 per five minutes per IP. On Supabase Pro, configure 15-minute JWTs, refresh-token rotation, a 12-hour inactivity timeout, and a seven-day session time-box. Google remains disabled unless its credentials and callbacks are staging-tested.
 

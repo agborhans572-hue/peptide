@@ -2,7 +2,7 @@ import { readFileSync } from 'node:fs'
 const catalog = JSON.parse(readFileSync(new URL('../catalog/catalog.generated.json', import.meta.url), 'utf8'))
 const shopProducts = catalog.products
 
-export const SITE_ORIGIN = 'https://purehealthpeptides.com'
+export const SITE_ORIGIN = 'https://purehealthpepetidesshop.com'
 
 const productDetails = JSON.parse(
   readFileSync(new URL('../src/productDetailData.json', import.meta.url), 'utf8'),
