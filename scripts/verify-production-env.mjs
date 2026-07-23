@@ -25,7 +25,7 @@ for (const name of required) {
 if (!process.env.STRIPE_SECRET_KEY?.startsWith('sk_live_')) errors.push('STRIPE_SECRET_KEY must be a live key')
 if (!process.env.STRIPE_WEBHOOK_SECRET?.startsWith('whsec_')) errors.push('STRIPE_WEBHOOK_SECRET must be a webhook signing secret')
 if (!process.env.SITE_URL?.startsWith('https://')) errors.push('SITE_URL must use HTTPS')
-if (process.env.SITE_URL !== 'https://purehealthpepetidesshop.com') {
+if (process.env.SITE_URL !== 'https://purehealthpeptidesshop.com') {
   errors.push('SITE_URL must be the canonical production origin')
 }
 if (process.env.VITE_SITE_URL !== process.env.SITE_URL) {

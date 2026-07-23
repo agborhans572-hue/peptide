@@ -3,7 +3,7 @@ import { readFileSync } from 'node:fs'
 import { existsSync } from 'node:fs'
 import { resolve } from 'node:path'
 
-export const SITE_ORIGIN = 'https://purehealthpepetidesshop.com'
+export const SITE_ORIGIN = 'https://purehealthpeptidesshop.com'
 export const SHIPPING_RESTRICTIONS = Object.freeze({
   US_DOMESTIC_ONLY: 'Ships only to addresses in the United States.',
   NO_PO_BOX: 'Cannot be shipped to a P.O. box.',

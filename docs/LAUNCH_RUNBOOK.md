@@ -43,7 +43,7 @@ order by schemaname, tablename, policyname;
 
 ## Customer authentication
 
-1. Set the Auth Site URL to `https://purehealthpepetidesshop.com` and allow only the exact callback and password-reset routes.
+1. Set the Auth Site URL to `https://purehealthpeptidesshop.com` and allow only the exact callback and password-reset routes.
 2. Enable confirmed email signup, double-confirmed email changes, secure password changes, one-hour link expiry, 60-second resend frequency, and a 12-character password minimum.
 3. Configure custom SMTP, disable link tracking, and test verification, recovery, email-change, expired-link, and already-used-link paths.
 4. Enable Cloudflare Turnstile and keep sign-in/sign-up and token-verification limits at 30 requests per five minutes per IP.
@@ -54,7 +54,7 @@ order by schemaname, tablename, policyname;
 ## Stripe live configuration
 
 1. Put `STRIPE_SECRET_KEY=sk_live_...` only in the production server environment.
-2. Register `https://purehealthpepetidesshop.com/api/stripe-webhook` in Stripe Workbench.
+2. Register `https://purehealthpeptidesshop.com/api/stripe-webhook` in Stripe Workbench.
 3. Subscribe to `checkout.session.completed`, `checkout.session.async_payment_succeeded`, `payment_intent.payment_failed`, and `charge.refunded`.
 4. Put that endpoint's `whsec_...` value in `STRIPE_WEBHOOK_SECRET`.
 5. Confirm Stripe's business profile, statement descriptor, support contacts, terms URL, privacy URL, refund policy, and payout bank account.

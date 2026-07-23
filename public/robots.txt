@@ -6,4 +6,4 @@ Disallow: /track-my-order/
 Disallow: /checkout/
 Disallow: /order-confirmation/
 
-Sitemap: https://purehealthpepetidesshop.com/sitemap.xml
+Sitemap: https://purehealthpeptidesshop.com/sitemap.xml
