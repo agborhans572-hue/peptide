@@ -27,6 +27,7 @@ In **Project → Settings → Environment Variables**, add these values for the 
 | `SITE_URL` | Your final `https://` production domain | No |
 | `SUPABASE_URL` | Supabase Project Settings → API → Project URL | No |
 | `SUPABASE_SERVICE_ROLE_KEY` | Supabase server-side secret/service-role key | Yes |
+| `CRON_SECRET` | At least 32 random characters for the deletion processor | Yes |
 | `STRIPE_SECRET_KEY` | Stripe live secret key | Yes |
 | `STRIPE_WEBHOOK_SECRET` | Stripe endpoint signing secret | Yes |
 | `WOOCOMMERCE_URL` | WooCommerce store URL | No |
@@ -34,6 +35,11 @@ In **Project → Settings → Environment Variables**, add these values for the 
 | `WC_CONSUMER_SECRET` | WooCommerce REST API secret | Yes |
 | `MONITORING_WEBHOOK_URL` | Monitoring provider webhook, if used | Yes |
 | `VITE_SITE_URL` | Same final `https://` production domain | No |
+| `VITE_SUPABASE_URL` | Same project URL as `SUPABASE_URL` | No |
+| `VITE_SUPABASE_PUBLISHABLE_KEY` | Supabase browser publishable key | No |
+| `VITE_TURNSTILE_SITE_KEY` | Cloudflare Turnstile public site key | No |
+| `VITE_GOOGLE_AUTH_ENABLED` | `false` unless Google is configured and tested | No |
+| `VITE_ACCOUNT_DELETION_ENDPOINT` | `/api/account/delete-request` | No |
 | `VITE_CHECKOUT_ENDPOINT` | `/api/checkout` | No |
 | `VITE_ORDER_TRACKING_ENDPOINT` | `/api/orders/track` | No |
 | `VITE_BUILD_SOURCEMAP` | `false` | No |
@@ -61,13 +67,21 @@ Never add a secret as `VITE_*`: Vite embeds those values in the browser bundle. 
 
 The repository includes Vercel serverless adapters for server-priced Stripe Checkout, signed/idempotent Stripe webhooks, Supabase orders, and protected order lookup. Apply the Supabase migration and configure the server-only secrets documented in `.env.production.example` before enabling checkout. Public endpoint variables are configured at build time:
 
-- `VITE_ACCOUNT_PORTAL_URL` redirects login, OTP, and registration actions to an approved account portal.
+- `VITE_ACCOUNT_DELETION_ENDPOINT` accepts a recent authenticated deletion request and immediately disables protected access.
 - `VITE_CHECKOUT_ENDPOINT` accepts `POST { catalogVersion, items: [{ productId, variantId, quantity }] }` and returns a Stripe-hosted `checkoutUrl`. The included function ignores all browser prices/SKUs/totals, recalculates from the reviewed snapshot, and revalidates price, publication, visibility, and stock against authenticated WooCommerce immediately before creating Stripe Checkout. A stale cart receives HTTP 409; WooCommerce failure is closed with HTTP 503.
 - `VITE_CONTACT_ENDPOINT` accepts the contact form fields as JSON.
 - `VITE_NEWSLETTER_ENDPOINT` accepts `POST { email }`.
 - `VITE_ORDER_TRACKING_ENDPOINT` accepts `POST { orderid, order_email }` and may return a user-safe `message` or `status`.
 
-Keep these endpoints same-origin under the included Content Security Policy and never put secrets in `VITE_*` variables. WooCommerce REST credentials, Supabase service-role credentials, and Stripe keys are server-only. Apply both migrations so order items preserve immutable product/variant/SKU/price/logistics snapshots. Fulfillment operations, transactional email, analytics/consent, production monitoring, backups, admin MFA, and live payment/refund verification still require account-level setup and operational ownership.
+Keep these endpoints same-origin under the included Content Security Policy and never put secrets in `VITE_*` variables. WooCommerce REST credentials, Supabase service-role credentials, and Stripe keys are server-only. Apply all migrations so customer ownership and order snapshots are preserved. Fulfillment operations, transactional email, analytics/consent, production monitoring, backups, admin MFA, and live payment/refund verification still require account-level setup and operational ownership.
+
+## Customer authentication
+
+In production Supabase, set the Site URL to `https://purehealthpeptides.com` and allow only `/auth/callback/` and `/auth/reset-password/` on that origin. Enable confirmed email signup, double-confirmed email changes, secure password changes, custom SMTP with link tracking disabled, one-hour link expiry, a 60-second resend interval, and a 12-character minimum password.
+
+Enable Cloudflare Turnstile and keep sign-in/sign-up and token-verification limits at 30 per five minutes per IP. On Supabase Pro, configure 15-minute JWTs, refresh-token rotation, a 12-hour inactivity timeout, and a seven-day session time-box. Google remains disabled unless its credentials and callbacks are staging-tested.
+
+Vercel invokes `/api/cron/process-account-deletions` daily with `CRON_SECRET`. A request disables protected access immediately; processing waits 30 days, defers active orders and legal holds, anonymizes retained financial orders, and removes the Auth user.
 
 See `docs/LAUNCH_RUNBOOK.md` for database migration verification, Stripe webhook registration, live payment/refund evidence, backups, MFA, HTTPS, monitoring, legal approval, and rollback.
 

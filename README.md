@@ -1,6 +1,6 @@
 # Pure Health Peptides rebuild
 
-A production-optimized React/Vite storefront for Pure Health Peptides. It includes the 115-product catalog, server-priced Stripe Checkout, Supabase order persistence, verified/idempotent payment webhooks, protected order tracking, legal pages, and the original content experience.
+A production-optimized React/Vite storefront for Pure Health Peptides. It includes the 115-product catalog, verified Supabase customer accounts, server-priced Stripe Checkout, Supabase order persistence, verified/idempotent payment webhooks, protected order tracking, legal pages, and the original content experience.
 
 ## Local development
 
@@ -23,10 +23,10 @@ npm run release:check
 
 `npm run build` regenerates the reviewed server catalog, responsive/social product images, sitemap/robots files, and route-specific HTML shells. `npm run check` runs catalog validation, strict TypeScript, zero-warning ESLint, server-pricing tests, the production build, and a client-secret scan. `release:check` also audits dependencies and smoke-tests the built artifact in Chrome across desktop and mobile routes.
 
-Use `.env.example` locally and configure production values from `.env.production.example` in the host's encrypted secret store. All `VITE_*` values are public browser configuration and must never contain secrets. Apply both Supabase migrations in timestamp order before enabling checkout. See `catalog/README.md` for the authenticated WooCommerce review and logistics approval workflow.
+Use `.env.example` locally and configure production values from `.env.production.example` in the host's encrypted secret store. All `VITE_*` values are public browser configuration and must never contain secrets. Apply all Supabase migrations in timestamp order before enabling accounts or checkout. Configure Turnstile, email confirmation, custom SMTP, exact production redirects, rate limits, and session limits as described in `supabase/README.md`.
 
 See [DEPLOYMENT.md](./DEPLOYMENT.md) for hosting rules, service endpoint contracts, the legacy COA/legal-route cutover requirement, and the complete release checklist.
 
 ## Vercel
 
-Import this GitHub repository in Vercel and leave the detected Vite settings in place. The committed `vercel.json` builds `dist/` and serves checkout, webhook, order-tracking, and client-error endpoints from `/api/`. Add the production variables listed in `.env.production.example` under **Settings → Environment Variables**; mark service, Stripe, WooCommerce, and monitoring values as sensitive. Do not add `SUPABASE_SERVICE_ROLE_KEY` with a `VITE_` prefix.
+Import this GitHub repository in Vercel and leave the detected Vite settings in place. The committed `vercel.json` builds `dist/`, serves the account, checkout, webhook, order-tracking, and client-error endpoints, and runs the daily account-deletion cron. Add the production variables listed in `.env.production.example`; mark service, cron, Stripe, WooCommerce, and monitoring values as sensitive.

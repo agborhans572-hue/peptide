@@ -18,7 +18,9 @@ import {
 import Catalog from './Catalog.jsx'
 import ShopPage from './ShopPage.jsx'
 import { AboutPage, ElitePage, NewsPage, ResearchAreasPage } from './AboutPages.jsx'
-import { AccountPage, ContactPage, FaqPage, TrackOrderPage } from './SupportPages.jsx'
+import { ContactPage, FaqPage, TrackOrderPage } from './SupportPages.jsx'
+import { AccountPage, AuthCallbackPage, AuthErrorPage, ResetPasswordPage } from './AccountPages.jsx'
+import { useAuth } from './AuthContext.jsx'
 import { CoaProcessPage, DilutionGuidePage, ManufacturingPage, ProductInfoPage } from './PeptideInfoPages.jsx'
 import { CoaCategoryPage, CoaLibraryPage } from './CoaLibraryPages.jsx'
 import { CheckoutPage, OrderConfirmationPage } from './CheckoutPage.jsx'
@@ -171,6 +173,9 @@ const routePaths = Object.fromEntries(Object.entries({
   news: '/news/',
   elite: '/pure-elite-access/',
   account: '/my-account/',
+  authCallback: '/auth/callback/',
+  authReset: '/auth/reset-password/',
+  authError: '/auth/error/',
   track: '/track-my-order/',
   faqs: '/faqs/',
   contact: '/contact-us/',
@@ -1017,6 +1022,7 @@ function currentRoute() {
 }
 
 export default function App() {
+  const { session } = useAuth()
   const [route, setRoute] = useState(currentRoute)
   const [menuOpen, setMenuOpen] = useState(false)
   const [searchOpen, setSearchOpen] = useState(false)
@@ -1242,7 +1248,7 @@ export default function App() {
           variantId: item.variantId,
           quantity: item.quantity,
         })),
-      })
+      }, { accessToken: session?.access_token })
     } catch (error) {
       if (error?.status === 409 || error?.code === 'catalog_changed') {
         setCartItems([])
@@ -1322,6 +1328,9 @@ export default function App() {
     if (route === 'news') return <><NewsPage onShop={requestShop} /><Newsletter /></>
     if (route === 'elite') return <><ElitePage onShop={requestShop} onNavigate={navigate} /><Newsletter /></>
     if (route === 'account') return <AccountPage />
+    if (route === 'authCallback') return <AuthCallbackPage />
+    if (route === 'authReset') return <ResetPasswordPage />
+    if (route === 'authError') return <AuthErrorPage />
     if (route === 'track') return <TrackOrderPage />
     if (route === 'faqs') return <FaqPage />
     if (route === 'contact') return <><ContactPage /><Newsletter /></>

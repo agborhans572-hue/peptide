@@ -3,14 +3,14 @@ function environmentValue(value) {
 }
 
 export const siteServices = Object.freeze({
-  accountPortalUrl: environmentValue(import.meta.env.VITE_ACCOUNT_PORTAL_URL),
+  accountDeletionEndpoint: environmentValue(import.meta.env.VITE_ACCOUNT_DELETION_ENDPOINT),
   checkoutEndpoint: environmentValue(import.meta.env.VITE_CHECKOUT_ENDPOINT),
   contactEndpoint: environmentValue(import.meta.env.VITE_CONTACT_ENDPOINT),
   newsletterEndpoint: environmentValue(import.meta.env.VITE_NEWSLETTER_ENDPOINT),
   orderTrackingEndpoint: environmentValue(import.meta.env.VITE_ORDER_TRACKING_ENDPOINT),
 })
 
-export async function postToSiteService(endpoint, payload) {
+export async function postToSiteService(endpoint, payload, options = {}) {
   if (!endpoint) throw new Error('This service is not configured.')
 
   const controller = new AbortController()
@@ -22,6 +22,7 @@ export async function postToSiteService(endpoint, payload) {
       headers: {
         Accept: 'application/json',
         'Content-Type': 'application/json',
+        ...(options.accessToken ? { Authorization: `Bearer ${options.accessToken}` } : {}),
       },
       body: JSON.stringify(payload),
       credentials: 'same-origin',

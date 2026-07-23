@@ -6,7 +6,7 @@ const baseUrl = 'http://127.0.0.1:4173'
 const chrome = 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe'
 const output = new URL('../preview/support-qa/', import.meta.url)
 const pages = [
-  ['my-account', 'Login'],
+  ['my-account', 'Customer'],
   ['track-my-order', 'Track Order'],
   ['faqs', 'frequently asked questions'],
   ['contact-us', 'Send us a message'],
@@ -26,7 +26,11 @@ const consoleErrors = []
 async function capture(slug, expectedHeading, viewport) {
   const page = await browser.newPage()
   page.on('console', (message) => {
-    if (message.type() === 'error') consoleErrors.push(`${slug}/${viewport.label}: ${message.text()}`)
+    const source = message.location().url || ''
+    const localVercelTelemetry = source.includes('/_vercel/insights/') || source.includes('/_vercel/speed-insights/')
+    if (message.type() === 'error' && !localVercelTelemetry) {
+      consoleErrors.push(`${slug}/${viewport.label}: ${message.text()}${source ? ` (${source})` : ''}`)
+    }
   })
   await page.setViewport({ width: viewport.width, height: viewport.height, deviceScaleFactor: 1 })
   await page.goto(`${baseUrl}/${slug}/`, { waitUntil: 'networkidle0', timeout: 30_000 })
@@ -60,10 +64,19 @@ async function capture(slug, expectedHeading, viewport) {
   results.push({ slug, viewport: viewport.label, ...metrics, screenshot: screenshotPath })
 
   if (slug === 'my-account') {
-    await page.type('input[name="username"]', 'researcher@example.com')
-    await page.click('.account-login-actions button:first-child')
-    const status = await page.$eval('.support-form-status', (node) => node.textContent)
-    if (!status.includes('OTP')) throw new Error(`${slug}/${viewport.label}: OTP status not shown`)
+    const configured = Boolean(await page.$('input[name="password"]'))
+    if (configured) {
+      const accountState = await page.evaluate(() => ({
+        captchaCount: document.querySelectorAll('.account-turnstile').length,
+        emailFields: document.querySelectorAll('input[type="email"]').length,
+        minimumPasswordLength: Number(document.querySelector('.account-registration-card input[name="password"]')?.minLength || 0),
+      }))
+      if (accountState.captchaCount < 2) throw new Error(`${slug}/${viewport.label}: auth CAPTCHA controls missing`)
+      if (accountState.emailFields < 2) throw new Error(`${slug}/${viewport.label}: login and registration email fields missing`)
+      if (accountState.minimumPasswordLength !== 12) throw new Error(`${slug}/${viewport.label}: password minimum is not 12`)
+    } else if (!metrics.heading.includes('setup required')) {
+      throw new Error(`${slug}/${viewport.label}: account configuration state is unclear`)
+    }
   }
   if (slug === 'track-my-order') {
     await page.type('input[name="orderid"]', 'PHP-10001')

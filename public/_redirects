@@ -5,6 +5,8 @@
 /api/orders/track /.netlify/functions/order-track 200
 /api/orders/status /.netlify/functions/order-status 200
 /api/client-error /.netlify/functions/client-error 200
+/api/account/delete-request /.netlify/functions/account-delete 200
+/api/cron/process-account-deletions /.netlify/functions/process-account-deletions 200
 /product-form/vials/ /shop/ 301
 /product-form/vials/* /shop/ 301
 /product-form/capsules/ /shop/ 301

@@ -207,7 +207,25 @@ const staticRoutes = [
   {
     path: '/my-account/',
     title: 'My Account | Pure Health Peptides',
-    description: 'Access the Pure Health Peptides account area.',
+    description: 'Securely access your Pure Health Peptides profile, address, orders, and account settings.',
+    indexable: false,
+  },
+  {
+    path: '/auth/callback/',
+    title: 'Verifying Account | Pure Health Peptides',
+    description: 'Complete a secure Pure Health Peptides account verification or sign-in.',
+    indexable: false,
+  },
+  {
+    path: '/auth/reset-password/',
+    title: 'Reset Password | Pure Health Peptides',
+    description: 'Complete a secure Pure Health Peptides customer password reset.',
+    indexable: false,
+  },
+  {
+    path: '/auth/error/',
+    title: 'Account Link Error | Pure Health Peptides',
+    description: 'Request a new Pure Health Peptides account verification or recovery link.',
     indexable: false,
   },
   {

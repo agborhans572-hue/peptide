@@ -2,6 +2,7 @@ import type { Handler } from '@netlify/functions'
 import type Stripe from 'stripe'
 import { z } from 'zod'
 import { catalogVersion, priceCart } from '../../server/pricing.ts'
+import { optionalActiveCustomer } from './_shared/customer-auth.ts'
 import { clientFingerprint, errorResponse, HttpError, json, parseJson, requireSameOrigin } from './_shared/http.ts'
 import { reportOperationalError } from './_shared/monitor.ts'
 import { fingerprint, services } from './_shared/services.ts'
@@ -23,6 +24,7 @@ export const handler: Handler = async (event) => {
     const { env, stripe, supabase } = services()
     monitoringWebhook = env.MONITORING_WEBHOOK_URL
     requireSameOrigin(event, env.SITE_URL)
+    const customer = await optionalActiveCustomer(event, supabase)
 
     const { data: allowed, error: rateError } = await supabase.rpc('consume_rate_limit', {
       p_scope: 'checkout',
@@ -45,6 +47,7 @@ export const handler: Handler = async (event) => {
       p_shipping_cents: cart.shippingCents,
       p_total_cents: cart.totalCents,
       p_items: cart.items,
+      p_user_id: customer?.user.id || null,
     }).single()
     const pendingOrder = pendingOrderData as { id: string, order_number: string } | null
     if (orderError || !pendingOrder) throw orderError || new Error('Order creation failed.')
@@ -81,6 +84,7 @@ export const handler: Handler = async (event) => {
         billing_address_collection: 'required',
         shipping_address_collection: { allowed_countries: ['US'] },
         phone_number_collection: { enabled: true },
+        ...(customer?.user.email ? { customer_email: customer.user.email } : {}),
         customer_creation: 'always',
         consent_collection: { terms_of_service: 'required' },
         custom_text: {

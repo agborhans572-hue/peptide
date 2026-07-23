@@ -29,3 +29,7 @@ export function webhookEnv() {
     STRIPE_WEBHOOK_SECRET: z.string().regex(/^whsec_/),
   }).parse(process.env)
 }
+
+export function cronSecret() {
+  return z.string().min(32).parse(process.env.CRON_SECRET)
+}

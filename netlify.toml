@@ -38,6 +38,16 @@
   to = "/.netlify/functions/client-error"
   status = 200
 
+[[redirects]]
+  from = "/api/account/delete-request"
+  to = "/.netlify/functions/account-delete"
+  status = 200
+
+[[redirects]]
+  from = "/api/cron/process-account-deletions"
+  to = "/.netlify/functions/process-account-deletions"
+  status = 200
+
 [context.production]
   command = "npm run deploy:build"
 
@@ -45,12 +55,16 @@
   APP_ENV = "production"
   SITE_URL = "https://purehealthpeptides.com"
   VITE_SITE_URL = "https://purehealthpeptides.com"
+  VITE_GOOGLE_AUTH_ENABLED = "false"
+  VITE_ACCOUNT_DELETION_ENDPOINT = "/api/account/delete-request"
   VITE_CHECKOUT_ENDPOINT = "/api/checkout"
   VITE_ORDER_TRACKING_ENDPOINT = "/api/orders/track"
   VITE_BUILD_SOURCEMAP = "false"
 
 [context.deploy-preview.environment]
   APP_ENV = "staging"
+  VITE_GOOGLE_AUTH_ENABLED = "false"
+  VITE_ACCOUNT_DELETION_ENDPOINT = "/api/account/delete-request"
   VITE_CHECKOUT_ENDPOINT = "/api/checkout"
   VITE_ORDER_TRACKING_ENDPOINT = "/api/orders/track"
   VITE_BUILD_SOURCEMAP = "false"

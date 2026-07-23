@@ -15,12 +15,15 @@ Updated July 20, 2026.
 - The order-document storage bucket is private and its policies require an authenticated admin role.
 - The service-role key, Stripe secret, and webhook secret are server-only; the production artifact secret scan passes.
 - Production deployment fails closed without live Stripe, Supabase, HTTPS site, webhook, and monitoring configuration.
+- Customer accounts use verified email, Turnstile, row-level order isolation, immediate suspension/deletion blocking, and a delayed deletion processor.
 - Additive rollback, database restore drill, alerting, MFA, and payment/refund procedures are documented in `LAUNCH_RUNBOOK.md`.
 
 ## Must be completed in production accounts
 
 - Create and verify separate development, staging, and production Supabase projects.
 - Link the production Supabase project and apply/verify migration `202607200001_launch_commerce.sql`.
+- Apply and verify `202607230001_customer_accounts.sql`, then run the customer-account pgTAP and staging authentication suites.
+- Configure custom SMTP, Turnstile, production redirect URLs, authentication rate limits, and Supabase Pro session limits.
 - Configure production Supabase and Stripe secrets in the deployment secret store.
 - Register and test the live Stripe webhook endpoint.
 - Enable Supabase backups/PITR and complete a restore drill.

@@ -29,6 +29,7 @@ ${sitemapEntries}
 const robots = `User-agent: *
 Allow: /
 Disallow: /my-account/
+Disallow: /auth/
 Disallow: /track-my-order/
 Disallow: /checkout/
 Disallow: /order-confirmation/

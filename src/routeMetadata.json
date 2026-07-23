@@ -568,7 +568,7 @@
   "/my-account/": {
     "path": "/my-account/",
     "title": "My Account | Pure Health Peptides",
-    "description": "Access the Pure Health Peptides account area.",
+    "description": "Securely access your Pure Health Peptides profile, address, orders, and account settings.",
     "kind": "page",
     "indexable": false,
     "image": "https://purehealthpeptides.com/assets/hero-vials.png",
@@ -603,7 +603,7 @@
           "@id": "https://purehealthpeptides.com/my-account/#webpage",
           "url": "https://purehealthpeptides.com/my-account/",
           "name": "My Account | Pure Health Peptides",
-          "description": "Access the Pure Health Peptides account area.",
+          "description": "Securely access your Pure Health Peptides profile, address, orders, and account settings.",
           "isPartOf": {
             "@id": "https://purehealthpeptides.com/#website"
           },
@@ -631,6 +631,222 @@
               "position": 2,
               "name": "My Account",
               "item": "https://purehealthpeptides.com/my-account/"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "/auth/callback/": {
+    "path": "/auth/callback/",
+    "title": "Verifying Account | Pure Health Peptides",
+    "description": "Complete a secure Pure Health Peptides account verification or sign-in.",
+    "kind": "page",
+    "indexable": false,
+    "image": "https://purehealthpeptides.com/assets/hero-vials.png",
+    "imageAlt": "Pure Health Peptides laboratory research materials",
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://purehealthpeptides.com/#organization",
+          "name": "Pure Health Peptides",
+          "url": "https://purehealthpeptides.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://purehealthpeptides.com/assets/logo.svg"
+          },
+          "email": "info@purehealthpeptides.com",
+          "description": "Supplier of independently batch-tested materials for controlled in vitro laboratory research."
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://purehealthpeptides.com/#website",
+          "url": "https://purehealthpeptides.com/",
+          "name": "Pure Health Peptides",
+          "publisher": {
+            "@id": "https://purehealthpeptides.com/#organization"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://purehealthpeptides.com/auth/callback/#webpage",
+          "url": "https://purehealthpeptides.com/auth/callback/",
+          "name": "Verifying Account | Pure Health Peptides",
+          "description": "Complete a secure Pure Health Peptides account verification or sign-in.",
+          "isPartOf": {
+            "@id": "https://purehealthpeptides.com/#website"
+          },
+          "about": {
+            "@id": "https://purehealthpeptides.com/#organization"
+          },
+          "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "url": "https://purehealthpeptides.com/assets/hero-vials.png"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://purehealthpeptides.com/auth/callback/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://purehealthpeptides.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Verifying Account",
+              "item": "https://purehealthpeptides.com/auth/callback/"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "/auth/reset-password/": {
+    "path": "/auth/reset-password/",
+    "title": "Reset Password | Pure Health Peptides",
+    "description": "Complete a secure Pure Health Peptides customer password reset.",
+    "kind": "page",
+    "indexable": false,
+    "image": "https://purehealthpeptides.com/assets/hero-vials.png",
+    "imageAlt": "Pure Health Peptides laboratory research materials",
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://purehealthpeptides.com/#organization",
+          "name": "Pure Health Peptides",
+          "url": "https://purehealthpeptides.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://purehealthpeptides.com/assets/logo.svg"
+          },
+          "email": "info@purehealthpeptides.com",
+          "description": "Supplier of independently batch-tested materials for controlled in vitro laboratory research."
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://purehealthpeptides.com/#website",
+          "url": "https://purehealthpeptides.com/",
+          "name": "Pure Health Peptides",
+          "publisher": {
+            "@id": "https://purehealthpeptides.com/#organization"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://purehealthpeptides.com/auth/reset-password/#webpage",
+          "url": "https://purehealthpeptides.com/auth/reset-password/",
+          "name": "Reset Password | Pure Health Peptides",
+          "description": "Complete a secure Pure Health Peptides customer password reset.",
+          "isPartOf": {
+            "@id": "https://purehealthpeptides.com/#website"
+          },
+          "about": {
+            "@id": "https://purehealthpeptides.com/#organization"
+          },
+          "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "url": "https://purehealthpeptides.com/assets/hero-vials.png"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://purehealthpeptides.com/auth/reset-password/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://purehealthpeptides.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Reset Password",
+              "item": "https://purehealthpeptides.com/auth/reset-password/"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "/auth/error/": {
+    "path": "/auth/error/",
+    "title": "Account Link Error | Pure Health Peptides",
+    "description": "Request a new Pure Health Peptides account verification or recovery link.",
+    "kind": "page",
+    "indexable": false,
+    "image": "https://purehealthpeptides.com/assets/hero-vials.png",
+    "imageAlt": "Pure Health Peptides laboratory research materials",
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://purehealthpeptides.com/#organization",
+          "name": "Pure Health Peptides",
+          "url": "https://purehealthpeptides.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://purehealthpeptides.com/assets/logo.svg"
+          },
+          "email": "info@purehealthpeptides.com",
+          "description": "Supplier of independently batch-tested materials for controlled in vitro laboratory research."
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://purehealthpeptides.com/#website",
+          "url": "https://purehealthpeptides.com/",
+          "name": "Pure Health Peptides",
+          "publisher": {
+            "@id": "https://purehealthpeptides.com/#organization"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://purehealthpeptides.com/auth/error/#webpage",
+          "url": "https://purehealthpeptides.com/auth/error/",
+          "name": "Account Link Error | Pure Health Peptides",
+          "description": "Request a new Pure Health Peptides account verification or recovery link.",
+          "isPartOf": {
+            "@id": "https://purehealthpeptides.com/#website"
+          },
+          "about": {
+            "@id": "https://purehealthpeptides.com/#organization"
+          },
+          "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "url": "https://purehealthpeptides.com/assets/hero-vials.png"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://purehealthpeptides.com/auth/error/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://purehealthpeptides.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Account Link Error",
+              "item": "https://purehealthpeptides.com/auth/error/"
             }
           ]
         }

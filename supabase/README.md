@@ -1,6 +1,6 @@
-# Supabase (remote-only)
+# Supabase authentication and database
 
-This project uses hosted Supabase only; Docker and the local Supabase stack are not required. `config.toml`, `migrations/`, and `tests/` remain committed so the remote database schema and policies are reproducible.
+Production uses hosted Supabase. The optional local stack is used for the pgTAP account-policy release test; `config.toml`, migrations, and tests remain committed so authentication settings and database policies are reproducible.
 
 Never commit service-role keys, access tokens, or Supabase CLI state. Those paths are listed in the repository `.gitignore`.
 
@@ -24,5 +24,15 @@ Server-side deployment secrets belong in the hosting provider’s encrypted envi
 
 - `SUPABASE_URL`
 - `SUPABASE_SERVICE_ROLE_KEY`
+- `CRON_SECRET`
 
-Do not place either key in a `VITE_*` variable. The browser does not use the Supabase service role.
+The browser uses only `VITE_SUPABASE_URL` and `VITE_SUPABASE_PUBLISHABLE_KEY`. Never expose the service role, Turnstile secret, or cron secret through a `VITE_*` variable.
+
+For local account-policy tests, set `SUPABASE_AUTH_TURNSTILE_SECRET`, start the local stack, and run:
+
+```bash
+supabase start
+npm run test:accounts:db
+```
+
+In every hosted project, mirror `config.toml`: enable email confirmation and double-confirmed email changes, set one-hour email-link expiry, 12-character passwords, Turnstile, 30 sign-in/sign-up and token-verification requests per five minutes per IP, 15-minute JWTs, a 12-hour inactivity timeout, and a seven-day session time-box. Production requires Supabase Pro for server-side session limits.

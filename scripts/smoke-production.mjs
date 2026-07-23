@@ -22,6 +22,7 @@ const routeSets = [
       '/refund-policy/',
       '/privacy-policy/',
       '/terms-and-conditions/',
+      '/my-account/',
       '/checkout/',
       '/order-confirmation/',
       '/info-cards/',
@@ -36,7 +37,7 @@ const routeSets = [
   },
   {
     viewport: { width: 390, height: 844 },
-    routes: ['/', '/shop/', '/checkout/', '/order-confirmation/', '/privacy-policy/', '/coa-library/', '/product/bpc-157/'],
+    routes: ['/', '/shop/', '/my-account/', '/checkout/', '/order-confirmation/', '/privacy-policy/', '/coa-library/', '/product/bpc-157/'],
   },
 ]
 
@@ -101,10 +102,16 @@ try {
     const failedRequests = []
     page.on('pageerror', (error) => runtimeErrors.push(error.message))
     page.on('console', (message) => {
-      if (message.type() === 'error') runtimeErrors.push(message.text())
+      const source = message.location().url || ''
+      const localVercelTelemetry = source.includes('/_vercel/insights/') || source.includes('/_vercel/speed-insights/')
+      if (message.type() === 'error' && !localVercelTelemetry) {
+        runtimeErrors.push(`${message.text()}${source ? ` (${source})` : ''}`)
+      }
     })
     page.on('requestfailed', (request) => {
-      if (request.url().startsWith(baseUrl)) {
+      const localTelemetry = request.url().includes('/_vercel/insights/')
+        || request.url().includes('/_vercel/speed-insights/')
+      if (request.url().startsWith(baseUrl) && !localTelemetry) {
         failedRequests.push(`${request.method()} ${request.url()} — ${request.failure()?.errorText || 'failed'}`)
       }
     })

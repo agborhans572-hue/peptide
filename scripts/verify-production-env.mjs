@@ -2,12 +2,19 @@ const required = [
   'SITE_URL',
   'SUPABASE_URL',
   'SUPABASE_SERVICE_ROLE_KEY',
+  'CRON_SECRET',
   'STRIPE_SECRET_KEY',
   'STRIPE_WEBHOOK_SECRET',
   'MONITORING_WEBHOOK_URL',
   'WOOCOMMERCE_URL',
   'WC_CONSUMER_KEY',
   'WC_CONSUMER_SECRET',
+  'VITE_SITE_URL',
+  'VITE_SUPABASE_URL',
+  'VITE_SUPABASE_PUBLISHABLE_KEY',
+  'VITE_TURNSTILE_SITE_KEY',
+  'VITE_GOOGLE_AUTH_ENABLED',
+  'VITE_ACCOUNT_DELETION_ENDPOINT',
 ]
 
 const errors = []
@@ -18,6 +25,22 @@ for (const name of required) {
 if (!process.env.STRIPE_SECRET_KEY?.startsWith('sk_live_')) errors.push('STRIPE_SECRET_KEY must be a live key')
 if (!process.env.STRIPE_WEBHOOK_SECRET?.startsWith('whsec_')) errors.push('STRIPE_WEBHOOK_SECRET must be a webhook signing secret')
 if (!process.env.SITE_URL?.startsWith('https://')) errors.push('SITE_URL must use HTTPS')
+if (process.env.SITE_URL !== 'https://purehealthpeptides.com') {
+  errors.push('SITE_URL must be the canonical production origin')
+}
+if (process.env.VITE_SITE_URL !== process.env.SITE_URL) {
+  errors.push('VITE_SITE_URL must match SITE_URL')
+}
+if (process.env.VITE_SUPABASE_URL !== process.env.SUPABASE_URL) {
+  errors.push('VITE_SUPABASE_URL must match SUPABASE_URL')
+}
+if (process.env.VITE_ACCOUNT_DELETION_ENDPOINT !== '/api/account/delete-request') {
+  errors.push('VITE_ACCOUNT_DELETION_ENDPOINT must use the same-origin production route')
+}
+if ((process.env.CRON_SECRET || '').length < 32) errors.push('CRON_SECRET must contain at least 32 characters')
+if (!['true', 'false'].includes(process.env.VITE_GOOGLE_AUTH_ENABLED || 'false')) {
+  errors.push('VITE_GOOGLE_AUTH_ENABLED must be true or false')
+}
 
 for (const [name, value] of Object.entries(process.env)) {
   if (!name.startsWith('VITE_')) continue

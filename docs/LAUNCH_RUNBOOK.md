@@ -21,7 +21,7 @@ supabase db push
 supabase migration list
 ```
 
-Do this from separate environment-specific working copies or relink deliberately and verify the project ref before every push. Production must show `202607200001_launch_commerce.sql` in both local and remote migration columns.
+Do this from separate environment-specific working copies or relink deliberately and verify the project ref before every push. Production must show all three committed migrations, including `202607230001_customer_accounts.sql`, in both local and remote migration columns. Run `npm run test:accounts:db` against the disposable local stack before applying the account migration.
 
 Run the following in the production SQL editor after deployment. The first query must return zero rows for every application table exposed through the public API; the bucket must be private; and no policy may grant `anon` order access.
 
@@ -40,6 +40,16 @@ from pg_policies
 where schemaname in ('public', 'storage')
 order by schemaname, tablename, policyname;
 ```
+
+## Customer authentication
+
+1. Set the Auth Site URL to `https://purehealthpeptides.com` and allow only the exact callback and password-reset routes.
+2. Enable confirmed email signup, double-confirmed email changes, secure password changes, one-hour link expiry, 60-second resend frequency, and a 12-character password minimum.
+3. Configure custom SMTP, disable link tracking, and test verification, recovery, email-change, expired-link, and already-used-link paths.
+4. Enable Cloudflare Turnstile and keep sign-in/sign-up and token-verification limits at 30 requests per five minutes per IP.
+5. Configure 15-minute JWTs, refresh-token rotation, a 12-hour inactivity timeout, and a seven-day session time-box.
+6. Leave Google disabled unless its credentials, callbacks, existing-email linking, and logout pass staging.
+7. Confirm Vercel has `CRON_SECRET`, invoke the deletion processor once with no eligible rows, and verify an unauthorized request receives 401.
 
 ## Stripe live configuration
 

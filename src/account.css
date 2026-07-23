@@ -1,0 +1,347 @@
+.account-page,
+.account-dashboard,
+.account-state-page {
+  min-height: 620px;
+  background: #f7fbfd;
+  color: #171f4a;
+  font-family: 'Poppins', sans-serif;
+}
+
+.account-layout {
+  display: grid;
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 64px 0 88px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  gap: 36px;
+}
+
+.account-layout h1,
+.account-dashboard h1,
+.account-state-page h1 {
+  margin: 0 0 24px;
+  color: #171f4a;
+  font-family: 'DuneRise', 'Poppins', sans-serif;
+  font-size: clamp(22px, 2.2vw, 31px);
+  font-weight: 400;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+
+.account-card,
+.account-dashboard-card {
+  padding: 28px;
+  border: 1px solid #c9dce6;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 14px 36px rgba(10, 43, 72, 0.06);
+}
+
+.account-card + .account-card {
+  margin-top: 20px;
+}
+
+.account-card h2,
+.account-dashboard-card h2 {
+  margin: 0 0 18px;
+  color: #171f4a;
+  font-size: 19px;
+}
+
+.account-card label,
+.account-dashboard-card label {
+  display: block;
+  margin-bottom: 15px;
+  color: #253052;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.account-card label span,
+.account-dashboard-card label span {
+  color: #bb2525;
+}
+
+.account-card input,
+.account-dashboard-card input {
+  width: 100%;
+  height: 44px;
+  margin-top: 7px;
+  padding: 0 12px;
+  border: 1px solid #9cb3c0;
+  border-radius: 7px;
+  background: #fff;
+  color: #171f4a;
+  font: inherit;
+}
+
+.account-card input:focus,
+.account-dashboard-card input:focus {
+  border-color: #239ed2;
+  outline: 3px solid rgba(35, 158, 210, 0.13);
+}
+
+.account-card input[readonly] {
+  background: #eef4f6;
+}
+
+.account-card > button,
+.account-dashboard-card > button,
+.account-logout {
+  display: inline-flex;
+  min-height: 43px;
+  padding: 10px 24px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 0;
+  border-radius: 999px;
+  background: #239ed2;
+  color: #fff;
+  font: 700 12px/1.2 'Poppins', sans-serif;
+  cursor: pointer;
+}
+
+.account-card > button:disabled,
+.account-dashboard-card > button:disabled {
+  cursor: wait;
+  opacity: 0.65;
+}
+
+.account-card .account-secondary-button {
+  margin-left: 10px;
+  border: 1px solid #171f4a;
+  background: #fff;
+  color: #171f4a;
+}
+
+.account-field-grid,
+.account-address-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.account-address-grid {
+  grid-template-columns: minmax(0, 2fr) repeat(2, minmax(100px, 1fr));
+}
+
+.account-text-actions {
+  display: flex;
+  margin-top: 18px;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+}
+
+.account-text-actions button {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: #147cab;
+  font: 600 12px/1.4 'Poppins', sans-serif;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.account-help,
+.account-dashboard-card > small {
+  display: block;
+  margin: -5px 0 18px;
+  color: #586779;
+  font-size: 12px;
+  line-height: 1.65;
+}
+
+.account-status {
+  margin: 18px 0 0;
+  padding: 11px 13px;
+  border-left: 3px solid #16855b;
+  background: #edf9f4;
+  color: #176344;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.account-status.is-error {
+  border-color: #b42626;
+  background: #fff1f1;
+  color: #8d1f1f;
+}
+
+.account-dashboard {
+  padding: 60px max(20px, calc((100% - 1180px) / 2)) 90px;
+}
+
+.account-dashboard-header {
+  display: flex;
+  margin-bottom: 28px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.account-dashboard-header h1 {
+  margin-bottom: 0;
+}
+
+.account-eyebrow {
+  display: block;
+  margin-bottom: 9px;
+  color: #147cab;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.account-logout {
+  border: 1px solid #171f4a;
+  background: #fff;
+  color: #171f4a;
+}
+
+.account-tabs {
+  display: flex;
+  margin-bottom: 22px;
+  overflow-x: auto;
+  gap: 6px;
+}
+
+.account-tabs button {
+  padding: 11px 15px;
+  border: 0;
+  border-radius: 999px;
+  background: #e5f0f5;
+  color: #33405f;
+  font: 700 12px/1 'Poppins', sans-serif;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+.account-tabs button.is-active {
+  background: #171f4a;
+  color: #fff;
+}
+
+.account-dashboard-card {
+  max-width: 780px;
+}
+
+.account-security-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.account-security-grid .account-status {
+  grid-column: 1 / -1;
+}
+
+.account-danger-card {
+  border-color: #e0a8a8;
+}
+
+.account-danger-card > button {
+  background: #a52020;
+}
+
+.account-orders {
+  display: grid;
+  gap: 10px;
+}
+
+.account-orders > a,
+.account-order-items li {
+  display: flex;
+  padding: 15px;
+  justify-content: space-between;
+  gap: 20px;
+  border: 1px solid #d7e4ea;
+  border-radius: 8px;
+  color: #171f4a;
+  text-decoration: none;
+}
+
+.account-orders span,
+.account-order-items span {
+  display: grid;
+  gap: 4px;
+}
+
+.account-orders span:last-child {
+  text-align: right;
+}
+
+.account-orders small {
+  color: #637183;
+  text-transform: capitalize;
+}
+
+.account-order-items {
+  margin: 24px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.account-inline-link,
+.account-state-page > a {
+  color: #147cab;
+  font-weight: 700;
+}
+
+.account-state-page {
+  display: grid;
+  padding: 80px 20px;
+  place-items: center;
+  align-content: center;
+  text-align: center;
+}
+
+.account-state-page > svg {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 24px;
+  color: #239ed2;
+}
+
+.account-state-page > p {
+  max-width: 650px;
+  margin: -8px 0 24px;
+  line-height: 1.7;
+}
+
+.account-reset-form {
+  width: min(520px, 100%);
+  text-align: left;
+}
+
+.account-turnstile {
+  min-height: 65px;
+  margin: 6px 0 14px;
+}
+
+.account-turnstile > div:first-child {
+  min-height: 65px;
+}
+
+@media (max-width: 800px) {
+  .account-layout,
+  .account-security-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .account-dashboard-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .account-field-grid,
+  .account-address-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .account-card .account-secondary-button {
+    margin: 10px 0 0;
+  }
+}
