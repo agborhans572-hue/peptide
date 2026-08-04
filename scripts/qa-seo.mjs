@@ -2,6 +2,7 @@ import { readFile } from 'node:fs/promises'
 import { resolve } from 'node:path'
 import { productionRoutes, SITE_ORIGIN } from './site-routes.mjs'
 
+const CANONICAL_PRODUCTION_ORIGIN = 'https://purehealthpeptidesshop.com'
 const errors = []
 
 function check(condition, message) {
@@ -26,6 +27,11 @@ function routeFile(route) {
   const directory = decodeURIComponent(route.path.replace(/^\/+|\/+$/g, ''))
   return resolve('dist', directory, 'index.html')
 }
+
+check(
+  SITE_ORIGIN === CANONICAL_PRODUCTION_ORIGIN,
+  `production origin is ${SITE_ORIGIN}; expected ${CANONICAL_PRODUCTION_ORIGIN}`,
+)
 
 const indexableRoutes = productionRoutes.filter((route) => route.indexable)
 const titles = new Map()

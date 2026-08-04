@@ -25,7 +25,7 @@
     "test:accounts:db": "supabase test db supabase/tests/customer_accounts.sql",
     "security:client": "node scripts/check-client-secrets.mjs",
     "verify:production-env": "node scripts/verify-production-env.mjs",
-    "check": "npm run generate:catalog && npm run catalog:validate && npm run typecheck && npm run lint && npm run test && npm run build && npm run security:client",
+    "check": "npm run generate:catalog && npm run catalog:validate && npm run typecheck && npm run lint && npm run test && npm run build && npm run qa:seo && npm run security:client",
     "deploy:build": "npm run verify:production-env && npm run generate:catalog && npm run catalog:validate:production && npm run check",
     "qa": "npm run qa:seo && npm run qa:shop && npm run qa:product-details && npm run qa:images && npm run qa:footer && npm run qa:about && npm run qa:support && npm run qa:peptide-info && npm run qa:coa-library",
     "qa:seo": "node scripts/qa-seo.mjs",
