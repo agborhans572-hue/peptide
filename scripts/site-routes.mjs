@@ -351,6 +351,16 @@ const productRoutes = shopProducts.map((product) => {
     kind: 'product',
     indexable: true,
     lastmod: product.date,
+    crawlContent: {
+      heading: product.name,
+      description: plainText(product.description || product.shortDescription || route.description),
+      categories: (product.categoryDetails || []).map((category) => category.name),
+      options: product.options.map((option) => ({
+        label: option.label,
+        price: (option.priceCents / 100).toFixed(2),
+        available: option.available && option.stockQuantity !== 0,
+      })),
+    },
   }
 
   return {

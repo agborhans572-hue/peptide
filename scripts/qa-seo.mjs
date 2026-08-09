@@ -34,6 +34,7 @@ check(
 )
 
 const indexableRoutes = productionRoutes.filter((route) => route.indexable)
+const productRoutes = indexableRoutes.filter((route) => route.kind === 'product')
 const titles = new Map()
 const descriptions = new Map()
 
@@ -48,6 +49,7 @@ for (const route of productionRoutes) {
   const ogImage = tagValue(html, /<meta\s+property="og:image"\s+content="([^"]*)"/i)
   const alternate = tagValue(html, /<link\s+rel="alternate"\s+hreflang="en-US"\s+href="([^"]*)"/i)
   const jsonLd = html.match(/<script\s+id="seo-jsonld"\s+type="application\/ld\+json">([\s\S]*?)<\/script>/i)?.[1]
+  const root = html.match(/<div\s+id="root">([\s\S]*?)<\/div>\s*<noscript>/i)?.[1] || ''
 
   check(title === route.title, `${route.path}: title does not match route metadata`)
   check(description === route.description, `${route.path}: description does not match route metadata`)
@@ -59,6 +61,19 @@ for (const route of productionRoutes) {
   check(title.length >= 25 && title.length <= 65, `${route.path}: title length ${title.length} is outside 25–65 characters`)
   if (route.indexable) check(description.length >= 70 && description.length <= 160, `${route.path}: description length ${description.length} is outside 70–160 characters`)
   check(Boolean(jsonLd), `${route.path}: initial HTML is missing JSON-LD`)
+  check(root.includes('data-seo-shell'), `${route.path}: initial HTML is missing the crawlable route shell`)
+  check(/<main(?:\s|>)/i.test(root), `${route.path}: crawlable route shell is missing main content`)
+  check(/<h1(?:\s|>)/i.test(root), `${route.path}: crawlable route shell is missing an H1`)
+  check(!/<div\s+id="root">\s*<\/div>/i.test(html), `${route.path}: initial HTML has an empty React root`)
+  if (route.indexable) check(root.includes('href="/shop/"'), `${route.path}: crawlable route shell does not link to the catalog`)
+  if (route.kind === 'product') {
+    check(root.includes(route.crawlContent.heading), `${route.path}: crawlable route shell is missing the product name`)
+    check(root.length >= 500, `${route.path}: crawlable product content is too thin`)
+  }
+  if (route.path === '/shop/') {
+    const productLinks = [...root.matchAll(/href="\/product\/[^"#?]+\/"/g)]
+    check(productLinks.length === productRoutes.length, `/shop/: crawlable catalog has ${productLinks.length} product links; expected ${productRoutes.length}`)
+  }
 
   if (jsonLd) {
     try {
