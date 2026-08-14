@@ -45,4 +45,12 @@ export default [
     files: ['netlify/edge-functions/**/*.js'],
     languageOptions: { globals: globals.browser },
   },
+  {
+    files: ['scripts/*.k6.js'],
+    languageOptions: {
+      ecmaVersion: 'latest',
+      sourceType: 'module',
+      globals: { __ENV: 'readonly', console: 'readonly' },
+    },
+  },
 ]

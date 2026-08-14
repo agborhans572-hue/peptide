@@ -21,12 +21,12 @@ npm run build
 npm run release:check
 ```
 
-`npm run build` regenerates the reviewed server catalog, responsive/social product images, sitemap/robots files, and route-specific HTML shells. `npm run check` runs catalog validation, strict TypeScript, zero-warning ESLint, server-pricing tests, the production build, and a client-secret scan. `release:check` also audits dependencies and smoke-tests the built artifact in Chrome across desktop and mobile routes.
+`npm run build` is read-only and reproducible. Run `npm run catalog:publish` only when publishing a reviewed catalog; it generates the catalog, content-addressed images, SEO files, immutable product/COA documents, and validates the route budget. `npm run check` runs validation, TypeScript, authored-source linting, server and React component tests, the production build, SEO checks, and a client-secret scan. `release:check` adds dependency audit, pgTAP, and production browser smoke tests.
 
 Use `.env.example` locally and configure production values from `.env.production.example` in the host's encrypted secret store. All `VITE_*` values are public browser configuration and must never contain secrets. Apply all Supabase migrations in timestamp order before enabling accounts or checkout. Configure Turnstile, email confirmation, custom SMTP, exact production redirects, rate limits, and session limits as described in `supabase/README.md`.
 
-See [DEPLOYMENT.md](./DEPLOYMENT.md) for hosting rules, service endpoint contracts, the legacy COA/legal-route cutover requirement, and the complete release checklist.
+See [DEPLOYMENT.md](./DEPLOYMENT.md) for hosting rules and [SCALABILITY_IMPLEMENTATION.md](./SCALABILITY_IMPLEMENTATION.md) for architecture, rollout, rollback, and acceptance gates.
 
 ## Vercel
 
-Import this GitHub repository in Vercel and leave the detected Vite settings in place. The committed `vercel.json` builds `dist/`, serves the account, checkout, webhook, order-tracking, and client-error endpoints, and runs the daily account-deletion cron. Add the production variables listed in `.env.production.example`; mark service, cron, Stripe, WooCommerce, and monitoring values as sensitive.
+Import this repository on Vercel Pro and leave the detected Vite settings in place. The committed `vercel.json` builds `dist/`, serves commerce/account endpoints, runs the commerce worker every minute, and runs the daily account-deletion worker. Add the production variables listed in `.env.production.example`; mark service, cron, Stripe, and WooCommerce values as sensitive.

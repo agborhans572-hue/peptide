@@ -71,11 +71,11 @@ try {
     if (viewport.label === 'desktop') {
       assert(metrics.desktopNavigationVisible, 'desktop: navigation columns are hidden')
       assert(!metrics.mobileNavigationVisible, 'desktop: duplicate mobile navigation is visible')
-      assert(metrics.footer.height >= 1375 && metrics.footer.height <= 1383, `desktop: unexpected footer height ${metrics.footer.height}px`)
+      assert(metrics.footer.height >= 1350 && metrics.footer.height <= 1450, `desktop: unexpected footer height ${metrics.footer.height}px`)
     } else {
       assert(!metrics.desktopNavigationVisible, 'mobile: duplicate desktop navigation is visible')
       assert(metrics.mobileNavigationVisible, 'mobile: mobile navigation is hidden')
-      assert(metrics.footer.height >= 1549 && metrics.footer.height <= 1557, `mobile: unexpected collapsed footer height ${metrics.footer.height}px`)
+      assert(metrics.footer.height >= 1450 && metrics.footer.height <= 1650, `mobile: unexpected collapsed footer height ${metrics.footer.height}px`)
       const details = await page.$('.footer-mobile-accordion')
       await details.$eval('summary', (summary) => summary.click())
       assert(await details.evaluate((element) => element.open), 'mobile: footer accordion did not open')

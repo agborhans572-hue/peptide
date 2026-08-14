@@ -33,13 +33,24 @@ const browser = await puppeteer.launch({
   args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-gpu'],
 })
 
-const report = { assertions: [], consoleErrors: [] }
+const report = { assertions: [], consoleErrors: [], failedResponses: [] }
 
 try {
   const page = await browser.newPage()
   page.setDefaultTimeout(12_000)
   page.on('console', (message) => {
     if (message.type() === 'error') report.consoleErrors.push(message.text())
+  })
+  page.on('response', (response) => {
+    if (response.status() >= 400) report.failedResponses.push(`${response.status()} ${response.url()}`)
+  })
+  await page.setRequestInterception(true)
+  page.on('request', (request) => {
+    if (new URL(request.url()).pathname.startsWith('/_vercel/')) {
+      request.respond({ status: 204, contentType: 'application/javascript', body: '' })
+    } else {
+      request.continue()
+    }
   })
   await page.evaluateOnNewDocument(() => localStorage.setItem('php-research-confirmed', 'true'))
 
@@ -63,7 +74,9 @@ try {
     columns: getComputedStyle(document.querySelector('.shop-grid')).gridTemplateColumns,
   }))
 
-  assert(desktop.cards === 115, `Expected 115 product cards, found ${desktop.cards}`)
+  const initiallyVisible = ['vials', 'capsules', 'liquids', 'topicals']
+    .reduce((sum, type) => sum + Math.min(24, shopProducts.filter((product) => product.type === type).length), 0)
+  assert(desktop.cards === initiallyVisible, `Expected ${initiallyVisible} initially paginated product cards, found ${desktop.cards}`)
   assert(desktop.sectionHeadings.join('|') === 'Vials - 74 results|Capsules - 17 results|Liquids - 16 results|Topicals - 8 results', 'Section totals do not match the live catalog')
   assert(desktop.firstThree.every(Boolean), 'Default catalog image alt text is missing')
   assert(desktop.selectedSort === 'Select Filter', 'Default sort placeholder is incorrect')
@@ -71,6 +84,13 @@ try {
   report.assertions.push('desktop catalog, order, totals, routing, and overflow')
   report.desktop = desktop
   await page.screenshot({ path: path.join(previewDir, 'shop-desktop.png'), fullPage: false })
+
+  while (await page.$('.shop-section .shop-search-clear')) {
+    await page.$$eval('.shop-section .shop-search-clear', (buttons) => buttons.forEach((button) => button.click()))
+    await delay(80)
+  }
+  assert(await page.$$eval('.shop-card', (nodes) => nodes.length) === shopProducts.length, 'Load-more pagination did not reveal the complete catalog')
+  report.assertions.push('24-item pagination and incremental catalog expansion')
 
   await clickText(page, '.shop-research-filter button', 'Metabolic')
   const metabolicActual = await page.$$eval('.shop-section-heading', (nodes) =>
@@ -101,6 +121,11 @@ try {
   assert(firstLatest === expectedLatest, 'Latest sorting is incorrect')
   await page.select('#shop-product-sort', 'default')
   report.assertions.push('title and live-date sorting')
+
+  while (await page.$('.shop-section .shop-search-clear')) {
+    await page.$$eval('.shop-section .shop-search-clear', (buttons) => buttons.forEach((button) => button.click()))
+    await delay(80)
+  }
 
   await page.select('#shop-product-vials-419-option', '2')
   await delay(60)
@@ -186,7 +211,7 @@ try {
   assert(searchState.cards === 1 && searchState.notice.includes('1 result'), 'Header search did not narrow the shop to VOCUS')
   await page.$eval('.shop-search-clear', (button) => button.click())
   await delay(80)
-  assert(await page.$$eval('.shop-card', (nodes) => nodes.length) === 115, 'Clear search did not restore the catalog')
+  assert(await page.$$eval('.shop-card', (nodes) => nodes.length) === initiallyVisible, 'Clear search did not restore the paginated catalog')
   report.assertions.push('header search and clear-search flow')
 
   await page.reload({ waitUntil: 'domcontentloaded', timeout: 30_000 })
@@ -244,7 +269,7 @@ try {
   report.mobile = mobile
   await page.screenshot({ path: path.join(previewDir, 'shop-mobile.png'), fullPage: false })
 
-  assert(report.consoleErrors.length === 0, `Browser console errors: ${report.consoleErrors.join(' | ')}`)
+  assert(report.consoleErrors.length === 0, `Browser console errors: ${report.consoleErrors.join(' | ')}; responses: ${report.failedResponses.join(' | ')}`)
   report.assertions.push('zero browser console errors')
   report.status = 'passed'
 } finally {

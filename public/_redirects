@@ -2,11 +2,13 @@
 # fall back to the SPA entry document on Netlify and Cloudflare Pages.
 /api/checkout /.netlify/functions/checkout 200
 /api/stripe-webhook /.netlify/functions/stripe-webhook 200
+/api/woocommerce-webhook /.netlify/functions/woocommerce-webhook 200
 /api/orders/track /.netlify/functions/order-track 200
 /api/orders/status /.netlify/functions/order-status 200
 /api/client-error /.netlify/functions/client-error 200
 /api/account/delete-request /.netlify/functions/account-delete 200
 /api/cron/process-account-deletions /.netlify/functions/process-account-deletions 200
+/api/cron/process-commerce-jobs /.netlify/functions/process-commerce-jobs 200
 /product-form/vials/ /shop/ 301
 /product-form/vials/* /shop/ 301
 /product-form/capsules/ /shop/ 301

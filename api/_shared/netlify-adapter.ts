@@ -23,9 +23,17 @@ function normalizedHeaders(headers: IncomingHttpHeaders) {
 
 async function rawBody(request: IncomingMessage) {
   const chunks: Buffer[] = []
-  for await (const chunk of request) chunks.push(Buffer.isBuffer(chunk) ? chunk : Buffer.from(chunk))
+  let bytes = 0
+  for await (const chunk of request) {
+    const buffer = Buffer.isBuffer(chunk) ? chunk : Buffer.from(chunk)
+    bytes += buffer.length
+    if (bytes > 1024 * 1024) throw new RequestBodyTooLargeError()
+    chunks.push(buffer)
+  }
   return Buffer.concat(chunks).toString('utf8')
 }
+
+class RequestBodyTooLargeError extends Error {}
 
 function queryParameters(request: VercelRequest, headers: Record<string, string>) {
   const url = new URL(request.url || '/', `https://${headers.host || 'localhost'}`)
@@ -39,10 +47,21 @@ function queryParameters(request: VercelRequest, headers: Record<string, string>
 
 export async function serveNetlifyHandler(request: VercelRequest, response: VercelResponse, handler: NetlifyHandler) {
   const headers = normalizedHeaders(request.headers)
+  let body: string
+  try {
+    body = await rawBody(request)
+  } catch (error) {
+    if (!(error instanceof RequestBodyTooLargeError)) throw error
+    response.statusCode = 413
+    response.setHeader('Content-Type', 'application/json; charset=utf-8')
+    response.setHeader('Cache-Control', 'no-store')
+    response.end(JSON.stringify({ message: 'Request body is too large.' }))
+    return
+  }
   const result = await handler({
     httpMethod: request.method || 'GET',
     headers,
-    body: await rawBody(request),
+    body,
     isBase64Encoded: false,
     queryStringParameters: queryParameters(request, headers),
   })

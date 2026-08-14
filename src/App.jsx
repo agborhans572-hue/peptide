@@ -1,4 +1,5 @@
 import { lazy, Suspense, useEffect, useId, useRef, useState } from 'react'
+import { Route, Routes, useLocation, useNavigate } from 'react-router'
 import {
   Check,
   ChevronDown,
@@ -16,55 +17,87 @@ import {
   X,
 } from 'lucide-react'
 import Catalog from './Catalog.jsx'
-import ShopPage from './ShopPage.jsx'
-import { AboutPage, ElitePage, NewsPage, ResearchAreasPage } from './AboutPages.jsx'
-import { ContactPage, FaqPage, TrackOrderPage } from './SupportPages.jsx'
-import { AccountPage, AuthCallbackPage, AuthErrorPage, ResetPasswordPage } from './AccountPages.jsx'
 import { useAuth } from './AuthContext.jsx'
-import { CoaProcessPage, DilutionGuidePage, ManufacturingPage, ProductInfoPage } from './PeptideInfoPages.jsx'
-import { CoaCategoryPage, CoaLibraryPage } from './CoaLibraryPages.jsx'
-import { CheckoutPage, OrderConfirmationPage } from './CheckoutPage.jsx'
-import PolicyPage from './PolicyPages.jsx'
 import productDetailManifest from './productDetailManifest.json'
-import { catalogVersion } from './catalog.js'
+import { catalogVersion, shopProducts } from './catalog.js'
 import routeMetadata from './routeMetadata.json'
 import { isProductPath, productFromPath, productPath, productSlug } from './productRoutes.js'
 import { appPath, canonicalPath } from './appPath.js'
 import { postToSiteService, safeServiceMessage, siteServices } from './siteServices.js'
 import useDialogFocus from './useDialogFocus.js'
 
-function createProductDetailRoute(loadDetails) {
-  return lazy(async () => {
-    const [{ ProductDetailPage }, { default: details }] = await Promise.all([
-      import('./ProductDetailPage.jsx'),
-      loadDetails(),
-    ])
+const lazyNamed = (loader, name) => lazy(() => loader().then((module) => ({ default: module[name] })))
+const ShopPage = lazy(() => import('./ShopPage.jsx'))
+const AboutPage = lazyNamed(() => import('./AboutPages.jsx'), 'AboutPage')
+const ElitePage = lazyNamed(() => import('./AboutPages.jsx'), 'ElitePage')
+const NewsPage = lazyNamed(() => import('./AboutPages.jsx'), 'NewsPage')
+const ResearchAreasPage = lazyNamed(() => import('./AboutPages.jsx'), 'ResearchAreasPage')
+const ContactPage = lazyNamed(() => import('./SupportPages.jsx'), 'ContactPage')
+const FaqPage = lazyNamed(() => import('./SupportPages.jsx'), 'FaqPage')
+const TrackOrderPage = lazyNamed(() => import('./SupportPages.jsx'), 'TrackOrderPage')
+const AccountPage = lazyNamed(() => import('./AccountPages.jsx'), 'AccountPage')
+const AuthCallbackPage = lazyNamed(() => import('./AccountPages.jsx'), 'AuthCallbackPage')
+const AuthErrorPage = lazyNamed(() => import('./AccountPages.jsx'), 'AuthErrorPage')
+const ResetPasswordPage = lazyNamed(() => import('./AccountPages.jsx'), 'ResetPasswordPage')
+const CoaProcessPage = lazyNamed(() => import('./PeptideInfoPages.jsx'), 'CoaProcessPage')
+const DilutionGuidePage = lazyNamed(() => import('./PeptideInfoPages.jsx'), 'DilutionGuidePage')
+const ManufacturingPage = lazyNamed(() => import('./PeptideInfoPages.jsx'), 'ManufacturingPage')
+const ProductInfoPage = lazyNamed(() => import('./PeptideInfoPages.jsx'), 'ProductInfoPage')
+const CoaCategoryPage = lazyNamed(() => import('./CoaLibraryPages.jsx'), 'CoaCategoryPage')
+const CoaLibraryPage = lazyNamed(() => import('./CoaLibraryPages.jsx'), 'CoaLibraryPage')
+const CheckoutPage = lazyNamed(() => import('./CheckoutPage.jsx'), 'CheckoutPage')
+const OrderConfirmationPage = lazyNamed(() => import('./CheckoutPage.jsx'), 'OrderConfirmationPage')
+const PolicyPage = lazy(() => import('./PolicyPages.jsx'))
 
-    function ProductDetailRoute(props) {
-      return <ProductDetailPage {...props} detail={details[props.product.detailKey || productSlug(props.product)] || null} />
-    }
-
-    return { default: ProductDetailRoute }
-  })
-}
-
-const productDetailRoutes = {
-  vials: createProductDetailRoute(() => import('./productDetailData/vials.json')),
-  capsules: createProductDetailRoute(() => import('./productDetailData/capsules.json')),
-  liquids: createProductDetailRoute(() => import('./productDetailData/liquids.json')),
-  topicals: createProductDetailRoute(() => import('./productDetailData/topicals.json')),
-}
+const ProductDetailPage = lazyNamed(() => import('./ProductDetailPage.jsx'), 'ProductDetailPage')
 
 const ProductNotFoundPage = lazy(() => import('./ProductDetailPage.jsx').then((module) => ({
   default: module.ProductNotFoundPage,
 })))
+
+function ProductDetailRoute({ product, onMetadata, ...props }) {
+  const [document, setDocument] = useState(null)
+  const [failed, setFailed] = useState(false)
+  const slug = productSlug(product)
+
+  useEffect(() => {
+    const controller = new AbortController()
+    setDocument(null)
+    setFailed(false)
+    fetch(appPath(`/catalog/${catalogVersion}/products/${encodeURIComponent(slug)}.json`), {
+      cache: 'force-cache',
+      signal: controller.signal,
+    })
+      .then((response) => {
+        if (!response.ok) throw new Error(`Product detail request failed with ${response.status}.`)
+        return response.json()
+      })
+      .then((nextDocument) => {
+        if (nextDocument?.version !== catalogVersion || nextDocument?.productId !== product.id) {
+          throw new Error('Product detail document does not match the active catalog.')
+        }
+        setDocument(nextDocument)
+        onMetadata(nextDocument.metadata || null)
+      })
+      .catch((error) => {
+        if (error.name !== 'AbortError') setFailed(true)
+      })
+    return () => controller.abort()
+  }, [onMetadata, product.id, slug])
+
+  if (failed) return <ProductNotFoundPage onShop={() => props.onNavigate('shop')} />
+  if (!document) return <div className="route-loader" role="status">Loading product…</div>
+  return <ProductDetailPage {...props} product={product} detail={document.detail || null} />
+}
 
 function productDocumentTitle(product) {
   return productDetailManifest[productSlug(product)] || `${product?.name || 'Product'} - Pure Health Peptides`
 }
 
 const CART_STORAGE_KEY = 'php-research-cart-v1'
+const CHECKOUT_ATTEMPT_STORAGE_KEY = 'php-checkout-attempt-v1'
 const PREVIEW_ORDER_STORAGE_KEY = 'php-research-preview-order-v1'
+const cartProductById = new Map(shopProducts.map((product) => [product.id, product]))
 let researchConfirmedForSession = false
 
 function hasResearchConfirmation() {
@@ -88,32 +121,25 @@ function storeResearchConfirmation() {
 function readStoredCart() {
   try {
     const parsed = JSON.parse(localStorage.getItem(CART_STORAGE_KEY) || '[]')
-    if (!Array.isArray(parsed)) return []
+    const storedItems = Array.isArray(parsed) ? parsed : parsed?.items
+    if (!Array.isArray(storedItems)) return []
 
-    return parsed.slice(0, 50).flatMap((item) => {
-      const unitPrice = Number.parseFloat(item?.unitPrice)
-      const requestedMax = Number.parseInt(item?.maxQty, 10)
-      const maxQty = Number.isFinite(requestedMax) && requestedMax > 0 ? Math.min(requestedMax, 1000) : 1000
+    return storedItems.slice(0, 50).flatMap((item) => {
+      const productId = String(item?.productId || item?.product?.id || '')
+      const variantId = String(item?.variantId || '')
+      const product = cartProductById.get(productId)
+      const option = product?.options?.find((candidate) => String(candidate.id) === variantId)
+      if (!product || !option || option.available === false) return []
+      const maxQty = productOptionMaxQty(option)
       const requestedQuantity = Number.parseInt(item?.quantity, 10)
       const quantity = Math.min(maxQty, Math.max(1, Number.isFinite(requestedQuantity) ? requestedQuantity : 1))
-      const product = item?.product
-      const valid = typeof item?.key === 'string'
-        && item.key.length <= 180
-        && typeof item?.option === 'string'
-        && typeof item?.variantId === 'string'
-        && item.option.length <= 120
-        && Number.isFinite(unitPrice)
-        && unitPrice >= 0
-        && product
-        && typeof product.id === 'string'
-        && typeof product.name === 'string'
-        && typeof product.image === 'string'
-        && product.image.startsWith('/assets/shop/')
-
-      if (!valid) return []
+      const unitPrice = productOptionPrice(option, product)
       return [{
-        ...item,
+        key: `${product.id}::${variantId}`,
         product,
+        variantId,
+        sku: option.sku || product.sku,
+        option: productOptionLabel(option),
         quantity,
         unitPrice,
         maxQty,
@@ -139,6 +165,22 @@ function createPreviewOrderId() {
   const random = new Uint32Array(1)
   crypto.getRandomValues(random)
   return `PREVIEW-${date}-${String(random[0] % 100000).padStart(5, '0')}`
+}
+
+function checkoutAttemptId(items) {
+  const fingerprint = JSON.stringify({
+    catalogVersion,
+    items: items.map((item) => [item.product.id, item.variantId, item.quantity]),
+  })
+  try {
+    const stored = JSON.parse(sessionStorage.getItem(CHECKOUT_ATTEMPT_STORAGE_KEY) || 'null')
+    if (stored?.fingerprint === fingerprint && typeof stored?.id === 'string') return stored.id
+    const id = crypto.randomUUID()
+    sessionStorage.setItem(CHECKOUT_ATTEMPT_STORAGE_KEY, JSON.stringify({ fingerprint, id }))
+    return id
+  } catch {
+    return crypto.randomUUID()
+  }
 }
 
 function updateMeta(selector, attributes) {
@@ -1015,15 +1057,17 @@ function calculateLinePricing(product, unitPrice, quantity) {
   }
 }
 
-function currentRoute() {
-  const normalized = window.location.pathname.replace(/\/+$/, '') || '/'
-  if (isProductPath(window.location.pathname)) return 'product'
+function currentRoute(pathname = window.location.pathname) {
+  const normalized = pathname.replace(/\/+$/, '') || '/'
+  if (isProductPath(pathname)) return 'product'
   return Object.entries(routePaths).find(([, path]) => (path.replace(/\/+$/, '') || '/') === normalized)?.[0] || 'home'
 }
 
 export default function App() {
   const { session } = useAuth()
-  const [route, setRoute] = useState(currentRoute)
+  const location = useLocation()
+  const routerNavigate = useNavigate()
+  const route = currentRoute(location.pathname)
   const [menuOpen, setMenuOpen] = useState(false)
   const [searchOpen, setSearchOpen] = useState(false)
   const [cartOpen, setCartOpen] = useState(false)
@@ -1035,42 +1079,26 @@ export default function App() {
   const [pendingProduct, setPendingProduct] = useState(null)
   const [cartItems, setCartItems] = useState(readStoredCart)
   const [previewOrder, setPreviewOrder] = useState(readStoredPreviewOrder)
-  const [selectedProduct, setSelectedProduct] = useState(() => productFromPath(window.location.pathname))
+  const selectedProduct = productFromPath(location.pathname)
   const [productMetadata, setProductMetadata] = useState(null)
   const [shopSearch, setShopSearch] = useState('')
   const initialRender = useRef(true)
   const overlayOpen = menuOpen || searchOpen || cartOpen || gateOpen
 
   useEffect(() => {
-    const handlePopState = () => {
-      const nextRoute = currentRoute()
-      setRoute(nextRoute)
-      setSelectedProduct(nextRoute === 'product' ? productFromPath(window.location.pathname) : null)
-      setGateOpen((nextRoute === 'shop' || nextRoute === 'product') && !hasResearchConfirmation())
-      setPendingRoute('')
-      setPendingProduct(null)
-      window.scrollTo(0, 0)
-    }
-    window.addEventListener('popstate', handlePopState)
-    return () => window.removeEventListener('popstate', handlePopState)
-  }, [])
-
-  useEffect(() => {
-    let active = true
-    if (route === 'product' && selectedProduct && !productMetadata) {
-      import('./productRouteMetadata.json').then((module) => {
-        if (active) setProductMetadata(module.default)
-      })
-    }
-    return () => { active = false }
-  }, [route, selectedProduct, productMetadata])
+    setProductMetadata(null)
+    setGateOpen((route === 'shop' || route === 'product') && !hasResearchConfirmation())
+    setPendingRoute('')
+    setPendingProduct(null)
+    window.scrollTo(0, 0)
+  }, [location.pathname, route])
 
   useEffect(() => {
     const expectedPath = route === 'product' && selectedProduct
       ? productPath(selectedProduct)
       : routePaths[route] || routePaths.home
     const metadata = route === 'product' && selectedProduct
-      ? productMetadata?.[canonicalPath(expectedPath)] || {
+      ? productMetadata || {
           path: expectedPath,
           title: productDocumentTitle(selectedProduct),
           description: `${selectedProduct.name} research product information and batch testing from Pure Health Peptides.`,
@@ -1126,7 +1154,14 @@ export default function App() {
 
   useEffect(() => {
     try {
-      localStorage.setItem(CART_STORAGE_KEY, JSON.stringify(cartItems))
+      localStorage.setItem(CART_STORAGE_KEY, JSON.stringify({
+        catalogVersion,
+        items: cartItems.map((item) => ({
+          productId: item.product.id,
+          variantId: item.variantId,
+          quantity: item.quantity,
+        })),
+      }))
     } catch {
       // Cart remains usable for the current page session if storage is unavailable.
     }
@@ -1155,9 +1190,7 @@ export default function App() {
       return
     }
     const path = routePaths[nextRoute] || routePaths.home
-    if (window.location.pathname !== path) window.history.pushState({}, '', path)
-    setRoute(nextRoute)
-    setSelectedProduct(null)
+    if (location.pathname !== path) routerNavigate(path)
     setMenuOpen(false)
     setSearchOpen(false)
     window.scrollTo(0, 0)
@@ -1173,9 +1206,7 @@ export default function App() {
       return
     }
     const path = productPath(product)
-    if (window.location.pathname !== path) window.history.pushState({}, '', path)
-    setSelectedProduct(product)
-    setRoute('product')
+    if (location.pathname !== path) routerNavigate(path)
     setMenuOpen(false)
     setSearchOpen(false)
     window.scrollTo(0, 0)
@@ -1242,6 +1273,7 @@ export default function App() {
     let result
     try {
       result = await postToSiteService(siteServices.checkoutEndpoint, {
+        checkoutAttemptId: checkoutAttemptId(items),
         catalogVersion,
         items: items.map((item) => ({
           productId: item.product.id,
@@ -1253,6 +1285,7 @@ export default function App() {
       if (error?.status === 409 || error?.code === 'catalog_changed') {
         setCartItems([])
         try { localStorage.removeItem(CART_STORAGE_KEY) } catch { /* React state is already refreshed. */ }
+        try { sessionStorage.removeItem(CHECKOUT_ATTEMPT_STORAGE_KEY) } catch { /* A new fingerprint will replace it. */ }
         throw new Error('The catalog changed and your cart was refreshed. Please add the current variants again.', { cause: error })
       }
       throw error
@@ -1301,8 +1334,8 @@ export default function App() {
 
   const cartCount = cartItems.reduce((sum, item) => sum + item.quantity, 0)
 
-  function renderPage() {
-    if (route === 'checkout') {
+  function renderPage(pageRoute = route) {
+    if (pageRoute === 'checkout') {
       return (
         <CheckoutPage
           items={cartItems}
@@ -1312,8 +1345,8 @@ export default function App() {
         />
       )
     }
-    if (route === 'orderConfirmation') return <OrderConfirmationPage order={previewOrder} onShop={requestShop} />
-    if (route === 'shop') {
+    if (pageRoute === 'orderConfirmation') return <OrderConfirmationPage order={previewOrder} onShop={requestShop} />
+    if (pageRoute === 'shop') {
       return (
         <ShopPage
           searchQuery={shopSearch}
@@ -1323,42 +1356,42 @@ export default function App() {
         />
       )
     }
-    if (route === 'about') return <><AboutPage onShop={requestShop} onNavigate={navigate} /><Newsletter /></>
-    if (route === 'research') return <ResearchAreasPage />
-    if (route === 'news') return <><NewsPage onShop={requestShop} /><Newsletter /></>
-    if (route === 'elite') return <><ElitePage onShop={requestShop} onNavigate={navigate} /><Newsletter /></>
-    if (route === 'account') return <AccountPage />
-    if (route === 'authCallback') return <AuthCallbackPage />
-    if (route === 'authReset') return <ResetPasswordPage />
-    if (route === 'authError') return <AuthErrorPage />
-    if (route === 'track') return <TrackOrderPage />
-    if (route === 'faqs') return <FaqPage />
-    if (route === 'contact') return <><ContactPage /><Newsletter /></>
-    if (route === 'shippingPolicy') return <PolicyPage type="shipping" />
-    if (route === 'refundPolicy') return <PolicyPage type="refunds" />
-    if (route === 'privacyPolicy') return <PolicyPage type="privacy" />
-    if (route === 'terms') return <PolicyPage type="terms" />
-    if (route === 'productInfo') return <ProductInfoPage />
-    if (route === 'testing') return <><CoaProcessPage onNavigate={navigate} /><Newsletter /></>
-    if (route === 'manufacturing') return <><ManufacturingPage onNavigate={navigate} /><Newsletter /></>
-    if (route === 'dilution') return <DilutionGuidePage />
-    if (route === 'coaLibrary') return <><CoaLibraryPage onNavigate={navigate} /><Newsletter /></>
-    if (route === 'coaVials') return <CoaCategoryPage category="vials" />
-    if (route === 'coaCapsules') return <CoaCategoryPage category="capsules" />
-    if (route === 'coaLiquids') return <CoaCategoryPage category="liquids" />
-    if (route === 'coaTopicals') return <CoaCategoryPage category="topicals" />
-    if (route === 'product') {
+    if (pageRoute === 'about') return <><AboutPage onShop={requestShop} onNavigate={navigate} /><Newsletter /></>
+    if (pageRoute === 'research') return <ResearchAreasPage />
+    if (pageRoute === 'news') return <><NewsPage onShop={requestShop} /><Newsletter /></>
+    if (pageRoute === 'elite') return <><ElitePage onShop={requestShop} onNavigate={navigate} /><Newsletter /></>
+    if (pageRoute === 'account') return <AccountPage />
+    if (pageRoute === 'authCallback') return <AuthCallbackPage />
+    if (pageRoute === 'authReset') return <ResetPasswordPage />
+    if (pageRoute === 'authError') return <AuthErrorPage />
+    if (pageRoute === 'track') return <TrackOrderPage />
+    if (pageRoute === 'faqs') return <FaqPage />
+    if (pageRoute === 'contact') return <><ContactPage /><Newsletter /></>
+    if (pageRoute === 'shippingPolicy') return <PolicyPage type="shipping" />
+    if (pageRoute === 'refundPolicy') return <PolicyPage type="refunds" />
+    if (pageRoute === 'privacyPolicy') return <PolicyPage type="privacy" />
+    if (pageRoute === 'terms') return <PolicyPage type="terms" />
+    if (pageRoute === 'productInfo') return <ProductInfoPage />
+    if (pageRoute === 'testing') return <><CoaProcessPage onNavigate={navigate} /><Newsletter /></>
+    if (pageRoute === 'manufacturing') return <><ManufacturingPage onNavigate={navigate} /><Newsletter /></>
+    if (pageRoute === 'dilution') return <DilutionGuidePage />
+    if (pageRoute === 'coaLibrary') return <><CoaLibraryPage onNavigate={navigate} /><Newsletter /></>
+    if (pageRoute === 'coaVials') return <CoaCategoryPage category="vials" />
+    if (pageRoute === 'coaCapsules') return <CoaCategoryPage category="capsules" />
+    if (pageRoute === 'coaLiquids') return <CoaCategoryPage category="liquids" />
+    if (pageRoute === 'coaTopicals') return <CoaCategoryPage category="topicals" />
+    if (pageRoute === 'product') {
       if (!selectedProduct) {
         return <Suspense fallback={<div className="route-loader" role="status">Loading product…</div>}><ProductNotFoundPage onShop={requestShop} /></Suspense>
       }
-      const ProductDetailRoute = productDetailRoutes[selectedProduct.type]
-      if (!ProductDetailRoute) {
+      if (!['vials', 'capsules', 'liquids', 'topicals'].includes(selectedProduct.type)) {
         return <Suspense fallback={<div className="route-loader" role="status">Loading product…</div>}><ProductNotFoundPage onShop={requestShop} /></Suspense>
       }
       return (
         <Suspense fallback={<div className="route-loader" role="status">Loading product…</div>}>
           <ProductDetailRoute
             product={selectedProduct}
+            onMetadata={setProductMetadata}
             onAddToCart={addToCart}
             onNavigate={navigate}
             onProduct={navigateProduct}
@@ -1384,7 +1417,15 @@ export default function App() {
           cartCount={cartCount}
         />
         <main id="main-content" tabIndex="-1">
-          {renderPage()}
+          <Suspense fallback={<div className="route-loader" role="status">Loading pageâ€¦</div>}>
+            <Routes>
+              {Object.entries(routePaths).map(([routeName, path]) => (
+                <Route key={routeName} path={path} element={renderPage(routeName)} />
+              ))}
+              <Route path={`${appPath('/product')}/:slug/`} element={renderPage('product')} />
+              <Route path="*" element={renderPage('home')} />
+            </Routes>
+          </Suspense>
         </main>
         <Footer onNavigate={navigate} />
       </div>

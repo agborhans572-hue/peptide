@@ -1,5 +1,5 @@
 import { createHash } from 'node:crypto'
-import { mkdir, readFile, readdir, stat, unlink, writeFile } from 'node:fs/promises'
+import { access, mkdir, readFile, readdir, stat, unlink, writeFile } from 'node:fs/promises'
 import { resolve } from 'node:path'
 import sharp from 'sharp'
 
@@ -27,21 +27,32 @@ await inBatches(sources, 8, async (source) => {
   const sourcePath = resolve('public', source.replace(/^\//, ''))
   const sourceInfo = await stat(sourcePath)
   const metadata = await sharp(sourcePath).metadata()
-  const id = createHash('sha256').update(`${source}:${sourceInfo.size}:${sourceInfo.mtimeMs}`).digest('hex').slice(0, 16)
+  const sourceBytes = await readFile(sourcePath)
+  const id = createHash('sha256').update(sourceBytes).digest('hex').slice(0, 16)
   const widths = [320, 640, 960].filter((width) => width <= (metadata.width || width))
   if (!widths.length && metadata.width) widths.push(metadata.width)
   const derivatives = []
   for (const width of widths) {
-    const publicPath = `/_product-media/responsive/${id}-${width}.webp`
-    expectedResponsive.add(publicPath.split('/').at(-1))
-    await sharp(sourcePath).rotate().resize({ width, withoutEnlargement: true }).webp({ quality: 82, effort: 1 }).toFile(resolve('public', publicPath.replace(/^\//, '')))
-    derivatives.push({ src: publicPath, width })
+    const webpPath = `/_product-media/responsive/${id}-${width}.webp`
+    const avifPath = `/_product-media/responsive/${id}-${width}.avif`
+    expectedResponsive.add(webpPath.split('/').at(-1))
+    expectedResponsive.add(avifPath.split('/').at(-1))
+    const webpDestination = resolve('public', webpPath.replace(/^\//, ''))
+    const avifDestination = resolve('public', avifPath.replace(/^\//, ''))
+    await access(webpDestination).catch(async () => {
+      await sharp(sourcePath).rotate().resize({ width, withoutEnlargement: true }).webp({ quality: 82, effort: 1 }).toFile(webpDestination)
+    })
+    await access(avifDestination).catch(async () => {
+      await sharp(sourcePath).rotate().resize({ width, withoutEnlargement: true }).avif({ quality: 55, effort: 2 }).toFile(avifDestination)
+    })
+    derivatives.push({ avif: avifPath, src: webpPath, width })
   }
   manifest.images[source] = {
     width: metadata.width,
     height: metadata.height,
     bytes: sourceInfo.size,
     srcSet: derivatives.map((item) => `${item.src} ${item.width}w`).join(', '),
+    avifSrcSet: derivatives.map((item) => `${item.avif} ${item.width}w`).join(', '),
   }
 })
 
@@ -50,10 +61,12 @@ await inBatches(catalog.products, 6, async (product) => {
   const foreground = await sharp(sourcePath).rotate().resize({ width: 760, height: 560, fit: 'contain', withoutEnlargement: true }).webp({ quality: 88 }).toBuffer()
   const output = resolve(socialRoot, `${product.slug}.webp`)
   expectedSocial.add(`${product.slug}.webp`)
-  await sharp({ create: { width: 1200, height: 630, channels: 4, background: '#f3f8f5' } })
-    .composite([{ input: foreground, gravity: 'center' }])
-    .webp({ quality: 88, effort: 1 })
-    .toFile(output)
+  await access(output).catch(async () => {
+    await sharp({ create: { width: 1200, height: 630, channels: 4, background: '#f3f8f5' } })
+      .composite([{ input: foreground, gravity: 'center' }])
+      .webp({ quality: 88, effort: 1 })
+      .toFile(output)
+  })
   manifest.social[product.slug] = { src: `/_product-media/social/${product.slug}.webp`, width: 1200, height: 630, type: 'image/webp' }
 })
 

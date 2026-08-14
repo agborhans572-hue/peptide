@@ -61,12 +61,43 @@ function initialLifecycle(userId) {
 
 export function AuthProvider({ children }) {
   const config = useMemo(supabaseConfiguration, [])
-  const client = useMemo(getSupabaseBrowserClient, [])
-  const [loading, setLoading] = useState(Boolean(client))
+  const [client, setClient] = useState(null)
+  const [loading, setLoading] = useState(config.configured)
   const [session, setSession] = useState(null)
   const [profile, setProfile] = useState(null)
   const [accountStatus, setAccountStatus] = useState('')
   const activityWriteAt = useRef(0)
+
+  useEffect(() => {
+    if (!config.configured) {
+      setLoading(false)
+      return undefined
+    }
+    let active = true
+    const initialize = () => {
+      getSupabaseBrowserClient()
+        .then((nextClient) => { if (active) setClient(nextClient) })
+        .catch(() => { if (active) setLoading(false) })
+    }
+    let hasStoredSession = false
+    try {
+      hasStoredSession = Object.keys(localStorage).some((key) => key.startsWith('sb-') && key.endsWith('-auth-token'))
+    } catch {
+      // Storage can be unavailable in private browsing or hardened browser profiles.
+    }
+    const immediate = window.location.pathname.includes('/my-account')
+      || window.location.pathname.includes('/auth/')
+      || hasStoredSession
+    if (immediate) initialize()
+    else if ('requestIdleCallback' in window) {
+      const handle = window.requestIdleCallback(initialize, { timeout: 2000 })
+      return () => { active = false; window.cancelIdleCallback(handle) }
+    } else {
+      const handle = window.setTimeout(initialize, 1500)
+      return () => { active = false; window.clearTimeout(handle) }
+    }
+    return () => { active = false }
+  }, [config.configured])
 
   const clearCustomerState = useCallback(() => {
     setSession(null)
@@ -114,7 +145,6 @@ export function AuthProvider({ children }) {
 
   useEffect(() => {
     if (!client) {
-      setLoading(false)
       return undefined
     }
     let mounted = true

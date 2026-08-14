@@ -56,7 +56,15 @@ async function capture(config, viewport) {
 
   if (config.count !== null) {
     const count = await page.$$eval('.coa-result-card', (cards) => cards.length)
-    if (count !== config.count) throw new Error(`${config.slug}/${viewport.label}: expected ${config.count} product rows, got ${count}`)
+    const initialCount = Math.min(24, config.count)
+    if (count !== initialCount) throw new Error(`${config.slug}/${viewport.label}: expected ${initialCount} initially paginated product rows, got ${count}`)
+    while (await page.$('.coa-category-page > .coa-clear-filter:last-child')) {
+      await page.click('.coa-category-page > .coa-clear-filter:last-child')
+    }
+    const expandedCount = await page.$$eval('.coa-result-card', (cards) => cards.length)
+    if (expandedCount !== config.count) throw new Error(`${config.slug}/${viewport.label}: load more expected ${config.count} product rows, got ${expandedCount}`)
+    await page.click('.coa-result-card:first-child .coa-batch-links button')
+    await page.waitForSelector('.coa-result-card:first-child .coa-batch-links a')
     const pdfLinks = await page.$$eval('.coa-batch-links a', (links) => links.map((link) => ({ href: link.href, target: link.target })))
     if (!pdfLinks.length || pdfLinks.some((link) => !link.href.toLowerCase().includes('.pdf') || link.target !== '_blank')) {
       throw new Error(`${config.slug}/${viewport.label}: invalid batch PDF links`)
@@ -93,7 +101,7 @@ try {
   if (resultCount < 1) throw new Error('Combined product and batch filters returned no rows')
   await searchPage.click('.coa-clear-filter')
   resultCount = await searchPage.$$eval('.coa-result-card', (cards) => cards.length)
-  if (resultCount !== 80) throw new Error(`Clear expected 80 rows, got ${resultCount}`)
+  if (resultCount !== 24) throw new Error(`Clear expected 24 paginated rows, got ${resultCount}`)
   await searchPage.close()
 
   const routePage = await browser.newPage()
@@ -110,7 +118,7 @@ try {
 
   if (consoleErrors.length) throw new Error(`Browser console errors:\n${consoleErrors.join('\n')}`)
   await fs.writeFile(new URL('results.json', output), JSON.stringify({ results, consoleErrors }, null, 2))
-  console.log('COA Library QA passed (10 responsive page checks, 640 PDF links, search, clear, FAQ, and navigation).')
+  console.log('COA Library QA passed (10 responsive page checks, pagination, on-demand PDF links, search, clear, FAQ, and navigation).')
 } finally {
   await browser.close()
 }

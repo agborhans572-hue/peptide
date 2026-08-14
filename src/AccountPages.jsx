@@ -360,25 +360,51 @@ function OrdersSection() {
   const { client } = useAuth()
   const selectedOrder = new URLSearchParams(window.location.search).get('order')
   const [orders, setOrders] = useState([])
+  const [selectedOrderData, setSelectedOrderData] = useState(null)
+  const [hasMore, setHasMore] = useState(false)
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
     let active = true
-    client.from('orders')
-      .select('id,order_number,payment_status,fulfillment_status,currency,total_cents,created_at,order_items(id,sku,product_name,product_option,quantity,total_cents)')
-      .order('created_at', { ascending: false })
+    const request = selectedOrder
+      ? client.from('orders')
+        .select('id,order_number,payment_status,fulfillment_status,currency,total_cents,created_at,order_items(id,sku,product_name,product_option,quantity,total_cents)')
+        .eq('order_number', selectedOrder)
+        .maybeSingle()
+      : client.rpc('list_my_orders', { p_limit: 21 })
+    request
       .then(({ data }) => {
         if (active) {
-          setOrders(data || [])
+          if (selectedOrder) setSelectedOrderData(data || null)
+          else {
+            const rows = data || []
+            setOrders(rows.slice(0, 20))
+            setHasMore(rows.length > 20)
+          }
           setLoading(false)
         }
       })
     return () => { active = false }
-  }, [client])
+  }, [client, selectedOrder])
+
+  async function loadMore() {
+    const cursor = orders.at(-1)
+    if (!cursor) return
+    setLoading(true)
+    const { data } = await client.rpc('list_my_orders', {
+      p_before_created_at: cursor.created_at,
+      p_before_id: cursor.id,
+      p_limit: 21,
+    })
+    const rows = data || []
+    setOrders((current) => [...current, ...rows.slice(0, 20)])
+    setHasMore(rows.length > 20)
+    setLoading(false)
+  }
 
   if (loading) return <div className="account-dashboard-card"><h2>Orders</h2><p>Loading orders…</p></div>
   if (selectedOrder) {
-    const order = orders.find((item) => item.order_number === selectedOrder)
+    const order = selectedOrderData
     if (!order) {
       return <div className="account-dashboard-card"><h2>Order not found</h2><p>That order does not exist or is not available to this account.</p></div>
     }
@@ -410,6 +436,7 @@ function OrdersSection() {
           </a>
         ))}
       </div>
+      {hasMore && <button type="button" onClick={loadMore}>LOAD MORE ORDERS</button>}
     </div>
   )
 }

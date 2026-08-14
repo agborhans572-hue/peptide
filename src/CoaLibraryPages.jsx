@@ -1,6 +1,7 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { ChevronDown } from 'lucide-react'
-import coaCategories from './coaLibraryData.json'
+import { appPath } from './appPath.js'
+import { catalogVersion } from './catalog.js'
 import './coaLibrary.css'
 
 const carriers = [
@@ -166,51 +167,110 @@ function SearchGroup({ label, placeholder, value, onChange, onSearch }) {
   )
 }
 
+function BatchLinks({ category, item, batchFilter }) {
+  const [expanded, setExpanded] = useState(false)
+  const [batches, setBatches] = useState(null)
+  const [failed, setFailed] = useState(false)
+
+  async function toggle() {
+    if (expanded) {
+      setExpanded(false)
+      return
+    }
+    setExpanded(true)
+    if (batches || failed) return
+    try {
+      const response = await fetch(appPath(`/coa/${catalogVersion}/${category}/products/${item.id}.json`), { cache: 'force-cache' })
+      if (!response.ok) throw new Error(`COA request failed with ${response.status}.`)
+      const document = await response.json()
+      setBatches(Array.isArray(document.batches) ? document.batches : [])
+    } catch {
+      setFailed(true)
+    }
+  }
+
+  const visibleBatches = (batches || []).filter((batch) => (
+    !batchFilter || batch.id.toLowerCase().includes(batchFilter.toLowerCase())
+  ))
+  return (
+    <div className="coa-batch-links">
+      <button type="button" aria-expanded={expanded} onClick={toggle}>
+        {expanded ? 'Hide batches' : `View ${item.batchCount} ${item.batchCount === 1 ? 'batch' : 'batches'}`}
+      </button>
+      {expanded && !batches && !failed && <span role="status">Loading…</span>}
+      {expanded && failed && <span role="alert">Batch links are temporarily unavailable.</span>}
+      {expanded && visibleBatches.map((batch, index) => (
+        <a href={batch.href} target="_blank" rel="noreferrer" key={`${batch.id}-${index}`}>{batch.id}</a>
+      ))}
+    </div>
+  )
+}
+
 export function CoaCategoryPage({ category }) {
-  const page = coaCategories[category]
+  const [page, setPage] = useState(null)
+  const [pageFailed, setPageFailed] = useState(false)
   const [productInput, setProductInput] = useState('')
   const [batchInput, setBatchInput] = useState('')
   const [productFilter, setProductFilter] = useState('')
   const [batchFilter, setBatchFilter] = useState('')
+  const [visibleCount, setVisibleCount] = useState(24)
+
+  useEffect(() => {
+    const controller = new AbortController()
+    setPage(null)
+    setPageFailed(false)
+    fetch(appPath(`/coa/${catalogVersion}/${category}/index.json`), { cache: 'force-cache', signal: controller.signal })
+      .then((response) => {
+        if (!response.ok) throw new Error(`COA index request failed with ${response.status}.`)
+        return response.json()
+      })
+      .then(setPage)
+      .catch((error) => { if (error.name !== 'AbortError') setPageFailed(true) })
+    return () => controller.abort()
+  }, [category])
+
+  if (pageFailed) return <div className="route-loader" role="alert">The COA library is temporarily unavailable.</div>
+  if (!page) return <div className="route-loader" role="status">Loading COA library…</div>
 
   const filteredItems = page.items.filter((item) => {
     const productMatch = !productFilter || item.product.toLowerCase().includes(productFilter.toLowerCase())
-    const batchMatch = !batchFilter || item.batches.some((batch) => batch.id.toLowerCase().includes(batchFilter.toLowerCase()))
+    const batchMatch = !batchFilter || item.batchIds.some((batchId) => batchId.toLowerCase().includes(batchFilter.toLowerCase()))
     return productMatch && batchMatch
   })
   const hasFilter = Boolean(productFilter || batchFilter)
+  const visibleItems = filteredItems.slice(0, visibleCount)
 
   function clearFilters() {
     setProductInput('')
     setBatchInput('')
     setProductFilter('')
     setBatchFilter('')
+    setVisibleCount(24)
   }
 
   return (
     <div className={`coa-category-page coa-category-${category}`}>
       <h1>{page.heading}</h1>
       <div className="coa-search-grid">
-        <SearchGroup label="Search by Product Name:" placeholder="Product Name" value={productInput} onChange={setProductInput} onSearch={() => setProductFilter(productInput.trim())} />
-        <SearchGroup label="Search by Batch ID:" placeholder="Batch ID" value={batchInput} onChange={setBatchInput} onSearch={() => setBatchFilter(batchInput.trim())} />
+        <SearchGroup label="Search by Product Name:" placeholder="Product Name" value={productInput} onChange={setProductInput} onSearch={() => { setProductFilter(productInput.trim()); setVisibleCount(24) }} />
+        <SearchGroup label="Search by Batch ID:" placeholder="Batch ID" value={batchInput} onChange={setBatchInput} onSearch={() => { setBatchFilter(batchInput.trim()); setVisibleCount(24) }} />
       </div>
       {hasFilter && <button className="coa-clear-filter" type="button" onClick={clearFilters}>CLEAR <span>×</span></button>}
-      <p className="coa-results-count">Showing all {filteredItems.length} results</p>
+      <p className="coa-results-count">Showing {visibleItems.length} of {filteredItems.length} results</p>
       <div className="coa-results-grid">
-        {filteredItems.map((item) => (
+        {visibleItems.map((item) => (
           <article className="coa-result-card" key={item.product}>
             <h2>{item.product}</h2>
             <div>
               <strong>Batch ID:</strong>
-              <div className="coa-batch-links">
-                {item.batches.map((batch, index) => (
-                  <a href={batch.href} target="_blank" rel="noreferrer" key={`${batch.id}-${index}`}>{batch.id}</a>
-                ))}
-              </div>
+              <BatchLinks category={category} item={item} batchFilter={batchFilter} />
             </div>
           </article>
         ))}
       </div>
+      {visibleCount < filteredItems.length && (
+        <button className="coa-clear-filter" type="button" onClick={() => setVisibleCount((count) => count + 24)}>LOAD MORE RESULTS</button>
+      )}
     </div>
   )
 }

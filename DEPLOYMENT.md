@@ -33,7 +33,10 @@ In **Project → Settings → Environment Variables**, add these values for the 
 | `WOOCOMMERCE_URL` | WooCommerce store URL | No |
 | `WC_CONSUMER_KEY` | WooCommerce REST API key | Yes |
 | `WC_CONSUMER_SECRET` | WooCommerce REST API secret | Yes |
-| `MONITORING_WEBHOOK_URL` | Monitoring provider webhook, if used | Yes |
+| `COMMERCE_RESERVATIONS_ENABLED` | `false` until staged acceptance; then `true` | No |
+| `WOO_BRIDGE_SECRET_CURRENT` | Same 32+ character value as the Woo plugin | Yes |
+| `WOO_BRIDGE_SECRET_PREVIOUS` | Previous value during secret rotation only | Yes |
+| `WOO_WEBHOOK_SECRET` | Woo order webhook signing secret | Yes |
 | `VITE_SITE_URL` | Same final `https://` production domain | No |
 | `VITE_SUPABASE_URL` | Same project URL as `SUPABASE_URL` | No |
 | `VITE_SUPABASE_PUBLISHABLE_KEY` | Supabase browser publishable key | No |
@@ -45,6 +48,8 @@ In **Project → Settings → Environment Variables**, add these values for the 
 | `VITE_BUILD_SOURCEMAP` | `false` | No |
 
 Never add a secret as `VITE_*`: Vite embeds those values in the browser bundle. Once Vercel has assigned your final domain, set Stripe’s live webhook endpoint to `https://YOUR-DOMAIN/api/stripe-webhook` and copy the signing secret into `STRIPE_WEBHOOK_SECRET`.
+
+Vercel Pro is required for the one-minute commerce cron. Set Stripe's endpoint to `https://YOUR-DOMAIN/api/stripe-webhook` and Woo's order endpoint to `https://YOUR-DOMAIN/api/woocommerce-webhook`; keep both secrets server-only.
 
 ## Hosting requirements
 
@@ -68,7 +73,7 @@ Never add a secret as `VITE_*`: Vite embeds those values in the browser bundle. 
 The repository includes Vercel serverless adapters for server-priced Stripe Checkout, signed/idempotent Stripe webhooks, Supabase orders, and protected order lookup. Apply the Supabase migration and configure the server-only secrets documented in `.env.production.example` before enabling checkout. Public endpoint variables are configured at build time:
 
 - `VITE_ACCOUNT_DELETION_ENDPOINT` accepts a recent authenticated deletion request and immediately disables protected access.
-- `VITE_CHECKOUT_ENDPOINT` accepts `POST { catalogVersion, items: [{ productId, variantId, quantity }] }` and returns a Stripe-hosted `checkoutUrl`. The included function ignores all browser prices/SKUs/totals, recalculates from the reviewed snapshot, and revalidates price, publication, visibility, and stock against authenticated WooCommerce immediately before creating Stripe Checkout. A stale cart receives HTTP 409; WooCommerce failure is closed with HTTP 503.
+- `VITE_CHECKOUT_ENDPOINT` accepts `POST { checkoutAttemptId, catalogVersion, items: [{ productId, variantId, quantity }] }` and returns `{ checkoutUrl, orderNumber, expiresAt }`. It sends one signed reservation request to the Woo bridge and never accepts browser prices/SKUs/totals. A stale cart receives HTTP 409; an unavailable authority fails closed with retryable HTTP 503.
 - `VITE_CONTACT_ENDPOINT` accepts the contact form fields as JSON.
 - `VITE_NEWSLETTER_ENDPOINT` accepts `POST { email }`.
 - `VITE_ORDER_TRACKING_ENDPOINT` accepts `POST { orderid, order_email }` and may return a user-safe `message` or `status`.
@@ -81,7 +86,7 @@ In production Supabase, set the Site URL to `https://purehealthpeptidesshop.com`
 
 Enable Cloudflare Turnstile and keep sign-in/sign-up and token-verification limits at 30 per five minutes per IP. On Supabase Pro, configure 15-minute JWTs, refresh-token rotation, a 12-hour inactivity timeout, and a seven-day session time-box. Google remains disabled unless its credentials and callbacks are staging-tested.
 
-Vercel invokes `/api/cron/process-account-deletions` daily with `CRON_SECRET`. A request disables protected access immediately; processing waits 30 days, defers active orders and legal holds, anonymizes retained financial orders, and removes the Auth user.
+Vercel invokes `/api/cron/process-commerce-jobs` every minute and `/api/cron/process-account-deletions` daily with `CRON_SECRET`. Both use bounded database leases so duplicate cron invocations do not duplicate work. Deletion waits 30 days, defers active orders/legal holds, anonymizes retained financial orders, and removes the Auth user.
 
 See `docs/LAUNCH_RUNBOOK.md` for database migration verification, Stripe webhook registration, live payment/refund evidence, backups, MFA, HTTPS, monitoring, legal approval, and rollback.
 

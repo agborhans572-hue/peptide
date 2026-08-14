@@ -4,6 +4,7 @@ import { shopProducts } from './catalog.js'
 import { productPath } from './productRoutes.js'
 import { dimensionsLabel, formatCents, restrictionLabels, stockLabel } from './money.js'
 import { responsiveImageProps } from './productImages.js'
+import { mediaUrl, rewriteMediaHtml } from './mediaUrl.js'
 import './productDetail.css'
 
 function roundMoney(value) {
@@ -76,10 +77,10 @@ export function ProductDetailPage({ product, detail, onAddToCart, onNavigate, on
   const available = optionAvailable(option, product)
   const maxQuantity = optionMax(option)
   const gallery = detail?.images?.length
-    ? detail.images
-    : [{ role: 'primary', src: product.image, alt: product.name }]
+    ? detail.images.map((image) => ({ ...image, mediaSource: image.src, src: mediaUrl(image.src) }))
+    : [{ role: 'primary', mediaSource: product.mediaSource || product.image, src: product.image, alt: product.name }]
   const renderedDescription = descriptionWithMolecularControls(
-    detail?.descriptionHtml || `<p>${usageNotice()}</p>`,
+    rewriteMediaHtml(detail?.descriptionHtml) || `<p>${usageNotice()}</p>`,
     Boolean(detail?.molecularStructureImage),
   )
   const galleryHeightOffset = {
@@ -97,6 +98,12 @@ export function ProductDetailPage({ product, detail, onAddToCart, onNavigate, on
     topicals: { route: 'coaTopicals', path: '/coa-library/topicals/' },
   }[product.type]
   const optionPrompt = product.type === 'capsules' || product.type === 'liquids' ? 'Select Volume' : 'Select Weight'
+  const restoreMediaFallback = (event, source) => {
+    const fallback = source || event.target?.dataset?.localMediaSrc
+    if (!fallback || event.target.src?.endsWith(fallback)) return
+    event.target.removeAttribute('srcset')
+    event.target.src = fallback
+  }
   const relatedProducts = useMemo(() => {
     const currentCategories = new Set(Array.isArray(product?.categories) ? product.categories : [])
     return shopProducts
@@ -173,13 +180,13 @@ export function ProductDetailPage({ product, detail, onAddToCart, onNavigate, on
           <div className="product-gallery-thumbs">
             {gallery.map((image, index) => (
               <button className={galleryIndex === index ? 'active' : ''} type="button" aria-pressed={galleryIndex === index} onClick={() => setGalleryIndex(index)} key={`${image.src}-${index}`}>
-                <img src={image.src} alt={image.alt || `${product.name} gallery image ${index + 1}`} />
+                <img src={image.src} onError={(event) => restoreMediaFallback(event, image.mediaSource)} alt={image.alt || `${product.name} gallery image ${index + 1}`} />
               </button>
             ))}
           </div>
           <div className="product-gallery-main">
             <img
-              {...responsiveImageProps(galleryIndex === 0 ? (option?.image || gallery[0]?.src || product.image) : gallery[galleryIndex]?.src, '(max-width: 800px) 94vw, 50vw')}
+              {...responsiveImageProps(galleryIndex === 0 ? (option?.mediaSource || gallery[0]?.mediaSource || product.mediaSource || product.image) : gallery[galleryIndex]?.mediaSource, '(max-width: 800px) 94vw, 50vw')}
               alt={galleryIndex === 0 ? (option?.imageAlt || gallery[0]?.alt || product.imageAlt || product.name) : (gallery[galleryIndex]?.alt || product.name)}
               decoding="async"
             />
@@ -188,17 +195,17 @@ export function ProductDetailPage({ product, detail, onAddToCart, onNavigate, on
 
         <div className="product-gallery product-gallery-mobile">
           <div className="product-gallery-mobile-main">
-            {gallery.map((image, index) => <img src={image.src} alt={image.alt || `${product.name} gallery image ${index + 1}`} key={`${image.src}-${index}`} />)}
+            {gallery.map((image, index) => <img src={image.src} onError={(event) => restoreMediaFallback(event, image.mediaSource)} alt={image.alt || `${product.name} gallery image ${index + 1}`} key={`${image.src}-${index}`} />)}
           </div>
           <div className="product-gallery-mobile-thumbnails" aria-hidden="true">
-            {gallery.map((image, index) => <img src={image.src} alt="" key={`mobile-thumb-${image.src}-${index}`} />)}
+            {gallery.map((image, index) => <img src={image.src} onError={(event) => restoreMediaFallback(event, image.mediaSource)} alt="" key={`mobile-thumb-${image.src}-${index}`} />)}
           </div>
         </div>
 
         <div className="product-purchase-panel">
           <p className="product-detail-categories">{detail?.categories?.map((category) => category.name).join(', ') || 'Research Product'}</p>
           <h1>{detail?.title || product.name}</h1>
-          <div className="product-short-description" dangerouslySetInnerHTML={{ __html: detail ? detail.shortDescriptionHtml : `<p>${product.name} is supplied for controlled in-vitro laboratory research.</p>` }} />
+          <div className="product-short-description" onErrorCapture={restoreMediaFallback} dangerouslySetInnerHTML={{ __html: detail ? rewriteMediaHtml(detail.shortDescriptionHtml) : `<p>${product.name} is supplied for controlled in-vitro laboratory research.</p>` }} />
 
           <div className="product-buy-controls">
             <label>
@@ -260,7 +267,7 @@ export function ProductDetailPage({ product, detail, onAddToCart, onNavigate, on
         <div>
           <section className={`product-technical-description template-${detail?.contentTemplate || 'structured'}`}>
             <h2>Description</h2>
-            <div className="product-description-html" onClick={handleDescriptionClick} dangerouslySetInnerHTML={{ __html: renderedDescription }} />
+            <div className="product-description-html" onClick={handleDescriptionClick} onErrorCapture={restoreMediaFallback} dangerouslySetInnerHTML={{ __html: renderedDescription }} />
           </section>
 
           <section className="product-coa-callout">

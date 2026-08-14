@@ -1,6 +1,5 @@
-import { createClient } from '@supabase/supabase-js'
-
 let browserClient
+let browserClientPromise
 
 export function normalizeSiteOrigin(siteUrl) {
   const value = String(siteUrl || '').trim().replace(/\/+$/, '')
@@ -40,18 +39,22 @@ export function supabaseConfiguration() {
   }
 }
 
-export function getSupabaseBrowserClient() {
+export async function getSupabaseBrowserClient() {
   if (browserClient) return browserClient
+  if (browserClientPromise) return browserClientPromise
   const config = supabaseConfiguration()
   if (!config.configured || typeof window === 'undefined') return null
 
-  browserClient = createClient(config.url, config.publishableKey, {
-    auth: {
-      detectSessionInUrl: false,
-      flowType: 'pkce',
-      persistSession: true,
-      autoRefreshToken: true,
-    },
+  browserClientPromise = import('@supabase/supabase-js').then(({ createClient }) => {
+    browserClient = createClient(config.url, config.publishableKey, {
+      auth: {
+        detectSessionInUrl: false,
+        flowType: 'pkce',
+        persistSession: true,
+        autoRefreshToken: true,
+      },
+    })
+    return browserClient
   })
-  return browserClient
+  return browserClientPromise
 }

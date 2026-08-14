@@ -36,6 +36,7 @@ export async function postToSiteService(endpoint, payload, options = {}) {
       error.status = response.status
       error.code = data.code
       error.details = data.details
+      error.retryable = Boolean(data.retryable)
       throw error
     }
     return data

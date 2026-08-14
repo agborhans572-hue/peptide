@@ -24,6 +24,11 @@
   status = 200
 
 [[redirects]]
+  from = "/api/woocommerce-webhook"
+  to = "/.netlify/functions/woocommerce-webhook"
+  status = 200
+
+[[redirects]]
   from = "/api/orders/track"
   to = "/.netlify/functions/order-track"
   status = 200
@@ -41,6 +46,11 @@
 [[redirects]]
   from = "/api/account/delete-request"
   to = "/.netlify/functions/account-delete"
+  status = 200
+
+[[redirects]]
+  from = "/api/cron/process-commerce-jobs"
+  to = "/.netlify/functions/process-commerce-jobs"
   status = 200
 
 [[redirects]]

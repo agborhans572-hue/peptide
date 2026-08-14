@@ -1,4 +1,5 @@
 import type { HandlerEvent, HandlerResponse } from '@netlify/functions'
+import { randomUUID } from 'node:crypto'
 import { z } from 'zod'
 
 const securityHeaders = {
@@ -7,13 +8,16 @@ const securityHeaders = {
   'X-Content-Type-Options': 'nosniff',
 }
 
-export function json(statusCode: number, body: unknown): HandlerResponse {
-  return { statusCode, headers: securityHeaders, body: JSON.stringify(body) }
+export function json(statusCode: number, body: unknown, headers: Record<string, string> = {}): HandlerResponse {
+  return { statusCode, headers: { ...securityHeaders, ...headers }, body: JSON.stringify(body) }
 }
 
 export function parseJson<T>(event: HandlerEvent, schema: z.ZodType<T>): T {
   if (!event.body || !event.headers['content-type']?.toLowerCase().includes('application/json')) {
     throw new HttpError(415, 'A JSON request body is required.')
+  }
+  if (Buffer.byteLength(event.body, 'utf8') > 64 * 1024) {
+    throw new HttpError(413, 'The request body is too large.')
   }
   try {
     return schema.parse(JSON.parse(event.body))
@@ -38,13 +42,26 @@ export function clientFingerprint(event: HandlerEvent) {
 }
 
 export class HttpError extends Error {
-  constructor(public statusCode: number, message: string, public code?: string, public details?: unknown) {
+  constructor(
+    public statusCode: number,
+    message: string,
+    public code?: string,
+    public details?: unknown,
+    public retryable = false,
+  ) {
     super(message)
   }
 }
 
 export function errorResponse(error: unknown) {
-  if (error instanceof HttpError) return json(error.statusCode, { message: error.message, code: error.code, details: error.details })
-  if (error instanceof z.ZodError) return json(500, { message: 'Server configuration is invalid.' })
-  return json(500, { message: 'The service is temporarily unavailable.' })
+  const requestId = randomUUID()
+  if (error instanceof HttpError) return json(error.statusCode, {
+    message: error.message,
+    code: error.code,
+    details: error.details,
+    retryable: error.retryable,
+    requestId,
+  }, { ...(error.retryable ? { 'Retry-After': '5' } : {}), 'X-Request-Id': requestId })
+  if (error instanceof z.ZodError) return json(500, { message: 'Server configuration is invalid.', requestId }, { 'X-Request-Id': requestId })
+  return json(500, { message: 'The service is temporarily unavailable.', requestId }, { 'X-Request-Id': requestId })
 }

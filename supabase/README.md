@@ -1,6 +1,6 @@
 # Supabase authentication and database
 
-Production uses hosted Supabase. The optional local stack is used for the pgTAP account-policy release test; `config.toml`, migrations, and tests remain committed so authentication settings and database policies are reproducible.
+Production uses hosted Supabase Pro for authentication, the customer-facing order projection, leased commerce work, the durable Stripe inbox, and the public product-media bucket. The optional local stack runs the pgTAP account and commerce concurrency tests; configuration, migrations, and tests remain committed so policies and database behavior are reproducible.
 
 Never commit service-role keys, access tokens, or Supabase CLI state. Those paths are listed in the repository `.gitignore`.
 
@@ -32,7 +32,7 @@ For local account-policy tests, set `SUPABASE_AUTH_TURNSTILE_SECRET`, start the 
 
 ```bash
 supabase start
-npm run test:accounts:db
+npm run test:db
 ```
 
 In every hosted project, mirror `config.toml`: enable email confirmation and double-confirmed email changes, set one-hour email-link expiry, 12-character passwords, Turnstile, 30 sign-in/sign-up and token-verification requests per five minutes per IP, 15-minute JWTs, a 12-hour inactivity timeout, and a seven-day session time-box. Production requires Supabase Pro for server-side session limits.

@@ -256,17 +256,10 @@ export default defineConfig({
   build: {
     target: 'es2020',
     assetsDir: '_app',
+    manifest: true,
     cssCodeSplit: true,
     minify: 'oxc',
     sourcemap: process.env.VITE_BUILD_SOURCEMAP === 'true',
     reportCompressedSize: true,
-    rollupOptions: {
-      output: {
-        manualChunks(id) {
-          if (id.includes('/node_modules/')) return 'vendor'
-          return undefined
-        },
-      },
-    },
   },
 })

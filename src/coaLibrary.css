@@ -441,7 +441,8 @@
   gap: 7px;
 }
 
-.coa-batch-links a {
+.coa-batch-links a,
+.coa-batch-links button {
   display: inline-flex;
   max-width: 100%;
   padding: 1px 16px;
@@ -455,9 +456,11 @@
   line-height: 28px;
   overflow-wrap: anywhere;
   text-align: center;
+  cursor: pointer;
 }
 
-.coa-batch-links a:hover {
+.coa-batch-links a:hover,
+.coa-batch-links button:hover {
   border-color: #1f99ce;
   color: #171f4a;
 }

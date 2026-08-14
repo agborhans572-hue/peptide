@@ -5,16 +5,19 @@ const required = [
   'CRON_SECRET',
   'STRIPE_SECRET_KEY',
   'STRIPE_WEBHOOK_SECRET',
-  'MONITORING_WEBHOOK_URL',
   'WOOCOMMERCE_URL',
   'WC_CONSUMER_KEY',
   'WC_CONSUMER_SECRET',
+  'COMMERCE_RESERVATIONS_ENABLED',
+  'WOO_BRIDGE_SECRET_CURRENT',
+  'WOO_WEBHOOK_SECRET',
   'VITE_SITE_URL',
   'VITE_SUPABASE_URL',
   'VITE_SUPABASE_PUBLISHABLE_KEY',
   'VITE_TURNSTILE_SITE_KEY',
   'VITE_GOOGLE_AUTH_ENABLED',
   'VITE_ACCOUNT_DELETION_ENDPOINT',
+  'VITE_CHECKOUT_ENDPOINT',
 ]
 
 const errors = []
@@ -38,6 +41,9 @@ if (process.env.VITE_ACCOUNT_DELETION_ENDPOINT !== '/api/account/delete-request'
   errors.push('VITE_ACCOUNT_DELETION_ENDPOINT must use the same-origin production route')
 }
 if ((process.env.CRON_SECRET || '').length < 32) errors.push('CRON_SECRET must contain at least 32 characters')
+if ((process.env.WOO_BRIDGE_SECRET_CURRENT || '').length < 32) errors.push('WOO_BRIDGE_SECRET_CURRENT must contain at least 32 characters')
+if ((process.env.WOO_WEBHOOK_SECRET || '').length < 32) errors.push('WOO_WEBHOOK_SECRET must contain at least 32 characters')
+if (process.env.COMMERCE_RESERVATIONS_ENABLED !== 'true') errors.push('COMMERCE_RESERVATIONS_ENABLED must be true in production')
 if (!['true', 'false'].includes(process.env.VITE_GOOGLE_AUTH_ENABLED || 'false')) {
   errors.push('VITE_GOOGLE_AUTH_ENABLED must be true or false')
 }

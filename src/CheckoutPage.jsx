@@ -317,7 +317,7 @@ export function OrderConfirmationPage({ order, onShop }) {
           signal: controller.signal,
         })
         const data = await response.json()
-        if (response.status === 409 && attempt < 8) {
+        if (response.status === 202 && attempt < 30) {
           retryTimer = window.setTimeout(() => loadOrder(attempt + 1), 1500)
           return
         }

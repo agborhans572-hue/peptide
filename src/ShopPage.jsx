@@ -331,7 +331,7 @@ function ProductCard({ product, onAddToCart, onLearnMore }) {
     <article className="shop-card" id={productId}>
       <h3 className="sr-only">{product.name}</h3>
       <div className="shop-card-image">
-        <img {...responsiveImageProps(option?.image || product.image, '(max-width: 720px) 92vw, 330px')} alt={option?.imageAlt || product.imageAlt || `${product.name} product`} loading="lazy" decoding="async" />
+        <img {...responsiveImageProps(option?.mediaSource || product.mediaSource || option?.image || product.image, '(max-width: 720px) 92vw, 330px')} alt={option?.imageAlt || product.imageAlt || `${product.name} product`} loading="lazy" decoding="async" />
       </div>
 
       <div className="shop-card-form">
@@ -449,12 +449,17 @@ export default function ShopPage({ searchQuery = '', onAddToCart, onLearnMore, o
   const [selectedCategory, setSelectedCategory] = useState('all')
   const [sortBy, setSortBy] = useState('default')
   const [clearedSearchQuery, setClearedSearchQuery] = useState(null)
+  const [visibleByType, setVisibleByType] = useState(() => Object.fromEntries(SECTION_ORDER.map((type) => [type, 24])))
   const incomingSearchQuery = String(searchQuery ?? '').trim()
   const activeSearchQuery = clearedSearchQuery === incomingSearchQuery ? '' : incomingSearchQuery
 
   useEffect(() => {
     setClearedSearchQuery(null)
   }, [searchQuery])
+
+  useEffect(() => {
+    setVisibleByType(Object.fromEntries(SECTION_ORDER.map((type) => [type, 24])))
+  }, [activeSearchQuery, selectedCategory, sortBy])
 
   const productsByType = useMemo(() => {
     return Object.fromEntries(
@@ -571,7 +576,7 @@ export default function ShopPage({ searchQuery = '', onAddToCart, onLearnMore, o
         <aside className="shop-sidebar" aria-label="Product list">
           <h2 className="shop-sidebar-title">Product List</h2>
           {SIDEBAR_ORDER.map((type) => {
-            const products = productsByType[type]
+            const products = productsByType[type].slice(0, visibleByType[type])
             return (
               <section className="shop-sidebar-group" key={type}>
                 <h3 className="shop-sidebar-group-title">{type}</h3>
@@ -596,6 +601,7 @@ export default function ShopPage({ searchQuery = '', onAddToCart, onLearnMore, o
         <div className="shop-content">
           {SECTION_ORDER.map((type) => {
             const products = productsByType[type]
+            const visibleProducts = products.slice(0, visibleByType[type])
             const headingId = `${sectionDomId(type)}-heading`
 
             return (
@@ -611,7 +617,7 @@ export default function ShopPage({ searchQuery = '', onAddToCart, onLearnMore, o
 
                 {products.length > 0 ? (
                   <div className="shop-grid">
-                    {products.map((product) => (
+                    {visibleProducts.map((product) => (
                       <ProductCard
                         product={product}
                         onAddToCart={onAddToCart}
@@ -624,6 +630,15 @@ export default function ShopPage({ searchQuery = '', onAddToCart, onLearnMore, o
                   <p className="shop-empty">
                     No {type.toLocaleLowerCase()} match this research category.
                   </p>
+                )}
+                {visibleProducts.length < products.length && (
+                  <button
+                    className="shop-search-clear"
+                    type="button"
+                    onClick={() => setVisibleByType((current) => ({ ...current, [type]: current[type] + 24 }))}
+                  >
+                    LOAD MORE {type}
+                  </button>
                 )}
               </section>
             )
