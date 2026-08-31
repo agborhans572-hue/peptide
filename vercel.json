@@ -95,7 +95,7 @@
   "crons": [
     {
       "path": "/api/cron/process-commerce-jobs",
-      "schedule": "* * * * *"
+      "schedule": "0 5 * * *"
     },
     {
       "path": "/api/cron/process-account-deletions",
