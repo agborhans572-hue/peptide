@@ -32,7 +32,7 @@ const trustCards = [
 const coaFaqs = [
   {
     question: 'Where is my batch ID printed?',
-    answer: 'The batch ID is printed vertically along the side of the product label. The same identifier appears on the COA. If your product label is damaged or unreadable, contact us at info@purehealthpeptides.com with a photo of your product and we’ll help locate the matching COA.',
+    answer: 'The batch ID is printed vertically along the side of the product label. The same identifier appears on the COA. If your product label is damaged or unreadable, contact us at info@purehealthpeptidesshop.com with a photo of your product and we’ll help locate the matching COA.',
   },
   {
     question: 'Why is my batch ID not in the list?',

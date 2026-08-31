@@ -99,7 +99,9 @@ async function capture(slug, expectedHeading, viewport) {
     await page.type('#support-message', 'Local form validation test.')
     await page.click('.contact-content button[type="submit"]')
     const status = await page.$eval('.support-form-status', (node) => node.textContent)
-    if (!status.includes('Contact form delivery')) throw new Error(`${slug}/${viewport.label}: contact service status not shown`)
+    if (!status.includes('info@purehealthpeptidesshop.com') && !status.includes('sent successfully')) {
+      throw new Error(`${slug}/${viewport.label}: contact delivery status not shown`)
+    }
   }
 
   await page.close()

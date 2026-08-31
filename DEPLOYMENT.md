@@ -30,6 +30,8 @@ In **Project → Settings → Environment Variables**, add these values for the 
 | `CRON_SECRET` | At least 32 random characters for the deletion processor | Yes |
 | `STRIPE_SECRET_KEY` | Stripe live secret key | Yes |
 | `STRIPE_WEBHOOK_SECRET` | Stripe endpoint signing secret | Yes |
+| `RESEND_API_KEY` | Resend sending-access API key | Yes |
+| `CONTACT_FROM_EMAIL` | `info@purehealthpeptidesshop.com` on the verified sending domain | No |
 | `WOOCOMMERCE_URL` | WooCommerce store URL | No |
 | `WC_CONSUMER_KEY` | WooCommerce REST API key | Yes |
 | `WC_CONSUMER_SECRET` | WooCommerce REST API secret | Yes |
@@ -44,6 +46,7 @@ In **Project → Settings → Environment Variables**, add these values for the 
 | `VITE_GOOGLE_AUTH_ENABLED` | `false` unless Google is configured and tested | No |
 | `VITE_ACCOUNT_DELETION_ENDPOINT` | `/api/account/delete-request` | No |
 | `VITE_CHECKOUT_ENDPOINT` | `/api/checkout` | No |
+| `VITE_CONTACT_ENDPOINT` | `/api/contact` | No |
 | `VITE_ORDER_TRACKING_ENDPOINT` | `/api/orders/track` | No |
 | `VITE_BUILD_SOURCEMAP` | `false` | No |
 
@@ -74,7 +77,7 @@ The repository includes Vercel serverless adapters for server-priced Stripe Chec
 
 - `VITE_ACCOUNT_DELETION_ENDPOINT` accepts a recent authenticated deletion request and immediately disables protected access.
 - `VITE_CHECKOUT_ENDPOINT` accepts `POST { checkoutAttemptId, catalogVersion, items: [{ productId, variantId, quantity }] }` and returns `{ checkoutUrl, orderNumber, expiresAt }`. It sends one signed reservation request to the Woo bridge and never accepts browser prices/SKUs/totals. A stale cart receives HTTP 409; an unavailable authority fails closed with retryable HTTP 503.
-- `VITE_CONTACT_ENDPOINT` accepts the contact form fields as JSON.
+- `VITE_CONTACT_ENDPOINT` points to `/api/contact`, which validates and rate-limits `POST { fullName, email, message }`, then delivers the enquiry only to `info@purehealthpeptidesshop.com` through Resend. Verify `purehealthpeptidesshop.com` in Resend and configure `RESEND_API_KEY` plus `CONTACT_FROM_EMAIL` in the server-side deployment environment.
 - `VITE_NEWSLETTER_ENDPOINT` accepts `POST { email }`.
 - `VITE_ORDER_TRACKING_ENDPOINT` accepts `POST { orderid, order_email }` and may return a user-safe `message` or `status`.
 

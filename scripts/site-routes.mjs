@@ -85,7 +85,7 @@ function baseSchemaGraph(route) {
       name: 'Pure Health Peptides',
       url: `${SITE_ORIGIN}/`,
       logo: { '@type': 'ImageObject', url: `${SITE_ORIGIN}/assets/logo.svg` },
-      email: 'info@purehealthpeptides.com',
+      email: 'info@purehealthpeptidesshop.com',
       description: 'Supplier of independently batch-tested materials for controlled in vitro laboratory research.',
     },
     {

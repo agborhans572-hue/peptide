@@ -5,7 +5,7 @@ function environmentValue(value) {
 export const siteServices = Object.freeze({
   accountDeletionEndpoint: environmentValue(import.meta.env.VITE_ACCOUNT_DELETION_ENDPOINT),
   checkoutEndpoint: environmentValue(import.meta.env.VITE_CHECKOUT_ENDPOINT),
-  contactEndpoint: environmentValue(import.meta.env.VITE_CONTACT_ENDPOINT),
+  contactEndpoint: environmentValue(import.meta.env.VITE_CONTACT_ENDPOINT) || '/api/contact',
   newsletterEndpoint: environmentValue(import.meta.env.VITE_NEWSLETTER_ENDPOINT),
   orderTrackingEndpoint: environmentValue(import.meta.env.VITE_ORDER_TRACKING_ENDPOINT),
 })

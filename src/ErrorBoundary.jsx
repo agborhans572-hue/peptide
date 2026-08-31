@@ -32,7 +32,7 @@ export default class ErrorBoundary extends Component {
         <div>
           <p>PURE HEALTH PEPTIDES</p>
           <h1>We couldn’t load this page.</h1>
-          <p>Please refresh the page. If the problem continues, contact info@purehealthpeptides.com.</p>
+          <p>Please refresh the page. If the problem continues, contact info@purehealthpeptidesshop.com.</p>
           <button type="button" onClick={() => window.location.reload()}>REFRESH PAGE</button>
         </div>
       </main>

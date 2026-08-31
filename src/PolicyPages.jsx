@@ -29,7 +29,7 @@ const policies = {
       ['How information is used', 'Information is used to process and fulfill orders, provide support, prevent fraud, meet legal obligations, improve reliability, and communicate about a transaction. Marketing messages are sent only where permitted and can be unsubscribed from.'],
       ['Service providers and disclosure', 'We share only the information necessary with processors such as Stripe, Supabase, hosting, shipping, monitoring, and professional advisers. We may disclose information when required by law or to protect customers and the service.'],
       ['Retention and security', 'Records are retained only as long as needed for fulfillment, tax, accounting, dispute, safety, and legal obligations. Access is restricted, administrative accounts require multi-factor authentication, and sensitive server credentials are never shipped to the browser.'],
-      ['Your choices', 'You may request access, correction, or deletion where applicable by contacting info@purehealthpeptides.com. Some records must be retained for legal, security, or transaction requirements.'],
+      ['Your choices', 'You may request access, correction, or deletion where applicable by contacting info@purehealthpeptidesshop.com. Some records must be retained for legal, security, or transaction requirements.'],
     ],
   },
   terms: {
@@ -64,7 +64,7 @@ export default function PolicyPage({ type }) {
         ))}
         <section>
           <h2>Contact</h2>
-          <p>Questions may be sent to <a href="mailto:info@purehealthpeptides.com">info@purehealthpeptides.com</a>.</p>
+          <p>Questions may be sent to <a href="mailto:info@purehealthpeptidesshop.com">info@purehealthpeptidesshop.com</a>.</p>
         </section>
       </div>
     </article>

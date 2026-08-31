@@ -5,6 +5,8 @@ const required = [
   'CRON_SECRET',
   'STRIPE_SECRET_KEY',
   'STRIPE_WEBHOOK_SECRET',
+  'RESEND_API_KEY',
+  'CONTACT_FROM_EMAIL',
   'WOOCOMMERCE_URL',
   'WC_CONSUMER_KEY',
   'WC_CONSUMER_SECRET',
@@ -18,6 +20,7 @@ const required = [
   'VITE_GOOGLE_AUTH_ENABLED',
   'VITE_ACCOUNT_DELETION_ENDPOINT',
   'VITE_CHECKOUT_ENDPOINT',
+  'VITE_CONTACT_ENDPOINT',
 ]
 
 const errors = []
@@ -40,6 +43,13 @@ if (process.env.VITE_SUPABASE_URL !== process.env.SUPABASE_URL) {
 if (process.env.VITE_ACCOUNT_DELETION_ENDPOINT !== '/api/account/delete-request') {
   errors.push('VITE_ACCOUNT_DELETION_ENDPOINT must use the same-origin production route')
 }
+if (process.env.VITE_CONTACT_ENDPOINT !== '/api/contact') {
+  errors.push('VITE_CONTACT_ENDPOINT must use the same-origin production route')
+}
+if (process.env.CONTACT_FROM_EMAIL !== 'info@purehealthpeptidesshop.com') {
+  errors.push('CONTACT_FROM_EMAIL must use the verified Pure Health Peptides mailbox')
+}
+if (!process.env.RESEND_API_KEY?.startsWith('re_')) errors.push('RESEND_API_KEY must be a Resend API key')
 if ((process.env.CRON_SECRET || '').length < 32) errors.push('CRON_SECRET must contain at least 32 characters')
 if ((process.env.WOO_BRIDGE_SECRET_CURRENT || '').length < 32) errors.push('WOO_BRIDGE_SECRET_CURRENT must contain at least 32 characters')
 if ((process.env.WOO_WEBHOOK_SECRET || '').length < 32) errors.push('WOO_WEBHOOK_SECRET must contain at least 32 characters')

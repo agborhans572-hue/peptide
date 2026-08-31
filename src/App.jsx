@@ -836,7 +836,7 @@ function Newsletter() {
     event.preventDefault()
     if (!event.currentTarget.reportValidity()) return
     if (!siteServices.newsletterEndpoint) {
-      setStatus('Newsletter sign-up is not connected on this deployment. Email info@purehealthpeptides.com for updates.')
+      setStatus('Newsletter sign-up is not connected on this deployment. Email info@purehealthpeptidesshop.com for updates.')
       return
     }
 
@@ -964,7 +964,7 @@ function Footer({ onNavigate }) {
         <div className="footer-contact">
           <div>
             <Mail aria-hidden="true" />
-            <p><strong>Email</strong><a href="mailto:info@purehealthpeptides.com">info@purehealthpeptides.com</a></p>
+            <p><strong>Email</strong><a href="mailto:info@purehealthpeptidesshop.com">info@purehealthpeptidesshop.com</a></p>
           </div>
           <div><Package aria-hidden="true" /><p><strong>Shipping Days</strong><span>Mon-Fri / Except Holidays</span></p></div>
         </div>
