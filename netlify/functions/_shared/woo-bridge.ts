@@ -1,6 +1,6 @@
 import { createHash, createHmac, randomUUID } from 'node:crypto'
-import type { PricedCartItem } from '../../../server/pricing.ts'
-import { HttpError } from './http.ts'
+import type { PricedCartItem } from '../../../server/pricing.js'
+import { HttpError } from './http.js'
 
 type BridgeEnvironment = {
   WOOCOMMERCE_URL: string

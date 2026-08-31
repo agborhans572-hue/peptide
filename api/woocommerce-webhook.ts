@@ -1,5 +1,5 @@
-import { handler } from '../netlify/functions/woocommerce-webhook.ts'
-import { serveNetlifyHandler, type VercelRequest, type VercelResponse } from './_shared/netlify-adapter.ts'
+import { handler } from '../netlify/functions/woocommerce-webhook.js'
+import { serveNetlifyHandler, type VercelRequest, type VercelResponse } from './_shared/netlify-adapter.js'
 
 export const config = { api: { bodyParser: false } }
 

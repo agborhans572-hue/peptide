@@ -1,8 +1,8 @@
 import { createHmac, timingSafeEqual } from 'node:crypto'
 import type { Handler } from '@netlify/functions'
-import { wooWebhookSecret } from './_shared/env.ts'
-import { errorResponse, json } from './_shared/http.ts'
-import { services } from './_shared/services.ts'
+import { wooWebhookSecret } from './_shared/env.js'
+import { errorResponse, json } from './_shared/http.js'
+import { services } from './_shared/services.js'
 
 function signatureValid(body: string, supplied: string, secret: string) {
   const expected = Buffer.from(createHmac('sha256', secret).update(body).digest('base64'))

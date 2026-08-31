@@ -2,9 +2,9 @@ import type { Handler } from '@netlify/functions'
 import { createHash, randomUUID } from 'node:crypto'
 import { createClient } from '@supabase/supabase-js'
 import { z } from 'zod'
-import { sendContactEmail } from './_shared/contact.ts'
-import { contactEnv } from './_shared/env.ts'
-import { clientFingerprint, errorResponse, HttpError, json, parseJson, requireSameOrigin } from './_shared/http.ts'
+import { sendContactEmail } from './_shared/contact.js'
+import { contactEnv } from './_shared/env.js'
+import { clientFingerprint, errorResponse, HttpError, json, parseJson, requireSameOrigin } from './_shared/http.js'
 
 const contactMessage = z.object({
   fullName: z.string().trim().min(2).max(100),

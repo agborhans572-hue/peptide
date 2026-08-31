@@ -1,6 +1,6 @@
 import type { SupabaseClient } from '@supabase/supabase-js'
 import type Stripe from 'stripe'
-import { cancelWooOrder, completeWooPayment, refundWooOrder } from './woo-bridge.ts'
+import { cancelWooOrder, completeWooPayment, refundWooOrder } from './woo-bridge.js'
 
 type CommerceEnvironment = {
   COMMERCE_RESERVATIONS_ENABLED: 'true' | 'false'

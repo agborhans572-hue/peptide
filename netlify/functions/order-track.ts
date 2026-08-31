@@ -1,7 +1,7 @@
 import type { Handler } from '@netlify/functions'
 import { z } from 'zod'
-import { clientFingerprint, errorResponse, HttpError, json, parseJson, requireSameOrigin } from './_shared/http.ts'
-import { fingerprint, services } from './_shared/services.ts'
+import { clientFingerprint, errorResponse, HttpError, json, parseJson, requireSameOrigin } from './_shared/http.js'
+import { fingerprint, services } from './_shared/services.js'
 
 const trackingRequest = z.object({
   orderid: z.string().trim().min(8).max(40),

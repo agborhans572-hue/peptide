@@ -1,6 +1,6 @@
 import type { HandlerEvent } from '@netlify/functions'
 import type { SupabaseClient, User } from '@supabase/supabase-js'
-import { HttpError } from './http.ts'
+import { HttpError } from './http.js'
 
 export type ActiveCustomer = {
   profile: {

@@ -1,5 +1,5 @@
-import { lookupCatalogVariant, type RequestedCartItem } from '../../../server/pricing.ts'
-import { HttpError } from './http.ts'
+import { lookupCatalogVariant, type RequestedCartItem } from '../../../server/pricing.js'
+import { HttpError } from './http.js'
 
 type WooProduct = {
   id: number

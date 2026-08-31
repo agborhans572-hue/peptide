@@ -1,4 +1,4 @@
-import { HttpError } from './http.ts'
+import { HttpError } from './http.js'
 
 export const CONTACT_RECIPIENT = 'info@purehealthpeptidesshop.com'
 

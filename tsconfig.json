@@ -11,6 +11,6 @@
     "skipLibCheck": true,
     "types": ["node"]
   },
-  "include": ["netlify/functions/**/*.ts", "server/**/*.ts"],
+  "include": ["api/**/*.ts", "netlify/functions/**/*.ts", "server/**/*.ts"],
   "exclude": ["node_modules", "dist"]
 }
