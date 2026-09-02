@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { shopProducts } from "./catalog.js";
 import { productPath } from "./productRoutes.js";
 
@@ -226,12 +227,100 @@ export const homeCategories = [
   },
 ];
 
-function ProductCard({ product, onProduct }) {
+function productOptions(product) {
+  if (Array.isArray(product.options)) return product.options;
+  if (!product.options || typeof product.options !== "object") return [];
+
+  return Object.entries(product.options).map(([label, price]) => ({ label, price }));
+}
+
+function optionLabel(option, index) {
+  if (option == null || typeof option !== "object") return String(option ?? `Option ${index + 1}`);
+  return String(
+    option.label
+      ?? option.name
+      ?? option.title
+      ?? option.value
+      ?? option.weight
+      ?? option.volume
+      ?? option.size
+      ?? `Option ${index + 1}`,
+  );
+}
+
+function optionPrice(option, product) {
+  if (Number.isInteger(option?.priceCents)) return option.priceCents / 100;
+
+  const candidate = Number.parseFloat(option?.price ?? option?.unitPrice ?? product.price);
+  return Number.isFinite(candidate) ? candidate : 0;
+}
+
+function optionMaxQuantity(option, product) {
+  const candidate = Number.parseInt(option?.maxQty ?? product.maxQty, 10);
+  return Number.isFinite(candidate) ? Math.max(0, candidate) : 999;
+}
+
+function optionIsAvailable(option, product) {
+  return !product.comingSoon && option?.available !== false && optionMaxQuantity(option, product) > 0;
+}
+
+function initialOptionIndex(product, options) {
+  const requestedIndex = Number(product.defaultOption);
+  if (Number.isInteger(requestedIndex) && requestedIndex >= 0 && requestedIndex < options.length) {
+    return requestedIndex;
+  }
+
+  const firstAvailableIndex = options.findIndex((option) => optionIsAvailable(option, product));
+  return firstAvailableIndex >= 0 ? firstAvailableIndex : 0;
+}
+
+function formatPrice(value, currency = "USD") {
+  return new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency,
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2,
+  }).format(value);
+}
+
+function ProductCard({ product, onProduct, onAddToCart }) {
   const shopProduct = productById.get(product.productId);
+  const options = productOptions(shopProduct ?? {});
+  const [selectedOptionIndex, setSelectedOptionIndex] = useState(() => initialOptionIndex(shopProduct ?? {}, options));
+  const [quantity, setQuantity] = useState(1);
 
   if (!shopProduct) {
     throw new Error(`Homepage catalog product “${product.name}” references missing product ID ${product.productId}.`);
   }
+
+  const option = options[selectedOptionIndex] ?? null;
+  const maxQty = optionMaxQuantity(option, shopProduct);
+  const available = optionIsAvailable(option, shopProduct);
+  const unitPrice = optionPrice(option, shopProduct);
+  const optionSelectId = `home-${shopProduct.id}-option`;
+
+  const selectOption = (event) => {
+    const nextIndex = Number(event.target.value);
+    const nextMaxQty = optionMaxQuantity(options[nextIndex], shopProduct);
+    setSelectedOptionIndex(nextIndex);
+    setQuantity((current) => Math.min(Math.max(nextMaxQty, 1), current));
+  };
+
+  const changeQuantity = (change) => {
+    if (!available) return;
+    setQuantity((current) => Math.min(maxQty, Math.max(1, current + change)));
+  };
+
+  const addToCart = () => {
+    if (!available) return;
+    onAddToCart?.({
+      product: shopProduct,
+      option,
+      quantity,
+      unitPrice,
+      maxQty,
+    });
+  };
 
   const handleLearnMore = (event) => {
     if (
@@ -258,9 +347,59 @@ function ProductCard({ product, onProduct }) {
         loading="lazy"
       />
       <div className="product-meta">
-        <span className="product-price-label">Starting at</span>
-        <span className="product-price">{product.price}</span>
-        <span className="save-label">Order More, Save More</span>
+        <div className="product-purchase-controls">
+          <label className="sr-only" htmlFor={optionSelectId}>
+            Select {product.name} {shopProduct.optionLabel || "option"}
+          </label>
+          <select
+            className="product-option-select"
+            id={optionSelectId}
+            value={selectedOptionIndex}
+            disabled={!options.some((item) => optionIsAvailable(item, shopProduct))}
+            onChange={selectOption}
+          >
+            {options.map((item, index) => {
+              const itemAvailable = optionIsAvailable(item, shopProduct);
+              return (
+                <option value={index} disabled={!itemAvailable} key={`${optionLabel(item, index)}-${index}`}>
+                  {optionLabel(item, index)}{itemAvailable ? "" : " — unavailable"}
+                </option>
+              );
+            })}
+          </select>
+          <div className="product-quantity" role="group" aria-label={`${product.name} quantity`}>
+            <button
+              type="button"
+              aria-label={`Decrease ${product.name} quantity`}
+              disabled={!available || quantity <= 1}
+              onClick={() => changeQuantity(-1)}
+            >
+              −
+            </button>
+            <output aria-live="polite" aria-label={`${product.name} selected quantity`}>{quantity}</output>
+            <button
+              type="button"
+              aria-label={`Increase ${product.name} quantity`}
+              disabled={!available || quantity >= maxQty}
+              onClick={() => changeQuantity(1)}
+            >
+              +
+            </button>
+          </div>
+        </div>
+        <div className="product-price-row">
+          <span className="product-price">{formatPrice(unitPrice, shopProduct.currency)}</span>
+          <span className="save-label">Order More, Save More</span>
+        </div>
+        <button
+          className="product-add-button"
+          type="button"
+          aria-label={`Add ${product.name} to cart`}
+          disabled={!available}
+          onClick={addToCart}
+        >
+          {shopProduct.comingSoon ? "COMING SOON" : available ? "ADD TO CART" : "OUT OF STOCK"}
+        </button>
         <a
           className="learn-button"
           href={productPath(shopProduct)}
@@ -274,7 +413,7 @@ function ProductCard({ product, onProduct }) {
   );
 }
 
-export default function Catalog({ onProduct, onShop }) {
+export default function Catalog({ onProduct, onShop, onAddToCart }) {
   return (
     <section className="catalog" id="catalog">
       <h2 className="catalog-title">Shop All Products</h2>
@@ -288,7 +427,12 @@ export default function Catalog({ onProduct, onShop }) {
             <h3 className="category-heading">{category.heading}</h3>
             <div className="product-grid">
               {category.products.map((product) => (
-                <ProductCard key={product.name} product={product} onProduct={onProduct} />
+                <ProductCard
+                  key={product.name}
+                  product={product}
+                  onProduct={onProduct}
+                  onAddToCart={onAddToCart}
+                />
               ))}
             </div>
 

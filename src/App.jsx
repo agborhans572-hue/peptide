@@ -995,13 +995,13 @@ function Footer({ onNavigate }) {
   )
 }
 
-function HomePage({ onShop, onProduct, onNavigate }) {
+function HomePage({ onShop, onProduct, onNavigate, onAddToCart }) {
   return (
     <>
       <Hero onGate={onShop} />
       <TopicalEvent onGate={onShop} />
       <Welcome />
-      <Catalog onProduct={onProduct} onShop={onShop} />
+      <Catalog onProduct={onProduct} onShop={onShop} onAddToCart={onAddToCart} />
       <DiscountSection onGate={onShop} />
       <Transparency onNavigate={onNavigate} />
       <Newsletter />
@@ -1400,7 +1400,7 @@ export default function App() {
         </Suspense>
       )
     }
-    return <HomePage onShop={requestShop} onProduct={navigateProduct} onNavigate={navigate} />
+    return <HomePage onShop={requestShop} onProduct={navigateProduct} onNavigate={navigate} onAddToCart={addToCart} />
   }
 
   return (
