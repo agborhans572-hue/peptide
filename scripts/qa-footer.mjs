@@ -37,11 +37,23 @@ try {
       const footer = document.querySelector('.site-footer')
       const desktopNavigation = document.querySelector('.footer-navigation-desktop')
       const mobileNavigation = document.querySelector('.footer-navigation-mobile')
+      const productCard = document.querySelector('.product-card')
+      const productImage = productCard?.querySelector('.product-image')
       const rect = footer.getBoundingClientRect()
+      const productCardRect = productCard?.getBoundingClientRect()
+      const productImageRect = productImage?.getBoundingClientRect()
       const style = getComputedStyle(footer)
       const visible = (element) => getComputedStyle(element).display !== 'none'
       return {
         footer: { width: Math.round(rect.width), height: Math.round(rect.height) },
+        productCard: productCardRect && {
+          width: productCardRect.width,
+          height: productCardRect.height,
+        },
+        productImage: productImageRect && {
+          width: productImageRect.width,
+          height: productImageRect.height,
+        },
         overflow: document.documentElement.scrollWidth - document.documentElement.clientWidth,
         backgroundImage: style.backgroundImage,
         desktopNavigationVisible: visible(desktopNavigation),
@@ -59,6 +71,16 @@ try {
     })
 
     assert(metrics.footer.width === viewport.width, `${viewport.label}: footer does not span viewport`)
+    assert(metrics.productCard && metrics.productImage, `${viewport.label}: homepage product card image missing`)
+    const expectedProductImageHeight = metrics.productImage.width * 300 / 212
+    assert(
+      Math.abs(metrics.productImage.height - expectedProductImageHeight) <= 3,
+      `${viewport.label}: product image is ${metrics.productImage.width.toFixed(1)}x${metrics.productImage.height.toFixed(1)} instead of the expected 212:300 aspect ratio`,
+    )
+    assert(
+      metrics.productImage.height < metrics.productCard.height,
+      `${viewport.label}: product image overflows its card`,
+    )
     assert(metrics.overflow <= 1, `${viewport.label}: horizontal overflow is ${metrics.overflow}px`)
     assert(metrics.backgroundImage.includes(responsiveImage('/assets/footer-bg.png').src), `${viewport.label}: footer background asset missing`)
     assert(metrics.desktopColumns === 3, `${viewport.label}: expected three desktop columns`)

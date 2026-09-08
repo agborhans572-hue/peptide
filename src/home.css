@@ -224,6 +224,7 @@
 .product-image {
   display: block;
   width: 100%;
+  height: auto;
   aspect-ratio: 212 / 300;
   object-fit: cover;
   border-radius: 17px 17px 0 0;
