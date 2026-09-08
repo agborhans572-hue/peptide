@@ -1,0 +1,5145 @@
+{
+  "observedAt": "2026-09-08",
+  "observationNote": "Pre-change production responses; null means not individually measured. Expected responses require local host-aware QA and post-deployment verification.",
+  "counts": {
+    "canonicalProducts": 115,
+    "otherPublicPages": 21,
+    "errorTemplates": 1,
+    "indexable": 136,
+    "private": 7,
+    "pageValidations": 143,
+    "productAliases": 32
+  },
+  "routes": [
+    {
+      "path": "/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "page"
+    },
+    {
+      "path": "/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/shop/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/shop/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "page"
+    },
+    {
+      "path": "/shop",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": 200,
+      "canonical": "/shop/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/shop/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/shop/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/about-us/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/about-us/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "page"
+    },
+    {
+      "path": "/about-us",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/about-us/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/about-us/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/about-us/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/research-areas/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/research-areas/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "page"
+    },
+    {
+      "path": "/research-areas",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/research-areas/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/research-areas/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/research-areas/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/news/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/news/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "page"
+    },
+    {
+      "path": "/news",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/news/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/news/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/news/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/pure-elite-access/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/pure-elite-access/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "page"
+    },
+    {
+      "path": "/pure-elite-access",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/pure-elite-access/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/pure-elite-access/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/pure-elite-access/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/my-account/",
+      "classification": "private-noindex",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/my-account/",
+      "robots": "noindex, nofollow",
+      "sitemap": false,
+      "kind": "page"
+    },
+    {
+      "path": "/my-account",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/my-account/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/my-account/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/my-account/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/auth/callback/",
+      "classification": "private-noindex",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/auth/callback/",
+      "robots": "noindex, nofollow",
+      "sitemap": false,
+      "kind": "page"
+    },
+    {
+      "path": "/auth/callback",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/auth/callback/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/auth/callback/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/auth/callback/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/auth/reset-password/",
+      "classification": "private-noindex",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/auth/reset-password/",
+      "robots": "noindex, nofollow",
+      "sitemap": false,
+      "kind": "page"
+    },
+    {
+      "path": "/auth/reset-password",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/auth/reset-password/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/auth/reset-password/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/auth/reset-password/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/auth/error/",
+      "classification": "private-noindex",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/auth/error/",
+      "robots": "noindex, nofollow",
+      "sitemap": false,
+      "kind": "page"
+    },
+    {
+      "path": "/auth/error",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/auth/error/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/auth/error/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/auth/error/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/track-my-order/",
+      "classification": "private-noindex",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/track-my-order/",
+      "robots": "noindex, nofollow",
+      "sitemap": false,
+      "kind": "page"
+    },
+    {
+      "path": "/track-my-order",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/track-my-order/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/track-my-order/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/track-my-order/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/checkout/",
+      "classification": "private-noindex",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/checkout/",
+      "robots": "noindex, nofollow",
+      "sitemap": false,
+      "kind": "page"
+    },
+    {
+      "path": "/checkout",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/checkout/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/checkout/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/checkout/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/order-confirmation/",
+      "classification": "private-noindex",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/order-confirmation/",
+      "robots": "noindex, nofollow",
+      "sitemap": false,
+      "kind": "page"
+    },
+    {
+      "path": "/order-confirmation",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/order-confirmation/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/order-confirmation/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/order-confirmation/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/faqs/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/faqs/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "page"
+    },
+    {
+      "path": "/faqs",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/faqs/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/faqs/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/faqs/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/contact-us/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/contact-us/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "page"
+    },
+    {
+      "path": "/contact-us",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/contact-us/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/contact-us/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/contact-us/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/shipping-policy/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/shipping-policy/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "page"
+    },
+    {
+      "path": "/shipping-policy",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/shipping-policy/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/shipping-policy/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/shipping-policy/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/refund-policy/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/refund-policy/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "page"
+    },
+    {
+      "path": "/refund-policy",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/refund-policy/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/refund-policy/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/refund-policy/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/privacy-policy/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/privacy-policy/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "page"
+    },
+    {
+      "path": "/privacy-policy",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/privacy-policy/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/privacy-policy/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/privacy-policy/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/terms-and-conditions/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/terms-and-conditions/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "page"
+    },
+    {
+      "path": "/terms-and-conditions",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/terms-and-conditions/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/terms-and-conditions/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/terms-and-conditions/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/info-cards/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/info-cards/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "page"
+    },
+    {
+      "path": "/info-cards",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/info-cards/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/info-cards/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/info-cards/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/coa-process/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/coa-process/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "page"
+    },
+    {
+      "path": "/coa-process",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/coa-process/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/coa-process/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/coa-process/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/manufacturing/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/manufacturing/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "page"
+    },
+    {
+      "path": "/manufacturing",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/manufacturing/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/manufacturing/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/manufacturing/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/dilution-guide/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/dilution-guide/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "page"
+    },
+    {
+      "path": "/dilution-guide",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/dilution-guide/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/dilution-guide/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/dilution-guide/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/coa-library/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/coa-library/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "page"
+    },
+    {
+      "path": "/coa-library",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/coa-library/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/coa-library/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/coa-library/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/coa-library/vials/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/coa-library/vials/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "page"
+    },
+    {
+      "path": "/coa-library/vials",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/coa-library/vials/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/coa-library/vials/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/coa-library/vials/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/coa-library/capsules/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/coa-library/capsules/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "page"
+    },
+    {
+      "path": "/coa-library/capsules",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/coa-library/capsules/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/coa-library/capsules/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/coa-library/capsules/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/coa-library/liquids/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/coa-library/liquids/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "page"
+    },
+    {
+      "path": "/coa-library/liquids",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/coa-library/liquids/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/coa-library/liquids/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/coa-library/liquids/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/coa-library/topicals/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/coa-library/topicals/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "page"
+    },
+    {
+      "path": "/coa-library/topicals",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/coa-library/topicals/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/coa-library/topicals/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/coa-library/topicals/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/5-amino-1mq/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/5-amino-1mq/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/5-amino-1mq",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/5-amino-1mq/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/5-amino-1mq/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/5-amino-1mq/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/acetic-acid/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/acetic-acid/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/acetic-acid",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/acetic-acid/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/acetic-acid/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/acetic-acid/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/adipotide/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/adipotide/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/adipotide",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/adipotide/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/adipotide/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/adipotide/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/aicar/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/aicar/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/aicar",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/aicar/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/aicar/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/aicar/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/aod9604/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/aod9604/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/aod9604",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/aod9604/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/aod9604/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/aod9604/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/ara-290/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/ara-290/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/ara-290",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/ara-290/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/ara-290/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/ara-290/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/bacteriostatic-water/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/bacteriostatic-water/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/bacteriostatic-water",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/bacteriostatic-water/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/bacteriostatic-water/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/bacteriostatic-water/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/bpc-157/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/bpc-157/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/bpc-157",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/bpc-157/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/bpc-157/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/bpc-157/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/bpc-157-tb-500/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/bpc-157-tb-500/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/bpc-157-tb-500",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/bpc-157-tb-500/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/bpc-157-tb-500/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/bpc-157-tb-500/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/cardiogen/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/cardiogen/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/cardiogen",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/cardiogen/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/cardiogen/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/cardiogen/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/cartalax/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/cartalax/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/cartalax",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/cartalax/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/cartalax/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/cartalax/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/chonluten/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/chonluten/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/chonluten",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/chonluten/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/chonluten/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/chonluten/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/cjc-1295/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/cjc-1295/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/cjc-1295",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/cjc-1295/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/cjc-1295/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/cjc-1295/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/cjc-1295-dac/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/cjc-1295-dac/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/cjc-1295-dac",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/cjc-1295-dac/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/cjc-1295-dac/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/cjc-1295-dac/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/cjc-1295-dac-ipamorelin/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/cjc-1295-dac-ipamorelin/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/cjc-1295-dac-ipamorelin",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/cjc-1295-dac-ipamorelin/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/cjc-1295-dac-ipamorelin/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/cjc-1295-dac-ipamorelin/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/cjc-1295-ipamorelin/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/cjc-1295-ipamorelin/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/cjc-1295-ipamorelin",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/cjc-1295-ipamorelin/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/cjc-1295-ipamorelin/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/cjc-1295-ipamorelin/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/cortagen/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/cortagen/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/cortagen",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/cortagen/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/cortagen/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/cortagen/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/dsip/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/dsip/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/dsip",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/dsip/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/dsip/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/dsip/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/epithalon/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/epithalon/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/epithalon",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/epithalon/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/epithalon/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/epithalon/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/follistatin-315/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/follistatin-315/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/follistatin-315",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/follistatin-315/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/follistatin-315/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/follistatin-315/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/follistatin-344/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/follistatin-344/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/follistatin-344",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/follistatin-344/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/follistatin-344/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/follistatin-344/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/foxo4-dri/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/foxo4-dri/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/foxo4-dri",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/foxo4-dri/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/foxo4-dri/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/foxo4-dri/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/gdf-8/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/gdf-8/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/gdf-8",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/gdf-8/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/gdf-8/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/gdf-8/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/ghk-cu/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/ghk-cu/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/ghk-cu",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/ghk-cu/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/ghk-cu/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/ghk-cu/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/ghpr-2/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/ghpr-2/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/ghpr-2",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/ghpr-2/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/ghpr-2/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/ghpr-2/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/ghpr-6/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/ghpr-6/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/ghpr-6",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/ghpr-6/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/ghpr-6/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/ghpr-6/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/glow-bpc-157-ghk-cu-tb-500-blend/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/glow-bpc-157-ghk-cu-tb-500-blend/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/glow-bpc-157-ghk-cu-tb-500-blend",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/glow-bpc-157-ghk-cu-tb-500-blend/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/glow-bpc-157-ghk-cu-tb-500-blend/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/glow-bpc-157-ghk-cu-tb-500-blend/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/glow-plus-bpc-157-ghk-cu-tb-500-thymosin-alpha-1-blend/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/glow-plus-bpc-157-ghk-cu-tb-500-thymosin-alpha-1-blend/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/glow-plus-bpc-157-ghk-cu-tb-500-thymosin-alpha-1-blend",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/glow-plus-bpc-157-ghk-cu-tb-500-thymosin-alpha-1-blend/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/glow-plus-bpc-157-ghk-cu-tb-500-thymosin-alpha-1-blend/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/glow-plus-bpc-157-ghk-cu-tb-500-thymosin-alpha-1-blend/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/glp-1-c/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/glp-1-c/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/glp-1-c",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/glp-1-c/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/glp-1-c/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/glp-1-c/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/glp-1-c-s/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/glp-1-c-s/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/glp-1-c-s",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/glp-1-c-s/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/glp-1-c-s/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/glp-1-c-s/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/glp-1-s/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/glp-1-s/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/glp-1-s",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/glp-1-s/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/glp-1-s/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/glp-1-s/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/glp-2-t/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/glp-2-t/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/glp-2-t",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/glp-2-t/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/glp-2-t/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/glp-2-t/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/glp-3-r/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/glp-3-r/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/glp-3-r",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/glp-3-r/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/glp-3-r/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/glp-3-r/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/glutathione/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/glutathione/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/glutathione",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/glutathione/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/glutathione/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/glutathione/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/gonadorelin/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/gonadorelin/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/gonadorelin",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/gonadorelin/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/gonadorelin/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/gonadorelin/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/h-fragment-176-191/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/h-fragment-176-191/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/h-fragment-176-191",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/h-fragment-176-191/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/h-fragment-176-191/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/h-fragment-176-191/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/hexarelin/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/hexarelin/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/hexarelin",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/hexarelin/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/hexarelin/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/hexarelin/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/hexarelin-acetate/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/hexarelin-acetate/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/hexarelin-acetate",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/hexarelin-acetate/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/hexarelin-acetate/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/hexarelin-acetate/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/humanin/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/humanin/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/humanin",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/humanin/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/humanin/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/humanin/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/igf-1-lr3/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/igf-1-lr3/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/igf-1-lr3",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/igf-1-lr3/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/igf-1-lr3/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/igf-1-lr3/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/ipamorelin/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/ipamorelin/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/ipamorelin",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/ipamorelin/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/ipamorelin/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/ipamorelin/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/kisspeptin-10/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/kisspeptin-10/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/kisspeptin-10",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/kisspeptin-10/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/kisspeptin-10/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/kisspeptin-10/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/klow/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/klow/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/klow",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/klow/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/klow/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/klow/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/kpv/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/kpv/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/kpv",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/kpv/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/kpv/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/kpv/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/livagen/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/livagen/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/livagen",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/livagen/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/livagen/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/livagen/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/ll-37/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/ll-37/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/ll-37",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/ll-37/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/ll-37/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/ll-37/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/melanoten-2/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/melanoten-2/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/melanoten-2",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/melanoten-2/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/melanoten-2/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/melanoten-2/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/mgf-mechano-growth-factor/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/mgf-mechano-growth-factor/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/mgf-mechano-growth-factor",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/mgf-mechano-growth-factor/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/mgf-mechano-growth-factor/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/mgf-mechano-growth-factor/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/mots-c/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/mots-c/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/mots-c",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/mots-c/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/mots-c/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/mots-c/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/n-acetyl-epithalon-amidate/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/n-acetyl-epithalon-amidate/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/n-acetyl-epithalon-amidate",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/n-acetyl-epithalon-amidate/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/n-acetyl-epithalon-amidate/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/n-acetyl-epithalon-amidate/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/n-acetyl-selank-amidate/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/n-acetyl-selank-amidate/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/n-acetyl-selank-amidate",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/n-acetyl-selank-amidate/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/n-acetyl-selank-amidate/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/n-acetyl-selank-amidate/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/n-acetyl-semax-amidate/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 404,
+      "canonical": "/product/n-acetyl-semax-amidate/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/n-acetyl-semax-amidate",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/n-acetyl-semax-amidate/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/n-acetyl-semax-amidate/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/n-acetyl-semax-amidate/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/nad/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/nad/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/nad",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/nad/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/nad/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/nad/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/ovagen/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/ovagen/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/ovagen",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/ovagen/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/ovagen/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/ovagen/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/oxytocin/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/oxytocin/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/oxytocin",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/oxytocin/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/oxytocin/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/oxytocin/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/p-21-adamantane/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/p-21-adamantane/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/p-21-adamantane",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/p-21-adamantane/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/p-21-adamantane/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/p-21-adamantane/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/peg-mgf/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/peg-mgf/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/peg-mgf",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/peg-mgf/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/peg-mgf/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/peg-mgf/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/pinealon/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/pinealon/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/pinealon",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/pinealon/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/pinealon/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/pinealon/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/pnc-27/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/pnc-27/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/pnc-27",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/pnc-27/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/pnc-27/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/pnc-27/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/prostamax/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/prostamax/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/prostamax",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/prostamax/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/prostamax/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/prostamax/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/pt-141/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/pt-141/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/pt-141",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/pt-141/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/pt-141/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/pt-141/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/selank/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/selank/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/selank",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/selank/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/selank/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/selank/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/semx/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/semx/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/semx",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/semx/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/semx/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/semx/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/sermorlin/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/sermorlin/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/sermorlin",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/sermorlin/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/sermorlin/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/sermorlin/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/slu-pp-332/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/slu-pp-332/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/slu-pp-332",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/slu-pp-332/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/slu-pp-332/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/slu-pp-332/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/snap-8/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/snap-8/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/snap-8",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/snap-8/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/snap-8/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/snap-8/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/tb-500/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/tb-500/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/tb-500",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/tb-500/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/tb-500/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/tb-500/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/tesmorelin/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/tesmorelin/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/tesmorelin",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/tesmorelin/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/tesmorelin/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/tesmorelin/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/thymalin/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/thymalin/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/thymalin",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/thymalin/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/thymalin/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/thymalin/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/thymogen/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/thymogen/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/thymogen",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/thymogen/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/thymogen/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/thymogen/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/thymosin-alpha-1/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/thymosin-alpha-1/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/thymosin-alpha-1",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/thymosin-alpha-1/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/thymosin-alpha-1/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/thymosin-alpha-1/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/vesugen/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/vesugen/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/vesugen",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/vesugen/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/vesugen/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/vesugen/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/vilon/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/vilon/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/vilon",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/vilon/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/vilon/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/vilon/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/vip/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/vip/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/vip",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/vip/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/vip/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/vip/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/5-amino-1mq-capsules/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/5-amino-1mq-capsules/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/5-amino-1mq-capsules",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/5-amino-1mq-capsules/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/5-amino-1mq-capsules/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/5-amino-1mq-capsules/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/bam15/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/bam15/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/bam15",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/bam15/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/bam15/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/bam15/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/bpc-157-arginate-salt/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/bpc-157-arginate-salt/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/bpc-157-arginate-salt",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/bpc-157-arginate-salt/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/bpc-157-arginate-salt/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/bpc-157-arginate-salt/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/bpc-157-tb-500-t-beta-4-blend/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/bpc-157-tb-500-t-beta-4-blend/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/bpc-157-tb-500-t-beta-4-blend",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/bpc-157-tb-500-t-beta-4-blend/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/bpc-157-tb-500-t-beta-4-blend/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/bpc-157-tb-500-t-beta-4-blend/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/dhx-pnb-0408/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/dhx-pnb-0408/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/dhx-pnb-0408",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/dhx-pnb-0408/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/dhx-pnb-0408/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/dhx-pnb-0408/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/epithalon-capsules/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/epithalon-capsules/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/epithalon-capsules",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/epithalon-capsules/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/epithalon-capsules/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/epithalon-capsules/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/glow/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/glow/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/glow",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/glow/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/glow/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/glow/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/ibutamorin/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/ibutamorin/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/ibutamorin",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/ibutamorin/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/ibutamorin/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/ibutamorin/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/kpv-capsules/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/kpv-capsules/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/kpv-capsules",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/kpv-capsules/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/kpv-capsules/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/kpv-capsules/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/methylene-blue/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/methylene-blue/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/methylene-blue",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/methylene-blue/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/methylene-blue/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/methylene-blue/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/mots-c-capsules/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/mots-c-capsules/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/mots-c-capsules",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/mots-c-capsules/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/mots-c-capsules/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/mots-c-capsules/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/orforglipron/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/orforglipron/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/orforglipron",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/orforglipron/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/orforglipron/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/orforglipron/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/regen/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/regen/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/regen",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/regen/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/regen/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/regen/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/slu-pp-332-capsules/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/slu-pp-332-capsules/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/slu-pp-332-capsules",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/slu-pp-332-capsules/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/slu-pp-332-capsules/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/slu-pp-332-capsules/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/tb-500-t-beta-4/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/tb-500-t-beta-4/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/tb-500-t-beta-4",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/tb-500-t-beta-4/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/tb-500-t-beta-4/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/tb-500-t-beta-4/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/teso-ns2330/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/teso-ns2330/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/teso-ns2330",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/teso-ns2330/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/teso-ns2330/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/teso-ns2330/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/tudca/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/tudca/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/tudca",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/tudca/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/tudca/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/tudca/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/aod9604-liquid/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/aod9604-liquid/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/aod9604-liquid",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/aod9604-liquid/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/aod9604-liquid/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/aod9604-liquid/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/bpc-157-liquid/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/bpc-157-liquid/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/bpc-157-liquid",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/bpc-157-liquid/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/bpc-157-liquid/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/bpc-157-liquid/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/bpc-157-tb-500-t-beta-4/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/bpc-157-tb-500-t-beta-4/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/bpc-157-tb-500-t-beta-4",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/bpc-157-tb-500-t-beta-4/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/bpc-157-tb-500-t-beta-4/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/bpc-157-tb-500-t-beta-4/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/dsip-liquid/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/dsip-liquid/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/dsip-liquid",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/dsip-liquid/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/dsip-liquid/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/dsip-liquid/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/epithalon-liquid/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/epithalon-liquid/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/epithalon-liquid",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/epithalon-liquid/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/epithalon-liquid/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/epithalon-liquid/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/ghk-cu-liquid/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/ghk-cu-liquid/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/ghk-cu-liquid",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/ghk-cu-liquid/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/ghk-cu-liquid/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/ghk-cu-liquid/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/kpv-liquid/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/kpv-liquid/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/kpv-liquid",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/kpv-liquid/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/kpv-liquid/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/kpv-liquid/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/lc-120-lipo-c-formulation/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/lc-120-lipo-c-formulation/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/lc-120-lipo-c-formulation",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/lc-120-lipo-c-formulation/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/lc-120-lipo-c-formulation/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/lc-120-lipo-c-formulation/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/lc-216-lipo-b-formulation/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/lc-216-lipo-b-formulation/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/lc-216-lipo-b-formulation",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/lc-216-lipo-b-formulation/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/lc-216-lipo-b-formulation/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/lc-216-lipo-b-formulation/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/nad-plus-nicotinamide-adenine-dinucleotide/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/nad-plus-nicotinamide-adenine-dinucleotide/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/nad-plus-nicotinamide-adenine-dinucleotide",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/nad-plus-nicotinamide-adenine-dinucleotide/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/nad-plus-nicotinamide-adenine-dinucleotide/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/nad-plus-nicotinamide-adenine-dinucleotide/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/pt-141-liquid/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/pt-141-liquid/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/pt-141-liquid",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/pt-141-liquid/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/pt-141-liquid/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/pt-141-liquid/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/selank-tp-7/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/selank-tp-7/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/selank-tp-7",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/selank-tp-7/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/selank-tp-7/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/selank-tp-7/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/semx-liquid/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/semx-liquid/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/semx-liquid",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/semx-liquid/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/semx-liquid/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/semx-liquid/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/tb-500-t-beta-4-liquid/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/tb-500-t-beta-4-liquid/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/tb-500-t-beta-4-liquid",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/tb-500-t-beta-4-liquid/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/tb-500-t-beta-4-liquid/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/tb-500-t-beta-4-liquid/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/vip-liquid/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/vip-liquid/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/vip-liquid",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/vip-liquid/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/vip-liquid/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/vip-liquid/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/vocus/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/vocus/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/vocus",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/vocus/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/vocus/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/vocus/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/complete-configuration-modular-peptide-systems-a-b-c-d-e/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/complete-configuration-modular-peptide-systems-a-b-c-d-e/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/complete-configuration-modular-peptide-systems-a-b-c-d-e",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/complete-configuration-modular-peptide-systems-a-b-c-d-e/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/complete-configuration-modular-peptide-systems-a-b-c-d-e/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/complete-configuration-modular-peptide-systems-a-b-c-d-e/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/modular-peptide-system-a-dual-peptide-serum/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/modular-peptide-system-a-dual-peptide-serum/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/modular-peptide-system-a-dual-peptide-serum",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/modular-peptide-system-a-dual-peptide-serum/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/modular-peptide-system-a-dual-peptide-serum/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/modular-peptide-system-a-dual-peptide-serum/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/modular-peptide-system-b-pure-peptide-gel/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/modular-peptide-system-b-pure-peptide-gel/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/modular-peptide-system-b-pure-peptide-gel",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/modular-peptide-system-b-pure-peptide-gel/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/modular-peptide-system-b-pure-peptide-gel/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/modular-peptide-system-b-pure-peptide-gel/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/modular-peptide-system-c-controlled-rheology-peptide-emulsion/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/modular-peptide-system-c-controlled-rheology-peptide-emulsion/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/modular-peptide-system-c-controlled-rheology-peptide-emulsion",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/modular-peptide-system-c-controlled-rheology-peptide-emulsion/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/modular-peptide-system-c-controlled-rheology-peptide-emulsion/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/modular-peptide-system-c-controlled-rheology-peptide-emulsion/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/modular-peptide-system-d-copper-peptide-complex/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/modular-peptide-system-d-copper-peptide-complex/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/modular-peptide-system-d-copper-peptide-complex",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/modular-peptide-system-d-copper-peptide-complex/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/modular-peptide-system-d-copper-peptide-complex/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/modular-peptide-system-d-copper-peptide-complex/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/modular-peptide-system-e-multi-peptide-complex/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/modular-peptide-system-e-multi-peptide-complex/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/modular-peptide-system-e-multi-peptide-complex",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/modular-peptide-system-e-multi-peptide-complex/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/modular-peptide-system-e-multi-peptide-complex/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/modular-peptide-system-e-multi-peptide-complex/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/phase-1-configuration-modular-peptide-systems-a-c-e/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/phase-1-configuration-modular-peptide-systems-a-c-e/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/phase-1-configuration-modular-peptide-systems-a-c-e",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/phase-1-configuration-modular-peptide-systems-a-c-e/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/phase-1-configuration-modular-peptide-systems-a-c-e/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/phase-1-configuration-modular-peptide-systems-a-c-e/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/phase-2-configuration-modular-peptide-systems-b-d/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/product/phase-2-configuration-modular-peptide-systems-b-d/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "product"
+    },
+    {
+      "path": "/product/phase-2-configuration-modular-peptide-systems-b-d",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/phase-2-configuration-modular-peptide-systems-b-d/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/phase-2-configuration-modular-peptide-systems-b-d/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/phase-2-configuration-modular-peptide-systems-b-d/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/cjc-1295dac-ipamorelin/",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": 404,
+      "canonical": "/product/cjc-1295-dac-ipamorelin/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/cjc-1295dac-ipamorelin",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/cjc-1295-dac-ipamorelin/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/cjc-1295dac-ipamorelin/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/cjc-1295-dac-ipamorelin/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/cjc1295-ipamorelin/",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": 404,
+      "canonical": "/product/cjc-1295-ipamorelin/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/cjc1295-ipamorelin",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/cjc-1295-ipamorelin/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/cjc1295-ipamorelin/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/cjc-1295-ipamorelin/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/hgh-176-191/",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": 404,
+      "canonical": "/product/h-fragment-176-191/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/hgh-176-191",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/h-fragment-176-191/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/hgh-176-191/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/h-fragment-176-191/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/kispeptin-10/",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": 404,
+      "canonical": "/product/kisspeptin-10/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/kispeptin-10",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/kisspeptin-10/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/kispeptin-10/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/kisspeptin-10/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/n-acetyl-semx-amidate/",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": 200,
+      "canonical": "/product/n-acetyl-semax-amidate/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/n-acetyl-semx-amidate",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/n-acetyl-semax-amidate/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/n-acetyl-semx-amidate/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/n-acetyl-semax-amidate/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/5-amino-1mq-2/",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": 404,
+      "canonical": "/product/5-amino-1mq-capsules/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/5-amino-1mq-2",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/5-amino-1mq-capsules/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/5-amino-1mq-2/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/5-amino-1mq-capsules/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/bam15-encapsulated-solid/",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": 404,
+      "canonical": "/product/bam15/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/bam15-encapsulated-solid",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/bam15/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/bam15-encapsulated-solid/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/bam15/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/bpc-157-tb-500-t%CE%B24-blend/",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": 404,
+      "canonical": "/product/bpc-157-tb-500-t-beta-4-blend/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/bpc-157-tb-500-t%CE%B24-blend",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/bpc-157-tb-500-t-beta-4-blend/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/bpc-157-tb-500-t%CE%B24-blend/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/bpc-157-tb-500-t-beta-4-blend/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/dhx/",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": 404,
+      "canonical": "/product/dhx-pnb-0408/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/dhx",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/dhx-pnb-0408/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/dhx/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/dhx-pnb-0408/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/epithalon-2/",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": 404,
+      "canonical": "/product/epithalon-capsules/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/epithalon-2",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/epithalon-capsules/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/epithalon-2/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/epithalon-capsules/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/kpv-2/",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": 404,
+      "canonical": "/product/kpv-capsules/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/kpv-2",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/kpv-capsules/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/kpv-2/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/kpv-capsules/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/mots-c-2/",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": 404,
+      "canonical": "/product/mots-c-capsules/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/mots-c-2",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/mots-c-capsules/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/mots-c-2/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/mots-c-capsules/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/slu-pp-332-2/",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": 404,
+      "canonical": "/product/slu-pp-332-capsules/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/slu-pp-332-2",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/slu-pp-332-capsules/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/slu-pp-332-2/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/slu-pp-332-capsules/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/tb-500-t%CE%B2-4/",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": 404,
+      "canonical": "/product/tb-500-t-beta-4/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/tb-500-t%CE%B2-4",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/tb-500-t-beta-4/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/tb-500-t%CE%B2-4/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/tb-500-t-beta-4/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/teso/",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": 404,
+      "canonical": "/product/teso-ns2330/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/teso",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/teso-ns2330/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/teso/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/teso-ns2330/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/aod9604-2/",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": 404,
+      "canonical": "/product/aod9604-liquid/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/aod9604-2",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/aod9604-liquid/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/aod9604-2/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/aod9604-liquid/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/bpc-157-pure-health-peptides/",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": 404,
+      "canonical": "/product/bpc-157-liquid/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/bpc-157-pure-health-peptides",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/bpc-157-liquid/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/bpc-157-pure-health-peptides/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/bpc-157-liquid/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/bpc-157-tb-500-2/",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": 404,
+      "canonical": "/product/bpc-157-tb-500-t-beta-4/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/bpc-157-tb-500-2",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/bpc-157-tb-500-t-beta-4/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/bpc-157-tb-500-2/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/bpc-157-tb-500-t-beta-4/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/dsip-2/",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": 404,
+      "canonical": "/product/dsip-liquid/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/dsip-2",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/dsip-liquid/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/dsip-2/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/dsip-liquid/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/epithalon-3/",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": 404,
+      "canonical": "/product/epithalon-liquid/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/epithalon-3",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/epithalon-liquid/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/epithalon-3/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/epithalon-liquid/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/ghk-cu-2/",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": 404,
+      "canonical": "/product/ghk-cu-liquid/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/ghk-cu-2",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/ghk-cu-liquid/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/ghk-cu-2/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/ghk-cu-liquid/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/kpv-3/",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": 404,
+      "canonical": "/product/kpv-liquid/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/kpv-3",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/kpv-liquid/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/kpv-3/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/kpv-liquid/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/lc120/",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": 404,
+      "canonical": "/product/lc-120-lipo-c-formulation/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/lc120",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/lc-120-lipo-c-formulation/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/lc120/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/lc-120-lipo-c-formulation/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/lc-216/",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": 404,
+      "canonical": "/product/lc-216-lipo-b-formulation/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/lc-216",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/lc-216-lipo-b-formulation/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/lc-216/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/lc-216-lipo-b-formulation/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/nad%E2%81%BA-nicotinamide-adenine-dinucleotide/",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": 404,
+      "canonical": "/product/nad-plus-nicotinamide-adenine-dinucleotide/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/nad%E2%81%BA-nicotinamide-adenine-dinucleotide",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/nad-plus-nicotinamide-adenine-dinucleotide/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/nad%E2%81%BA-nicotinamide-adenine-dinucleotide/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/nad-plus-nicotinamide-adenine-dinucleotide/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/pt-141-2/",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": 404,
+      "canonical": "/product/pt-141-liquid/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/pt-141-2",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/pt-141-liquid/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/pt-141-2/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/pt-141-liquid/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/semx-2/",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": 404,
+      "canonical": "/product/semx-liquid/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/semx-2",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/semx-liquid/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/semx-2/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/semx-liquid/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/tb-500-t%CE%B24-pure-health-peptides/",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": 404,
+      "canonical": "/product/tb-500-t-beta-4-liquid/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/tb-500-t%CE%B24-pure-health-peptides",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/tb-500-t-beta-4-liquid/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/tb-500-t%CE%B24-pure-health-peptides/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/tb-500-t-beta-4-liquid/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/vip-pure-health-peptides/",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": 404,
+      "canonical": "/product/vip-liquid/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/vip-pure-health-peptides",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/vip-liquid/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/vip-pure-health-peptides/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/vip-liquid/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/complete-configuration-modular-peptide-systems-abcde/",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": 404,
+      "canonical": "/product/complete-configuration-modular-peptide-systems-a-b-c-d-e/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/complete-configuration-modular-peptide-systems-abcde",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/complete-configuration-modular-peptide-systems-a-b-c-d-e/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/complete-configuration-modular-peptide-systems-abcde/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/complete-configuration-modular-peptide-systems-a-b-c-d-e/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/phase-1-configuration-modular-peptide-systems-ace/",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": 404,
+      "canonical": "/product/phase-1-configuration-modular-peptide-systems-a-c-e/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/phase-1-configuration-modular-peptide-systems-ace",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/phase-1-configuration-modular-peptide-systems-a-c-e/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/phase-1-configuration-modular-peptide-systems-ace/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/phase-1-configuration-modular-peptide-systems-a-c-e/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/phase-2-configuration-modular-peptide-systems-bd/",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": 404,
+      "canonical": "/product/phase-2-configuration-modular-peptide-systems-b-d/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/phase-2-configuration-modular-peptide-systems-bd",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/phase-2-configuration-modular-peptide-systems-b-d/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product/phase-2-configuration-modular-peptide-systems-bd/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/product/phase-2-configuration-modular-peptide-systems-b-d/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product-form/vials",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/shop/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product-form/vials/",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/shop/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "pattern": "/product-form/vials/*/",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/shop/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "pattern": "/product-form/vials/*",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/shop/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product-form/capsules",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/shop/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product-form/capsules/",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/shop/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "pattern": "/product-form/capsules/*/",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/shop/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "pattern": "/product-form/capsules/*",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/shop/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product-form/liquids",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/shop/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product-form/liquids/",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/shop/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "pattern": "/product-form/liquids/*/",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/shop/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "pattern": "/product-form/liquids/*",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/shop/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product-form/topicals",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/shop/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/product-form/topicals/",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/shop/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "pattern": "/product-form/topicals/*/",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/shop/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "pattern": "/product-form/topicals/*",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/shop/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/cart/",
+      "classification": "genuine-404",
+      "expectedStatus": 404,
+      "observedStatus": 404,
+      "canonical": null,
+      "robots": "noindex, nofollow",
+      "sitemap": false
+    },
+    {
+      "path": "/cart",
+      "classification": "genuine-404",
+      "expectedStatus": 404,
+      "observedStatus": null,
+      "canonical": null,
+      "robots": "noindex, nofollow",
+      "sitemap": false
+    },
+    {
+      "path": "/not-a-real-page/",
+      "classification": "genuine-404",
+      "expectedStatus": 404,
+      "observedStatus": null,
+      "canonical": null,
+      "robots": "noindex, nofollow",
+      "sitemap": false
+    },
+    {
+      "path": "/product/not-a-real-product/",
+      "classification": "genuine-404",
+      "expectedStatus": 404,
+      "observedStatus": null,
+      "canonical": null,
+      "robots": "noindex, nofollow",
+      "sitemap": false
+    },
+    {
+      "path": "/404.html",
+      "classification": "private-noindex",
+      "expectedStatus": 200,
+      "observedStatus": null,
+      "canonical": null,
+      "robots": "noindex, nofollow",
+      "sitemap": false,
+      "kind": "error-template"
+    },
+    {
+      "pattern": "/*",
+      "classification": "genuine-404",
+      "expectedStatus": 404,
+      "observedStatus": null,
+      "canonical": null,
+      "robots": "noindex, nofollow",
+      "sitemap": false
+    }
+  ],
+  "apiEndpoints": [
+    {
+      "path": "/api/checkout",
+      "sitemap": false,
+      "robots": "noindex, nofollow",
+      "cache": "private, no-store",
+      "access": "Existing endpoint authentication, signature, rate-limit and method checks apply."
+    },
+    {
+      "path": "/api/contact",
+      "sitemap": false,
+      "robots": "noindex, nofollow",
+      "cache": "private, no-store",
+      "access": "Existing endpoint authentication, signature, rate-limit and method checks apply."
+    },
+    {
+      "path": "/api/client-error",
+      "sitemap": false,
+      "robots": "noindex, nofollow",
+      "cache": "private, no-store",
+      "access": "Existing endpoint authentication, signature, rate-limit and method checks apply."
+    },
+    {
+      "path": "/api/orders/track",
+      "sitemap": false,
+      "robots": "noindex, nofollow",
+      "cache": "private, no-store",
+      "access": "Existing endpoint authentication, signature, rate-limit and method checks apply."
+    },
+    {
+      "path": "/api/orders/status",
+      "sitemap": false,
+      "robots": "noindex, nofollow",
+      "cache": "private, no-store",
+      "access": "Existing endpoint authentication, signature, rate-limit and method checks apply."
+    },
+    {
+      "path": "/api/account/delete-request",
+      "sitemap": false,
+      "robots": "noindex, nofollow",
+      "cache": "private, no-store",
+      "access": "Existing endpoint authentication, signature, rate-limit and method checks apply."
+    },
+    {
+      "path": "/api/stripe-webhook",
+      "sitemap": false,
+      "robots": "noindex, nofollow",
+      "cache": "private, no-store",
+      "access": "Existing endpoint authentication, signature, rate-limit and method checks apply."
+    },
+    {
+      "path": "/api/woocommerce-webhook",
+      "sitemap": false,
+      "robots": "noindex, nofollow",
+      "cache": "private, no-store",
+      "access": "Existing endpoint authentication, signature, rate-limit and method checks apply."
+    },
+    {
+      "path": "/api/cron/process-commerce-jobs",
+      "sitemap": false,
+      "robots": "noindex, nofollow",
+      "cache": "private, no-store",
+      "access": "Existing endpoint authentication, signature, rate-limit and method checks apply."
+    },
+    {
+      "path": "/api/cron/process-account-deletions",
+      "sitemap": false,
+      "robots": "noindex, nofollow",
+      "cache": "private, no-store",
+      "access": "Existing endpoint authentication, signature, rate-limit and method checks apply."
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "version": "35892f640eb61e3b1419",
+  "version": "a3e2a55b345e160700d1",
   "products": [
     {
       "id": "vials-25738",
@@ -3473,8 +3473,8 @@
     {
       "id": "vials-25727",
       "wooProductId": 25727,
-      "name": "N-Acetyl Semx Amidate",
-      "slug": "n-acetyl-semx-amidate",
+      "name": "N-Acetyl Semax Amidate",
+      "slug": "n-acetyl-semax-amidate",
       "sku": "WC-P-25727",
       "image": "/assets/product-details/gallery/N-Acetyl-Semax-Amidate-3cab0adbae79.jpg",
       "currency": "USD",
@@ -3499,7 +3499,7 @@
           "stockQuantity": 262,
           "maxQty": 262,
           "image": "/assets/product-details/gallery/N-Acetyl-Semax-Amidate-3cab0adbae79.jpg",
-          "imageAlt": "N-Acetyl Semx Amidate 5mg research product",
+          "imageAlt": "N-Acetyl Semax Amidate 5mg research product",
           "shippingWeightGrams": null,
           "packageDimensionsMm": {
             "length": null,

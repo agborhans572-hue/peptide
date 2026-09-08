@@ -1,3 +1,4 @@
+import ResearchResources from './ResearchResources.jsx'
 import { useState } from 'react'
 import { ChevronDown } from 'lucide-react'
 import { postToSiteService, safeServiceMessage, siteServices } from './siteServices.js'
@@ -194,7 +195,7 @@ export function ContactPage() {
   return (
     <div className="support-page contact-page">
       <section className="contact-content">
-        <h1>Send us a message</h1>
+        <h1>Send us a message</h1><p>Contact Pure Health Peptides for help with orders, shipping, catalog information, or research documentation. Include your order number when relevant. Please do not send payment details or account passwords. You can also email <a href="mailto:info@purehealthpeptidesshop.com">info@purehealthpeptidesshop.com</a>.</p><ResearchResources />
         <form onSubmit={submit}>
           <label className="sr-only" htmlFor="support-full-name">Full Name</label>
           <input id="support-full-name" name="fullName" type="text" placeholder="Full Name" autoComplete="name" maxLength="100" required />

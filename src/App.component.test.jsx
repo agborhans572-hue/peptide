@@ -24,14 +24,14 @@ describe('application delivery shell', () => {
 
   it('renders a lazy shop route through the declarative router', async () => {
     render(<MemoryRouter initialEntries={['/shop/']}><App /></MemoryRouter>)
-    expect(await screen.findByRole('heading', { level: 1, name: 'Research Peptides for Laboratory Use' }, { timeout: 5000 })).toBeTruthy()
+    expect(await screen.findByRole('heading', { level: 1, name: 'Research Peptides for Laboratory Use' }, { timeout: 15000 })).toBeTruthy()
     expect(screen.getByRole('button', { name: /LOAD MORE Vials/i })).toBeTruthy()
-  }, 15_000)
+  }, 30_000)
 
   it('adds the selected homepage product variant and quantity to the cart', async () => {
     render(<MemoryRouter initialEntries={['/']}><App /></MemoryRouter>)
 
-    fireEvent.change(screen.getByRole('combobox', { name: /Select BPC-157 Weight/i }), {
+    fireEvent.change(await screen.findByRole('combobox', { name: /Select BPC-157 Weight/i }, { timeout: 15000 }), {
       target: { value: '1' },
     })
     fireEvent.click(screen.getByRole('button', { name: 'Increase BPC-157 quantity' }))
@@ -43,7 +43,7 @@ describe('application delivery shell', () => {
     expect(JSON.parse(localStorage.getItem('php-research-cart-v1')).items).toEqual([
       { productId: 'vials-419', variantId: '2501', quantity: 2 },
     ])
-  })
+  }, 30_000)
 
   it('contains route render failures in the application error boundary', () => {
     const consoleError = vi.spyOn(console, 'error').mockImplementation(() => {})

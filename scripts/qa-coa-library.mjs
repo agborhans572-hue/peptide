@@ -1,3 +1,4 @@
+import { loadPageImages } from './qa-image-loading.mjs'
 import fs from 'node:fs/promises'
 import { fileURLToPath } from 'node:url'
 import puppeteer from 'puppeteer-core'
@@ -29,6 +30,8 @@ async function capture(config, viewport) {
   })
   await page.setViewport({ width: viewport.width, height: viewport.height, deviceScaleFactor: 1 })
   await page.goto(`${baseUrl}/${config.slug}/`, { waitUntil: 'networkidle0', timeout: 30_000 })
+
+  await loadPageImages(page)
 
   const metrics = await page.evaluate(() => ({
     heading: document.querySelector('main h1')?.textContent.trim() || '',

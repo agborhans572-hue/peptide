@@ -1,5 +1,17 @@
+/_app/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/*
+  Cache-Control: public, max-age=604800, stale-while-revalidate=2592000
+
+/catalog/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/api/*
+  Cache-Control: private, no-store
+  X-Robots-Tag: noindex, nofollow
+
 /*
-  Cache-Control: public, max-age=0, must-revalidate
   Content-Security-Policy: default-src 'self'; base-uri 'self'; connect-src 'self' https://*.supabase.co https://challenges.cloudflare.com; font-src 'self' data:; form-action 'self'; frame-ancestors 'none'; frame-src https://challenges.cloudflare.com; img-src 'self' data: blob: https://*.supabase.co https://purehealthpeptides.com; manifest-src 'self'; media-src 'self' https://*.supabase.co; object-src 'none'; script-src 'self' https://challenges.cloudflare.com; style-src 'self' 'unsafe-inline'; worker-src 'none'; upgrade-insecure-requests
   Cross-Origin-Opener-Policy: same-origin-allow-popups
   Cross-Origin-Resource-Policy: same-site
@@ -9,31 +21,91 @@
   X-Content-Type-Options: nosniff
   X-Frame-Options: DENY
 
-/_app/*
-  Cache-Control: public, max-age=31536000, immutable
+/
+  Cache-Control: public, max-age=0, must-revalidate
 
-/assets/*
-  Cache-Control: public, max-age=604800, stale-while-revalidate=2592000
+/*/
+  Cache-Control: public, max-age=0, must-revalidate
+
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/route-manifest.json
+  Cache-Control: public, max-age=0, must-revalidate
+
+/hosting-config.json
+  Cache-Control: public, max-age=0, must-revalidate
 
 /catalog/current.json
   Cache-Control: public, max-age=0, must-revalidate
 
-/catalog/*
+/_product-media/responsive/*
   Cache-Control: public, max-age=31536000, immutable
 
 /coa/*
-  Cache-Control: public, max-age=31536000, immutable
+  Cache-Control: public, max-age=0, must-revalidate
 
-/api/*
+/_product-media/social/*
+  Cache-Control: public, max-age=0, must-revalidate
+
+/my-account/
+  X-Robots-Tag: noindex, nofollow
   Cache-Control: private, no-store
 
-/site.webmanifest
-  Cache-Control: public, max-age=3600
-  Content-Type: application/manifest+json; charset=utf-8
+/auth/callback/
+  X-Robots-Tag: noindex, nofollow
+  Cache-Control: private, no-store
+
+/auth/reset-password/
+  X-Robots-Tag: noindex, nofollow
+  Cache-Control: private, no-store
+
+/auth/error/
+  X-Robots-Tag: noindex, nofollow
+  Cache-Control: private, no-store
+
+/track-my-order/
+  X-Robots-Tag: noindex, nofollow
+  Cache-Control: private, no-store
+
+/checkout/
+  X-Robots-Tag: noindex, nofollow
+  Cache-Control: private, no-store
+
+/order-confirmation/
+  X-Robots-Tag: noindex, nofollow
+  Cache-Control: private, no-store
+
+/404.html
+  X-Robots-Tag: noindex, nofollow
+  Cache-Control: private, no-store
+
+/my-account/*
+  X-Robots-Tag: noindex, nofollow
+  Cache-Control: private, no-store
+
+/auth/*
+  X-Robots-Tag: noindex, nofollow
+  Cache-Control: private, no-store
+
+/checkout/*
+  X-Robots-Tag: noindex, nofollow
+  Cache-Control: private, no-store
+
+/track-my-order/*
+  X-Robots-Tag: noindex, nofollow
+  Cache-Control: private, no-store
+
+/order-confirmation/*
+  X-Robots-Tag: noindex, nofollow
+  Cache-Control: private, no-store
+
+/cart/*
+  X-Robots-Tag: noindex, nofollow
+  Cache-Control: private, no-store
 
 /robots.txt
-  Cache-Control: public, max-age=3600
+  Cache-Control: public, max-age=0, must-revalidate
 
 /sitemap.xml
-  Cache-Control: public, max-age=3600
-  Content-Type: application/xml; charset=utf-8
+  Cache-Control: public, max-age=0, must-revalidate

@@ -968,3 +968,5 @@
 .product-variant-facts dt { color: #65726d; font-weight: 700; }
 .product-variant-facts dd { margin: 0; }
 .product-detail-price-row del { color: #78827e; font-size: .68em; margin-right: .6rem; }
+
+@media(max-width:800px){.product-gallery-unified{display:grid!important;width:100%;margin:0;grid-template-columns:62px minmax(0,1fr);gap:12px}.product-gallery-unified .product-gallery-main{min-height:0}.product-gallery-unified .product-gallery-main img{width:100%;height:auto;max-height:560px;object-fit:contain}}

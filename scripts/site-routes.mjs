@@ -1,4 +1,6 @@
 import { readFileSync } from 'node:fs'
+import shipping from '../src/shippingPolicy.json' with { type: 'json' }
+import { relatedResearchProducts } from '../src/researchLinks.js'
 const catalog = JSON.parse(readFileSync(new URL('../catalog/catalog.generated.json', import.meta.url), 'utf8'))
 const shopProducts = catalog.products
 
@@ -86,6 +88,22 @@ function baseSchemaGraph(route) {
       url: `${SITE_ORIGIN}/`,
       logo: { '@type': 'ImageObject', url: `${SITE_ORIGIN}/assets/logo.svg` },
       email: 'info@purehealthpeptidesshop.com',
+      hasMerchantReturnPolicy: { '@type': 'MerchantReturnPolicy', merchantReturnLink: absoluteUrl('/refund-policy/') },
+      hasShippingService: {
+        '@type': 'ShippingService', '@id': absoluteUrl('/shipping-policy/#us-shipping'),
+        name: 'U.S. standard shipping', url: absoluteUrl('/shipping-policy/'),
+        description: '$10.99 shipping; free at $175 or more after product discounts. Estimated transit 2-3 business days after processing.',
+        shippingConditions: [
+          { minimum: 0, maximum: shipping.freeThresholdCents / 100 - 0.01, rate: shipping.rateCents / 100 },
+          { minimum: shipping.freeThresholdCents / 100, rate: 0 },
+        ].map(({ minimum, maximum, rate }) => ({
+          '@type': 'ShippingConditions',
+          shippingDestination: { '@type': 'DefinedRegion', addressCountry: shipping.country },
+          orderValue: { '@type': 'MonetaryAmount', minValue: minimum, ...(maximum == null ? {} : { maxValue: maximum }), currency: shipping.currency },
+          shippingRate: { '@type': 'MonetaryAmount', value: rate, currency: shipping.currency },
+          transitTime: { '@type': 'ServicePeriod', duration: { '@type': 'QuantitativeValue', minValue: shipping.transitMinDays, maxValue: shipping.transitMaxDays, unitCode: 'DAY' }, businessDays: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'] },
+        })),
+      },
       description: 'Supplier of independently batch-tested materials for controlled in vitro laboratory research.',
     },
     {
@@ -153,9 +171,10 @@ function productSchema(route, product) {
   graph.push({
     '@type': 'Product',
     '@id': `${absoluteUrl(route.path)}#product`,
+    url: absoluteUrl(route.path),
     name: product.name,
     description: route.description,
-    image: [route.image],
+    image: [absoluteUrl(product.image), route.image],
     sku: product.sku,
     brand: { '@type': 'Brand', name: 'Pure Health Peptides' },
     category: `${FORMAT_META[product.type]?.title || 'Research Material'} — laboratory research use only`,
@@ -259,8 +278,8 @@ const staticRoutes = [
   },
   {
     path: '/shipping-policy/',
-    title: 'Shipping Policy | Pure Health Peptides',
-    description: 'Review Pure Health Peptides shipping service areas, rates, timing, tracking, and damaged-shipment procedures.',
+    title: 'U.S. Shipping Policy | Rates & Delivery | Pure Health Peptides',
+    description: 'U.S. shipping is $10.99, free on orders of $175 or more after discounts. Review estimated 2-3 business day transit, tracking, and shipment support.',
   },
   {
     path: '/refund-policy/',
@@ -350,10 +369,12 @@ const productRoutes = shopProducts.map((product) => {
     imageType: socialImage?.type,
     kind: 'product',
     indexable: true,
-    lastmod: product.date,
+    lastmod: product.slug === 'n-acetyl-semax-amidate' ? '2026-09-08' : product.date,
+    product,
+    relatedPaths: relatedResearchProducts(product, shopProducts).map((item) => new URL(item.productUrl).pathname),
     crawlContent: {
       heading: product.name,
-      description: plainText(product.description || product.shortDescription || route.description),
+      description: plainText(product.description || product.shortDescription),
       categories: (product.categoryDetails || []).map((category) => category.name),
       options: product.options.map((option) => ({
         label: option.label,

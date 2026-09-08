@@ -1,3 +1,5 @@
+import ResearchResources from './ResearchResources.jsx'
+import ResponsiveImage from './ResponsiveImage.jsx'
 import { useEffect, useState } from 'react'
 import { ChevronDown } from 'lucide-react'
 import { appPath } from './appPath.js'
@@ -72,9 +74,9 @@ function CarrierButtons({ onNavigate, compact = false }) {
   return (
     <div className={`coa-carrier-buttons${compact ? ' coa-carrier-buttons-compact' : ''}`}>
       {carriers.map((carrier) => (
-        <button className={`coa-carrier-button carrier-${carrier.key}`} type="button" onClick={() => onNavigate(carrier.route)} key={carrier.key}>
+        <a className={`coa-carrier-button carrier-${carrier.key}`} href={appPath(`/coa-library/${carrier.key}/`)} onClick={(event) => { if (event.button === 0 && !event.metaKey && !event.ctrlKey && !event.shiftKey && !event.altKey && onNavigate) { event.preventDefault(); onNavigate(carrier.route) } }} key={carrier.key}>
           {carrier.label}
-        </button>
+        </a>
       ))}
     </div>
   )
@@ -93,9 +95,10 @@ export function CoaLibraryPage({ onNavigate }) {
         </div>
       </section>
 
+      <ResearchResources />
       <section className="coa-how-section">
         <div className="coa-how-images">
-          {[1, 2, 3, 4].map((number) => <img src={`/assets/coa-library/how-${number}.png`} alt={`How to locate a Certificate of Analysis step ${number}`} key={number} />)}
+          {[1, 2, 3, 4].map((number) => <ResponsiveImage src={`/assets/coa-library/how-${number}.png`} alt={`How to locate a Certificate of Analysis step ${number}`} key={number} />)}
         </div>
         <div className="coa-how-copy">
           <h2>HOW TO FIND YOUR COA?</h2>
@@ -120,7 +123,7 @@ export function CoaLibraryPage({ onNavigate }) {
         <div className="coa-trust-grid">
           {trustCards.map((card) => (
             <article key={card.title}>
-              <img src={`/assets/coa-library/${card.icon}`} alt="" />
+              <ResponsiveImage src={`/assets/coa-library/${card.icon}`} alt="" />
               <h3>{card.title}</h3>
               <p>{card.copy}</p>
             </article>
@@ -206,8 +209,8 @@ function BatchLinks({ category, item, batchFilter }) {
   )
 }
 
-export function CoaCategoryPage({ category }) {
-  const [page, setPage] = useState(null)
+export function CoaCategoryPage({ category, initialIndex = null }) {
+  const [page, setPage] = useState(initialIndex)
   const [pageFailed, setPageFailed] = useState(false)
   const [productInput, setProductInput] = useState('')
   const [batchInput, setBatchInput] = useState('')

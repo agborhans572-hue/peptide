@@ -1,3 +1,4 @@
+import { loadPageImages } from './qa-image-loading.mjs'
 import fs from 'node:fs/promises'
 import { fileURLToPath } from 'node:url'
 import puppeteer from 'puppeteer-core'
@@ -25,6 +26,16 @@ const consoleErrors = []
 
 async function capture(slug, expectedHeading, viewport) {
   const page = await browser.newPage()
+  let submittedContact
+  if (slug === 'contact-us') {
+    await page.setRequestInterception(true)
+    page.on('request', (request) => {
+      if (request.url() === baseUrl + '/api/contact') {
+        submittedContact = { method: request.method(), body: JSON.parse(request.postData() || '{}') }
+        request.respond({ status: 200, contentType: 'application/json', body: '{"ok":true}' })
+      } else request.continue()
+    })
+  }
   page.on('console', (message) => {
     const source = message.location().url || ''
     const localVercelTelemetry = source.includes('/_vercel/insights/') || source.includes('/_vercel/speed-insights/')
@@ -34,6 +45,8 @@ async function capture(slug, expectedHeading, viewport) {
   })
   await page.setViewport({ width: viewport.width, height: viewport.height, deviceScaleFactor: 1 })
   await page.goto(`${baseUrl}/${slug}/`, { waitUntil: 'networkidle0', timeout: 30_000 })
+
+  await loadPageImages(page)
 
   const metrics = await page.evaluate(() => ({
     heading: document.querySelector('main h1')?.textContent.trim() || '',
@@ -98,6 +111,8 @@ async function capture(slug, expectedHeading, viewport) {
     await page.type('#support-email', 'researcher@example.com')
     await page.type('#support-message', 'Local form validation test.')
     await page.click('.contact-content button[type="submit"]')
+    await page.waitForFunction(() => document.querySelector('.support-form-status')?.textContent.includes('sent successfully'))
+    if (submittedContact?.method !== 'POST' || submittedContact.body.email !== 'researcher@example.com' || submittedContact.body.message !== 'Local form validation test.') throw new Error('Contact form did not send the expected local test payload')
     const status = await page.$eval('.support-form-status', (node) => node.textContent)
     if (!status.includes('info@purehealthpeptidesshop.com') && !status.includes('sent successfully')) {
       throw new Error(`${slug}/${viewport.label}: contact delivery status not shown`)

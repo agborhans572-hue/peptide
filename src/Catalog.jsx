@@ -1,3 +1,4 @@
+import ResponsiveImage from './ResponsiveImage.jsx'
 import { useState } from "react";
 import { shopProducts } from "./catalog.js";
 import { productPath } from "./productRoutes.js";
@@ -340,7 +341,7 @@ function ProductCard({ product, onProduct, onAddToCart }) {
 
   return (
     <article className="product-card">
-      <img
+      <ResponsiveImage
         className="product-image"
         src={product.image}
         alt={product.name}
@@ -403,10 +404,10 @@ function ProductCard({ product, onProduct, onAddToCart }) {
         <a
           className="learn-button"
           href={productPath(shopProduct)}
-          aria-label={`Learn More About ${product.name}`}
+          aria-label={`View ${shopProduct.name} details`}
           onClick={handleLearnMore}
         >
-          LEARN MORE
+          {`View ${shopProduct.name} details`}
         </a>
       </div>
     </article>
@@ -438,13 +439,13 @@ export default function Catalog({ onProduct, onShop, onAddToCart }) {
 
             {category.showLoadMore && (
               <div className="load-more-wrap">
-                <button
+                <a
                   className="load-more-button"
-                  type="button"
-                  onClick={onShop}
+                  href="/shop/"
+                  onClick={(event) => { if (event.button === 0 && !event.metaKey && !event.ctrlKey && !event.shiftKey && !event.altKey && onShop) { event.preventDefault(); onShop() } }}
                 >
                   {`VIEW ALL ${category.heading.toUpperCase()}`}
-                </button>
+                </a>
               </div>
             )}
           </section>

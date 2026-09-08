@@ -1,3 +1,4 @@
+import { loadPageImages } from './qa-image-loading.mjs'
 import fs from 'node:fs/promises'
 import { fileURLToPath } from 'node:url'
 import puppeteer from 'puppeteer-core'
@@ -38,6 +39,8 @@ try {
         }
         window.scrollTo(0, 0)
       })
+
+      await loadPageImages(page)
 
       const metrics = await page.evaluate(() => ({
         heading: document.querySelector('main h1')?.textContent.trim() || '',

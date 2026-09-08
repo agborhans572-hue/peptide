@@ -1,3 +1,4 @@
+import { responsiveImage } from '../src/responsiveImages.js'
 import fs from 'node:fs/promises'
 import path from 'node:path'
 import puppeteer from 'puppeteer-core'
@@ -31,6 +32,7 @@ try {
     await page.goto(`${baseUrl}/`, { waitUntil: 'networkidle0', timeout: 30_000 })
     await page.$eval('.site-footer', (footer) => footer.scrollIntoView({ block: 'start' }))
 
+    await page.waitForFunction(() => [...document.querySelectorAll('.site-footer img')].every((image) => image.complete && image.naturalWidth > 0))
     const metrics = await page.evaluate(() => {
       const footer = document.querySelector('.site-footer')
       const desktopNavigation = document.querySelector('.footer-navigation-desktop')
@@ -58,7 +60,7 @@ try {
 
     assert(metrics.footer.width === viewport.width, `${viewport.label}: footer does not span viewport`)
     assert(metrics.overflow <= 1, `${viewport.label}: horizontal overflow is ${metrics.overflow}px`)
-    assert(metrics.backgroundImage.includes('footer-bg.png'), `${viewport.label}: footer background asset missing`)
+    assert(metrics.backgroundImage.includes(responsiveImage('/assets/footer-bg.png').src), `${viewport.label}: footer background asset missing`)
     assert(metrics.desktopColumns === 3, `${viewport.label}: expected three desktop columns`)
     assert(metrics.mobileDirectRows === 2, `${viewport.label}: expected two direct mobile rows`)
     assert(metrics.mobileAccordions === 4, `${viewport.label}: expected four mobile accordions`)

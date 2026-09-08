@@ -1,24 +1,22 @@
+import ResponsiveImage from './ResponsiveImage.jsx'
 import { lazy, Suspense, useEffect, useId, useRef, useState } from 'react'
 import { Route, Routes, useLocation, useNavigate } from 'react-router'
 import {
   Check,
   ChevronDown,
-  ClipboardList,
-  Info,
   Mail,
   Menu,
   Package,
   Search,
-  ShieldCheck,
   ShoppingBag,
-  TestTube2,
-  Truck,
   UserRound,
   X,
 } from 'lucide-react'
-import Catalog from './Catalog.jsx'
+import RouteFallback from './RouteFallback.jsx'
+import { initialProductDocument } from './seoInitialState.js'
+import productDocuments from './productDocumentManifest.json'
+const HomePage = lazy(() => import('./HomePage.jsx'))
 import { useAuth } from './AuthContext.jsx'
-import productDetailManifest from './productDetailManifest.json'
 import { catalogVersion, shopProducts } from './catalog.js'
 import routeMetadata from './routeMetadata.json'
 import { isProductPath, productFromPath, productPath, productSlug } from './productRoutes.js'
@@ -56,15 +54,17 @@ const ProductNotFoundPage = lazy(() => import('./ProductDetailPage.jsx').then((m
 })))
 
 function ProductDetailRoute({ product, onMetadata, ...props }) {
-  const [document, setDocument] = useState(null)
+  const [document, setDocument] = useState(() => initialProductDocument(product.id, catalogVersion))
   const [failed, setFailed] = useState(false)
   const slug = productSlug(product)
 
   useEffect(() => {
+    const seed = initialProductDocument(product.id, catalogVersion)
+    if (seed) { setDocument(seed); onMetadata(seed.metadata || null); return }
     const controller = new AbortController()
     setDocument(null)
     setFailed(false)
-    fetch(appPath(`/catalog/${catalogVersion}/products/${encodeURIComponent(slug)}.json`), {
+    fetch(appPath(productDocuments[slug].url), {
       cache: 'force-cache',
       signal: controller.signal,
     })
@@ -76,6 +76,7 @@ function ProductDetailRoute({ product, onMetadata, ...props }) {
         if (nextDocument?.version !== catalogVersion || nextDocument?.productId !== product.id) {
           throw new Error('Product detail document does not match the active catalog.')
         }
+        if (controller.signal.aborted) return
         setDocument(nextDocument)
         onMetadata(nextDocument.metadata || null)
       })
@@ -85,13 +86,9 @@ function ProductDetailRoute({ product, onMetadata, ...props }) {
     return () => controller.abort()
   }, [onMetadata, product.id, slug])
 
-  if (failed) return <ProductNotFoundPage onShop={() => props.onNavigate('shop')} />
+  if (failed) return <section className="route-loader" role="alert"><h1>{product.name}</h1><p>Product details are temporarily unavailable. Please reload this page to try again.</p><a href="/shop/">Browse research peptides</a></section>
   if (!document) return <div className="route-loader" role="status">Loading product…</div>
   return <ProductDetailPage {...props} product={product} detail={document.detail || null} />
-}
-
-function productDocumentTitle(product) {
-  return productDetailManifest[productSlug(product)] || `${product?.name || 'Product'} - Pure Health Peptides`
 }
 
 const CART_STORAGE_KEY = 'php-research-cart-v1'
@@ -283,34 +280,11 @@ const navGroups = [
   },
 ]
 
-const researchBenefits = [
-  {
-    title: '99% Purity',
-    copy: 'Independently tested for purity and identity',
-    icon: ShieldCheck,
-  },
-  {
-    title: 'COA Every Batch',
-    copy: 'Searchable Certificates of Analysis online',
-    icon: ClipboardList,
-  },
-  {
-    title: 'Fast U.S. Shipping',
-    copy: 'Quick, discrete, and reliable delivery',
-    icon: Truck,
-  },
-  {
-    title: 'Independently Batch Tested in U.S.A.',
-    copy: 'Visit our COA library',
-    icon: TestTube2,
-  },
-]
-
-function Header({ onMenu, onSearch, onCart, onHome, onShop, onNavigate, cartCount }) {
+export function Header({ onMenu, onSearch, onCart, onHome, onShop, onNavigate, cartCount }) {
   return (
     <>
       <div className="announcement">
-        FREE SHIPPING ON ORDERS $175+ (EXCL. DISCOUNTS, FEES AND TAXES)
+        FREE SHIPPING ON ORDERS $175+ AFTER PRODUCT DISCOUNTS
       </div>
       <header className="site-header">
         <div className="header-inner">
@@ -320,7 +294,7 @@ function Header({ onMenu, onSearch, onCart, onHome, onShop, onNavigate, cartCoun
             aria-label="Pure Health Peptides home"
             onClick={(event) => { event.preventDefault(); onHome() }}
           >
-            <img src="/assets/logo.svg" alt="Pure Health Peptides" />
+            <ResponsiveImage loading="eager" src="/assets/logo.svg" alt="Pure Health Peptides" />
           </a>
 
           <nav className="desktop-nav" aria-label="Primary navigation">
@@ -406,7 +380,7 @@ function MobileMenu({ open, onClose, onShop, onNavigate }) {
       <button className="drawer-backdrop" type="button" aria-label="Close menu" onClick={onClose} />
       <aside ref={dialogRef} className="menu-drawer" role="dialog" aria-modal="true" aria-label="Site menu" tabIndex="-1">
         <div className="drawer-heading">
-          <img src="/assets/logo.svg" alt="Pure Health Peptides" />
+          <ResponsiveImage src="/assets/logo.svg" alt="Pure Health Peptides" />
           <button type="button" aria-label="Close menu" onClick={onClose}><X /></button>
         </div>
         <a
@@ -536,7 +510,7 @@ function CartDrawer({ open, onClose, onShop, items, onRemove, onChangeQuantity, 
             <div className="cart-lines">
               {items.map((item) => (
                 <article className="cart-line" key={item.key}>
-                  <img src={item.product.image} alt="" />
+                  <ResponsiveImage src={item.product.image} alt="" />
                   <div>
                     <h3>{item.product.name}</h3>
                     <p>{item.option}</p>
@@ -640,195 +614,7 @@ function ResearchGate({ open, onClose, onConfirm, onLeave }) {
   )
 }
 
-function Hero({ onGate }) {
-  return (
-    <section className="hero" id="home">
-      <div className="hero-inner">
-        <div className="hero-main">
-          <div className="hero-copy">
-            <p className="eyebrow eyebrow-light">PURE HEALTH PEPTIDES</p>
-            <h1>
-              <span>ReSeARCH PePTIDeS</span>
-              <strong>YOU CAN TRUST.</strong>
-            </h1>
-            <p className="hero-description">
-              Every batch is independently tested in the USA, documented, and backed by transparent
-              Certificates of Analysis so researchers can purchase with confidence.
-            </p>
-            <div className="hero-buttons">
-              <a
-                className="button button-primary"
-                href={routePaths.shop}
-                onClick={(event) => {
-                  if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return
-                  event.preventDefault()
-                  onGate()
-                }}
-              >SHOP PEPTIDES</a>
-              <a className="button button-light" href="#transparency">VERIFY A COA</a>
-            </div>
-          </div>
-          <div className="hero-visual" aria-hidden="true">
-            <img src="/assets/hero-vials.png" alt="" />
-          </div>
-        </div>
-
-        <div className="benefit-grid">
-          {researchBenefits.map(({ title, copy, icon: Icon }) => (
-            <article className="benefit-card" key={title}>
-              <Icon aria-hidden="true" />
-              <div>
-                <h2>{title}</h2>
-                <p>{copy}</p>
-              </div>
-            </article>
-          ))}
-        </div>
-      </div>
-    </section>
-  )
-}
-
-function TopicalEvent({ onGate }) {
-  return (
-    <section className="topical-event">
-      <div className="topical-inner">
-        <div className="topical-product">
-          <img src="/assets/topical-event.png" alt="Pure Health Peptides topical discovery collection" />
-        </div>
-        <div className="topical-copy">
-          <p className="eyebrow">INTRODUCING</p>
-          <h2>PHP — TOPICAL DISCOVeRY eVeNT</h2>
-          <p className="event-offer">
-            For a limited period — <strong>Receive your Complimentary PHP Discovery Collection</strong>
-            {' '}with qualifying research orders of <strong>$500 or more*</strong>
-          </p>
-          <small>*after discount, before fees and taxes</small>
-          <img
-            className="topical-mobile-product"
-            src="/assets/topical-event.png"
-            alt="Pure Health Peptides topical discovery collection"
-          />
-          <button className="topical-link" type="button" onClick={onGate}>
-            Discover the PHP Topical Format System.
-          </button>
-          <p>Our uniquely architected topical research platform, designed exclusively by Pure Health Peptides.</p>
-        </div>
-      </div>
-    </section>
-  )
-}
-
-function Welcome() {
-  return (
-    <section className="welcome section-pad">
-      <div className="section-inner welcome-grid">
-        <div className="welcome-copy">
-          <p className="eyebrow">WELCOME TO</p>
-          <h2>Pure Health Peptides</h2>
-          <p><strong>Where Science Meets Excellence—and Research Has No Limits.</strong></p>
-          <p>
-            Your research deserves more than the ordinary. It deserves the best. At Pure Health
-            Peptides, we don’t just supply peptides—we deliver game-changing quality, unbeatable
-            pricing, and world-class service to fuel the breakthroughs of tomorrow.
-          </p>
-          <p>
-            Tired of me-too suppliers? We’re not like them. With 99%+ purity guaranteed,
-            industry-leading compliance, and a customer-first approach, we’re setting a new benchmark
-            for peptide excellence. Every peptide, every vial, every time—precision you can trust,
-            prices you can count on, and service that stands out.
-          </p>
-          <p>
-            This is where serious researchers come to win. Step into the future of science with Pure
-            Health Peptides—the partner you’ve been waiting for.
-          </p>
-        </div>
-        <aside className="usage-card">
-          <Info aria-hidden="true" />
-          <div>
-            <h3>Product Usage: For Research Use Only</h3>
-            <h4>Not for Human or Veterinary Use</h4>
-            <p>
-              Pure Health Peptides products are supplied to qualified research professionals and
-              institutional users for in vitro laboratory research only. KYC verification is required
-              prior to order fulfillment, and we reserve the right to refuse orders that do not meet
-              buyer qualification criteria. These products are not drugs, foods, cosmetics, or dietary
-              supplements, have not been evaluated by the FDA, and are not intended for human or animal
-              use. Any such use is prohibited and may violate federal, state, or local law. By purchasing,
-              the buyer represents and warrants that the product will be used solely for in vitro research.
-            </p>
-          </div>
-        </aside>
-      </div>
-    </section>
-  )
-}
-
-function DiscountSection({ onGate }) {
-  return (
-    <section className="discount-section">
-      <div className="section-inner discount-grid">
-        <div className="discount-column">
-          <p className="eyebrow eyebrow-light">ORDER MORE, SAVE MORE</p>
-          <h2>DISCOUNT STRUCTURe</h2>
-          <h3>Unlock Exclusive Savings with Our Unique Discount Structure!</h3>
-          <p>Why settle for less when you can save more—every time?</p>
-          <p>
-            At Pure Health Peptides, we reward your commitment to groundbreaking research with a
-            straightforward, unbeatable discount structure:
-          </p>
-          <p><strong>The number of vials you order per product = Your Discount!</strong></p>
-          <ul>
-            <li>2 vials = 2% off</li>
-            <li>5 vials = 5% off</li>
-            <li>10 vials = 10% off</li>
-            <li>Up to a massive 15% off for 15+ vials of the same product!</li>
-          </ul>
-        </div>
-        <div className="discount-column freebies">
-          <p className="eyebrow eyebrow-light">FREEBIES FOR</p>
-          <h2>Researchers Who Go Big</h2>
-          <ul>
-            <li><strong>Orders over $75:</strong> Receive a FREE Vial Vault, our sleek, secure container to store your research vials.</li>
-            <li><strong>Orders over $175:</strong> Free Shipping on your entire order—no hassle, no hidden fees.</li>
-          </ul>
-          <button className="button button-primary" type="button" onClick={onGate}>SHOP NOW</button>
-        </div>
-      </div>
-    </section>
-  )
-}
-
-function Transparency({ onNavigate }) {
-  return (
-    <section className="transparency section-pad" id="transparency">
-      <div className="section-inner transparency-grid">
-        <div className="coa-visual">
-          <img src="/assets/coa-documents.png" alt="Pure Health Peptides certificates of analysis" />
-        </div>
-        <div className="transparency-copy">
-          <p className="eyebrow">PURE SCIENCE</p>
-          <h2>TRANSPARENT RESULTS</h2>
-          <p>
-            At Pure Health Peptides, we are committed to providing the clarity and confidence researchers
-            need. Every batch of our peptides undergoes rigorous third-party testing in the USA, with
-            detailed Certificates of Analysis (COAs) available for verification. We invite you to visit
-            our Certifications page, where you can <strong>easily search for your batch number and access
-            its COA.</strong> This commitment to transparency ensures you have the data you need to trust
-            our products and focus on advancing your research.
-          </p>
-          <a
-            className="button button-outline-blue"
-            href={routePaths.coaLibrary}
-            onClick={(event) => { event.preventDefault(); onNavigate('coaLibrary') }}
-          >EXPLORE CERTIFICATIONS</a>
-        </div>
-      </div>
-    </section>
-  )
-}
-
-function Newsletter() {
+export function Newsletter() {
   const [submitted, setSubmitted] = useState(false)
   const [status, setStatus] = useState('')
 
@@ -918,7 +704,7 @@ function FooterAccordion({ title, links, onNavigate }) {
   )
 }
 
-function Footer({ onNavigate }) {
+export function Footer({ onNavigate }) {
   return (
     <footer className="site-footer">
       <div className="footer-inner">
@@ -928,7 +714,7 @@ function Footer({ onNavigate }) {
           aria-label="Pure Health Peptides home"
           onClick={(event) => { event.preventDefault(); onNavigate('home') }}
         >
-          <img className="footer-logo" src="/assets/footer-logo.svg" alt="Pure Health Peptides" />
+          <ResponsiveImage className="footer-logo" src="/assets/footer-logo.svg" alt="Pure Health Peptides" />
         </a>
 
         <nav className="footer-navigation-desktop" aria-label="Footer navigation">
@@ -988,24 +774,10 @@ function Footer({ onNavigate }) {
             Drug, and Cosmetic act.
           </p>
         </div>
-        <img className="payment-methods" src="/assets/payment-methods.png" alt="Accepted payment methods" />
+        <ResponsiveImage className="payment-methods" src="/assets/payment-methods.png" alt="Accepted payment methods" />
         <p className="copyright">© 2026, Pure Health Peptides</p>
       </div>
     </footer>
-  )
-}
-
-function HomePage({ onShop, onProduct, onNavigate, onAddToCart }) {
-  return (
-    <>
-      <Hero onGate={onShop} />
-      <TopicalEvent onGate={onShop} />
-      <Welcome />
-      <Catalog onProduct={onProduct} onShop={onShop} onAddToCart={onAddToCart} />
-      <DiscountSection onGate={onShop} />
-      <Transparency onNavigate={onNavigate} />
-      <Newsletter />
-    </>
   )
 }
 
@@ -1060,7 +832,7 @@ function calculateLinePricing(product, unitPrice, quantity) {
 function currentRoute(pathname = window.location.pathname) {
   const normalized = pathname.replace(/\/+$/, '') || '/'
   if (isProductPath(pathname)) return 'product'
-  return Object.entries(routePaths).find(([, path]) => (path.replace(/\/+$/, '') || '/') === normalized)?.[0] || 'home'
+  return Object.entries(routePaths).find(([, path]) => (path.replace(/\/+$/, '') || '/') === normalized)?.[0] || 'notFound'
 }
 
 export default function App() {
@@ -1098,9 +870,9 @@ export default function App() {
       ? productPath(selectedProduct)
       : routePaths[route] || routePaths.home
     const metadata = route === 'product' && selectedProduct
-      ? productMetadata || {
+      ? (productMetadata?.path === canonicalPath(expectedPath) ? productMetadata : null) || initialProductDocument(selectedProduct.id, catalogVersion)?.metadata || productDocuments[selectedProduct.slug]?.metadata || {
           path: expectedPath,
-          title: productDocumentTitle(selectedProduct),
+          title: `${selectedProduct.name} | Pure Health Peptides`,
           description: `${selectedProduct.name} research product information and batch testing from Pure Health Peptides.`,
           kind: 'product',
           indexable: true,
@@ -1109,16 +881,16 @@ export default function App() {
     const normalizePath = (path) => path === '/' ? '/' : `${path.replace(/\/+$/, '')}/`
     const knownRoute = route === 'product'
       ? Boolean(selectedProduct)
-      : normalizePath(window.location.pathname) === normalizePath(expectedPath)
-    const title = route === 'product' && !selectedProduct
+      : route !== 'notFound' && normalizePath(location.pathname) === normalizePath(expectedPath)
+    const title = route === 'notFound' ? 'Page Not Found | Pure Health Peptides' : route === 'product' && !selectedProduct
       ? 'Product Not Found | Pure Health Peptides'
       : metadata.title
-    const description = route === 'product' && !selectedProduct
+    const description = route === 'notFound' ? 'This page could not be found. Browse our research catalog or contact support for assistance.' : route === 'product' && !selectedProduct
       ? 'This research product is unavailable or is no longer part of the active Pure Health Peptides catalog.'
       : metadata.description
     const configuredOrigin = import.meta.env.VITE_SITE_URL?.trim().replace(/\/$/, '')
-    const origin = configuredOrigin || window.location.origin
-    const metadataPath = knownRoute ? metadata.path : route === 'product' ? window.location.pathname : routePaths.home
+    const origin = configuredOrigin || 'https://purehealthpeptidesshop.com'
+    const metadataPath = knownRoute ? metadata.path : location.pathname
     const canonicalUrl = `${origin}${metadataPath}`
     const socialImage = metadata.image || `${origin}/assets/hero-vials.png`
     const socialImageAlt = metadata.imageAlt || `${title} — Pure Health Peptides`
@@ -1133,7 +905,8 @@ export default function App() {
         ? 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'
         : 'noindex, nofollow',
     })
-    updateMeta('link[rel="canonical"]', { rel: 'canonical', href: canonicalUrl })
+    if (knownRoute) updateMeta('link[rel="canonical"]', { rel: 'canonical', href: canonicalUrl })
+    else document.head.querySelector('link[rel="canonical"]')?.remove()
     updateMeta('link[rel="alternate"][hreflang="en-US"]', { rel: 'alternate', hreflang: 'en-US', href: canonicalUrl })
     updateMeta('link[rel="alternate"][hreflang="x-default"]', { rel: 'alternate', hreflang: 'x-default', href: canonicalUrl })
     updateMeta('meta[property="og:type"]', { property: 'og:type', content: metadata.kind === 'product' ? 'product' : 'website' })
@@ -1150,7 +923,7 @@ export default function App() {
     updateMeta('meta[name="twitter:image"]', { name: 'twitter:image', content: socialImage })
     updateMeta('meta[name="twitter:image:alt"]', { name: 'twitter:image:alt', content: socialImageAlt })
     updateStructuredData(knownRoute ? metadata.schema : null)
-  }, [route, selectedProduct, productMetadata])
+  }, [route, selectedProduct, productMetadata, location.pathname])
 
   useEffect(() => {
     try {
@@ -1335,6 +1108,7 @@ export default function App() {
   const cartCount = cartItems.reduce((sum, item) => sum + item.quantity, 0)
 
   function renderPage(pageRoute = route) {
+    if (pageRoute === 'notFound') return <section className="policy-page"><h1>Page not found</h1><p>This address is not part of the active site.</p><a href="/shop/">Browse research peptides</a></section>
     if (pageRoute === 'checkout') {
       return (
         <CheckoutPage
@@ -1382,14 +1156,15 @@ export default function App() {
     if (pageRoute === 'coaTopicals') return <CoaCategoryPage category="topicals" />
     if (pageRoute === 'product') {
       if (!selectedProduct) {
-        return <Suspense fallback={<div className="route-loader" role="status">Loading product…</div>}><ProductNotFoundPage onShop={requestShop} /></Suspense>
+        return <Suspense fallback={<RouteFallback />}><ProductNotFoundPage onShop={requestShop} /></Suspense>
       }
       if (!['vials', 'capsules', 'liquids', 'topicals'].includes(selectedProduct.type)) {
-        return <Suspense fallback={<div className="route-loader" role="status">Loading product…</div>}><ProductNotFoundPage onShop={requestShop} /></Suspense>
+        return <Suspense fallback={<RouteFallback />}><ProductNotFoundPage onShop={requestShop} /></Suspense>
       }
       return (
-        <Suspense fallback={<div className="route-loader" role="status">Loading product…</div>}>
+        <Suspense fallback={<RouteFallback />}>
           <ProductDetailRoute
+            key={selectedProduct.id}
             product={selectedProduct}
             onMetadata={setProductMetadata}
             onAddToCart={addToCart}
@@ -1400,7 +1175,7 @@ export default function App() {
         </Suspense>
       )
     }
-    return <HomePage onShop={requestShop} onProduct={navigateProduct} onNavigate={navigate} onAddToCart={addToCart} />
+    return <><HomePage onShop={requestShop} onProduct={navigateProduct} onNavigate={navigate} onAddToCart={addToCart} /><Newsletter /></>
   }
 
   return (
@@ -1417,13 +1192,13 @@ export default function App() {
           cartCount={cartCount}
         />
         <main id="main-content" tabIndex="-1">
-          <Suspense fallback={<div className="route-loader" role="status">Loading pageâ€¦</div>}>
+          <Suspense fallback={<RouteFallback />}>
             <Routes>
               {Object.entries(routePaths).map(([routeName, path]) => (
                 <Route key={routeName} path={path} element={renderPage(routeName)} />
               ))}
               <Route path={`${appPath('/product')}/:slug/`} element={renderPage('product')} />
-              <Route path="*" element={renderPage('home')} />
+              <Route path="*" element={renderPage('notFound')} />
             </Routes>
           </Suspense>
         </main>
