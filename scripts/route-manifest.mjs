@@ -41,7 +41,15 @@ add({ pattern: '/*', classification: 'genuine-404', expectedStatus: 404, observe
 export const routeManifest = {
   observedAt: '2026-09-08',
   observationNote: 'Pre-change production responses; null means not individually measured. Expected responses require local host-aware QA and post-deployment verification.',
-  counts: { canonicalProducts: 115, otherPublicPages: 21, errorTemplates: 1, indexable: productionRoutes.filter((r) => r.indexable).length, private: productionRoutes.filter((r) => !r.indexable).length, pageValidations: productionRoutes.length, productAliases: productAliases.length },
+  counts: {
+    canonicalProducts: productionRoutes.filter((route) => route.kind === 'product').length,
+    otherPublicPages: productionRoutes.filter((route) => route.kind !== 'product' && route.indexable).length,
+    errorTemplates: 1,
+    indexable: productionRoutes.filter((route) => route.indexable).length,
+    private: productionRoutes.filter((route) => !route.indexable).length,
+    pageValidations: productionRoutes.length,
+    productAliases: productAliases.length,
+  },
   routes: [...entries.values()],
   apiEndpoints: ['/api/checkout', '/api/contact', '/api/client-error', '/api/orders/track', '/api/orders/status', '/api/account/delete-request', '/api/stripe-webhook', '/api/woocommerce-webhook', '/api/cron/process-commerce-jobs', '/api/cron/process-account-deletions'].map((path) => ({ path, sitemap: false, robots: 'noindex, nofollow', cache: 'private, no-store', access: 'Existing endpoint authentication, signature, rate-limit and method checks apply.' })),
 }

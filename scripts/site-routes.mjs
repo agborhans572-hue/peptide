@@ -1,6 +1,7 @@
 import { readFileSync } from 'node:fs'
 import shipping from '../src/shippingPolicy.json' with { type: 'json' }
 import { relatedResearchProducts } from '../src/researchLinks.js'
+import { educationArticlePath, publishedEducationArticles } from '../src/educationArticles.js'
 const catalog = JSON.parse(readFileSync(new URL('../catalog/catalog.generated.json', import.meta.url), 'utf8'))
 const shopProducts = catalog.products
 
@@ -72,6 +73,9 @@ function breadcrumbSchema(route, product) {
   if (product) {
     items.push({ '@type': 'ListItem', position: 2, name: 'Research Peptides', item: `${SITE_ORIGIN}/shop/` })
     items.push({ '@type': 'ListItem', position: 3, name: product.name, item: absoluteUrl(route.path) })
+  } else if (route.kind === 'article') {
+    items.push({ '@type': 'ListItem', position: 2, name: 'Laboratory Guides', item: `${SITE_ORIGIN}/news/` })
+    items.push({ '@type': 'ListItem', position: 3, name: route.article.shortTitle, item: absoluteUrl(route.path) })
   } else {
     items.push({ '@type': 'ListItem', position: 2, name: route.breadcrumb || route.title.split('|')[0].trim(), item: absoluteUrl(route.path) })
   }
@@ -115,7 +119,7 @@ function baseSchemaGraph(route) {
       inLanguage: 'en-US',
     },
     {
-      '@type': route.path === '/shop/' || route.path.startsWith('/coa-library/') ? 'CollectionPage' : 'WebPage',
+      '@type': route.path === '/shop/' || route.path === '/news/' || route.path.startsWith('/coa-library/') ? 'CollectionPage' : 'WebPage',
       '@id': `${pageUrl}#webpage`,
       url: pageUrl,
       name: route.title,
@@ -148,6 +152,39 @@ function staticSchema(route) {
           name: product.name,
           url: new URL(product.productUrl, SITE_ORIGIN).href,
         })),
+    })
+  }
+
+  if (route.path === '/news/') {
+    graph.push({
+      '@type': 'ItemList',
+      '@id': `${SITE_ORIGIN}/news/#guides`,
+      name: 'Peptide Testing and Laboratory Guides',
+      numberOfItems: publishedEducationArticles.length,
+      itemListElement: publishedEducationArticles.map((article, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        name: article.title,
+        url: absoluteUrl(educationArticlePath(article)),
+      })),
+    })
+  }
+
+  if (route.kind === 'article') {
+    graph.push({
+      '@type': 'Article',
+      '@id': `${absoluteUrl(route.path)}#article`,
+      headline: route.article.title,
+      description: route.article.description,
+      datePublished: route.article.publishedAt,
+      dateModified: route.article.updatedAt,
+      articleSection: route.article.category,
+      author: { '@id': ORGANIZATION_ID },
+      publisher: { '@id': ORGANIZATION_ID },
+      mainEntityOfPage: { '@id': `${absoluteUrl(route.path)}#webpage` },
+      image: route.image,
+      citation: route.article.sources.map((source) => source.url),
+      inLanguage: 'en-US',
     })
   }
 
@@ -215,8 +252,24 @@ const staticRoutes = [
   },
   {
     path: '/news/',
-    title: 'Recent News | Pure Health Peptides',
-    description: 'Read recent Pure Health Peptides research, product, testing, and manufacturing updates.',
+    title: 'Peptide Testing & Laboratory Guides | PHP',
+    description: 'Read evidence-led guides to peptide COAs, HPLC purity, mass spectrometry, storage, material formats, lot numbers, and batch verification.',
+    breadcrumb: 'Laboratory Guides',
+  },
+  ...publishedEducationArticles.map((article) => ({
+    path: educationArticlePath(article),
+    title: `${article.shortTitle} | Laboratory Guide`,
+    description: article.description,
+    breadcrumb: article.shortTitle,
+    kind: 'article',
+    article,
+    lastmod: article.updatedAt,
+  })),
+  {
+    path: '/editorial-standards/',
+    title: 'Editorial Standards for Laboratory Education | PHP',
+    description: 'See how Pure Health Peptides attributes, sources, discloses, updates, and corrects educational content about laboratory research materials.',
+    breadcrumb: 'Editorial Standards',
   },
   {
     path: '/pure-elite-access/',
@@ -402,11 +455,13 @@ const pageImages = {
 }
 
 const enrichedStaticRoutes = staticRoutes.map((route) => {
-  const image = absoluteUrl(pageImages[route.path] || '/assets/hero-vials.png')
+  const image = absoluteUrl(pageImages[route.path] || (route.kind === 'article' ? '/assets/peptide-info/coa-lab.png' : '/assets/hero-vials.png'))
   const enriched = {
     ...route,
     image,
-    imageAlt: route.path.startsWith('/coa-') || route.path === '/coa-library/'
+    imageAlt: route.kind === 'article'
+      ? `${route.article.shortTitle} — laboratory research guide`
+      : route.path.startsWith('/coa-') || route.path === '/coa-library/'
       ? 'Research peptide Certificate of Analysis documentation'
       : 'Pure Health Peptides laboratory research materials',
   }

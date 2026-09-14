@@ -22,7 +22,7 @@ for (const route of productionRoutes) {
   check(value('meta[name="description"]') === route.description, prefix + 'matching description')
   check(value('link[rel="canonical"]', 'href') === canonical, prefix + 'canonical')
   check(value('meta[property="og:url"]') === canonical, prefix + 'Open Graph URL')
-  check(value('meta[property="og:type"]') === (route.kind === 'product' ? 'product' : 'website'), prefix + 'Open Graph type')
+  check(value('meta[property="og:type"]') === (route.kind === 'product' ? 'product' : route.kind === 'article' ? 'article' : 'website'), prefix + 'Open Graph type')
   check(Number(value('meta[property="og:image:width"]')) > 0 && Number(value('meta[property="og:image:height"]')) > 0, prefix + 'social image dimensions')
   check(value('meta[name="robots"]')?.startsWith(route.indexable ? 'index, follow' : 'noindex, nofollow'), prefix + 'robots')
   check(document.querySelectorAll('h1').length === 1, prefix + 'exactly one H1')
@@ -40,6 +40,13 @@ for (const route of productionRoutes) {
   check(schema?.['@context'] === 'https://schema.org', prefix + 'JSON-LD context')
   const nodes = schema?.['@graph'] || []
   check(nodes.some((n) => ['WebPage', 'CollectionPage'].includes(n['@type']) && n.url === canonical), prefix + 'route-specific page schema')
+  if (route.kind === 'article') {
+    const article = nodes.find((node) => node['@type'] === 'Article')
+    check(article?.headline === route.article.title, prefix + 'Article schema headline')
+    check(article?.datePublished === route.article.publishedAt && article?.dateModified === route.article.updatedAt, prefix + 'Article schema dates')
+    check(article?.author?.['@id'] === SITE_ORIGIN + '/#organization', prefix + 'accountable organization author')
+    check(article?.citation?.length === route.article.sources.length, prefix + 'Article schema citations')
+  }
   const products = nodes.filter((n) => n['@type'] === 'Product')
   if (route.kind === 'product') {
     check(products.length === 1 && products[0].name === route.product.name && products[0].url === canonical, prefix + 'correct Product schema')
@@ -69,7 +76,7 @@ for (const [path, depth] of distance) for (const next of graph.get(path) || []) 
 for (const route of indexable) check(distance.has(route.path) && distance.get(route.path) <= 2, route.path + ': reachable within two links from home')
 const sitemap = await readFile('dist/sitemap.xml', 'utf8')
 const urls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1])
-check(urls.length === 136 && new Set(urls).size === 136, '136 unique sitemap entries')
+check(urls.length === indexable.length && new Set(urls).size === indexable.length, `${indexable.length} unique sitemap entries`)
 for (const url of urls) {
   const parsed = new URL(url)
   check(parsed.origin === SITE_ORIGIN && !parsed.search, url + ': canonical origin without query')

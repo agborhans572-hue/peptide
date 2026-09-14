@@ -28,8 +28,10 @@ const lazyNamed = (loader, name) => lazy(() => loader().then((module) => ({ defa
 const ShopPage = lazy(() => import('./ShopPage.jsx'))
 const AboutPage = lazyNamed(() => import('./AboutPages.jsx'), 'AboutPage')
 const ElitePage = lazyNamed(() => import('./AboutPages.jsx'), 'ElitePage')
-const NewsPage = lazyNamed(() => import('./AboutPages.jsx'), 'NewsPage')
 const ResearchAreasPage = lazyNamed(() => import('./AboutPages.jsx'), 'ResearchAreasPage')
+const LearningCenterPage = lazyNamed(() => import('./EducationPages.jsx'), 'LearningCenterPage')
+const EducationArticlePage = lazyNamed(() => import('./EducationPages.jsx'), 'EducationArticlePage')
+const EditorialStandardsPage = lazyNamed(() => import('./EducationPages.jsx'), 'EditorialStandardsPage')
 const ContactPage = lazyNamed(() => import('./SupportPages.jsx'), 'ContactPage')
 const FaqPage = lazyNamed(() => import('./SupportPages.jsx'), 'FaqPage')
 const TrackOrderPage = lazyNamed(() => import('./SupportPages.jsx'), 'TrackOrderPage')
@@ -210,6 +212,7 @@ const routePaths = Object.fromEntries(Object.entries({
   about: '/about-us/',
   research: '/research-areas/',
   news: '/news/',
+  editorialStandards: '/editorial-standards/',
   elite: '/pure-elite-access/',
   account: '/my-account/',
   authCallback: '/auth/callback/',
@@ -239,6 +242,7 @@ const navRouteByLabel = {
   'Why Us?': 'about',
   'Research Areas': 'research',
   News: 'news',
+  'Lab Guides': 'news',
   'Pure Elite Access': 'elite',
   'My Account': 'account',
   'My account': 'account',
@@ -264,7 +268,7 @@ const navRouteByLabel = {
 const navGroups = [
   {
     label: 'About',
-    links: ['Why Us?', 'Research Areas', 'News', 'Pure Elite Access'],
+    links: ['Why Us?', 'Research Areas', 'Lab Guides', 'Pure Elite Access'],
   },
   {
     label: 'Support',
@@ -664,7 +668,7 @@ export function Newsletter() {
 }
 
 const footerGroups = {
-  about: ['Why Us?', 'Research Areas', 'News', 'Pure Elite Access'],
+  about: ['Why Us?', 'Research Areas', 'Lab Guides', 'Pure Elite Access'],
   support: ['My account', 'Track My Order', 'FAQs', 'Contact'],
   peptide: ['Product Info', 'Testing Process', 'Dilution Guide'],
   coa: ['Vials', 'Capsules', 'Liquids', 'Topicals'],
@@ -832,6 +836,8 @@ function calculateLinePricing(product, unitPrice, quantity) {
 function currentRoute(pathname = window.location.pathname) {
   const normalized = pathname.replace(/\/+$/, '') || '/'
   if (isProductPath(pathname)) return 'product'
+  const newsRoot = routePaths.news.replace(/\/+$/, '')
+  if (normalized.startsWith(`${newsRoot}/`)) return 'article'
   return Object.entries(routePaths).find(([, path]) => (path.replace(/\/+$/, '') || '/') === normalized)?.[0] || 'notFound'
 }
 
@@ -868,7 +874,10 @@ export default function App() {
   useEffect(() => {
     const expectedPath = route === 'product' && selectedProduct
       ? productPath(selectedProduct)
+      : route === 'article'
+      ? canonicalPath(location.pathname)
       : routePaths[route] || routePaths.home
+    const pageMetadata = routeMetadata[canonicalPath(expectedPath)]
     const metadata = route === 'product' && selectedProduct
       ? (productMetadata?.path === canonicalPath(expectedPath) ? productMetadata : null) || initialProductDocument(selectedProduct.id, catalogVersion)?.metadata || productDocuments[selectedProduct.slug]?.metadata || {
           path: expectedPath,
@@ -877,15 +886,17 @@ export default function App() {
           kind: 'product',
           indexable: true,
         }
-      : routeMetadata[canonicalPath(expectedPath)] || routeMetadata['/']
+      : pageMetadata || routeMetadata['/']
     const normalizePath = (path) => path === '/' ? '/' : `${path.replace(/\/+$/, '')}/`
     const knownRoute = route === 'product'
       ? Boolean(selectedProduct)
+      : route === 'article'
+      ? Boolean(pageMetadata)
       : route !== 'notFound' && normalizePath(location.pathname) === normalizePath(expectedPath)
-    const title = route === 'notFound' ? 'Page Not Found | Pure Health Peptides' : route === 'product' && !selectedProduct
+    const title = route === 'notFound' || route === 'article' && !pageMetadata ? 'Page Not Found | Pure Health Peptides' : route === 'product' && !selectedProduct
       ? 'Product Not Found | Pure Health Peptides'
       : metadata.title
-    const description = route === 'notFound' ? 'This page could not be found. Browse our research catalog or contact support for assistance.' : route === 'product' && !selectedProduct
+    const description = route === 'notFound' || route === 'article' && !pageMetadata ? 'This page could not be found. Browse our research catalog or contact support for assistance.' : route === 'product' && !selectedProduct
       ? 'This research product is unavailable or is no longer part of the active Pure Health Peptides catalog.'
       : metadata.description
     const configuredOrigin = import.meta.env.VITE_SITE_URL?.trim().replace(/\/$/, '')
@@ -909,7 +920,7 @@ export default function App() {
     else document.head.querySelector('link[rel="canonical"]')?.remove()
     updateMeta('link[rel="alternate"][hreflang="en-US"]', { rel: 'alternate', hreflang: 'en-US', href: canonicalUrl })
     updateMeta('link[rel="alternate"][hreflang="x-default"]', { rel: 'alternate', hreflang: 'x-default', href: canonicalUrl })
-    updateMeta('meta[property="og:type"]', { property: 'og:type', content: metadata.kind === 'product' ? 'product' : 'website' })
+    updateMeta('meta[property="og:type"]', { property: 'og:type', content: metadata.kind === 'product' ? 'product' : metadata.kind === 'article' ? 'article' : 'website' })
     updateMeta('meta[property="og:title"]', { property: 'og:title', content: title })
     updateMeta('meta[property="og:description"]', { property: 'og:description', content: description })
     updateMeta('meta[property="og:url"]', { property: 'og:url', content: canonicalUrl })
@@ -1132,7 +1143,12 @@ export default function App() {
     }
     if (pageRoute === 'about') return <><AboutPage onShop={requestShop} onNavigate={navigate} /><Newsletter /></>
     if (pageRoute === 'research') return <ResearchAreasPage />
-    if (pageRoute === 'news') return <><NewsPage onShop={requestShop} /><Newsletter /></>
+    if (pageRoute === 'news') return <><LearningCenterPage /><Newsletter /></>
+    if (pageRoute === 'article') {
+      const slug = location.pathname.split('/').filter(Boolean).at(-1)
+      return <><EducationArticlePage slug={slug} /><Newsletter /></>
+    }
+    if (pageRoute === 'editorialStandards') return <EditorialStandardsPage />
     if (pageRoute === 'elite') return <><ElitePage onShop={requestShop} onNavigate={navigate} /><Newsletter /></>
     if (pageRoute === 'account') return <AccountPage />
     if (pageRoute === 'authCallback') return <AuthCallbackPage />
@@ -1197,6 +1213,7 @@ export default function App() {
               {Object.entries(routePaths).map(([routeName, path]) => (
                 <Route key={routeName} path={path} element={renderPage(routeName)} />
               ))}
+              <Route path={`${appPath('/news')}/:slug/`} element={renderPage('article')} />
               <Route path={`${appPath('/product')}/:slug/`} element={renderPage('product')} />
               <Route path="*" element={renderPage('notFound')} />
             </Routes>

@@ -13,6 +13,7 @@ export function relatedResearchProducts(product, products, count = 4) {
 }
 
 export const resourceLinks = [
+  { path: '/news/', label: 'Read peptide testing and laboratory guides' },
   { path: '/shipping-policy/', label: 'U.S. shipping rates and delivery estimates' },
   { path: '/refund-policy/', label: 'Return authorization and refund policy' },
   { path: '/coa-library/', label: 'Find batch Certificates of Analysis' },

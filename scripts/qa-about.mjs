@@ -9,7 +9,7 @@ const output = new URL('../preview/about-qa/', import.meta.url)
 const pages = [
   ['about-us', 'About US'],
   ['research-areas', 'Research Areas'],
-  ['news', 'Recent news'],
+  ['news', 'Evidence-led guidance for research materials'],
   ['pure-elite-access', 'PURE ELITE ACCESS'],
 ]
 

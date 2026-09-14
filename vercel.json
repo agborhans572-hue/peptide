@@ -425,6 +425,36 @@
       "permanent": true
     },
     {
+      "source": "/news/how-to-read-a-peptide-certificate-of-analysis",
+      "destination": "/news/how-to-read-a-peptide-certificate-of-analysis/",
+      "permanent": true
+    },
+    {
+      "source": "/news/how-to-read-a-peptide-certificate-of-analysis/index.html",
+      "destination": "/news/how-to-read-a-peptide-certificate-of-analysis/",
+      "permanent": true
+    },
+    {
+      "source": "/news/understanding-hplc-purity-testing",
+      "destination": "/news/understanding-hplc-purity-testing/",
+      "permanent": true
+    },
+    {
+      "source": "/news/understanding-hplc-purity-testing/index.html",
+      "destination": "/news/understanding-hplc-purity-testing/",
+      "permanent": true
+    },
+    {
+      "source": "/editorial-standards",
+      "destination": "/editorial-standards/",
+      "permanent": true
+    },
+    {
+      "source": "/editorial-standards/index.html",
+      "destination": "/editorial-standards/",
+      "permanent": true
+    },
+    {
       "source": "/pure-elite-access",
       "destination": "/pure-elite-access/",
       "permanent": true

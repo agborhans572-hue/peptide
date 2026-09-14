@@ -3,11 +3,11 @@
   "observationNote": "Pre-change production responses; null means not individually measured. Expected responses require local host-aware QA and post-deployment verification.",
   "counts": {
     "canonicalProducts": 115,
-    "otherPublicPages": 21,
+    "otherPublicPages": 24,
     "errorTemplates": 1,
-    "indexable": 136,
+    "indexable": 139,
     "private": 7,
-    "pageValidations": 143,
+    "pageValidations": 146,
     "productAliases": 32
   },
   "routes": [
@@ -139,6 +139,90 @@
       "expectedStatus": 308,
       "observedStatus": null,
       "canonical": "/news/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/news/how-to-read-a-peptide-certificate-of-analysis/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/news/how-to-read-a-peptide-certificate-of-analysis/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "article"
+    },
+    {
+      "path": "/news/how-to-read-a-peptide-certificate-of-analysis",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/news/how-to-read-a-peptide-certificate-of-analysis/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/news/how-to-read-a-peptide-certificate-of-analysis/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/news/how-to-read-a-peptide-certificate-of-analysis/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/news/understanding-hplc-purity-testing/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/news/understanding-hplc-purity-testing/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "article"
+    },
+    {
+      "path": "/news/understanding-hplc-purity-testing",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/news/understanding-hplc-purity-testing/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/news/understanding-hplc-purity-testing/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/news/understanding-hplc-purity-testing/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/editorial-standards/",
+      "classification": "indexable-200",
+      "expectedStatus": 200,
+      "observedStatus": 200,
+      "canonical": "/editorial-standards/",
+      "robots": "index, follow",
+      "sitemap": true,
+      "kind": "page"
+    },
+    {
+      "path": "/editorial-standards",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/editorial-standards/",
+      "robots": null,
+      "sitemap": false
+    },
+    {
+      "path": "/editorial-standards/index.html",
+      "classification": "permanent-redirect",
+      "expectedStatus": 308,
+      "observedStatus": null,
+      "canonical": "/editorial-standards/",
       "robots": null,
       "sitemap": false
     },

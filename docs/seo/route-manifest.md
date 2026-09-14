@@ -1,6 +1,6 @@
 # Route classification
 
-136 canonical indexable pages + 7 private shells = 143 page validations. 32 product aliases (31 original + Semax migration) are separate redirects. Only indexable-200 entries belong in the sitemap.
+139 canonical indexable pages + 7 private shells = 146 page validations. 32 product aliases (31 original + Semax migration) are separate redirects. Only indexable-200 entries belong in the sitemap.
 
 Observed statuses are pre-change production measurements; — means unmeasured.
 
@@ -20,6 +20,15 @@ Observed statuses are pre-change production measurements; — means unmeasured.
 | /news/ | indexable-200 | 200 | 200 | /news/ | index, follow | yes |
 | /news | permanent-redirect | 308 | — | /news/ | — | no |
 | /news/index.html | permanent-redirect | 308 | — | /news/ | — | no |
+| /news/how-to-read-a-peptide-certificate-of-analysis/ | indexable-200 | 200 | 200 | /news/how-to-read-a-peptide-certificate-of-analysis/ | index, follow | yes |
+| /news/how-to-read-a-peptide-certificate-of-analysis | permanent-redirect | 308 | — | /news/how-to-read-a-peptide-certificate-of-analysis/ | — | no |
+| /news/how-to-read-a-peptide-certificate-of-analysis/index.html | permanent-redirect | 308 | — | /news/how-to-read-a-peptide-certificate-of-analysis/ | — | no |
+| /news/understanding-hplc-purity-testing/ | indexable-200 | 200 | 200 | /news/understanding-hplc-purity-testing/ | index, follow | yes |
+| /news/understanding-hplc-purity-testing | permanent-redirect | 308 | — | /news/understanding-hplc-purity-testing/ | — | no |
+| /news/understanding-hplc-purity-testing/index.html | permanent-redirect | 308 | — | /news/understanding-hplc-purity-testing/ | — | no |
+| /editorial-standards/ | indexable-200 | 200 | 200 | /editorial-standards/ | index, follow | yes |
+| /editorial-standards | permanent-redirect | 308 | — | /editorial-standards/ | — | no |
+| /editorial-standards/index.html | permanent-redirect | 308 | — | /editorial-standards/ | — | no |
 | /pure-elite-access/ | indexable-200 | 200 | 200 | /pure-elite-access/ | index, follow | yes |
 | /pure-elite-access | permanent-redirect | 308 | — | /pure-elite-access/ | — | no |
 | /pure-elite-access/index.html | permanent-redirect | 308 | — | /pure-elite-access/ | — | no |
