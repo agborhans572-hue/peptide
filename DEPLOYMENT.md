@@ -43,6 +43,8 @@ In **Project → Settings → Environment Variables**, add these values for the 
 | `VITE_SUPABASE_URL` | Same project URL as `SUPABASE_URL` | No |
 | `VITE_SUPABASE_PUBLISHABLE_KEY` | Supabase browser publishable key | No |
 | `VITE_TURNSTILE_SITE_KEY` | Cloudflare Turnstile public site key | No |
+| `VITE_CHATWOOT_WEBSITE_TOKEN` | Chatwoot Website inbox configuration -> website token | No (public widget identifier) |
+| `VITE_CHATWOOT_BASE_URL` | Chatwoot installation origin, normally `https://app.chatwoot.com` | No |
 | `VITE_GOOGLE_AUTH_ENABLED` | `false` unless Google is configured and tested | No |
 | `VITE_ACCOUNT_DELETION_ENDPOINT` | `/api/account/delete-request` | No |
 | `VITE_CHECKOUT_ENDPOINT` | `/api/checkout` | No |
@@ -51,6 +53,8 @@ In **Project → Settings → Environment Variables**, add these values for the 
 | `VITE_BUILD_SOURCEMAP` | `false` | No |
 
 Never add a secret as `VITE_*`: Vite embeds those values in the browser bundle. Once Vercel has assigned your final domain, set Stripe’s live webhook endpoint to `https://YOUR-DOMAIN/api/stripe-webhook` and copy the signing secret into `STRIPE_WEBHOOK_SECRET`.
+
+Create a **Website** inbox in Chatwoot and use only that inbox's website token in `VITE_CHATWOOT_WEBSITE_TOKEN`. Do not use a Chatwoot agent, admin, personal-access, or API token in any browser variable. The committed CSP is narrowly configured for Chatwoot Cloud at `https://app.chatwoot.com`. For a self-hosted installation, replace that exact origin in `script-src`, `frame-src`, `img-src`, and `connect-src`, replace its `wss://` origin in `connect-src`, and keep every other CSP restriction intact. Keep `vercel.json`, `public/_headers`, and `public/hosting-config.json` synchronized when changing the allowed origin.
 
 Vercel Pro is required for the one-minute commerce cron. Set Stripe's endpoint to `https://YOUR-DOMAIN/api/stripe-webhook` and Woo's order endpoint to `https://YOUR-DOMAIN/api/woocommerce-webhook`; keep both secrets server-only.
 
@@ -93,4 +97,4 @@ Vercel invokes `/api/cron/process-commerce-jobs` every minute and `/api/cron/pro
 
 See `docs/LAUNCH_RUNBOOK.md` for database migration verification, Stripe webhook registration, live payment/refund evidence, backups, MFA, HTTPS, monitoring, legal approval, and rollback.
 
-The Content Security Policy intentionally permits scripts and network requests only from the same origin, allows inline styles for React's dynamic product layout, and allows images from this site plus the canonical Pure Health Peptides origin. Update and retest the policy before adding analytics, payment, chat, embedded content, or external APIs.
+The Content Security Policy intentionally permits same-origin application resources, Cloudflare Turnstile, Supabase, and the exact Chatwoot Cloud origins needed by the website widget. It allows inline styles for React's dynamic product layout and images from this site plus the canonical Pure Health Peptides origin. Update and retest the policy before adding any other analytics, payment, chat, embedded content, or external API origin.

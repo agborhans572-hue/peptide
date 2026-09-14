@@ -23,6 +23,7 @@ import { isProductPath, productFromPath, productPath, productSlug } from './prod
 import { appPath, canonicalPath } from './appPath.js'
 import { postToSiteService, safeServiceMessage, siteServices } from './siteServices.js'
 import useDialogFocus from './useDialogFocus.js'
+import ChatwootWidget from './ChatwootWidget.jsx'
 
 const lazyNamed = (loader, name) => lazy(() => loader().then((module) => ({ default: module[name] })))
 const ShopPage = lazy(() => import('./ShopPage.jsx'))
@@ -862,6 +863,16 @@ export default function App() {
   const [shopSearch, setShopSearch] = useState('')
   const initialRender = useRef(true)
   const overlayOpen = menuOpen || searchOpen || cartOpen || gateOpen
+  const chatwootVisible = !overlayOpen && ![
+    'account',
+    'authCallback',
+    'authError',
+    'authReset',
+    'checkout',
+    'notFound',
+    'orderConfirmation',
+    'track',
+  ].includes(route)
 
   useEffect(() => {
     setProductMetadata(null)
@@ -1240,6 +1251,7 @@ export default function App() {
         onConfirm={confirmGate}
         onLeave={() => window.location.replace('https://www.google.com/')}
       />
+      <ChatwootWidget visible={chatwootVisible} />
     </>
   )
 }

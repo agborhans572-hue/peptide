@@ -1,3 +1,5 @@
+import { articleAuthorityBySlug } from './educationAuthority.js'
+
 const references = {
   q7a: {
     title: 'Q7A Good Manufacturing Practice Guidance for Active Pharmaceutical Ingredients',
@@ -67,7 +69,7 @@ const references = {
   },
 }
 
-export const educationArticles = [
+const baseEducationArticles = [
   {
     slug: 'how-to-read-a-peptide-certificate-of-analysis',
     title: 'How to Read a Peptide Certificate of Analysis',
@@ -633,6 +635,11 @@ export const educationArticles = [
     ],
   },
 ]
+
+export const educationArticles = baseEducationArticles.map((article) => ({
+  ...article,
+  ...articleAuthorityBySlug[article.slug],
+}))
 
 export const educationArticleBySlug = Object.fromEntries(
   educationArticles.map((article) => [article.slug, article]),

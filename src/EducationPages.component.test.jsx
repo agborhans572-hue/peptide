@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react'
 import { describe, expect, it } from 'vitest'
 import { EditorialStandardsPage, EducationArticlePage, LearningCenterPage } from './EducationPages.jsx'
-import { publishedEducationArticles, scheduledEducationArticles } from './educationArticles.js'
+import { educationArticles, publishedEducationArticles, scheduledEducationArticles } from './educationArticles.js'
 
 describe('laboratory education library', () => {
   it('publishes two guides and lists the next six on the editorial schedule', () => {
@@ -14,15 +14,33 @@ describe('laboratory education library', () => {
     expect(screen.getByRole('link', { name: /Read our editorial standards/i }).getAttribute('href')).toBe('/editorial-standards/')
   })
 
-  it('renders an accountable byline, limitations, sources, and internal resources', () => {
+  it('renders an accountable byline, citations, a diagram, original testing evidence, and internal resources', () => {
     const article = publishedEducationArticles[0]
     render(<EducationArticlePage slug={article.slug} />)
     expect(screen.getByRole('heading', { level: 1, name: article.title })).toBeTruthy()
     expect(screen.getByText(/Written by/i).textContent).toContain('Pure Health Peptides Editorial Team')
+    expect(screen.getByText(/awaiting a named, credential-verified reviewer/i)).toBeTruthy()
     expect(screen.getByText(/does not provide instructions for human or veterinary use/i)).toBeTruthy()
+    expect(screen.getByRole('heading', { name: 'The COA traceability chain' })).toBeTruthy()
+    expect(screen.getByRole('heading', { name: 'Read a real batch record with the guide' })).toBeTruthy()
+    expect(screen.getByRole('link', { name: /Open BioRegen COA #12670/i }).getAttribute('href')).toContain('COA_539_')
+    expect(screen.getByRole('link', { name: 'BPC-157 / TB-500 research blend' }).getAttribute('href')).toBe('/product/bpc-157-tb-500/')
+    expect(screen.getByText('Laboratory report analyst')).toBeTruthy()
+    expect(screen.getAllByRole('link', { name: /Source 1:/i })[0].getAttribute('href')).toBe('#source-1')
     expect(screen.getByRole('heading', { name: 'Sources and further reading' })).toBeTruthy()
     expect(screen.getAllByRole('listitem').length).toBeGreaterThan(article.sources.length)
     expect(screen.getByRole('link', { name: /Search the batch COA library/i }).getAttribute('href')).toBe('/coa-library/')
+  })
+
+  it('keeps every guide reviewer-ready and backed by a diagram, section citations, and a real testing record', () => {
+    for (const article of educationArticles) {
+      expect(article.diagram.steps.length).toBeGreaterThanOrEqual(4)
+      expect(article.sectionCitations).toHaveLength(article.sections.length)
+      expect(article.sectionCitations.every((indexes) => indexes.every((index) => article.sources[index - 1]))).toBe(true)
+      expect(article.testingEvidence.records.length).toBeGreaterThan(0)
+      expect(article.testingEvidence.records.every((record) => record.href && record.laboratory && record.analyst && record.products.length)).toBe(true)
+      expect(article.reviewer).toBeNull()
+    }
   })
 
   it('discloses the editorial and AI-assistance policy without claiming a reviewer', () => {

@@ -1,4 +1,4 @@
-import { ArrowRight, BookOpen, CheckCircle2, Clock3, FlaskConical, ShieldCheck } from 'lucide-react'
+import { ArrowRight, BadgeCheck, BookOpen, CheckCircle2, Clock3, FileCheck2, FlaskConical, ShieldCheck } from 'lucide-react'
 import { appPath } from './appPath.js'
 import {
   educationArticleBySlug,
@@ -22,6 +22,7 @@ function ArticleCard({ article }) {
       <div className="education-card-meta">
         <span>{formatDate(article.publishedAt)}</span>
         <span><Clock3 aria-hidden="true" /> {article.readingMinutes} min read</span>
+        <span>{article.reviewer ? <><BadgeCheck aria-hidden="true" /> Expert reviewed</> : 'Review status disclosed'}</span>
       </div>
       <a className="education-card-link" href={appPath(educationArticlePath(article))}>
         Read the guide <ArrowRight aria-hidden="true" />
@@ -43,6 +44,7 @@ export function LearningCenterPage() {
 
       <section className="education-principles" aria-label="Editorial principles">
         <article><BookOpen aria-hidden="true" /><div><h2>Primary sources</h2><p>Claims link to standards, regulators, scientific references, and peer-reviewed literature.</p></div></article>
+        <article><FileCheck2 aria-hidden="true" /><div><h2>Original records</h2><p>Real batch reports are identified by lot, method, date, laboratory, and bounded result.</p></div></article>
         <article><FlaskConical aria-hidden="true" /><div><h2>Method-aware</h2><p>We separate identity, purity, content, quantity, and stability instead of blending them into one claim.</p></div></article>
         <article><ShieldCheck aria-hidden="true" /><div><h2>Research-only scope</h2><p>These guides support laboratory documentation and do not give medical or administration advice.</p></div></article>
       </section>
@@ -53,7 +55,7 @@ export function LearningCenterPage() {
             <p className="education-kicker">Learning library</p>
             <h2>Start with the question in front of you</h2>
           </div>
-          <p>Each guide includes a direct answer, a practical review checklist, limitations, related resources, and its source list.</p>
+          <p>Each guide includes a direct answer, citations tied to the relevant sections, an original batch-record example, a purpose-built diagram, limitations, and its review status.</p>
         </div>
         <div className="education-grid">
           {publishedEducationArticles.map((article) => <ArticleCard article={article} key={article.slug} />)}
@@ -81,11 +83,102 @@ export function LearningCenterPage() {
         <div>
           <p className="education-kicker">How this library is made</p>
           <h2>Transparent authorship, sourcing, and corrections</h2>
-          <p>Every article identifies the responsible organizational author, publication and update dates, the evidence consulted, and the limits of the page.</p>
+          <p>Every article identifies the responsible author, scientific-review status, publication and update dates, evidence consulted, original testing record, and the limits of the page.</p>
         </div>
         <a href={appPath('/editorial-standards/')}>Read our editorial standards <ArrowRight aria-hidden="true" /></a>
       </aside>
     </div>
+  )
+}
+
+function ReviewerStatus({ reviewer }) {
+  if (!reviewer) {
+    return (
+      <span>
+        Scientific review: <a href="#review-status">awaiting a named, credential-verified reviewer</a>
+      </span>
+    )
+  }
+
+  return (
+    <span>
+      Reviewed by <a href={reviewer.profileUrl}>{reviewer.name}, {reviewer.credentials}</a>
+      {reviewer.role ? ` · ${reviewer.role}` : ''}
+    </span>
+  )
+}
+
+function EvidenceDiagram({ diagram }) {
+  if (!diagram) return null
+  return (
+    <figure className="article-diagram" id="evidence-diagram" aria-labelledby="diagram-heading">
+      <div className="article-heading-row">
+        <p className="education-kicker">Visual explainer</p>
+        <h2 id="diagram-heading">{diagram.title}</h2>
+      </div>
+      <ol>
+        {diagram.steps.map(([label, detail], index) => (
+          <li key={label}>
+            <span aria-hidden="true">{index + 1}</span>
+            <strong>{label}</strong>
+            <small>{detail}</small>
+          </li>
+        ))}
+      </ol>
+      <figcaption>{diagram.caption}</figcaption>
+    </figure>
+  )
+}
+
+function SectionCitations({ indexes, sources }) {
+  if (!indexes?.length) return null
+  return (
+    <p className="section-citations">
+      <span>Evidence:</span>{' '}
+      {indexes.map((sourceNumber, index) => (
+        <span key={sourceNumber}>
+          {index > 0 && ', '}
+          <a href={`#source-${sourceNumber}`} aria-label={`Source ${sourceNumber}: ${sources[sourceNumber - 1]?.title || ''}`}>[{sourceNumber}]</a>
+        </span>
+      ))}
+    </p>
+  )
+}
+
+function TestingEvidence({ evidence }) {
+  if (!evidence) return null
+  return (
+    <section className="article-testing-evidence" id="original-testing-evidence" aria-labelledby="testing-evidence-heading">
+      <p className="education-kicker">Original testing information</p>
+      <h2 id="testing-evidence-heading">{evidence.title}</h2>
+      <p>{evidence.interpretation}</p>
+      <div className="article-testing-records">
+        {evidence.records.map((record) => (
+          <article key={record.id}>
+            <div className="testing-record-heading">
+              <FileCheck2 aria-hidden="true" />
+              <div>
+                <h3>{record.sample}</h3>
+                <a href={record.href} target="_blank" rel="noreferrer">Open {record.label}</a>
+              </div>
+            </div>
+            <dl>
+              <div><dt>Laboratory</dt><dd>{record.laboratory}</dd></div>
+              <div><dt>Laboratory report analyst</dt><dd>{record.analyst}</dd></div>
+              <div><dt>Dates</dt><dd>{record.dates}</dd></div>
+              <div><dt>Method stated on report</dt><dd>{record.method}</dd></div>
+            </dl>
+            <ul>{record.observations.map((observation) => <li key={observation}>{observation}</li>)}</ul>
+            <p className="testing-record-limit"><strong>Boundary:</strong> {record.limitations}</p>
+            <div className="testing-record-products">
+              <span>Relevant materials:</span>
+              {record.products.map((product) => <a href={appPath(product.path)} key={product.path}>{product.label}</a>)}
+              <a href={appPath('/coa-library/')}>Search all batch COAs</a>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
   )
 }
 
@@ -130,6 +223,7 @@ export function EducationArticlePage({ slug }) {
             <div className="article-byline-mark" aria-hidden="true">PHP</div>
             <p>
               <span>Written by <a href={appPath('/editorial-standards/')}>Pure Health Peptides Editorial Team</a></span>
+              <ReviewerStatus reviewer={article.reviewer} />
               <span>Published {formatDate(article.publishedAt)} · Updated {formatDate(article.updatedAt)} · {article.readingMinutes} min read</span>
             </p>
           </div>
@@ -154,13 +248,18 @@ export function EducationArticlePage({ slug }) {
             <ul>{article.takeaways.map((item) => <li key={item}><CheckCircle2 aria-hidden="true" /><span>{item}</span></li>)}</ul>
           </section>
 
+          <EvidenceDiagram diagram={article.diagram} />
+
           {article.sections.map((section, index) => (
             <section className="article-section" id={`section-${index + 1}`} key={section.heading}>
               <h2>{section.heading}</h2>
               {section.paragraphs?.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
               {section.bullets && <ul>{section.bullets.map((item) => <li key={item}>{item}</li>)}</ul>}
+              <SectionCitations indexes={article.sectionCitations?.[index]} sources={article.sources} />
             </section>
           ))}
+
+          <TestingEvidence evidence={article.testingEvidence} />
 
           <section className="article-internal-links" aria-labelledby="apply-heading">
             <p className="education-kicker">Use the documentation</p>
@@ -172,8 +271,8 @@ export function EducationArticlePage({ slug }) {
             <h2 id="sources-heading">Sources and further reading</h2>
             <p>Sources were selected for analytical definitions and quality-documentation principles. Regulatory drug guidance is identified as a benchmark and is not presented as proof of a research material’s regulatory status.</p>
             <ol>
-              {article.sources.map((source) => (
-                <li key={source.url}>
+              {article.sources.map((source, index) => (
+                <li id={`source-${index + 1}`} key={source.url}>
                   <a href={source.url}>{source.title}</a>
                   <span>{source.publisher}. {source.note}</span>
                 </li>
@@ -181,9 +280,15 @@ export function EducationArticlePage({ slug }) {
             </ol>
           </section>
 
-          <aside className="article-method-note">
+          <aside className="article-method-note" id="review-status">
             <h2>About this article</h2>
-            <p>Prepared by the Pure Health Peptides Editorial Team using AI-assisted drafting and source research. Claims were checked against the references listed above; AI output is not presented as laboratory evidence. No named scientific reviewer is claimed. See our <a href={appPath('/editorial-standards/')}>editorial standards and corrections process</a>.</p>
+            <p>Prepared by the Pure Health Peptides Editorial Team using AI-assisted drafting and source research. Claims were checked against the references and batch reports listed above; AI output is not presented as laboratory evidence.</p>
+            {article.reviewer ? (
+              <p><strong>Scientific review:</strong> {article.reviewer.name}, {article.reviewer.credentials}{article.reviewer.role ? `, ${article.reviewer.role}` : ''}. <a href={article.reviewer.profileUrl}>Verify reviewer background</a>.</p>
+            ) : (
+              <p><strong>Scientific review status:</strong> This page has not yet received independent review from a named, credential-verified specialist. Laboratory analysts named in the testing records reviewed those reports, not this article. We do not convert a COA signature into an editorial endorsement.</p>
+            )}
+            <p>See our <a href={appPath('/editorial-standards/')}>editorial standards and corrections process</a>.</p>
           </aside>
         </div>
 
@@ -192,7 +297,9 @@ export function EducationArticlePage({ slug }) {
           <ol>
             <li><a href="#quick-answer-heading">Quick answer</a></li>
             <li><a href="#takeaways-heading">Key takeaways</a></li>
+            <li><a href="#evidence-diagram">Diagram</a></li>
             {article.sections.map((section, index) => <li key={section.heading}><a href={`#section-${index + 1}`}>{section.heading}</a></li>)}
+            <li><a href="#original-testing-evidence">Original testing information</a></li>
             <li><a href="#sources-heading">Sources</a></li>
           </ol>
         </aside>
@@ -219,7 +326,11 @@ export function EditorialStandardsPage() {
       <div className="editorial-body">
         <section>
           <h2>Who is responsible</h2>
-          <p>Articles are published under the Pure Health Peptides Editorial Team when the organization—not a named individual—is responsible for the page. We do not invent author biographies, degrees, laboratory affiliations, or reviewer credentials. If a qualified individual reviews an article in the future, the page will name that person and link to verifiable background information with their permission.</p>
+          <p>Articles are published under the Pure Health Peptides Editorial Team when the organization—not a named individual—is responsible for the page. We do not invent author biographies, degrees, laboratory affiliations, or reviewer credentials. A review byline appears only after a qualified individual has reviewed the complete page, approved the attribution, and supplied verifiable background information.</p>
+        </section>
+        <section>
+          <h2>Independent scientific review</h2>
+          <p>Each article displays its review status. A laboratory analyst who signs a COA is credited only for that report and is not described as an article reviewer unless the person separately reviews the editorial content. When review is complete, the article names the reviewer, relevant credentials and role, links to a verifiable profile, and records the review date.</p>
         </section>
         <section>
           <h2>Why we publish</h2>
@@ -232,12 +343,13 @@ export function EditorialStandardsPage() {
             <li><strong>Build an evidence map.</strong> We prioritize regulators, standards bodies, government scientific resources, original research, and peer-reviewed reviews.</li>
             <li><strong>Separate analytical claims.</strong> Identity, purity, assay, quantity, stability, sterility, and suitability are treated as distinct attributes.</li>
             <li><strong>State limitations.</strong> We identify what a method or document cannot establish and avoid extending results beyond the tested sample and lot.</li>
+            <li><strong>Check first-hand records.</strong> When we discuss our own testing, we link the exact COA and identify its lot, laboratory, method, dates, measured results, named report analyst, and evidentiary boundary.</li>
             <li><strong>Check links and dates.</strong> Sources, publication dates, update dates, internal links, and structured data are validated as part of the release build.</li>
           </ol>
         </section>
         <section>
           <h2>AI assistance</h2>
-          <p>AI tools may assist with outlining, drafting, editing, and source discovery. We disclose that assistance on affected pages. AI-generated wording is not independent scientific evidence, a laboratory result, or expert review. Claims must remain traceable to the cited evidence, and pages do not claim a named scientific reviewer unless that review actually occurred.</p>
+          <p>AI tools may assist with outlining, drafting, editing, and source discovery. We disclose that assistance on affected pages. AI-generated wording is not independent scientific evidence, a laboratory result, or expert review. Claims must remain traceable to the cited evidence, and pages do not claim a named scientific reviewer unless that review actually occurred. This follows Google’s emphasis on explaining <a href="https://developers.google.com/search/docs/fundamentals/creating-helpful-content">who created content, how it was produced, and why it exists</a>.</p>
         </section>
         <section>
           <h2>Evidence and regulatory context</h2>

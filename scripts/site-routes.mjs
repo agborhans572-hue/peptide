@@ -2,6 +2,7 @@ import { readFileSync } from 'node:fs'
 import shipping from '../src/shippingPolicy.json' with { type: 'json' }
 import { relatedResearchProducts } from '../src/researchLinks.js'
 import { educationArticlePath, publishedEducationArticles } from '../src/educationArticles.js'
+import { articleCitationUrls } from '../src/educationAuthority.js'
 const catalog = JSON.parse(readFileSync(new URL('../catalog/catalog.generated.json', import.meta.url), 'utf8'))
 const shopProducts = catalog.products
 
@@ -180,10 +181,19 @@ function staticSchema(route) {
       dateModified: route.article.updatedAt,
       articleSection: route.article.category,
       author: { '@id': ORGANIZATION_ID },
+      ...(route.article.reviewer ? {
+        reviewedBy: {
+          '@type': 'Person',
+          name: route.article.reviewer.name,
+          honorificSuffix: route.article.reviewer.credentials,
+          jobTitle: route.article.reviewer.role,
+          url: route.article.reviewer.profileUrl,
+        },
+      } : {}),
       publisher: { '@id': ORGANIZATION_ID },
       mainEntityOfPage: { '@id': `${absoluteUrl(route.path)}#webpage` },
       image: route.image,
-      citation: route.article.sources.map((source) => source.url),
+      citation: articleCitationUrls(route.article),
       inLanguage: 'en-US',
     })
   }

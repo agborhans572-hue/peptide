@@ -45,7 +45,12 @@ for (const route of productionRoutes) {
     check(article?.headline === route.article.title, prefix + 'Article schema headline')
     check(article?.datePublished === route.article.publishedAt && article?.dateModified === route.article.updatedAt, prefix + 'Article schema dates')
     check(article?.author?.['@id'] === SITE_ORIGIN + '/#organization', prefix + 'accountable organization author')
-    check(article?.citation?.length === route.article.sources.length, prefix + 'Article schema citations')
+    const expectedCitations = new Set([
+      ...route.article.sources.map((source) => source.url),
+      ...(route.article.testingEvidence?.records || []).map((record) => record.href),
+    ])
+    check(article?.citation?.length === expectedCitations.size, prefix + 'Article schema citations')
+    check(route.article.reviewer ? article?.reviewedBy?.name === route.article.reviewer.name : !article?.reviewedBy, prefix + 'truthful Article reviewer schema')
   }
   const products = nodes.filter((n) => n['@type'] === 'Product')
   if (route.kind === 'product') {

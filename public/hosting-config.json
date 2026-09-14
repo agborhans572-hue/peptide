@@ -54,7 +54,7 @@
       "headers": [
         {
           "key": "Content-Security-Policy",
-          "value": "default-src 'self'; base-uri 'self'; connect-src 'self' https://*.supabase.co https://challenges.cloudflare.com; font-src 'self' data:; form-action 'self'; frame-ancestors 'none'; frame-src https://challenges.cloudflare.com; img-src 'self' data: blob: https://*.supabase.co https://purehealthpeptides.com; manifest-src 'self'; media-src 'self' https://*.supabase.co; object-src 'none'; script-src 'self' https://challenges.cloudflare.com; style-src 'self' 'unsafe-inline'; worker-src 'none'; upgrade-insecure-requests"
+          "value": "default-src 'self'; base-uri 'self'; connect-src 'self' https://*.supabase.co https://challenges.cloudflare.com https://app.chatwoot.com wss://app.chatwoot.com; font-src 'self' data:; form-action 'self'; frame-ancestors 'none'; frame-src https://challenges.cloudflare.com https://app.chatwoot.com; img-src 'self' data: blob: https://*.supabase.co https://purehealthpeptides.com https://app.chatwoot.com; manifest-src 'self'; media-src 'self' https://*.supabase.co; object-src 'none'; script-src 'self' https://challenges.cloudflare.com https://app.chatwoot.com; style-src 'self' 'unsafe-inline'; worker-src 'none'; upgrade-insecure-requests"
         },
         {
           "key": "Cross-Origin-Opener-Policy",
