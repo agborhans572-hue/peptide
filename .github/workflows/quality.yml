@@ -27,14 +27,14 @@ jobs:
       - run: npm run check
       - name: Start production preview for browser QA
         run: |
-          npm run preview -- --host 127.0.0.1 --port 4173 > "$RUNNER_TEMP/vite-preview.log" 2>&1 &
+          node scripts/serve-built-site.mjs dist > "$RUNNER_TEMP/production-preview.log" 2>&1 &
           for attempt in {1..30}; do
             if curl --fail --silent http://127.0.0.1:4173/ > /dev/null; then
               exit 0
             fi
             sleep 1
           done
-          cat "$RUNNER_TEMP/vite-preview.log"
+          cat "$RUNNER_TEMP/production-preview.log"
           exit 1
       - run: npm run qa:seo
       - run: npm run qa:product-details
