@@ -34,7 +34,7 @@ describe('ChatwootWidget', () => {
   })
 
   it('loads once and follows app-level visibility changes', async () => {
-    vi.stubEnv('VITE_CHATWOOT_WEBSITE_TOKEN', 'public-website-token')
+    vi.stubEnv('VITE_CHATWOOT_WEBSITE_TOKEN', '"public-website-token"')
     vi.stubEnv('VITE_CHATWOOT_BASE_URL', 'https://app.chatwoot.com/')
     const { default: ChatwootWidget } = await import('./ChatwootWidget.jsx')
     const view = render(<StrictMode><ChatwootWidget /></StrictMode>)

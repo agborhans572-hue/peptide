@@ -5,9 +5,18 @@ let readyListenerInstalled = false
 let sdkLoadPromise
 let sdkStarted = false
 
+function normalizeEnvironmentValue(value) {
+  const normalized = String(value || '').trim()
+  const quote = normalized[0]
+  if ((quote === '"' || quote === "'") && normalized[normalized.length - 1] === quote) {
+    return normalized.slice(1, -1).trim()
+  }
+  return normalized
+}
+
 function chatwootConfiguration() {
-  const websiteToken = String(import.meta.env.VITE_CHATWOOT_WEBSITE_TOKEN || '').trim()
-  const configuredBaseUrl = String(import.meta.env.VITE_CHATWOOT_BASE_URL || '').trim()
+  const websiteToken = normalizeEnvironmentValue(import.meta.env.VITE_CHATWOOT_WEBSITE_TOKEN)
+  const configuredBaseUrl = normalizeEnvironmentValue(import.meta.env.VITE_CHATWOOT_BASE_URL)
   if (!websiteToken || !configuredBaseUrl) return null
 
   try {
