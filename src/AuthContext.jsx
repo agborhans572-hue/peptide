@@ -66,6 +66,7 @@ export function AuthProvider({ children }) {
   const [session, setSession] = useState(null)
   const [profile, setProfile] = useState(null)
   const [accountStatus, setAccountStatus] = useState('')
+  const [accountError, setAccountError] = useState('')
   const activityWriteAt = useRef(0)
 
   useEffect(() => {
@@ -103,6 +104,7 @@ export function AuthProvider({ children }) {
     setSession(null)
     setProfile(null)
     setAccountStatus('')
+    setAccountError('')
   }, [])
 
   const signOut = useCallback(async (message = '', scope = 'global') => {
@@ -119,7 +121,10 @@ export function AuthProvider({ children }) {
       return null
     }
     const { data: statusRows, error: statusError } = await client.rpc('get_my_account_status')
-    if (statusError) throw statusError
+    if (statusError) {
+      console.warn('Customer account lookup failed', { stage: 'status', code: statusError.code || 'unavailable' })
+      throw statusError
+    }
     const statusRow = statusRows?.[0]
     if (!statusRow || statusRow.status !== 'active' || !statusRow.email_verified) {
       const message = !statusRow?.email_verified
@@ -135,8 +140,13 @@ export function AuthProvider({ children }) {
     const { data: profileRow, error: profileError } = await client
       .from('customer_profiles')
       .select('user_id,email,first_name,last_name,phone,business_name,ein,website_url,status,created_at,updated_at')
+      .eq('user_id', activeSession.user.id)
       .single()
-    if (profileError) throw profileError
+    if (profileError) {
+      console.warn('Customer account lookup failed', { stage: 'profile', code: profileError.code || 'unavailable' })
+      throw profileError
+    }
+    setAccountError('')
     setProfile(profileRow)
     setAccountStatus(profileRow.status)
     await client.rpc('claim_my_paid_orders').catch(() => undefined)
@@ -148,6 +158,7 @@ export function AuthProvider({ children }) {
       return undefined
     }
     let mounted = true
+    let authRevision = 0
 
     async function applySession(nextSession) {
       if (!mounted) return
@@ -174,17 +185,22 @@ export function AuthProvider({ children }) {
       }
 
       setSession(nextSession)
+      setLoading(true)
       try {
         await loadAccount(nextSession)
       } catch {
-        await signOut('Your account session could not be verified. Sign in again.')
+        if (mounted) setAccountError('Your account details could not be loaded. Your sign-in is still active. Please try again.')
       } finally {
         if (mounted) setLoading(false)
       }
     }
 
-    client.auth.getSession().then(({ data }) => applySession(data.session))
+    const initialRevision = authRevision
+    client.auth.getSession().then(({ data }) => {
+      if (authRevision === initialRevision) void applySession(data.session)
+    })
     const { data: listener } = client.auth.onAuthStateChange((_event, nextSession) => {
+      authRevision += 1
       queueMicrotask(() => applySession(nextSession))
     })
 
@@ -264,9 +280,20 @@ export function AuthProvider({ children }) {
       options: captchaOptions(captchaToken),
     })
     if (error) throw new Error(safeAuthError(error), { cause: error })
-    await loadAccount(data.session)
     return data
-  }, [client, loadAccount])
+  }, [client])
+
+  const retryAccount = useCallback(async () => {
+    if (!session) return
+    setLoading(true)
+    try {
+      await loadAccount(session)
+    } catch {
+      setAccountError('Your account details could not be loaded. Your sign-in is still active. Please try again.')
+    } finally {
+      setLoading(false)
+    }
+  }, [loadAccount, session])
 
   const loginWithGoogle = useCallback(async () => {
     if (!client || !config.googleEnabled) throw new Error('Google sign-in is not enabled.')
@@ -366,6 +393,8 @@ export function AuthProvider({ children }) {
 
   const value = useMemo(() => ({
     accountStatus,
+    accountError,
+    retryAccount,
     client,
     config,
     handleAuthCode,
@@ -385,7 +414,7 @@ export function AuthProvider({ children }) {
     updateProfile,
     user: session?.user || null,
   }), [
-    accountStatus, client, config, handleAuthCode, loading, login, loginWithGoogle,
+    accountStatus, accountError, retryAccount, client, config, handleAuthCode, loading, login, loginWithGoogle,
     profile, reauthenticatePassword, register, requestPasswordReset,
     resendVerification, session, signOut, updateEmail, updatePassword, updateProfile,
   ])

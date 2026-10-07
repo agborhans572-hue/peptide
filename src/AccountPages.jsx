@@ -660,7 +660,7 @@ function Dashboard() {
 }
 
 export function AccountPage() {
-  const { config, loading, user } = useAuth()
+  const { config, loading, user, accountError, retryAccount } = useAuth()
   const [registeredEmail, setRegisteredEmail] = useState('')
 
   if (loading) {
@@ -675,6 +675,11 @@ export function AccountPage() {
       </section>
     )
   }
+  if (user && accountError) return <section className="account-state-page">
+    <h1>Account temporarily unavailable</h1>
+    <p role="alert">{accountError}</p>
+    <button type="button" onClick={retryAccount}>Try again</button>
+  </section>
   if (user) return <Dashboard />
   return (
     <div className="support-page account-page">
