@@ -5,7 +5,11 @@ export const handler: Handler = async event => {
   try {
     const { env } = manualServices()
     if (!env.CRON_SECRET || event.headers.authorization !== `Bearer ${env.CRON_SECRET}`) return json(401, { message: 'Unauthorized.' })
-    await deliverOrderEmails()
+    const startedAt = Date.now()
+    for (let batch = 0; batch < 20; batch++) {
+      const processed = await deliverOrderEmails()
+      if (processed < 2 || Date.now() - startedAt >= 10_000) break
+    }
     return json(200, { ok: true })
   } catch (error) { return errorResponse(error) }
 }

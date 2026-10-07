@@ -40,9 +40,19 @@ export async function deliverOrderEmails(orderId?: string) {
   if (delayedError) throw delayedError
   if (count || delayed) {
     console.warn(JSON.stringify({ event: 'order_email.delivery_attention', failed: count, delayed }))
-    if (!env.MONITORING_WEBHOOK_URL) return
+    if (count && !orderId) {
+      const message = `${count} order email job(s) exhausted their retries. Review manual_order_emails in Supabase and resolve the delivery issue before retrying. Orders remain awaiting payment.`
+      try {
+        await sendResendEmail(env.RESEND_API_KEY, `delivery-alert-${new Date().toISOString().slice(0, 10)}`, {
+          from: env.ORDER_EMAIL_FROM, to: STORE_MAILBOX, reply_to: STORE_MAILBOX,
+          subject: 'Order email delivery needs attention', text: message, html: `<p>${message}</p>`,
+        })
+      } catch { console.warn('Order email delivery alert could not be sent.') }
+    }
+    if (!env.MONITORING_WEBHOOK_URL) return (jobs || []).length
     const response = await fetch(env.MONITORING_WEBHOOK_URL, { method: 'POST', headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ event: 'order_email.delivery_attention', failed: count, delayed }), signal: AbortSignal.timeout(3000) })
     if (!response.ok) throw new Error('Order email alert failed.')
   }
+  return (jobs || []).length
 }
