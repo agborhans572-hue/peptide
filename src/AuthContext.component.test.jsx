@@ -52,6 +52,20 @@ it('loads the verified customer after sign-in and retains the session on token r
   expect(mocks.client.auth.signOut).not.toHaveBeenCalled()
 })
 
+it('loads the dashboard with Supabase thenable requests that have no catch method', async () => {
+  mocks.client.rpc.mockImplementation((name) => ({
+    then: (resolve) => Promise.resolve({ data: name === 'get_my_account_status'
+      ? [{ status: 'active', email_verified: true }] : 0 }).then(resolve),
+  }))
+  render(<AuthProvider><AccountProbe /></AuthProvider>)
+  await screen.findByText('Signed out')
+  mocks.listener('SIGNED_IN', { user: { id: 'test-user' }, access_token: 'test-token' })
+  await screen.findByText('Signed in')
+  expect(screen.queryByRole('alert')).toBeNull()
+  expect(mocks.client.rpc).toHaveBeenCalledWith('claim_my_paid_orders')
+  expect(mocks.client.auth.signOut).not.toHaveBeenCalled()
+})
+
 it('keeps a valid login when the profile service fails and reports a retryable error', async () => {
   const warning = vi.spyOn(console, 'warn').mockImplementation(() => {})
   mocks.client.rpc.mockResolvedValue({ error: { code: 'PGRST002' } })

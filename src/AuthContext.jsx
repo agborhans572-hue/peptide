@@ -149,7 +149,7 @@ export function AuthProvider({ children }) {
     setAccountError('')
     setProfile(profileRow)
     setAccountStatus(profileRow.status)
-    await client.rpc('claim_my_paid_orders').catch(() => undefined)
+    await Promise.resolve(client.rpc('claim_my_paid_orders')).catch(() => undefined)
     return profileRow
   }, [client, signOut])
 
