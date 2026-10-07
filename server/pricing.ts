@@ -1,5 +1,5 @@
-import catalogData from './catalog.generated.json'
-import shippingPolicy from '../src/shippingPolicy.json'
+import catalogData from './catalog.generated.json' with { type: 'json' }
+import shippingPolicy from '../src/shippingPolicy.json' with { type: 'json' }
 
 export const SHIPPING_CENTS = shippingPolicy.rateCents
 export const FREE_SHIPPING_THRESHOLD_CENTS = shippingPolicy.freeThresholdCents
