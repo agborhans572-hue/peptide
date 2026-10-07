@@ -17,7 +17,6 @@ import {
   X,
 } from 'lucide-react'
 import Catalog from './Catalog.jsx'
-import { useAuth } from './AuthContext.jsx'
 import productDetailManifest from './productDetailManifest.json'
 import { catalogVersion, shopProducts } from './catalog.js'
 import routeMetadata from './routeMetadata.json'
@@ -96,7 +95,7 @@ function productDocumentTitle(product) {
 
 const CART_STORAGE_KEY = 'php-research-cart-v1'
 const CHECKOUT_ATTEMPT_STORAGE_KEY = 'php-checkout-attempt-v1'
-const PREVIEW_ORDER_STORAGE_KEY = 'php-research-preview-order-v1'
+const MANUAL_ORDER_STORAGE_KEY = 'php-manual-order-v1'
 const cartProductById = new Map(shopProducts.map((product) => [product.id, product]))
 let researchConfirmedForSession = false
 
@@ -151,35 +150,33 @@ function readStoredCart() {
   }
 }
 
-function readStoredPreviewOrder() {
+function readStoredManualOrder() {
   try {
-    const parsed = JSON.parse(sessionStorage.getItem(PREVIEW_ORDER_STORAGE_KEY) || 'null')
-    return parsed?.id && Array.isArray(parsed?.items) ? parsed : null
+    const parsed = JSON.parse(sessionStorage.getItem(MANUAL_ORDER_STORAGE_KEY) || 'null')
+    return parsed?.submitted && parsed?.id && Array.isArray(parsed?.items) ? parsed : null
   } catch {
     return null
   }
 }
 
-function createPreviewOrderId() {
-  const date = new Date().toISOString().slice(0, 10).replaceAll('-', '')
-  const random = new Uint32Array(1)
-  crypto.getRandomValues(random)
-  return `PREVIEW-${date}-${String(random[0] % 100000).padStart(5, '0')}`
-}
-
+const submissionIds = new Map()
 function checkoutAttemptId(items) {
   const fingerprint = JSON.stringify({
     catalogVersion,
     items: items.map((item) => [item.product.id, item.variantId, item.quantity]),
   })
+  if (submissionIds.has(fingerprint)) return submissionIds.get(fingerprint)
   try {
     const stored = JSON.parse(sessionStorage.getItem(CHECKOUT_ATTEMPT_STORAGE_KEY) || 'null')
     if (stored?.fingerprint === fingerprint && typeof stored?.id === 'string') return stored.id
     const id = crypto.randomUUID()
+    submissionIds.set(fingerprint, id)
     sessionStorage.setItem(CHECKOUT_ATTEMPT_STORAGE_KEY, JSON.stringify({ fingerprint, id }))
     return id
   } catch {
-    return crypto.randomUUID()
+    const id = crypto.randomUUID()
+    submissionIds.set(fingerprint, id)
+    return id
   }
 }
 
@@ -496,19 +493,15 @@ function SearchPanel({ open, onClose, onSubmitSearch }) {
   )
 }
 
-function CartDrawer({ open, onClose, onShop, items, onRemove, onChangeQuantity, onCheckout, onPreviewCheckout, checkoutConfigured }) {
+function CartDrawer({ open, onClose, onShop, items, onRemove, onChangeQuantity, onCheckout }) {
   const subtotal = items.reduce((sum, item) => sum + item.total, 0)
   const [checkoutStatus, setCheckoutStatus] = useState('')
   const [checkoutPending, setCheckoutPending] = useState(false)
   const dialogRef = useDialogFocus(open, onClose)
 
   async function checkout() {
-    if (!checkoutConfigured) {
-      onPreviewCheckout()
-      return
-    }
     setCheckoutPending(true)
-    setCheckoutStatus('Preparing secure checkout…')
+    setCheckoutStatus('Opening delivery form...')
     try {
       await onCheckout(items)
     } catch (error) {
@@ -567,7 +560,6 @@ function CartDrawer({ open, onClose, onShop, items, onRemove, onChangeQuantity, 
               <button className="cart-checkout" type="button" disabled={checkoutPending} onClick={checkout}>
                 {checkoutPending ? 'PREPARING CHECKOUT…' : 'CHECKOUT'}
               </button>
-              {!checkoutConfigured && <span className="cart-service-status">Local preview checkout available. No payment will be processed.</span>}
               {checkoutStatus && <span className="cart-service-status" role="status">{checkoutStatus}</span>}
               <button className="cart-continue" type="button" onClick={onShop}>CONTINUE SHOPPING</button>
             </div>
@@ -836,7 +828,7 @@ function Newsletter() {
     event.preventDefault()
     if (!event.currentTarget.reportValidity()) return
     if (!siteServices.newsletterEndpoint) {
-      setStatus('Newsletter sign-up is not connected on this deployment. Email info@purehealthpeptides.com for updates.')
+      setStatus('Newsletter sign-up is not connected on this deployment. Email info@purehealthpeptidesshop.com for updates.')
       return
     }
 
@@ -964,7 +956,7 @@ function Footer({ onNavigate }) {
         <div className="footer-contact">
           <div>
             <Mail aria-hidden="true" />
-            <p><strong>Email</strong><a href="mailto:info@purehealthpeptides.com">info@purehealthpeptides.com</a></p>
+            <p><strong>Email</strong><a href="mailto:info@purehealthpeptidesshop.com">info@purehealthpeptidesshop.com</a></p>
           </div>
           <div><Package aria-hidden="true" /><p><strong>Shipping Days</strong><span>Mon-Fri / Except Holidays</span></p></div>
         </div>
@@ -1064,7 +1056,7 @@ function currentRoute(pathname = window.location.pathname) {
 }
 
 export default function App() {
-  const { session } = useAuth()
+
   const location = useLocation()
   const routerNavigate = useNavigate()
   const route = currentRoute(location.pathname)
@@ -1078,7 +1070,7 @@ export default function App() {
   const [pendingRoute, setPendingRoute] = useState('')
   const [pendingProduct, setPendingProduct] = useState(null)
   const [cartItems, setCartItems] = useState(readStoredCart)
-  const [previewOrder, setPreviewOrder] = useState(readStoredPreviewOrder)
+  const [manualOrder, setManualOrder] = useState(readStoredManualOrder)
   const selectedProduct = productFromPath(location.pathname)
   const [productMetadata, setProductMetadata] = useState(null)
   const [shopSearch, setShopSearch] = useState('')
@@ -1269,65 +1261,25 @@ export default function App() {
     }))
   }
 
-  async function beginCheckout(items) {
-    let result
-    try {
-      result = await postToSiteService(siteServices.checkoutEndpoint, {
-        checkoutAttemptId: checkoutAttemptId(items),
-        catalogVersion,
-        items: items.map((item) => ({
-          productId: item.product.id,
-          variantId: item.variantId,
-          quantity: item.quantity,
-        })),
-      }, { accessToken: session?.access_token })
-    } catch (error) {
-      if (error?.status === 409 || error?.code === 'catalog_changed') {
-        setCartItems([])
-        try { localStorage.removeItem(CART_STORAGE_KEY) } catch { /* React state is already refreshed. */ }
-        try { sessionStorage.removeItem(CHECKOUT_ATTEMPT_STORAGE_KEY) } catch { /* A new fingerprint will replace it. */ }
-        throw new Error('The catalog changed and your cart was refreshed. Please add the current variants again.', { cause: error })
-      }
-      throw error
-    }
-    const destination = result.checkoutUrl || result.url
-    if (!destination) throw new Error('The checkout service did not return a destination URL.')
-
-    const checkoutUrl = new URL(destination, window.location.origin)
-    if (!['http:', 'https:'].includes(checkoutUrl.protocol)) {
-      throw new Error('The checkout service returned an invalid destination URL.')
-    }
-    window.location.assign(checkoutUrl.href)
-  }
-
-  function openPreviewCheckout() {
+  function openManualCheckout() {
     setCartOpen(false)
     navigate('checkout')
   }
 
-  async function placePreviewOrder({ customer, totals }) {
-    const placedAt = new Date()
+  async function placeManualOrder({ customer, captchaToken, researchAgreement }) {
+    const result = await postToSiteService('/api/orders/submit', {
+      submissionId: checkoutAttemptId(cartItems), customer, captchaToken, researchAgreement,
+      items: cartItems.map(item => ({ productId: item.product.id, variantId: item.variantId, quantity: item.quantity })),
+    }, { timeoutMs: 30_000 })
     const order = {
-      id: createPreviewOrderId(),
-      placedAt: placedAt.toISOString(),
-      placedAtLabel: new Intl.DateTimeFormat('en-US', { dateStyle: 'medium', timeStyle: 'short' }).format(placedAt),
-      customer,
-      totals,
-      items: cartItems.map((item) => ({
-        key: item.key,
-        name: item.product.name,
-        option: item.option,
-        quantity: item.quantity,
-        total: item.total,
-      })),
+      id: result.orderNumber, submitted: true, customer,
+      placedAtLabel: new Date(result.createdAt).toLocaleString(),
+      totals: { shipping: result.cart.shippingCents / 100, total: result.cart.totalCents / 100 },
+      items: result.cart.items.map(item => ({ key: item.productId + ':' + item.variantId, name: item.productName, option: item.option, quantity: item.quantity, total: item.totalCents / 100 })),
     }
-
-    setPreviewOrder(order)
-    try {
-      sessionStorage.setItem(PREVIEW_ORDER_STORAGE_KEY, JSON.stringify(order))
-    } catch {
-      // The receipt remains available in React state if session storage is unavailable.
-    }
+    setManualOrder(order)
+    try { sessionStorage.setItem(MANUAL_ORDER_STORAGE_KEY, JSON.stringify(order)); sessionStorage.removeItem(CHECKOUT_ATTEMPT_STORAGE_KEY) } catch { /* Receipt remains in memory. */ }
+    submissionIds.clear()
     setCartItems([])
     navigate('orderConfirmation')
   }
@@ -1340,12 +1292,12 @@ export default function App() {
         <CheckoutPage
           items={cartItems}
           onBackToCart={() => setCartOpen(true)}
-          onPlaceOrder={placePreviewOrder}
+          onPlaceOrder={placeManualOrder}
           onShop={requestShop}
         />
       )
     }
-    if (pageRoute === 'orderConfirmation') return <OrderConfirmationPage order={previewOrder} onShop={requestShop} />
+    if (pageRoute === 'orderConfirmation') return <OrderConfirmationPage order={manualOrder} onShop={requestShop} />
     if (pageRoute === 'shop') {
       return (
         <ShopPage
@@ -1438,9 +1390,7 @@ export default function App() {
         items={cartItems}
         onRemove={(key) => setCartItems((current) => current.filter((item) => item.key !== key))}
         onChangeQuantity={changeCartQuantity}
-        onCheckout={beginCheckout}
-        onPreviewCheckout={openPreviewCheckout}
-        checkoutConfigured={Boolean(siteServices.checkoutEndpoint)}
+        onCheckout={openManualCheckout}
       />
       <ResearchGate
         open={gateOpen}

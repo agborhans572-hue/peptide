@@ -94,12 +94,12 @@
   ],
   "crons": [
     {
-      "path": "/api/cron/process-commerce-jobs",
-      "schedule": "* * * * *"
-    },
-    {
       "path": "/api/cron/process-account-deletions",
       "schedule": "23 4 * * *"
+    },
+    {
+      "path": "/api/cron/process-order-emails",
+      "schedule": "17 3 * * *"
     }
   ]
 }

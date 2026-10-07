@@ -12,6 +12,7 @@ import {
   Truck,
 } from 'lucide-react'
 import './checkout.css'
+import TurnstileChallenge from './TurnstileChallenge.jsx'
 
 const SHIPPING_RATE = 10.99
 const FREE_SHIPPING_THRESHOLD = 175
@@ -106,7 +107,7 @@ function CheckoutSummary({ items, totals }) {
 
       <div className="checkout-secure-note">
         <LockKeyhole size={17} aria-hidden="true" />
-        <span>This preview never asks for or stores card details.</span>
+        <span>Our team will contact you to arrange payment.</span>
       </div>
     </aside>
   )
@@ -116,6 +117,8 @@ export function CheckoutPage({ items, onBackToCart, onPlaceOrder, onShop }) {
   const [pending, setPending] = useState(false)
   const [status, setStatus] = useState('')
   const totals = checkoutTotals(items)
+  const [captchaToken, setCaptchaToken] = useState('')
+  const [captchaReset, setCaptchaReset] = useState(0)
 
   async function submitCheckout(event) {
     event.preventDefault()
@@ -126,11 +129,13 @@ export function CheckoutPage({ items, onBackToCart, onPlaceOrder, onShop }) {
     }
 
     const values = Object.fromEntries(new FormData(form).entries())
+    if (!captchaToken) { setStatus('Please complete the security check.'); return }
     setPending(true)
-    setStatus('Creating your preview order…')
+    setStatus('Submitting your order request...')
 
     try {
       await onPlaceOrder({
+        captchaToken, researchAgreement: values.researchAgreement === 'on',
         customer: {
           email: values.email.trim(),
           phone: values.phone.trim(),
@@ -147,8 +152,9 @@ export function CheckoutPage({ items, onBackToCart, onPlaceOrder, onShop }) {
         totals,
       })
     } catch (error) {
-      setStatus(error?.message || 'The preview order could not be created. Please try again.')
+      setStatus(error?.message || 'Your order could not be submitted. Please try again.')
       setPending(false)
+      setCaptchaReset(value => value + 1)
     }
   }
 
@@ -187,14 +193,14 @@ export function CheckoutPage({ items, onBackToCart, onPlaceOrder, onShop }) {
           <div className="checkout-preview-banner" role="note">
             <FlaskConical aria-hidden="true" />
             <div>
-              <strong>Local checkout preview</strong>
-              <span>This completes the UI flow only. No payment, fulfillment, or confirmation email is created.</span>
+              <strong>Order request</strong>
+              <span>Submit your delivery details. Our team will contact you to finalize payment.</span>
             </div>
           </div>
 
           <fieldset className="checkout-section">
             <legend><span>1</span> Contact information</legend>
-            <p>We’ll use these details for the preview receipt.</p>
+            <p>We will use these details to contact you and finalize payment.</p>
             <div className="checkout-field-grid">
               <label className="checkout-field is-wide">
                 <span>Email address *</span>
@@ -268,8 +274,8 @@ export function CheckoutPage({ items, onBackToCart, onPlaceOrder, onShop }) {
             <div className="checkout-payment-preview">
               <CreditCard aria-hidden="true" />
               <div>
-                <strong>Preview payment</strong>
-                <span>No card number is requested and no charge will be attempted.</span>
+                <strong>Payment arranged after submission</strong>
+                <span>Our team will contact you by email or phone to finalize payment.</span>
               </div>
               <img src="/assets/payment-methods.png" alt="Supported payment methods in a connected production checkout" />
             </div>
@@ -283,11 +289,12 @@ export function CheckoutPage({ items, onBackToCart, onPlaceOrder, onShop }) {
             </label>
           </fieldset>
 
+          <TurnstileChallenge action="order_submit" onToken={setCaptchaToken} resetKey={captchaReset} />
           <button className="checkout-submit" type="submit" disabled={pending}>
-            {pending ? 'CREATING PREVIEW ORDER…' : `PLACE PREVIEW ORDER • ${money(totals.total)}`}
+            {pending ? 'SUBMITTING ORDER...' : `SUBMIT ORDER REQUEST • ${money(totals.total)}`}
           </button>
           {status && <p className="checkout-status" role="status">{status}</p>}
-          <p className="checkout-submit-note"><ShieldCheck size={17} aria-hidden="true" /> No real transaction is created in this local preview.</p>
+          <p className="checkout-submit-note"><ShieldCheck size={17} aria-hidden="true" /> Payment and shipment remain pending until our team confirms payment.</p>
         </form>
 
         <CheckoutSummary items={items} totals={totals} />
@@ -375,9 +382,9 @@ export function OrderConfirmationPage({ order, onShop }) {
     return (
       <section className="checkout-empty-page">
         <ShoppingEmptyIcon />
-        <span className="checkout-eyebrow">Preview receipt</span>
-        <h1>No preview order found</h1>
-        <p>Preview receipts are available only in the browser tab where checkout was completed.</p>
+        <span className="checkout-eyebrow">Order receipt</span>
+        <h1>No order receipt found</h1>
+        <p>Order receipts are available only in the browser tab where checkout was completed.</p>
         <button type="button" onClick={onShop}>RETURN TO SHOP</button>
       </section>
     )
@@ -387,12 +394,12 @@ export function OrderConfirmationPage({ order, onShop }) {
     <section className="order-confirmation-page">
       <div className="order-confirmation-card">
         <div className="order-confirmation-icon"><CircleCheckBig aria-hidden="true" /></div>
-        <span className="checkout-eyebrow">Preview order complete</span>
+        <span className="checkout-eyebrow">Order request received</span>
         <h1>Thanks, {order.customer.firstName}.</h1>
-        <p>Your checkout flow completed successfully. This is a local preview receipt—not a paid or fulfillable order.</p>
+        <p>Your order request has been received. Please check your email for payment instructions and order finalization.</p>
 
         <div className="order-confirmation-number">
-          <span>Preview reference</span>
+          <span>Order number</span>
           <strong>{order.id}</strong>
           <small>{order.placedAtLabel}</small>
         </div>
@@ -425,7 +432,7 @@ export function OrderConfirmationPage({ order, onShop }) {
           <ShieldCheck aria-hidden="true" />
           <div>
             <strong>No payment was processed</strong>
-            <span>Connect the approved hosted checkout service before accepting real customer orders.</span>
+            <span>Payment and shipment remain pending. A receipt will be emailed to you.</span>
           </div>
         </div>
 

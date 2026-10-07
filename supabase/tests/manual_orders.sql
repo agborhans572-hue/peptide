@@ -1,0 +1,18 @@
+begin;
+select plan(9);
+select ok(public.consume_manual_order_rate_limit('manual-order-test-client'),'first request permitted');
+select public.consume_manual_order_rate_limit('manual-order-test-client') from generate_series(1,11);
+select is(public.consume_manual_order_rate_limit('manual-order-test-client'),false,'thirteenth request blocked');
+select public.submit_manual_order('12345678-1234-4234-8234-123456789012','hash','{"customer":{"email":"test@example.com"}}');
+select is((select count(*)::integer from public.manual_order_requests where submission_id='12345678-1234-4234-8234-123456789012'),1,'order persisted');
+select is((select count(*)::integer from public.manual_order_emails e join public.manual_order_requests o on o.id=e.order_id where o.submission_id='12345678-1234-4234-8234-123456789012'),2,'both email jobs persisted');
+select public.submit_manual_order('12345678-1234-4234-8234-123456789012','hash','{}');
+select is((select count(*)::integer from public.manual_order_requests where submission_id='12345678-1234-4234-8234-123456789012'),1,'duplicate request reuses order');
+select throws_ok($$select public.submit_manual_order('12345678-1234-4234-8234-123456789012','different','{}')$$,'P0001','submission_conflict','changed payload rejected');
+create temporary table claimed as select * from public.claim_order_emails((select id from public.manual_order_requests where submission_id='12345678-1234-4234-8234-123456789012'));
+select public.finish_order_email(id,claim_token,audience='store') from claimed;
+select is((select status from public.manual_order_emails where id=(select id from claimed where audience='store')),'sent','store success persisted');
+select is((select status from public.manual_order_emails where id=(select id from claimed where audience='customer')),'pending','customer failure retries independently');
+select is((select payment_status from public.manual_order_requests where submission_id='12345678-1234-4234-8234-123456789012'),'awaiting_payment','submission does not mark paid');
+select * from finish();
+rollback;

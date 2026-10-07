@@ -14,7 +14,7 @@ export async function postToSiteService(endpoint, payload, options = {}) {
   if (!endpoint) throw new Error('This service is not configured.')
 
   const controller = new AbortController()
-  const timeout = setTimeout(() => controller.abort(), 15_000)
+  const timeout = setTimeout(() => controller.abort(), options.timeoutMs || 15_000)
 
   try {
     const response = await fetch(endpoint, {

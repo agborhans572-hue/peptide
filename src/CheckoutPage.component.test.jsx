@@ -1,6 +1,22 @@
-import { act, render, screen } from '@testing-library/react'
+import { act, fireEvent, render, screen } from '@testing-library/react'
 import { afterEach, describe, expect, it, vi } from 'vitest'
-import { OrderConfirmationPage } from './CheckoutPage.jsx'
+import { CheckoutPage, OrderConfirmationPage } from './CheckoutPage.jsx'
+
+vi.mock('./TurnstileChallenge.jsx', () => ({ default: ({ onToken }) => <button type="button" onClick={() => onToken('verified')}>Verify security</button> }))
+
+it('preserves delivery details when submission fails and passes agreement and security token', async () => {
+  const submit = vi.fn().mockRejectedValue(new Error('Please try again'))
+  render(<CheckoutPage items={[{ key: 'one', product: { name: 'Test' }, quantity: 1, total: 22, option: '5mg' }]} onPlaceOrder={submit} />)
+  const values = { email: 'customer@example.com', phone: '5551234567', firstName: 'Jane', lastName: 'Smith', company: 'Lab', address: '123 Main St', address2: 'Suite 2', city: 'Boston', state: 'MA', postalCode: '02101' }
+  for (const [name, value] of Object.entries(values)) fireEvent.change(document.querySelector(`[name="${name}"]`), { target: { value } })
+  fireEvent.click(document.querySelector('[name="researchAgreement"]'))
+  fireEvent.click(screen.getByText('Verify security'))
+  fireEvent.click(screen.getByRole('button', { name: /SUBMIT ORDER REQUEST/ }))
+  await screen.findByText('Please try again')
+  expect(submit).toHaveBeenCalledWith(expect.objectContaining({ captchaToken: 'verified', researchAgreement: true, customer: expect.objectContaining(values) }))
+  expect(document.querySelector('[name="address"]').value).toBe('123 Main St')
+  expect(screen.getByRole('button', { name: /SUBMIT ORDER REQUEST/ }).disabled).toBe(false)
+})
 
 describe('order confirmation projection', () => {
   afterEach(() => {
