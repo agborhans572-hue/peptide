@@ -103,12 +103,12 @@ export function AuthProvider({ children }) {
     setSession(null)
     setProfile(null)
     setAccountStatus('')
-    writeLifecycle(null)
   }, [])
 
   const signOut = useCallback(async (message = '', scope = 'global') => {
     if (client) await client.auth.signOut({ scope }).catch(() => undefined)
     clearCustomerState()
+    writeLifecycle(null)
     storeSessionMessage(message)
   }, [clearCustomerState, client])
 

@@ -78,6 +78,9 @@ export function safeAuthError(error, fallback = 'We could not complete that requ
   if (message.includes('captcha')) {
     return 'The security check expired or could not be verified. Complete it again.'
   }
+  if (message.includes('complete the security check')) {
+    return 'Complete the security check before continuing.'
+  }
   if (message.includes('session') && message.includes('expired')) {
     return 'Your session expired. Sign in again.'
   }

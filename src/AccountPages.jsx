@@ -363,24 +363,29 @@ function OrdersSection() {
   const [selectedOrderData, setSelectedOrderData] = useState(null)
   const [hasMore, setHasMore] = useState(false)
   const [loading, setLoading] = useState(true)
+  const [error, setError] = useState('')
 
   useEffect(() => {
     let active = true
     const request = selectedOrder
-      ? client.from('orders')
-        .select('id,order_number,payment_status,fulfillment_status,currency,total_cents,created_at,order_items(id,sku,product_name,product_option,quantity,total_cents)')
-        .eq('order_number', selectedOrder)
-        .maybeSingle()
-      : client.rpc('list_my_orders', { p_limit: 21 })
+      ? client.rpc('list_my_account_orders', { p_order_number: selectedOrder, p_limit: 1 })
+      : client.rpc('list_my_account_orders', { p_limit: 21 })
     request
-      .then(({ data }) => {
+      .then(({ data, error: requestError }) => {
         if (active) {
-          if (selectedOrder) setSelectedOrderData(data || null)
+          if (requestError) setError('Your orders could not be loaded. Please refresh and try again.')
+          if (selectedOrder) setSelectedOrderData(data?.[0] || null)
           else {
             const rows = data || []
             setOrders(rows.slice(0, 20))
             setHasMore(rows.length > 20)
           }
+          setLoading(false)
+        }
+      })
+      .catch(() => {
+        if (active) {
+          setError('Your orders could not be loaded. Please refresh and try again.')
           setLoading(false)
         }
       })
@@ -391,11 +396,16 @@ function OrdersSection() {
     const cursor = orders.at(-1)
     if (!cursor) return
     setLoading(true)
-    const { data } = await client.rpc('list_my_orders', {
+    const { data, error: requestError } = await client.rpc('list_my_account_orders', {
       p_before_created_at: cursor.created_at,
       p_before_id: cursor.id,
       p_limit: 21,
     })
+    if (requestError) {
+      setError('More orders could not be loaded. Please try again.')
+      setLoading(false)
+      return
+    }
     const rows = data || []
     setOrders((current) => [...current, ...rows.slice(0, 20)])
     setHasMore(rows.length > 20)
@@ -403,6 +413,7 @@ function OrdersSection() {
   }
 
   if (loading) return <div className="account-dashboard-card"><h2>Orders</h2><p>Loading orders…</p></div>
+  if (error) return <div className="account-dashboard-card"><h2>Orders</h2><p role="alert">{error}</p></div>
   if (selectedOrder) {
     const order = selectedOrderData
     if (!order) {
@@ -411,7 +422,16 @@ function OrdersSection() {
     return (
       <div className="account-dashboard-card">
         <h2>Order {order.order_number}</h2>
-        <p><strong>{formatMoney(order.total_cents, order.currency)}</strong> · {order.payment_status} · {order.fulfillment_status}</p>
+        <p><strong>{formatMoney(order.total_cents, order.currency)}</strong> · {order.payment_status.replaceAll('_', ' ')} · Shipment {order.fulfillment_status}</p>
+        {order.payment_status === 'awaiting_payment' && <p>Our team will contact you by email or phone to finalize payment. Payment and shipment remain pending.</p>}
+        {order.shipping_address?.address && <p>
+          <strong>Delivery address</strong><br />
+          {order.shipping_address.firstName} {order.shipping_address.lastName}<br />
+          {order.shipping_address.address}<br />
+          {order.shipping_address.address2 && <>{order.shipping_address.address2}<br /></>}
+          {order.shipping_address.city}, {order.shipping_address.state} {order.shipping_address.postalCode}<br />
+          {order.shipping_address.country}
+        </p>}
         <ul className="account-order-items">
           {order.order_items.map((item) => (
             <li key={item.id}>
@@ -427,12 +447,12 @@ function OrdersSection() {
   return (
     <div className="account-dashboard-card">
       <h2>Orders</h2>
-      {!orders.length && <p>No paid orders are attached to this verified account yet.</p>}
+      {!orders.length && <p>No orders have been submitted with your verified email address yet.</p>}
       <div className="account-orders">
         {orders.map((order) => (
           <a key={order.id} href={`${appPath('/my-account/')}?order=${encodeURIComponent(order.order_number)}`}>
             <span><strong>{order.order_number}</strong><small>{new Date(order.created_at).toLocaleDateString()}</small></span>
-            <span>{formatMoney(order.total_cents, order.currency)}<small>{order.fulfillment_status}</small></span>
+            <span>{formatMoney(order.total_cents, order.currency)}<small>{order.payment_status.replaceAll('_', ' ')} · Shipment {order.fulfillment_status}</small></span>
           </a>
         ))}
       </div>
