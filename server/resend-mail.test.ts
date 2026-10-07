@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict'
 import test from 'node:test'
-import { sendResendEmail } from './resend-mail.ts'
+import { sendResendEmail } from './resend-mail.js'
 
 const email = { from: 'orders@purehealthpeptidesshop.com', to: 'info@purehealthpeptidesshop.com', reply_to: 'customer@example.com', subject: 'Order request', text: 'Awaiting payment', html: '<p>Awaiting payment</p>' }
 test('Resend requests use server authentication and a stable key on retry', async () => {

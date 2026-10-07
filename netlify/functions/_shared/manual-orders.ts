@@ -1,7 +1,7 @@
 import { createClient } from '@supabase/supabase-js'
 import { z } from 'zod'
-import { orderEmail, STORE_MAILBOX, type ManualOrder } from '../../../server/manual-orders.ts'
-import { sendResendEmail } from '../../../server/resend-mail.ts'
+import { orderEmail, STORE_MAILBOX, type ManualOrder } from '../../../server/manual-orders.js'
+import { sendResendEmail } from '../../../server/resend-mail.js'
 
 export function manualServices() {
   const env = z.object({ SITE_URL: z.string().url(), SUPABASE_URL: z.string().url(),

@@ -1,5 +1,5 @@
 import { z } from 'zod'
-import { priceCart } from './pricing.ts'
+import { priceCart } from './pricing.js'
 
 const field = z.string().trim().min(1).max(160)
 export const orderRequestSchema = z.object({

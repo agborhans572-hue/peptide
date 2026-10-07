@@ -1,6 +1,6 @@
 import type { Handler } from '@netlify/functions'
-import { deliverOrderEmails, manualServices } from './_shared/manual-orders.ts'
-import { errorResponse, json } from './_shared/http.ts'
+import { deliverOrderEmails, manualServices } from './_shared/manual-orders.js'
+import { errorResponse, json } from './_shared/http.js'
 export const handler: Handler = async event => {
   try {
     const { env } = manualServices()

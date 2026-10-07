@@ -1,8 +1,8 @@
 import type { Handler } from '@netlify/functions'
 import { createHash } from 'node:crypto'
-import { orderRequestSchema, prepareOrder } from '../../server/manual-orders.ts'
-import { clientFingerprint, errorResponse, HttpError, json, parseJson, requireSameOrigin } from './_shared/http.ts'
-import { deliverOrderEmails, manualServices } from './_shared/manual-orders.ts'
+import { orderRequestSchema, prepareOrder } from '../../server/manual-orders.js'
+import { clientFingerprint, errorResponse, HttpError, json, parseJson, requireSameOrigin } from './_shared/http.js'
+import { deliverOrderEmails, manualServices } from './_shared/manual-orders.js'
 
 export const handler: Handler = async event => {
   try {

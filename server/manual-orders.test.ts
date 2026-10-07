@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict'
 import test from 'node:test'
-import { orderEmail, prepareOrder, STORE_MAILBOX } from './manual-orders.ts'
+import { orderEmail, prepareOrder, STORE_MAILBOX } from './manual-orders.js'
 
 const request = {
   submissionId: '12345678-1234-4234-8234-123456789012', captchaToken: 'test', researchAgreement: true,

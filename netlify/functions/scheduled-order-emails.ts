@@ -1,5 +1,5 @@
 import { schedule } from '@netlify/functions'
-import { deliverOrderEmails } from './_shared/manual-orders.ts'
+import { deliverOrderEmails } from './_shared/manual-orders.js'
 
 export const handler = schedule('* * * * *', async () => {
   await deliverOrderEmails()
