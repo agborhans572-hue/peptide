@@ -19,7 +19,87 @@
             "@type": "ImageObject",
             "url": "https://purehealthpeptidesshop.com/assets/logo.svg"
           },
-          "email": "info@purehealthpeptides.com",
+          "email": "info@purehealthpeptidesshop.com",
+          "hasMerchantReturnPolicy": {
+            "@type": "MerchantReturnPolicy",
+            "merchantReturnLink": "https://purehealthpeptidesshop.com/refund-policy/"
+          },
+          "hasShippingService": {
+            "@type": "ShippingService",
+            "@id": "https://purehealthpeptidesshop.com/shipping-policy/#us-shipping",
+            "name": "U.S. standard shipping",
+            "url": "https://purehealthpeptidesshop.com/shipping-policy/",
+            "description": "$10.99 shipping; free at $175 or more after product discounts. Estimated transit 2-3 business days after processing.",
+            "shippingConditions": [
+              {
+                "@type": "ShippingConditions",
+                "shippingDestination": {
+                  "@type": "DefinedRegion",
+                  "addressCountry": "US"
+                },
+                "orderValue": {
+                  "@type": "MonetaryAmount",
+                  "minValue": 0,
+                  "maxValue": 174.99,
+                  "currency": "USD"
+                },
+                "shippingRate": {
+                  "@type": "MonetaryAmount",
+                  "value": 10.99,
+                  "currency": "USD"
+                },
+                "transitTime": {
+                  "@type": "ServicePeriod",
+                  "duration": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 2,
+                    "maxValue": 3,
+                    "unitCode": "DAY"
+                  },
+                  "businessDays": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                  ]
+                }
+              },
+              {
+                "@type": "ShippingConditions",
+                "shippingDestination": {
+                  "@type": "DefinedRegion",
+                  "addressCountry": "US"
+                },
+                "orderValue": {
+                  "@type": "MonetaryAmount",
+                  "minValue": 175,
+                  "currency": "USD"
+                },
+                "shippingRate": {
+                  "@type": "MonetaryAmount",
+                  "value": 0,
+                  "currency": "USD"
+                },
+                "transitTime": {
+                  "@type": "ServicePeriod",
+                  "duration": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 2,
+                    "maxValue": 3,
+                    "unitCode": "DAY"
+                  },
+                  "businessDays": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                  ]
+                }
+              }
+            ]
+          },
           "description": "Supplier of independently batch-tested materials for controlled in vitro laboratory research."
         },
         {
@@ -73,7 +153,87 @@
             "@type": "ImageObject",
             "url": "https://purehealthpeptidesshop.com/assets/logo.svg"
           },
-          "email": "info@purehealthpeptides.com",
+          "email": "info@purehealthpeptidesshop.com",
+          "hasMerchantReturnPolicy": {
+            "@type": "MerchantReturnPolicy",
+            "merchantReturnLink": "https://purehealthpeptidesshop.com/refund-policy/"
+          },
+          "hasShippingService": {
+            "@type": "ShippingService",
+            "@id": "https://purehealthpeptidesshop.com/shipping-policy/#us-shipping",
+            "name": "U.S. standard shipping",
+            "url": "https://purehealthpeptidesshop.com/shipping-policy/",
+            "description": "$10.99 shipping; free at $175 or more after product discounts. Estimated transit 2-3 business days after processing.",
+            "shippingConditions": [
+              {
+                "@type": "ShippingConditions",
+                "shippingDestination": {
+                  "@type": "DefinedRegion",
+                  "addressCountry": "US"
+                },
+                "orderValue": {
+                  "@type": "MonetaryAmount",
+                  "minValue": 0,
+                  "maxValue": 174.99,
+                  "currency": "USD"
+                },
+                "shippingRate": {
+                  "@type": "MonetaryAmount",
+                  "value": 10.99,
+                  "currency": "USD"
+                },
+                "transitTime": {
+                  "@type": "ServicePeriod",
+                  "duration": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 2,
+                    "maxValue": 3,
+                    "unitCode": "DAY"
+                  },
+                  "businessDays": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                  ]
+                }
+              },
+              {
+                "@type": "ShippingConditions",
+                "shippingDestination": {
+                  "@type": "DefinedRegion",
+                  "addressCountry": "US"
+                },
+                "orderValue": {
+                  "@type": "MonetaryAmount",
+                  "minValue": 175,
+                  "currency": "USD"
+                },
+                "shippingRate": {
+                  "@type": "MonetaryAmount",
+                  "value": 0,
+                  "currency": "USD"
+                },
+                "transitTime": {
+                  "@type": "ServicePeriod",
+                  "duration": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 2,
+                    "maxValue": 3,
+                    "unitCode": "DAY"
+                  },
+                  "businessDays": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                  ]
+                }
+              }
+            ]
+          },
           "description": "Supplier of independently batch-tested materials for controlled in vitro laboratory research."
         },
         {
@@ -297,7 +457,87 @@
             "@type": "ImageObject",
             "url": "https://purehealthpeptidesshop.com/assets/logo.svg"
           },
-          "email": "info@purehealthpeptides.com",
+          "email": "info@purehealthpeptidesshop.com",
+          "hasMerchantReturnPolicy": {
+            "@type": "MerchantReturnPolicy",
+            "merchantReturnLink": "https://purehealthpeptidesshop.com/refund-policy/"
+          },
+          "hasShippingService": {
+            "@type": "ShippingService",
+            "@id": "https://purehealthpeptidesshop.com/shipping-policy/#us-shipping",
+            "name": "U.S. standard shipping",
+            "url": "https://purehealthpeptidesshop.com/shipping-policy/",
+            "description": "$10.99 shipping; free at $175 or more after product discounts. Estimated transit 2-3 business days after processing.",
+            "shippingConditions": [
+              {
+                "@type": "ShippingConditions",
+                "shippingDestination": {
+                  "@type": "DefinedRegion",
+                  "addressCountry": "US"
+                },
+                "orderValue": {
+                  "@type": "MonetaryAmount",
+                  "minValue": 0,
+                  "maxValue": 174.99,
+                  "currency": "USD"
+                },
+                "shippingRate": {
+                  "@type": "MonetaryAmount",
+                  "value": 10.99,
+                  "currency": "USD"
+                },
+                "transitTime": {
+                  "@type": "ServicePeriod",
+                  "duration": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 2,
+                    "maxValue": 3,
+                    "unitCode": "DAY"
+                  },
+                  "businessDays": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                  ]
+                }
+              },
+              {
+                "@type": "ShippingConditions",
+                "shippingDestination": {
+                  "@type": "DefinedRegion",
+                  "addressCountry": "US"
+                },
+                "orderValue": {
+                  "@type": "MonetaryAmount",
+                  "minValue": 175,
+                  "currency": "USD"
+                },
+                "shippingRate": {
+                  "@type": "MonetaryAmount",
+                  "value": 0,
+                  "currency": "USD"
+                },
+                "transitTime": {
+                  "@type": "ServicePeriod",
+                  "duration": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 2,
+                    "maxValue": 3,
+                    "unitCode": "DAY"
+                  },
+                  "businessDays": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                  ]
+                }
+              }
+            ]
+          },
           "description": "Supplier of independently batch-tested materials for controlled in vitro laboratory research."
         },
         {
@@ -369,7 +609,87 @@
             "@type": "ImageObject",
             "url": "https://purehealthpeptidesshop.com/assets/logo.svg"
           },
-          "email": "info@purehealthpeptides.com",
+          "email": "info@purehealthpeptidesshop.com",
+          "hasMerchantReturnPolicy": {
+            "@type": "MerchantReturnPolicy",
+            "merchantReturnLink": "https://purehealthpeptidesshop.com/refund-policy/"
+          },
+          "hasShippingService": {
+            "@type": "ShippingService",
+            "@id": "https://purehealthpeptidesshop.com/shipping-policy/#us-shipping",
+            "name": "U.S. standard shipping",
+            "url": "https://purehealthpeptidesshop.com/shipping-policy/",
+            "description": "$10.99 shipping; free at $175 or more after product discounts. Estimated transit 2-3 business days after processing.",
+            "shippingConditions": [
+              {
+                "@type": "ShippingConditions",
+                "shippingDestination": {
+                  "@type": "DefinedRegion",
+                  "addressCountry": "US"
+                },
+                "orderValue": {
+                  "@type": "MonetaryAmount",
+                  "minValue": 0,
+                  "maxValue": 174.99,
+                  "currency": "USD"
+                },
+                "shippingRate": {
+                  "@type": "MonetaryAmount",
+                  "value": 10.99,
+                  "currency": "USD"
+                },
+                "transitTime": {
+                  "@type": "ServicePeriod",
+                  "duration": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 2,
+                    "maxValue": 3,
+                    "unitCode": "DAY"
+                  },
+                  "businessDays": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                  ]
+                }
+              },
+              {
+                "@type": "ShippingConditions",
+                "shippingDestination": {
+                  "@type": "DefinedRegion",
+                  "addressCountry": "US"
+                },
+                "orderValue": {
+                  "@type": "MonetaryAmount",
+                  "minValue": 175,
+                  "currency": "USD"
+                },
+                "shippingRate": {
+                  "@type": "MonetaryAmount",
+                  "value": 0,
+                  "currency": "USD"
+                },
+                "transitTime": {
+                  "@type": "ServicePeriod",
+                  "duration": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 2,
+                    "maxValue": 3,
+                    "unitCode": "DAY"
+                  },
+                  "businessDays": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                  ]
+                }
+              }
+            ]
+          },
           "description": "Supplier of independently batch-tested materials for controlled in vitro laboratory research."
         },
         {
@@ -423,8 +743,8 @@
   },
   "/news/": {
     "path": "/news/",
-    "title": "Recent News | Pure Health Peptides",
-    "description": "Read recent Pure Health Peptides research, product, testing, and manufacturing updates.",
+    "title": "Peptide Testing & Laboratory Guides | PHP",
+    "description": "Read evidence-led guides to peptide COAs, HPLC purity, mass spectrometry, storage, material formats, lot numbers, and batch verification.",
     "kind": "page",
     "indexable": true,
     "image": "https://purehealthpeptidesshop.com/assets/hero-vials.png",
@@ -441,7 +761,87 @@
             "@type": "ImageObject",
             "url": "https://purehealthpeptidesshop.com/assets/logo.svg"
           },
-          "email": "info@purehealthpeptides.com",
+          "email": "info@purehealthpeptidesshop.com",
+          "hasMerchantReturnPolicy": {
+            "@type": "MerchantReturnPolicy",
+            "merchantReturnLink": "https://purehealthpeptidesshop.com/refund-policy/"
+          },
+          "hasShippingService": {
+            "@type": "ShippingService",
+            "@id": "https://purehealthpeptidesshop.com/shipping-policy/#us-shipping",
+            "name": "U.S. standard shipping",
+            "url": "https://purehealthpeptidesshop.com/shipping-policy/",
+            "description": "$10.99 shipping; free at $175 or more after product discounts. Estimated transit 2-3 business days after processing.",
+            "shippingConditions": [
+              {
+                "@type": "ShippingConditions",
+                "shippingDestination": {
+                  "@type": "DefinedRegion",
+                  "addressCountry": "US"
+                },
+                "orderValue": {
+                  "@type": "MonetaryAmount",
+                  "minValue": 0,
+                  "maxValue": 174.99,
+                  "currency": "USD"
+                },
+                "shippingRate": {
+                  "@type": "MonetaryAmount",
+                  "value": 10.99,
+                  "currency": "USD"
+                },
+                "transitTime": {
+                  "@type": "ServicePeriod",
+                  "duration": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 2,
+                    "maxValue": 3,
+                    "unitCode": "DAY"
+                  },
+                  "businessDays": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                  ]
+                }
+              },
+              {
+                "@type": "ShippingConditions",
+                "shippingDestination": {
+                  "@type": "DefinedRegion",
+                  "addressCountry": "US"
+                },
+                "orderValue": {
+                  "@type": "MonetaryAmount",
+                  "minValue": 175,
+                  "currency": "USD"
+                },
+                "shippingRate": {
+                  "@type": "MonetaryAmount",
+                  "value": 0,
+                  "currency": "USD"
+                },
+                "transitTime": {
+                  "@type": "ServicePeriod",
+                  "duration": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 2,
+                    "maxValue": 3,
+                    "unitCode": "DAY"
+                  },
+                  "businessDays": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                  ]
+                }
+              }
+            ]
+          },
           "description": "Supplier of independently batch-tested materials for controlled in vitro laboratory research."
         },
         {
@@ -455,11 +855,11 @@
           "inLanguage": "en-US"
         },
         {
-          "@type": "WebPage",
+          "@type": "CollectionPage",
           "@id": "https://purehealthpeptidesshop.com/news/#webpage",
           "url": "https://purehealthpeptidesshop.com/news/",
-          "name": "Recent News | Pure Health Peptides",
-          "description": "Read recent Pure Health Peptides research, product, testing, and manufacturing updates.",
+          "name": "Peptide Testing & Laboratory Guides | PHP",
+          "description": "Read evidence-led guides to peptide COAs, HPLC purity, mass spectrometry, storage, material formats, lot numbers, and batch verification.",
           "isPartOf": {
             "@id": "https://purehealthpeptidesshop.com/#website"
           },
@@ -485,8 +885,547 @@
             {
               "@type": "ListItem",
               "position": 2,
-              "name": "Recent News",
+              "name": "Laboratory Guides",
               "item": "https://purehealthpeptidesshop.com/news/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "@id": "https://purehealthpeptidesshop.com/news/#guides",
+          "name": "Peptide Testing and Laboratory Guides",
+          "numberOfItems": 2,
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "How to Read a Peptide Certificate of Analysis",
+              "url": "https://purehealthpeptidesshop.com/news/how-to-read-a-peptide-certificate-of-analysis/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Understanding HPLC Purity Testing",
+              "url": "https://purehealthpeptidesshop.com/news/understanding-hplc-purity-testing/"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "/news/how-to-read-a-peptide-certificate-of-analysis/": {
+    "path": "/news/how-to-read-a-peptide-certificate-of-analysis/",
+    "title": "How to Read a Peptide COA | Laboratory Guide",
+    "description": "A field-by-field guide to peptide COAs: lot matching, methods, specifications, results, approvals, and the limits of what a certificate proves.",
+    "kind": "article",
+    "indexable": true,
+    "image": "https://purehealthpeptidesshop.com/assets/peptide-info/coa-lab.png",
+    "imageAlt": "How to Read a Peptide COA — laboratory research guide",
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://purehealthpeptidesshop.com/#organization",
+          "name": "Pure Health Peptides",
+          "url": "https://purehealthpeptidesshop.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://purehealthpeptidesshop.com/assets/logo.svg"
+          },
+          "email": "info@purehealthpeptidesshop.com",
+          "hasMerchantReturnPolicy": {
+            "@type": "MerchantReturnPolicy",
+            "merchantReturnLink": "https://purehealthpeptidesshop.com/refund-policy/"
+          },
+          "hasShippingService": {
+            "@type": "ShippingService",
+            "@id": "https://purehealthpeptidesshop.com/shipping-policy/#us-shipping",
+            "name": "U.S. standard shipping",
+            "url": "https://purehealthpeptidesshop.com/shipping-policy/",
+            "description": "$10.99 shipping; free at $175 or more after product discounts. Estimated transit 2-3 business days after processing.",
+            "shippingConditions": [
+              {
+                "@type": "ShippingConditions",
+                "shippingDestination": {
+                  "@type": "DefinedRegion",
+                  "addressCountry": "US"
+                },
+                "orderValue": {
+                  "@type": "MonetaryAmount",
+                  "minValue": 0,
+                  "maxValue": 174.99,
+                  "currency": "USD"
+                },
+                "shippingRate": {
+                  "@type": "MonetaryAmount",
+                  "value": 10.99,
+                  "currency": "USD"
+                },
+                "transitTime": {
+                  "@type": "ServicePeriod",
+                  "duration": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 2,
+                    "maxValue": 3,
+                    "unitCode": "DAY"
+                  },
+                  "businessDays": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                  ]
+                }
+              },
+              {
+                "@type": "ShippingConditions",
+                "shippingDestination": {
+                  "@type": "DefinedRegion",
+                  "addressCountry": "US"
+                },
+                "orderValue": {
+                  "@type": "MonetaryAmount",
+                  "minValue": 175,
+                  "currency": "USD"
+                },
+                "shippingRate": {
+                  "@type": "MonetaryAmount",
+                  "value": 0,
+                  "currency": "USD"
+                },
+                "transitTime": {
+                  "@type": "ServicePeriod",
+                  "duration": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 2,
+                    "maxValue": 3,
+                    "unitCode": "DAY"
+                  },
+                  "businessDays": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                  ]
+                }
+              }
+            ]
+          },
+          "description": "Supplier of independently batch-tested materials for controlled in vitro laboratory research."
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://purehealthpeptidesshop.com/#website",
+          "url": "https://purehealthpeptidesshop.com/",
+          "name": "Pure Health Peptides",
+          "publisher": {
+            "@id": "https://purehealthpeptidesshop.com/#organization"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://purehealthpeptidesshop.com/news/how-to-read-a-peptide-certificate-of-analysis/#webpage",
+          "url": "https://purehealthpeptidesshop.com/news/how-to-read-a-peptide-certificate-of-analysis/",
+          "name": "How to Read a Peptide COA | Laboratory Guide",
+          "description": "A field-by-field guide to peptide COAs: lot matching, methods, specifications, results, approvals, and the limits of what a certificate proves.",
+          "isPartOf": {
+            "@id": "https://purehealthpeptidesshop.com/#website"
+          },
+          "about": {
+            "@id": "https://purehealthpeptidesshop.com/#organization"
+          },
+          "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "url": "https://purehealthpeptidesshop.com/assets/peptide-info/coa-lab.png"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://purehealthpeptidesshop.com/news/how-to-read-a-peptide-certificate-of-analysis/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://purehealthpeptidesshop.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Laboratory Guides",
+              "item": "https://purehealthpeptidesshop.com/news/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "How to Read a Peptide COA",
+              "item": "https://purehealthpeptidesshop.com/news/how-to-read-a-peptide-certificate-of-analysis/"
+            }
+          ]
+        },
+        {
+          "@type": "Article",
+          "@id": "https://purehealthpeptidesshop.com/news/how-to-read-a-peptide-certificate-of-analysis/#article",
+          "headline": "How to Read a Peptide Certificate of Analysis",
+          "description": "A field-by-field guide to peptide COAs: lot matching, methods, specifications, results, approvals, and the limits of what a certificate proves.",
+          "datePublished": "2026-09-14",
+          "dateModified": "2026-09-14",
+          "articleSection": "Batch documentation",
+          "author": {
+            "@id": "https://purehealthpeptidesshop.com/#organization"
+          },
+          "publisher": {
+            "@id": "https://purehealthpeptidesshop.com/#organization"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://purehealthpeptidesshop.com/news/how-to-read-a-peptide-certificate-of-analysis/#webpage"
+          },
+          "image": "https://purehealthpeptidesshop.com/assets/peptide-info/coa-lab.png",
+          "citation": [
+            "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/q7a-good-manufacturing-practice-guidance-active-pharmaceutical-ingredients",
+            "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/q2r2-validation-analytical-procedures",
+            "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/q6a-specifications-test-procedures-and-acceptance-criteria-new-drug-substances-and-new-drug-products",
+            "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-C/part-211/section-211.194"
+          ],
+          "inLanguage": "en-US"
+        }
+      ]
+    }
+  },
+  "/news/understanding-hplc-purity-testing/": {
+    "path": "/news/understanding-hplc-purity-testing/",
+    "title": "Understanding HPLC Purity | Laboratory Guide",
+    "description": "Learn what an HPLC chromatogram and area-percent result show, which method details matter, and what peptide purity does not prove by itself.",
+    "kind": "article",
+    "indexable": true,
+    "image": "https://purehealthpeptidesshop.com/assets/peptide-info/coa-lab.png",
+    "imageAlt": "Understanding HPLC Purity — laboratory research guide",
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://purehealthpeptidesshop.com/#organization",
+          "name": "Pure Health Peptides",
+          "url": "https://purehealthpeptidesshop.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://purehealthpeptidesshop.com/assets/logo.svg"
+          },
+          "email": "info@purehealthpeptidesshop.com",
+          "hasMerchantReturnPolicy": {
+            "@type": "MerchantReturnPolicy",
+            "merchantReturnLink": "https://purehealthpeptidesshop.com/refund-policy/"
+          },
+          "hasShippingService": {
+            "@type": "ShippingService",
+            "@id": "https://purehealthpeptidesshop.com/shipping-policy/#us-shipping",
+            "name": "U.S. standard shipping",
+            "url": "https://purehealthpeptidesshop.com/shipping-policy/",
+            "description": "$10.99 shipping; free at $175 or more after product discounts. Estimated transit 2-3 business days after processing.",
+            "shippingConditions": [
+              {
+                "@type": "ShippingConditions",
+                "shippingDestination": {
+                  "@type": "DefinedRegion",
+                  "addressCountry": "US"
+                },
+                "orderValue": {
+                  "@type": "MonetaryAmount",
+                  "minValue": 0,
+                  "maxValue": 174.99,
+                  "currency": "USD"
+                },
+                "shippingRate": {
+                  "@type": "MonetaryAmount",
+                  "value": 10.99,
+                  "currency": "USD"
+                },
+                "transitTime": {
+                  "@type": "ServicePeriod",
+                  "duration": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 2,
+                    "maxValue": 3,
+                    "unitCode": "DAY"
+                  },
+                  "businessDays": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                  ]
+                }
+              },
+              {
+                "@type": "ShippingConditions",
+                "shippingDestination": {
+                  "@type": "DefinedRegion",
+                  "addressCountry": "US"
+                },
+                "orderValue": {
+                  "@type": "MonetaryAmount",
+                  "minValue": 175,
+                  "currency": "USD"
+                },
+                "shippingRate": {
+                  "@type": "MonetaryAmount",
+                  "value": 0,
+                  "currency": "USD"
+                },
+                "transitTime": {
+                  "@type": "ServicePeriod",
+                  "duration": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 2,
+                    "maxValue": 3,
+                    "unitCode": "DAY"
+                  },
+                  "businessDays": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                  ]
+                }
+              }
+            ]
+          },
+          "description": "Supplier of independently batch-tested materials for controlled in vitro laboratory research."
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://purehealthpeptidesshop.com/#website",
+          "url": "https://purehealthpeptidesshop.com/",
+          "name": "Pure Health Peptides",
+          "publisher": {
+            "@id": "https://purehealthpeptidesshop.com/#organization"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://purehealthpeptidesshop.com/news/understanding-hplc-purity-testing/#webpage",
+          "url": "https://purehealthpeptidesshop.com/news/understanding-hplc-purity-testing/",
+          "name": "Understanding HPLC Purity | Laboratory Guide",
+          "description": "Learn what an HPLC chromatogram and area-percent result show, which method details matter, and what peptide purity does not prove by itself.",
+          "isPartOf": {
+            "@id": "https://purehealthpeptidesshop.com/#website"
+          },
+          "about": {
+            "@id": "https://purehealthpeptidesshop.com/#organization"
+          },
+          "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "url": "https://purehealthpeptidesshop.com/assets/peptide-info/coa-lab.png"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://purehealthpeptidesshop.com/news/understanding-hplc-purity-testing/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://purehealthpeptidesshop.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Laboratory Guides",
+              "item": "https://purehealthpeptidesshop.com/news/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Understanding HPLC Purity",
+              "item": "https://purehealthpeptidesshop.com/news/understanding-hplc-purity-testing/"
+            }
+          ]
+        },
+        {
+          "@type": "Article",
+          "@id": "https://purehealthpeptidesshop.com/news/understanding-hplc-purity-testing/#article",
+          "headline": "Understanding HPLC Purity Testing",
+          "description": "Learn what an HPLC chromatogram and area-percent result show, which method details matter, and what peptide purity does not prove by itself.",
+          "datePublished": "2026-09-14",
+          "dateModified": "2026-09-14",
+          "articleSection": "Analytical methods",
+          "author": {
+            "@id": "https://purehealthpeptidesshop.com/#organization"
+          },
+          "publisher": {
+            "@id": "https://purehealthpeptidesshop.com/#organization"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://purehealthpeptidesshop.com/news/understanding-hplc-purity-testing/#webpage"
+          },
+          "image": "https://purehealthpeptidesshop.com/assets/peptide-info/coa-lab.png",
+          "citation": [
+            "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/q2r2-validation-analytical-procedures",
+            "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/q6a-specifications-test-procedures-and-acceptance-criteria-new-drug-substances-and-new-drug-products",
+            "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/q7a-good-manufacturing-practice-guidance-active-pharmaceutical-ingredients"
+          ],
+          "inLanguage": "en-US"
+        }
+      ]
+    }
+  },
+  "/editorial-standards/": {
+    "path": "/editorial-standards/",
+    "title": "Editorial Standards for Laboratory Education | PHP",
+    "description": "See how Pure Health Peptides attributes, sources, discloses, updates, and corrects educational content about laboratory research materials.",
+    "kind": "page",
+    "indexable": true,
+    "image": "https://purehealthpeptidesshop.com/assets/hero-vials.png",
+    "imageAlt": "Pure Health Peptides laboratory research materials",
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://purehealthpeptidesshop.com/#organization",
+          "name": "Pure Health Peptides",
+          "url": "https://purehealthpeptidesshop.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://purehealthpeptidesshop.com/assets/logo.svg"
+          },
+          "email": "info@purehealthpeptidesshop.com",
+          "hasMerchantReturnPolicy": {
+            "@type": "MerchantReturnPolicy",
+            "merchantReturnLink": "https://purehealthpeptidesshop.com/refund-policy/"
+          },
+          "hasShippingService": {
+            "@type": "ShippingService",
+            "@id": "https://purehealthpeptidesshop.com/shipping-policy/#us-shipping",
+            "name": "U.S. standard shipping",
+            "url": "https://purehealthpeptidesshop.com/shipping-policy/",
+            "description": "$10.99 shipping; free at $175 or more after product discounts. Estimated transit 2-3 business days after processing.",
+            "shippingConditions": [
+              {
+                "@type": "ShippingConditions",
+                "shippingDestination": {
+                  "@type": "DefinedRegion",
+                  "addressCountry": "US"
+                },
+                "orderValue": {
+                  "@type": "MonetaryAmount",
+                  "minValue": 0,
+                  "maxValue": 174.99,
+                  "currency": "USD"
+                },
+                "shippingRate": {
+                  "@type": "MonetaryAmount",
+                  "value": 10.99,
+                  "currency": "USD"
+                },
+                "transitTime": {
+                  "@type": "ServicePeriod",
+                  "duration": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 2,
+                    "maxValue": 3,
+                    "unitCode": "DAY"
+                  },
+                  "businessDays": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                  ]
+                }
+              },
+              {
+                "@type": "ShippingConditions",
+                "shippingDestination": {
+                  "@type": "DefinedRegion",
+                  "addressCountry": "US"
+                },
+                "orderValue": {
+                  "@type": "MonetaryAmount",
+                  "minValue": 175,
+                  "currency": "USD"
+                },
+                "shippingRate": {
+                  "@type": "MonetaryAmount",
+                  "value": 0,
+                  "currency": "USD"
+                },
+                "transitTime": {
+                  "@type": "ServicePeriod",
+                  "duration": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 2,
+                    "maxValue": 3,
+                    "unitCode": "DAY"
+                  },
+                  "businessDays": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                  ]
+                }
+              }
+            ]
+          },
+          "description": "Supplier of independently batch-tested materials for controlled in vitro laboratory research."
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://purehealthpeptidesshop.com/#website",
+          "url": "https://purehealthpeptidesshop.com/",
+          "name": "Pure Health Peptides",
+          "publisher": {
+            "@id": "https://purehealthpeptidesshop.com/#organization"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://purehealthpeptidesshop.com/editorial-standards/#webpage",
+          "url": "https://purehealthpeptidesshop.com/editorial-standards/",
+          "name": "Editorial Standards for Laboratory Education | PHP",
+          "description": "See how Pure Health Peptides attributes, sources, discloses, updates, and corrects educational content about laboratory research materials.",
+          "isPartOf": {
+            "@id": "https://purehealthpeptidesshop.com/#website"
+          },
+          "about": {
+            "@id": "https://purehealthpeptidesshop.com/#organization"
+          },
+          "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "url": "https://purehealthpeptidesshop.com/assets/hero-vials.png"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://purehealthpeptidesshop.com/editorial-standards/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://purehealthpeptidesshop.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Editorial Standards",
+              "item": "https://purehealthpeptidesshop.com/editorial-standards/"
             }
           ]
         }
@@ -513,7 +1452,87 @@
             "@type": "ImageObject",
             "url": "https://purehealthpeptidesshop.com/assets/logo.svg"
           },
-          "email": "info@purehealthpeptides.com",
+          "email": "info@purehealthpeptidesshop.com",
+          "hasMerchantReturnPolicy": {
+            "@type": "MerchantReturnPolicy",
+            "merchantReturnLink": "https://purehealthpeptidesshop.com/refund-policy/"
+          },
+          "hasShippingService": {
+            "@type": "ShippingService",
+            "@id": "https://purehealthpeptidesshop.com/shipping-policy/#us-shipping",
+            "name": "U.S. standard shipping",
+            "url": "https://purehealthpeptidesshop.com/shipping-policy/",
+            "description": "$10.99 shipping; free at $175 or more after product discounts. Estimated transit 2-3 business days after processing.",
+            "shippingConditions": [
+              {
+                "@type": "ShippingConditions",
+                "shippingDestination": {
+                  "@type": "DefinedRegion",
+                  "addressCountry": "US"
+                },
+                "orderValue": {
+                  "@type": "MonetaryAmount",
+                  "minValue": 0,
+                  "maxValue": 174.99,
+                  "currency": "USD"
+                },
+                "shippingRate": {
+                  "@type": "MonetaryAmount",
+                  "value": 10.99,
+                  "currency": "USD"
+                },
+                "transitTime": {
+                  "@type": "ServicePeriod",
+                  "duration": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 2,
+                    "maxValue": 3,
+                    "unitCode": "DAY"
+                  },
+                  "businessDays": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                  ]
+                }
+              },
+              {
+                "@type": "ShippingConditions",
+                "shippingDestination": {
+                  "@type": "DefinedRegion",
+                  "addressCountry": "US"
+                },
+                "orderValue": {
+                  "@type": "MonetaryAmount",
+                  "minValue": 175,
+                  "currency": "USD"
+                },
+                "shippingRate": {
+                  "@type": "MonetaryAmount",
+                  "value": 0,
+                  "currency": "USD"
+                },
+                "transitTime": {
+                  "@type": "ServicePeriod",
+                  "duration": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 2,
+                    "maxValue": 3,
+                    "unitCode": "DAY"
+                  },
+                  "businessDays": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                  ]
+                }
+              }
+            ]
+          },
           "description": "Supplier of independently batch-tested materials for controlled in vitro laboratory research."
         },
         {
@@ -585,7 +1604,87 @@
             "@type": "ImageObject",
             "url": "https://purehealthpeptidesshop.com/assets/logo.svg"
           },
-          "email": "info@purehealthpeptides.com",
+          "email": "info@purehealthpeptidesshop.com",
+          "hasMerchantReturnPolicy": {
+            "@type": "MerchantReturnPolicy",
+            "merchantReturnLink": "https://purehealthpeptidesshop.com/refund-policy/"
+          },
+          "hasShippingService": {
+            "@type": "ShippingService",
+            "@id": "https://purehealthpeptidesshop.com/shipping-policy/#us-shipping",
+            "name": "U.S. standard shipping",
+            "url": "https://purehealthpeptidesshop.com/shipping-policy/",
+            "description": "$10.99 shipping; free at $175 or more after product discounts. Estimated transit 2-3 business days after processing.",
+            "shippingConditions": [
+              {
+                "@type": "ShippingConditions",
+                "shippingDestination": {
+                  "@type": "DefinedRegion",
+                  "addressCountry": "US"
+                },
+                "orderValue": {
+                  "@type": "MonetaryAmount",
+                  "minValue": 0,
+                  "maxValue": 174.99,
+                  "currency": "USD"
+                },
+                "shippingRate": {
+                  "@type": "MonetaryAmount",
+                  "value": 10.99,
+                  "currency": "USD"
+                },
+                "transitTime": {
+                  "@type": "ServicePeriod",
+                  "duration": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 2,
+                    "maxValue": 3,
+                    "unitCode": "DAY"
+                  },
+                  "businessDays": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                  ]
+                }
+              },
+              {
+                "@type": "ShippingConditions",
+                "shippingDestination": {
+                  "@type": "DefinedRegion",
+                  "addressCountry": "US"
+                },
+                "orderValue": {
+                  "@type": "MonetaryAmount",
+                  "minValue": 175,
+                  "currency": "USD"
+                },
+                "shippingRate": {
+                  "@type": "MonetaryAmount",
+                  "value": 0,
+                  "currency": "USD"
+                },
+                "transitTime": {
+                  "@type": "ServicePeriod",
+                  "duration": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 2,
+                    "maxValue": 3,
+                    "unitCode": "DAY"
+                  },
+                  "businessDays": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                  ]
+                }
+              }
+            ]
+          },
           "description": "Supplier of independently batch-tested materials for controlled in vitro laboratory research."
         },
         {
@@ -657,7 +1756,87 @@
             "@type": "ImageObject",
             "url": "https://purehealthpeptidesshop.com/assets/logo.svg"
           },
-          "email": "info@purehealthpeptides.com",
+          "email": "info@purehealthpeptidesshop.com",
+          "hasMerchantReturnPolicy": {
+            "@type": "MerchantReturnPolicy",
+            "merchantReturnLink": "https://purehealthpeptidesshop.com/refund-policy/"
+          },
+          "hasShippingService": {
+            "@type": "ShippingService",
+            "@id": "https://purehealthpeptidesshop.com/shipping-policy/#us-shipping",
+            "name": "U.S. standard shipping",
+            "url": "https://purehealthpeptidesshop.com/shipping-policy/",
+            "description": "$10.99 shipping; free at $175 or more after product discounts. Estimated transit 2-3 business days after processing.",
+            "shippingConditions": [
+              {
+                "@type": "ShippingConditions",
+                "shippingDestination": {
+                  "@type": "DefinedRegion",
+                  "addressCountry": "US"
+                },
+                "orderValue": {
+                  "@type": "MonetaryAmount",
+                  "minValue": 0,
+                  "maxValue": 174.99,
+                  "currency": "USD"
+                },
+                "shippingRate": {
+                  "@type": "MonetaryAmount",
+                  "value": 10.99,
+                  "currency": "USD"
+                },
+                "transitTime": {
+                  "@type": "ServicePeriod",
+                  "duration": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 2,
+                    "maxValue": 3,
+                    "unitCode": "DAY"
+                  },
+                  "businessDays": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                  ]
+                }
+              },
+              {
+                "@type": "ShippingConditions",
+                "shippingDestination": {
+                  "@type": "DefinedRegion",
+                  "addressCountry": "US"
+                },
+                "orderValue": {
+                  "@type": "MonetaryAmount",
+                  "minValue": 175,
+                  "currency": "USD"
+                },
+                "shippingRate": {
+                  "@type": "MonetaryAmount",
+                  "value": 0,
+                  "currency": "USD"
+                },
+                "transitTime": {
+                  "@type": "ServicePeriod",
+                  "duration": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 2,
+                    "maxValue": 3,
+                    "unitCode": "DAY"
+                  },
+                  "businessDays": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                  ]
+                }
+              }
+            ]
+          },
           "description": "Supplier of independently batch-tested materials for controlled in vitro laboratory research."
         },
         {
@@ -729,7 +1908,87 @@
             "@type": "ImageObject",
             "url": "https://purehealthpeptidesshop.com/assets/logo.svg"
           },
-          "email": "info@purehealthpeptides.com",
+          "email": "info@purehealthpeptidesshop.com",
+          "hasMerchantReturnPolicy": {
+            "@type": "MerchantReturnPolicy",
+            "merchantReturnLink": "https://purehealthpeptidesshop.com/refund-policy/"
+          },
+          "hasShippingService": {
+            "@type": "ShippingService",
+            "@id": "https://purehealthpeptidesshop.com/shipping-policy/#us-shipping",
+            "name": "U.S. standard shipping",
+            "url": "https://purehealthpeptidesshop.com/shipping-policy/",
+            "description": "$10.99 shipping; free at $175 or more after product discounts. Estimated transit 2-3 business days after processing.",
+            "shippingConditions": [
+              {
+                "@type": "ShippingConditions",
+                "shippingDestination": {
+                  "@type": "DefinedRegion",
+                  "addressCountry": "US"
+                },
+                "orderValue": {
+                  "@type": "MonetaryAmount",
+                  "minValue": 0,
+                  "maxValue": 174.99,
+                  "currency": "USD"
+                },
+                "shippingRate": {
+                  "@type": "MonetaryAmount",
+                  "value": 10.99,
+                  "currency": "USD"
+                },
+                "transitTime": {
+                  "@type": "ServicePeriod",
+                  "duration": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 2,
+                    "maxValue": 3,
+                    "unitCode": "DAY"
+                  },
+                  "businessDays": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                  ]
+                }
+              },
+              {
+                "@type": "ShippingConditions",
+                "shippingDestination": {
+                  "@type": "DefinedRegion",
+                  "addressCountry": "US"
+                },
+                "orderValue": {
+                  "@type": "MonetaryAmount",
+                  "minValue": 175,
+                  "currency": "USD"
+                },
+                "shippingRate": {
+                  "@type": "MonetaryAmount",
+                  "value": 0,
+                  "currency": "USD"
+                },
+                "transitTime": {
+                  "@type": "ServicePeriod",
+                  "duration": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 2,
+                    "maxValue": 3,
+                    "unitCode": "DAY"
+                  },
+                  "businessDays": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                  ]
+                }
+              }
+            ]
+          },
           "description": "Supplier of independently batch-tested materials for controlled in vitro laboratory research."
         },
         {
@@ -801,7 +2060,87 @@
             "@type": "ImageObject",
             "url": "https://purehealthpeptidesshop.com/assets/logo.svg"
           },
-          "email": "info@purehealthpeptides.com",
+          "email": "info@purehealthpeptidesshop.com",
+          "hasMerchantReturnPolicy": {
+            "@type": "MerchantReturnPolicy",
+            "merchantReturnLink": "https://purehealthpeptidesshop.com/refund-policy/"
+          },
+          "hasShippingService": {
+            "@type": "ShippingService",
+            "@id": "https://purehealthpeptidesshop.com/shipping-policy/#us-shipping",
+            "name": "U.S. standard shipping",
+            "url": "https://purehealthpeptidesshop.com/shipping-policy/",
+            "description": "$10.99 shipping; free at $175 or more after product discounts. Estimated transit 2-3 business days after processing.",
+            "shippingConditions": [
+              {
+                "@type": "ShippingConditions",
+                "shippingDestination": {
+                  "@type": "DefinedRegion",
+                  "addressCountry": "US"
+                },
+                "orderValue": {
+                  "@type": "MonetaryAmount",
+                  "minValue": 0,
+                  "maxValue": 174.99,
+                  "currency": "USD"
+                },
+                "shippingRate": {
+                  "@type": "MonetaryAmount",
+                  "value": 10.99,
+                  "currency": "USD"
+                },
+                "transitTime": {
+                  "@type": "ServicePeriod",
+                  "duration": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 2,
+                    "maxValue": 3,
+                    "unitCode": "DAY"
+                  },
+                  "businessDays": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                  ]
+                }
+              },
+              {
+                "@type": "ShippingConditions",
+                "shippingDestination": {
+                  "@type": "DefinedRegion",
+                  "addressCountry": "US"
+                },
+                "orderValue": {
+                  "@type": "MonetaryAmount",
+                  "minValue": 175,
+                  "currency": "USD"
+                },
+                "shippingRate": {
+                  "@type": "MonetaryAmount",
+                  "value": 0,
+                  "currency": "USD"
+                },
+                "transitTime": {
+                  "@type": "ServicePeriod",
+                  "duration": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 2,
+                    "maxValue": 3,
+                    "unitCode": "DAY"
+                  },
+                  "businessDays": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                  ]
+                }
+              }
+            ]
+          },
           "description": "Supplier of independently batch-tested materials for controlled in vitro laboratory research."
         },
         {
@@ -873,7 +2212,87 @@
             "@type": "ImageObject",
             "url": "https://purehealthpeptidesshop.com/assets/logo.svg"
           },
-          "email": "info@purehealthpeptides.com",
+          "email": "info@purehealthpeptidesshop.com",
+          "hasMerchantReturnPolicy": {
+            "@type": "MerchantReturnPolicy",
+            "merchantReturnLink": "https://purehealthpeptidesshop.com/refund-policy/"
+          },
+          "hasShippingService": {
+            "@type": "ShippingService",
+            "@id": "https://purehealthpeptidesshop.com/shipping-policy/#us-shipping",
+            "name": "U.S. standard shipping",
+            "url": "https://purehealthpeptidesshop.com/shipping-policy/",
+            "description": "$10.99 shipping; free at $175 or more after product discounts. Estimated transit 2-3 business days after processing.",
+            "shippingConditions": [
+              {
+                "@type": "ShippingConditions",
+                "shippingDestination": {
+                  "@type": "DefinedRegion",
+                  "addressCountry": "US"
+                },
+                "orderValue": {
+                  "@type": "MonetaryAmount",
+                  "minValue": 0,
+                  "maxValue": 174.99,
+                  "currency": "USD"
+                },
+                "shippingRate": {
+                  "@type": "MonetaryAmount",
+                  "value": 10.99,
+                  "currency": "USD"
+                },
+                "transitTime": {
+                  "@type": "ServicePeriod",
+                  "duration": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 2,
+                    "maxValue": 3,
+                    "unitCode": "DAY"
+                  },
+                  "businessDays": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                  ]
+                }
+              },
+              {
+                "@type": "ShippingConditions",
+                "shippingDestination": {
+                  "@type": "DefinedRegion",
+                  "addressCountry": "US"
+                },
+                "orderValue": {
+                  "@type": "MonetaryAmount",
+                  "minValue": 175,
+                  "currency": "USD"
+                },
+                "shippingRate": {
+                  "@type": "MonetaryAmount",
+                  "value": 0,
+                  "currency": "USD"
+                },
+                "transitTime": {
+                  "@type": "ServicePeriod",
+                  "duration": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 2,
+                    "maxValue": 3,
+                    "unitCode": "DAY"
+                  },
+                  "businessDays": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                  ]
+                }
+              }
+            ]
+          },
           "description": "Supplier of independently batch-tested materials for controlled in vitro laboratory research."
         },
         {
@@ -945,7 +2364,87 @@
             "@type": "ImageObject",
             "url": "https://purehealthpeptidesshop.com/assets/logo.svg"
           },
-          "email": "info@purehealthpeptides.com",
+          "email": "info@purehealthpeptidesshop.com",
+          "hasMerchantReturnPolicy": {
+            "@type": "MerchantReturnPolicy",
+            "merchantReturnLink": "https://purehealthpeptidesshop.com/refund-policy/"
+          },
+          "hasShippingService": {
+            "@type": "ShippingService",
+            "@id": "https://purehealthpeptidesshop.com/shipping-policy/#us-shipping",
+            "name": "U.S. standard shipping",
+            "url": "https://purehealthpeptidesshop.com/shipping-policy/",
+            "description": "$10.99 shipping; free at $175 or more after product discounts. Estimated transit 2-3 business days after processing.",
+            "shippingConditions": [
+              {
+                "@type": "ShippingConditions",
+                "shippingDestination": {
+                  "@type": "DefinedRegion",
+                  "addressCountry": "US"
+                },
+                "orderValue": {
+                  "@type": "MonetaryAmount",
+                  "minValue": 0,
+                  "maxValue": 174.99,
+                  "currency": "USD"
+                },
+                "shippingRate": {
+                  "@type": "MonetaryAmount",
+                  "value": 10.99,
+                  "currency": "USD"
+                },
+                "transitTime": {
+                  "@type": "ServicePeriod",
+                  "duration": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 2,
+                    "maxValue": 3,
+                    "unitCode": "DAY"
+                  },
+                  "businessDays": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                  ]
+                }
+              },
+              {
+                "@type": "ShippingConditions",
+                "shippingDestination": {
+                  "@type": "DefinedRegion",
+                  "addressCountry": "US"
+                },
+                "orderValue": {
+                  "@type": "MonetaryAmount",
+                  "minValue": 175,
+                  "currency": "USD"
+                },
+                "shippingRate": {
+                  "@type": "MonetaryAmount",
+                  "value": 0,
+                  "currency": "USD"
+                },
+                "transitTime": {
+                  "@type": "ServicePeriod",
+                  "duration": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 2,
+                    "maxValue": 3,
+                    "unitCode": "DAY"
+                  },
+                  "businessDays": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                  ]
+                }
+              }
+            ]
+          },
           "description": "Supplier of independently batch-tested materials for controlled in vitro laboratory research."
         },
         {
@@ -1017,7 +2516,87 @@
             "@type": "ImageObject",
             "url": "https://purehealthpeptidesshop.com/assets/logo.svg"
           },
-          "email": "info@purehealthpeptides.com",
+          "email": "info@purehealthpeptidesshop.com",
+          "hasMerchantReturnPolicy": {
+            "@type": "MerchantReturnPolicy",
+            "merchantReturnLink": "https://purehealthpeptidesshop.com/refund-policy/"
+          },
+          "hasShippingService": {
+            "@type": "ShippingService",
+            "@id": "https://purehealthpeptidesshop.com/shipping-policy/#us-shipping",
+            "name": "U.S. standard shipping",
+            "url": "https://purehealthpeptidesshop.com/shipping-policy/",
+            "description": "$10.99 shipping; free at $175 or more after product discounts. Estimated transit 2-3 business days after processing.",
+            "shippingConditions": [
+              {
+                "@type": "ShippingConditions",
+                "shippingDestination": {
+                  "@type": "DefinedRegion",
+                  "addressCountry": "US"
+                },
+                "orderValue": {
+                  "@type": "MonetaryAmount",
+                  "minValue": 0,
+                  "maxValue": 174.99,
+                  "currency": "USD"
+                },
+                "shippingRate": {
+                  "@type": "MonetaryAmount",
+                  "value": 10.99,
+                  "currency": "USD"
+                },
+                "transitTime": {
+                  "@type": "ServicePeriod",
+                  "duration": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 2,
+                    "maxValue": 3,
+                    "unitCode": "DAY"
+                  },
+                  "businessDays": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                  ]
+                }
+              },
+              {
+                "@type": "ShippingConditions",
+                "shippingDestination": {
+                  "@type": "DefinedRegion",
+                  "addressCountry": "US"
+                },
+                "orderValue": {
+                  "@type": "MonetaryAmount",
+                  "minValue": 175,
+                  "currency": "USD"
+                },
+                "shippingRate": {
+                  "@type": "MonetaryAmount",
+                  "value": 0,
+                  "currency": "USD"
+                },
+                "transitTime": {
+                  "@type": "ServicePeriod",
+                  "duration": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 2,
+                    "maxValue": 3,
+                    "unitCode": "DAY"
+                  },
+                  "businessDays": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                  ]
+                }
+              }
+            ]
+          },
           "description": "Supplier of independently batch-tested materials for controlled in vitro laboratory research."
         },
         {
@@ -1089,7 +2668,87 @@
             "@type": "ImageObject",
             "url": "https://purehealthpeptidesshop.com/assets/logo.svg"
           },
-          "email": "info@purehealthpeptides.com",
+          "email": "info@purehealthpeptidesshop.com",
+          "hasMerchantReturnPolicy": {
+            "@type": "MerchantReturnPolicy",
+            "merchantReturnLink": "https://purehealthpeptidesshop.com/refund-policy/"
+          },
+          "hasShippingService": {
+            "@type": "ShippingService",
+            "@id": "https://purehealthpeptidesshop.com/shipping-policy/#us-shipping",
+            "name": "U.S. standard shipping",
+            "url": "https://purehealthpeptidesshop.com/shipping-policy/",
+            "description": "$10.99 shipping; free at $175 or more after product discounts. Estimated transit 2-3 business days after processing.",
+            "shippingConditions": [
+              {
+                "@type": "ShippingConditions",
+                "shippingDestination": {
+                  "@type": "DefinedRegion",
+                  "addressCountry": "US"
+                },
+                "orderValue": {
+                  "@type": "MonetaryAmount",
+                  "minValue": 0,
+                  "maxValue": 174.99,
+                  "currency": "USD"
+                },
+                "shippingRate": {
+                  "@type": "MonetaryAmount",
+                  "value": 10.99,
+                  "currency": "USD"
+                },
+                "transitTime": {
+                  "@type": "ServicePeriod",
+                  "duration": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 2,
+                    "maxValue": 3,
+                    "unitCode": "DAY"
+                  },
+                  "businessDays": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                  ]
+                }
+              },
+              {
+                "@type": "ShippingConditions",
+                "shippingDestination": {
+                  "@type": "DefinedRegion",
+                  "addressCountry": "US"
+                },
+                "orderValue": {
+                  "@type": "MonetaryAmount",
+                  "minValue": 175,
+                  "currency": "USD"
+                },
+                "shippingRate": {
+                  "@type": "MonetaryAmount",
+                  "value": 0,
+                  "currency": "USD"
+                },
+                "transitTime": {
+                  "@type": "ServicePeriod",
+                  "duration": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 2,
+                    "maxValue": 3,
+                    "unitCode": "DAY"
+                  },
+                  "businessDays": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                  ]
+                }
+              }
+            ]
+          },
           "description": "Supplier of independently batch-tested materials for controlled in vitro laboratory research."
         },
         {
@@ -1161,7 +2820,87 @@
             "@type": "ImageObject",
             "url": "https://purehealthpeptidesshop.com/assets/logo.svg"
           },
-          "email": "info@purehealthpeptides.com",
+          "email": "info@purehealthpeptidesshop.com",
+          "hasMerchantReturnPolicy": {
+            "@type": "MerchantReturnPolicy",
+            "merchantReturnLink": "https://purehealthpeptidesshop.com/refund-policy/"
+          },
+          "hasShippingService": {
+            "@type": "ShippingService",
+            "@id": "https://purehealthpeptidesshop.com/shipping-policy/#us-shipping",
+            "name": "U.S. standard shipping",
+            "url": "https://purehealthpeptidesshop.com/shipping-policy/",
+            "description": "$10.99 shipping; free at $175 or more after product discounts. Estimated transit 2-3 business days after processing.",
+            "shippingConditions": [
+              {
+                "@type": "ShippingConditions",
+                "shippingDestination": {
+                  "@type": "DefinedRegion",
+                  "addressCountry": "US"
+                },
+                "orderValue": {
+                  "@type": "MonetaryAmount",
+                  "minValue": 0,
+                  "maxValue": 174.99,
+                  "currency": "USD"
+                },
+                "shippingRate": {
+                  "@type": "MonetaryAmount",
+                  "value": 10.99,
+                  "currency": "USD"
+                },
+                "transitTime": {
+                  "@type": "ServicePeriod",
+                  "duration": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 2,
+                    "maxValue": 3,
+                    "unitCode": "DAY"
+                  },
+                  "businessDays": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                  ]
+                }
+              },
+              {
+                "@type": "ShippingConditions",
+                "shippingDestination": {
+                  "@type": "DefinedRegion",
+                  "addressCountry": "US"
+                },
+                "orderValue": {
+                  "@type": "MonetaryAmount",
+                  "minValue": 175,
+                  "currency": "USD"
+                },
+                "shippingRate": {
+                  "@type": "MonetaryAmount",
+                  "value": 0,
+                  "currency": "USD"
+                },
+                "transitTime": {
+                  "@type": "ServicePeriod",
+                  "duration": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 2,
+                    "maxValue": 3,
+                    "unitCode": "DAY"
+                  },
+                  "businessDays": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                  ]
+                }
+              }
+            ]
+          },
           "description": "Supplier of independently batch-tested materials for controlled in vitro laboratory research."
         },
         {
@@ -1215,8 +2954,8 @@
   },
   "/shipping-policy/": {
     "path": "/shipping-policy/",
-    "title": "Shipping Policy | Pure Health Peptides",
-    "description": "Review Pure Health Peptides shipping service areas, rates, timing, tracking, and damaged-shipment procedures.",
+    "title": "U.S. Shipping Policy | Rates & Delivery | Pure Health Peptides",
+    "description": "U.S. shipping is $10.99, free on orders of $175 or more after discounts. Review estimated 2-3 business day transit, tracking, and shipment support.",
     "kind": "page",
     "indexable": true,
     "image": "https://purehealthpeptidesshop.com/assets/hero-vials.png",
@@ -1233,7 +2972,87 @@
             "@type": "ImageObject",
             "url": "https://purehealthpeptidesshop.com/assets/logo.svg"
           },
-          "email": "info@purehealthpeptides.com",
+          "email": "info@purehealthpeptidesshop.com",
+          "hasMerchantReturnPolicy": {
+            "@type": "MerchantReturnPolicy",
+            "merchantReturnLink": "https://purehealthpeptidesshop.com/refund-policy/"
+          },
+          "hasShippingService": {
+            "@type": "ShippingService",
+            "@id": "https://purehealthpeptidesshop.com/shipping-policy/#us-shipping",
+            "name": "U.S. standard shipping",
+            "url": "https://purehealthpeptidesshop.com/shipping-policy/",
+            "description": "$10.99 shipping; free at $175 or more after product discounts. Estimated transit 2-3 business days after processing.",
+            "shippingConditions": [
+              {
+                "@type": "ShippingConditions",
+                "shippingDestination": {
+                  "@type": "DefinedRegion",
+                  "addressCountry": "US"
+                },
+                "orderValue": {
+                  "@type": "MonetaryAmount",
+                  "minValue": 0,
+                  "maxValue": 174.99,
+                  "currency": "USD"
+                },
+                "shippingRate": {
+                  "@type": "MonetaryAmount",
+                  "value": 10.99,
+                  "currency": "USD"
+                },
+                "transitTime": {
+                  "@type": "ServicePeriod",
+                  "duration": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 2,
+                    "maxValue": 3,
+                    "unitCode": "DAY"
+                  },
+                  "businessDays": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                  ]
+                }
+              },
+              {
+                "@type": "ShippingConditions",
+                "shippingDestination": {
+                  "@type": "DefinedRegion",
+                  "addressCountry": "US"
+                },
+                "orderValue": {
+                  "@type": "MonetaryAmount",
+                  "minValue": 175,
+                  "currency": "USD"
+                },
+                "shippingRate": {
+                  "@type": "MonetaryAmount",
+                  "value": 0,
+                  "currency": "USD"
+                },
+                "transitTime": {
+                  "@type": "ServicePeriod",
+                  "duration": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 2,
+                    "maxValue": 3,
+                    "unitCode": "DAY"
+                  },
+                  "businessDays": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                  ]
+                }
+              }
+            ]
+          },
           "description": "Supplier of independently batch-tested materials for controlled in vitro laboratory research."
         },
         {
@@ -1250,8 +3069,8 @@
           "@type": "WebPage",
           "@id": "https://purehealthpeptidesshop.com/shipping-policy/#webpage",
           "url": "https://purehealthpeptidesshop.com/shipping-policy/",
-          "name": "Shipping Policy | Pure Health Peptides",
-          "description": "Review Pure Health Peptides shipping service areas, rates, timing, tracking, and damaged-shipment procedures.",
+          "name": "U.S. Shipping Policy | Rates & Delivery | Pure Health Peptides",
+          "description": "U.S. shipping is $10.99, free on orders of $175 or more after discounts. Review estimated 2-3 business day transit, tracking, and shipment support.",
           "isPartOf": {
             "@id": "https://purehealthpeptidesshop.com/#website"
           },
@@ -1277,7 +3096,7 @@
             {
               "@type": "ListItem",
               "position": 2,
-              "name": "Shipping Policy",
+              "name": "U.S. Shipping Policy",
               "item": "https://purehealthpeptidesshop.com/shipping-policy/"
             }
           ]
@@ -1305,7 +3124,87 @@
             "@type": "ImageObject",
             "url": "https://purehealthpeptidesshop.com/assets/logo.svg"
           },
-          "email": "info@purehealthpeptides.com",
+          "email": "info@purehealthpeptidesshop.com",
+          "hasMerchantReturnPolicy": {
+            "@type": "MerchantReturnPolicy",
+            "merchantReturnLink": "https://purehealthpeptidesshop.com/refund-policy/"
+          },
+          "hasShippingService": {
+            "@type": "ShippingService",
+            "@id": "https://purehealthpeptidesshop.com/shipping-policy/#us-shipping",
+            "name": "U.S. standard shipping",
+            "url": "https://purehealthpeptidesshop.com/shipping-policy/",
+            "description": "$10.99 shipping; free at $175 or more after product discounts. Estimated transit 2-3 business days after processing.",
+            "shippingConditions": [
+              {
+                "@type": "ShippingConditions",
+                "shippingDestination": {
+                  "@type": "DefinedRegion",
+                  "addressCountry": "US"
+                },
+                "orderValue": {
+                  "@type": "MonetaryAmount",
+                  "minValue": 0,
+                  "maxValue": 174.99,
+                  "currency": "USD"
+                },
+                "shippingRate": {
+                  "@type": "MonetaryAmount",
+                  "value": 10.99,
+                  "currency": "USD"
+                },
+                "transitTime": {
+                  "@type": "ServicePeriod",
+                  "duration": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 2,
+                    "maxValue": 3,
+                    "unitCode": "DAY"
+                  },
+                  "businessDays": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                  ]
+                }
+              },
+              {
+                "@type": "ShippingConditions",
+                "shippingDestination": {
+                  "@type": "DefinedRegion",
+                  "addressCountry": "US"
+                },
+                "orderValue": {
+                  "@type": "MonetaryAmount",
+                  "minValue": 175,
+                  "currency": "USD"
+                },
+                "shippingRate": {
+                  "@type": "MonetaryAmount",
+                  "value": 0,
+                  "currency": "USD"
+                },
+                "transitTime": {
+                  "@type": "ServicePeriod",
+                  "duration": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 2,
+                    "maxValue": 3,
+                    "unitCode": "DAY"
+                  },
+                  "businessDays": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                  ]
+                }
+              }
+            ]
+          },
           "description": "Supplier of independently batch-tested materials for controlled in vitro laboratory research."
         },
         {
@@ -1377,7 +3276,87 @@
             "@type": "ImageObject",
             "url": "https://purehealthpeptidesshop.com/assets/logo.svg"
           },
-          "email": "info@purehealthpeptides.com",
+          "email": "info@purehealthpeptidesshop.com",
+          "hasMerchantReturnPolicy": {
+            "@type": "MerchantReturnPolicy",
+            "merchantReturnLink": "https://purehealthpeptidesshop.com/refund-policy/"
+          },
+          "hasShippingService": {
+            "@type": "ShippingService",
+            "@id": "https://purehealthpeptidesshop.com/shipping-policy/#us-shipping",
+            "name": "U.S. standard shipping",
+            "url": "https://purehealthpeptidesshop.com/shipping-policy/",
+            "description": "$10.99 shipping; free at $175 or more after product discounts. Estimated transit 2-3 business days after processing.",
+            "shippingConditions": [
+              {
+                "@type": "ShippingConditions",
+                "shippingDestination": {
+                  "@type": "DefinedRegion",
+                  "addressCountry": "US"
+                },
+                "orderValue": {
+                  "@type": "MonetaryAmount",
+                  "minValue": 0,
+                  "maxValue": 174.99,
+                  "currency": "USD"
+                },
+                "shippingRate": {
+                  "@type": "MonetaryAmount",
+                  "value": 10.99,
+                  "currency": "USD"
+                },
+                "transitTime": {
+                  "@type": "ServicePeriod",
+                  "duration": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 2,
+                    "maxValue": 3,
+                    "unitCode": "DAY"
+                  },
+                  "businessDays": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                  ]
+                }
+              },
+              {
+                "@type": "ShippingConditions",
+                "shippingDestination": {
+                  "@type": "DefinedRegion",
+                  "addressCountry": "US"
+                },
+                "orderValue": {
+                  "@type": "MonetaryAmount",
+                  "minValue": 175,
+                  "currency": "USD"
+                },
+                "shippingRate": {
+                  "@type": "MonetaryAmount",
+                  "value": 0,
+                  "currency": "USD"
+                },
+                "transitTime": {
+                  "@type": "ServicePeriod",
+                  "duration": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 2,
+                    "maxValue": 3,
+                    "unitCode": "DAY"
+                  },
+                  "businessDays": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                  ]
+                }
+              }
+            ]
+          },
           "description": "Supplier of independently batch-tested materials for controlled in vitro laboratory research."
         },
         {
@@ -1449,7 +3428,87 @@
             "@type": "ImageObject",
             "url": "https://purehealthpeptidesshop.com/assets/logo.svg"
           },
-          "email": "info@purehealthpeptides.com",
+          "email": "info@purehealthpeptidesshop.com",
+          "hasMerchantReturnPolicy": {
+            "@type": "MerchantReturnPolicy",
+            "merchantReturnLink": "https://purehealthpeptidesshop.com/refund-policy/"
+          },
+          "hasShippingService": {
+            "@type": "ShippingService",
+            "@id": "https://purehealthpeptidesshop.com/shipping-policy/#us-shipping",
+            "name": "U.S. standard shipping",
+            "url": "https://purehealthpeptidesshop.com/shipping-policy/",
+            "description": "$10.99 shipping; free at $175 or more after product discounts. Estimated transit 2-3 business days after processing.",
+            "shippingConditions": [
+              {
+                "@type": "ShippingConditions",
+                "shippingDestination": {
+                  "@type": "DefinedRegion",
+                  "addressCountry": "US"
+                },
+                "orderValue": {
+                  "@type": "MonetaryAmount",
+                  "minValue": 0,
+                  "maxValue": 174.99,
+                  "currency": "USD"
+                },
+                "shippingRate": {
+                  "@type": "MonetaryAmount",
+                  "value": 10.99,
+                  "currency": "USD"
+                },
+                "transitTime": {
+                  "@type": "ServicePeriod",
+                  "duration": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 2,
+                    "maxValue": 3,
+                    "unitCode": "DAY"
+                  },
+                  "businessDays": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                  ]
+                }
+              },
+              {
+                "@type": "ShippingConditions",
+                "shippingDestination": {
+                  "@type": "DefinedRegion",
+                  "addressCountry": "US"
+                },
+                "orderValue": {
+                  "@type": "MonetaryAmount",
+                  "minValue": 175,
+                  "currency": "USD"
+                },
+                "shippingRate": {
+                  "@type": "MonetaryAmount",
+                  "value": 0,
+                  "currency": "USD"
+                },
+                "transitTime": {
+                  "@type": "ServicePeriod",
+                  "duration": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 2,
+                    "maxValue": 3,
+                    "unitCode": "DAY"
+                  },
+                  "businessDays": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                  ]
+                }
+              }
+            ]
+          },
           "description": "Supplier of independently batch-tested materials for controlled in vitro laboratory research."
         },
         {
@@ -1521,7 +3580,87 @@
             "@type": "ImageObject",
             "url": "https://purehealthpeptidesshop.com/assets/logo.svg"
           },
-          "email": "info@purehealthpeptides.com",
+          "email": "info@purehealthpeptidesshop.com",
+          "hasMerchantReturnPolicy": {
+            "@type": "MerchantReturnPolicy",
+            "merchantReturnLink": "https://purehealthpeptidesshop.com/refund-policy/"
+          },
+          "hasShippingService": {
+            "@type": "ShippingService",
+            "@id": "https://purehealthpeptidesshop.com/shipping-policy/#us-shipping",
+            "name": "U.S. standard shipping",
+            "url": "https://purehealthpeptidesshop.com/shipping-policy/",
+            "description": "$10.99 shipping; free at $175 or more after product discounts. Estimated transit 2-3 business days after processing.",
+            "shippingConditions": [
+              {
+                "@type": "ShippingConditions",
+                "shippingDestination": {
+                  "@type": "DefinedRegion",
+                  "addressCountry": "US"
+                },
+                "orderValue": {
+                  "@type": "MonetaryAmount",
+                  "minValue": 0,
+                  "maxValue": 174.99,
+                  "currency": "USD"
+                },
+                "shippingRate": {
+                  "@type": "MonetaryAmount",
+                  "value": 10.99,
+                  "currency": "USD"
+                },
+                "transitTime": {
+                  "@type": "ServicePeriod",
+                  "duration": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 2,
+                    "maxValue": 3,
+                    "unitCode": "DAY"
+                  },
+                  "businessDays": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                  ]
+                }
+              },
+              {
+                "@type": "ShippingConditions",
+                "shippingDestination": {
+                  "@type": "DefinedRegion",
+                  "addressCountry": "US"
+                },
+                "orderValue": {
+                  "@type": "MonetaryAmount",
+                  "minValue": 175,
+                  "currency": "USD"
+                },
+                "shippingRate": {
+                  "@type": "MonetaryAmount",
+                  "value": 0,
+                  "currency": "USD"
+                },
+                "transitTime": {
+                  "@type": "ServicePeriod",
+                  "duration": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 2,
+                    "maxValue": 3,
+                    "unitCode": "DAY"
+                  },
+                  "businessDays": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                  ]
+                }
+              }
+            ]
+          },
           "description": "Supplier of independently batch-tested materials for controlled in vitro laboratory research."
         },
         {
@@ -1593,7 +3732,87 @@
             "@type": "ImageObject",
             "url": "https://purehealthpeptidesshop.com/assets/logo.svg"
           },
-          "email": "info@purehealthpeptides.com",
+          "email": "info@purehealthpeptidesshop.com",
+          "hasMerchantReturnPolicy": {
+            "@type": "MerchantReturnPolicy",
+            "merchantReturnLink": "https://purehealthpeptidesshop.com/refund-policy/"
+          },
+          "hasShippingService": {
+            "@type": "ShippingService",
+            "@id": "https://purehealthpeptidesshop.com/shipping-policy/#us-shipping",
+            "name": "U.S. standard shipping",
+            "url": "https://purehealthpeptidesshop.com/shipping-policy/",
+            "description": "$10.99 shipping; free at $175 or more after product discounts. Estimated transit 2-3 business days after processing.",
+            "shippingConditions": [
+              {
+                "@type": "ShippingConditions",
+                "shippingDestination": {
+                  "@type": "DefinedRegion",
+                  "addressCountry": "US"
+                },
+                "orderValue": {
+                  "@type": "MonetaryAmount",
+                  "minValue": 0,
+                  "maxValue": 174.99,
+                  "currency": "USD"
+                },
+                "shippingRate": {
+                  "@type": "MonetaryAmount",
+                  "value": 10.99,
+                  "currency": "USD"
+                },
+                "transitTime": {
+                  "@type": "ServicePeriod",
+                  "duration": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 2,
+                    "maxValue": 3,
+                    "unitCode": "DAY"
+                  },
+                  "businessDays": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                  ]
+                }
+              },
+              {
+                "@type": "ShippingConditions",
+                "shippingDestination": {
+                  "@type": "DefinedRegion",
+                  "addressCountry": "US"
+                },
+                "orderValue": {
+                  "@type": "MonetaryAmount",
+                  "minValue": 175,
+                  "currency": "USD"
+                },
+                "shippingRate": {
+                  "@type": "MonetaryAmount",
+                  "value": 0,
+                  "currency": "USD"
+                },
+                "transitTime": {
+                  "@type": "ServicePeriod",
+                  "duration": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 2,
+                    "maxValue": 3,
+                    "unitCode": "DAY"
+                  },
+                  "businessDays": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                  ]
+                }
+              }
+            ]
+          },
           "description": "Supplier of independently batch-tested materials for controlled in vitro laboratory research."
         },
         {
@@ -1665,7 +3884,87 @@
             "@type": "ImageObject",
             "url": "https://purehealthpeptidesshop.com/assets/logo.svg"
           },
-          "email": "info@purehealthpeptides.com",
+          "email": "info@purehealthpeptidesshop.com",
+          "hasMerchantReturnPolicy": {
+            "@type": "MerchantReturnPolicy",
+            "merchantReturnLink": "https://purehealthpeptidesshop.com/refund-policy/"
+          },
+          "hasShippingService": {
+            "@type": "ShippingService",
+            "@id": "https://purehealthpeptidesshop.com/shipping-policy/#us-shipping",
+            "name": "U.S. standard shipping",
+            "url": "https://purehealthpeptidesshop.com/shipping-policy/",
+            "description": "$10.99 shipping; free at $175 or more after product discounts. Estimated transit 2-3 business days after processing.",
+            "shippingConditions": [
+              {
+                "@type": "ShippingConditions",
+                "shippingDestination": {
+                  "@type": "DefinedRegion",
+                  "addressCountry": "US"
+                },
+                "orderValue": {
+                  "@type": "MonetaryAmount",
+                  "minValue": 0,
+                  "maxValue": 174.99,
+                  "currency": "USD"
+                },
+                "shippingRate": {
+                  "@type": "MonetaryAmount",
+                  "value": 10.99,
+                  "currency": "USD"
+                },
+                "transitTime": {
+                  "@type": "ServicePeriod",
+                  "duration": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 2,
+                    "maxValue": 3,
+                    "unitCode": "DAY"
+                  },
+                  "businessDays": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                  ]
+                }
+              },
+              {
+                "@type": "ShippingConditions",
+                "shippingDestination": {
+                  "@type": "DefinedRegion",
+                  "addressCountry": "US"
+                },
+                "orderValue": {
+                  "@type": "MonetaryAmount",
+                  "minValue": 175,
+                  "currency": "USD"
+                },
+                "shippingRate": {
+                  "@type": "MonetaryAmount",
+                  "value": 0,
+                  "currency": "USD"
+                },
+                "transitTime": {
+                  "@type": "ServicePeriod",
+                  "duration": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 2,
+                    "maxValue": 3,
+                    "unitCode": "DAY"
+                  },
+                  "businessDays": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                  ]
+                }
+              }
+            ]
+          },
           "description": "Supplier of independently batch-tested materials for controlled in vitro laboratory research."
         },
         {
@@ -1737,7 +4036,87 @@
             "@type": "ImageObject",
             "url": "https://purehealthpeptidesshop.com/assets/logo.svg"
           },
-          "email": "info@purehealthpeptides.com",
+          "email": "info@purehealthpeptidesshop.com",
+          "hasMerchantReturnPolicy": {
+            "@type": "MerchantReturnPolicy",
+            "merchantReturnLink": "https://purehealthpeptidesshop.com/refund-policy/"
+          },
+          "hasShippingService": {
+            "@type": "ShippingService",
+            "@id": "https://purehealthpeptidesshop.com/shipping-policy/#us-shipping",
+            "name": "U.S. standard shipping",
+            "url": "https://purehealthpeptidesshop.com/shipping-policy/",
+            "description": "$10.99 shipping; free at $175 or more after product discounts. Estimated transit 2-3 business days after processing.",
+            "shippingConditions": [
+              {
+                "@type": "ShippingConditions",
+                "shippingDestination": {
+                  "@type": "DefinedRegion",
+                  "addressCountry": "US"
+                },
+                "orderValue": {
+                  "@type": "MonetaryAmount",
+                  "minValue": 0,
+                  "maxValue": 174.99,
+                  "currency": "USD"
+                },
+                "shippingRate": {
+                  "@type": "MonetaryAmount",
+                  "value": 10.99,
+                  "currency": "USD"
+                },
+                "transitTime": {
+                  "@type": "ServicePeriod",
+                  "duration": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 2,
+                    "maxValue": 3,
+                    "unitCode": "DAY"
+                  },
+                  "businessDays": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                  ]
+                }
+              },
+              {
+                "@type": "ShippingConditions",
+                "shippingDestination": {
+                  "@type": "DefinedRegion",
+                  "addressCountry": "US"
+                },
+                "orderValue": {
+                  "@type": "MonetaryAmount",
+                  "minValue": 175,
+                  "currency": "USD"
+                },
+                "shippingRate": {
+                  "@type": "MonetaryAmount",
+                  "value": 0,
+                  "currency": "USD"
+                },
+                "transitTime": {
+                  "@type": "ServicePeriod",
+                  "duration": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 2,
+                    "maxValue": 3,
+                    "unitCode": "DAY"
+                  },
+                  "businessDays": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                  ]
+                }
+              }
+            ]
+          },
           "description": "Supplier of independently batch-tested materials for controlled in vitro laboratory research."
         },
         {
@@ -1809,7 +4188,87 @@
             "@type": "ImageObject",
             "url": "https://purehealthpeptidesshop.com/assets/logo.svg"
           },
-          "email": "info@purehealthpeptides.com",
+          "email": "info@purehealthpeptidesshop.com",
+          "hasMerchantReturnPolicy": {
+            "@type": "MerchantReturnPolicy",
+            "merchantReturnLink": "https://purehealthpeptidesshop.com/refund-policy/"
+          },
+          "hasShippingService": {
+            "@type": "ShippingService",
+            "@id": "https://purehealthpeptidesshop.com/shipping-policy/#us-shipping",
+            "name": "U.S. standard shipping",
+            "url": "https://purehealthpeptidesshop.com/shipping-policy/",
+            "description": "$10.99 shipping; free at $175 or more after product discounts. Estimated transit 2-3 business days after processing.",
+            "shippingConditions": [
+              {
+                "@type": "ShippingConditions",
+                "shippingDestination": {
+                  "@type": "DefinedRegion",
+                  "addressCountry": "US"
+                },
+                "orderValue": {
+                  "@type": "MonetaryAmount",
+                  "minValue": 0,
+                  "maxValue": 174.99,
+                  "currency": "USD"
+                },
+                "shippingRate": {
+                  "@type": "MonetaryAmount",
+                  "value": 10.99,
+                  "currency": "USD"
+                },
+                "transitTime": {
+                  "@type": "ServicePeriod",
+                  "duration": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 2,
+                    "maxValue": 3,
+                    "unitCode": "DAY"
+                  },
+                  "businessDays": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                  ]
+                }
+              },
+              {
+                "@type": "ShippingConditions",
+                "shippingDestination": {
+                  "@type": "DefinedRegion",
+                  "addressCountry": "US"
+                },
+                "orderValue": {
+                  "@type": "MonetaryAmount",
+                  "minValue": 175,
+                  "currency": "USD"
+                },
+                "shippingRate": {
+                  "@type": "MonetaryAmount",
+                  "value": 0,
+                  "currency": "USD"
+                },
+                "transitTime": {
+                  "@type": "ServicePeriod",
+                  "duration": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 2,
+                    "maxValue": 3,
+                    "unitCode": "DAY"
+                  },
+                  "businessDays": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                  ]
+                }
+              }
+            ]
+          },
           "description": "Supplier of independently batch-tested materials for controlled in vitro laboratory research."
         },
         {
@@ -1881,7 +4340,87 @@
             "@type": "ImageObject",
             "url": "https://purehealthpeptidesshop.com/assets/logo.svg"
           },
-          "email": "info@purehealthpeptides.com",
+          "email": "info@purehealthpeptidesshop.com",
+          "hasMerchantReturnPolicy": {
+            "@type": "MerchantReturnPolicy",
+            "merchantReturnLink": "https://purehealthpeptidesshop.com/refund-policy/"
+          },
+          "hasShippingService": {
+            "@type": "ShippingService",
+            "@id": "https://purehealthpeptidesshop.com/shipping-policy/#us-shipping",
+            "name": "U.S. standard shipping",
+            "url": "https://purehealthpeptidesshop.com/shipping-policy/",
+            "description": "$10.99 shipping; free at $175 or more after product discounts. Estimated transit 2-3 business days after processing.",
+            "shippingConditions": [
+              {
+                "@type": "ShippingConditions",
+                "shippingDestination": {
+                  "@type": "DefinedRegion",
+                  "addressCountry": "US"
+                },
+                "orderValue": {
+                  "@type": "MonetaryAmount",
+                  "minValue": 0,
+                  "maxValue": 174.99,
+                  "currency": "USD"
+                },
+                "shippingRate": {
+                  "@type": "MonetaryAmount",
+                  "value": 10.99,
+                  "currency": "USD"
+                },
+                "transitTime": {
+                  "@type": "ServicePeriod",
+                  "duration": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 2,
+                    "maxValue": 3,
+                    "unitCode": "DAY"
+                  },
+                  "businessDays": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                  ]
+                }
+              },
+              {
+                "@type": "ShippingConditions",
+                "shippingDestination": {
+                  "@type": "DefinedRegion",
+                  "addressCountry": "US"
+                },
+                "orderValue": {
+                  "@type": "MonetaryAmount",
+                  "minValue": 175,
+                  "currency": "USD"
+                },
+                "shippingRate": {
+                  "@type": "MonetaryAmount",
+                  "value": 0,
+                  "currency": "USD"
+                },
+                "transitTime": {
+                  "@type": "ServicePeriod",
+                  "duration": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 2,
+                    "maxValue": 3,
+                    "unitCode": "DAY"
+                  },
+                  "businessDays": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                  ]
+                }
+              }
+            ]
+          },
           "description": "Supplier of independently batch-tested materials for controlled in vitro laboratory research."
         },
         {
@@ -1953,7 +4492,87 @@
             "@type": "ImageObject",
             "url": "https://purehealthpeptidesshop.com/assets/logo.svg"
           },
-          "email": "info@purehealthpeptides.com",
+          "email": "info@purehealthpeptidesshop.com",
+          "hasMerchantReturnPolicy": {
+            "@type": "MerchantReturnPolicy",
+            "merchantReturnLink": "https://purehealthpeptidesshop.com/refund-policy/"
+          },
+          "hasShippingService": {
+            "@type": "ShippingService",
+            "@id": "https://purehealthpeptidesshop.com/shipping-policy/#us-shipping",
+            "name": "U.S. standard shipping",
+            "url": "https://purehealthpeptidesshop.com/shipping-policy/",
+            "description": "$10.99 shipping; free at $175 or more after product discounts. Estimated transit 2-3 business days after processing.",
+            "shippingConditions": [
+              {
+                "@type": "ShippingConditions",
+                "shippingDestination": {
+                  "@type": "DefinedRegion",
+                  "addressCountry": "US"
+                },
+                "orderValue": {
+                  "@type": "MonetaryAmount",
+                  "minValue": 0,
+                  "maxValue": 174.99,
+                  "currency": "USD"
+                },
+                "shippingRate": {
+                  "@type": "MonetaryAmount",
+                  "value": 10.99,
+                  "currency": "USD"
+                },
+                "transitTime": {
+                  "@type": "ServicePeriod",
+                  "duration": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 2,
+                    "maxValue": 3,
+                    "unitCode": "DAY"
+                  },
+                  "businessDays": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                  ]
+                }
+              },
+              {
+                "@type": "ShippingConditions",
+                "shippingDestination": {
+                  "@type": "DefinedRegion",
+                  "addressCountry": "US"
+                },
+                "orderValue": {
+                  "@type": "MonetaryAmount",
+                  "minValue": 175,
+                  "currency": "USD"
+                },
+                "shippingRate": {
+                  "@type": "MonetaryAmount",
+                  "value": 0,
+                  "currency": "USD"
+                },
+                "transitTime": {
+                  "@type": "ServicePeriod",
+                  "duration": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 2,
+                    "maxValue": 3,
+                    "unitCode": "DAY"
+                  },
+                  "businessDays": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                  ]
+                }
+              }
+            ]
+          },
           "description": "Supplier of independently batch-tested materials for controlled in vitro laboratory research."
         },
         {
@@ -2025,7 +4644,87 @@
             "@type": "ImageObject",
             "url": "https://purehealthpeptidesshop.com/assets/logo.svg"
           },
-          "email": "info@purehealthpeptides.com",
+          "email": "info@purehealthpeptidesshop.com",
+          "hasMerchantReturnPolicy": {
+            "@type": "MerchantReturnPolicy",
+            "merchantReturnLink": "https://purehealthpeptidesshop.com/refund-policy/"
+          },
+          "hasShippingService": {
+            "@type": "ShippingService",
+            "@id": "https://purehealthpeptidesshop.com/shipping-policy/#us-shipping",
+            "name": "U.S. standard shipping",
+            "url": "https://purehealthpeptidesshop.com/shipping-policy/",
+            "description": "$10.99 shipping; free at $175 or more after product discounts. Estimated transit 2-3 business days after processing.",
+            "shippingConditions": [
+              {
+                "@type": "ShippingConditions",
+                "shippingDestination": {
+                  "@type": "DefinedRegion",
+                  "addressCountry": "US"
+                },
+                "orderValue": {
+                  "@type": "MonetaryAmount",
+                  "minValue": 0,
+                  "maxValue": 174.99,
+                  "currency": "USD"
+                },
+                "shippingRate": {
+                  "@type": "MonetaryAmount",
+                  "value": 10.99,
+                  "currency": "USD"
+                },
+                "transitTime": {
+                  "@type": "ServicePeriod",
+                  "duration": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 2,
+                    "maxValue": 3,
+                    "unitCode": "DAY"
+                  },
+                  "businessDays": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                  ]
+                }
+              },
+              {
+                "@type": "ShippingConditions",
+                "shippingDestination": {
+                  "@type": "DefinedRegion",
+                  "addressCountry": "US"
+                },
+                "orderValue": {
+                  "@type": "MonetaryAmount",
+                  "minValue": 175,
+                  "currency": "USD"
+                },
+                "shippingRate": {
+                  "@type": "MonetaryAmount",
+                  "value": 0,
+                  "currency": "USD"
+                },
+                "transitTime": {
+                  "@type": "ServicePeriod",
+                  "duration": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 2,
+                    "maxValue": 3,
+                    "unitCode": "DAY"
+                  },
+                  "businessDays": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                  ]
+                }
+              }
+            ]
+          },
           "description": "Supplier of independently batch-tested materials for controlled in vitro laboratory research."
         },
         {
@@ -2097,7 +4796,87 @@
             "@type": "ImageObject",
             "url": "https://purehealthpeptidesshop.com/assets/logo.svg"
           },
-          "email": "info@purehealthpeptides.com",
+          "email": "info@purehealthpeptidesshop.com",
+          "hasMerchantReturnPolicy": {
+            "@type": "MerchantReturnPolicy",
+            "merchantReturnLink": "https://purehealthpeptidesshop.com/refund-policy/"
+          },
+          "hasShippingService": {
+            "@type": "ShippingService",
+            "@id": "https://purehealthpeptidesshop.com/shipping-policy/#us-shipping",
+            "name": "U.S. standard shipping",
+            "url": "https://purehealthpeptidesshop.com/shipping-policy/",
+            "description": "$10.99 shipping; free at $175 or more after product discounts. Estimated transit 2-3 business days after processing.",
+            "shippingConditions": [
+              {
+                "@type": "ShippingConditions",
+                "shippingDestination": {
+                  "@type": "DefinedRegion",
+                  "addressCountry": "US"
+                },
+                "orderValue": {
+                  "@type": "MonetaryAmount",
+                  "minValue": 0,
+                  "maxValue": 174.99,
+                  "currency": "USD"
+                },
+                "shippingRate": {
+                  "@type": "MonetaryAmount",
+                  "value": 10.99,
+                  "currency": "USD"
+                },
+                "transitTime": {
+                  "@type": "ServicePeriod",
+                  "duration": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 2,
+                    "maxValue": 3,
+                    "unitCode": "DAY"
+                  },
+                  "businessDays": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                  ]
+                }
+              },
+              {
+                "@type": "ShippingConditions",
+                "shippingDestination": {
+                  "@type": "DefinedRegion",
+                  "addressCountry": "US"
+                },
+                "orderValue": {
+                  "@type": "MonetaryAmount",
+                  "minValue": 175,
+                  "currency": "USD"
+                },
+                "shippingRate": {
+                  "@type": "MonetaryAmount",
+                  "value": 0,
+                  "currency": "USD"
+                },
+                "transitTime": {
+                  "@type": "ServicePeriod",
+                  "duration": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 2,
+                    "maxValue": 3,
+                    "unitCode": "DAY"
+                  },
+                  "businessDays": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                  ]
+                }
+              }
+            ]
+          },
           "description": "Supplier of independently batch-tested materials for controlled in vitro laboratory research."
         },
         {

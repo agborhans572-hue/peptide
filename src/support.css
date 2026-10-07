@@ -303,6 +303,18 @@
   gap: 14px;
 }
 
+.contact-content .contact-honeypot {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 .contact-content input,
 .contact-content textarea {
   min-height: 44px;

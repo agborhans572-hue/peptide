@@ -1,11 +1,11 @@
 import type { Handler } from '@netlify/functions'
 import type Stripe from 'stripe'
 import { z } from 'zod'
-import { catalogVersion, priceCart } from '../../server/pricing.ts'
-import { optionalActiveCustomer } from './_shared/customer-auth.ts'
-import { clientFingerprint, errorResponse, HttpError, json, parseJson, requireSameOrigin } from './_shared/http.ts'
-import { fingerprint, services } from './_shared/services.ts'
-import { cancelWooOrder, reserveWooOrder } from './_shared/woo-bridge.ts'
+import { catalogVersion, priceCart } from '../../server/pricing.js'
+import { optionalActiveCustomer } from './_shared/customer-auth.js'
+import { clientFingerprint, errorResponse, HttpError, json, parseJson, requireSameOrigin } from './_shared/http.js'
+import { fingerprint, services } from './_shared/services.js'
+import { cancelWooOrder, reserveWooOrder } from './_shared/woo-bridge.js'
 
 const checkoutRequest = z.object({
   checkoutAttemptId: z.string().uuid(),

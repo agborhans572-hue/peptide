@@ -1,11 +1,11 @@
 import { randomUUID } from 'node:crypto'
 import type { Handler } from '@netlify/functions'
 import type Stripe from 'stripe'
-import { processStripeEvent, retryStripeEvent } from './_shared/commerce-events.ts'
-import { cronSecret } from './_shared/env.ts'
-import { errorResponse, json } from './_shared/http.ts'
-import { services } from './_shared/services.ts'
-import { cancelWooOrder, getWooOrder } from './_shared/woo-bridge.ts'
+import { processStripeEvent, retryStripeEvent } from './_shared/commerce-events.js'
+import { cronSecret } from './_shared/env.js'
+import { errorResponse, json } from './_shared/http.js'
+import { services } from './_shared/services.js'
+import { cancelWooOrder, getWooOrder } from './_shared/woo-bridge.js'
 
 type StripeInboxRow = {
   payload: Stripe.Event

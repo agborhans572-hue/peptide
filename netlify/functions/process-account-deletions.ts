@@ -1,8 +1,8 @@
 import type { Handler } from '@netlify/functions'
 import { randomUUID } from 'node:crypto'
-import { cronSecret } from './_shared/env.ts'
-import { errorResponse, json } from './_shared/http.ts'
-import { services } from './_shared/services.ts'
+import { cronSecret } from './_shared/env.js'
+import { errorResponse, json } from './_shared/http.js'
+import { services } from './_shared/services.js'
 
 function authorized(header: string | undefined, secret: string) {
   return header === `Bearer ${secret}`

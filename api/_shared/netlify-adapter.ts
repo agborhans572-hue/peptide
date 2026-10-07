@@ -1,21 +1,8 @@
 import type { IncomingHttpHeaders, IncomingMessage, ServerResponse } from 'node:http'
+import type { Handler, HandlerContext, HandlerEvent } from '@netlify/functions'
 
 export type VercelRequest = IncomingMessage & { query?: Record<string, string | string[] | undefined> }
 export type VercelResponse = ServerResponse
-
-type NetlifyResponse = {
-  statusCode: number
-  headers?: Record<string, string | number | boolean>
-  body?: string
-}
-
-type NetlifyHandler = (event: {
-  httpMethod: string
-  headers: Record<string, string>
-  body: string | null
-  isBase64Encoded: boolean
-  queryStringParameters: Record<string, string> | null
-}) => Promise<NetlifyResponse>
 
 function normalizedHeaders(headers: IncomingHttpHeaders) {
   return Object.fromEntries(Object.entries(headers).map(([name, value]) => [name.toLowerCase(), Array.isArray(value) ? value.join(', ') : value || '']))
@@ -45,7 +32,7 @@ function queryParameters(request: VercelRequest, headers: Record<string, string>
   return Object.keys(parameters).length ? parameters : null
 }
 
-export async function serveNetlifyHandler(request: VercelRequest, response: VercelResponse, handler: NetlifyHandler) {
+export async function serveNetlifyHandler(request: VercelRequest, response: VercelResponse, handler: Handler) {
   const headers = normalizedHeaders(request.headers)
   let body: string
   try {
@@ -58,15 +45,49 @@ export async function serveNetlifyHandler(request: VercelRequest, response: Verc
     response.end(JSON.stringify({ message: 'Request body is too large.' }))
     return
   }
-  const result = await handler({
+  const url = new URL(request.url || '/', `https://${headers.host || 'localhost'}`)
+  const event: HandlerEvent = {
+    rawUrl: url.toString(),
+    rawQuery: url.search.slice(1),
+    path: url.pathname,
     httpMethod: request.method || 'GET',
     headers,
+    multiValueHeaders: Object.fromEntries(Object.entries(headers).map(([name, value]) => [name, [value]])),
     body,
     isBase64Encoded: false,
     queryStringParameters: queryParameters(request, headers),
-  })
+    multiValueQueryStringParameters: null,
+  }
+  const context = {
+    callbackWaitsForEmptyEventLoop: false,
+    functionName: 'vercel-adapter',
+    functionVersion: '1',
+    invokedFunctionArn: '',
+    memoryLimitInMB: '',
+    awsRequestId: '',
+    logGroupName: '',
+    logStreamName: '',
+    getRemainingTimeInMillis: () => 30_000,
+    done: () => undefined,
+    fail: (error: Error | string) => {
+      throw typeof error === 'string' ? new Error(error) : error
+    },
+    succeed: () => undefined,
+  } as HandlerContext
+  const result = await handler(event, context)
 
-  for (const [name, value] of Object.entries(result.headers || {})) response.setHeader(name, value)
+  if (!result) {
+    response.statusCode = 204
+    response.end()
+    return
+  }
+
+  for (const [name, value] of Object.entries(result.headers || {})) {
+    response.setHeader(name, typeof value === 'boolean' ? String(value) : value)
+  }
+  for (const [name, values] of Object.entries(result.multiValueHeaders || {})) {
+    response.setHeader(name, values.map(String))
+  }
   response.statusCode = result.statusCode
   response.end(result.body || '')
 }

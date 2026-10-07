@@ -1,5 +1,5 @@
 {
-  "version": "35892f640eb61e3b1419",
+  "version": "a3e2a55b345e160700d1",
   "source": {
     "shop": "https://purehealthpeptides.com/shop/",
     "productFeed": "https://purehealthpeptides.com/wp-json/wc/store/v1/products",
@@ -3560,7 +3560,7 @@
     },
     {
       "id": "vials-25727",
-      "name": "N-Acetyl Semx Amidate",
+      "name": "N-Acetyl Semax Amidate",
       "type": "vials",
       "price": 28,
       "displayPrice": "$28.00",
@@ -3576,7 +3576,7 @@
           "stockQuantity": 262,
           "maxQty": 262,
           "image": "/assets/product-details/gallery/N-Acetyl-Semax-Amidate-3cab0adbae79.jpg",
-          "imageAlt": "N-Acetyl Semx Amidate 5mg research product",
+          "imageAlt": "N-Acetyl Semax Amidate 5mg research product",
           "shippingWeightGrams": null,
           "packageDimensionsMm": {
             "length": null,
@@ -3600,14 +3600,14 @@
       "discountRule": 1,
       "date": "2026-01-23",
       "latestOrder": 1769126400000,
-      "productUrl": "https://purehealthpeptidesshop.com/product/n-acetyl-semx-amidate/",
+      "productUrl": "https://purehealthpeptidesshop.com/product/n-acetyl-semax-amidate/",
       "optionLabel": "weight",
       "sku": "WC-P-25727",
-      "slug": "n-acetyl-semx-amidate",
+      "slug": "n-acetyl-semax-amidate",
       "detailKey": "n-acetyl-semx-amidate",
       "currency": "USD",
       "priceCents": 2800,
-      "imageAlt": "N-Acetyl Semx Amidate research vials product"
+      "imageAlt": "N-Acetyl Semax Amidate research vials product"
     },
     {
       "id": "vials-451",

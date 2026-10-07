@@ -2,11 +2,7 @@ import { spawn } from 'node:child_process'
 import { once } from 'node:events'
 
 const server = spawn(process.execPath, [
-  'node_modules/vite/bin/vite.js',
-  'preview',
-  '--host', '127.0.0.1',
-  '--port', '4173',
-  '--strictPort',
+  'scripts/serve-built-site.mjs',
 ], { stdio: 'inherit' })
 
 async function waitForPreview() {

@@ -1,3 +1,4 @@
+import ResearchResources from './ResearchResources.jsx'
 import { useEffect, useMemo, useState } from 'react'
 import { RESEARCH_CATEGORIES, SHOP_TYPES } from './shopData.js'
 import { shopProducts } from './catalog.js'
@@ -437,7 +438,7 @@ function ProductCard({ product, onAddToCart, onLearnMore }) {
               onLearnMore(product)
             }}
           >
-            LEARN MORE
+            {`View ${product.name} details`}
           </a>
         </div>
       </div>
@@ -646,6 +647,8 @@ export default function ShopPage({ searchQuery = '', onAddToCart, onLearnMore, o
         </div>
       </div>
 
+      <details className="research-resources product-directory"><summary>Complete research product directory</summary><ul>{shopProducts.map((product) => <li key={product.id}><a href={productPath(product)}>{product.name}</a></li>)}</ul></details>
+      <ResearchResources />
       <section className="shop-seo-band" aria-label="About our research peptides">
         <h2>COA-verified research peptides for controlled laboratory use</h2>
         <p>

@@ -1,9 +1,9 @@
 import type { Handler } from '@netlify/functions'
 import { createHash } from 'node:crypto'
 import { z } from 'zod'
-import { requireActiveCustomer, requireRecentAuthentication } from './_shared/customer-auth.ts'
-import { clientFingerprint, errorResponse, HttpError, json, parseJson, requireSameOrigin } from './_shared/http.ts'
-import { fingerprint, services } from './_shared/services.ts'
+import { requireActiveCustomer, requireRecentAuthentication } from './_shared/customer-auth.js'
+import { clientFingerprint, errorResponse, HttpError, json, parseJson, requireSameOrigin } from './_shared/http.js'
+import { fingerprint, services } from './_shared/services.js'
 
 const requestSchema = z.object({
   confirmation: z.literal('DELETE'),

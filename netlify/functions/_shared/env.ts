@@ -51,3 +51,13 @@ export function cronSecret() {
 export function wooWebhookSecret() {
   return z.string().min(32).parse(process.env.WOO_WEBHOOK_SECRET)
 }
+
+export function contactEnv() {
+  return z.object({
+    SITE_URL: z.string().url(),
+    SUPABASE_URL: z.string().url(),
+    SUPABASE_SERVICE_ROLE_KEY: z.string().min(30),
+    RESEND_API_KEY: z.string().regex(/^re_/),
+    CONTACT_FROM_EMAIL: z.string().email(),
+  }).parse(process.env)
+}

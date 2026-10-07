@@ -103,11 +103,7 @@ async function inspectProduct(page, representative, viewportName) {
   assert(state.overflow === 0, `${viewportName} ${representative.type}: horizontal overflow is ${state.overflow}px`)
   assert(state.title && !state.title.includes('Product Not Found'), `${viewportName} ${representative.type}: document title is incorrect`)
 
-  if (viewportName === 'desktop') {
-    assert(state.desktopGalleryDisplay !== 'none' && state.mobileGalleryDisplay === 'none', `${representative.type}: desktop gallery state is incorrect`)
-  } else {
-    assert(state.desktopGalleryDisplay === 'none' && state.mobileGalleryDisplay !== 'none', `${representative.type}: mobile gallery state is incorrect`)
-  }
+  assert(state.desktopGalleryDisplay !== 'none' && state.mobileGalleryDisplay === null, viewportName + ' uses one responsive gallery without duplicate downloads')
 
   if (representative.type === 'topicals') {
     assert(!state.hasRelatedHeading && state.hasNewsletter, `${viewportName} topical: empty related-products heading or newsletter state is incorrect`)
@@ -164,7 +160,7 @@ try {
   const page = await browser.newPage()
   page.setDefaultTimeout(15_000)
   page.on('console', (message) => {
-    if (message.type() === 'error') report.consoleErrors.push(message.text())
+    if (message.type() === 'error' && !(page.url().endsWith('/product/does-not-exist/') && /404/.test(message.text()))) report.consoleErrors.push(message.text())
   })
   page.on('pageerror', (error) => report.pageErrors.push(error.message))
   await page.evaluateOnNewDocument(() => localStorage.setItem('php-research-confirmed', 'true'))
@@ -175,7 +171,7 @@ try {
   })) {
     await page.setViewport(viewport)
     for (const representative of representatives) {
-      await page.goto(`${baseUrl}${representative.path}`, { waitUntil: 'domcontentloaded', timeout: 30_000 })
+      await page.goto(`${baseUrl}${representative.path}`, { waitUntil: 'networkidle0', timeout: 30_000 })
       const state = await inspectProduct(page, representative, viewportName)
       report.representatives[`${viewportName}:${representative.type}`] = state
 
@@ -188,17 +184,17 @@ try {
   report.assertions.push('responsive gallery switching, detailed content, COA callouts, images, and zero horizontal overflow')
 
   await page.setViewport({ width: 1440, height: 1000, deviceScaleFactor: 1 })
-  await page.goto(`${baseUrl}/product/bpc-157/`, { waitUntil: 'domcontentloaded', timeout: 30_000 })
+  await page.goto(`${baseUrl}/product/bpc-157/`, { waitUntil: 'networkidle0', timeout: 30_000 })
   await page.waitForSelector('.product-detail-page h1')
   const titleBeforeReload = await page.title()
-  await page.reload({ waitUntil: 'domcontentloaded', timeout: 30_000 })
+  await page.reload({ waitUntil: 'networkidle0', timeout: 30_000 })
   await page.waitForSelector('.product-detail-page h1')
   assert(new URL(page.url()).pathname === '/product/bpc-157/', 'Direct reload did not preserve the product pathname')
   assert(await page.$eval('.product-detail-page h1', (node) => node.textContent.trim()) === 'BPC-157', 'Direct reload did not restore the product')
   assert(await page.title() === titleBeforeReload, 'Direct reload changed the product document title')
   report.assertions.push('direct product-route reload')
 
-  await page.goto(`${baseUrl}/shop/`, { waitUntil: 'domcontentloaded', timeout: 30_000 })
+  await page.goto(`${baseUrl}/shop/`, { waitUntil: 'networkidle0', timeout: 30_000 })
   await page.waitForSelector('#shop-product-vials-25738 .shop-learn-button')
   await page.click('#shop-product-vials-25738 .shop-learn-button')
   await page.waitForFunction(() => location.pathname === '/product/5-amino-1mq/')
@@ -206,16 +202,16 @@ try {
   assert(await page.$eval('.product-detail-page h1', (node) => node.textContent.trim()) === '5-Amino-1MQ', 'Shop Learn More opened the wrong product')
   assert(await page.$('.product-preview') === null, 'Shop Learn More opened the removed preview modal')
 
-  await page.goBack({ waitUntil: 'domcontentloaded', timeout: 30_000 })
+  await page.goBack({ waitUntil: 'networkidle0', timeout: 30_000 })
   await page.waitForSelector('.shop-card')
   assert(new URL(page.url()).pathname === '/shop/', 'Browser Back did not return to Shop')
-  await page.goForward({ waitUntil: 'domcontentloaded', timeout: 30_000 })
+  await page.goForward({ waitUntil: 'networkidle0', timeout: 30_000 })
   await page.waitForSelector('.product-detail-page h1')
   assert(new URL(page.url()).pathname === '/product/5-amino-1mq/', 'Browser Forward did not restore the product route')
   assert(await page.$eval('.product-detail-page h1', (node) => node.textContent.trim()) === '5-Amino-1MQ', 'Browser Forward restored the wrong product')
   report.assertions.push('Shop Learn More plus browser Back/Forward navigation')
 
-  await page.goto(`${baseUrl}/product/bpc-157/`, { waitUntil: 'domcontentloaded', timeout: 30_000 })
+  await page.goto(`${baseUrl}/product/bpc-157/`, { waitUntil: 'networkidle0', timeout: 30_000 })
   await page.waitForSelector('.product-buy-controls select')
   assert(await page.$eval('.product-detail-price-row strong', (node) => node.textContent.trim()) === '$22.00', 'Initial BPC-157 price is incorrect')
   await page.select('.product-buy-controls select', '1')
@@ -248,17 +244,18 @@ try {
   assert(await page.$eval('.coa-category-vials h1', (node) => node.textContent.trim()) === 'Vial Certificate of Analysis (COA) library', 'Vial COA destination heading is incorrect')
   report.assertions.push('product-type COA navigation')
 
-  await page.goto(`${baseUrl}/product/does-not-exist/`, { waitUntil: 'domcontentloaded', timeout: 30_000 })
-  await page.waitForSelector('.product-not-found h1')
+  const missingResponse = await page.goto(`${baseUrl}/product/does-not-exist/`, { waitUntil: 'networkidle0', timeout: 30_000 })
+  assert(missingResponse.status() === 404, 'Missing product must return HTTP 404')
+  await page.waitForSelector('main h1')
   const invalidState = await page.evaluate(() => ({
     pathname: location.pathname,
     title: document.title,
-    heading: document.querySelector('.product-not-found h1')?.textContent.trim(),
+    heading: document.querySelector('main h1')?.textContent.trim(),
     overflow: document.documentElement.scrollWidth - document.documentElement.clientWidth,
   }))
   assert(invalidState.pathname === '/product/does-not-exist/', 'Invalid product route pathname changed unexpectedly')
-  assert(invalidState.title === 'Product Not Found | Pure Health Peptides', 'Invalid product document title is incorrect')
-  assert(invalidState.heading === 'This research product is unavailable.', 'Invalid product fallback is incorrect')
+  assert(invalidState.title === 'Page Not Found | Pure Health Peptides', 'Invalid product document title is incorrect')
+  assert(invalidState.heading === 'Page not found', 'Invalid product fallback is incorrect')
   assert(invalidState.overflow === 0, 'Invalid product fallback has horizontal overflow')
   report.invalidProduct = invalidState
   report.assertions.push('invalid-product fallback route')

@@ -1,3 +1,5 @@
+import ResearchResources from './ResearchResources.jsx'
+import ResponsiveImage from './ResponsiveImage.jsx'
 import { useEffect, useRef, useState } from 'react'
 import { ChevronLeft, ChevronRight, X } from 'lucide-react'
 import {
@@ -34,7 +36,7 @@ function ScientificQuote({ children, author, compact = false }) {
   return (
     <section className={`scientific-quote${compact ? ' scientific-quote-compact' : ''}`}>
       <div>
-        <img src="/assets/peptide-info/quote.png" alt="" />
+        <ResponsiveImage src="/assets/peptide-info/quote.png" alt="" />
         <blockquote>{children}</blockquote>
         <p>— {author}</p>
       </div>
@@ -48,13 +50,13 @@ export function ProductInfoPage() {
   return (
     <div className="peptide-info-page product-info-page">
       <section className="info-card-hero"><h1>Product Info Cards</h1></section>
-      <section className="info-card-library">
+      <ResearchResources /><section className="info-card-library"><p>Download product information cards for laboratory research reference. Review the matching product page for available formats and consult the COA library for batch-specific testing documents. These materials describe research products and are not instructions for human or veterinary use.</p>
         <div className="info-card-grid">
           {infoCards.slice(0, visibleCards).map((card) => (
             <article className="info-guide-card" key={card.title}>
-              <img src={card.image} alt={`${card.title} research information card`} />
+              <ResponsiveImage src={card.image} alt={`${card.title} research information card`} />
               <h2>{card.title}</h2>
-              <a href={card.guide} target="_blank" rel="noreferrer">DOWNLOAD</a>
+              <a href={card.guide} target="_blank" rel="noreferrer">Download {card.title} information</a>
             </article>
           ))}
         </div>
@@ -90,7 +92,7 @@ export function CoaProcessPage({ onNavigate }) {
         <div className="testing-card-grid">
           {testingCards.map((card) => (
             <article key={card.title}>
-              <img src={`/assets/peptide-info/${card.icon}`} alt="" />
+              <ResponsiveImage src={`/assets/peptide-info/${card.icon}`} alt="" />
               <h2>{card.title}</h2>
               <p>{card.copy}</p>
               <strong>{card.proof}</strong>
@@ -113,7 +115,7 @@ export function CoaProcessPage({ onNavigate }) {
 
       <section className="verification-section">
         <div className="verification-grid">
-          <img className="verification-lab" src="/assets/peptide-info/coa-lab.png" alt="Research vial in an analytical laboratory" />
+          <ResponsiveImage className="verification-lab" src="/assets/peptide-info/coa-lab.png" alt="Research vial in an analytical laboratory" />
           <div>
             <h2>THe PURe HeALTH VeRIFICATION PROCeSS</h2>
             <p>Every batch follows a structured verification process designed to provide traceability, independent testing, and public transparency.</p>
@@ -142,12 +144,12 @@ export function CoaProcessPage({ onNavigate }) {
           <aside className="coa-visual-column">
             <div className="coa-carousel">
               <button type="button" aria-label="Previous COA page" onClick={() => setSlide((current) => (current + slides.length - 1) % slides.length)}><ChevronLeft /></button>
-              <img src={slides[slide]} alt={`Certificate of Analysis example page ${slide + 1}`} />
+              <ResponsiveImage src={slides[slide]} alt={`Certificate of Analysis example page ${slide + 1}`} />
               <button type="button" aria-label="Next COA page" onClick={() => setSlide((current) => (current + 1) % slides.length)}><ChevronRight /></button>
               <div aria-label={`Slide ${slide + 1} of ${slides.length}`}><span className={slide === 0 ? 'active' : ''} /><span className={slide === 1 ? 'active' : ''} /></div>
             </div>
             <div className="coa-side-quote">
-              <img src="/assets/peptide-info/quote-small.png" alt="" />
+              <ResponsiveImage src="/assets/peptide-info/quote-small.png" alt="" />
               <blockquote>More tests on a COA do not necessarily mean better testing. The real measure is whether the tests performed are relevant, scientifically justified and appropriate for verifying the material produced.</blockquote>
               <p>— Nisrin Samsum<br />CEO, Ethos Analytics</p>
             </div>
@@ -283,7 +285,7 @@ export function DilutionGuidePage() {
         </DilutionSection>
 
         <button className="dilution-chart-button" type="button" onClick={() => setChartOpen(true)} aria-label="Open dilution recommendation chart">
-          <img src="/assets/peptide-info/dilution-guide.svg" alt="COMPACT ReSeARCH DILUTION ReCOMMeNDATION GUIDe" />
+          <ResponsiveImage src="/assets/peptide-info/dilution-guide.svg" alt="COMPACT ReSeARCH DILUTION ReCOMMeNDATION GUIDe" />
         </button>
 
         <section className="dilution-faqs">
@@ -303,7 +305,7 @@ export function DilutionGuidePage() {
           <button className="dilution-lightbox-backdrop" type="button" tabIndex="-1" aria-label="Close chart" onClick={() => setChartOpen(false)} />
           <button ref={closeButtonRef} className="dilution-lightbox-close" type="button" aria-label="Close chart" onClick={() => setChartOpen(false)}><X /></button>
           <div className="dilution-lightbox-image">
-            <img src="/assets/peptide-info/dilution-guide.svg" alt="COMPACT ReSeARCH DILUTION ReCOMMeNDATION GUIDe" />
+            <ResponsiveImage src="/assets/peptide-info/dilution-guide.svg" alt="COMPACT ReSeARCH DILUTION ReCOMMeNDATION GUIDe" />
           </div>
         </div>
       )}

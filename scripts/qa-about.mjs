@@ -1,3 +1,4 @@
+import { loadPageImages } from './qa-image-loading.mjs'
 import fs from 'node:fs/promises'
 import { fileURLToPath } from 'node:url'
 import puppeteer from 'puppeteer-core'
@@ -8,7 +9,7 @@ const output = new URL('../preview/about-qa/', import.meta.url)
 const pages = [
   ['about-us', 'About US'],
   ['research-areas', 'Research Areas'],
-  ['news', 'Recent news'],
+  ['news', 'Evidence-led guidance for research materials'],
   ['pure-elite-access', 'PURE ELITE ACCESS'],
 ]
 
@@ -38,6 +39,8 @@ try {
         }
         window.scrollTo(0, 0)
       })
+
+      await loadPageImages(page)
 
       const metrics = await page.evaluate(() => ({
         heading: document.querySelector('main h1')?.textContent.trim() || '',

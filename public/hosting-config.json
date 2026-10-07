@@ -1,0 +1,2398 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "vite",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "functions": {
+    "api/**/*.ts": {
+      "maxDuration": 30
+    }
+  },
+  "headers": [
+    {
+      "source": "/_app/:path*",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/assets/:path*",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=604800, stale-while-revalidate=2592000"
+        }
+      ]
+    },
+    {
+      "source": "/catalog/:version/:path*",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/api/:path*",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "private, no-store"
+        },
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self'; base-uri 'self'; connect-src 'self' https://*.supabase.co https://challenges.cloudflare.com https://app.chatwoot.com wss://app.chatwoot.com; font-src 'self' data:; form-action 'self'; frame-ancestors 'none'; frame-src https://challenges.cloudflare.com https://app.chatwoot.com; img-src 'self' data: blob: https://*.supabase.co https://purehealthpeptides.com https://app.chatwoot.com; manifest-src 'self'; media-src 'self' https://*.supabase.co; object-src 'none'; script-src 'self' https://challenges.cloudflare.com https://app.chatwoot.com; style-src 'self' 'unsafe-inline'; worker-src 'none'; upgrade-insecure-requests"
+        },
+        {
+          "key": "Cross-Origin-Opener-Policy",
+          "value": "same-origin-allow-popups"
+        },
+        {
+          "key": "Cross-Origin-Resource-Policy",
+          "value": "same-site"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "accelerometer=(), autoplay=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(self), usb=()"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=31536000"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        }
+      ]
+    },
+    {
+      "source": "/",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/:path*/",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/:path*.html",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/route-manifest.json",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/hosting-config.json",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/catalog/current.json",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/_product-media/responsive/:path*",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/coa/:path*",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/_product-media/social/:path*",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/my-account/",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "private, no-store"
+        }
+      ]
+    },
+    {
+      "source": "/auth/callback/",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "private, no-store"
+        }
+      ]
+    },
+    {
+      "source": "/auth/reset-password/",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "private, no-store"
+        }
+      ]
+    },
+    {
+      "source": "/auth/error/",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "private, no-store"
+        }
+      ]
+    },
+    {
+      "source": "/track-my-order/",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "private, no-store"
+        }
+      ]
+    },
+    {
+      "source": "/checkout/",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "private, no-store"
+        }
+      ]
+    },
+    {
+      "source": "/order-confirmation/",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "private, no-store"
+        }
+      ]
+    },
+    {
+      "source": "/404.html",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "private, no-store"
+        }
+      ]
+    },
+    {
+      "source": "/my-account/:path*",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "private, no-store"
+        }
+      ]
+    },
+    {
+      "source": "/auth/:path*",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "private, no-store"
+        }
+      ]
+    },
+    {
+      "source": "/checkout/:path*",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "private, no-store"
+        }
+      ]
+    },
+    {
+      "source": "/track-my-order/:path*",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "private, no-store"
+        }
+      ]
+    },
+    {
+      "source": "/order-confirmation/:path*",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "private, no-store"
+        }
+      ]
+    },
+    {
+      "source": "/cart/:path*",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "private, no-store"
+        }
+      ]
+    },
+    {
+      "source": "/robots.txt",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/sitemap.xml",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
+      ]
+    }
+  ],
+  "crons": [
+    {
+      "path": "/api/cron/process-commerce-jobs",
+      "schedule": "0 5 * * *"
+    },
+    {
+      "path": "/api/cron/process-account-deletions",
+      "schedule": "23 4 * * *"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/shop",
+      "destination": "/shop/",
+      "permanent": true
+    },
+    {
+      "source": "/shop/index.html",
+      "destination": "/shop/",
+      "permanent": true
+    },
+    {
+      "source": "/about-us",
+      "destination": "/about-us/",
+      "permanent": true
+    },
+    {
+      "source": "/about-us/index.html",
+      "destination": "/about-us/",
+      "permanent": true
+    },
+    {
+      "source": "/research-areas",
+      "destination": "/research-areas/",
+      "permanent": true
+    },
+    {
+      "source": "/research-areas/index.html",
+      "destination": "/research-areas/",
+      "permanent": true
+    },
+    {
+      "source": "/news",
+      "destination": "/news/",
+      "permanent": true
+    },
+    {
+      "source": "/news/index.html",
+      "destination": "/news/",
+      "permanent": true
+    },
+    {
+      "source": "/news/how-to-read-a-peptide-certificate-of-analysis",
+      "destination": "/news/how-to-read-a-peptide-certificate-of-analysis/",
+      "permanent": true
+    },
+    {
+      "source": "/news/how-to-read-a-peptide-certificate-of-analysis/index.html",
+      "destination": "/news/how-to-read-a-peptide-certificate-of-analysis/",
+      "permanent": true
+    },
+    {
+      "source": "/news/understanding-hplc-purity-testing",
+      "destination": "/news/understanding-hplc-purity-testing/",
+      "permanent": true
+    },
+    {
+      "source": "/news/understanding-hplc-purity-testing/index.html",
+      "destination": "/news/understanding-hplc-purity-testing/",
+      "permanent": true
+    },
+    {
+      "source": "/editorial-standards",
+      "destination": "/editorial-standards/",
+      "permanent": true
+    },
+    {
+      "source": "/editorial-standards/index.html",
+      "destination": "/editorial-standards/",
+      "permanent": true
+    },
+    {
+      "source": "/pure-elite-access",
+      "destination": "/pure-elite-access/",
+      "permanent": true
+    },
+    {
+      "source": "/pure-elite-access/index.html",
+      "destination": "/pure-elite-access/",
+      "permanent": true
+    },
+    {
+      "source": "/my-account",
+      "destination": "/my-account/",
+      "permanent": true
+    },
+    {
+      "source": "/my-account/index.html",
+      "destination": "/my-account/",
+      "permanent": true
+    },
+    {
+      "source": "/auth/callback",
+      "destination": "/auth/callback/",
+      "permanent": true
+    },
+    {
+      "source": "/auth/callback/index.html",
+      "destination": "/auth/callback/",
+      "permanent": true
+    },
+    {
+      "source": "/auth/reset-password",
+      "destination": "/auth/reset-password/",
+      "permanent": true
+    },
+    {
+      "source": "/auth/reset-password/index.html",
+      "destination": "/auth/reset-password/",
+      "permanent": true
+    },
+    {
+      "source": "/auth/error",
+      "destination": "/auth/error/",
+      "permanent": true
+    },
+    {
+      "source": "/auth/error/index.html",
+      "destination": "/auth/error/",
+      "permanent": true
+    },
+    {
+      "source": "/track-my-order",
+      "destination": "/track-my-order/",
+      "permanent": true
+    },
+    {
+      "source": "/track-my-order/index.html",
+      "destination": "/track-my-order/",
+      "permanent": true
+    },
+    {
+      "source": "/checkout",
+      "destination": "/checkout/",
+      "permanent": true
+    },
+    {
+      "source": "/checkout/index.html",
+      "destination": "/checkout/",
+      "permanent": true
+    },
+    {
+      "source": "/order-confirmation",
+      "destination": "/order-confirmation/",
+      "permanent": true
+    },
+    {
+      "source": "/order-confirmation/index.html",
+      "destination": "/order-confirmation/",
+      "permanent": true
+    },
+    {
+      "source": "/faqs",
+      "destination": "/faqs/",
+      "permanent": true
+    },
+    {
+      "source": "/faqs/index.html",
+      "destination": "/faqs/",
+      "permanent": true
+    },
+    {
+      "source": "/contact-us",
+      "destination": "/contact-us/",
+      "permanent": true
+    },
+    {
+      "source": "/contact-us/index.html",
+      "destination": "/contact-us/",
+      "permanent": true
+    },
+    {
+      "source": "/shipping-policy",
+      "destination": "/shipping-policy/",
+      "permanent": true
+    },
+    {
+      "source": "/shipping-policy/index.html",
+      "destination": "/shipping-policy/",
+      "permanent": true
+    },
+    {
+      "source": "/refund-policy",
+      "destination": "/refund-policy/",
+      "permanent": true
+    },
+    {
+      "source": "/refund-policy/index.html",
+      "destination": "/refund-policy/",
+      "permanent": true
+    },
+    {
+      "source": "/privacy-policy",
+      "destination": "/privacy-policy/",
+      "permanent": true
+    },
+    {
+      "source": "/privacy-policy/index.html",
+      "destination": "/privacy-policy/",
+      "permanent": true
+    },
+    {
+      "source": "/terms-and-conditions",
+      "destination": "/terms-and-conditions/",
+      "permanent": true
+    },
+    {
+      "source": "/terms-and-conditions/index.html",
+      "destination": "/terms-and-conditions/",
+      "permanent": true
+    },
+    {
+      "source": "/info-cards",
+      "destination": "/info-cards/",
+      "permanent": true
+    },
+    {
+      "source": "/info-cards/index.html",
+      "destination": "/info-cards/",
+      "permanent": true
+    },
+    {
+      "source": "/coa-process",
+      "destination": "/coa-process/",
+      "permanent": true
+    },
+    {
+      "source": "/coa-process/index.html",
+      "destination": "/coa-process/",
+      "permanent": true
+    },
+    {
+      "source": "/manufacturing",
+      "destination": "/manufacturing/",
+      "permanent": true
+    },
+    {
+      "source": "/manufacturing/index.html",
+      "destination": "/manufacturing/",
+      "permanent": true
+    },
+    {
+      "source": "/dilution-guide",
+      "destination": "/dilution-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/dilution-guide/index.html",
+      "destination": "/dilution-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/coa-library",
+      "destination": "/coa-library/",
+      "permanent": true
+    },
+    {
+      "source": "/coa-library/index.html",
+      "destination": "/coa-library/",
+      "permanent": true
+    },
+    {
+      "source": "/coa-library/vials",
+      "destination": "/coa-library/vials/",
+      "permanent": true
+    },
+    {
+      "source": "/coa-library/vials/index.html",
+      "destination": "/coa-library/vials/",
+      "permanent": true
+    },
+    {
+      "source": "/coa-library/capsules",
+      "destination": "/coa-library/capsules/",
+      "permanent": true
+    },
+    {
+      "source": "/coa-library/capsules/index.html",
+      "destination": "/coa-library/capsules/",
+      "permanent": true
+    },
+    {
+      "source": "/coa-library/liquids",
+      "destination": "/coa-library/liquids/",
+      "permanent": true
+    },
+    {
+      "source": "/coa-library/liquids/index.html",
+      "destination": "/coa-library/liquids/",
+      "permanent": true
+    },
+    {
+      "source": "/coa-library/topicals",
+      "destination": "/coa-library/topicals/",
+      "permanent": true
+    },
+    {
+      "source": "/coa-library/topicals/index.html",
+      "destination": "/coa-library/topicals/",
+      "permanent": true
+    },
+    {
+      "source": "/product/5-amino-1mq",
+      "destination": "/product/5-amino-1mq/",
+      "permanent": true
+    },
+    {
+      "source": "/product/5-amino-1mq/index.html",
+      "destination": "/product/5-amino-1mq/",
+      "permanent": true
+    },
+    {
+      "source": "/product/acetic-acid",
+      "destination": "/product/acetic-acid/",
+      "permanent": true
+    },
+    {
+      "source": "/product/acetic-acid/index.html",
+      "destination": "/product/acetic-acid/",
+      "permanent": true
+    },
+    {
+      "source": "/product/adipotide",
+      "destination": "/product/adipotide/",
+      "permanent": true
+    },
+    {
+      "source": "/product/adipotide/index.html",
+      "destination": "/product/adipotide/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aicar",
+      "destination": "/product/aicar/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aicar/index.html",
+      "destination": "/product/aicar/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aod9604",
+      "destination": "/product/aod9604/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aod9604/index.html",
+      "destination": "/product/aod9604/",
+      "permanent": true
+    },
+    {
+      "source": "/product/ara-290",
+      "destination": "/product/ara-290/",
+      "permanent": true
+    },
+    {
+      "source": "/product/ara-290/index.html",
+      "destination": "/product/ara-290/",
+      "permanent": true
+    },
+    {
+      "source": "/product/bacteriostatic-water",
+      "destination": "/product/bacteriostatic-water/",
+      "permanent": true
+    },
+    {
+      "source": "/product/bacteriostatic-water/index.html",
+      "destination": "/product/bacteriostatic-water/",
+      "permanent": true
+    },
+    {
+      "source": "/product/bpc-157",
+      "destination": "/product/bpc-157/",
+      "permanent": true
+    },
+    {
+      "source": "/product/bpc-157/index.html",
+      "destination": "/product/bpc-157/",
+      "permanent": true
+    },
+    {
+      "source": "/product/bpc-157-tb-500",
+      "destination": "/product/bpc-157-tb-500/",
+      "permanent": true
+    },
+    {
+      "source": "/product/bpc-157-tb-500/index.html",
+      "destination": "/product/bpc-157-tb-500/",
+      "permanent": true
+    },
+    {
+      "source": "/product/cardiogen",
+      "destination": "/product/cardiogen/",
+      "permanent": true
+    },
+    {
+      "source": "/product/cardiogen/index.html",
+      "destination": "/product/cardiogen/",
+      "permanent": true
+    },
+    {
+      "source": "/product/cartalax",
+      "destination": "/product/cartalax/",
+      "permanent": true
+    },
+    {
+      "source": "/product/cartalax/index.html",
+      "destination": "/product/cartalax/",
+      "permanent": true
+    },
+    {
+      "source": "/product/chonluten",
+      "destination": "/product/chonluten/",
+      "permanent": true
+    },
+    {
+      "source": "/product/chonluten/index.html",
+      "destination": "/product/chonluten/",
+      "permanent": true
+    },
+    {
+      "source": "/product/cjc-1295",
+      "destination": "/product/cjc-1295/",
+      "permanent": true
+    },
+    {
+      "source": "/product/cjc-1295/index.html",
+      "destination": "/product/cjc-1295/",
+      "permanent": true
+    },
+    {
+      "source": "/product/cjc-1295-dac",
+      "destination": "/product/cjc-1295-dac/",
+      "permanent": true
+    },
+    {
+      "source": "/product/cjc-1295-dac/index.html",
+      "destination": "/product/cjc-1295-dac/",
+      "permanent": true
+    },
+    {
+      "source": "/product/cjc-1295-dac-ipamorelin",
+      "destination": "/product/cjc-1295-dac-ipamorelin/",
+      "permanent": true
+    },
+    {
+      "source": "/product/cjc-1295-dac-ipamorelin/index.html",
+      "destination": "/product/cjc-1295-dac-ipamorelin/",
+      "permanent": true
+    },
+    {
+      "source": "/product/cjc-1295-ipamorelin",
+      "destination": "/product/cjc-1295-ipamorelin/",
+      "permanent": true
+    },
+    {
+      "source": "/product/cjc-1295-ipamorelin/index.html",
+      "destination": "/product/cjc-1295-ipamorelin/",
+      "permanent": true
+    },
+    {
+      "source": "/product/cortagen",
+      "destination": "/product/cortagen/",
+      "permanent": true
+    },
+    {
+      "source": "/product/cortagen/index.html",
+      "destination": "/product/cortagen/",
+      "permanent": true
+    },
+    {
+      "source": "/product/dsip",
+      "destination": "/product/dsip/",
+      "permanent": true
+    },
+    {
+      "source": "/product/dsip/index.html",
+      "destination": "/product/dsip/",
+      "permanent": true
+    },
+    {
+      "source": "/product/epithalon",
+      "destination": "/product/epithalon/",
+      "permanent": true
+    },
+    {
+      "source": "/product/epithalon/index.html",
+      "destination": "/product/epithalon/",
+      "permanent": true
+    },
+    {
+      "source": "/product/follistatin-315",
+      "destination": "/product/follistatin-315/",
+      "permanent": true
+    },
+    {
+      "source": "/product/follistatin-315/index.html",
+      "destination": "/product/follistatin-315/",
+      "permanent": true
+    },
+    {
+      "source": "/product/follistatin-344",
+      "destination": "/product/follistatin-344/",
+      "permanent": true
+    },
+    {
+      "source": "/product/follistatin-344/index.html",
+      "destination": "/product/follistatin-344/",
+      "permanent": true
+    },
+    {
+      "source": "/product/foxo4-dri",
+      "destination": "/product/foxo4-dri/",
+      "permanent": true
+    },
+    {
+      "source": "/product/foxo4-dri/index.html",
+      "destination": "/product/foxo4-dri/",
+      "permanent": true
+    },
+    {
+      "source": "/product/gdf-8",
+      "destination": "/product/gdf-8/",
+      "permanent": true
+    },
+    {
+      "source": "/product/gdf-8/index.html",
+      "destination": "/product/gdf-8/",
+      "permanent": true
+    },
+    {
+      "source": "/product/ghk-cu",
+      "destination": "/product/ghk-cu/",
+      "permanent": true
+    },
+    {
+      "source": "/product/ghk-cu/index.html",
+      "destination": "/product/ghk-cu/",
+      "permanent": true
+    },
+    {
+      "source": "/product/ghpr-2",
+      "destination": "/product/ghpr-2/",
+      "permanent": true
+    },
+    {
+      "source": "/product/ghpr-2/index.html",
+      "destination": "/product/ghpr-2/",
+      "permanent": true
+    },
+    {
+      "source": "/product/ghpr-6",
+      "destination": "/product/ghpr-6/",
+      "permanent": true
+    },
+    {
+      "source": "/product/ghpr-6/index.html",
+      "destination": "/product/ghpr-6/",
+      "permanent": true
+    },
+    {
+      "source": "/product/glow-bpc-157-ghk-cu-tb-500-blend",
+      "destination": "/product/glow-bpc-157-ghk-cu-tb-500-blend/",
+      "permanent": true
+    },
+    {
+      "source": "/product/glow-bpc-157-ghk-cu-tb-500-blend/index.html",
+      "destination": "/product/glow-bpc-157-ghk-cu-tb-500-blend/",
+      "permanent": true
+    },
+    {
+      "source": "/product/glow-plus-bpc-157-ghk-cu-tb-500-thymosin-alpha-1-blend",
+      "destination": "/product/glow-plus-bpc-157-ghk-cu-tb-500-thymosin-alpha-1-blend/",
+      "permanent": true
+    },
+    {
+      "source": "/product/glow-plus-bpc-157-ghk-cu-tb-500-thymosin-alpha-1-blend/index.html",
+      "destination": "/product/glow-plus-bpc-157-ghk-cu-tb-500-thymosin-alpha-1-blend/",
+      "permanent": true
+    },
+    {
+      "source": "/product/glp-1-c",
+      "destination": "/product/glp-1-c/",
+      "permanent": true
+    },
+    {
+      "source": "/product/glp-1-c/index.html",
+      "destination": "/product/glp-1-c/",
+      "permanent": true
+    },
+    {
+      "source": "/product/glp-1-c-s",
+      "destination": "/product/glp-1-c-s/",
+      "permanent": true
+    },
+    {
+      "source": "/product/glp-1-c-s/index.html",
+      "destination": "/product/glp-1-c-s/",
+      "permanent": true
+    },
+    {
+      "source": "/product/glp-1-s",
+      "destination": "/product/glp-1-s/",
+      "permanent": true
+    },
+    {
+      "source": "/product/glp-1-s/index.html",
+      "destination": "/product/glp-1-s/",
+      "permanent": true
+    },
+    {
+      "source": "/product/glp-2-t",
+      "destination": "/product/glp-2-t/",
+      "permanent": true
+    },
+    {
+      "source": "/product/glp-2-t/index.html",
+      "destination": "/product/glp-2-t/",
+      "permanent": true
+    },
+    {
+      "source": "/product/glp-3-r",
+      "destination": "/product/glp-3-r/",
+      "permanent": true
+    },
+    {
+      "source": "/product/glp-3-r/index.html",
+      "destination": "/product/glp-3-r/",
+      "permanent": true
+    },
+    {
+      "source": "/product/glutathione",
+      "destination": "/product/glutathione/",
+      "permanent": true
+    },
+    {
+      "source": "/product/glutathione/index.html",
+      "destination": "/product/glutathione/",
+      "permanent": true
+    },
+    {
+      "source": "/product/gonadorelin",
+      "destination": "/product/gonadorelin/",
+      "permanent": true
+    },
+    {
+      "source": "/product/gonadorelin/index.html",
+      "destination": "/product/gonadorelin/",
+      "permanent": true
+    },
+    {
+      "source": "/product/h-fragment-176-191",
+      "destination": "/product/h-fragment-176-191/",
+      "permanent": true
+    },
+    {
+      "source": "/product/h-fragment-176-191/index.html",
+      "destination": "/product/h-fragment-176-191/",
+      "permanent": true
+    },
+    {
+      "source": "/product/hexarelin",
+      "destination": "/product/hexarelin/",
+      "permanent": true
+    },
+    {
+      "source": "/product/hexarelin/index.html",
+      "destination": "/product/hexarelin/",
+      "permanent": true
+    },
+    {
+      "source": "/product/hexarelin-acetate",
+      "destination": "/product/hexarelin-acetate/",
+      "permanent": true
+    },
+    {
+      "source": "/product/hexarelin-acetate/index.html",
+      "destination": "/product/hexarelin-acetate/",
+      "permanent": true
+    },
+    {
+      "source": "/product/humanin",
+      "destination": "/product/humanin/",
+      "permanent": true
+    },
+    {
+      "source": "/product/humanin/index.html",
+      "destination": "/product/humanin/",
+      "permanent": true
+    },
+    {
+      "source": "/product/igf-1-lr3",
+      "destination": "/product/igf-1-lr3/",
+      "permanent": true
+    },
+    {
+      "source": "/product/igf-1-lr3/index.html",
+      "destination": "/product/igf-1-lr3/",
+      "permanent": true
+    },
+    {
+      "source": "/product/ipamorelin",
+      "destination": "/product/ipamorelin/",
+      "permanent": true
+    },
+    {
+      "source": "/product/ipamorelin/index.html",
+      "destination": "/product/ipamorelin/",
+      "permanent": true
+    },
+    {
+      "source": "/product/kisspeptin-10",
+      "destination": "/product/kisspeptin-10/",
+      "permanent": true
+    },
+    {
+      "source": "/product/kisspeptin-10/index.html",
+      "destination": "/product/kisspeptin-10/",
+      "permanent": true
+    },
+    {
+      "source": "/product/klow",
+      "destination": "/product/klow/",
+      "permanent": true
+    },
+    {
+      "source": "/product/klow/index.html",
+      "destination": "/product/klow/",
+      "permanent": true
+    },
+    {
+      "source": "/product/kpv",
+      "destination": "/product/kpv/",
+      "permanent": true
+    },
+    {
+      "source": "/product/kpv/index.html",
+      "destination": "/product/kpv/",
+      "permanent": true
+    },
+    {
+      "source": "/product/livagen",
+      "destination": "/product/livagen/",
+      "permanent": true
+    },
+    {
+      "source": "/product/livagen/index.html",
+      "destination": "/product/livagen/",
+      "permanent": true
+    },
+    {
+      "source": "/product/ll-37",
+      "destination": "/product/ll-37/",
+      "permanent": true
+    },
+    {
+      "source": "/product/ll-37/index.html",
+      "destination": "/product/ll-37/",
+      "permanent": true
+    },
+    {
+      "source": "/product/melanoten-2",
+      "destination": "/product/melanoten-2/",
+      "permanent": true
+    },
+    {
+      "source": "/product/melanoten-2/index.html",
+      "destination": "/product/melanoten-2/",
+      "permanent": true
+    },
+    {
+      "source": "/product/mgf-mechano-growth-factor",
+      "destination": "/product/mgf-mechano-growth-factor/",
+      "permanent": true
+    },
+    {
+      "source": "/product/mgf-mechano-growth-factor/index.html",
+      "destination": "/product/mgf-mechano-growth-factor/",
+      "permanent": true
+    },
+    {
+      "source": "/product/mots-c",
+      "destination": "/product/mots-c/",
+      "permanent": true
+    },
+    {
+      "source": "/product/mots-c/index.html",
+      "destination": "/product/mots-c/",
+      "permanent": true
+    },
+    {
+      "source": "/product/n-acetyl-epithalon-amidate",
+      "destination": "/product/n-acetyl-epithalon-amidate/",
+      "permanent": true
+    },
+    {
+      "source": "/product/n-acetyl-epithalon-amidate/index.html",
+      "destination": "/product/n-acetyl-epithalon-amidate/",
+      "permanent": true
+    },
+    {
+      "source": "/product/n-acetyl-selank-amidate",
+      "destination": "/product/n-acetyl-selank-amidate/",
+      "permanent": true
+    },
+    {
+      "source": "/product/n-acetyl-selank-amidate/index.html",
+      "destination": "/product/n-acetyl-selank-amidate/",
+      "permanent": true
+    },
+    {
+      "source": "/product/n-acetyl-semax-amidate",
+      "destination": "/product/n-acetyl-semax-amidate/",
+      "permanent": true
+    },
+    {
+      "source": "/product/n-acetyl-semax-amidate/index.html",
+      "destination": "/product/n-acetyl-semax-amidate/",
+      "permanent": true
+    },
+    {
+      "source": "/product/nad",
+      "destination": "/product/nad/",
+      "permanent": true
+    },
+    {
+      "source": "/product/nad/index.html",
+      "destination": "/product/nad/",
+      "permanent": true
+    },
+    {
+      "source": "/product/ovagen",
+      "destination": "/product/ovagen/",
+      "permanent": true
+    },
+    {
+      "source": "/product/ovagen/index.html",
+      "destination": "/product/ovagen/",
+      "permanent": true
+    },
+    {
+      "source": "/product/oxytocin",
+      "destination": "/product/oxytocin/",
+      "permanent": true
+    },
+    {
+      "source": "/product/oxytocin/index.html",
+      "destination": "/product/oxytocin/",
+      "permanent": true
+    },
+    {
+      "source": "/product/p-21-adamantane",
+      "destination": "/product/p-21-adamantane/",
+      "permanent": true
+    },
+    {
+      "source": "/product/p-21-adamantane/index.html",
+      "destination": "/product/p-21-adamantane/",
+      "permanent": true
+    },
+    {
+      "source": "/product/peg-mgf",
+      "destination": "/product/peg-mgf/",
+      "permanent": true
+    },
+    {
+      "source": "/product/peg-mgf/index.html",
+      "destination": "/product/peg-mgf/",
+      "permanent": true
+    },
+    {
+      "source": "/product/pinealon",
+      "destination": "/product/pinealon/",
+      "permanent": true
+    },
+    {
+      "source": "/product/pinealon/index.html",
+      "destination": "/product/pinealon/",
+      "permanent": true
+    },
+    {
+      "source": "/product/pnc-27",
+      "destination": "/product/pnc-27/",
+      "permanent": true
+    },
+    {
+      "source": "/product/pnc-27/index.html",
+      "destination": "/product/pnc-27/",
+      "permanent": true
+    },
+    {
+      "source": "/product/prostamax",
+      "destination": "/product/prostamax/",
+      "permanent": true
+    },
+    {
+      "source": "/product/prostamax/index.html",
+      "destination": "/product/prostamax/",
+      "permanent": true
+    },
+    {
+      "source": "/product/pt-141",
+      "destination": "/product/pt-141/",
+      "permanent": true
+    },
+    {
+      "source": "/product/pt-141/index.html",
+      "destination": "/product/pt-141/",
+      "permanent": true
+    },
+    {
+      "source": "/product/selank",
+      "destination": "/product/selank/",
+      "permanent": true
+    },
+    {
+      "source": "/product/selank/index.html",
+      "destination": "/product/selank/",
+      "permanent": true
+    },
+    {
+      "source": "/product/semx",
+      "destination": "/product/semx/",
+      "permanent": true
+    },
+    {
+      "source": "/product/semx/index.html",
+      "destination": "/product/semx/",
+      "permanent": true
+    },
+    {
+      "source": "/product/sermorlin",
+      "destination": "/product/sermorlin/",
+      "permanent": true
+    },
+    {
+      "source": "/product/sermorlin/index.html",
+      "destination": "/product/sermorlin/",
+      "permanent": true
+    },
+    {
+      "source": "/product/slu-pp-332",
+      "destination": "/product/slu-pp-332/",
+      "permanent": true
+    },
+    {
+      "source": "/product/slu-pp-332/index.html",
+      "destination": "/product/slu-pp-332/",
+      "permanent": true
+    },
+    {
+      "source": "/product/snap-8",
+      "destination": "/product/snap-8/",
+      "permanent": true
+    },
+    {
+      "source": "/product/snap-8/index.html",
+      "destination": "/product/snap-8/",
+      "permanent": true
+    },
+    {
+      "source": "/product/tb-500",
+      "destination": "/product/tb-500/",
+      "permanent": true
+    },
+    {
+      "source": "/product/tb-500/index.html",
+      "destination": "/product/tb-500/",
+      "permanent": true
+    },
+    {
+      "source": "/product/tesmorelin",
+      "destination": "/product/tesmorelin/",
+      "permanent": true
+    },
+    {
+      "source": "/product/tesmorelin/index.html",
+      "destination": "/product/tesmorelin/",
+      "permanent": true
+    },
+    {
+      "source": "/product/thymalin",
+      "destination": "/product/thymalin/",
+      "permanent": true
+    },
+    {
+      "source": "/product/thymalin/index.html",
+      "destination": "/product/thymalin/",
+      "permanent": true
+    },
+    {
+      "source": "/product/thymogen",
+      "destination": "/product/thymogen/",
+      "permanent": true
+    },
+    {
+      "source": "/product/thymogen/index.html",
+      "destination": "/product/thymogen/",
+      "permanent": true
+    },
+    {
+      "source": "/product/thymosin-alpha-1",
+      "destination": "/product/thymosin-alpha-1/",
+      "permanent": true
+    },
+    {
+      "source": "/product/thymosin-alpha-1/index.html",
+      "destination": "/product/thymosin-alpha-1/",
+      "permanent": true
+    },
+    {
+      "source": "/product/vesugen",
+      "destination": "/product/vesugen/",
+      "permanent": true
+    },
+    {
+      "source": "/product/vesugen/index.html",
+      "destination": "/product/vesugen/",
+      "permanent": true
+    },
+    {
+      "source": "/product/vilon",
+      "destination": "/product/vilon/",
+      "permanent": true
+    },
+    {
+      "source": "/product/vilon/index.html",
+      "destination": "/product/vilon/",
+      "permanent": true
+    },
+    {
+      "source": "/product/vip",
+      "destination": "/product/vip/",
+      "permanent": true
+    },
+    {
+      "source": "/product/vip/index.html",
+      "destination": "/product/vip/",
+      "permanent": true
+    },
+    {
+      "source": "/product/5-amino-1mq-capsules",
+      "destination": "/product/5-amino-1mq-capsules/",
+      "permanent": true
+    },
+    {
+      "source": "/product/5-amino-1mq-capsules/index.html",
+      "destination": "/product/5-amino-1mq-capsules/",
+      "permanent": true
+    },
+    {
+      "source": "/product/bam15",
+      "destination": "/product/bam15/",
+      "permanent": true
+    },
+    {
+      "source": "/product/bam15/index.html",
+      "destination": "/product/bam15/",
+      "permanent": true
+    },
+    {
+      "source": "/product/bpc-157-arginate-salt",
+      "destination": "/product/bpc-157-arginate-salt/",
+      "permanent": true
+    },
+    {
+      "source": "/product/bpc-157-arginate-salt/index.html",
+      "destination": "/product/bpc-157-arginate-salt/",
+      "permanent": true
+    },
+    {
+      "source": "/product/bpc-157-tb-500-t-beta-4-blend",
+      "destination": "/product/bpc-157-tb-500-t-beta-4-blend/",
+      "permanent": true
+    },
+    {
+      "source": "/product/bpc-157-tb-500-t-beta-4-blend/index.html",
+      "destination": "/product/bpc-157-tb-500-t-beta-4-blend/",
+      "permanent": true
+    },
+    {
+      "source": "/product/dhx-pnb-0408",
+      "destination": "/product/dhx-pnb-0408/",
+      "permanent": true
+    },
+    {
+      "source": "/product/dhx-pnb-0408/index.html",
+      "destination": "/product/dhx-pnb-0408/",
+      "permanent": true
+    },
+    {
+      "source": "/product/epithalon-capsules",
+      "destination": "/product/epithalon-capsules/",
+      "permanent": true
+    },
+    {
+      "source": "/product/epithalon-capsules/index.html",
+      "destination": "/product/epithalon-capsules/",
+      "permanent": true
+    },
+    {
+      "source": "/product/glow",
+      "destination": "/product/glow/",
+      "permanent": true
+    },
+    {
+      "source": "/product/glow/index.html",
+      "destination": "/product/glow/",
+      "permanent": true
+    },
+    {
+      "source": "/product/ibutamorin",
+      "destination": "/product/ibutamorin/",
+      "permanent": true
+    },
+    {
+      "source": "/product/ibutamorin/index.html",
+      "destination": "/product/ibutamorin/",
+      "permanent": true
+    },
+    {
+      "source": "/product/kpv-capsules",
+      "destination": "/product/kpv-capsules/",
+      "permanent": true
+    },
+    {
+      "source": "/product/kpv-capsules/index.html",
+      "destination": "/product/kpv-capsules/",
+      "permanent": true
+    },
+    {
+      "source": "/product/methylene-blue",
+      "destination": "/product/methylene-blue/",
+      "permanent": true
+    },
+    {
+      "source": "/product/methylene-blue/index.html",
+      "destination": "/product/methylene-blue/",
+      "permanent": true
+    },
+    {
+      "source": "/product/mots-c-capsules",
+      "destination": "/product/mots-c-capsules/",
+      "permanent": true
+    },
+    {
+      "source": "/product/mots-c-capsules/index.html",
+      "destination": "/product/mots-c-capsules/",
+      "permanent": true
+    },
+    {
+      "source": "/product/orforglipron",
+      "destination": "/product/orforglipron/",
+      "permanent": true
+    },
+    {
+      "source": "/product/orforglipron/index.html",
+      "destination": "/product/orforglipron/",
+      "permanent": true
+    },
+    {
+      "source": "/product/regen",
+      "destination": "/product/regen/",
+      "permanent": true
+    },
+    {
+      "source": "/product/regen/index.html",
+      "destination": "/product/regen/",
+      "permanent": true
+    },
+    {
+      "source": "/product/slu-pp-332-capsules",
+      "destination": "/product/slu-pp-332-capsules/",
+      "permanent": true
+    },
+    {
+      "source": "/product/slu-pp-332-capsules/index.html",
+      "destination": "/product/slu-pp-332-capsules/",
+      "permanent": true
+    },
+    {
+      "source": "/product/tb-500-t-beta-4",
+      "destination": "/product/tb-500-t-beta-4/",
+      "permanent": true
+    },
+    {
+      "source": "/product/tb-500-t-beta-4/index.html",
+      "destination": "/product/tb-500-t-beta-4/",
+      "permanent": true
+    },
+    {
+      "source": "/product/teso-ns2330",
+      "destination": "/product/teso-ns2330/",
+      "permanent": true
+    },
+    {
+      "source": "/product/teso-ns2330/index.html",
+      "destination": "/product/teso-ns2330/",
+      "permanent": true
+    },
+    {
+      "source": "/product/tudca",
+      "destination": "/product/tudca/",
+      "permanent": true
+    },
+    {
+      "source": "/product/tudca/index.html",
+      "destination": "/product/tudca/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aod9604-liquid",
+      "destination": "/product/aod9604-liquid/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aod9604-liquid/index.html",
+      "destination": "/product/aod9604-liquid/",
+      "permanent": true
+    },
+    {
+      "source": "/product/bpc-157-liquid",
+      "destination": "/product/bpc-157-liquid/",
+      "permanent": true
+    },
+    {
+      "source": "/product/bpc-157-liquid/index.html",
+      "destination": "/product/bpc-157-liquid/",
+      "permanent": true
+    },
+    {
+      "source": "/product/bpc-157-tb-500-t-beta-4",
+      "destination": "/product/bpc-157-tb-500-t-beta-4/",
+      "permanent": true
+    },
+    {
+      "source": "/product/bpc-157-tb-500-t-beta-4/index.html",
+      "destination": "/product/bpc-157-tb-500-t-beta-4/",
+      "permanent": true
+    },
+    {
+      "source": "/product/dsip-liquid",
+      "destination": "/product/dsip-liquid/",
+      "permanent": true
+    },
+    {
+      "source": "/product/dsip-liquid/index.html",
+      "destination": "/product/dsip-liquid/",
+      "permanent": true
+    },
+    {
+      "source": "/product/epithalon-liquid",
+      "destination": "/product/epithalon-liquid/",
+      "permanent": true
+    },
+    {
+      "source": "/product/epithalon-liquid/index.html",
+      "destination": "/product/epithalon-liquid/",
+      "permanent": true
+    },
+    {
+      "source": "/product/ghk-cu-liquid",
+      "destination": "/product/ghk-cu-liquid/",
+      "permanent": true
+    },
+    {
+      "source": "/product/ghk-cu-liquid/index.html",
+      "destination": "/product/ghk-cu-liquid/",
+      "permanent": true
+    },
+    {
+      "source": "/product/kpv-liquid",
+      "destination": "/product/kpv-liquid/",
+      "permanent": true
+    },
+    {
+      "source": "/product/kpv-liquid/index.html",
+      "destination": "/product/kpv-liquid/",
+      "permanent": true
+    },
+    {
+      "source": "/product/lc-120-lipo-c-formulation",
+      "destination": "/product/lc-120-lipo-c-formulation/",
+      "permanent": true
+    },
+    {
+      "source": "/product/lc-120-lipo-c-formulation/index.html",
+      "destination": "/product/lc-120-lipo-c-formulation/",
+      "permanent": true
+    },
+    {
+      "source": "/product/lc-216-lipo-b-formulation",
+      "destination": "/product/lc-216-lipo-b-formulation/",
+      "permanent": true
+    },
+    {
+      "source": "/product/lc-216-lipo-b-formulation/index.html",
+      "destination": "/product/lc-216-lipo-b-formulation/",
+      "permanent": true
+    },
+    {
+      "source": "/product/nad-plus-nicotinamide-adenine-dinucleotide",
+      "destination": "/product/nad-plus-nicotinamide-adenine-dinucleotide/",
+      "permanent": true
+    },
+    {
+      "source": "/product/nad-plus-nicotinamide-adenine-dinucleotide/index.html",
+      "destination": "/product/nad-plus-nicotinamide-adenine-dinucleotide/",
+      "permanent": true
+    },
+    {
+      "source": "/product/pt-141-liquid",
+      "destination": "/product/pt-141-liquid/",
+      "permanent": true
+    },
+    {
+      "source": "/product/pt-141-liquid/index.html",
+      "destination": "/product/pt-141-liquid/",
+      "permanent": true
+    },
+    {
+      "source": "/product/selank-tp-7",
+      "destination": "/product/selank-tp-7/",
+      "permanent": true
+    },
+    {
+      "source": "/product/selank-tp-7/index.html",
+      "destination": "/product/selank-tp-7/",
+      "permanent": true
+    },
+    {
+      "source": "/product/semx-liquid",
+      "destination": "/product/semx-liquid/",
+      "permanent": true
+    },
+    {
+      "source": "/product/semx-liquid/index.html",
+      "destination": "/product/semx-liquid/",
+      "permanent": true
+    },
+    {
+      "source": "/product/tb-500-t-beta-4-liquid",
+      "destination": "/product/tb-500-t-beta-4-liquid/",
+      "permanent": true
+    },
+    {
+      "source": "/product/tb-500-t-beta-4-liquid/index.html",
+      "destination": "/product/tb-500-t-beta-4-liquid/",
+      "permanent": true
+    },
+    {
+      "source": "/product/vip-liquid",
+      "destination": "/product/vip-liquid/",
+      "permanent": true
+    },
+    {
+      "source": "/product/vip-liquid/index.html",
+      "destination": "/product/vip-liquid/",
+      "permanent": true
+    },
+    {
+      "source": "/product/vocus",
+      "destination": "/product/vocus/",
+      "permanent": true
+    },
+    {
+      "source": "/product/vocus/index.html",
+      "destination": "/product/vocus/",
+      "permanent": true
+    },
+    {
+      "source": "/product/complete-configuration-modular-peptide-systems-a-b-c-d-e",
+      "destination": "/product/complete-configuration-modular-peptide-systems-a-b-c-d-e/",
+      "permanent": true
+    },
+    {
+      "source": "/product/complete-configuration-modular-peptide-systems-a-b-c-d-e/index.html",
+      "destination": "/product/complete-configuration-modular-peptide-systems-a-b-c-d-e/",
+      "permanent": true
+    },
+    {
+      "source": "/product/modular-peptide-system-a-dual-peptide-serum",
+      "destination": "/product/modular-peptide-system-a-dual-peptide-serum/",
+      "permanent": true
+    },
+    {
+      "source": "/product/modular-peptide-system-a-dual-peptide-serum/index.html",
+      "destination": "/product/modular-peptide-system-a-dual-peptide-serum/",
+      "permanent": true
+    },
+    {
+      "source": "/product/modular-peptide-system-b-pure-peptide-gel",
+      "destination": "/product/modular-peptide-system-b-pure-peptide-gel/",
+      "permanent": true
+    },
+    {
+      "source": "/product/modular-peptide-system-b-pure-peptide-gel/index.html",
+      "destination": "/product/modular-peptide-system-b-pure-peptide-gel/",
+      "permanent": true
+    },
+    {
+      "source": "/product/modular-peptide-system-c-controlled-rheology-peptide-emulsion",
+      "destination": "/product/modular-peptide-system-c-controlled-rheology-peptide-emulsion/",
+      "permanent": true
+    },
+    {
+      "source": "/product/modular-peptide-system-c-controlled-rheology-peptide-emulsion/index.html",
+      "destination": "/product/modular-peptide-system-c-controlled-rheology-peptide-emulsion/",
+      "permanent": true
+    },
+    {
+      "source": "/product/modular-peptide-system-d-copper-peptide-complex",
+      "destination": "/product/modular-peptide-system-d-copper-peptide-complex/",
+      "permanent": true
+    },
+    {
+      "source": "/product/modular-peptide-system-d-copper-peptide-complex/index.html",
+      "destination": "/product/modular-peptide-system-d-copper-peptide-complex/",
+      "permanent": true
+    },
+    {
+      "source": "/product/modular-peptide-system-e-multi-peptide-complex",
+      "destination": "/product/modular-peptide-system-e-multi-peptide-complex/",
+      "permanent": true
+    },
+    {
+      "source": "/product/modular-peptide-system-e-multi-peptide-complex/index.html",
+      "destination": "/product/modular-peptide-system-e-multi-peptide-complex/",
+      "permanent": true
+    },
+    {
+      "source": "/product/phase-1-configuration-modular-peptide-systems-a-c-e",
+      "destination": "/product/phase-1-configuration-modular-peptide-systems-a-c-e/",
+      "permanent": true
+    },
+    {
+      "source": "/product/phase-1-configuration-modular-peptide-systems-a-c-e/index.html",
+      "destination": "/product/phase-1-configuration-modular-peptide-systems-a-c-e/",
+      "permanent": true
+    },
+    {
+      "source": "/product/phase-2-configuration-modular-peptide-systems-b-d",
+      "destination": "/product/phase-2-configuration-modular-peptide-systems-b-d/",
+      "permanent": true
+    },
+    {
+      "source": "/product/phase-2-configuration-modular-peptide-systems-b-d/index.html",
+      "destination": "/product/phase-2-configuration-modular-peptide-systems-b-d/",
+      "permanent": true
+    },
+    {
+      "source": "/product/cjc-1295dac-ipamorelin/",
+      "destination": "/product/cjc-1295-dac-ipamorelin/",
+      "permanent": true
+    },
+    {
+      "source": "/product/cjc-1295dac-ipamorelin",
+      "destination": "/product/cjc-1295-dac-ipamorelin/",
+      "permanent": true
+    },
+    {
+      "source": "/product/cjc-1295dac-ipamorelin/index.html",
+      "destination": "/product/cjc-1295-dac-ipamorelin/",
+      "permanent": true
+    },
+    {
+      "source": "/product/cjc1295-ipamorelin/",
+      "destination": "/product/cjc-1295-ipamorelin/",
+      "permanent": true
+    },
+    {
+      "source": "/product/cjc1295-ipamorelin",
+      "destination": "/product/cjc-1295-ipamorelin/",
+      "permanent": true
+    },
+    {
+      "source": "/product/cjc1295-ipamorelin/index.html",
+      "destination": "/product/cjc-1295-ipamorelin/",
+      "permanent": true
+    },
+    {
+      "source": "/product/hgh-176-191/",
+      "destination": "/product/h-fragment-176-191/",
+      "permanent": true
+    },
+    {
+      "source": "/product/hgh-176-191",
+      "destination": "/product/h-fragment-176-191/",
+      "permanent": true
+    },
+    {
+      "source": "/product/hgh-176-191/index.html",
+      "destination": "/product/h-fragment-176-191/",
+      "permanent": true
+    },
+    {
+      "source": "/product/kispeptin-10/",
+      "destination": "/product/kisspeptin-10/",
+      "permanent": true
+    },
+    {
+      "source": "/product/kispeptin-10",
+      "destination": "/product/kisspeptin-10/",
+      "permanent": true
+    },
+    {
+      "source": "/product/kispeptin-10/index.html",
+      "destination": "/product/kisspeptin-10/",
+      "permanent": true
+    },
+    {
+      "source": "/product/n-acetyl-semx-amidate/",
+      "destination": "/product/n-acetyl-semax-amidate/",
+      "permanent": true
+    },
+    {
+      "source": "/product/n-acetyl-semx-amidate",
+      "destination": "/product/n-acetyl-semax-amidate/",
+      "permanent": true
+    },
+    {
+      "source": "/product/n-acetyl-semx-amidate/index.html",
+      "destination": "/product/n-acetyl-semax-amidate/",
+      "permanent": true
+    },
+    {
+      "source": "/product/5-amino-1mq-2/",
+      "destination": "/product/5-amino-1mq-capsules/",
+      "permanent": true
+    },
+    {
+      "source": "/product/5-amino-1mq-2",
+      "destination": "/product/5-amino-1mq-capsules/",
+      "permanent": true
+    },
+    {
+      "source": "/product/5-amino-1mq-2/index.html",
+      "destination": "/product/5-amino-1mq-capsules/",
+      "permanent": true
+    },
+    {
+      "source": "/product/bam15-encapsulated-solid/",
+      "destination": "/product/bam15/",
+      "permanent": true
+    },
+    {
+      "source": "/product/bam15-encapsulated-solid",
+      "destination": "/product/bam15/",
+      "permanent": true
+    },
+    {
+      "source": "/product/bam15-encapsulated-solid/index.html",
+      "destination": "/product/bam15/",
+      "permanent": true
+    },
+    {
+      "source": "/product/bpc-157-tb-500-t%CE%B24-blend/",
+      "destination": "/product/bpc-157-tb-500-t-beta-4-blend/",
+      "permanent": true
+    },
+    {
+      "source": "/product/bpc-157-tb-500-t%CE%B24-blend",
+      "destination": "/product/bpc-157-tb-500-t-beta-4-blend/",
+      "permanent": true
+    },
+    {
+      "source": "/product/bpc-157-tb-500-t%CE%B24-blend/index.html",
+      "destination": "/product/bpc-157-tb-500-t-beta-4-blend/",
+      "permanent": true
+    },
+    {
+      "source": "/product/dhx/",
+      "destination": "/product/dhx-pnb-0408/",
+      "permanent": true
+    },
+    {
+      "source": "/product/dhx",
+      "destination": "/product/dhx-pnb-0408/",
+      "permanent": true
+    },
+    {
+      "source": "/product/dhx/index.html",
+      "destination": "/product/dhx-pnb-0408/",
+      "permanent": true
+    },
+    {
+      "source": "/product/epithalon-2/",
+      "destination": "/product/epithalon-capsules/",
+      "permanent": true
+    },
+    {
+      "source": "/product/epithalon-2",
+      "destination": "/product/epithalon-capsules/",
+      "permanent": true
+    },
+    {
+      "source": "/product/epithalon-2/index.html",
+      "destination": "/product/epithalon-capsules/",
+      "permanent": true
+    },
+    {
+      "source": "/product/kpv-2/",
+      "destination": "/product/kpv-capsules/",
+      "permanent": true
+    },
+    {
+      "source": "/product/kpv-2",
+      "destination": "/product/kpv-capsules/",
+      "permanent": true
+    },
+    {
+      "source": "/product/kpv-2/index.html",
+      "destination": "/product/kpv-capsules/",
+      "permanent": true
+    },
+    {
+      "source": "/product/mots-c-2/",
+      "destination": "/product/mots-c-capsules/",
+      "permanent": true
+    },
+    {
+      "source": "/product/mots-c-2",
+      "destination": "/product/mots-c-capsules/",
+      "permanent": true
+    },
+    {
+      "source": "/product/mots-c-2/index.html",
+      "destination": "/product/mots-c-capsules/",
+      "permanent": true
+    },
+    {
+      "source": "/product/slu-pp-332-2/",
+      "destination": "/product/slu-pp-332-capsules/",
+      "permanent": true
+    },
+    {
+      "source": "/product/slu-pp-332-2",
+      "destination": "/product/slu-pp-332-capsules/",
+      "permanent": true
+    },
+    {
+      "source": "/product/slu-pp-332-2/index.html",
+      "destination": "/product/slu-pp-332-capsules/",
+      "permanent": true
+    },
+    {
+      "source": "/product/tb-500-t%CE%B2-4/",
+      "destination": "/product/tb-500-t-beta-4/",
+      "permanent": true
+    },
+    {
+      "source": "/product/tb-500-t%CE%B2-4",
+      "destination": "/product/tb-500-t-beta-4/",
+      "permanent": true
+    },
+    {
+      "source": "/product/tb-500-t%CE%B2-4/index.html",
+      "destination": "/product/tb-500-t-beta-4/",
+      "permanent": true
+    },
+    {
+      "source": "/product/teso/",
+      "destination": "/product/teso-ns2330/",
+      "permanent": true
+    },
+    {
+      "source": "/product/teso",
+      "destination": "/product/teso-ns2330/",
+      "permanent": true
+    },
+    {
+      "source": "/product/teso/index.html",
+      "destination": "/product/teso-ns2330/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aod9604-2/",
+      "destination": "/product/aod9604-liquid/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aod9604-2",
+      "destination": "/product/aod9604-liquid/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aod9604-2/index.html",
+      "destination": "/product/aod9604-liquid/",
+      "permanent": true
+    },
+    {
+      "source": "/product/bpc-157-pure-health-peptides/",
+      "destination": "/product/bpc-157-liquid/",
+      "permanent": true
+    },
+    {
+      "source": "/product/bpc-157-pure-health-peptides",
+      "destination": "/product/bpc-157-liquid/",
+      "permanent": true
+    },
+    {
+      "source": "/product/bpc-157-pure-health-peptides/index.html",
+      "destination": "/product/bpc-157-liquid/",
+      "permanent": true
+    },
+    {
+      "source": "/product/bpc-157-tb-500-2/",
+      "destination": "/product/bpc-157-tb-500-t-beta-4/",
+      "permanent": true
+    },
+    {
+      "source": "/product/bpc-157-tb-500-2",
+      "destination": "/product/bpc-157-tb-500-t-beta-4/",
+      "permanent": true
+    },
+    {
+      "source": "/product/bpc-157-tb-500-2/index.html",
+      "destination": "/product/bpc-157-tb-500-t-beta-4/",
+      "permanent": true
+    },
+    {
+      "source": "/product/dsip-2/",
+      "destination": "/product/dsip-liquid/",
+      "permanent": true
+    },
+    {
+      "source": "/product/dsip-2",
+      "destination": "/product/dsip-liquid/",
+      "permanent": true
+    },
+    {
+      "source": "/product/dsip-2/index.html",
+      "destination": "/product/dsip-liquid/",
+      "permanent": true
+    },
+    {
+      "source": "/product/epithalon-3/",
+      "destination": "/product/epithalon-liquid/",
+      "permanent": true
+    },
+    {
+      "source": "/product/epithalon-3",
+      "destination": "/product/epithalon-liquid/",
+      "permanent": true
+    },
+    {
+      "source": "/product/epithalon-3/index.html",
+      "destination": "/product/epithalon-liquid/",
+      "permanent": true
+    },
+    {
+      "source": "/product/ghk-cu-2/",
+      "destination": "/product/ghk-cu-liquid/",
+      "permanent": true
+    },
+    {
+      "source": "/product/ghk-cu-2",
+      "destination": "/product/ghk-cu-liquid/",
+      "permanent": true
+    },
+    {
+      "source": "/product/ghk-cu-2/index.html",
+      "destination": "/product/ghk-cu-liquid/",
+      "permanent": true
+    },
+    {
+      "source": "/product/kpv-3/",
+      "destination": "/product/kpv-liquid/",
+      "permanent": true
+    },
+    {
+      "source": "/product/kpv-3",
+      "destination": "/product/kpv-liquid/",
+      "permanent": true
+    },
+    {
+      "source": "/product/kpv-3/index.html",
+      "destination": "/product/kpv-liquid/",
+      "permanent": true
+    },
+    {
+      "source": "/product/lc120/",
+      "destination": "/product/lc-120-lipo-c-formulation/",
+      "permanent": true
+    },
+    {
+      "source": "/product/lc120",
+      "destination": "/product/lc-120-lipo-c-formulation/",
+      "permanent": true
+    },
+    {
+      "source": "/product/lc120/index.html",
+      "destination": "/product/lc-120-lipo-c-formulation/",
+      "permanent": true
+    },
+    {
+      "source": "/product/lc-216/",
+      "destination": "/product/lc-216-lipo-b-formulation/",
+      "permanent": true
+    },
+    {
+      "source": "/product/lc-216",
+      "destination": "/product/lc-216-lipo-b-formulation/",
+      "permanent": true
+    },
+    {
+      "source": "/product/lc-216/index.html",
+      "destination": "/product/lc-216-lipo-b-formulation/",
+      "permanent": true
+    },
+    {
+      "source": "/product/nad%E2%81%BA-nicotinamide-adenine-dinucleotide/",
+      "destination": "/product/nad-plus-nicotinamide-adenine-dinucleotide/",
+      "permanent": true
+    },
+    {
+      "source": "/product/nad%E2%81%BA-nicotinamide-adenine-dinucleotide",
+      "destination": "/product/nad-plus-nicotinamide-adenine-dinucleotide/",
+      "permanent": true
+    },
+    {
+      "source": "/product/nad%E2%81%BA-nicotinamide-adenine-dinucleotide/index.html",
+      "destination": "/product/nad-plus-nicotinamide-adenine-dinucleotide/",
+      "permanent": true
+    },
+    {
+      "source": "/product/pt-141-2/",
+      "destination": "/product/pt-141-liquid/",
+      "permanent": true
+    },
+    {
+      "source": "/product/pt-141-2",
+      "destination": "/product/pt-141-liquid/",
+      "permanent": true
+    },
+    {
+      "source": "/product/pt-141-2/index.html",
+      "destination": "/product/pt-141-liquid/",
+      "permanent": true
+    },
+    {
+      "source": "/product/semx-2/",
+      "destination": "/product/semx-liquid/",
+      "permanent": true
+    },
+    {
+      "source": "/product/semx-2",
+      "destination": "/product/semx-liquid/",
+      "permanent": true
+    },
+    {
+      "source": "/product/semx-2/index.html",
+      "destination": "/product/semx-liquid/",
+      "permanent": true
+    },
+    {
+      "source": "/product/tb-500-t%CE%B24-pure-health-peptides/",
+      "destination": "/product/tb-500-t-beta-4-liquid/",
+      "permanent": true
+    },
+    {
+      "source": "/product/tb-500-t%CE%B24-pure-health-peptides",
+      "destination": "/product/tb-500-t-beta-4-liquid/",
+      "permanent": true
+    },
+    {
+      "source": "/product/tb-500-t%CE%B24-pure-health-peptides/index.html",
+      "destination": "/product/tb-500-t-beta-4-liquid/",
+      "permanent": true
+    },
+    {
+      "source": "/product/vip-pure-health-peptides/",
+      "destination": "/product/vip-liquid/",
+      "permanent": true
+    },
+    {
+      "source": "/product/vip-pure-health-peptides",
+      "destination": "/product/vip-liquid/",
+      "permanent": true
+    },
+    {
+      "source": "/product/vip-pure-health-peptides/index.html",
+      "destination": "/product/vip-liquid/",
+      "permanent": true
+    },
+    {
+      "source": "/product/complete-configuration-modular-peptide-systems-abcde/",
+      "destination": "/product/complete-configuration-modular-peptide-systems-a-b-c-d-e/",
+      "permanent": true
+    },
+    {
+      "source": "/product/complete-configuration-modular-peptide-systems-abcde",
+      "destination": "/product/complete-configuration-modular-peptide-systems-a-b-c-d-e/",
+      "permanent": true
+    },
+    {
+      "source": "/product/complete-configuration-modular-peptide-systems-abcde/index.html",
+      "destination": "/product/complete-configuration-modular-peptide-systems-a-b-c-d-e/",
+      "permanent": true
+    },
+    {
+      "source": "/product/phase-1-configuration-modular-peptide-systems-ace/",
+      "destination": "/product/phase-1-configuration-modular-peptide-systems-a-c-e/",
+      "permanent": true
+    },
+    {
+      "source": "/product/phase-1-configuration-modular-peptide-systems-ace",
+      "destination": "/product/phase-1-configuration-modular-peptide-systems-a-c-e/",
+      "permanent": true
+    },
+    {
+      "source": "/product/phase-1-configuration-modular-peptide-systems-ace/index.html",
+      "destination": "/product/phase-1-configuration-modular-peptide-systems-a-c-e/",
+      "permanent": true
+    },
+    {
+      "source": "/product/phase-2-configuration-modular-peptide-systems-bd/",
+      "destination": "/product/phase-2-configuration-modular-peptide-systems-b-d/",
+      "permanent": true
+    },
+    {
+      "source": "/product/phase-2-configuration-modular-peptide-systems-bd",
+      "destination": "/product/phase-2-configuration-modular-peptide-systems-b-d/",
+      "permanent": true
+    },
+    {
+      "source": "/product/phase-2-configuration-modular-peptide-systems-bd/index.html",
+      "destination": "/product/phase-2-configuration-modular-peptide-systems-b-d/",
+      "permanent": true
+    },
+    {
+      "source": "/product-form/vials",
+      "destination": "/shop/",
+      "permanent": true
+    },
+    {
+      "source": "/product-form/vials/",
+      "destination": "/shop/",
+      "permanent": true
+    },
+    {
+      "source": "/product-form/vials/:path*/",
+      "destination": "/shop/",
+      "permanent": true
+    },
+    {
+      "source": "/product-form/vials/:path*",
+      "destination": "/shop/",
+      "permanent": true
+    },
+    {
+      "source": "/product-form/capsules",
+      "destination": "/shop/",
+      "permanent": true
+    },
+    {
+      "source": "/product-form/capsules/",
+      "destination": "/shop/",
+      "permanent": true
+    },
+    {
+      "source": "/product-form/capsules/:path*/",
+      "destination": "/shop/",
+      "permanent": true
+    },
+    {
+      "source": "/product-form/capsules/:path*",
+      "destination": "/shop/",
+      "permanent": true
+    },
+    {
+      "source": "/product-form/liquids",
+      "destination": "/shop/",
+      "permanent": true
+    },
+    {
+      "source": "/product-form/liquids/",
+      "destination": "/shop/",
+      "permanent": true
+    },
+    {
+      "source": "/product-form/liquids/:path*/",
+      "destination": "/shop/",
+      "permanent": true
+    },
+    {
+      "source": "/product-form/liquids/:path*",
+      "destination": "/shop/",
+      "permanent": true
+    },
+    {
+      "source": "/product-form/topicals",
+      "destination": "/shop/",
+      "permanent": true
+    },
+    {
+      "source": "/product-form/topicals/",
+      "destination": "/shop/",
+      "permanent": true
+    },
+    {
+      "source": "/product-form/topicals/:path*/",
+      "destination": "/shop/",
+      "permanent": true
+    },
+    {
+      "source": "/product-form/topicals/:path*",
+      "destination": "/shop/",
+      "permanent": true
+    }
+  ]
+}

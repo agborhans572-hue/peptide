@@ -1,10 +1,10 @@
 import type { Handler } from '@netlify/functions'
 import { randomUUID } from 'node:crypto'
 import Stripe from 'stripe'
-import { errorResponse, json } from './_shared/http.ts'
-import { webhookEnv } from './_shared/env.ts'
+import { errorResponse, json } from './_shared/http.js'
+import { webhookEnv } from './_shared/env.js'
 import { createClient } from '@supabase/supabase-js'
-import { processStripeEvent, retryStripeEvent } from './_shared/commerce-events.ts'
+import { processStripeEvent, retryStripeEvent } from './_shared/commerce-events.js'
 
 export const handler: Handler = async (request) => {
   let eventId = ''

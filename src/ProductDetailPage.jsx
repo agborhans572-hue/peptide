@@ -1,3 +1,6 @@
+import ResponsiveImage from './ResponsiveImage.jsx'
+import ResearchResources from './ResearchResources.jsx'
+import { relatedResearchProducts } from './researchLinks.js'
 import { useEffect, useMemo, useState } from 'react'
 import { BadgeCheck, Info, Minus, Plus } from 'lucide-react'
 import { shopProducts } from './catalog.js'
@@ -104,21 +107,7 @@ export function ProductDetailPage({ product, detail, onAddToCart, onNavigate, on
     event.target.removeAttribute('srcset')
     event.target.src = fallback
   }
-  const relatedProducts = useMemo(() => {
-    const currentCategories = new Set(Array.isArray(product?.categories) ? product.categories : [])
-    return shopProducts
-      .filter((candidate) => candidate.id !== product?.id)
-      .map((candidate) => ({
-        candidate,
-        score:
-          (candidate.type === product?.type ? 12 : 0) +
-          (candidate.categories || []).filter((category) => currentCategories.has(category)).length * 5 +
-          Math.min(Number(candidate.popularity || 0) / 5000, 2),
-      }))
-      .sort((left, right) => right.score - left.score || Number(right.candidate.popularity || 0) - Number(left.candidate.popularity || 0))
-      .slice(0, 4)
-      .map(({ candidate }) => candidate)
-  }, [product])
+  const relatedProducts = useMemo(() => relatedResearchProducts(product, shopProducts), [product])
 
   function changeOption(index) {
     setOptionIndex(index)
@@ -176,29 +165,22 @@ export function ProductDetailPage({ product, detail, onAddToCart, onNavigate, on
         className="product-detail-hero"
         style={{ '--product-gallery-height': `${desktopGalleryHeight}px` }}
       >
-        <div className="product-gallery product-gallery-desktop">
+        <div className="product-gallery product-gallery-desktop product-gallery-unified">
           <div className="product-gallery-thumbs">
             {gallery.map((image, index) => (
-              <button className={galleryIndex === index ? 'active' : ''} type="button" aria-pressed={galleryIndex === index} onClick={() => setGalleryIndex(index)} key={`${image.src}-${index}`}>
-                <img src={image.src} onError={(event) => restoreMediaFallback(event, image.mediaSource)} alt={image.alt || `${product.name} gallery image ${index + 1}`} />
+              <button className={galleryIndex === index ? 'active' : ''} type="button" aria-label={`View ${product.name} gallery image ${index + 1}`} aria-pressed={galleryIndex === index} onClick={() => setGalleryIndex(index)} key={`${image.src}-${index}`}>
+                <ResponsiveImage sizes="100px" src={image.mediaSource || image.src} onError={(event) => restoreMediaFallback(event, image.mediaSource)} alt={image.alt || `${product.name} gallery image ${index + 1}`} />
               </button>
             ))}
           </div>
           <div className="product-gallery-main">
-            <img
+            <ResponsiveImage
               {...responsiveImageProps(galleryIndex === 0 ? (option?.mediaSource || gallery[0]?.mediaSource || product.mediaSource || product.image) : gallery[galleryIndex]?.mediaSource, '(max-width: 800px) 94vw, 50vw')}
               alt={galleryIndex === 0 ? (option?.imageAlt || gallery[0]?.alt || product.imageAlt || product.name) : (gallery[galleryIndex]?.alt || product.name)}
+              loading="eager"
+              fetchPriority="high"
               decoding="async"
             />
-          </div>
-        </div>
-
-        <div className="product-gallery product-gallery-mobile">
-          <div className="product-gallery-mobile-main">
-            {gallery.map((image, index) => <img src={image.src} onError={(event) => restoreMediaFallback(event, image.mediaSource)} alt={image.alt || `${product.name} gallery image ${index + 1}`} key={`${image.src}-${index}`} />)}
-          </div>
-          <div className="product-gallery-mobile-thumbnails" aria-hidden="true">
-            {gallery.map((image, index) => <img src={image.src} onError={(event) => restoreMediaFallback(event, image.mediaSource)} alt="" key={`mobile-thumb-${image.src}-${index}`} />)}
           </div>
         </div>
 
@@ -254,7 +236,7 @@ export function ProductDetailPage({ product, detail, onAddToCart, onNavigate, on
           <button className="product-detail-add" type="button" disabled={!available} onClick={addProduct}>
             {available ? 'ADD TO CART' : 'OUT OF STOCK'}
           </button>
-          <p className="product-detail-shipping"><BadgeCheck /> Free Shipping on All Orders $175+</p>
+          <p className="product-detail-shipping"><BadgeCheck /> <a href="/shipping-policy/">U.S. shipping $10.99; free from $175 after discounts</a></p>
         </div>
       </section>
 
@@ -271,7 +253,7 @@ export function ProductDetailPage({ product, detail, onAddToCart, onNavigate, on
           </section>
 
           <section className="product-coa-callout">
-            <img src="/assets/product-detail/coa-illustration.png" alt="Certificate of Analysis documentation" />
+            <ResponsiveImage src="/assets/product-detail/coa-illustration.png" alt="Certificate of Analysis documentation" />
             <div>
               <h2>Certificate of Analysis</h2>
               <p>At Pure Health Peptides, transparency is key. Every batch is third-party tested in the USA, with Certificates of Analysis (COAs) readily available for verification, giving researchers confidence in their work.</p>
@@ -282,12 +264,13 @@ export function ProductDetailPage({ product, detail, onAddToCart, onNavigate, on
                   event.preventDefault()
                   onNavigate(coaDestination.route)
                 }}
-              >VIEW CERTIFICATIONS</a>
+              >View batch Certificates of Analysis</a>
             </div>
           </section>
         </div>
       </section>
 
+      <ResearchResources products={false} />
       <section className="product-related-products" aria-labelledby="related-products-title">
         <p className="eyebrow">CONTINUE EXPLORING</p>
         <h2 id="related-products-title">Related research materials</h2>
@@ -302,7 +285,7 @@ export function ProductDetailPage({ product, detail, onAddToCart, onNavigate, on
               }}
               key={relatedProduct.id}
             >
-              <img src={relatedProduct.image} alt={`${relatedProduct.name} research ${relatedProduct.type}`} loading="lazy" />
+              <ResponsiveImage src={relatedProduct.image} alt={`${relatedProduct.name} research ${relatedProduct.type}`} loading="lazy" />
               <span>{relatedProduct.type}</span>
               <h3>{relatedProduct.name}</h3>
               <p>From {formatCents(relatedProduct.priceCents, relatedProduct.currency)}</p>

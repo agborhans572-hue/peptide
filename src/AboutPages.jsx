@@ -1,3 +1,4 @@
+import ResponsiveImage from './ResponsiveImage.jsx'
 import { useState } from 'react'
 import { ChevronDown } from 'lucide-react'
 import './about.css'
@@ -171,7 +172,7 @@ export function ResearchAreasPage() {
         </div>
         <section className="mapping-section">
           <h2>Research Area &amp; Compound Mapping Matrix</h2>
-          <img src="/assets/about/research-matrix.png" alt="Research area and compound mapping matrix" />
+          <ResponsiveImage src="/assets/about/research-matrix.png" alt="Research area and compound mapping matrix" />
           <div className="matrix-legend">
             <h3>Legend</h3>
             <p>✓ Primary research relevance – Compounds may appear in multiple research areas due to overlapping biological pathways.</p>
@@ -197,7 +198,7 @@ export function NewsPage({ onShop }) {
         <div className="news-grid">
           {newsItems.map((item) => (
             <article className="news-card" key={item.title}>
-              <img src={item.image} alt="" />
+              <ResponsiveImage src={item.image} alt="" />
               <div>
                 <h2>{item.title}</h2>
                 <p>{excerpt}</p>
@@ -212,7 +213,7 @@ export function NewsPage({ onShop }) {
         <div className="related-grid">
           {relatedProducts.map((product) => (
             <article key={product.title}>
-              <img src={product.image} alt={product.title} />
+              <ResponsiveImage src={product.image} alt={product.title} />
               <h3>{product.title}</h3>
               <p>{product.price}</p>
               <button type="button" onClick={onShop}>SELECT OPTIONS</button>
@@ -277,7 +278,7 @@ export function ElitePage({ onShop, onNavigate }) {
           <div className="elite-tier-list">
             {eliteTiers.map((tier) => (
               <article key={tier.name}>
-                <img src={tier.image} alt="" />
+                <ResponsiveImage src={tier.image} alt="" />
                 <div><h3>{tier.name}</h3><p>{tier.discount}</p></div>
               </article>
             ))}
@@ -288,9 +289,9 @@ export function ElitePage({ onShop, onNavigate }) {
       <section className="elite-how">
         <h2>How it works</h2>
         <div>
-          <img src="/assets/about/elite-earn-points.jpg" alt="Earn points with every completed order" />
-          <img src="/assets/about/elite-points.jpg" alt="Points build your Pure Elite Access level" />
-          <img src="/assets/about/elite-tier-status.jpg" alt="Tier status is reviewed periodically" />
+          <ResponsiveImage src="/assets/about/elite-earn-points.jpg" alt="Earn points with every completed order" />
+          <ResponsiveImage src="/assets/about/elite-points.jpg" alt="Points build your Pure Elite Access level" />
+          <ResponsiveImage src="/assets/about/elite-tier-status.jpg" alt="Tier status is reviewed periodically" />
         </div>
       </section>
 
@@ -352,7 +353,7 @@ export function ElitePage({ onShop, onNavigate }) {
             <h2>Tier stability</h2>
             <p>To provide continuity, tiers may include a limited protection period if an account temporarily dips below the usual activity level.</p>
             <div className="elite-mini-tiers">
-              {eliteTiers.map((tier) => <img src={tier.image} alt={tier.name} key={tier.name} />)}
+              {eliteTiers.map((tier) => <ResponsiveImage src={tier.image} alt={tier.name} key={tier.name} />)}
             </div>
           </article>
         </div>

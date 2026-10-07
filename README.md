@@ -29,4 +29,4 @@ See [DEPLOYMENT.md](./DEPLOYMENT.md) for hosting rules and [SCALABILITY_IMPLEMEN
 
 ## Vercel
 
-Import this repository on Vercel Pro and leave the detected Vite settings in place. The committed `vercel.json` builds `dist/`, serves commerce/account endpoints, runs the commerce worker every minute, and runs the daily account-deletion worker. Add the production variables listed in `.env.production.example`; mark service, cron, Stripe, and WooCommerce values as sensitive.
+Import this repository on Vercel and leave the detected Vite settings in place. The committed `vercel.json` builds `dist/`, serves commerce/account endpoints, and runs both the commerce worker and account-deletion worker daily so the schedules are compatible with Vercel Hobby. Add the production variables listed in `.env.production.example`; mark service, cron, Stripe, and WooCommerce values as sensitive.

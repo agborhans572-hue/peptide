@@ -1,3 +1,4 @@
+import ResearchResources from './ResearchResources.jsx'
 import { useState } from 'react'
 import { ChevronDown } from 'lucide-react'
 import { postToSiteService, safeServiceMessage, siteServices } from './siteServices.js'
@@ -86,7 +87,7 @@ const faqCategories = [
       ['Do you comply with cGMP (Current Good Manufacturing Practice) regulations?', 'Yes! Our suppliers and partners are cGMP-certified, ensuring that all peptides are manufactured under strict quality control standards to maintain purity, consistency, and safety for research applications.'],
       ['How does your company ensure compliance with regulatory guidelines?', 'We follow strict FDA-compliant policies, including:\n\n✔ Labeling all products “For Research Use Only”\n✔ Prohibiting human or veterinary consumption\n✔ Manufacturing peptides in ISO & cGMP-certified facilities\n✔ Conducting U.S.-based third-party testing\n\nWe operate with full transparency and do not provide medical advice, dosage information, or treatment recommendations.'],
       ['Why am I banned from your website?', 'Pure Health Peptides reserves the right to restrict access to users who violate our policies, attempt to misuse our products, or engage in fraudulent or suspicious activities. Common reasons for being banned include:\n\n• Misuse of Products\n• Fraudulent Transactions\n• Violation of Terms & Policies\n• Regulatory Compliance Issues.\n\nIf you believe you have been mistakenly banned, please contact our support team for further assistance.'],
-      ['If you have any other questions for us?', 'For all other general inquiries, please feel free to contact us at info@purehealthpeptides.com. However, we strictly cannot provide any guidance, recommendations, or answers related to dosage, administration, regimens, or personal use in any form. All our products are for research purposes only.'],
+      ['If you have any other questions for us?', 'For all other general inquiries, please feel free to contact us at info@purehealthpeptidesshop.com. However, we strictly cannot provide any guidance, recommendations, or answers related to dosage, administration, regimens, or personal use in any form. All our products are for research purposes only.'],
     ],
   },
 ]
@@ -102,7 +103,7 @@ export function TrackOrderPage() {
     event.preventDefault()
     if (!event.currentTarget.reportValidity()) return
     if (!siteServices.orderTrackingEndpoint) {
-      setStatus('Order lookup is not connected on this deployment. Email info@purehealthpeptides.com for order support.')
+      setStatus('Order lookup is not connected on this deployment. Email info@purehealthpeptidesshop.com for order support.')
       return
     }
 
@@ -179,11 +180,6 @@ export function ContactPage() {
   async function submit(event) {
     event.preventDefault()
     if (!event.currentTarget.reportValidity()) return
-    if (!siteServices.contactEndpoint) {
-      setStatus('Contact form delivery is not connected on this deployment. Please email info@purehealthpeptides.com.')
-      return
-    }
-
     const form = event.currentTarget
     const values = Object.fromEntries(new FormData(form))
     setStatus('Sending your message…')
@@ -192,21 +188,22 @@ export function ContactPage() {
       form.reset()
       setStatus('Thanks—your message was sent successfully.')
     } catch (error) {
-      setStatus(safeServiceMessage(error, 'Your message could not be sent. Please try again or email support.'))
+      setStatus(safeServiceMessage(error, 'Your message could not be sent. Please try again or email info@purehealthpeptidesshop.com.'))
     }
   }
 
   return (
     <div className="support-page contact-page">
       <section className="contact-content">
-        <h1>Send us a message</h1>
+        <h1>Send us a message</h1><p>Contact Pure Health Peptides for help with orders, shipping, catalog information, or research documentation. Include your order number when relevant. Please do not send payment details or account passwords. You can also email <a href="mailto:info@purehealthpeptidesshop.com">info@purehealthpeptidesshop.com</a>.</p><ResearchResources />
         <form onSubmit={submit}>
           <label className="sr-only" htmlFor="support-full-name">Full Name</label>
-          <input id="support-full-name" name="full-name" type="text" placeholder="Full Name" required />
+          <input id="support-full-name" name="fullName" type="text" placeholder="Full Name" autoComplete="name" maxLength="100" required />
           <label className="sr-only" htmlFor="support-email">Email Address</label>
-          <input id="support-email" name="email-address" type="email" placeholder="Email Address" required />
+          <input id="support-email" name="email" type="email" placeholder="Email Address" autoComplete="email" maxLength="254" required />
+          <input name="company" type="text" tabIndex="-1" autoComplete="off" aria-hidden="true" className="contact-honeypot" />
           <label className="sr-only" htmlFor="support-message">Your Message</label>
-          <textarea id="support-message" name="your-message" placeholder="Your Message" required />
+          <textarea id="support-message" name="message" placeholder="Your Message" minLength="10" maxLength="5000" required />
           <button type="submit">SEND MESSAGE</button>
         </form>
         <FormStatus>{status}</FormStatus>

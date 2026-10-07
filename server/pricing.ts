@@ -1,7 +1,8 @@
 import catalogData from './catalog.generated.json'
+import shippingPolicy from '../src/shippingPolicy.json'
 
-export const SHIPPING_CENTS = 1099
-export const FREE_SHIPPING_THRESHOLD_CENTS = 17500
+export const SHIPPING_CENTS = shippingPolicy.rateCents
+export const FREE_SHIPPING_THRESHOLD_CENTS = shippingPolicy.freeThresholdCents
 export const MAX_CART_LINES = 25
 export const MAX_LINE_QUANTITY = 100
 
@@ -88,6 +89,10 @@ export function lookupCatalogVariant(productId: string, variantId: string) {
   return product && variant ? { product, variant } : null
 }
 
+export function shippingForSubtotal(discountedSubtotalCents: number) {
+  return discountedSubtotalCents >= FREE_SHIPPING_THRESHOLD_CENTS ? 0 : SHIPPING_CENTS
+}
+
 export function priceCart(requestedItems: RequestedCartItem[]) {
   if (requestedItems.length === 0 || requestedItems.length > MAX_CART_LINES) {
     throw new Error('The cart must contain between 1 and 25 line items.')
@@ -146,7 +151,7 @@ export function priceCart(requestedItems: RequestedCartItem[]) {
   })
 
   const subtotalCents = items.reduce((sum, item) => sum + item.totalCents, 0)
-  const shippingCents = subtotalCents >= FREE_SHIPPING_THRESHOLD_CENTS ? 0 : SHIPPING_CENTS
+  const shippingCents = shippingForSubtotal(subtotalCents)
 
   return {
     catalogVersion,

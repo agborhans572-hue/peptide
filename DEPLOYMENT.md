@@ -30,6 +30,8 @@ In **Project → Settings → Environment Variables**, add these values for the 
 | `CRON_SECRET` | At least 32 random characters for the deletion processor | Yes |
 | `STRIPE_SECRET_KEY` | Stripe live secret key | Yes |
 | `STRIPE_WEBHOOK_SECRET` | Stripe endpoint signing secret | Yes |
+| `RESEND_API_KEY` | Resend sending-access API key | Yes |
+| `CONTACT_FROM_EMAIL` | `info@purehealthpeptidesshop.com` on the verified sending domain | No |
 | `WOOCOMMERCE_URL` | WooCommerce store URL | No |
 | `WC_CONSUMER_KEY` | WooCommerce REST API key | Yes |
 | `WC_CONSUMER_SECRET` | WooCommerce REST API secret | Yes |
@@ -41,13 +43,18 @@ In **Project → Settings → Environment Variables**, add these values for the 
 | `VITE_SUPABASE_URL` | Same project URL as `SUPABASE_URL` | No |
 | `VITE_SUPABASE_PUBLISHABLE_KEY` | Supabase browser publishable key | No |
 | `VITE_TURNSTILE_SITE_KEY` | Cloudflare Turnstile public site key | No |
+| `VITE_CHATWOOT_WEBSITE_TOKEN` | Chatwoot Website inbox configuration -> website token | No (public widget identifier) |
+| `VITE_CHATWOOT_BASE_URL` | Chatwoot installation origin, normally `https://app.chatwoot.com` | No |
 | `VITE_GOOGLE_AUTH_ENABLED` | `false` unless Google is configured and tested | No |
 | `VITE_ACCOUNT_DELETION_ENDPOINT` | `/api/account/delete-request` | No |
 | `VITE_CHECKOUT_ENDPOINT` | `/api/checkout` | No |
+| `VITE_CONTACT_ENDPOINT` | `/api/contact` | No |
 | `VITE_ORDER_TRACKING_ENDPOINT` | `/api/orders/track` | No |
 | `VITE_BUILD_SOURCEMAP` | `false` | No |
 
 Never add a secret as `VITE_*`: Vite embeds those values in the browser bundle. Once Vercel has assigned your final domain, set Stripe’s live webhook endpoint to `https://YOUR-DOMAIN/api/stripe-webhook` and copy the signing secret into `STRIPE_WEBHOOK_SECRET`.
+
+Create a **Website** inbox in Chatwoot and use only that inbox's website token in `VITE_CHATWOOT_WEBSITE_TOKEN`. Do not use a Chatwoot agent, admin, personal-access, or API token in any browser variable. The committed CSP is narrowly configured for Chatwoot Cloud at `https://app.chatwoot.com`. For a self-hosted installation, replace that exact origin in `script-src`, `frame-src`, `img-src`, and `connect-src`, replace its `wss://` origin in `connect-src`, and keep every other CSP restriction intact. Keep `vercel.json`, `public/_headers`, and `public/hosting-config.json` synchronized when changing the allowed origin.
 
 Vercel Pro is required for the one-minute commerce cron. Set Stripe's endpoint to `https://YOUR-DOMAIN/api/stripe-webhook` and Woo's order endpoint to `https://YOUR-DOMAIN/api/woocommerce-webhook`; keep both secrets server-only.
 
@@ -74,7 +81,7 @@ The repository includes Vercel serverless adapters for server-priced Stripe Chec
 
 - `VITE_ACCOUNT_DELETION_ENDPOINT` accepts a recent authenticated deletion request and immediately disables protected access.
 - `VITE_CHECKOUT_ENDPOINT` accepts `POST { checkoutAttemptId, catalogVersion, items: [{ productId, variantId, quantity }] }` and returns `{ checkoutUrl, orderNumber, expiresAt }`. It sends one signed reservation request to the Woo bridge and never accepts browser prices/SKUs/totals. A stale cart receives HTTP 409; an unavailable authority fails closed with retryable HTTP 503.
-- `VITE_CONTACT_ENDPOINT` accepts the contact form fields as JSON.
+- `VITE_CONTACT_ENDPOINT` points to `/api/contact`, which validates and rate-limits `POST { fullName, email, message }`, then delivers the enquiry only to `info@purehealthpeptidesshop.com` through Resend. Verify `purehealthpeptidesshop.com` in Resend and configure `RESEND_API_KEY` plus `CONTACT_FROM_EMAIL` in the server-side deployment environment.
 - `VITE_NEWSLETTER_ENDPOINT` accepts `POST { email }`.
 - `VITE_ORDER_TRACKING_ENDPOINT` accepts `POST { orderid, order_email }` and may return a user-safe `message` or `status`.
 
@@ -90,4 +97,4 @@ Vercel invokes `/api/cron/process-commerce-jobs` every minute and `/api/cron/pro
 
 See `docs/LAUNCH_RUNBOOK.md` for database migration verification, Stripe webhook registration, live payment/refund evidence, backups, MFA, HTTPS, monitoring, legal approval, and rollback.
 
-The Content Security Policy intentionally permits scripts and network requests only from the same origin, allows inline styles for React's dynamic product layout, and allows images from this site plus the canonical Pure Health Peptides origin. Update and retest the policy before adding analytics, payment, chat, embedded content, or external APIs.
+The Content Security Policy intentionally permits same-origin application resources, Cloudflare Turnstile, Supabase, and the exact Chatwoot Cloud origins needed by the website widget. It allows inline styles for React's dynamic product layout and images from this site plus the canonical Pure Health Peptides origin. Update and retest the policy before adding any other analytics, payment, chat, embedded content, or external API origin.

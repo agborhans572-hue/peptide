@@ -4,7 +4,6 @@ import { shopProducts as legacyProducts, RESEARCH_CATEGORIES } from '../src/shop
 import {
   SITE_ORIGIN,
   catalogHash,
-  cleanSlug,
   productSlugs,
   readLogisticsCsv,
   stripHtml,
@@ -55,13 +54,14 @@ const products = audit.products.map((sourceProduct) => {
   const slug = slugsByWooId.get(sourceProduct.id)
   const detail = details[sourceSlug] || {}
   const contentOverride = overrides[id] || {}
+  const productName = contentOverride.name || sourceProduct.title
   const productLogistics = logisticsByProduct.get(String(sourceProduct.id))
   const imageMap = new Map((sourceProduct.images || []).map((image, index) => [image.src, detail.images?.[index]]))
-  const images = (detail.images?.length ? detail.images : [{ src: legacy.image, alt: `${sourceProduct.title} ${typeLabels[sourceProduct.type] || 'research product'}`, role: 'primary' }])
+  const images = (detail.images?.length ? detail.images : [{ src: legacy.image, alt: `${productName} ${typeLabels[sourceProduct.type] || 'research product'}`, role: 'primary' }])
     .map((image, index) => ({
       role: image.role || (index === 0 ? 'primary' : 'gallery'),
       src: image.src,
-      alt: image.alt?.trim() || `${sourceProduct.title} ${image.role || `gallery image ${index + 1}`}`,
+      alt: (contentOverride.name ? image.alt?.replaceAll('Semx', 'Semax') : image.alt)?.trim() || `${productName} ${image.role || `gallery image ${index + 1}`}`,
     }))
   const primaryImage = images.find((image) => image.role === 'primary') || images[0]
   const shortDescriptionHtml = contentOverride.shortDescriptionHtml || sourceProduct.shortDescriptionHtml || detail.shortDescriptionHtml
@@ -88,7 +88,7 @@ const products = audit.products.map((sourceProduct) => {
       stockQuantity,
       maxQty: stockQuantity,
       image: localizedVariantImage?.src || primaryImage.src,
-      imageAlt: `${sourceProduct.title} ${variant.label} research product`,
+      imageAlt: `${productName} ${variant.label} research product`,
       shippingWeightGrams: positiveInteger(row?.shipping_weight_g),
       packageDimensionsMm: {
         length: positiveInteger(row?.package_length_mm),
@@ -112,7 +112,7 @@ const products = audit.products.map((sourceProduct) => {
     detailKey: sourceSlug,
     legacySlugs: sourceSlug !== slug ? [sourceSlug] : [],
     productUrl: new URL(`/product/${slug}/`, SITE_ORIGIN).href,
-    name: sourceProduct.title.trim(),
+    name: productName.trim(),
     status: sourceProduct.published ? 'published' : 'draft',
     visibility: sourceProduct.published && sourceProduct.visible !== false ? 'visible' : 'hidden',
     published: Boolean(sourceProduct.published),
@@ -128,7 +128,7 @@ const products = audit.products.map((sourceProduct) => {
     defaultOption: Math.max(0, sourceProduct.defaultVariantIndex || 0),
     options,
     image: primaryImage.src || legacy.image,
-    imageAlt: `${sourceProduct.title} research ${sourceProduct.type} product`,
+    imageAlt: `${productName} research ${sourceProduct.type} product`,
     images,
     shortDescriptionHtml,
     shortDescription: stripHtml(shortDescriptionHtml),
@@ -221,7 +221,7 @@ const accessManifest = {
   redirects: Object.fromEntries(publicProducts.flatMap((product) => product.legacySlugs.map((legacySlug) => {
     let decoded = legacySlug
     try { decoded = decodeURIComponent(legacySlug) } catch { /* retain the literal legacy slug */ }
-    return [cleanSlug(decoded), product.slug]
+    return [decoded.normalize('NFC').toLowerCase(), product.slug]
   }))),
   retired: retiredProducts,
 }

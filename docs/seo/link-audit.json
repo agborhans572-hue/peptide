@@ -1,0 +1,296 @@
+{
+  "capturedAt": "2026-09-08T10:24:52.575Z",
+  "lighthouseVersion": "13.4.1",
+  "source": "Fresh local Lighthouse on saved pre-change production build; not the historical Search Console audit",
+  "count": 32,
+  "links": [
+    {
+      "number": 1,
+      "page": "https://purehealthpeptidesshop.com/",
+      "selector": "a.learn-button[href=\"/product/bacteriostatic-water/\"]",
+      "destination": "/product/bacteriostatic-water/",
+      "visibleText": "LEARN MORE",
+      "accessibleName": "Learn More About Bacteriostatic Water",
+      "proposedCorrection": "View Bacteriostatic Water details"
+    },
+    {
+      "number": 2,
+      "page": "https://purehealthpeptidesshop.com/",
+      "selector": "a.learn-button[href=\"/product/glp-3-r/\"]",
+      "destination": "/product/glp-3-r/",
+      "visibleText": "LEARN MORE",
+      "accessibleName": "Learn More About GLP-3 (R)",
+      "proposedCorrection": "View GLP-3 (R) details"
+    },
+    {
+      "number": 3,
+      "page": "https://purehealthpeptidesshop.com/",
+      "selector": "a.learn-button[href=\"/product/bpc-157/\"]",
+      "destination": "/product/bpc-157/",
+      "visibleText": "LEARN MORE",
+      "accessibleName": "Learn More About BPC-157",
+      "proposedCorrection": "View BPC-157 details"
+    },
+    {
+      "number": 4,
+      "page": "https://purehealthpeptidesshop.com/",
+      "selector": "a.learn-button[href=\"/product/bpc-157-tb-500/\"]",
+      "destination": "/product/bpc-157-tb-500/",
+      "visibleText": "LEARN MORE",
+      "accessibleName": "Learn More About BPC-157/TB-500",
+      "proposedCorrection": "View BPC-157/TB-500 details"
+    },
+    {
+      "number": 5,
+      "page": "https://purehealthpeptidesshop.com/",
+      "selector": "a.learn-button[href=\"/product/nad/\"]",
+      "destination": "/product/nad/",
+      "visibleText": "LEARN MORE",
+      "accessibleName": "Learn More About NAD+",
+      "proposedCorrection": "View NAD+ details"
+    },
+    {
+      "number": 6,
+      "page": "https://purehealthpeptidesshop.com/",
+      "selector": "a.learn-button[href=\"/product/ghk-cu/\"]",
+      "destination": "/product/ghk-cu/",
+      "visibleText": "LEARN MORE",
+      "accessibleName": "Learn More About GHK-Cu",
+      "proposedCorrection": "View GHK-Cu details"
+    },
+    {
+      "number": 7,
+      "page": "https://purehealthpeptidesshop.com/",
+      "selector": "a.learn-button[href=\"/product/mots-c/\"]",
+      "destination": "/product/mots-c/",
+      "visibleText": "LEARN MORE",
+      "accessibleName": "Learn More About MOTS-c",
+      "proposedCorrection": "View MOTS-c details"
+    },
+    {
+      "number": 8,
+      "page": "https://purehealthpeptidesshop.com/",
+      "selector": "a.learn-button[href=\"/product/tesmorelin/\"]",
+      "destination": "/product/tesmorelin/",
+      "visibleText": "LEARN MORE",
+      "accessibleName": "Learn More About Tesamorelin",
+      "proposedCorrection": "View Tesmorelin details"
+    },
+    {
+      "number": 9,
+      "page": "https://purehealthpeptidesshop.com/",
+      "selector": "a.learn-button[href=\"/product/dhx-pnb-0408/\"]",
+      "destination": "/product/dhx-pnb-0408/",
+      "visibleText": "LEARN MORE",
+      "accessibleName": "Learn More About DHX / PNB-0408",
+      "proposedCorrection": "View DHX / PNB-0408 details"
+    },
+    {
+      "number": 10,
+      "page": "https://purehealthpeptidesshop.com/",
+      "selector": "a.learn-button[href=\"/product/bpc-157-arginate-salt/\"]",
+      "destination": "/product/bpc-157-arginate-salt/",
+      "visibleText": "LEARN MORE",
+      "accessibleName": "Learn More About BPC-157 (Arginate Salt)",
+      "proposedCorrection": "View BPC-157 (Arginate Salt) details"
+    },
+    {
+      "number": 11,
+      "page": "https://purehealthpeptidesshop.com/",
+      "selector": "a.learn-button[href=\"/product/slu-pp-332-capsules/\"]",
+      "destination": "/product/slu-pp-332-capsules/",
+      "visibleText": "LEARN MORE",
+      "accessibleName": "Learn More About SLU-PP-332",
+      "proposedCorrection": "View SLU-PP-332 details"
+    },
+    {
+      "number": 12,
+      "page": "https://purehealthpeptidesshop.com/",
+      "selector": "a.learn-button[href=\"/product/bpc-157-tb-500-t-beta-4-blend/\"]",
+      "destination": "/product/bpc-157-tb-500-t-beta-4-blend/",
+      "visibleText": "LEARN MORE",
+      "accessibleName": "Learn More About BPC-157 / TB-500 (Tβ4) Blend",
+      "proposedCorrection": "View BPC-157 / TB-500 (Tβ4) Blend details"
+    },
+    {
+      "number": 13,
+      "page": "https://purehealthpeptidesshop.com/",
+      "selector": "a.learn-button[href=\"/product/5-amino-1mq-capsules/\"]",
+      "destination": "/product/5-amino-1mq-capsules/",
+      "visibleText": "LEARN MORE",
+      "accessibleName": "Learn More About 5-Amino-1MQ",
+      "proposedCorrection": "View 5-Amino-1MQ details"
+    },
+    {
+      "number": 14,
+      "page": "https://purehealthpeptidesshop.com/",
+      "selector": "a.learn-button[href=\"/product/methylene-blue/\"]",
+      "destination": "/product/methylene-blue/",
+      "visibleText": "LEARN MORE",
+      "accessibleName": "Learn More About Methylene Blue",
+      "proposedCorrection": "View Methylene Blue details"
+    },
+    {
+      "number": 15,
+      "page": "https://purehealthpeptidesshop.com/",
+      "selector": "a.learn-button[href=\"/product/glow/\"]",
+      "destination": "/product/glow/",
+      "visibleText": "LEARN MORE",
+      "accessibleName": "Learn More About GLOW",
+      "proposedCorrection": "View GLOW details"
+    },
+    {
+      "number": 16,
+      "page": "https://purehealthpeptidesshop.com/",
+      "selector": "a.learn-button[href=\"/product/ibutamorin/\"]",
+      "destination": "/product/ibutamorin/",
+      "visibleText": "LEARN MORE",
+      "accessibleName": "Learn More About Ibutamorin",
+      "proposedCorrection": "View Ibutamorin details"
+    },
+    {
+      "number": 17,
+      "page": "https://purehealthpeptidesshop.com/",
+      "selector": "a.learn-button[href=\"/product/lc-216-lipo-b-formulation/\"]",
+      "destination": "/product/lc-216-lipo-b-formulation/",
+      "visibleText": "LEARN MORE",
+      "accessibleName": "Learn More About LC 216 (Lipo-B formulation)",
+      "proposedCorrection": "View LC 216  (Lipo-B formulation) details"
+    },
+    {
+      "number": 18,
+      "page": "https://purehealthpeptidesshop.com/",
+      "selector": "a.learn-button[href=\"/product/semx-liquid/\"]",
+      "destination": "/product/semx-liquid/",
+      "visibleText": "LEARN MORE",
+      "accessibleName": "Learn More About Semax",
+      "proposedCorrection": "View Semx details"
+    },
+    {
+      "number": 19,
+      "page": "https://purehealthpeptidesshop.com/",
+      "selector": "a.learn-button[href=\"/product/selank-tp-7/\"]",
+      "destination": "/product/selank-tp-7/",
+      "visibleText": "LEARN MORE",
+      "accessibleName": "Learn More About Selank TP-7",
+      "proposedCorrection": "View Selank TP-7 details"
+    },
+    {
+      "number": 20,
+      "page": "https://purehealthpeptidesshop.com/",
+      "selector": "a.learn-button[href=\"/product/pt-141-liquid/\"]",
+      "destination": "/product/pt-141-liquid/",
+      "visibleText": "LEARN MORE",
+      "accessibleName": "Learn More About PT-141",
+      "proposedCorrection": "View PT-141 details"
+    },
+    {
+      "number": 21,
+      "page": "https://purehealthpeptidesshop.com/",
+      "selector": "a.learn-button[href=\"/product/nad-plus-nicotinamide-adenine-dinucleotide/\"]",
+      "destination": "/product/nad-plus-nicotinamide-adenine-dinucleotide/",
+      "visibleText": "LEARN MORE",
+      "accessibleName": "Learn More About NAD+ (Nicotinamide Adenine Dinucleotide)",
+      "proposedCorrection": "View NAD⁺ (Nicotinamide Adenine Dinucleotide) details"
+    },
+    {
+      "number": 22,
+      "page": "https://purehealthpeptidesshop.com/",
+      "selector": "a.learn-button[href=\"/product/vocus/\"]",
+      "destination": "/product/vocus/",
+      "visibleText": "LEARN MORE",
+      "accessibleName": "Learn More About VOCUS",
+      "proposedCorrection": "View VOCUS details"
+    },
+    {
+      "number": 23,
+      "page": "https://purehealthpeptidesshop.com/",
+      "selector": "a.learn-button[href=\"/product/bpc-157-tb-500-t-beta-4/\"]",
+      "destination": "/product/bpc-157-tb-500-t-beta-4/",
+      "visibleText": "LEARN MORE",
+      "accessibleName": "Learn More About BPC-157 / TB-500 (Tβ4)",
+      "proposedCorrection": "View BPC-157 / TB-500(Tβ4) details"
+    },
+    {
+      "number": 24,
+      "page": "https://purehealthpeptidesshop.com/",
+      "selector": "a.learn-button[href=\"/product/lc-120-lipo-c-formulation/\"]",
+      "destination": "/product/lc-120-lipo-c-formulation/",
+      "visibleText": "LEARN MORE",
+      "accessibleName": "Learn More About LC 120 (Lipo-C formulation)",
+      "proposedCorrection": "View LC 120 (Lipo-C formulation) details"
+    },
+    {
+      "number": 25,
+      "page": "https://purehealthpeptidesshop.com/",
+      "selector": "a.learn-button[href=\"/product/modular-peptide-system-a-dual-peptide-serum/\"]",
+      "destination": "/product/modular-peptide-system-a-dual-peptide-serum/",
+      "visibleText": "LEARN MORE",
+      "accessibleName": "Learn More About Modular Peptide System A – Dual Peptide Serum",
+      "proposedCorrection": "View Modular Peptide System A – Dual Peptide Serum details"
+    },
+    {
+      "number": 26,
+      "page": "https://purehealthpeptidesshop.com/",
+      "selector": "a.learn-button[href=\"/product/modular-peptide-system-d-copper-peptide-complex/\"]",
+      "destination": "/product/modular-peptide-system-d-copper-peptide-complex/",
+      "visibleText": "LEARN MORE",
+      "accessibleName": "Learn More About Modular Peptide System D – Copper-Peptide Complex",
+      "proposedCorrection": "View Modular Peptide System D – Copper-Peptide Complex details"
+    },
+    {
+      "number": 27,
+      "page": "https://purehealthpeptidesshop.com/",
+      "selector": "a.learn-button[href=\"/product/complete-configuration-modular-peptide-systems-a-b-c-d-e/\"]",
+      "destination": "/product/complete-configuration-modular-peptide-systems-a-b-c-d-e/",
+      "visibleText": "LEARN MORE",
+      "accessibleName": "Learn More About Complete Configuration – Modular Peptide Systems A+B+C+D+E",
+      "proposedCorrection": "View Complete Configuration – Modular Peptide Systems A+B+C+D+E details"
+    },
+    {
+      "number": 28,
+      "page": "https://purehealthpeptidesshop.com/",
+      "selector": "a.learn-button[href=\"/product/modular-peptide-system-c-controlled-rheology-peptide-emulsion/\"]",
+      "destination": "/product/modular-peptide-system-c-controlled-rheology-peptide-emulsion/",
+      "visibleText": "LEARN MORE",
+      "accessibleName": "Learn More About Modular Peptide System C – Controlled-Rheology Peptide Emulsion",
+      "proposedCorrection": "View Modular Peptide System C – Controlled-Rheology Peptide Emulsion details"
+    },
+    {
+      "number": 29,
+      "page": "https://purehealthpeptidesshop.com/",
+      "selector": "a.learn-button[href=\"/product/modular-peptide-system-e-multi-peptide-complex/\"]",
+      "destination": "/product/modular-peptide-system-e-multi-peptide-complex/",
+      "visibleText": "LEARN MORE",
+      "accessibleName": "Learn More About Modular Peptide System E – Multi-Peptide Complex",
+      "proposedCorrection": "View Modular Peptide System E – Multi-Peptide Complex details"
+    },
+    {
+      "number": 30,
+      "page": "https://purehealthpeptidesshop.com/",
+      "selector": "a.learn-button[href=\"/product/phase-2-configuration-modular-peptide-systems-b-d/\"]",
+      "destination": "/product/phase-2-configuration-modular-peptide-systems-b-d/",
+      "visibleText": "LEARN MORE",
+      "accessibleName": "Learn More About Phase 2 Configuration – Modular Peptide Systems B+D",
+      "proposedCorrection": "View Phase 2 Configuration – Modular Peptide Systems B+D details"
+    },
+    {
+      "number": 31,
+      "page": "https://purehealthpeptidesshop.com/",
+      "selector": "a.learn-button[href=\"/product/modular-peptide-system-b-pure-peptide-gel/\"]",
+      "destination": "/product/modular-peptide-system-b-pure-peptide-gel/",
+      "visibleText": "LEARN MORE",
+      "accessibleName": "Learn More About Modular Peptide System B – Pure Peptide Gel",
+      "proposedCorrection": "View Modular Peptide System B – Pure Peptide Gel details"
+    },
+    {
+      "number": 32,
+      "page": "https://purehealthpeptidesshop.com/",
+      "selector": "a.learn-button[href=\"/product/phase-1-configuration-modular-peptide-systems-a-c-e/\"]",
+      "destination": "/product/phase-1-configuration-modular-peptide-systems-a-c-e/",
+      "visibleText": "LEARN MORE",
+      "accessibleName": "Learn More About Phase 1 Configuration – Modular Peptide Systems A+C+E",
+      "proposedCorrection": "View Phase 1 Configuration – Modular Peptide Systems A+C+E details"
+    }
+  ]
+}

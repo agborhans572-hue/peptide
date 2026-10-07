@@ -1,0 +1,8 @@
+{
+  "country": "US",
+  "currency": "USD",
+  "rateCents": 1099,
+  "freeThresholdCents": 17500,
+  "transitMinDays": 2,
+  "transitMaxDays": 3
+}

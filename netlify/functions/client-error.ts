@@ -1,8 +1,8 @@
 import type { Handler } from '@netlify/functions'
 import { z } from 'zod'
-import { clientFingerprint, errorResponse, HttpError, json, parseJson, requireSameOrigin } from './_shared/http.ts'
-import { reportOperationalError } from './_shared/monitor.ts'
-import { fingerprint, services } from './_shared/services.ts'
+import { clientFingerprint, errorResponse, HttpError, json, parseJson, requireSameOrigin } from './_shared/http.js'
+import { reportOperationalError } from './_shared/monitor.js'
+import { fingerprint, services } from './_shared/services.js'
 
 const clientError = z.object({
   message: z.string().min(1).max(500),

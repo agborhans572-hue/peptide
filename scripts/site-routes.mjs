@@ -1,4 +1,8 @@
 import { readFileSync } from 'node:fs'
+import shipping from '../src/shippingPolicy.json' with { type: 'json' }
+import { relatedResearchProducts } from '../src/researchLinks.js'
+import { educationArticlePath, publishedEducationArticles } from '../src/educationArticles.js'
+import { articleCitationUrls } from '../src/educationAuthority.js'
 const catalog = JSON.parse(readFileSync(new URL('../catalog/catalog.generated.json', import.meta.url), 'utf8'))
 const shopProducts = catalog.products
 
@@ -70,6 +74,9 @@ function breadcrumbSchema(route, product) {
   if (product) {
     items.push({ '@type': 'ListItem', position: 2, name: 'Research Peptides', item: `${SITE_ORIGIN}/shop/` })
     items.push({ '@type': 'ListItem', position: 3, name: product.name, item: absoluteUrl(route.path) })
+  } else if (route.kind === 'article') {
+    items.push({ '@type': 'ListItem', position: 2, name: 'Laboratory Guides', item: `${SITE_ORIGIN}/news/` })
+    items.push({ '@type': 'ListItem', position: 3, name: route.article.shortTitle, item: absoluteUrl(route.path) })
   } else {
     items.push({ '@type': 'ListItem', position: 2, name: route.breadcrumb || route.title.split('|')[0].trim(), item: absoluteUrl(route.path) })
   }
@@ -85,7 +92,23 @@ function baseSchemaGraph(route) {
       name: 'Pure Health Peptides',
       url: `${SITE_ORIGIN}/`,
       logo: { '@type': 'ImageObject', url: `${SITE_ORIGIN}/assets/logo.svg` },
-      email: 'info@purehealthpeptides.com',
+      email: 'info@purehealthpeptidesshop.com',
+      hasMerchantReturnPolicy: { '@type': 'MerchantReturnPolicy', merchantReturnLink: absoluteUrl('/refund-policy/') },
+      hasShippingService: {
+        '@type': 'ShippingService', '@id': absoluteUrl('/shipping-policy/#us-shipping'),
+        name: 'U.S. standard shipping', url: absoluteUrl('/shipping-policy/'),
+        description: '$10.99 shipping; free at $175 or more after product discounts. Estimated transit 2-3 business days after processing.',
+        shippingConditions: [
+          { minimum: 0, maximum: shipping.freeThresholdCents / 100 - 0.01, rate: shipping.rateCents / 100 },
+          { minimum: shipping.freeThresholdCents / 100, rate: 0 },
+        ].map(({ minimum, maximum, rate }) => ({
+          '@type': 'ShippingConditions',
+          shippingDestination: { '@type': 'DefinedRegion', addressCountry: shipping.country },
+          orderValue: { '@type': 'MonetaryAmount', minValue: minimum, ...(maximum == null ? {} : { maxValue: maximum }), currency: shipping.currency },
+          shippingRate: { '@type': 'MonetaryAmount', value: rate, currency: shipping.currency },
+          transitTime: { '@type': 'ServicePeriod', duration: { '@type': 'QuantitativeValue', minValue: shipping.transitMinDays, maxValue: shipping.transitMaxDays, unitCode: 'DAY' }, businessDays: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'] },
+        })),
+      },
       description: 'Supplier of independently batch-tested materials for controlled in vitro laboratory research.',
     },
     {
@@ -97,7 +120,7 @@ function baseSchemaGraph(route) {
       inLanguage: 'en-US',
     },
     {
-      '@type': route.path === '/shop/' || route.path.startsWith('/coa-library/') ? 'CollectionPage' : 'WebPage',
+      '@type': route.path === '/shop/' || route.path === '/news/' || route.path.startsWith('/coa-library/') ? 'CollectionPage' : 'WebPage',
       '@id': `${pageUrl}#webpage`,
       url: pageUrl,
       name: route.title,
@@ -133,6 +156,48 @@ function staticSchema(route) {
     })
   }
 
+  if (route.path === '/news/') {
+    graph.push({
+      '@type': 'ItemList',
+      '@id': `${SITE_ORIGIN}/news/#guides`,
+      name: 'Peptide Testing and Laboratory Guides',
+      numberOfItems: publishedEducationArticles.length,
+      itemListElement: publishedEducationArticles.map((article, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        name: article.title,
+        url: absoluteUrl(educationArticlePath(article)),
+      })),
+    })
+  }
+
+  if (route.kind === 'article') {
+    graph.push({
+      '@type': 'Article',
+      '@id': `${absoluteUrl(route.path)}#article`,
+      headline: route.article.title,
+      description: route.article.description,
+      datePublished: route.article.publishedAt,
+      dateModified: route.article.updatedAt,
+      articleSection: route.article.category,
+      author: { '@id': ORGANIZATION_ID },
+      ...(route.article.reviewer ? {
+        reviewedBy: {
+          '@type': 'Person',
+          name: route.article.reviewer.name,
+          honorificSuffix: route.article.reviewer.credentials,
+          jobTitle: route.article.reviewer.role,
+          url: route.article.reviewer.profileUrl,
+        },
+      } : {}),
+      publisher: { '@id': ORGANIZATION_ID },
+      mainEntityOfPage: { '@id': `${absoluteUrl(route.path)}#webpage` },
+      image: route.image,
+      citation: articleCitationUrls(route.article),
+      inLanguage: 'en-US',
+    })
+  }
+
   return { '@context': 'https://schema.org', '@graph': graph }
 }
 
@@ -153,9 +218,10 @@ function productSchema(route, product) {
   graph.push({
     '@type': 'Product',
     '@id': `${absoluteUrl(route.path)}#product`,
+    url: absoluteUrl(route.path),
     name: product.name,
     description: route.description,
-    image: [route.image],
+    image: [absoluteUrl(product.image), route.image],
     sku: product.sku,
     brand: { '@type': 'Brand', name: 'Pure Health Peptides' },
     category: `${FORMAT_META[product.type]?.title || 'Research Material'} — laboratory research use only`,
@@ -196,8 +262,24 @@ const staticRoutes = [
   },
   {
     path: '/news/',
-    title: 'Recent News | Pure Health Peptides',
-    description: 'Read recent Pure Health Peptides research, product, testing, and manufacturing updates.',
+    title: 'Peptide Testing & Laboratory Guides | PHP',
+    description: 'Read evidence-led guides to peptide COAs, HPLC purity, mass spectrometry, storage, material formats, lot numbers, and batch verification.',
+    breadcrumb: 'Laboratory Guides',
+  },
+  ...publishedEducationArticles.map((article) => ({
+    path: educationArticlePath(article),
+    title: `${article.shortTitle} | Laboratory Guide`,
+    description: article.description,
+    breadcrumb: article.shortTitle,
+    kind: 'article',
+    article,
+    lastmod: article.updatedAt,
+  })),
+  {
+    path: '/editorial-standards/',
+    title: 'Editorial Standards for Laboratory Education | PHP',
+    description: 'See how Pure Health Peptides attributes, sources, discloses, updates, and corrects educational content about laboratory research materials.',
+    breadcrumb: 'Editorial Standards',
   },
   {
     path: '/pure-elite-access/',
@@ -259,8 +341,8 @@ const staticRoutes = [
   },
   {
     path: '/shipping-policy/',
-    title: 'Shipping Policy | Pure Health Peptides',
-    description: 'Review Pure Health Peptides shipping service areas, rates, timing, tracking, and damaged-shipment procedures.',
+    title: 'U.S. Shipping Policy | Rates & Delivery | Pure Health Peptides',
+    description: 'U.S. shipping is $10.99, free on orders of $175 or more after discounts. Review estimated 2-3 business day transit, tracking, and shipment support.',
   },
   {
     path: '/refund-policy/',
@@ -350,10 +432,12 @@ const productRoutes = shopProducts.map((product) => {
     imageType: socialImage?.type,
     kind: 'product',
     indexable: true,
-    lastmod: product.date,
+    lastmod: product.slug === 'n-acetyl-semax-amidate' ? '2026-09-08' : product.date,
+    product,
+    relatedPaths: relatedResearchProducts(product, shopProducts).map((item) => new URL(item.productUrl).pathname),
     crawlContent: {
       heading: product.name,
-      description: plainText(product.description || product.shortDescription || route.description),
+      description: plainText(product.description || product.shortDescription),
       categories: (product.categoryDetails || []).map((category) => category.name),
       options: product.options.map((option) => ({
         label: option.label,
@@ -381,11 +465,13 @@ const pageImages = {
 }
 
 const enrichedStaticRoutes = staticRoutes.map((route) => {
-  const image = absoluteUrl(pageImages[route.path] || '/assets/hero-vials.png')
+  const image = absoluteUrl(pageImages[route.path] || (route.kind === 'article' ? '/assets/peptide-info/coa-lab.png' : '/assets/hero-vials.png'))
   const enriched = {
     ...route,
     image,
-    imageAlt: route.path.startsWith('/coa-') || route.path === '/coa-library/'
+    imageAlt: route.kind === 'article'
+      ? `${route.article.shortTitle} — laboratory research guide`
+      : route.path.startsWith('/coa-') || route.path === '/coa-library/'
       ? 'Research peptide Certificate of Analysis documentation'
       : 'Pure Health Peptides laboratory research materials',
   }
